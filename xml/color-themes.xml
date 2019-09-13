@@ -1,0 +1,20 @@
+<gammaset id="*Default">
+	<gammagroup id="plastic" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="display" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="goldbuttons" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="greybuttons" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="greybuttonsbolt" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="multicolorbars" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="txtlabels" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="titlebarstripes" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="ledcolor" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="display-scrollbar-bg" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="display-sui" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="display-text" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="display-sui-text" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="selection-bg" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="current-active" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="window-text" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="button-text" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="visualizers" value="0, 0, 0" gray="0" boost="0"/>
+</gammaset>
