@@ -18,7 +18,7 @@ Global Group EqShadeGroup, EqShadeVolbalance;
 Global Slider Balance;
 // ..it's here to avoid a strange bug (center throws -0.2dB)
 
-Global Button EqLight, PLLight, OAIDUMenuD, OAIDUBtnUE1, OAIDUBtnUE2, OAIDUBtnUE3, StopBtn, WinampIcon, WinampIconShade, WinampIconEQ;
+Global Button EqLight, PLLight, OAIDUMenuD, OAIDUBtnUE1, OAIDUBtnUE2, OAIDUBtnUE3, StopBtn;
 Global ToggleButton OAIDUBtnA;
 Global AnimatedLayer VolumeAnim, MainVolumeAnim;
 Global AnimatedLayer anlBalance, MainanlBalance;
@@ -27,8 +27,8 @@ Global GuiObject DisplayTime, DisplayTimeShade, OAIDUBtnO/*, SongtickerObj*/;
 Global GuiObject SonginfoFrequencyBG, SonginfoFrequencyDISPLAY, SonginfoBitrateBG, SonginfoBitrateDISPLAY, ButtonClose;
 Global Layer EqButton, PLButton, SonginfoMono, SonginfoStereo, SonginfoBitrateLabel, SonginfoFrequencyLabel;
 Global togglebutton RepeatLight, ShuffleLight;
-Global Layer AboutBG;
-Global Text WinampTxt, WACUPTxt, SonginfoBitrate, SonginfoFrequency, WinampTxtShade, WACUPTxtShade;
+Global Layer WinampTxt, AboutBG, WinampTxtShade;
+Global Text SonginfoBitrate, SonginfoFrequency;
 Global Slider EqBalance;
 Global Layer Trigger;
 
@@ -49,6 +49,10 @@ Global boolean param;
 //Global Boolean iswacup;
 Global File myCheckerDoc;
 
+
+#define CENTER_VAR WinampGroup
+#include "lib/com/centerlayer.m"
+#undef CENTER_VAR
 
 
 initMainPlayer() {
@@ -88,7 +92,6 @@ initMainPlayer() {
   DisplayTimeShade = DisplayGroupShade.getObject("shade.time");
 
 	WinampTxtShade = MainGroupShade.getObject("winamp.txt");
-	WACUPTxtShade = MainGroupShade.getObject("wacup.txt");
   
   DisplayTime = DisplayGroup.getObject("display.time");
   
@@ -122,7 +125,6 @@ initMainPlayer() {
 
 	WinampTxtGroup = MainGroup.getObject("titlebar.winamptxt.group");
 	WinampTxt = WinampTxtGroup.getObject("titlebar.winamptxt");
-	WACUPTxt = WinampTxtGroup.getObject("titlebar.wacuptxt");
 
 
   // EQ shade mode stuff, it's here to avoid strange bugs
@@ -134,11 +136,8 @@ initMainPlayer() {
 	
   // EQ shade mode stuff, it's here to avoid strange bugs
 
-	WinampIcon = MainGroup.getObject("player.button.mainmenu");
-	WinampIconShade = MainGroupShade.getObject("player.button.mainmenu");
-  WinampIconEQ = EqShadeGroup.getObject("player.button.mainmenu");
 
-  //_WinampGroupInit(WinampTxtGroup, MainGroup, 1, 0);
+  _WinampGroupInit(WinampTxtGroup, MainGroup, 1, 0);
 
 	getchanneltimer = new Timer;
 	getchanneltimer.setDelay(100);
@@ -205,19 +204,8 @@ initMainPlayer() {
   
   if(myCheckerDoc.exists())
   {
-    WinampTxt.hide();
-    WACUPTxt.show();
-    WinampTxtShade.hide();
-    WACUPTxtShade.show();
-    WinampIcon.setXmlParam("image", "player.button.mainmenu.wacup");
-    WinampIcon.setXmlParam("hoverimage", "player.button.mainmenu.h.wacup");
-    WinampIcon.setXmlParam("downimage", "player.button.mainmenu.d.wacup");
-    WinampIconShade.setXmlParam("image", "player.button.mainmenu.wacup");
-    WinampIconShade.setXmlParam("hoverimage", "player.button.mainmenu.h.wacup");
-    WinampIconShade.setXmlParam("downimage", "player.button.mainmenu.d.wacup");
-    WinampIconEQ.setXmlParam("image", "player.button.mainmenu.wacup");
-    WinampIconEQ.setXmlParam("hoverimage", "player.button.mainmenu.h.wacup");
-    WinampIconEQ.setXmlParam("downimage", "player.button.mainmenu.d.wacup");
+    WinampTxt.setXmlParam("image", "titlebar.wacup.txt");
+    WinampTxtShade.setXmlParam("image", "shade.wacup.txt");
     AboutBG.setXmlParam("image", "about.wacup.bg");
     AboutBtn.setXmlParam("image", "button.about.wacup.n");
     AboutBtn.setXmlParam("hoverimage", "button.about.wacup.h");
@@ -227,19 +215,8 @@ initMainPlayer() {
   }
   else
   {
-    WinampTxt.show();
-    WACUPTxt.hide();
-    WinampTxtShade.show();
-    WACUPTxtShade.hide();
-    WinampIcon.setXmlParam("image", "player.button.mainmenu");
-    WinampIcon.setXmlParam("hoverimage", "player.button.mainmenu.h");
-    WinampIcon.setXmlParam("downimage", "player.button.mainmenu.d");
-    WinampIconShade.setXmlParam("image", "player.button.mainmenu");
-    WinampIconShade.setXmlParam("hoverimage", "player.button.mainmenu.h");
-    WinampIconShade.setXmlParam("downimage", "player.button.mainmenu.d");
-    WinampIconEQ.setXmlParam("image", "player.button.mainmenu");
-    WinampIconEQ.setXmlParam("hoverimage", "player.button.mainmenu.h");
-    WinampIconEQ.setXmlParam("downimage", "player.button.mainmenu.d");
+    WinampTxt.setXmlParam("image", "titlebar.winamp.txt");
+    WinampTxtShade.setXmlParam("image", "shade.winamp.txt");
     AboutBG.setXmlParam("image", "about.bg");
     AboutBtn.setXmlParam("image", "button.about.n");
     AboutBtn.setXmlParam("hoverimage", "button.about.h");
@@ -344,19 +321,17 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 	{
 		if (getCurCfgVal() == 1)
 		{
-      //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "repeat.light.on.d");
+      RepeatLight.setXmlParam("y", "172");
 			showActionInfo("Repeat: Track");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-      //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "repeat.light.on.d");
+      RepeatLight.setXmlParam("y", "172");
 			showActionInfo("Repeat: Off");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      RepeatLight.setXmlParam("image", "repeat.light.on.d");
+      RepeatLight.setXmlParam("y", "172");
 			showActionInfo("Repeat: Playlist");
 		}
 	}
@@ -364,14 +339,12 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
   {
 		if (getCurCfgVal() == 1)
 		{
-      ShuffleLight.setXmlParam("image", "repeat.light.on.d");
-      ShuffleLight.setXmlParam("activeImage", "repeat.light.on.d");
+      ShuffleLight.setXmlParam("y", "172");
 			showActionInfo("Shuffle: Off");
 		}
 		else
 		{
-      ShuffleLight.setXmlParam("image", "repeat.light.on.d");
-      ShuffleLight.setXmlParam("activeImage", "repeat.light.on.d");
+      ShuffleLight.setXmlParam("y", "172");
 			showActionInfo("Shuffle: On");
 		}
 	}
@@ -385,39 +358,33 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on.h");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("y", "168");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on");
+          RepeatLight.setXmlParam("y", "170");
         }
       }
       else if (getCurCfgVal() == -1)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on.h");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("y", "168");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on");
+          RepeatLight.setXmlParam("y", "170");
         }
       }
       else if (getCurCfgVal() == 0)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on.h");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("y", "168");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on");
+          RepeatLight.setXmlParam("y", "170");
         }
       }
 		}
@@ -427,25 +394,21 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "repeat.light.on.h");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on.h");
+          ShuffleLight.setXmlParam("y", "168");
         }
         else {
-          ShuffleLight.setXmlParam("image", "repeat.light.on");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on");
+          ShuffleLight.setXmlParam("y", "170");
         }
       }
       else
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "repeat.light.on.h");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on.h");
+          ShuffleLight.setXmlParam("y", "168");
         }
         else
         {
-          ShuffleLight.setXmlParam("image", "repeat.light.on");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on");
+          ShuffleLight.setXmlParam("y", "170");
         }
       }
 		}
@@ -457,26 +420,26 @@ RepeatShuffleHandler.onEnterArea()
 	{
 		if (getCurCfgVal() == 1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "168");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "168");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "168");
 		}
   }
   else if (RepeatShuffleHandler == ShuffleBtn)
   {
 		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "repeat.light.on");
+			ShuffleLight.setXmlParam("y", "168");
 		}
 		else
 		{
-			ShuffleLight.setXmlParam("image", "repeat.light.on");
+			ShuffleLight.setXmlParam("y", "168");
 		}
   }
 }
@@ -487,26 +450,26 @@ RepeatShuffleHandler.onLeaveArea()
 	{
 		if (getCurCfgVal() == 1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "170");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "170");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.off");
+			RepeatLight.setXmlParam("y", "170");
 		}
   }
   else if (RepeatShuffleHandler == ShuffleBtn)
   {
  		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "repeat.light.on");
+			ShuffleLight.setXmlParam("y", "170");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      ShuffleLight.setXmlParam("image", "repeat.light.off");
+      ShuffleLight.setXmlParam("y", "170");
 		} 
   }
 }

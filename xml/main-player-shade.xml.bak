@@ -17,13 +17,10 @@
   
 	<layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
 
-	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" w="26" h="28" image="shade.button.mainmenu.n" hoverimage="shade.button.mainmenu.h" downimage="shade.button.mainmenu.d" tooltip="Winamp Menu" alpha="253" cursor="cur.normal"/>
+	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="shade.button.mainmenu.n" hoverimage="shade.button.mainmenu.h" downimage="shade.button.mainmenu.d" tooltip="Winamp Menu" alpha="253" cursor="cur.normal"/>
 	<slider id="player.slider.volume" action="VOLUME" x="137" y="10" w="71" h="14" orientation="horizontal" thumb="shade.button.slider" downthumb="shade.button.slider" ghost="1" alpha="0"/>
 
-	<text id="winamp.txt" x="27" y="3" text="Winamp" w="300" h="20" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
-	<text id="wacup.txt" x="27" y="3" text="WACUP" w="300" h="20" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
+	<layer id="winamp.txt" x="10" y="-2" image="shade.winamp.txt" alpha="255" ghost="1" activealpha="255" inactivealpha="128"/>
 	<layer id="shade.bars" x="98" y="2" image="shade.bars" alpha="253" ghost="1"/>
 	
 	<group id="player.shade.group.display" x="118" y="0" ghost="1" cursor="cur.normal"/>

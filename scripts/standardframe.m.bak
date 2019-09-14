@@ -1,6 +1,4 @@
 #include "std.mi"
-#include "lib/application.mi"
-#include "lib/fileio.mi"
 
 Function setNewGroup(String strGroupID);
 
@@ -8,21 +6,12 @@ Global Layout layoutStandardFrame;
 Global Group groupStandardFrame;
 Global Group groupStandardFrameContent;
 Global Group groupStandardFrameTitlebar;
-Global Group WasabiFrameGroup;
-Global Button WinampIcon;
 Global Layer layerMouseTrap;
 Global String strParamX, strParamY, strParamW, strParamH, strParamRX, strParamRY, strParamRW, strParamRH;
-
-//Global Boolean iswacup;
-Global File myCheckerDoc;
-
 
 System.onScriptLoaded() {
 	groupStandardFrame = System.getScriptGroup();
 	layoutStandardFrame = groupStandardFrame.getParentLayout();
-
-	WasabiFrameGroup = groupStandardFrame.findobject("wasabi.frame.layout");
-	WinampIcon = WasabiFrameGroup.findobject("player.button.mainmenu");
 	
 	String strParam = System.getParam();
 	strParamX = System.getToken(strParam, ",", 0);
@@ -33,23 +22,6 @@ System.onScriptLoaded() {
 	strParamRY = System.getToken(strParam, ",", 5);
 	strParamRW = System.getToken(strParam, ",", 6);
 	strParamRH = System.getToken(strParam, ",", 7);
-	
-  myCheckerDoc = new File;
-  String temp = (Application.GetSettingsPath()+"/WACUP_Tools/koopa.ini");
-  myCheckerDoc.load (temp);
-  
-  if(myCheckerDoc.exists())
-  {
-    WinampIcon.setXmlParam("image", "player.button.mainmenu.wacup");
-    WinampIcon.setXmlParam("hoverimage", "player.button.mainmenu.h.wacup");
-    WinampIcon.setXmlParam("downimage", "player.button.mainmenu.d.wacup");
-  }
-  else
-  {
-    WinampIcon.setXmlParam("image", "player.button.mainmenu");
-    WinampIcon.setXmlParam("hoverimage", "player.button.mainmenu.h");
-    WinampIcon.setXmlParam("downimage", "player.button.mainmenu.d");
-  }
 }
 
 System.onSetXuiParam(String strParam, String strValue) {

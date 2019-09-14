@@ -61,14 +61,10 @@
   <bitmap id="thumb.volpan.slider.h" file="images/player-main.png" x="238" y="215" w="32" h="26" gammagroup="greybuttons"/>
   <bitmap id="thumb.volpan.slider.d" file="images/player-main.png" x="271" y="215" w="32" h="26" gammagroup="greybuttons"/>
 
-  <bitmap id="player.button.mainmenu.wacup" file="images/player-main.png" x="2" y="0" w="26" h="28" gammagroup="goldbuttons"/>
-  <bitmap id="player.button.mainmenu.h.wacup" file="images/player-main.png" x="2" y="29" w="26" h="28" gammagroup="goldbuttons"/>
-  <bitmap id="player.button.mainmenu.d.wacup" file="images/player-main.png" x="2" y="58" w="26" h="28" gammagroup="goldbuttons"/>
+  <bitmap id="player.button.mainmenu" file="images/player-main.png" x="2" y="0" w="26" h="28" gammagroup="goldbuttons"/>
+  <bitmap id="player.button.mainmenu.h" file="images/player-main.png" x="2" y="29" w="26" h="28" gammagroup="goldbuttons"/>
+  <bitmap id="player.button.mainmenu.d" file="images/player-main.png" x="2" y="58" w="26" h="28" gammagroup="goldbuttons"/>
 
-  <bitmap id="player.button.mainmenu" file="images/player-main.png" x="29" y="29" w="26" h="28" gammagroup="goldbuttons"/>
-  <bitmap id="player.button.mainmenu.h" file="images/player-main.png" x="56" y="29" w="26" h="28" gammagroup="goldbuttons"/>
-  <bitmap id="player.button.mainmenu.d" file="images/player-main.png" x="83" y="29" w="26" h="28" gammagroup="goldbuttons"/>
-  
   <bitmap id="player.button.minimize" file="images/player-main.png" x="467" y="0" w="26" h="28" gammagroup="goldbuttons"/>
   <bitmap id="player.button.minimize.h" file="images/player-main.png" x="467" y="29" w="26" h="28" gammagroup="goldbuttons"/>
   <bitmap id="player.button.minimize.d" file="images/player-main.png" x="467" y="58" w="26" h="28" gammagroup="goldbuttons"/>
