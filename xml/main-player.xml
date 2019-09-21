@@ -114,7 +114,7 @@
 <groupdef id="player.normal.group.songticker">
 	<SongTicker id="player.display.songname" x="13" y="10" w="-260" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="13" y="0" w="-260" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="center" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="11" y="1" w="-260" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
