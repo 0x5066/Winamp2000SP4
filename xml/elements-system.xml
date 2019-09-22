@@ -1,6 +1,6 @@
-  <bitmap id="studio.basetexture" file="images/window/windows-elements.png" x="188" y="0" h="10" w="10" gammagroup="plastic"/>
-  <bitmap id="component.basetexture" file="images/window/windows-elements.png" x="188" y="0" h="10" w="10" gammagroup="plastic"/>
-  <bitmap id="wasabi.frame.basetexture" file="images/window/windows-elements.png" x="188" y="0" h="10" w="10" gammagroup="plastic"/>
+  <bitmap id="studio.basetexture" file="images/window/windows-elements.png" x="188" y="0" h="10" w="10" gammagroup="3D Objects"/>
+  <bitmap id="component.basetexture" file="images/window/windows-elements.png" x="188" y="0" h="10" w="10" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.frame.basetexture" file="images/window/windows-elements.png" x="188" y="0" h="10" w="10" gammagroup="3D Objects"/>
   <bitmap id="base.color" file="$solid" h="1" w="1" color="27,23,49" gammagroup="display"/>
   <bitmap id="frame.color" file="$solid" h="1" w="1" color="117,116,139" gammagroup="display"/>
   

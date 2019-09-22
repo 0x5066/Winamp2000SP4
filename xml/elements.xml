@@ -37,9 +37,9 @@
   <bitmap id="titlebar.wacup.txt" file="images/player-main.png" x="234" y="29" w="95" h="28" gammagroup="txtlabels"/>
   <bitmap id="titlebar.winamp.txt" file="images/player-main.png" x="234" y="0" w="95" h="28" gammagroup="txtlabels"/>
 
-  <bitmap id="player.normal.bg.left" file="images/player-main.png" x="0" y="270" w="267" h="242" gammagroup="plastic"/>
-  <bitmap id="player.normal.bg.center" file="images/player-main.png" x="267" y="270" w="10" h="242" gammagroup="plastic"/>
-  <bitmap id="player.normal.bg.right" file="images/player-main.png" x="277" y="270" w="271" h="242" gammagroup="plastic"/>
+  <bitmap id="player.normal.bg.left" file="images/player-main.png" x="0" y="270" w="267" h="242" gammagroup="3D Objects"/>
+  <bitmap id="player.normal.bg.center" file="images/player-main.png" x="267" y="270" w="10" h="242" gammagroup="3D Objects"/>
+  <bitmap id="player.normal.bg.right" file="images/player-main.png" x="277" y="270" w="271" h="242" gammagroup="3D Objects"/>
 
   <bitmap id="player.normal.bg.left.aboff" file="images/player-main.png" x="0" y="270" w="10" h="242" gammagroup="plastic"/>
   <bitmap id="player.normal.bg.mid.aboff" file="images/player-main.png" x="10" y="270" w="80" h="242" gammagroup="plastic"/>
