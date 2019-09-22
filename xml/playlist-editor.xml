@@ -14,7 +14,7 @@
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" RELATX="1" RELATY="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 	
-	<layer id="pledit.background.grip.mid" x="-56" y="0" w="4" h="35" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="253" cursor="cur.posbar"/>
+	<layer id="pledit.background.grip.mid" x="-56" y="0" w="4" h="35" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="255" cursor="cur.posbar"/>
 
 	<group id="pledit.shade.group.display" x="4" y="3" cursor="cur.normal"/>
 
@@ -96,10 +96,10 @@
 	<button id="pledit.button.bg" x="-59" y="-49" relatx="1" relaty="1" image="window.button.bg"/>
 	<button id="pledit.button.list" action="PE_LIST" x="-58" y="-48" relatx="1" relaty="1" image="window.pl.button.ploptns.n" hoverimage="window.pl.button.ploptns.h" downimage="window.pl.button.ploptns.d" tooltip="Manage Playlist" cursor="cur.normal"/>
 
-  <grid id="pl.display.bg" x="-362" y="-43" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.bg.left" middle="window.pl.display.bg.middle" right="window.pl.display.bg.right" ghost="1" alpha="253"/>
-  <grid id="pl.display" x="-362" y="-39" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.left" middle="window.pl.display.middle" right="window.pl.display.right" ghost="1" alpha="253"/>
+  <grid id="pl.display.bg" x="-362" y="-43" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.bg.left" middle="window.pl.display.bg.middle" right="window.pl.display.bg.right" ghost="1" alpha="255"/>
+  <grid id="pl.display" x="-362" y="-39" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.left" middle="window.pl.display.middle" right="window.pl.display.right" ghost="1" alpha="255"/>
 	
-	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="253" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
+	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="255" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
 	<vis id="shade.vis" x="-354" y="-32" w="72" h="15" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers"/>
 	<rect id="hide.for.gordon" x="-283" y="-32" w="2" h="15" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
   <!--layer id="hide.for.vic" x="27" y="71" image="none" ghost="1" alpha="0"/-->
@@ -108,7 +108,7 @@
 	<text id="pledit.info" x="-181" y="-33" h="19" w="116" relatx="1" relaty="1" display="PE_Info" font="sarpanch" fontsize="14" valign="middle" align="center" 
 	rightclickaction="trackmenu" color="white" alpha="255" cursor="cur.normal" antialias="0"/>
 
-	<group id="pledit.miniplayback.buttons" x="-278" y="-35" relatx="1" relaty="1" cursor="cur.normal" alpha="253"/>
+	<group id="pledit.miniplayback.buttons" x="-278" y="-35" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/>
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
