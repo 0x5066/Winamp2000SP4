@@ -140,13 +140,13 @@
 	<!--rect id="player.background.display.vis.scale" x="0" y="0" filled="1" color="53,53,0" alpha="255"/-->
 	<layer id="player.normal.display.bg" x="5" y="1" image="player.normal.display.bg" cursor="cur.normal"/>
 
-	<layer id="oaidu.button.o.n" x="7" y="5" image="OAIDU.buttons.O.n" cursor="cur.normal"/>
-	<layer id="oaidu.button.o.h" x="7" y="5" image="OAIDU.buttons.O.h"/>
-	<layer id="oaidu.button.o.d" x="7" y="5" image="OAIDU.buttons.O.d"/>
+	<layer id="oaidu.button.o.n" x="7" y="3" image="OAIDU.buttons.O.n" cursor="cur.normal"/>
+	<layer id="oaidu.button.o.h" x="7" y="3" image="OAIDU.buttons.O.h"/>
+	<layer id="oaidu.button.o.d" x="7" y="3" image="OAIDU.buttons.O.d"/>
 	
   <Menu id="OAIDU.buttons.O.m" menu="WA5:Options" x="7" y="0" h="17" w="14" normal="oaidu.button.o.n" hover="oaidu.button.o.h" down="oaidu.button.o.d" tooltip="Options Menu" rectrgn="1" cursor="cur.normal"/>
-  <NStatesButton id="OAIDU.buttons.A" x="7" y="19" image="OAIDU.buttons.A.1." hoverimage="OAIDU.buttons.A.2." downimage="OAIDU.buttons.A.3." rectrgn="1" cfgattrib="{280876CF-48C0-40BC-8E86-73CE6BB462E5};Always on top" nstates="2" cfgvals="0;1" tooltip="Toggle Always on top" cursor="cur.normal"/>
-	<button id="OAIDU.buttons.I" action="trackinfo" x="7" y="33" image="OAIDU.buttons.I.n" hoverimage="OAIDU.buttons.I.h" downimage="OAIDU.buttons.I.n" alpha="255" tooltip="File Info Box" rectrgn="1" cursor="cur.normal"/>
+  <NStatesButton id="OAIDU.buttons.A" x="7" y="18" image="OAIDU.buttons.A.1." hoverimage="OAIDU.buttons.A.2." downimage="OAIDU.buttons.A.3." rectrgn="1" cfgattrib="{280876CF-48C0-40BC-8E86-73CE6BB462E5};Always on top" nstates="2" cfgvals="0;1" tooltip="Toggle Always on top" cursor="cur.normal"/>
+	<button id="OAIDU.buttons.I" action="trackinfo" x="7" y="32" image="OAIDU.buttons.I.n" hoverimage="OAIDU.buttons.I.h" downimage="OAIDU.buttons.I.n" alpha="255" tooltip="File Info Box" rectrgn="1" cursor="cur.normal"/>
 
 	<!--  D and U buttons handled by script -->
 	<button id="OAIDU.menu.D" x="7" y="47" image="none" action="CONTROLMENU" cursor="cur.normal"/>
