@@ -2,9 +2,9 @@
 	<bitmap id="main.about" file="images/background-main-about.png" w="380" h="321"/>
 </elements>
 
-<groupdef id="skin.about.group" x="0" y="0" w="380" h="321" rectrgn="1">
+<groupdef id="skin.about.group" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
   <!--rect id="main.abouts" x="0" y="0" h="321" w="380" color="0,0,150" filled="1"/-->
-  <layer id="main.about" image="main.about" w="380" h="321" cursor="cur.normal"/>
+  <layer id="main.about" image="main.about" w="380" h="321"  cursor="cur.normal"/>
   <button id="link.deviantart" x="60" y="164" w="213" h="30" image="links.normal" hoverimage="links.hover" downimage="links.down" cursor="IDC_HAND" rectrgn="1"/>
   <button id="link.zsolt" x="60" y="203" w="86" h="30" image="links.normal" hoverimage="links.hover" downimage="links.down" cursor="IDC_HAND" rectrgn="1"/>
   <button id="link.donate" x="50" y="280" w="280" h="30" image="links.normal" hoverimage="links.hover" downimage="links.down" cursor="IDC_HAND" rectrgn="1"/>
@@ -15,8 +15,9 @@
 <container id="about" name="About the skin" default_visible="0">
 
 
-<layout id="normal" minimum_w="392" minimum_h="353" h="353" w="393" maximum_w="392" maximum_h="353">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="392" h="353" content="skin.about.group" />
+<layout id="normal" minimum_w="388" minimum_h="349" h="349" w="388" maximum_w="388" maximum_h="349">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="388" h="349" content="skin.about.group" />
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
