@@ -121,10 +121,10 @@
 <groupdef id="player.normal.group.songinfo">
 	<!--rect id="filler.visual.helper" x="0" y="0" fitparent="1" filled="1" color="53,53,0" alpha="255"/-->
 
-	<grid id="songinfo.bitrate.bg" x="0" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
-	<grid id="songinfo.bitrate.display" x="0" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
-	<layer id="songinfo.bitrate.label" x="40" y="3" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
-  <text id="songinfo.bitrate"  x="6" y="7" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
+	<grid id="songinfo.bitrate.bg" x="-1" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
+	<grid id="songinfo.bitrate.display" x="-1" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
+	<layer id="songinfo.bitrate.label" x="39" y="3" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
+  <text id="songinfo.bitrate"  x="5" y="7" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
 	
 	
 	<grid id="songinfo.frequency.bg" x="90" y="3" w="34" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
