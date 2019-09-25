@@ -112,9 +112,9 @@
 
 
 <groupdef id="player.normal.group.songticker">
-	<SongTicker id="player.display.songname" x="13" y="10" w="-260" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
+	<SongTicker id="player.display.songname" x="24" y="11" w="-263" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="11" y="1" w="-260" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="22" y="2" w="-263" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
@@ -124,13 +124,13 @@
 	<grid id="songinfo.bitrate.bg" x="-1" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.bitrate.display" x="-1" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.bitrate.label" x="39" y="3" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
-  <text id="songinfo.bitrate"  x="5" y="7" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
+  <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
 	
 	
 	<grid id="songinfo.frequency.bg" x="90" y="3" w="34" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.frequency.display" x="90" y="3" w="34" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.frequency.label" x="128" y="3" image="songinfo.frequency.label" ghost="1" alpha="255"/>
-	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="7" w="23" h="14" font="numbers" fontsize="15" color="black" align="left" ghost="1" antialias="0"/>
+	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="8" w="23" h="14" font="numbers" fontsize="15" color="black" align="left" ghost="1" antialias="0"/>
 	
 	<layer id="songinfo.mono" x="-122" y="3" relatx="1" image="songinfo.mono.off" ghost="1" alpha="255"/>
 	<layer id="songinfo.stereo.srrnd" x="-68" y="3" relatx="1" image="songinfo.stereo.off" ghost="1" alpha="255"/>
