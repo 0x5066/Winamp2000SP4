@@ -3,9 +3,9 @@ This is a Winamp Modern skin which was based on Victhor's [Winamp Classic Modern
 
 Don't mind that text file, I've been too lazy to remove it.
 
-Changelog is [here](https://github.com/The1Freeman/Winamp2000SP4Issues)
+Changelog is [here](https://github.com/The1Freeman/Winamp2000SP4/blob/master/CHANGELOG.md)
 
-Latest release can be found [here](https://getwacup.com/community/index.php/topic,609.0.html)
+Latest release can be found [here](https://github.com/The1Freeman/Winamp2000SP4/releases)
 
 TODO:
 
