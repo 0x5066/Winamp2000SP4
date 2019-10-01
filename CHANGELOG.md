@@ -6,8 +6,21 @@ What's New?
 - New: Themes! Including those that were present in Windows 9x/2k/XP
 - New: Titlebar beam gradient can be colored independently
 
+# v1.03.6
+What's New?
+
+- Removed: Got rid of the client edge that was inside the windows (essentially a sunken border) as that did not fit with the general 'aesthetic' of usual Win32 programs.
+
+Known issues:
+
+window resizers interfere with the titlebar too much, unintentionally resizing the window, when only wanting to move it around
+
+main window is not aware whether or not it is run in WACUP or not
+
+shade text in playlist editor is green as well as the background being white instead of black
+
 # v1.03.5
-What's new?
+What's New?
 
 - New: Adjusted Video window's info bar so it doesn't look like it's slapped on the spot
 - New: Proper Winamp and WACUP detection, program icon and name will change whether or not the skin is being used in Winamp/WACUP
@@ -24,14 +37,6 @@ What's New?
 
 - Fixed: Resized the components by one pixel due to miscalculations
 - Fixed: Resized the volume sliders (thanks Victhor!)
-
-Known issues:
-
-window resizers interfere with the titlebar too much, unintentionally resizing the window, when only wanting to move it around
-
-main window is not aware whether or not it is run in WACUP or not
-
-shade text in playlist editor is green as well as the background being white instead of black
 
 # v1.03.3
 What's New?
