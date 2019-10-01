@@ -112,7 +112,7 @@
   <layer x="-20" y="-20" w="20" h="20" relatx="1" relaty="1" image="none" resize="bottomright" cursor="cur.resbottomright" alpha="0"/>
 
   <layoutstatus id="frame.layoutstatus" x="13" y="-48" w="-47" h="0" relaty="1" relatw="1" exclude="{system}" />
-  <script id="standardframe.script" file="scripts/standardframe.maki" param="15,45,-30,-60,0,0,1,1" />
+  <script id="standardframe.script" file="scripts/standardframe.maki" param="6,26,-12,-32,0,0,1,1" />
 
 </groupdef>
 
