@@ -66,7 +66,7 @@
 	<layer id="window.bottom.middle" x="267" y="-51" w="-238" relaty="1" relatw="1" image="window.normal.bottom.middle" stretch="1" move="1"/>
 	<layer id="window.bottom.right" x="-271" y="-51" relatx="1" relaty="1" image="window.normal.bottom.right" move="1" cursor="cur.normal"/>
 		
-  <group id="wasabi.frame.layout.base.bg" x="0" y="0" w="0" h="40" relatw="1" relath="1" cursor="cur.normal"/>
+  <group id="wasabi.frame.layout.base.bg" x="0" y="0" w="0" h="40" relatw="1" relath="1" cursor="cur.normal" alpha="0"/>
 
 	<group id="wasabi.frame.layout.region" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
 
@@ -138,7 +138,7 @@
   <layer x="-15" y="-15" relatx="1" relaty="1" image="normal.resizer.bottomright" ghost="1" alpha="0"/>
   <layer x="-20" y="-20" w="20" h="20" relatx="1" relaty="1" image="none" resize="bottomright" cursor="cur.resbottomright" alpha="0"/>
   
-  <script id="standardframe.script" file="scripts/standardframe.maki" param="6,26,-12,-32,0,0,1,1" />
+  <script id="standardframe.script" file="scripts/standardframe.maki" param="4,24,-8,-28,0,0,1,1" />
 
 </groupdef>
 
