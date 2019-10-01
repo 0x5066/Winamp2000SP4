@@ -1,4 +1,4 @@
-  <color id="greentxtsui" value="138,196,64" gammagroup="display-sui-text"/>
+  <color id="greentxtsui" value="0,0,0" gammagroup="display-sui-text"/>
   <color id="greentxttime" value="138,196,64" gammagroup="display-text"/>
 
 	<!-- Generic Lists -->
@@ -37,8 +37,8 @@
   <!-- Generic Trees -->
   <color id="studio.tree.text" value="0,0,0" gammagroup="display-sui-text"/>
   <color id="studio.tree.selected" value="0,0,0" gammagroup="selection-bg"/>
-  <color id="studio.tree.hilited" value="greentxtsui" gammagroup="display-sui-text"/>
-  <color id="studio.tree.hiliteddrop" value="greentxtsui" gammagroup="display-sui-text"/>
+  <color id="studio.tree.hilited" value="10,36,106" gammagroup="display-sui-text"/>
+  <color id="studio.tree.hiliteddrop" value="10,36,106" gammagroup="display-sui-text"/>
 
   <!-- Generic Lists -->
   <color id="studio.list.text" value="0,0,0" gammagroup="display-sui-text"/>
