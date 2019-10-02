@@ -123,7 +123,7 @@
 
 	<grid id="songinfo.bitrate.bg" x="-1" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.bitrate.display" x="-1" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
-	<layer id="songinfo.bitrate.label" x="39" y="3" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
+	<layer id="songinfo.bitrate.label" x="39" y="4" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
   <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
 	
 	
@@ -161,7 +161,7 @@
   
 	<layer id="player.background.display.vis.scale" x="19" y="0" image="display.vis.bg" alpha="255" ghost="1"/>
 
-	<text id="display.time" display="TIME" x="51" y="-1" w="122" h="36" ticker="0" font="numbers" fontsize="38" forcefixed="1" color="white" 
+	<text id="display.time" display="TIME" x="48" y="-1" w="122" h="36" ticker="0" font="numbers" fontsize="38" forcefixed="1" color="white" 
 	timeroffstyle="0" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 
 	<!--rect id="plssayer.vis" x="27" y="41" w="143" h="31" color="0,0,250" filled="0"/-->
