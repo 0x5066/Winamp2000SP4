@@ -5,6 +5,7 @@
   <bitmap id="frame.color" file="$solid" h="1" w="1" color="117,116,139" gammagroup="display"/>
   
   <bitmap id="wasabi.button.close.flat" file="images/window/windows-elements.png" x="160" y="56" h="9" w="10" gammagroup="goldbuttons"/>
+	<bitmap id="window.plvis.display.bg" file="images/plvisarea.png" x="0" y="0" w="75" h="20" gammagroup="none"/>
 
 <!-- Frame windows -->
   <bitmap id="studio.framewnd.verticaldivider" file="images/window/windows-elements.png" x="124" y="53" h="65" w="8" gammagroup="display"/>
