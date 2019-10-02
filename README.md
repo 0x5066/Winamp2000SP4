@@ -12,4 +12,4 @@ TODO:
  - [ ] Add new gammagroups which more or less represent the same colorgroups found within Windows Classic (WIP)
  - [ ] Themes. (WIP)
  - [ ] Reduce the hitbox of the window resizers
- - [x] Think about UI consistency (different text sizes are present for some reason, also WIP)
+ - [x] Think about UI consistency
