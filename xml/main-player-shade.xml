@@ -20,9 +20,9 @@
 	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" w="26" h="28" image="shade.button.mainmenu.n" hoverimage="shade.button.mainmenu.h" downimage="shade.button.mainmenu.d" tooltip="Winamp Menu" alpha="255" cursor="cur.normal"/>
 	<slider id="player.slider.volume" action="VOLUME" x="137" y="10" w="71" h="14" orientation="horizontal" thumb="shade.button.slider" downthumb="shade.button.slider" ghost="1" alpha="0"/>
 
-	<text id="winamp.txt" x="27" y="3" text="Winamp" w="300" h="20" font="titlebar" fontsize="15"
+	<text id="winamp.txt" x="22" y="3" text="Winamp" w="300" h="20" font="titlebar" fontsize="15"
     color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
-	<text id="wacup.txt" x="27" y="3" text="WACUP" w="300" h="20" font="titlebar" fontsize="15"
+	<text id="wacup.txt" x="22" y="3" text="WACUP" w="300" h="20" font="titlebar" fontsize="15"
     color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
 	<layer id="shade.bars" x="98" y="2" image="shade.bars" alpha="255" ghost="1"/>
 	
@@ -65,7 +65,7 @@
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<layer id="player.vis.blocker" x="8" y="10" w="72" h="15" image="none" cursor="cur.normal"/>
 	
-	<text id="shade.time" display="TIME" x="80" y="8" w="86" h="20" font="numbers" fontsize="14" timecolonwidth="6" timeroffstyle="1" align="center" 
+	<text id="shade.time" display="TIME" x="80" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="6" timeroffstyle="1" align="center" 
 	 color="white" forcefixed="1" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
 	
 	<Songticker id="shade.display.songname" x="175" y="8" w="-179" h="20" relatw="1" showlen="1" font="sarpanch" fontsize="18" align="center" 
