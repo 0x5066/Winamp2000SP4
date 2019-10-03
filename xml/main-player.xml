@@ -157,7 +157,7 @@
 	<button id="OAIDU.buttons.U.menuentry3" x="7" y="61" h="0" w="0" action="WA5:Prefs" param="33" image="none"/>
 	<button id="OAIDU.buttons.U" x="7" y="61" image="OAIDU.buttons.U.n" hoverimage="OAIDU.buttons.U.h" downimage="OAIDU.buttons.U.n" tooltip="Visualization Menu" rectrgn="1" cursor="cur.normal"/>
 
-  <status id="status" x="31" y="7" stopBitmap="status.icon.stop" playBitmap="status.icon.play" pauseBitmap="status.icon.pause" ghost="1"/>
+  <status id="status" x="33" y="7" stopBitmap="status.icon.stop" playBitmap="status.icon.play" pauseBitmap="status.icon.pause" ghost="1"/>
   
 	<layer id="player.background.display.vis.scale" x="19" y="0" image="display.vis.bg" alpha="255" ghost="1"/>
 
