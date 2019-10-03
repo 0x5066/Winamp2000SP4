@@ -43,7 +43,7 @@
 	<slider id="player.slider.seek" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
 	<slider id="player.slider.seek.ghost" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
 
-	<layer id="player.resizer.mid" x="-75" y="0" w="4" h="35" image="shade.resizer" relatx="1" move="0" resize="right" alpha="255" tooltip="Adjust Horizontal Size" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="player.resizer.mid" x="-70" y="0" w="4" h="35" image="shade.resizer" relatx="1" move="0" resize="right" alpha="255" tooltip="Adjust Horizontal Size" rectrgn="1" cursor="cur.posbar"/>
 	
 	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="shade.button.minimize.n" hoverimage="shade.button.minimize.h" downimage="shade.button.minimize.d" tooltip="Minimize" cursor="cur.normal"/>
 	<button id="player.button.switch" action="SWITCH" param="NORMAL" x="-45" y="-1" relatx="1" image="shade.button.switch.n" hoverimage="shade.button.switch.h" downimage="shade.button.switch.d" tooltip="Toggle Windowshade Mode" cursor="cur.normal"/>
@@ -81,7 +81,7 @@
 	<Songticker id="shade.display.songname" x="175" y="10" w="-179" h="20" relatw="1" showlen="1" font="sarpanch" fontsize="15" align="left" 
 	rightclickaction="trackmenu" color="black" dblclickaction="trackinfo" alpha="255" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
 	
-	<text id="player.display.actioninfo" x="175" y="8" w="-179" h="20" relatw="1" font="sarpanch" fontsize="15" align="left" color="white" alpha="255" cursor="cur.normal" antialias="0"/>
+	<text id="player.display.actioninfo" x="175" y="8" w="-179" h="20" relatw="1" font="sarpanch" fontsize="15" align="left" color="black" alpha="255" cursor="cur.normal" antialias="0"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
   <script file="scripts\pauseblink.maki"/>
