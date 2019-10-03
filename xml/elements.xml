@@ -208,7 +208,11 @@
 
   <bitmap id="status.icon.play" file="images/player-main.png" x="56" y="244" w="24" h="24" gammagroup="display-text"/> 
   <bitmap id="status.icon.pause" file="images/player-main.png" x="81" y="244" w="24" h="24" gammagroup="display-text"/> 
-  <bitmap id="status.icon.stop" file="images/player-main.png" x="106" y="244" w="24" h="24" gammagroup="display-text"/> 
+  <bitmap id="status.icon.stop" file="images/player-main.png" x="106" y="244" w="24" h="24" gammagroup="display-text"/>
+
+  <bitmap id="statusshade.icon.play" file="images/playpausshade.png" x="0" y="0" w="18" h="17" gammagroup="display-text"/> 
+  <bitmap id="statusshade.icon.pause" file="images/playpausshade.png" x="19" y="0" w="18" h="17" gammagroup="display-text"/> 
+  <bitmap id="statusshade.icon.stop" file="images/playpausshade.png" x="38" y="0" w="18" h="17" gammagroup="display-text"/>
 
 	<!-- Shade mode -->
 

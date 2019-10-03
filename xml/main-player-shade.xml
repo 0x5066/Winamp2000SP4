@@ -53,25 +53,35 @@
 </groupdef>
 
 <groupdef id="player.shade.group.display" w="-384" h="33" relatw="1">
-  <grid id="player.display" x="0" y="3" h="29" w="0" relatw="1" left="shade.background.display.left" middle="shade.background.display.middle" right="shade.background.display.right" ghost="1" />
+  <grid id="player.display" x="78" y="2" h="31" w="-78" relatw="1" left="shade.background.display.left" middle="shade.background.display.middle" right="shade.background.display.right" ghost="1" />
 
 	<button id="vismenu.menuentry1" x="7" y="9" h="0" w="0" action="TOGGLE" param="guid:avs" image="none" cursor="cur.normal"/>
 	<button id="vismenu.menuentry2" x="7" y="9" h="0" w="0" action="Vis_Cfg" image="none"/>
 	<button id="vismenu.menuentry3" x="7" y="9" h="0" w="0" action="WA5:Prefs" param="33" image="none"/>
 
 	<!--rect id="plssayer.vis" x="8" y="10" w="72" h="15" color="0,0,250" filled="0"/-->
-	<vis id="shade.vis" x="8" y="10" w="72" h="15" alpha="255" cursor="cur.normal" gammagroup="visualizers"/>
-  <rect id="hide.for.gordon" x="79" y="9" w="2" h="17" color="0,0,0" filled="1" ghost="1" gammagroup="display"/>
+	<layer x="6" y="8" w="75" h="20" image="window.plvis.display.bg"/>
+	<vis id="shade.vis" x="8" y="10" w="72" h="16" alpha="255" cursor="cur.normal" gammagroup="visualizers"
+	colorallbands="0,255,0"
+	colorbandpeak="0,255,0"
+	colorosc1="0,255,0"
+	colorosc2="0,255,0"
+	colorosc3="0,255,0"
+	colorosc4="0,255,0"
+	colorosc5="0,255,0"/>
+  <rect id="hide.for.gordon" x="79" y="9" w="1" h="17" color="0,0,0" filled="1" ghost="1" gammagroup="display"/>
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
-	<layer id="player.vis.blocker" x="8" y="10" w="72" h="15" image="none" cursor="cur.normal"/>
+	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>
 	
-	<text id="shade.time" display="TIME" x="80" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="6" timeroffstyle="1" align="center" 
-	 color="white" forcefixed="1" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
+	<!--layer id="player.vis.blocker" x="8" y="10" w="72" h="15" image="none" cursor="cur.normal"/-->
 	
-	<Songticker id="shade.display.songname" x="175" y="8" w="-179" h="20" relatw="1" showlen="1" font="sarpanch" fontsize="18" align="center" 
-	rightclickaction="trackmenu" color="white" dblclickaction="trackinfo" alpha="255" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
+	<text id="shade.time" display="TIME" x="76" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="6" timeroffstyle="1" align="right" 
+	 color="black" forcefixed="1" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
 	
-	<text id="player.display.actioninfo" x="175" y="7" w="-179" h="20" relatw="1" font="sarpanch" fontsize="18" align="center" color="white" alpha="255" cursor="cur.normal" antialias="0"/>
+	<Songticker id="shade.display.songname" x="175" y="10" w="-179" h="20" relatw="1" showlen="1" font="sarpanch" fontsize="15" align="left" 
+	rightclickaction="trackmenu" color="black" dblclickaction="trackinfo" alpha="255" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
+	
+	<text id="player.display.actioninfo" x="175" y="8" w="-179" h="20" relatw="1" font="sarpanch" fontsize="15" align="left" color="white" alpha="255" cursor="cur.normal" antialias="0"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
   <script file="scripts\pauseblink.maki"/>
