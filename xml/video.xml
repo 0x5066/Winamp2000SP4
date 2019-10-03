@@ -18,7 +18,7 @@
 	<Button action="VID_Misc" x="79" y="4" rectrgn="1" image="vid.button.misc.n" hoverImage="vid.button.misc.h"
 		downImage="vid.button.misc.d" tooltip="Options" alpha="255" cursor="cur.normal"/>
 
-	<text id="info" display="VID_Info" ticker="1" x="110" y="4" h="19" w="-108" relatw="1" 
+	<text id="info" display="VID_Info" ticker="1" x="110" y="4" h="19" w="-182" relatw="1" 
 	align="left" color="0,0,0" dblclickaction="trackinfo" font="sarpanch" move="1" fontsize="14" cursor="cur.normal" antialias="0"/>
 	<layer x="-76" y="3" w="75" h="23" relatx="1" image="window.vidvis.display.bg"/>
 	
@@ -28,7 +28,7 @@
 	colorosc2="0,255,0"
 	colorosc3="0,255,0"
 	colorosc4="0,255,0"
-	colorosc5="0,255,0" relatx="1" mode="1" peaks="0" bandwidth="thin" falloff="4"/>
+	colorosc5="0,255,0" relatx="1" mode="1" peaks="0" bandwidth="wide" falloff="2"/>
 	<layer id="player.vis.blocker" x="-74" y="3" w="72" h="21" relatx="1" image="none" cursor="cur.normal" alpha="0"/>
 	<rect id="hide.for.gordon" x="-3" y="5" w="1" h="19" relatx="1" color="0,0,0" filled="1" ghost="1" gammagroup="display"/>
 </groupdef>
