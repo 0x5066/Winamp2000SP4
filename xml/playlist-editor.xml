@@ -104,7 +104,7 @@
 	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="255" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
 	<vis id="shade.vis" x="-354" y="-32" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers"
 	colorallbands="0,255,0"
-	colorbandpeak="0,255,0"
+	colorbandpeak="0,0,0"
 	colorosc1="0,255,0"
 	colorosc2="0,255,0"
 	colorosc3="0,255,0"
