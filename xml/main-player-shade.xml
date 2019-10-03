@@ -75,8 +75,8 @@
 	
 	<!--layer id="player.vis.blocker" x="8" y="10" w="72" h="15" image="none" cursor="cur.normal"/-->
 	
-	<text id="shade.time" display="TIME" x="76" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="6" timeroffstyle="1" align="right" 
-	 color="black" forcefixed="1" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
+	<text id="shade.time" display="TIME" x="76" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="5" timeroffstyle="1" align="right" 
+	 color="black" forcefixed="0" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
 	
 	<Songticker id="shade.display.songname" x="175" y="10" w="-179" h="20" relatw="1" showlen="1" font="sarpanch" fontsize="15" align="left" 
 	rightclickaction="trackmenu" color="black" dblclickaction="trackinfo" alpha="255" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
