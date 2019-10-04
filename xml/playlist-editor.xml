@@ -106,11 +106,11 @@
 
   <grid id="pl.display.bg" x="-362" y="-43" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.bg.left" middle="window.pl.display.bg.middle" right="window.pl.display.bg.right" ghost="1" alpha="255"/>
   <grid id="pl.display" x="-362" y="-39" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.left" middle="window.pl.display.middle" right="window.pl.display.right" ghost="1" alpha="0"/>
-  <layer x="-356" y="-34" w="75" h="20" relatx="1" relaty="1" image="window.plvis.display.bg"/>
-  <layer x="-278" y="-34" w="214" h="20" relatx="1" relaty="1" image="window.plinfo.display.bg"/>
+  <layer x="-356" y="-36" w="75" h="20" relatx="1" relaty="1" image="window.plvis.display.bg"/>
+  <layer x="-278" y="-36" w="214" h="20" relatx="1" relaty="1" image="window.plinfo.display.bg"/>
 	
 	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="255" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
-	<vis id="shade.vis" x="-354" y="-32" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers"
+	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers"
 	colorallbands="0,255,0"
 	colorbandpeak="0,0,0"
 	colorosc1="0,255,0"
@@ -119,14 +119,14 @@
 	colorosc4="0,255,0"
 	colorosc5="0,255,0"
 	/>
-	<rect id="hide.for.gordon" x="-283" y="-32" w="1" h="16" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
+	<rect id="hide.for.gordon" x="-283" y="-34" w="1" h="16" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
   <!--layer id="hide.for.vic" x="27" y="71" image="none" ghost="1" alpha="0"/-->
 	<layer id="player.vis.blocker" x="-354" y="-32" w="72" h="15" relatx="1" relaty="1" image="none" cursor="cur.normal" alpha="0"/>
 	
-	<text id="pledit.info" x="-181" y="-32" h="19" w="116" relatx="1" relaty="1" display="PE_Info" font="sarpanch" fontsize="14" valign="middle" align="center" 
+	<text id="pledit.info" x="-181" y="-34" h="19" w="116" relatx="1" relaty="1" display="PE_Info" font="sarpanch" fontsize="14" valign="middle" align="center" 
 	rightclickaction="trackmenu" color="black" alpha="255" cursor="cur.normal" antialias="0"/>
 
-	<group id="pledit.miniplayback.buttons" x="-276" y="-34" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/>
+	<group id="pledit.miniplayback.buttons" x="-276" y="-36" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/>
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
