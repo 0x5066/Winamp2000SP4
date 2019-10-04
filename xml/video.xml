@@ -28,7 +28,14 @@
 	colorosc2="0,255,0"
 	colorosc3="0,255,0"
 	colorosc4="0,255,0"
-	colorosc5="0,255,0" relatx="1" mode="1" peaks="0" bandwidth="wide" falloff="2"/>
+	colorosc5="0,255,0" relatx="1" mode="2" oscstyle="lines"/>
+	<vis id="shade.vis" x="-74" y="3" w="72" h="21" alpha="255" cursor="cur.normal" gammagroup="visualizers"
+	colorallbands="0,255,0"
+	colorosc1="0,255,0"
+	colorosc2="0,255,0"
+	colorosc3="0,255,0"
+	colorosc4="0,255,0"
+	colorosc5="0,255,0" relatx="1" mode="2" oscstyle="lines" flipv="1"/>
 	<layer id="player.vis.blocker" x="-74" y="3" w="72" h="21" relatx="1" image="none" cursor="cur.normal" alpha="0"/>
 	<rect id="hide.for.gordon" x="-3" y="5" w="1" h="19" relatx="1" color="0,0,0" filled="1" ghost="1" gammagroup="display"/>
 </groupdef>

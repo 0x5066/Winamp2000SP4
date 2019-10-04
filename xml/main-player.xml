@@ -179,7 +179,7 @@
 <layout id="normal" minimum_h="242" minimum_w="550" maximum_w="10000" w="550" h="242" desktopalpha="1" droptarget="pldr" linkwidth="shade" appbar="top|bottom" >
 	<group id="player.normal.group.main" x="0" y="0" h="242" w="0" relatw="1" ghost="1"/>
 
-  <layer id="resizer.right" x="-10" relatx="1" y="37" w="10" h="-32" relath="1" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
+  <layer id="resizer.right" x="-4" relatx="1" y="37" w="4" h="-32" relath="1" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
 </layout>
 
 	<include file="main-player-shade.xml" />

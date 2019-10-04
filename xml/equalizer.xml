@@ -108,10 +108,11 @@
 	  <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
 	  
 	  <layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
+	  	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
   
   <group id="eq.shade.volbalance" x="0" y="6" w="231" h="28" cursor="cur.normal"/>
 
-	<layer id="eq.background.grip.mid" x="-60" y="0" w="4" h="35" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" alpha="253" resize="right" cursor="cur.posbar" />
+	<layer id="eq.background.grip.mid" x="-70" y="0" w="4" h="35" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" alpha="253" resize="right" cursor="cur.posbar" />
 
 	<button id="eq.button.switch" action="SWITCH" param="NORMAL" x="-45" y="-1" relatx="1" image="window.shade.button.switch" hoverimage="window.shade.button.switch.h" 
 	downimage="window.shade.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>

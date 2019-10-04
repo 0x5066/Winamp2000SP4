@@ -20,7 +20,7 @@
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" RELATX="1" RELATY="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 	
-	  <playlistPlus id="main.pl" x="8" y="10" w="-70" h="19" relatw="1" font="sarpanch" fontsize="15" linespacing="1" color="0,0,0" antialias="0" 
+	  <playlistPlus id="main.pl" x="8" y="10" w="-70" h="16" relatw="1" font="sarpanch" fontsize="15" linespacing="1" color="0,0,0" antialias="0" 
 			playcolor="0,0,0" sysregion="1"/>
 	<layer id="pledit.background.grip.mid" x="-53" y="0" w="4" h="35" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="255" cursor="cur.posbar"/>
 
