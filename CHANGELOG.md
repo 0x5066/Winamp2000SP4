@@ -6,6 +6,18 @@ What's New?
 - New: Themes! Including those that were present in Windows 9x/2k/XP
 - New: Titlebar beam gradient can be colored independently
 
+# v1.03.7
+What's New?
+
+- New: Remade the bottom Playlist Editor area so it doesn't look all in one place (the buttons and total time display are still in one and there are no plans to seperate them in any way)
+- New: Changed how the Visualizer in the Playlist Editor looks so it more or less simulates the Sound Recorder from Windows XP
+- New: Remade the Video infobar so it almost looks like the Playlist Editor bottom area where things are seperated
+- New: Added a Mini Visualizer to the Video infobar for your enjoyment (also emulates the Sound Recorder's Oscilloscope display more or less)
+- New: Added the playstatus from the Main Window to the winshade mode of the Main Window
+- Fixed: A long standing issue where the text of the Playlist Editor's winshademode was too big and green-ish
+- Fixed: A long standing issue where the resizers were too big for the windows themselves (also added a right horizontal resizer for the rest of the windows)
+- Misc: Slight remake of the playstatus in the Main Window
+
 # v1.03.6
 What's New?
 
