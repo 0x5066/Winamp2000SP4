@@ -42,7 +42,7 @@
 
 
 	
-<layout id="normal" background="component.basetexture" desktopalpha="0" minimum_h="242" minimum_w="550" appbar="top|bottom|left|right">
+<layout id="normal" background="component.basetexture" desktopalpha="0" minimum_h="116" minimum_w="275" appbar="top|bottom|left|right">
 	<Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" />
 		<sendparams target="wasabi.frame.layout.base.bg" h="13" alpha="255" /> <!-- PL window specific -->
 	<component x="6" y="26" w="-12" h="-59" relatw="1" relath="1" noshowcmdbar="1" autoopen="1" autoclose="1" param="guid:{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}"/>

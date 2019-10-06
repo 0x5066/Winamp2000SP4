@@ -1,6 +1,6 @@
 <container id="AVS" name="Visualizer" dynamic="1" component="guid:{0000000A-000C-0010-FF7B-01014263450C}" default_w="354">
 	
-<layout id="normal" background="component.basetexture" desktopalpha="0" minimum_h="242" minimum_w="350" appbar="top|bottom|left|right">
+<layout id="normal" background="component.basetexture" desktopalpha="0" minimum_h="116" minimum_w="275" appbar="top|bottom|left|right">
 	<Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" />
     <sendparams target="componentname" default="VISUALIZER"/>
 		<sendparams target="wasabi.frame.layout.base.bg" h="40" /> <!-- PL window specific -->
