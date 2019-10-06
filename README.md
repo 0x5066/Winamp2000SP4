@@ -15,3 +15,4 @@ TODO:
  - [ ] Themes. (WIP)
  - [ ] Reduce the hitbox of the window resizers
  - [x] Think about UI consistency
+ - [ ] Beat Visualizer from Winamp Modern?
