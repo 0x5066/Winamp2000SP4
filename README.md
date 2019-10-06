@@ -13,6 +13,6 @@ TODO:
 
  - [ ] Add new gammagroups which more or less represent the same colorgroups found within Windows Classic (WIP)
  - [ ] Themes. (WIP)
- - [ ] Reduce the hitbox of the window resizers
+ - [x] Reduce the hitbox of the window resizers (Where's the left horizontal resizer god damn it?!)
  - [x] Think about UI consistency
  - [ ] Beat Visualizer from Winamp Modern?
