@@ -118,7 +118,7 @@
 	colorosc3="0,255,0"
 	colorosc4="0,255,0"
 	colorosc5="0,255,0"
-	/>
+	fps="60"/>
 	<rect id="hide.for.gordon" x="-283" y="-34" w="1" h="16" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
   <!--layer id="hide.for.vic" x="27" y="71" image="none" ghost="1" alpha="0"/-->
 	<layer id="player.vis.blocker" x="-354" y="-32" w="72" h="15" relatx="1" relaty="1" image="none" cursor="cur.normal" alpha="0"/>
