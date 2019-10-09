@@ -1,5 +1,5 @@
 # Winamp 2000 SP4
-This is a Winamp Modern skin which was based on Victhor's [Winamp Classic Modern](https://www.deviantart.com/victhor/art/Winamp-Classic-Modern-by-Victhor-805797724), the "source code" is uploaded to GitHub to easily allow for anyone else to make mods out of this, or to simply help me out on some of the stupid things I haven't yet gotten around to fix or add. :)
+This is a Winamp Modern skin which is based on Victhor's [Winamp Classic Modern](https://www.deviantart.com/victhor/art/Winamp-Classic-Modern-by-Victhor-805797724), the "source code" is uploaded to GitHub to easily allow for anyone else to make mods out of this, or to simply help me out on some of the stupid things I haven't yet gotten around to fix or add. :)
 
 ![Screenshot](https://github.com/The1Freeman/Winamp2000SP4/blob/master/screenshot.png?raw=true)
 
@@ -16,3 +16,4 @@ TODO:
  - [x] Reduce the hitbox of the window resizers (Where's the left horizontal resizer god damn it?!)
  - [x] Think about UI consistency
  - [ ] Beat Visualizer from Winamp Modern?
+ - [ ] Just for my own fun/experimentation (and for some more suffering), rebuild the sound recorder from Windows XP
