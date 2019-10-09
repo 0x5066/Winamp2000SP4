@@ -170,7 +170,6 @@
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>
 	<layer id="player.vis.trigger" x="27" y="39" w="143" h="32" image="none" cursor="cur.normal"/>
 
-  <script file="scripts\pauseblink.maki"/>
 
 </groupdef>
 

@@ -84,7 +84,6 @@
 	<text id="player.display.actioninfo" x="175" y="8" w="-179" h="20" relatw="1" font="sarpanch" fontsize="15" align="left" color="black" alpha="255" cursor="cur.normal" antialias="0"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
-  <script file="scripts\pauseblink.maki"/>
 </groupdef>
 
 <layout id="shade" w="550" h="35" minimum_w="550" minimum_h="35" maximum_w="10000" desktopalpha="1" droptarget="pldr" linkwidth="normal" appbar="top|bottom">
