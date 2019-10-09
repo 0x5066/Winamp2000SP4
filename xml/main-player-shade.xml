@@ -68,7 +68,7 @@
 	colorosc2="0,255,0"
 	colorosc3="0,255,0"
 	colorosc4="0,255,0"
-	colorosc5="0,255,0"/>
+	colorosc5="0,255,0" fps="60"/>
   <rect id="hide.for.gordon" x="79" y="9" w="1" h="17" color="0,0,0" filled="1" ghost="1" fps="60" gammagroup="display"/>
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>
