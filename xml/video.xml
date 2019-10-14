@@ -18,7 +18,7 @@
 	<Button action="VID_Misc" x="79" y="4" rectrgn="1" image="vid.button.misc.n" hoverImage="vid.button.misc.h"
 		downImage="vid.button.misc.d" tooltip="Options" alpha="255" cursor="cur.normal"/>
 
-	<text id="info" display="VID_Info" ticker="1" x="110" y="4" h="19" w="-182" relatw="1" 
+	<text id="info" display="VID_Info" ticker="1" x="110" y="4" h="19" w="-190" relatw="1" 
 	align="left" color="0,0,0" dblclickaction="trackinfo" font="sarpanch" move="1" fontsize="14" cursor="cur.normal" antialias="0"/>
 	<layer x="-76" y="3" w="75" h="23" relatx="1" image="window.vidvis.display.bg"/>
 	
