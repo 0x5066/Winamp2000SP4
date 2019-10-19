@@ -1,4 +1,4 @@
-<container id="MLibrary" name="Media Library" component="guid:{6B0EDF80-C9A5-11D3-9F26-00C04F39FFC6}" default_visible="0" default_x="550" default_y="242" default_w="550" default_h="484">
+<container id="MLibrary" name="REVOCS™ Media Library" component="guid:{6B0EDF80-C9A5-11D3-9F26-00C04F39FFC6}" default_visible="0" default_x="550" default_y="242" default_w="550" default_h="484">
 	
 <groupdef id="mlibrary.content.group">
 	<component x="0" y="0" w="2" relatw="1" h="2" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{6B0EDF80-C9A5-11D3-9F26-00C04F39FFC6}" />
