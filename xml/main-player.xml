@@ -10,35 +10,35 @@
 	<layer id="player.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2" />
 	<layer id="player.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2" />
 
-  <grid id="player.songticker.bg" x="221" y="50" h="21" w="-247" relatw="1" left="player.songticker.bg.left" middle="player.songticker.bg.middle" right="player.songticker.bg.right" move="1" cursor="cur.normal" antialias="0"/>
+  <!--grid id="player.songticker.bg" x="221" y="50" h="21" w="-247" relatw="1" left="player.songticker.bg.left" middle="player.songticker.bg.middle" right="player.songticker.bg.right" move="1" cursor="cur.normal" antialias="0"/-->
 
-	<layer id="player.bg.volume" x="217" y="113" image="player.bg.vol" tooltip="Volume Bar"/>
+	<layer id="player.bg.volume" x="207" y="113" image="player.bg.vol" tooltip="Volume Bar"/>
 
   <Animatedlayer id="main.volume.anim" x="223" y="116" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
-	<slider id="player.slider.volume.shadow" action="VOLUME" x="218" y="110" w="130" h="26" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
-	<slider id="player.slider.volume" action="VOLUME" x="207" y="110" w="142" h="26" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
+	<slider id="player.slider.volume.shadow" action="VOLUME" x="208" y="110" w="130" h="26" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
+	<slider id="player.slider.volume" action="VOLUME" x="197" y="110" w="142" h="26" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
 
-	<layer id="eq.bg.pan" x="355" y="113" image="player.bg.balance" tooltip="Panning Bar"/>
-  <Animatedlayer id="main.balance.anim" x="360" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
-	<slider id="eq.slider.pan.shadow" action="PAN" x="356" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
-	<slider id="eq.slider.pan" action="PAN" x="346" y="110" w="97" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
+	<layer id="eq.bg.pan" x="345" y="113" image="player.bg.balance" tooltip="Panning Bar"/>
+  <Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
+	<slider id="eq.slider.pan.shadow" action="PAN" x="346" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
+	<slider id="eq.slider.pan" action="PAN" x="336" y="110" w="97" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 	
   <!--script file="scripts\color_themes_patch_fix.maki"/--> <!-- This script makes the switch between the safe layer and the multicolor-bar (only seen on default theme) -->
 
   
-	<layer id="player.button.eq.shadow" x="-111" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
-	<layer id="player.button.eq" x="-111" y="107" relatx="1" image="player.normal.button.eq" alpha="255" cursor="cur.normal"/>
-  <NStatesButton id="player.button.eq.light" x="-113" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="equalizer" nstates="2" cfgvals="0;1" tooltip="Toggle Graphical Equalizer" cursor="cur.normal"/>
+	<layer id="player.button.eq.shadow" x="-110" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
+	<layer id="player.button.eq" x="-110" y="107" relatx="1" image="player.normal.button.eq" alpha="255" cursor="cur.normal"/>
+  <NStatesButton id="player.button.eq.light" x="-112" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="equalizer" nstates="2" cfgvals="0;1" tooltip="Toggle Graphical Equalizer" cursor="cur.normal"/>
 
-  <layer id="player.button.pl.shadow" x="-64" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
-  <layer id="player.button.pl" x="-64" y="107" relatx="1" image="player.normal.button.pl" alpha="255" cursor="cur.normal"/>
-  <NStatesButton id="player.button.pl.light" x="-67" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
+  <layer id="player.button.pl.shadow" x="-63" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
+  <layer id="player.button.pl" x="-63" y="107" relatx="1" image="player.normal.button.pl" alpha="255" cursor="cur.normal"/>
+  <NStatesButton id="player.button.pl.light" x="-66" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
 
-	<slider id="player.slider.seek.shadow" action="SEEK" x="19" y="139" w="-36" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.shadow" hoverthumb="player.seeker.slider.shadow" downthumb="player.seeker.slider.shadow" rectrgn="1"/>
-  <layer id="player.seek.cursor" x="19" y="139" w="-36" h="34" relatw="1" image="none" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
-	<slider id="player.slider.seek" action="SEEK" x="19" y="139" w="-36" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
-	<slider id="player.slider.seek.ghost" action="SEEK" x="19" y="139" w="-36" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal"/>
+	<slider id="player.slider.seek.shadow" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.shadow" hoverthumb="player.seeker.slider.shadow" downthumb="player.seeker.slider.shadow" rectrgn="1"/>
+  <layer id="player.seek.cursor" x="26" y="139" w="-47" h="34" relatw="1" image="none" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
+	<slider id="player.slider.seek" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
+	<slider id="player.slider.seek.ghost" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal"/>
 
 	<layer id="player.button.open.bg" x="242" y="175" image="player.button.eject.bg" ghost="1" alpha="255"/>
 
@@ -87,7 +87,7 @@
 	
 	<group id="player.normal.group.display" x="21" y="49" h="82" w="183" alpha="255"/>
 	<group id="player.normal.group.songticker" x="217" y="43" h="31" w="-2" relatw="1" alpha="255"/>
-	<group id="player.normal.group.songinfo" x="217" y="78" h="26" w="-235" relatw="1" alpha="255"/>
+	<group id="player.normal.group.songinfo" x="207" y="78" h="26" w="-235" relatw="1" alpha="255"/>
 
 </groupdef>
 
@@ -112,9 +112,9 @@
 
 
 <groupdef id="player.normal.group.songticker">
-	<SongTicker id="player.display.songname" x="24" y="11" w="-263" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
+	<SongTicker id="player.display.songname" x="14" y="10" w="-253" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="22" y="2" w="-263" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="12" y="1" w="-253" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
