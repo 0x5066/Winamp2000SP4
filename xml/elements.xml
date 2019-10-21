@@ -16,6 +16,9 @@
   <cursor id="cur.restopleft" bitmap="cursors\restopleft.png" hotspot_x="7" hotspot_y="7"/>
   <cursor id="cur.resvert" bitmap="cursors\resvert.png" hotspot_x="4" hotspot_y="10"/>
 
+	<!--ragyovis-->
+	
+	<bitmap id="ragyovis.bg" file="images/ragyovisualizer/ragyovis_bg.png" x="0" y="0" w="474" h="233" gammagroup="none"/>
 	
 	<!-- fonts -->
 

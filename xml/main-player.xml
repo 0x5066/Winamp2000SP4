@@ -22,7 +22,7 @@
 	<layer id="eq.bg.pan" x="345" y="113" image="player.bg.balance" tooltip="Panning Bar"/>
   <Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
 	<slider id="eq.slider.pan.shadow" action="PAN" x="346" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
-	<slider id="eq.slider.pan" action="PAN" x="336" y="110" w="97" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
+	<slider id="eq.slider.pan" action="PAN" x="345" y="110" w="82" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 	
   <!--script file="scripts\color_themes_patch_fix.maki"/--> <!-- This script makes the switch between the safe layer and the multicolor-bar (only seen on default theme) -->
 
@@ -52,12 +52,12 @@
 
   <!-- Shuffle and Repeat buttons gfx and light indicators handled by script -->
 
-  <NStatesButton id="button.shuffle" x="-253" y="174" w="119" h="48" relatx="1" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" cfgvals="0;1" nstates="2" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." tooltip="Toggle Shuffle" alpha="255" cursor="cur.normal"/>
-	<togglebutton id="shuffle.light" x="-258" y="170" w="48" h="48" relatx="1" image="repeat.light.off" activeImage="repeat.light.on" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
+  <NStatesButton id="button.shuffle" x="-253" y="175" w="119" h="48" relatx="1" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" cfgvals="0;1" nstates="2" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." tooltip="Toggle Shuffle" alpha="255" cursor="cur.normal"/>
+	<togglebutton id="shuffle.light" x="-258" y="171" w="48" h="48" relatx="1" image="repeat.light.off" activeImage="repeat.light.on" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
 
-	<NStatesButton id="button.repeat" x="-134" y="174" relatx="1" image="repeat.n." hoverimage="repeat.h." downimage="repeat.d."
+	<NStatesButton id="button.repeat" x="-134" y="175" relatx="1" image="repeat.n." hoverimage="repeat.h." downimage="repeat.d."
 		rectrgn="1" nstates="3" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" cfgvals="0;1;-1" tooltip="Toggle Repeat" alpha="255" cursor="cur.normal"/>
-	<togglebutton id="repeat.light" x="-147" y="170" relatx="1" image="repeat.light.off" activeImage="repeat.light.on" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"/>
+	<togglebutton id="repeat.light" x="-147" y="171" relatx="1" image="repeat.light.off" activeImage="repeat.light.on" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"/>
 
 	<layer id="about.bg" x="-71" y="175" relatx="1" image="about.bg" alpha="255" ghost="1"/>
 	<togglebutton id="player.button.about" x="-63" y="174" relatx="1" image="button.about.n" hoverimage="button.about.h" downimage="button.about.d" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" alpha="255" tooltip="About Winamp / Toggle Library" cursor="cur.normal"/>
@@ -132,8 +132,8 @@
 	<layer id="songinfo.frequency.label" x="128" y="3" image="songinfo.frequency.label" ghost="1" alpha="255"/>
 	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="8" w="23" h="14" font="numbers" fontsize="15" color="black" align="left" ghost="1" antialias="0"/>
 	
-	<layer id="songinfo.mono" x="-122" y="3" relatx="1" image="songinfo.mono.off" ghost="1" alpha="255"/>
-	<layer id="songinfo.stereo.srrnd" x="-68" y="3" relatx="1" image="songinfo.stereo.off" ghost="1" alpha="255"/>
+	<layer id="songinfo.mono" x="-110" y="3" relatx="1" image="songinfo.mono.off" ghost="1" alpha="255"/>
+	<layer id="songinfo.stereo.srrnd" x="-52" y="3" relatx="1" image="songinfo.stereo.off" ghost="1" alpha="255"/>
 </groupdef>
 
 <groupdef id="player.normal.group.display"  cursor="cur.normal">
