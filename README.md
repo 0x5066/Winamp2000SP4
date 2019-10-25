@@ -7,8 +7,7 @@ Don't mind that text file, I've been too lazy to remove it.
 
 Changelog is [here](https://github.com/The1Freeman/Winamp2000SP4/blob/master/CHANGELOG.md)
 
-If you want to find out who I appreciate the most who have helped me do this thing in my free time, read the [SPECIALTHANKS.MD]
-(https://github.com/The1Freeman/Winamp2000SP4/blob/master/SPECIALTHANKS.md) and check them out as well, they're awesome people in my opinion.
+If you want to find out who I appreciate the most who have helped me do this thing in my free time, read the [SPECIALTHANKS.MD](https://github.com/The1Freeman/Winamp2000SP4/blob/master/SPECIALTHANKS.md) and check them out as well, they're awesome people in my opinion.
 
 Latest release can be found [here](https://github.com/The1Freeman/Winamp2000SP4/releases)
 
