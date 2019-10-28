@@ -19,7 +19,8 @@
 	<!--ragyovis-->
 	
 	<bitmap id="ragyovis.bg" file="images/ragyovisualizer/ragyovis_bg.png" x="0" y="0" w="474" h="233" gammagroup="none"/>
-	
+	<bitmap id="ragyovis_hair_animatedlayer.bg" file="images/ragyovisualizer/ragyovis_hair_animatedlayer.png" x="0" y="0" w="474" h="5126" gammagroup="none"/>
+
 	<!-- fonts -->
 
   <truetypefont id="sarpanch" file="fonts\tahomaXP.ttf" allowmapping="1"/>
