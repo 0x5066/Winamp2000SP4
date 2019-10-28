@@ -1,15 +1,18 @@
 #include <lib/std.mi>
 
 Global Group frameGroup;
-Global AnimatedLayer ragyoHair;
-Global int totalFrames, lastBeat;
+Global AnimatedLayer ragyoHairL, ragyoHairR;
+Global int totalFramesL, totalFramesR, lastBeatL, lastBeatR;
 Global Timer beatTimer;
 
 System.onScriptLoaded() {
   frameGroup = getScriptGroup();
-  ragyoHair = frameGroup.findObject("ragyovis_hair.animatedlayer");
-  totalFrames = ragyoHair.getLength() - 1;
-  lastBeat = 0;
+  ragyoHairL = frameGroup.findObject("ragyovis_hair.animatedlayerL");
+  ragyoHairR = frameGroup.findObject("ragyovis_hair.animatedlayerR");
+  totalFramesL = ragyoHairL.getLength() - 1;
+  totalFramesR = ragyoHairR.getLength() - 1;
+  lastBeatL = 0;
+  lastBeatR = 0;
 
   beatTimer = new Timer;
   beatTimer.setDelay(17);
@@ -21,13 +24,21 @@ System.onScriptUnloading() {
 }
 
 beatTimer.onTimer() {
-  double beatValue = (System.getLeftVuMeter() + System.getRightVuMeter()) / (2 * 255);
-  int ragyoFrame = beatValue * (totalFrames + 1);
+  double beatValueL = System.getLeftVuMeter() / 255;
+  double beatValueR = System.getRightVuMeter() / 255;
 
-  if (ragyoFrame > totalFrames) ragyoFrame = totalFrames;
-  if (ragyoFrame < lastBeat) ragyoFrame = lastBeat - 1;
+  int ragyoFrameL = beatValueL * (totalFramesL + 1);
+  int ragyoFrameR = beatValueR * (totalFramesR + 1);
 
-  lastBeat = ragyoFrame;
+  if (ragyoFrameL > totalFramesL) ragyoFrameL = totalFramesL;
+  if (ragyoFrameL < lastBeatL) ragyoFrameL = lastBeatL - 1;
 
-  ragyoHair.gotoframe(ragyoFrame);
+  if (ragyoFrameR > totalFramesR) ragyoFrameR = totalFramesR;
+  if (ragyoFrameR < lastBeatR) ragyoFrameR = lastBeatR - 1;
+
+  lastBeatL = ragyoFrameL;
+  lastBeatR = ragyoFrameR;
+
+  ragyoHairL.gotoframe(ragyoFrameL);
+  ragyoHairR.gotoframe(ragyoFrameR);
 }
