@@ -20,7 +20,7 @@
 </groupdef>
 
 
-<container id="ragyo" name="REVOCS™ Ragyo Visualizer" default_visible="0">
+<container id="ragyo" name="REVOCS Ragyo Visualizer" default_visible="0">
 
 
 <layout id="normal" minimum_w="482" minimum_h="261" h="261" w="482" maximum_w="482" maximum_h="261">
