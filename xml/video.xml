@@ -1,4 +1,4 @@
-<container id="Video" name="REVOCS™ Video Player" component="guid:{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}" default_visible="0">
+<container id="Video" name="A.P.E Video Player" component="guid:{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}" default_visible="0">
 
 <groupdef id="vid.bottom.group">
 
@@ -23,19 +23,19 @@
 	<layer x="-76" y="3" w="75" h="23" relatx="1" image="window.vidvis.display.bg"/>
 	
 	<vis id="shade.vis" x="-75" y="4" w="73" h="21" alpha="255" cursor="cur.normal" gammagroup="visualizers"
-	colorallbands="0,255,0"
-	colorosc1="0,255,0"
-	colorosc2="0,255,0"
-	colorosc3="0,255,0"
-	colorosc4="0,255,0"
-	colorosc5="0,255,0" relatx="1" mode="2" oscstyle="lines" fps="5"/>
+	colorallbands="232,186,0"
+	colorosc1="252,201,202"
+	colorosc2="233,169,169"
+	colorosc3="215,136,137"
+	colorosc4="195,104,105"
+	colorosc5="177,72,71" relatx="1" mode="2" oscstyle="lines" fps="10"/>
 	<vis id="shade.vis" x="-75" y="4" w="73" h="21" alpha="255" cursor="cur.normal" gammagroup="visualizers"
-	colorallbands="0,255,0"
-	colorosc1="0,255,0"
-	colorosc2="0,255,0"
-	colorosc3="0,255,0"
-	colorosc4="0,255,0"
-	colorosc5="0,255,0" relatx="1" mode="2" oscstyle="lines" flipv="1" fps="5"/>
+	colorallbands="232,186,0"
+	colorosc1="252,201,202"
+	colorosc2="233,169,169"
+	colorosc3="215,136,137"
+	colorosc4="195,104,105"
+	colorosc5="177,72,71" relatx="1" mode="2" oscstyle="lines" flipv="1" fps="10"/>
 	<layer id="player.vis.blocker" x="-74" y="3" w="72" h="21" relatx="1" image="none" cursor="cur.normal" alpha="0"/>
 	<!--rect id="hide.for.gordon" x="-3" y="5" w="1" h="19" relatx="1" color="0,0,0" filled="1" ghost="1" gammagroup="display"/-->
 </groupdef>

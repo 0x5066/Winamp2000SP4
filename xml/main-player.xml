@@ -106,7 +106,7 @@
 	<layer id="titlebar.stripes.tips.right" x="-20" y="3" w="29" image="titlebar.stripes.right" ghost="1" activealpha="0" inactivealpha="0"/>
 	<text id="titlebar.winamptxt" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
     color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
-	<text id="titlebar.wacuptxt" x="22" y="4" text="REVOCS™ Media Player" w="300" h="18" font="titlebar" fontsize="15"
+	<text id="titlebar.wacuptxt" x="22" y="4" text="A.P.E Media Player" w="300" h="18" font="titlebar" fontsize="15"
     color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
 </groupdef>
 
@@ -166,28 +166,28 @@
 
 	<!--rect id="plssayer.vis" x="27" y="41" w="143" h="31" color="0,0,250" filled="0"/-->
 	<vis id="player.vis" x="27" y="39" w="143" h="32" fps="60" cursor="cur.normal" gammagroup="visualizers"
-	ColorBand1="255,4,55"
-    ColorBand2="242,5,55"
-    ColorBand3="229,6,55"
-    ColorBand4="217,7,57"
-    ColorBand5="203,10,56"
-    ColorBand6="190,10,58"
-    ColorBand7="177,12,58"
-    ColorBand8="164,13,58"
-    ColorBand9="151,14,59"
-    ColorBand10="138,16,59"
-    ColorBand11="125,16,59"
-    ColorBand12="112,18,60"
-    ColorBand13="99,19,61"
-    ColorBand14="86,21,61"
-    ColorBand15="73,21,61"
-    ColorBand16="60,23,62"
-	colorbandpeak="190,10,58"
-	colorosc5="112,18,60"
-	colorosc4="164,13,58"
-	colorosc3="203,10,56"
-	colorosc2="229,6,55"
-	colorosc1="255,4,55"
+	ColorBand1="247,207,0"
+    ColorBand2="240,195,0"
+    ColorBand3="232,186,0"
+    ColorBand4="224,175,0"
+    ColorBand5="216,165,0"
+    ColorBand6="207,154,0"
+    ColorBand7="200,144,0"
+    ColorBand8="191,135,0"
+    ColorBand9="184,124,0"
+    ColorBand10="175,114,0"
+    ColorBand11="167,103,0"
+    ColorBand12="160,92,0"
+    ColorBand13="152,82,0"
+    ColorBand14="143,73,0"
+    ColorBand15="136,62,0"
+    ColorBand16="128,52,0"
+	colorbandpeak="184,124,0"
+	colorosc1="252,201,202"
+	colorosc2="233,169,169"
+	colorosc3="215,136,137"
+	colorosc4="195,104,105"
+	colorosc5="177,72,71"
 	/>
 	<layer id="hide.for.gordon" x="169" y="39" image="hide.for.gordon" ghost="1"/>
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>
