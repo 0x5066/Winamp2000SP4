@@ -1,4 +1,4 @@
-<container id="equalizer" name="REVOCS™ Equalizer" default_visible="1" default_x="0" default_y="242" default_w="550">
+<container id="equalizer" name="REVOCS Equalizer" default_visible="1" default_x="0" default_y="242" default_w="550">
 
 <groupdef id="equalizer.normal.group.main.content">
   <layer id="eq.normal.bg" x="0" y="-31" image="eq.normal.bg" move="1" sysregion="1" alpha="253"/>
