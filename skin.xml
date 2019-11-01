@@ -3,7 +3,7 @@
 <WinampAbstractionLayer version="1.35">
 	<skininfo>
 		<version>v1.03.7</version>
-		<name>REVOCS™ Media Player</name>
+		<name>A.P.E Media Player</name>
 		<comment>Modernizing the good old Windows Classic</comment>
 		<author>Graphics by Zsolt Vajda // Coding by Victor Brocaz // Modified by Gordon Freeman</author>
 		<email>-</email>
@@ -40,7 +40,7 @@
 	<include file="xml/about.xml"/>
 	<include file="xml/color-themes.xml"/>
 	<include file="xml/window-overrides.xml"/>
-	<include file="xml/ragyo.xml"/>
+	<include file="xml/zerotwo.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
