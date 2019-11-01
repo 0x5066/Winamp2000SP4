@@ -16,6 +16,12 @@
   <cursor id="cur.restopleft" bitmap="cursors\restopleft.png" hotspot_x="7" hotspot_y="7"/>
   <cursor id="cur.resvert" bitmap="cursors\resvert.png" hotspot_x="4" hotspot_y="10"/>
 
+	<!--beatvis-->
+	
+	<bitmap id="beatvis.bg" file="images/beatvis/beatvis_bg.png" x="0" y="0" w="156" h="35" gammagroup="none"/>
+	<bitmap id="beatvis_animatedlayerL.bg" file="images/beatvis/beat_left.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
+	<bitmap id="beatvis_animatedlayerR.bg" file="images/beatvis/beat_right.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
+
 	
 	<!-- fonts -->
 
