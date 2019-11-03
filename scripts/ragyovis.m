@@ -31,10 +31,11 @@ beatTimer.onTimer() {
   int ragyoFrameR = beatValueR * (totalFramesR + 1);
 
   if (ragyoFrameL > totalFramesL) ragyoFrameL = totalFramesL;
-  if (ragyoFrameL < lastBeatL) ragyoFrameL = (ragyoFrameL + lastBeatL) / 2;
+  if (ragyoFrameL < lastBeatL) ragyoFrameL = (ragyoFrameL + lastBeatL) / 3;
+
 
   if (ragyoFrameR > totalFramesR) ragyoFrameR = totalFramesR;
-  if (ragyoFrameR < lastBeatR) ragyoFrameR = (ragyoFrameR + lastBeatR) / 2;
+  if (ragyoFrameR < lastBeatR) ragyoFrameR = (ragyoFrameR + lastBeatR) / 3;
 
   lastBeatL = ragyoFrameL;
   lastBeatR = ragyoFrameR;
