@@ -1,6 +1,7 @@
 
 <groupdef id="ragyovis" x="-2" y="-2" w="168" h="67" relatw="1" relath="1">
 
+
 	<layer id="beatvis.bg" x="2" y="2" image="beatvis.bg" ghost="1"/>
 	<vis id="shade.vis" x="2" y="2" w="156" h="35" alpha="200" cursor="cur.normal" gammagroup="visualizers" fps="120"
 	colorallbands="0,0,0"
@@ -25,6 +26,7 @@
 
 <layout id="normal" minimum_w="168" minimum_h="67" w="168" h="67" maximum_w="168" maximum_h="67">
 	<Wasabi:Standardframe:NoStatus x="0" y="0" w="168" h="67" content="ragyovis"/>
+	<layer id="beatvishack" x="0" y="0" image="beatvishack" ghost="1"/>	
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
