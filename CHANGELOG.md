@@ -6,6 +6,12 @@ What's New?
 - New: Themes! Including those that were present in Windows 9x/2k/XP
 - New: Titlebar beam gradient can be colored independently
 
+# v1.03.8 Upcoming
+What's New?
+
+- New: Massive overhaul within the Main Player window
+- New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
+
 # v1.03.7
 What's New?
 
