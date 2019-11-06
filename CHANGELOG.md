@@ -11,6 +11,7 @@ What's New?
 
 - New: Massive UI overhaul within the Main Player window
 - New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
+- New: Made the songticker background be it's seperate thing
 
 # v1.03.7
 What's New?

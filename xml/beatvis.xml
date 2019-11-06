@@ -1,7 +1,6 @@
 
 <groupdef id="ragyovis" x="-2" y="-2" w="168" h="67" relatw="1" relath="1">
 
-
 	<layer id="beatvis.bg" x="2" y="2" image="beatvis.bg" ghost="1"/>
 	<vis id="shade.vis" x="4" y="4" w="152" h="31" alpha="200" cursor="cur.normal" gammagroup="visualizers" fps="120"
 	colorallbands="0,0,0"
