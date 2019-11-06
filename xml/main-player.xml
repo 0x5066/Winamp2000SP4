@@ -113,9 +113,9 @@
 
 <groupdef id="player.normal.group.songticker">
 	<grid id="sngtic.bg" x="0" y="6" w="328" h="22" left="sngtic.left" middle="sngtic.mid" right="sngtic.right" ghost="1" alpha="255"/>
-	<SongTicker id="player.display.songname" x="24" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
+	<SongTicker id="player.display.songname" x="23" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="22" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="21" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
