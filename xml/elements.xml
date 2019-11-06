@@ -15,6 +15,10 @@
   <cursor id="cur.restopright" bitmap="cursors\restopright.png" hotspot_x="7" hotspot_y="7"/>
   <cursor id="cur.restopleft" bitmap="cursors\restopleft.png" hotspot_x="7" hotspot_y="7"/>
   <cursor id="cur.resvert" bitmap="cursors\resvert.png" hotspot_x="4" hotspot_y="10"/>
+  
+	<!--02bg-->
+	
+	<bitmap id="02.bg" file="images/02bg.png" x="0" y="0" w="550" h="242" gammagroup="none"/>
 
 	<!--ragyovis-->
 	
