@@ -9,7 +9,7 @@ What's New?
 # v1.03.8 Upcoming
 What's New?
 
-- New: Massive overhaul within the Main Player window
+- New: Massive UI overhaul within the Main Player window
 - New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
 
 # v1.03.7
@@ -41,7 +41,7 @@ What's New?
 - New: Adjusted Video window's info bar so it doesn't look like it's slapped on the spot
 - New: Proper Winamp and WACUP detection, program icon and name will change whether or not the skin is being used in Winamp/WACUP
 - New: Aligned songinfo and actioninfo to the left instead of that being centered
-- New: Redone the songinfo area to look more like the adress bar in Windows XP's explorer (even includes a winamp icon as a nod to windows explorer)
+- New: Redone the songinfo area to look more like the address bar in Windows XP's explorer (even includes a winamp icon as a nod to windows explorer)
 - New: Reduced font size on the stereo/mono, songinfo display and the shuffle button for UI consistency
 - Fixed: Odd pink coloring that was present on the main window under the WACUP about button (and some other areas which were hard to spot)
 - Fixed: fixed every line containing "alpha="253"" by changing their value to "255"
