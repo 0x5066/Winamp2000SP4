@@ -86,7 +86,7 @@
   <script file="scripts\centerobject.maki" param="songticker.options,1,0"/-->
 	
 	<group id="player.normal.group.display" x="21" y="49" h="82" w="183" alpha="255"/>
-	<group id="player.normal.group.songticker" x="209" y="43" h="31" w="6" relatw="1" alpha="255"/>
+	<group id="player.normal.group.songticker" x="200" y="43" h="31" w="6" relatw="1" alpha="255"/>
 	<group id="player.normal.group.songinfo" x="199" y="76" h="26" w="-235" relatw="1" alpha="255"/>
 
 </groupdef>
@@ -112,9 +112,10 @@
 
 
 <groupdef id="player.normal.group.songticker">
-	<SongTicker id="player.display.songname" x="14" y="10" w="-253" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
+	<grid id="sngtic.bg" x="0" y="6" w="328" h="22" left="sngtic.left" middle="sngtic.mid" right="sngtic.right" ghost="1" alpha="255"/>
+	<SongTicker id="player.display.songname" x="24" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="12" y="1" w="-253" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="22" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
