@@ -10,8 +10,9 @@ What's New?
 What's New?
 
 - New: Massive UI overhaul within the Main Player window
-- New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
 - New: Made the songticker background be it's seperate thing
+- New: Made the posbar backgronud be it's seperate thing
+- New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
 
 # v1.03.7
 What's New?
