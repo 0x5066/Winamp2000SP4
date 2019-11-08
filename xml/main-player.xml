@@ -11,7 +11,7 @@
 	<layer id="player.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2" />
 	<layer id="player.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2" />
 
-
+  	<layer id="02.bg" x="0" y="0" image="02.bg" ghost="1"/>
 
   <!--grid id="player.songticker.bg" x="221" y="50" h="21" w="-247" relatw="1" left="player.songticker.bg.left" middle="player.songticker.bg.middle" right="player.songticker.bg.right" move="1" cursor="cur.normal" antialias="0"/-->
 
@@ -38,6 +38,7 @@
   <layer id="player.button.pl" x="-63" y="107" relatx="1" image="player.normal.button.pl" alpha="255" cursor="cur.normal"/>
   <NStatesButton id="player.button.pl.light" x="-66" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
 
+	<grid id="posbar.bg" x="27" y="151" w="-49" h="4" relatw="1" left="posbar.left" middle="posbar.center" right="posbar.right" />
 	<slider id="player.slider.seek.shadow" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.shadow" hoverthumb="player.seeker.slider.shadow" downthumb="player.seeker.slider.shadow" rectrgn="1"/>
   <layer id="player.seek.cursor" x="26" y="139" w="-47" h="34" relatw="1" image="none" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
 	<slider id="player.slider.seek" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
@@ -206,7 +207,6 @@
 	<group id="player.normal.group.main" x="0" y="0" h="242" w="0" relatw="1" ghost="1"/>
 
   <layer id="resizer.right" x="-4" relatx="1" y="37" w="4" h="-32" relath="1" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
-  	<!--layer id="02.bg" x="0" y="0" image="02.bg" ghost="1"/-->
 </layout>
 
 	<include file="main-player-shade.xml" />
