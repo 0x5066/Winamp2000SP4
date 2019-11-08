@@ -27,6 +27,7 @@
 	colorosc3="215,136,137"
 	colorosc4="195,104,105"
 	colorosc5="177,72,71"
+	oscstyle="dots"
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="thin"
