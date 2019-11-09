@@ -4,7 +4,7 @@
 	<!--layer id="ragyovis.bg" x="0" y="0" image="ragyovis.bg" ghost="1"/-->
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="ragyovis_hair_animatedlayerL.bg" x="0" y="0" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ragyovis_hair_animatedlayerR.bg" x="128" y="0" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
-	<vis id="shade.vis" x="0" y="0" w="256" h="128" alpha="164" cursor="cur.normal" gammagroup="visualizers" fps="666"
+	<vis id="shade.vis" x="0" y="64" w="256" h="64" alpha="256" cursor="cur.normal" gammagroup="visualizers" fps="512"
 	ColorBand16="177,72,71"
     ColorBand15="182,81,80"
     ColorBand14="187,89,88"
@@ -27,9 +27,9 @@
 	colorosc3="215,136,137"
 	colorosc4="195,104,105"
 	colorosc5="177,72,71"
-	oscstyle="dots"
+	oscstyle="solid"
 	peakfalloff="0"
-	falloff="4"
+	falloff="0"
 	bandwidth="thin"
 	peaks="0"/>
 	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
