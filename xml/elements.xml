@@ -21,6 +21,9 @@
 	<bitmap id="ragyovis.bg" file="images/ragyovisualizer/ragyovis_bg.png" x="0" y="0" w="474" h="233" gammagroup="none"/>
 	<bitmap id="ragyovis_hair_animatedlayerL.bg" file="images/ragyovisualizer/ragyovis_hair_animatedlayerL.png" x="0" y="0" w="237" h="5126" gammagroup="none"/>
 	<bitmap id="ragyovis_hair_animatedlayerR.bg" file="images/ragyovisualizer/ragyovis_hair_animatedlayerR.png" x="0" y="0" w="237" h="5126" gammagroup="none"/>
+	<bitmap id="windowborder.top" file="images/uglyvishack.png" x="0" y="0" w="4" h="3" gammagroup="none"/>
+	<bitmap id="windowborder.middle" file="images/uglyvishack.png" x="0" y="4" w="4" h="1" gammagroup="none"/>
+	<bitmap id="windowborder.bottom" file="images/uglyvishack.png" x="0" y="6" w="4" h="3" gammagroup="none"/>	
 	
 	<bitmap id="ryukovis_animatedlayerL.bg" file="images/ryukovisualizer/ryukovis_animatedlayerL.png" x="0" y="0" w="237" h="5126" gammagroup="none"/>
 	<bitmap id="ryukovis_animatedlayerR.bg" file="images/ryukovisualizer/ryukovis_animatedlayerR.png" x="0" y="0" w="237" h="5126" gammagroup="none"/>

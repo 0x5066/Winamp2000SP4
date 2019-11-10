@@ -132,6 +132,10 @@
 
   <group id="wasabi.frame.layout" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
   
+  	<layer id="window.top" x="0" y="0" image="windowborder.top" ghost="1"/>
+	<layer id="window.mid" x="0" y="3" h="151" relath="1" image="windowborder.middle" ghost="1"/>
+	<layer id="window.btm" x="0" y="-3" relaty="1" image="windowborder.bottom" ghost="1"/>
+  
   <layer x="0" y="0" w="20" h="4" image="none" resize="topleft" cursor="cur.restopleft" alpha="0"/>
   <layer x="20" y="0" w="-40" h="4" relatw="1" image="none" resize="top" cursor="cur.resvert" alpha="0"/>
   <layer x="-20" y="0" w="10" h="4" relatx="1" image="none" resize="topright" cursor="cur.restopright" alpha="0"/>
