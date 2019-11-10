@@ -41,9 +41,6 @@
 
 <layout id="normal" minimum_w="520" minimum_h="284" h="284" w="520" maximum_w="520" maximum_h="284">
 	<Wasabi:Standardframe:NoStatus x="0" y="0" h="284" w="520" content="ragyovis"/>
-	<layer id="window.top" x="0" y="0" image="windowborder.top" ghost="1"/>
-	<layer id="window.mid" x="0" y="3" h="151" relath="1" image="windowborder.middle" ghost="1"/>
-	<layer id="window.btm" x="0" y="-3" relaty="1" image="windowborder.bottom" ghost="1"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
