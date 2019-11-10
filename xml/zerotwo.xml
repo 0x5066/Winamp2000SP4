@@ -1,10 +1,10 @@
 
-<groupdef id="ragyovis" x="-2" y="-2" h="157" w="264" relatw="1" relath="1">
+<groupdef id="ragyovis" x="-2" y="-2" h="284" w="520" relatw="1" relath="1">
 
 	<!--layer id="ragyovis.bg" x="0" y="0" image="ragyovis.bg" ghost="1"/-->
-	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="ragyovis_hair_animatedlayerL.bg" x="0" y="0" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
-	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ragyovis_hair_animatedlayerR.bg" x="128" y="0" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
-	<vis id="shade.vis" x="0" y="64" w="256" h="64" alpha="256" cursor="cur.normal" gammagroup="visualizers" fps="512"
+	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="ragyovis_hair_animatedlayerL.bg" x="0" y="0" w="256" h="256" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ragyovis_hair_animatedlayerR.bg" x="256" y="0" w="256" h="256" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
+	<vis id="shade.vis" x="0" y="128" w="512" h="128" alpha="256" cursor="cur.normal" gammagroup="visualizers" fps="512"
 	ColorBand16="177,72,71"
     ColorBand15="182,81,80"
     ColorBand14="187,89,88"
@@ -39,11 +39,11 @@
 <container id="ragyo" name="A.P.E Zero Two Visualizer" default_visible="0">
 
 
-<layout id="normal" minimum_w="264" minimum_h="157" h="157" w="264" maximum_w="264" maximum_h="157">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" h="157" w="264" content="ragyovis"/>
+<layout id="normal" minimum_w="520" minimum_h="284" h="284" w="520" maximum_w="520" maximum_h="284">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" h="284" w="520" content="ragyovis"/>
 	<layer id="window.top" x="0" y="0" image="windowborder.top" ghost="1"/>
-	<layer id="window.mid" x="0" y="3" h="151" relath="-1" image="windowborder.middle" ghost="1"/>
-	<layer id="window.btm" x="0" y="154" relaty="-1" image="windowborder.bottom" ghost="1"/>
+	<layer id="window.mid" x="0" y="3" h="151" relath="1" image="windowborder.middle" ghost="1"/>
+	<layer id="window.btm" x="0" y="-3" relaty="1" image="windowborder.bottom" ghost="1"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
