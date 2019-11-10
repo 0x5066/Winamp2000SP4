@@ -48,7 +48,9 @@
 
 <groupdef id="wasabi.frame.layout">
 
-  
+	<layer id="window.top" x="0" y="0" image="windowborder.top" ghost="1"/>
+	<layer id="window.mid" x="0" y="3" h="151" relath="1" image="windowborder.middle" ghost="1"/>
+	<layer id="window.btm" x="0" y="-3" relaty="1" image="windowborder.bottom" ghost="1"/>
 
 	<layer id="window.titlebar.left" x="0" y="0" resize="left" image="window.normal.titlebar.left" ghost="1" move="0"/>
 	<layer id="window.titlebar.middle" x="267" y="0" w="-538" relatw="1" image="window.normal.titlebar.middle" stretch="1" ghost="1" move="0"/>
@@ -131,6 +133,10 @@
 <groupdef id="wasabi.standardframe.nostatusbar" background="wasabi.frame.basetexture" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus" cursor="cur.normal">
 
   <group id="wasabi.frame.layout" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+  
+  	<layer id="window.top" x="0" y="0" image="windowborder.top" ghost="1"/>
+	<layer id="window.mid" x="0" y="3" h="151" relath="1" image="windowborder.middle" ghost="1"/>
+	<layer id="window.btm" x="0" y="-3" relaty="1" image="windowborder.bottom" ghost="1"/>
   
   <layer x="0" y="0" w="20" h="4" image="none" resize="topleft" cursor="cur.restopleft" alpha="0"/>
   <layer x="20" y="0" w="-40" h="4" relatw="1" image="none" resize="top" cursor="cur.resvert" alpha="0"/>
