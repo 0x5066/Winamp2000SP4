@@ -13,6 +13,7 @@ What's New?
 - New: Made the songticker background be it's seperate thing
 - New: Made the posbar backgronud be it's seperate thing
 - New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
+- Fixed: A bug where if a wasabi window was too small in width, the left hand side edge would disappear
 
 # v1.03.7
 What's New?
