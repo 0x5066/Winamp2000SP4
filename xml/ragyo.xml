@@ -5,17 +5,33 @@
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="ragyovis_hair_animatedlayerL.bg" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ragyovis_hair_animatedlayerR.bg" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<vis id="shade.vis" x="0" y="0" w="474" h="233" alpha="200" cursor="cur.normal" gammagroup="visualizers" fps="120"
-	colorallbands="255,255,255"
+	ColorBand1="255,255,255"
+    ColorBand2="205,166,213"
+    ColorBand3="106,1,242"
+    ColorBand4="8,34,245"
+    ColorBand5="4,166,251"
+    ColorBand6="3,246,118"
+    ColorBand7="80,245,0"
+    ColorBand8="223,245,5"
+    ColorBand9="247,143,5"
+    ColorBand10="254,41,5"
+    ColorBand11="216,34,5"
+    ColorBand12="209,160,158"
+    ColorBand13="255,255,255"
+    ColorBand14="255,255,255"
+    ColorBand15="255,255,255"
+    ColorBand16="255,255,255"
 	colorbandpeak="255,255,255"
-	colorosc1="255,255,255"
-	colorosc2="255,255,255"
-	colorosc3="255,255,255"
-	colorosc4="255,255,255"
 	colorosc5="255,255,255"
+	colorosc4="205,166,213"
+	colorosc3="106,1,242"
+	colorosc2="8,34,245"
+	colorosc1="4,166,251"
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="wide"
-	peaks="1"/>
+	peaks="1"
+	oscstyle="dots"/>
 	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
 </groupdef>
 
