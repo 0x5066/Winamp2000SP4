@@ -32,7 +32,8 @@
 	bandwidth="wide"
 	peaks="1"
 	oscstyle="solid"
-	ghost="1"/>
+	ghost="1"
+	mode="1"/>
 	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
 </groupdef>
 
