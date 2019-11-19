@@ -65,12 +65,12 @@
 
 	<grid id="titlebar.stripes" x="32" y="3" w="-120" h="28" relatw="1" left="titlebar.stripes.left" middle="titlebar.stripes.center" right="titlebar.stripes.right" move="1" activealpha="0" inactivealpha="0" />
 
-  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.active" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="255" inactivealpha="0"/>
-  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.inactive" activealpha="0" inactivealpha="255"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="255"/>
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.inactive" move="0" activealpha="0" inactivealpha="255"/>
+  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.active" activealpha="0" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="0" inactivealpha="0"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="0" inactivealpha="0"/>
+  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.inactive" activealpha="0" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="0"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.inactive" move="0" activealpha="0" inactivealpha="0"/>
 
 	<group id="titlebar.winamptxt.group" x="0" y="0" h="30" w="324"/>
   
@@ -106,17 +106,17 @@
 	<layer id="titlebar.stripes.tips.left" x="115" y="3" w="29" image="titlebar.stripes.left" ghost="1" activealpha="0" inactivealpha="0"/>
 	<layer id="titlebar.stripes.tips.right" x="-20" y="3" w="29" image="titlebar.stripes.right" ghost="1" activealpha="0" inactivealpha="0"/>
 	<text id="titlebar.winamptxt" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
+    color="255,255,255" bold="0" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
 	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
+    color="255,255,255" bold="0" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
 </groupdef>
 
 
 <groupdef id="player.normal.group.songticker">
 	<grid id="sngtic.bg" x="0" y="6" w="-228" h="22" relatw="1" left="sngtic.left" middle="sngtic.mid" right="sngtic.right" ghost="1" alpha="255"/>
-	<SongTicker id="player.display.songname" x="23" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
+	<SongTicker id="player.display.songname" x="23" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="white" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="21" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="21" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="white" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
@@ -126,13 +126,13 @@
 	<grid id="songinfo.bitrate.bg" x="-1" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.bitrate.display" x="-1" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.bitrate.label" x="39" y="4" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
-  <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
+  <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="white" align="left" ghost="1" antialias="0"/>
 	
 	
 	<grid id="songinfo.frequency.bg" x="90" y="3" w="34" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.frequency.display" x="90" y="3" w="34" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.frequency.label" x="128" y="3" image="songinfo.frequency.label" ghost="1" alpha="255"/>
-	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="8" w="23" h="14" font="numbers" fontsize="15" color="black" align="left" ghost="1" antialias="0"/>
+	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="8" w="23" h="14" font="numbers" fontsize="15" color="white" align="left" ghost="1" antialias="0"/>
 	
 	<layer id="songinfo.mono" x="-110" y="3" relatx="1" image="songinfo.mono.off" ghost="1" alpha="255"/>
 	<layer id="songinfo.stereo.srrnd" x="-52" y="3" relatx="1" image="songinfo.stereo.off" ghost="1" alpha="255"/>

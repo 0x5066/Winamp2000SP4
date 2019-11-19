@@ -24,7 +24,7 @@
   <!--sendparams group="wasabi.titlebar.streak.left" target="titlebar.right" x="0"/-->
 
   <text id="window.titlebar.title" x="10" y="-8" w="600" h="42" default=":componentname" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" activealpha="255" inactiveAlpha="128" forceuppercase="0" antialias="0"/>
+    color="255,255,255" bold="0" activealpha="255" inactiveAlpha="128" forceuppercase="0" antialias="0"/>
 
   <!--group id="wasabi.titlebar.streak" instanceid="wasabi.titlebar.streak.right" x="0" y="3" w="-155" relatw="1" h="30" sysregion="1"/-->
   
