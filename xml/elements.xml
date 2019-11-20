@@ -21,16 +21,16 @@
 	<bitmap id="windowborder.top" file="images/uglyvishack.png" x="0" y="0" w="4" h="3" gammagroup="none"/>
 	<bitmap id="windowborder.middle" file="images/uglyvishack.png" x="0" y="4" w="4" h="1" gammagroup="none"/>
 	<bitmap id="windowborder.bottom" file="images/uglyvishack.png" x="0" y="6" w="4" h="3" gammagroup="none"/>
-	<bitmap id="beatvis.bg" file="images/beatvis/beatvis_bg.png" x="0" y="0" w="156" h="35" gammagroup="none"/>
-	<bitmap id="beatvis_animatedlayerL.bg" file="images/beatvis/beat_left.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
-	<bitmap id="beatvis_animatedlayerR.bg" file="images/beatvis/beat_right.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
+	<bitmap id="beatvis.bg" file="images/beatvis/beatvis_bg.png" x="0" y="0" w="157" h="21" gammagroup="none"/>
+	<bitmap id="beatvis_animatedlayerL.bg" file="images/beatvis/beat_left.png" x="0" y="0" w="157" h="420" gammagroup="none"/>
+	<bitmap id="beatvis_animatedlayerR.bg" file="images/beatvis/beat_right.png" x="0" y="0" w="157" h="420" gammagroup="none"/>
 
 	
 	<!-- fonts -->
 
   <truetypefont id="sarpanch" file="fonts\tahomaXP.ttf" allowmapping="1"/>
   <truetypefont id="numbers" file="fonts\tahomaXP.ttf" allowmapping="1"/>
-  <truetypefont id="titlebar" file="fonts\tahomabdXP.ttf" allowmapping="1"/>
+  <truetypefont id="titlebar" file="fonts\tahomaXP.ttf" allowmapping="1"/>
   <truetypefont id="DOS" file="fonts\VGA.ttf" allowmapping="1"/>
 
 	

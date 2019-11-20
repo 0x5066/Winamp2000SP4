@@ -1,8 +1,7 @@
 
-<groupdef id="ragyovis" x="-2" y="-2" w="324" h="102" relatw="1" relath="1">
+<groupdef id="ragyovis" x="-2" y="-2" w="167" h="72" relatw="1" relath="1">
 
-	<layer id="beatvis.bg" x="2" y="2" w="312" h="70" image="beatvis.bg" ghost="1"/>
-	<vis id="shade.vis" x="6" y="6" w="304" h="62" alpha="200" cursor="cur.normal" gammagroup="visualizers" fps="120"
+	<!--vis id="shade.vis" x="6" y="6" w="304" h="62" alpha="200" cursor="cur.normal" gammagroup="visualizers" fps="120"
 	colorallbands="0,0,0"
 	colorbandpeak="0,0,0"
 	colorosc1="0,0,0"
@@ -13,9 +12,11 @@
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="wide"
-	peaks="0"/>
-	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="beatvis_animatedlayerL.bg" x="6" y="6" w="152" h="100" framewidth="76" frameheight="50" start="0" end="12" autoplay="0" autoreplay="0" ghost="1"/>
-	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="beatvis_animatedlayerR.bg" x="158" y="6" w="152" h="100" framewidth="76" frameheight="50" start="0" end="12" autoplay="0" autoreplay="0" ghost="1"/>
+	peaks="0"/-->
+	<layer id="beatvis.bg" x="0" y="0" w="157" h="21" image="beatvis.bg" ghost="1"/>
+	<layer id="beatvis.bg" x="0" y="23" w="157" h="21" image="beatvis.bg" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="beatvis_animatedlayerL.bg" x="0" y="0" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="beatvis_animatedlayerR.bg" x="0" y="23" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
 	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
 </groupdef>
 
@@ -23,9 +24,9 @@
 <container id="beatvis" name="Beat Visualizer" default_visible="0">
 
 
-<layout id="normal" minimum_w="324" minimum_h="102" w="324" h="102" maximum_w="324" maximum_h="102">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="324" h="102" content="ragyovis"/>
-	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
+<layout id="normal" minimum_w="167" minimum_h="72" w="167" h="72" maximum_w="167" maximum_h="72">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="167" h="72" content="ragyovis"/>
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
