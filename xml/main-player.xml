@@ -167,7 +167,24 @@
 	timeroffstyle="0" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 
 	<!--rect id="plssayer.vis" x="27" y="41" w="143" h="31" color="0,0,250" filled="0"/-->
-	<vis id="player.vis" x="27" y="39" w="143" h="32" fps="60" cursor="cur.normal" gammagroup="visualizers"/>
+	<vis id="player.vis" x="27" y="39" w="143" h="32" fps="60" cursor="cur.normal" gammagroup="visualizers"
+	ColorBand1="181,232,94"
+    ColorBand2="185,230,94"
+    ColorBand3="189,228,94"
+    ColorBand4="194,225,94"
+    ColorBand5="198,223,94"
+    ColorBand6="203,222,94"
+    ColorBand7="208,219,94"
+    ColorBand8="212,218,94"
+    ColorBand9="216,215,94"
+    ColorBand10="221,213,94"
+    ColorBand11="226,212,94"
+    ColorBand12="230,209,94"
+    ColorBand13="235,206,94"
+    ColorBand14="236,185,94"
+    ColorBand15="233,148,94"
+    ColorBand16="229,112,94"
+	colorbandpeak="190,10,58"/>
 	<layer id="hide.for.gordon" x="169" y="39" image="hide.for.gordon" ghost="1"/>
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>
 	<layer id="player.vis.trigger" x="27" y="39" w="143" h="32" image="none" cursor="cur.normal"/>
