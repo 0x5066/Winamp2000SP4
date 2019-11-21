@@ -21,7 +21,7 @@
 </groupdef>
 
 
-<container id="beatvis" name="Beat Visualizer" default_visible="0">
+<container id="beatvis" name="Test Microphone" default_visible="0">
 
 
 <layout id="normal" minimum_w="167" minimum_h="72" w="167" h="72" maximum_w="167" maximum_h="72">
