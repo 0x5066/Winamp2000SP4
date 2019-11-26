@@ -44,6 +44,8 @@
 	<group id="songkhz" 	x="494" y="60" h="67" w="241"/>
 	<group id="songtitle"	x="0" y="0" h="67" w="743"/>
 
+<!-- 49 frames -->
+
 </groupdef>
 
 <container id="songstuff" name="Half-Life 2 HUD" default_visible="0">
