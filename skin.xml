@@ -42,6 +42,7 @@
 	<include file="xml/window-overrides.xml"/>
 	<include file="xml/beatvis.xml"/>
 	<!--include file="xml/main.xml"/-->
+	<include file="xml/hl2timer.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
