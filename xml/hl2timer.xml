@@ -1,0 +1,119 @@
+<elements>
+
+	<bitmap id="hl2.topleft" file="images/beatvis/crosshair/hl2hud.png" x="0" y="0" w="6" h="6" gammagroup="none"/>
+	<bitmap id="hl2.topmid" file="images/beatvis/crosshair/hl2hud.png" x="7" y="0" w="6" h="6" gammagroup="none"/>
+	<bitmap id="hl2.topright" file="images/beatvis/crosshair/hl2hud.png" x="14" y="0" w="6" h="6" gammagroup="none"/>
+	
+	<bitmap id="hl2.left" file="images/beatvis/crosshair/hl2hud.png" x="0" y="7" w="6" h="6" gammagroup="none"/>
+	<bitmap id="hl2.mid" file="images/beatvis/crosshair/hl2hud.png" x="7" y="7" w="6" h="6" gammagroup="none"/>
+	<bitmap id="hl2.right" file="images/beatvis/crosshair/hl2hud.png" x="14" y="7" w="6" h="6" gammagroup="none"/>
+
+	<bitmap id="hl2.btmleft" file="images/beatvis/crosshair/hl2hud.png" x="0" y="14" w="6" h="6" gammagroup="none"/>
+	<bitmap id="hl2.btmmid" file="images/beatvis/crosshair/hl2hud.png" x="7" y="14" w="6" h="6" gammagroup="none"/>
+	<bitmap id="hl2.btmright" file="images/beatvis/crosshair/hl2hud.png" x="14" y="14" w="6" h="6" gammagroup="none"/>
+	
+	<bitmap id="bg" file="images/beatvis/crosshair/crosshair_bg2.png" x="0" y="0" w="735" h="227" gammagroup="none"/>
+	
+	<bitmap id="vguivis_animatedlayerL" file="images/beatvis/crosshair/crosshair_l.png" x="0" y="0" w="20" h="2800" gammagroup="none"/>
+	<bitmap id="vguivis_animatedlayerR" file="images/beatvis/crosshair/crosshair_r.png" x="0" y="0" w="20" h="2800" gammagroup="none"/>
+	
+	<bitmap id="hl2.crosshair" file="images/beatvis/crosshair/crosshair.png" x="0" y="0" w="21" h="17" gammagroup="none"/>
+
+</elements>
+
+<groupdef id="timer" x="0" y="0" w="221" h="67" relatw="1" relath="1">
+
+	<grid x="0" y="0" w="227" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
+	left="hl2.left" middle="hl2.mid" right="hl2.right"
+	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
+	alpha="70"/>
+	<!--rect x="0" y="0" w="221" h="67" color="black" filled="1"/-->
+	<text id="display.time" display="TIME" x="78" y="6" w="122" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="#FFDC00" 
+	timeroffstyle="2" timecolonwidth="22" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
+	<text id="time" text="TIME" x="4" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="#FFDC00" valign="top" align="right" 
+	cursor="cur.normal" bold="1" antialias="1"/>
+
+</groupdef>
+
+<groupdef id="songkbps" x="0" y="0" w="191" h="67" relatw="1" relath="1">
+
+	<grid x="0" y="0" w="191" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
+	left="hl2.left" middle="hl2.mid" right="hl2.right"
+	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
+	alpha="70"/>
+	<!--rect x="0" y="0" w="191" h="67" color="black" filled="1"/-->
+	<text id="songbitrate" display="songbitrate" x="47" y="6" w="122" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="#FFDC00" 
+	timeroffstyle="0" valign="top" align="right" cursor="cur.normal" bold="0" antialias="1"/>
+	<text id="time" text="KBPS" x="4" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="#FFDC00" valign="top" align="right" 
+	cursor="cur.normal" bold="1" antialias="1"/>
+
+</groupdef>
+
+<groupdef id="songkhz" x="0" y="0" w="241" h="67" relatw="1" relath="1">
+
+	<grid x="0" y="0" w="241" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
+	left="hl2.left" middle="hl2.mid" right="hl2.right"
+	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
+	alpha="70"/>
+	<!--rect x="0" y="0" w="241" h="67" color="black" filled="1"/-->
+	<text id="songsamplerate" display="songsamplerate" x="78" y="6" w="122" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="#FFDC00" 
+	timeroffstyle="0" valign="top" align="left" cursor="cur.normal" bold="0" antialias="1"/>
+	<text id="time" text="KHZ" x="4" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="#FFDC00" valign="top" align="right" 
+	cursor="cur.normal" bold="1" antialias="1"/>
+
+</groupdef>
+
+<groupdef id="songtitle" x="0" y="0" w="735" h="67" relatw="1" relath="1">
+
+	<grid x="0" y="0" w="735" h="50" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
+	left="hl2.left" middle="hl2.mid" right="hl2.right"
+	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
+	alpha="128"/>
+	<!--rect x="0" y="0" w="743" h="67" color="black" filled="1"/-->
+	<text id="songtitle" display="SONGNAME" x="13" y="12" w="705" h="136" ticker="1" font="chaptertitle" fontsize="28" forcefixed="1" color="white" 
+	timeroffstyle="0" valign="top" align="left" cursor="cur.normal" bold="0" antialias="0"/>
+
+</groupdef>
+
+<groupdef id="bg" x="0" y="0" w="743" h="67" relatw="1" relath="1">
+
+	<layer id="beatvis.bg2" x="0" y="0" w="735" h="227" image="bg" ghost="1"/>
+
+</groupdef>
+
+<groupdef id="vguivis" x="0" y="0" w="743" h="67" relatw="1" relath="1">
+
+	<layer id="hl2.crosshair.bg" x="27" y="20" w="21" h="17" image="hl2.crosshair" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="vguivis_animatedlayerL" x="0" y="0" w="20" h="56" framewidth="20" frameheight="56" start="0" end="50" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="vguivis_animatedlayerR" x="54" y="0" w="20" h="56" framewidth="76" frameheight="56" start="0" end="50" autoplay="0" autoreplay="0" ghost="1"/>
+	<script id="ragyovis.script" file="scripts\vguivis.maki"/>
+
+</groupdef>
+
+<groupdef id="songstuff1" x="0" y="0" w="743" h="255" relatw="1" relath="1">
+
+	<group id="timer" 		x="0" y="160" h="67" w="221"/>
+	<group id="songkbps" 	x="262" y="160" h="67" w="191"/>
+	<group id="songkhz" 	x="494" y="160" h="67" w="241"/>
+	<group id="songtitle"	x="0" y="0" h="67" w="735"/>
+	<group id="bg"			x="0" y="0" w="735" h="227"/>
+	<group id="vguivis"		x="330" y="85" h="67" w="743"/>
+	
+<!-- 50 frames -->
+
+</groupdef>
+
+<container id="songstuff" name="Half-Life 2 HUD" default_visible="0">
+
+<layout id="normal" minimum_w="743" minimum_h="255" w="743" h="255" maximum_w="743" maximum_h="255">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="743" h="255" content="songstuff1"/>
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+  <!--sendparams target="titlebar.title.bg.group" w="170"/-->
+	
+  <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
+  <layer id="resize.disabler" x="395" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
+  <layer id="resize.disabler" x="0" y="35" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+  <layer id="resize.disabler" x="0" y="365" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+</layout>
+
+</container>
