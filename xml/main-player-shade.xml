@@ -69,7 +69,7 @@
 	colorosc3="0,255,0"
 	colorosc4="0,255,0"
 	colorosc5="0,255,0" fps="140"/>
-	<component x="8" y="10" w="71" h="16" relatw="0" relath="0" noshowcmdbar="1" autoopen="1" autoclose="1" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/>
+	<component x="8" y="10" w="71" h="16" relatw="0" relath="0" noshowcmdbar="1" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/>
   <rect id="hide.for.gordon" x="79" y="9" w="1" h="17" color="0,0,0" filled="1" ghost="1" fps="60" gammagroup="display"/>
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>
