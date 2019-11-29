@@ -30,7 +30,7 @@
 
   <truetypefont id="sarpanch" file="fonts\tahomaXP.ttf" allowmapping="1"/>
   <truetypefont id="numbers" file="fonts\tahomaXP.ttf" allowmapping="1"/>
-  <truetypefont id="time" file="fonts\hl2time.otf" allowmapping="1"/>
+  <truetypefont id="time" file="fonts\hl2time.ttf" allowmapping="1"/>
   <truetypefont id="titlebar" file="fonts\tahomabdXP.ttf" allowmapping="1"/>
   <truetypefont id="DOS" file="fonts\VGA.ttf" allowmapping="1"/>
   <truetypefont id="chaptertitle" file="fonts\TrebuchetSource.ttf" allowmapping="1"/>
