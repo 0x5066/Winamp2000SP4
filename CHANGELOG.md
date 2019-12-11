@@ -6,13 +6,16 @@ What's New?
 - New: Themes! Including those that were present in Windows 9x/2k/XP
 - New: Titlebar beam gradient can be colored independently
 
-# v1.03.8 Upcoming
+# v1.03.8
 What's New?
 
 - New: Massive UI overhaul within the Main Player window
 - New: Made the songticker background be it's seperate thing
 - New: Made the posbar backgronud be it's seperate thing
 - New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
+- New: Added a Half-Life 2 like Heads Up Display featuring a crosshair visualizer and a subtitle box displaying the currently playing song
+- New: About box to now resemble winver from Windows XP
+- New: Swapped out some static images (volume bar, balance bar, position bar background) with small resizable images using <grid/>
 - Fixed: A bug where if a wasabi window was too small in width, the left hand side edge would disappear
 
 # v1.03.7
