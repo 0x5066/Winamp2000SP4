@@ -1,16 +1,21 @@
-﻿Invalid XML: <container id="equalizer" name="Equalizer" default_visible="1" default_x="0" default_y="242" default_w="550">
+<container id="equalizer" name="Equalizer" default_visible="1" default_x="0" default_y="242" default_w="550">
+	
 <groupdef id="equalizer.normal.group.main.content">
-<layer id="eq.normal.bg" x="0" y="-31" image="eq.normal.bg" move="1" sysregion="1" alpha="253"/>
-<rect id="eq.mover" x="10" y="3" h="200" w="-20" relatw="1" filled="1" move="1" cursor="cur.normal" alpha="0"/>
-<ToggleButton id="eq.button.on" action="EQ_TOGGLE" x="9" y="7" w="52" h="48" image="eq.normal.button.power.on" hoverimage="eq.normal.button.power.on.h" downimage="eq.normal.button.power.on.d" cursor="cur.normal"/>
-<ToggleButton id="eq.button.auto" action="EQ_AUTO" x="61" y="7" w="66" h="48" image="eq.normal.button.auto.on" hoverimage="eq.normal.button.auto.on.h" downimage="eq.normal.button.auto.on.d" cursor="cur.normal"/>
-<layer id="eq.light.on" x="1" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
-<layer id="eq.light.auto" x="48" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
-<layer id="eq.spline.bg" x="143" y="7" image="eq.normal.background.display" alpha="253" cursor="cur.normal"/>
-<eqvis x="153" y="15" w="239" h="31" colortop="211,34,27" colormiddle="239,220,49" colorbottom="42,154,22" colorpreamp="186,203,221" ghost="1" />
-<togglebutton id="eq.button.presets.menu" action="MENU" param="PRESETS" x="474" y="45" w="1" h="1" image="none"/>
-<button id="eq.button.presets.gfx" x="470" y="7" image="eq.normal.button.presets" hoverimage="eq.normal.button.presets.h" downimage="eq.normal.button.presets.d" cursor="cur.normal"/>
-<script file="scripts\sc_mouseredir.maki" param="eq.button.presets.gfx;eq.button.presets.menu"/>
+  <layer id="eq.normal.bg" x="0" y="-31" image="eq.normal.bg" move="1" sysregion="1" alpha="253"/>
+  <rect id="eq.mover" x="10" y="3" h="200" w="-20" relatw="1" filled="1" move="1" cursor="cur.normal" alpha="0"/>
+
+	<ToggleButton id="eq.button.on" action="EQ_TOGGLE" x="9" y="7" w="52" h="48" image="eq.normal.button.power.on" hoverimage="eq.normal.button.power.on.h" downimage="eq.normal.button.power.on.d" cursor="cur.normal"/>
+	<ToggleButton id="eq.button.auto" action="EQ_AUTO" x="61" y="7" w="66" h="48" image="eq.normal.button.auto.on" hoverimage="eq.normal.button.auto.on.h" downimage="eq.normal.button.auto.on.d" cursor="cur.normal"/>
+
+  <layer id="eq.light.on" x="1" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
+  <layer id="eq.light.auto" x="48" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
+
+  <layer id="eq.spline.bg" x="143" y="7" image="eq.normal.background.display" alpha="253" cursor="cur.normal"/>
+  <eqvis x="153" y="15" w="239" h="31" colortop="211,34,27" colormiddle="239,220,49" colorbottom="42,154,22" colorpreamp="186,203,221" ghost="1" />
+
+	<togglebutton id="eq.button.presets.menu" action="MENU" param="PRESETS" x="474" y="45" w="1" h="1" image="none"/>
+	<button id="eq.button.presets.gfx" x="470" y="7" image="eq.normal.button.presets" hoverimage="eq.normal.button.presets.h" downimage="eq.normal.button.presets.d" cursor="cur.normal"/>
+  <script file="scripts\sc_mouseredir.maki" param="eq.button.presets.gfx;eq.button.presets.menu"/>
   <!-- I like to place the menu under the button -not the pointer- whenever I can -->
 
   <!--images source="preamp" x="38" y="68" w="5" h="106" images="player.animation.eq.sliders" imagesspacing="106"/-->
