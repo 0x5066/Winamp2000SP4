@@ -68,14 +68,14 @@
 </groupdef>
 
 <groupdef id="eq.shade.volbalance">
-	<layer id="player.bg.volume" x="10" y="3" image="player.bg.vol" tooltip="Volume Bar"/>
+	<grid id="balance.bg" x="11" y="9" w="121" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right"/>
   <!--  using image source is buggy with color themes -->
   <!--images source="volume" x="5" y="6" w="120" h="8" images="player.animation.volume" imagesspacing="8"/-->
   <Animatedlayer id="volume.anim" x="5" y="6" w="120" h="8" image="player.animation.volume" ghost="1" alpha="253"/>
 	<slider id="player.slider.volume.shadow" x="0" y="0" w="130" h="26" action="VOLUME" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>	
 	<slider id="player.slider.volume" x="0" y="0" w="142" h="26" action="VOLUME" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
-	<layer id="eq.bg.pan" x="148" y="3" image="player.bg.balance" tooltip="Panning Bar"/>
+	<grid id="volume.bg" x="150" y="9" w="75" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right"/>
   <Animatedlayer id="balance.anim" x="147" y="6" w="71" h="8" image="player.animation.balance" ghost="1" alpha="253"/>
 	<slider id="eq.slider.pan.shadow" x="143" y="0" w="81" h="26" action="PAN" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
 	<slider id="eq.slider.pan" x="139" y="0" w="97" h="26" action="PAN" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
