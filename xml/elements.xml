@@ -36,7 +36,7 @@
   <truetypefont id="DOS" file="fonts\VGA.ttf" allowmapping="1"/>
 
 	
-	<!-- player-normal -->
+	<!-- player-normal additions -->
 	
 	<bitmap id="posbar.left" file="images/posbar_bg.png" x="0" y="0" w="1" h="4" gammagroup="none"/>
 	<bitmap id="posbar.center" file="images/posbar_bg.png" x="2" y="0" w="1" h="4" gammagroup="none"/>
@@ -45,6 +45,8 @@
 	<bitmap id="sngtic.left" file="images/songticker.png" x="0" y="0" w="23" h="22" gammagroup="none"/>
 	<bitmap id="sngtic.mid" file="images/songticker.png" x="24" y="0" w="6" h="22" gammagroup="none"/>
 	<bitmap id="sngtic.right" file="images/songticker.png" x="31" y="0" w="4" h="22" gammagroup="none"/>
+	
+	<!-- player-normal -->
 
   <bitmap id="links.normal" file="images/window/windows-background-main.png" x="323" y="365" w="15" h="30" gammagroup="titlebarstripes"/>
   <bitmap id="links.hover" file="images/window/windows-background-main.png" x="339" y="365" w="15" h="30" gammagroup="titlebarstripes"/>
