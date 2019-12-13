@@ -28,7 +28,7 @@
 	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
 	alpha="70"/>
 	<!--rect x="0" y="0" w="221" h="67" color="black" filled="1"/-->
-	<text id="display.time" display="TIME" x="68" y="6" w="132" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="#FFDC00" 
+	<text id="display.time" display="TIME" x="68" y="6" w="132" h="136" ghost="1" ticker="0" font="time" fontsize="64" forcefixed="1" color="#FFDC00" 
 	timeroffstyle="2" timecolonwidth="22" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 	<text id="time" text="TIME" x="-13" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="#FFDC00" valign="top" align="right" 
 	cursor="cur.normal" bold="1" antialias="1"/>
@@ -51,7 +51,7 @@
 
 <groupdef id="songkhz" x="0" y="0" w="241" h="67" relatw="1" relath="1">
 
-	<grid x="0" y="0" w="291" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
+	<grid x="0" y="0" w="241" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
 	left="hl2.left" middle="hl2.mid" right="hl2.right"
 	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
 	alpha="70"/>
