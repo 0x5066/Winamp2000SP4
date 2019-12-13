@@ -22,7 +22,7 @@ This release of Winamp 2000 SP4 however may be the last for this year (unless so
 - New (REVOCS Media Player): Added 2 new visualizers featuring the characters Ragyo Kiryuuin and Ryuuko Matoi, with Ragyo's hair lighting up to the beat, with Ryuuko herself bobbing her head to the beat.
 - New: (A.P.E Media Player): Added a visualizer depicting Zero Two from Darling in the FranXX bobbing her head to the beat.
 - New: About box to now resemble winver from Windows XP.
-- New: Swapped out some static images (volume bar, balance bar, position bar background) with small resizable images using <grid/>.
+- New: Swapped out some static images (volume bar, balance bar, position bar background) with small resizable images using ```<grid/>```.
 - Fixed: A bug where if a wasabi window was too small in width, the left hand side edge would disappear.
 - Fixed: Media Library component was 2 pixels too tall.
 
