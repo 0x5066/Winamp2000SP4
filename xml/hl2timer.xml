@@ -51,7 +51,7 @@
 
 <groupdef id="songkhz" x="0" y="0" w="241" h="67" relatw="1" relath="1">
 
-	<grid x="0" y="0" w="291" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
+	<grid x="0" y="0" w="241" h="67" topleft="hl2.topleft" top="hl2.topmid" topright="hl2.topright" 
 	left="hl2.left" middle="hl2.mid" right="hl2.right"
 	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
 	alpha="70"/>
