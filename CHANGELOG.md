@@ -1,4 +1,4 @@
-# v1.03.??? Upcoming (Far future)
+# v1.xx Upcoming (Far future)
 What's New?
 
 - New: Gammagroups that actually represent what Windows once had to offer with Windows Classic
@@ -6,14 +6,25 @@ What's New?
 - New: Themes! Including those that were present in Windows 9x/2k/XP
 - New: Titlebar beam gradient can be colored independently
 
-# v1.03.8 Upcoming
+# v1.1
 What's New?
 
-- New: Massive UI overhaul within the Main Player window
-- New: Made the songticker background be it's seperate thing
-- New: Made the posbar backgronud be it's seperate thing
-- New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg
-- Fixed: A bug where if a wasabi window was too small in width, the left hand side edge would disappear
+The first major release of Winamp 2000 SP4 to drop the subversion numbering system to stay in sync with the features Winamp Classic Modern would offer with each 1.xx release, however, as per request of the creator of WCM (and the developer of WACUP himself) to drop that system, I've decided to jump straight to version 1.1 for this release. This is also the first release of WA2kSP4 to include its sister branches, namely the REVOCS Media Player branch (a nod to the anime series Kill La Kill, which originally started out as a testbed for new things to try out, ultimately it turned into its own thing of itself) and the A.P.E Media Player branch (a nod to the anime series Darling in the FranXX), under the hood they're the same thing but on the surface somewhat different.
+
+This release of Winamp 2000 SP4 however may be the last for this year (unless something urgent needs fixing), as there isn't a lot that could be added or fixed, what may take priority however is the ability for this skin to support color themes as in its current state, most of the things existing were taken over from WCM and have not been touched in a long time now.
+
+- New: Inclusion of 2 new flavors of this Modern Skin.
+- New: Massive UI overhaul within the Main Player window.
+- New: Made the songticker background be its seperate thing.
+- New: Made the posbar backgronud be its seperate thing.
+- New: Winamp Modern Beat Visualizer reimplemented thanks to @jberg.
+- New: Added a Half-Life 2 like Heads Up Display featuring a crosshair visualizer and a subtitle box displaying the currently playing song.
+- New (REVOCS Media Player): Added 2 new visualizers featuring the characters Ragyo Kiryuuin and Ryuuko Matoi, with Ragyo's hair lighting up to the beat, with Ryuuko herself bobbing her head to the beat.
+- New: (A.P.E Media Player): Added a visualizer depicting Zero Two from Darling in the FranXX bobbing her head to the beat.
+- New: About box to now resemble winver from Windows XP.
+- New: Swapped out some static images (volume bar, balance bar, position bar background) with small resizable images using <grid/>.
+- Fixed: A bug where if a wasabi window was too small in width, the left hand side edge would disappear.
+- Fixed: Media Library component was 2 pixels too tall.
 
 # v1.03.7
 What's New?
