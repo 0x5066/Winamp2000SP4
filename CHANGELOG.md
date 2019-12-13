@@ -8,6 +8,7 @@ What's New?
 
 # v1.1
 What's New?
+
 The first major release of Winamp 2000 SP4 to drop the subversion numbering system to stay in sync with the features Winamp Classic Modern would offer with each 1.xx release, however, as per request of the creator of WCM (and the developer of WACUP himself) to drop that system, I've decided to jump straight to version 1.1 for this release. This is also the first release of WA2kSP4 to include its sister branches, namely the REVOCS Media Player branch (a nod to the anime series Kill La Kill, which originally started out as a testbed for new things to try out, ultimately it turned into a thing of itself) and the A.P.E Media Player branch (a nod to the anime series Darling in the FranXX), under the hood they're the same thing but on the surface somewhat different.
 The next release of Winamp 2000 SP4 however may be the last for this year (unless something urgent needs fixing), as there isn't a lot that could be added or fixed, what may take priority however is the ability for this skin to support color themes as in its current state, most of the things existing were taken over from WCM and have not been touched in a long time now.
 
