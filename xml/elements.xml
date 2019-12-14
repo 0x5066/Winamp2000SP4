@@ -24,7 +24,7 @@
 	<bitmap id="beatvis.bg" file="images/beatvis/beatvis_bg.png" x="0" y="0" w="156" h="35" gammagroup="none"/>
 	<bitmap id="beatvis_animatedlayerL.bg" file="images/beatvis/beat_left.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
 	<bitmap id="beatvis_animatedlayerR.bg" file="images/beatvis/beat_right.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
-	<bitmap id="main" file="images/main.png" x="0" y="0" w="275" h="116" gammagroup="none"/>
+	<bitmap id="main" file="images/main.png" x="0" y="0" w="550" h="232" gammagroup="none"/>
 	
 	<!-- fonts -->
 

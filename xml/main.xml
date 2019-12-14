@@ -1,15 +1,15 @@
 
-<groupdef id="ragyovis" x="-2" y="-2" w="275" h="116" relatw="1" relath="1">
+<groupdef id="ragyovis2" x="-2" y="-2" w="550" h="232" relatw="1" relath="1">
 </groupdef>
 
 
 <container id="beatvis" name="main" default_visible="0">
 
 
-<layout id="normal" minimum_w="275" minimum_h="116" w="275" h="116" maximum_w="275" maximum_h="116">
-	<component x="24" y="43" w="75" h="16" relatw="0" relath="0" noshowcmdbar="0" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/>
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="275" h="116" content="ragyovis"/>
-	<layer id="mainfront" x="0" y="0" w="275" h="116" image="main" ghost="1"/>
+<layout id="normal" minimum_w="550" minimum_h="232" w="550" h="232" maximum_w="550" maximum_h="232">
+	<!--component x="48" y="86" w="150" h="32" relatw="0" relath="0" noshowcmdbar="0" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="550" h="232" content="ragyovis2"/>
+	<layer id="mainfront" x="0" y="0" w="550" h="232" image="main" ghost="1"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
