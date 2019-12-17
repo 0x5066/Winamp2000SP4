@@ -19,10 +19,10 @@
 	<slider id="player.slider.volume" action="VOLUME" x="189" y="110" w="142" h="26" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
 
-	<grid id="balance.bg" x="339" y="119" w="75" h="4" left="posbar.left" middle="posbar.center" right="posbar.right" />
+	<grid id="balance.bg" x="345" y="119" w="75" h="4" left="posbar.left" middle="posbar.center" right="posbar.right" />
   <Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
 	<!--slider id="eq.slider.pan.shadow" action="PAN" x="341" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
-	<slider id="eq.slider.pan" action="PAN" x="328" y="110" w="97" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
+	<slider id="eq.slider.pan" action="PAN" x="334" y="110" w="96" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 	
   <!--script file="scripts\color_themes_patch_fix.maki"/--> <!-- This script makes the switch between the safe layer and the multicolor-bar (only seen on default theme) -->
 
