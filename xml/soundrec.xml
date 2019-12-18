@@ -1,0 +1,59 @@
+﻿<elements>
+	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="270" h="126"/>
+	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrecpos.png" w="11" h="21"/>
+
+	<bitmap id="sndrec.prev" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="0" y="0"/>
+	<bitmap id="sndrec.next" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="49" y="0"/>
+	<bitmap id="sndrec.play" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="98" y="0"/>
+	<bitmap id="sndrec.paus" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="147" y="0"/>
+	<bitmap id="sndrec.stop" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="196" y="0"/>
+
+	<bitmap id="sndrec.prev.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="0" y="25"/>
+	<bitmap id="sndrec.next.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="49" y="25"/>
+	<bitmap id="sndrec.play.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="98" y="25"/>
+	<bitmap id="sndrec.paus.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="147" y="25"/>
+	<bitmap id="sndrec.stop.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="196" y="25"/>
+</elements>
+
+<groupdef id="sndrec.grp" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
+	<layer id="sndrec" image="sndrec.bg" w="270" h="126" cursor="cur.normal"/>
+	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers"
+	colorallbands="0,255,0"
+	colorosc1="0,255,0"
+	colorosc2="0,255,0"
+	colorosc3="0,255,0"
+	colorosc4="0,255,0"
+	colorosc5="0,255,0" mode="2" oscstyle="lines" fps="5"/>
+	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers"
+	colorallbands="0,255,0"
+	colorosc1="0,255,0"
+	colorosc2="0,255,0"
+	colorosc3="0,255,0"
+	colorosc4="0,255,0"
+	colorosc5="0,255,0" mode="2" oscstyle="lines" flipv="1" fps="5"/>
+	<layer id="player.vis.blocker" x="79" y="27" w="112" h="35" image="none" cursor="cur.normal" alpha="0"/>
+
+	<grid id="posbar.bg" x="17" y="78" w="236" h="4" left="posbar.left" middle="posbar.center" right="posbar.right"/>
+	<slider id="player.slider.seek" action="SEEK" x="17" y="70" w="236" h="21" orientation="horizontal" thumb="sndrec.posbtn" hoverthumb="sndrec.posbtn" downthumb="sndrec.posbtn" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
+	
+	<button id="button.previous" action="PREV" x="9" y="97" image="sndrec.prev" hoverimage="sndrec.prev" downimage="sndrec.prev.d" cursor="cur.normal"/>
+	<button id="button.next" action="NEXT" x="60" y="97" image="sndrec.next" hoverimage="sndrec.next" downimage="sndrec.next.d" cursor="cur.normal"/>
+	<button id="player.button.pause" action="PAUSE" x="111" y="97" image="sndrec.paus" hoverimage="sndrec.paus" downimage="sndrec.paus.d" rectrgn="1" cursor="cur.normal"/>
+	<button id="player.button.play" action="PLAY" x="111" y="97" image="sndrec.play" hoverimage="sndrec.play" downimage="sndrec.play.d" rectrgn="1" cursor="cur.normal"/>
+	<button id="button.stop" action="STOP" x="162" y="97" image="sndrec.stop" hoverimage="sndrec.stop" downimage="sndrec.stop.d" cursor="cur.normal"/>
+
+	<script file="scripts\play_pause.maki" param="player.button.play;player.button.pause"/>
+
+	<text id="display.time" display="TIMEELAPSED" x="-67" y="45" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="black" 
+	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" ghost="1" timecolonwidth="3" antialias="0"/>
+
+	<text id="display.length" display="SONGLENGTH" x="118" y="46" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="black" 
+	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" ghost="1" antialias="0"/>
+
+</groupdef>
+
+<container id="sndrec.wnd" name="Sound Recorder" default_visible="0">
+	<layout id="normal" minimum_w="278" minimum_h="154" h="154" w="278" maximum_w="278" maximum_h="154">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="278" h="154" content="sndrec.grp" />
+	</layout>
+</container>
