@@ -1,22 +1,43 @@
 ﻿<elements>
-	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="270" h="126"/>
+	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="135" h="19"/>
 	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrecpos.png" w="11" h="21"/>
 
-	<bitmap id="sndrec.prev" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="0" y="0"/>
-	<bitmap id="sndrec.next" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="49" y="0"/>
-	<bitmap id="sndrec.play" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="98" y="0"/>
-	<bitmap id="sndrec.paus" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="147" y="0"/>
-	<bitmap id="sndrec.stop" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="196" y="0"/>
+	<bitmap id="sndrec.prev" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="0"/>
+	<bitmap id="sndrec.next" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="0"/>
+	<bitmap id="sndrec.play" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="98" y="0"/>
+	<bitmap id="sndrec.paus" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="147" y="0"/>
+	<bitmap id="sndrec.stop" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="196" y="0"/>
+	<bitmap id="sndrec.dis" file="images/soundrec/sndrec_dis.png" w="48" h="24" x="0" y="0"/>
 
-	<bitmap id="sndrec.prev.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="0" y="25"/>
-	<bitmap id="sndrec.next.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="49" y="25"/>
-	<bitmap id="sndrec.play.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="98" y="25"/>
-	<bitmap id="sndrec.paus.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="147" y="25"/>
-	<bitmap id="sndrec.stop.d" file="images/soundrec/sndrecbuttons.png" w="48" h="24" x="196" y="25"/>
+	<bitmap id="sndrec.prev.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="25"/>
+	<bitmap id="sndrec.next.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="25"/>
+	<bitmap id="sndrec.play.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="98" y="25"/>
+	<bitmap id="sndrec.paus.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="147" y="25"/>
+	<bitmap id="sndrec.stop.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="196" y="25"/>
+
+	<bitmap id="wnd.topleft" file="images\soundrec\windowelement.png" x="0" y="0" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.topmid" file="images\soundrec\windowelement.png" x="7" y="0" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.topright" file="images\soundrec\windowelement.png" x="14" y="0" w="6" h="6" gammagroup="none"/>
+	
+	<bitmap id="wnd.left" file="images\soundrec\windowelement.png" x="0" y="7" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.mid" file="images\soundrec\windowelement.png" x="7" y="7" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.right" file="images\soundrec\windowelement.png" x="14" y="7" w="6" h="6" gammagroup="none"/>
+
+	<bitmap id="wnd.btmleft" file="images\soundrec\windowelement.png" x="0" y="14" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.btmmid" file="images\soundrec\windowelement.png" x="7" y="14" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.btmright" file="images\soundrec\windowelement.png" x="14" y="14" w="6" h="6" gammagroup="none"/>
+
 </elements>
 
 <groupdef id="sndrec.grp" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
-	<layer id="sndrec" image="sndrec.bg" w="270" h="126" cursor="cur.normal"/>
+	<layer id="sndrec" image="sndrec.bg" w="135" h="19" cursor="cur.normal"/>
+	<layer id="sndrec.rec" image="sndrec.dis" x="213" y="97" w="48" h="24" cursor="cur.normal"/>
+
+	<grid x="78" y="26" w="114" h="37" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
+	left="wnd.left" middle="wnd.mid" right="wnd.right"
+	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
+	<rect x="79" y="27" w="112" h="35" color="0,0,0" filled="1"/>
+
 	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers"
 	colorallbands="0,255,0"
 	colorosc1="0,255,0"
@@ -44,9 +65,19 @@
 
 	<script file="scripts\play_pause.maki" param="player.button.play;player.button.pause"/>
 
+	<grid x="9" y="26" w="60" h="37" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
+	left="wnd.left" middle="wnd.mid" right="wnd.right"
+	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
+
+	<text id="position" text="Position:" x="13" y="29" w="45" h="12" font="micross" fontsize="15" color="black" valign="top" align="right" antialias="0"/>
 	<text id="display.time" display="TIMEELAPSED" x="-67" y="45" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="black" 
 	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" ghost="1" timecolonwidth="3" antialias="0"/>
 
+	<grid x="201" y="26" w="60" h="37" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
+	left="wnd.left" middle="wnd.mid" right="wnd.right"
+	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
+
+	<text id="length" text="Length:" x="204" y="29" w="45" h="14" font="micross" fontsize="15" color="black" valign="top" align="right" antialias="0"/>
 	<text id="display.length" display="SONGLENGTH" x="118" y="46" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="black" 
 	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" ghost="1" antialias="0"/>
 
