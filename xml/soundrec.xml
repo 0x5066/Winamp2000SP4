@@ -1,6 +1,6 @@
 ﻿<elements>
 	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="135" h="19"/>
-	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrecpos.png" w="11" h="21"/>
+	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrec_pos.png" w="11" h="21"/>
 
 	<bitmap id="sndrec.prev" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="0"/>
 	<bitmap id="sndrec.next" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="0"/>
