@@ -18,5 +18,5 @@ TODO:
  - [x] Reduce the hitbox of the window resizers
  - [x] Think about UI consistency
  - [x] Beat Visualizer from Winamp Modern?
- - [ ] Just for my own fun/experimentation (and for some more suffering), rebuild the sound recorder from Windows XP
+ - [x] Just for my own fun/experimentation (and for some more suffering), rebuild the sound recorder from Windows XP
  - [x] A new about window that resembles winver on Windows XP/2000
