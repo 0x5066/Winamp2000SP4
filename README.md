@@ -20,3 +20,4 @@ TODO:
  - [x] Beat Visualizer from Winamp Modern?
  - [x] Just for my own fun/experimentation (and for some more suffering), rebuild the sound recorder from Windows XP
  - [x] A new about window that resembles winver on Windows XP/2000
+ - [ ] The same Main Window, but not as big as it is right now
