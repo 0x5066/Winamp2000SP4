@@ -30,20 +30,20 @@
 	<include file="xml/system.xml"/>
   <include file="xml/standardframe.xml"/>
   <include file="xml/titlebar.xml"/>
+	<include file="xml/beatvis.xml"/>
 	<include file="xml/main-player.xml"/>
 	<include file="xml/albumart.xml"/>
 	<include file="xml/equalizer.xml"/>
+	<include file="xml/hl2timer.xml"/>
 	<include file="xml/playlist-editor.xml"/>
 	<include file="xml/media-library.xml"/>
+	<include file="xml/soundrec.xml"/>
 	<include file="xml/video.xml"/>
 	<include file="xml/visualization.xml"/>
 	<include file="xml/about.xml"/>
 	<include file="xml/color-themes.xml"/>
 	<include file="xml/window-overrides.xml"/>
-	<include file="xml/beatvis.xml"/>
-	<include file="xml/main.xml"/>
-	<include file="xml/hl2timer.xml"/>
-	<include file="xml/soundrec.xml"/>
+	<include file="xml/main.xml"/> <!-- experimental, do not include in public release -->
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
