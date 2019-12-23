@@ -1,0 +1,35 @@
+<elements>
+
+	<bitmap id="vguivis.bg" file="images/vguivis/vguivis_bg.png" x="0" y="0" w="157" h="21" gammagroup="none"/>
+	<bitmap id="vguivis_animatedlayerL.bg" file="images/vguivis/vgui_left.png" x="0" y="0" w="157" h="420" gammagroup="none"/>
+	<bitmap id="vguivis_animatedlayerR.bg" file="images/vguivis/vgui_right.png" x="0" y="0" w="157" h="420" gammagroup="none"/>
+
+</elements>
+
+<groupdef id="vguivis" x="-2" y="-2" w="165" h="72" relatw="1" relath="1">
+
+	<!--grid x="0" y="0" w="157" h="21" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" left="wnd.left" middle="wnd.mid" right="wnd.right" bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/-->
+	<!--grid x="0" y="23" w="157" h="21" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" left="wnd.left" middle="wnd.mid" right="wnd.right" bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/-->
+	<layer id="vguivis.bg" x="0" y="0" w="157" h="21" image="vguivis.bg" ghost="1"/>
+	<layer id="vguivis.bg" x="0" y="23" w="157" h="21" image="vguivis.bg" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="vguivis_animatedlayerL.bg" x="0" y="0" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="vguivis_animatedlayerR.bg" x="0" y="23" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
+	<script id="ragyovis.script" file="scripts\vgui2vis.maki"/>
+	
+</groupdef>
+
+
+<container id="vguivis" name="VU Meter" default_visible="0">
+
+<layout id="normal" minimum_w="165" minimum_h="72" w="165" h="72" maximum_w="165" maximum_h="72">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="165" h="72" content="vguivis"/>
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+  <!--sendparams target="titlebar.title.bg.group" w="170"/-->
+	
+  <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
+  <layer id="resize.disabler" x="395" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
+  <layer id="resize.disabler" x="0" y="35" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+  <layer id="resize.disabler" x="0" y="365" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+</layout>
+
+</container>
