@@ -6,7 +6,7 @@
 	<bitmap id="wa.posbtn.pressed" file="images/wamodern/posbar.png" x="60" y="0" w="58" h="20"/>
 
 	<!-- SONGTICKERFONT -->
-	<bitmap id="bitmapfont.player.songticker" file="../Winamp Modern/player/songtickerfont.png" x="0" y="0" h="66" w="320" gammagroup="DisplaySongticker"/>
+	<bitmap id="bitmapfont.player.songticker" file="images/wamodern/songtickerfont.png" x="0" y="0" h="66" w="320" gammagroup="DisplaySongticker"/>
 	<bitmapfont id="player.songticker.font" file="bitmapfont.player.songticker" charwidth="10" charheight="22" hspacing="0" vspacing="0"/>
 
 	<bitmap id="wa.play" file="images/wamodern/playpaus.png" x="0" y="0" w="24" h="18"/>
@@ -58,7 +58,7 @@
 
 	<text id="songsamplerate" display="songsamplerate" x="308" y="86" w="23" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
 
-	<text id="songbitrate" display="songbitrate" x="216" y="86" w="36" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
+	<text id="songbitrate" display="songbitrate" x="218" y="86" w="34" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
 
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
