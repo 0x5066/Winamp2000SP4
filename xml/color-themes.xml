@@ -17,4 +17,5 @@
 	<gammagroup id="window-text" value="0, 0, 0" gray="0" boost="0"/>
 	<gammagroup id="button-text" value="0, 0, 0" gray="0" boost="0"/>
 	<gammagroup id="visualizers" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="none" value="0, 0, 0" gray="0" boost="0"/>
 </gammaset>
