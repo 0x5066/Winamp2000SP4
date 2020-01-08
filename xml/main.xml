@@ -1,7 +1,14 @@
 <elements>
 <!-- NUMFONT -->
-  <bitmap id="bitmapfont.player.BIGNUM" file="images/wamodern/numfont.png" x="0" y="0" h="60" w="300" gammagroup="DisplayElements"/>
-  <bitmapfont id="player.BIGNUM" file="bitmapfont.player.BIGNUM" charwidth="18" charheight="26" hspacing="6" vspacing="0"/>
+	<bitmap id="bitmapfont.player.BIGNUM" file="images/wamodern/numfont.png" x="0" y="0" h="60" w="300" gammagroup="DisplayElements"/>
+	<bitmapfont id="player.BIGNUM" file="bitmapfont.player.BIGNUM" charwidth="18" charheight="26" hspacing="6" vspacing="0"/>
+	<bitmap id="wa.posbtn" file="images/wamodern/posbar.png" x="0" y="0" w="58" h="20"/>
+	<bitmap id="wa.posbtn.pressed" file="images/wamodern/posbar.png" x="60" y="0" w="58" h="20"/>
+
+	<!-- SONGTICKERFONT -->
+	<bitmap id="bitmapfont.player.songticker" file="../Winamp Modern/player/songtickerfont.png" x="0" y="0" h="66" w="320" gammagroup="DisplaySongticker"/>
+	<bitmapfont id="player.songticker.font" file="bitmapfont.player.songticker" charwidth="10" charheight="22" hspacing="0" vspacing="0"/>
+
 </elements>
 
 
@@ -13,16 +20,33 @@
 
 
 <layout id="normal" minimum_w="550" minimum_h="232" w="550" h="232" maximum_w="550" maximum_h="232">
+<Wasabi:Standardframe:NoStatus x="0" y="0" w="550" h="232" content="ragyovis2"/>
 	<!--component x="48" y="86" w="150" h="32" relatw="0" relath="0" noshowcmdbar="0" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="550" h="232" content="ragyovis2"/>
+	
 	<layer id="mainfront" x="0" y="0" w="550" h="232" image="main" ghost="1"/>
-	<vis id="shade.vis" x="48" y="86" w="144" h="32" fps="60" cursor="cur.normal" gammagroup="visualizers"/>
-	<layer id="player.vis.trigger" x="48" y="86" w="144" h="32" image="none" cursor="cur.normal"/>
+	<vis id="shade.vis" x="48" y="86" w="150" h="32" fps="60" cursor="cur.normal" peakfalloff="0"
+ falloff="4" bandwidth="thin" gammagroup="visualizers"/>
 	<script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/>
-
   <!-- Timer -->
   <text id="timer" display="time" x="83" y="52" w="120" h="26" font="player.BIGNUM" align="right" valign="top" timecolonwidth="12" timeroffstyle="1" fontsize="24" color="font.display"/>
 
+	<slider id="player.slider.seek" action="SEEK" x="32" y="144" w="496" h="20" orientation="horizontal" thumb="wa.posbtn" hoverthumb="wa.posbtn" downthumb="wa.posbtn.pressed" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
+
+  <!-- Songticker -->
+  <Songticker
+    id="Songticker" showlen="1"
+    x="222" y="54"
+    w="308" h="23"
+    leftpadding="5"
+    rightpadding="-5"
+    font="player.songticker.font"
+    align="center"
+    valign="top"
+    rightclickaction="trackmenu"
+    dblclickaction="trackinfo"
+    fontsize="18"
+    color="0,226,0"
+   />
 
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
