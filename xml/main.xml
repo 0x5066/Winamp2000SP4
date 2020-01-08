@@ -1,15 +1,29 @@
+<elements>
+<!-- NUMFONT -->
+  <bitmap id="bitmapfont.player.BIGNUM" file="images/wamodern/numfont.png" x="0" y="0" h="60" w="300" gammagroup="DisplayElements"/>
+  <bitmapfont id="player.BIGNUM" file="bitmapfont.player.BIGNUM" charwidth="18" charheight="26" hspacing="6" vspacing="0"/>
+</elements>
+
 
 <groupdef id="ragyovis2" x="-2" y="-2" w="550" h="232" relatw="1" relath="1">
 </groupdef>
 
 
-<container id="beatvis" name="main" default_visible="0">
+<container id="winampmain" name="main" default_visible="0">
 
 
 <layout id="normal" minimum_w="550" minimum_h="232" w="550" h="232" maximum_w="550" maximum_h="232">
 	<!--component x="48" y="86" w="150" h="32" relatw="0" relath="0" noshowcmdbar="0" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
 	<Wasabi:Standardframe:NoStatus x="0" y="0" w="550" h="232" content="ragyovis2"/>
 	<layer id="mainfront" x="0" y="0" w="550" h="232" image="main" ghost="1"/>
+	<vis id="shade.vis" x="48" y="86" w="144" h="32" fps="60" cursor="cur.normal" gammagroup="visualizers"/>
+	<layer id="player.vis.trigger" x="48" y="86" w="144" h="32" image="none" cursor="cur.normal"/>
+	<script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/>
+
+  <!-- Timer -->
+  <text id="timer" display="time" x="83" y="52" w="120" h="26" font="player.BIGNUM" align="right" valign="top" timecolonwidth="12" timeroffstyle="1" fontsize="24" color="font.display"/>
+
+
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
