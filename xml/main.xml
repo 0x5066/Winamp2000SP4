@@ -9,6 +9,12 @@
 	<bitmap id="bitmapfont.player.songticker" file="../Winamp Modern/player/songtickerfont.png" x="0" y="0" h="66" w="320" gammagroup="DisplaySongticker"/>
 	<bitmapfont id="player.songticker.font" file="bitmapfont.player.songticker" charwidth="10" charheight="22" hspacing="0" vspacing="0"/>
 
+	<bitmap id="wa.play" file="images/wamodern/playpaus.png" x="0" y="0" w="24" h="18"/>
+	<bitmap id="wa.pause" file="images/wamodern/playpaus.png" x="0" y="18" w="24" h="18"/>
+	<bitmap id="wa.stop" file="images/wamodern/playpaus.png" x="0" y="32" w="24" h="18"/>
+
+	<bitmap id="wa.grid" file="images/wamodern/grid.png" x="0" y="0" w="150" h="32"/>
+
 </elements>
 
 
@@ -25,8 +31,8 @@
 	
 	<layer id="mainfront" x="0" y="0" w="550" h="232" image="main" ghost="1"/>
 	<vis id="shade.vis" x="48" y="86" w="150" h="32" fps="60" cursor="cur.normal" peakfalloff="0"
- falloff="4" bandwidth="thin" gammagroup="visualizers"/>
-	<script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/>
+ falloff="4" bandwidth="thin"/>
+	<!--layer id="wagrid" x="48" y="86" w="150" h="32" image="wa.grid" ghost="1"/-->
   <!-- Timer -->
   <text id="timer" display="time" x="83" y="52" w="120" h="26" font="player.BIGNUM" align="right" valign="top" timecolonwidth="12" timeroffstyle="1" fontsize="24" color="font.display"/>
 
@@ -36,7 +42,7 @@
   <Songticker
     id="Songticker" showlen="1"
     x="222" y="54"
-    w="308" h="23"
+    w="307" h="23"
     leftpadding="5"
     rightpadding="-5"
     font="player.songticker.font"
@@ -47,6 +53,12 @@
     fontsize="18"
     color="0,226,0"
    />
+
+	<status id="wastatus" x="48" y="56" stopBitmap="wa.stop" playBitmap="wa.play" pauseBitmap="wa.pause" ghost="1"/>
+
+	<text id="songsamplerate" display="songsamplerate" x="308" y="86" w="23" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
+
+	<text id="songbitrate" display="songbitrate" x="216" y="86" w="36" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
 
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
