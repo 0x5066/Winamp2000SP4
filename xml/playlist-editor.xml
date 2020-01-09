@@ -1,13 +1,22 @@
+<elements>
+
+	<bitmap id="shadewin.l" file="images/window/shadewindow.png" x="0" y="0" w="3" h="3"/>
+	<bitmap id="shadewin.m" file="images/window/shadewindow.png" x="4" y="0" w="1" h="3"/>
+	<bitmap id="shadewin.r" file="images/window/shadewindow.png" x="6" y="0" w="3" h="3"/>
+
+</elements>
+
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
 	<component id="pl.wdh" x="-2" y="0" w="2" relatw="1" h="-40" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
 </groupdef>
 
-<groupdef id="pledit.shade.group.main" w="0" h="25" ghost="1" relatw="1">
+<groupdef id="pledit.shade.group.main" w="0" h="35" ghost="1" relatw="1">
 	<layer id="pledit.background.main.left" x="0" y="0" h="35" image="window.shade.background.main.left" dblclickaction="SWITCH;normal" move="1" ghost="0" sysregion="1" cursor="cur.normal"/>
 	<layer id="pledit.background.main.center" x="267" y="0" w="-366" relatw="1" h="35" image="window.shade.background.main.center" tile="1" dblclickaction="SWITCH;normal" move="1" ghost="0" sysregion="1" cursor="cur.normal"/>
 	<layer id="pledit.background.main.right" x="-271" y="0" relatx="1" h="35" image="window.shade.background.main.right" dblclickaction="SWITCH;normal" move="1" ghost="0" sysregion="1" cursor="cur.normal"/>
+	<grid id="shadewinstuff" x="0" y="23" w="-0" h="3" relatw="1" left="shadewin.l" middle="shadewin.m" right="shadewin.r" ghost="1"/>
 	
 	<layer x="4" y="4" w="-61" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
 	<layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="255" inactivealpha="0"/>
@@ -23,7 +32,7 @@
 	  <playlistPlus id="main.pl" x="3" y="5" w="-64" h="16" relatw="1" font="sarpanch" fontsize="15" linespacing="1" color="white" antialias="0" 
 			playcolor="white" sysregion="1" bold="1" activealpha="255" inactivealpha="100"/>		
 			
-	<layer id="pledit.background.grip.mid" x="-66" y="0" w="4" h="26" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="0" cursor="cur.posbar"/>
+	<layer id="pledit.background.grip.mid" x="-4" y="0" w="4" h="26" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="0" cursor="cur.posbar"/>
 
 	<group id="pledit.shade.group.display" x="4" y="3" cursor="cur.normal"/>
 
@@ -33,7 +42,8 @@
 
 </groupdef>
 
-<groupdef id="pledit.shade.group.display" w="-65" h="29" relatw="1">
+<groupdef id="pledit.shade.group.display" w="-65" h="26" relatw="1">
+
 	<layer id="pledit.background.display.left" x="0" y="0" image="pl.shade.display.left" ghost="1" />
 	<layer id="pledit.background.display.center" x="81" y="0" w="-100" relatw="1" image="pl.shade.display.middle" tile="1" ghost="1" />
 	<layer id="pledit.background.display.right" x="-19" y="0" relatx="1" image="pl.shade.display.right" ghost="1" />
@@ -51,6 +61,7 @@
 </groupdef-->
 
 <groupdef id="xui.playlistplus" xuitag="PlaylistPlus">
+
 	<layer id="playlist.plus.lines" image="none" x="4" y="0" w="-8" h="20" relatw="1" ghost="1" alpha="185" />
 	<group id="xui.playlistplus.selector" x="0" y="0" w="0" relatw="1" h="10" alpha="0" visible="0"/>
 	
@@ -63,6 +74,7 @@
 	<layer id="mousetrap" x="0" y="0" w="0" relatw="1" h="0" relath="1" rectrgn="1" move="1" dblclickaction="SWITCH;normal" cursor="cur.normal"/>
 	  
   <script id="xui.playlistplus.script" file="scripts\playlist_editor.maki"/>
+
 </groupdef>
 
 
@@ -84,7 +96,7 @@
 </groupdef>
 
 
-<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="242" minimum_w="550" linkwidth="shade" appbar="top|bottom|left|right">
+<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="121" minimum_w="275" linkwidth="shade" appbar="top|bottom|left|right">
 	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="pledit.content.group" />
 	<sendparams target="window.button.switch" visible="1"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51"/>
@@ -134,8 +146,10 @@
 </layout> 
 
 
-<layout id="shade" w="550" h="35" minimum_w="550" minimum_h="35" maximum_w="10000" droptarget="pldr" desktopalpha="0" linkwidth="normalpl">
-	<group id="pledit.shade.group.main" x="0" y="0" h="35" ghost="1" cursor="cur.normal"/>	
+<layout id="shade" w="550" h="26" minimum_w="275" minimum_h="26" maximum_w="10000" maximum_h="26" droptarget="pldr" desktopalpha="0" linkwidth="normalpl">
+  
+
+	<group id="pledit.shade.group.main" x="0" y="0" h="26" ghost="1" cursor="cur.normal"/>	
 </layout>	
 	
 </container>
