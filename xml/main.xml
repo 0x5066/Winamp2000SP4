@@ -1,5 +1,7 @@
 <elements>
 <!-- NUMFONT -->
+
+	<bitmap id="wa.main" file="images/wamodern/main.png" x="0" y="0" w="550" h="232" gammagroup="none"/>
 	<bitmap id="bitmapfont.player.BIGNUM" file="images/wamodern/numfont.png" x="0" y="0" h="60" w="300" gammagroup="DisplayElements"/>
 	<bitmapfont id="player.BIGNUM" file="bitmapfont.player.BIGNUM" charwidth="18" charheight="26" hspacing="6" vspacing="0"/>
 	<bitmap id="wa.posbtn" file="images/wamodern/posbar.png" x="0" y="0" w="58" h="20"/>
@@ -15,6 +17,28 @@
 
 	<bitmap id="wa.grid" file="images/wamodern/grid.png" x="0" y="0" w="150" h="32"/>
 
+	<bitmap id="wabtn.prev.unpressed" file="images/wamodern/cbuttons.png" x="0" y="0" w="46" h="36"/>
+	<bitmap id="wabtn.play.unpressed" file="images/wamodern/cbuttons.png" x="46" y="0" w="46" h="36"/>
+	<bitmap id="wabtn.paus.unpressed" file="images/wamodern/cbuttons.png" x="92" y="0" w="46" h="36"/>
+	<bitmap id="wabtn.stop.unpressed" file="images/wamodern/cbuttons.png" x="138" y="0" w="46" h="36"/>
+	<bitmap id="wabtn.next.unpressed" file="images/wamodern/cbuttons.png" x="184" y="0" w="44" h="36"/>
+	<bitmap id="wabtn.ejec.unpressed" file="images/wamodern/cbuttons.png" x="228" y="0" w="44" h="32"/>
+
+	<bitmap id="wabtn.prev.pressed" file="images/wamodern/cbuttons.png" x="0" y="36" w="46" h="36"/>
+	<bitmap id="wabtn.play.pressed" file="images/wamodern/cbuttons.png" x="46" y="36" w="46" h="36"/>
+	<bitmap id="wabtn.paus.pressed" file="images/wamodern/cbuttons.png" x="92" y="36" w="46" h="36"/>
+	<bitmap id="wabtn.stop.pressed" file="images/wamodern/cbuttons.png" x="138" y="36" w="46" h="36"/>
+	<bitmap id="wabtn.next.pressed" file="images/wamodern/cbuttons.png" x="184" y="36" w="44" h="36"/>
+	<bitmap id="wabtn.ejec.pressed" file="images/wamodern/cbuttons.png" x="228" y="32" w="44" h="32"/>
+
+	<bitmap id="wabtn.rep.unpressed" 	file="images/wamodern/shufrep.png" x="0" y="0" w="56" h="30"/>
+	<bitmap id="wabtn.rep.downpressed" 	file="images/wamodern/shufrep.png" x="0" y="30" w="56" h="30"/>
+	<bitmap id="wabtn.rep.active" 		file="images/wamodern/shufrep.png" x="0" y="60" w="56" h="30"/>
+	<bitmap id="wabtn.rep.downactive" 	file="images/wamodern/shufrep.png" x="0" y="90" w="56" h="30"/>
+
+	<bitmap id="wa.mono.off" 	file="images/wamodern/monoster.png" x="0" y="0" w="58" h="24"/>
+	<bitmap id="wa.stereo.off" 	file="images/wamodern/monoster.png" x="58" y="0" w="58" h="24"/>
+
 </elements>
 
 
@@ -29,7 +53,7 @@
 <Wasabi:Standardframe:NoStatus x="0" y="0" w="550" h="232" content="ragyovis2"/>
 	<!--component x="48" y="86" w="150" h="32" relatw="0" relath="0" noshowcmdbar="0" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
 	
-	<layer id="mainfront" x="0" y="0" w="550" h="232" image="main" ghost="1"/>
+	<layer id="wamainfront" x="0" y="0" w="550" h="232" image="wa.main" ghost="1"/>
 	<vis id="shade.vis" x="48" y="86" w="150" h="32" fps="60" cursor="cur.normal" peakfalloff="0"
  falloff="4" bandwidth="thin"/>
 	<!--layer id="wagrid" x="48" y="86" w="150" h="32" image="wa.grid" ghost="1"/-->
@@ -42,7 +66,7 @@
   <Songticker
     id="Songticker" showlen="1"
     x="222" y="54"
-    w="307" h="23"
+    w="308" h="23"
     leftpadding="5"
     rightpadding="-5"
     font="player.songticker.font"
@@ -59,6 +83,24 @@
 	<text id="songsamplerate" display="songsamplerate" x="308" y="86" w="23" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
 
 	<text id="songbitrate" display="songbitrate" x="218" y="86" w="34" h="23" font="player.songticker.font" fontsize="18" align="right" valign="top"/>
+
+
+	<button id="wabtn.previous" action="PREV" 	x="32" y="176" 	image="wabtn.prev.unpressed" 	hoverimage="wabtn.prev.unpressed" 	downimage="wabtn.prev.pressed" alpha="255" cursor="cur.normal" tooltip="Previous Track"/>
+	<button id="wabtn.play" action="PLAY" 		x="78" y="176" 	image="wabtn.play.unpressed" 	hoverimage="wabtn.play.unpressed" 	downimage="wabtn.play.pressed" alpha="255" cursor="cur.normal" tooltip="Play"/>
+	<button id="wabtn.pause" action="PAUSE" 	x="124" y="176" image="wabtn.paus.unpressed"	hoverimage="wabtn.paus.unpressed" 	downimage="wabtn.paus.pressed" alpha="255" cursor="cur.normal" tooltip="Pause"/>
+	<button id="wabtn.stop" action="STOP" 		x="170" y="176" image="wabtn.stop.unpressed"	hoverimage="wabtn.stop.unpressed" 	downimage="wabtn.stop.pressed" alpha="255" cursor="cur.normal" tooltip="Stop"/>
+	<button id="wabtn.next" action="NEXT" 		x="216" y="176" image="wabtn.next.unpressed" 	hoverimage="wabtn.next.unpressed" 	downimage="wabtn.next.pressed" alpha="255" cursor="cur.normal" tooltip="Next Track"/>
+
+	<button id="wabtn.open" action="EJECT" 		x="272" y="178" image="wabtn.ejec.unpressed" 	hoverimage="wabtn.ejec.unpressed" 	downimage="wabtn.ejec.pressed" alpha="255" cursor="cur.normal" tooltip="Open File(s)"/>
+<!--
+	<NStatesButton id="wabtn" x="420" y="178" image="wabtn.rep.unpressed" hoverimage="wabtn.rep.unpressed" downimage="wabtn.rep.downpressed" activeimage="wabtn.rep.active" rectrgn="1" nstates="3" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" cfgvals="0;1;-1" tooltip="Toggle Repeat" alpha="255" cursor="cur.normal"/>
+	<togglebutton id="wa.repeat" x="420" y="178" image="wabtn.rep.unpressed" downimage="wabtn.rep.downpressed" activeimage="wabtn.rep.active" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"/>
+-->
+
+<!--
+	<layer id="wa.mono" x="424" y="82" image="wa.mono.off" ghost="1" alpha="255"/>
+	<layer id="wa.stereo" x="478" y="82" image="wa.stereo.off" ghost="1" alpha="255"/>
+-->
 
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
