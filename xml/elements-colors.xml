@@ -2,10 +2,10 @@
   <color id="greentxttime" value="138,196,64" gammagroup="display-text"/>
 
 	<!-- Generic Lists -->
-	<color id="wasabi.list.text" value="0,0,0" gammagroup="display-sui-text"/> <!--lists/trees item foreground (also edit text) -->
-	<color id="wasabi.list.background" value="255,255,255" gammagroup="display"/>	<!--lists/trees item background (also bg for edit) -->
-	<color id="wasabi.list.text.alternate" value="0,0,0" gammagroup="display-sui-text"/> <!-- ML txt and such -->
-	<color id="wasabi.list.background.alternate" value="255,255,255" gammagroup="display-sui"/> <!--alternate coloring used for WACUP ml_playlist, reminder that i will tear someone's head off whoever implemented that in 5.5x-->
+	<color id="wasabi.list.text" value="0,0,0" gammagroup="Window-Text"/> <!--lists/trees item foreground (also edit text) -->
+	<color id="wasabi.list.background" value="255,255,255" gammagroup="Window"/>	<!--lists/trees item background (also bg for edit) -->
+	<color id="wasabi.list.text.alternate" value="0,0,0" gammagroup="Window-Text"/> <!-- ML txt and such -->
+	<color id="wasabi.list.background.alternate" value="255,255,255" gammagroup="Window"/> <!--alternate coloring used for WACUP ml_playlist, reminder that i will tear someone's head off whoever implemented that in 5.5x-->
 
   <color id="wasabi.list.text.selected" value="255,255,255" gammagroup="current-active"/> <!--listview/treeview selection bar text color -->
 	<color id="wasabi.list.text.selected.background" value="10,36,106" gammagroup="selection-bg"/> <!--listview/treeview selection bar background color -->
@@ -18,19 +18,19 @@
 	<color id="wasabi.list.text.selected.background.inactive" value="10,36,106" gammagroup="selection-bg"/> <!-- listview/treeview selectionbar back color (inactive) -->
 
 	<!-- edit wnds -->
-	<color id="wasabi.window.background" value="212,208,200" gammagroup="display-sui"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 
+	<color id="wasabi.window.background" value="212,208,200" gammagroup="3D Objects"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 
 	extract a pixel, so specifying it makes skin loading faster --> <!-- also, look below, this needs to be loaded 1st, don't move it -->
 	
-	<color id="wasabi.list.column.background" value="212,208,200" gammagroup="display-sui"/> <!-- listview header background color -->
-	<color id="wasabi.list.column.text" value="0,0,0" gammagroup="window-text"/> <!-- listview header text color -->
+	<color id="wasabi.list.column.background" value="212,208,200" gammagroup="3D Objects"/> <!-- listview header background color -->
+	<color id="wasabi.list.column.text" value="0,0,0" gammagroup="3D Objects-Text"/> <!-- listview header text color -->
   <color id="studio.list.column.separator" value="wasabi.window.background"/>
-	<color id="wasabi.list.column.frame.top" value="255,255,255" gammagroup="display-sui"/> <!-- listview header frame top color -->
-	<color id="wasabi.list.column.frame.middle" value="128,128,128" gammagroup="display-sui"/> <!-- listview header frame middle color -->
-	<color id="wasabi.list.column.frame.bottom" value="64,64,64" gammagroup="display-sui"/> <!-- listview header frame bottom color -->
+	<color id="wasabi.list.column.frame.top" value="255,255,255" gammagroup="3D Objects"/> <!-- listview header frame top color -->
+	<color id="wasabi.list.column.frame.middle" value="128,128,128" gammagroup="3D Objects"/> <!-- listview header frame middle color -->
+	<color id="wasabi.list.column.frame.bottom" value="64,64,64" gammagroup="3D Objects"/> <!-- listview header frame bottom color -->
 	<color id="wasabi.list.column.empty" value="212,208,200" gammagroup="display-sui"/>  <!-- listview header empty color (beyond the columns -->
 
 
-	<color id="wasabi.window.text" value="0,0,0" gammagroup="window-text"/> <!--text color within windows -->
+	<color id="wasabi.window.text" value="0,0,0" gammagroup="Window-Text"/> <!--text color within windows -->
 	<color id="wasabi.border.sunken" value="128,128,128" gammagroup="display-sui"/> <!-- color of dividers and sunken borders (also affects playlist scrollbar outline at the sides) -->
 
 
@@ -106,10 +106,10 @@
   <elementalias id="wasabi.scrollbar.foreground.inverted" target="wasabi.scrollbar.background"/>
 	<elementalias id="wasabi.scrollbar.background.inverted" target="wasabi.scrollbar.background"/>
 
-	<color id="wasabi.scrollbar.foreground.inverted" value="212,208,200" gammagroup="plastic"/> <!-- inverse scrollbar foreground color -->
-	<color id="wasabi.scrollbar.background.inverted" value="255,255,255" gammagroup="plastic"/> <!-- inverse inverse scrollbar background color AND PL Editor bg-->
-	<color id="wasabi.scrollbar.foreground" value="212,208,200" gammagroup="plastic"/> <!-- scrollbar foreground color -->
-	<color id="wasabi.scrollbar.background" value="255,255,255" gammagroup="plastic"/> <!-- scrollbar background color -->
+	<color id="wasabi.scrollbar.foreground.inverted" value="212,208,200" gammagroup="3D Objects"/> <!-- inverse scrollbar foreground color -->
+	<color id="wasabi.scrollbar.background.inverted" value="255,255,255" gammagroup="3D Objects"/> <!-- inverse inverse scrollbar background color AND PL Editor bg-->
+	<color id="wasabi.scrollbar.foreground" value="212,208,200" gammagroup="3D Objects"/> <!-- scrollbar foreground color -->
+	<color id="wasabi.scrollbar.background" value="255,255,255" gammagroup="3D Objects"/> <!-- scrollbar background color -->
 	
   <!-- WACUP only: Waveseeker -->
 
