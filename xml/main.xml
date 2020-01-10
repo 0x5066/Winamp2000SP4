@@ -36,8 +36,22 @@
 	<bitmap id="wabtn.rep.active" 		file="images/wamodern/shufrep.png" x="0" y="60" w="56" h="30"/>
 	<bitmap id="wabtn.rep.downactive" 	file="images/wamodern/shufrep.png" x="0" y="90" w="56" h="30"/>
 
-	<bitmap id="wa.mono.off" 	file="images/wamodern/monoster.png" x="0" y="0" w="58" h="24"/>
-	<bitmap id="wa.stereo.off" 	file="images/wamodern/monoster.png" x="58" y="0" w="58" h="24"/>
+	<bitmap id="wa.mono.off" 	file="images/wamodern/monoster.png"	x="0" y="0" w="58" h="24"/>
+	<bitmap id="wa.stereo.off" 	file="images/wamodern/monoster.png"	x="58" y="0" w="58" h="24"/>
+
+	<bitmap id="wa.titlebar.on"	file="images/wamodern/titlebar.png"	x="54" y="0" w="550" h="28"/>
+	<bitmap id="wa.titlebar.off"	file="images/wamodern/titlebar.png"	x="54" y="30" w="550" h="28"/>
+	<bitmap id="wa.sysmenu.on"	file="images/wamodern/titlebar.png"	x="0" y="0" w="18" h="18"/>
+	<bitmap id="wa.sysmenu.pressed"	file="images/wamodern/titlebar.png"	x="0" y="18" w="18" h="18"/>
+
+	<bitmap id="wa.min.on"		file="images/wamodern/titlebar.png"	x="18" y="0" w="18" h="18"/>
+	<bitmap id="wa.min.pressed"	file="images/wamodern/titlebar.png"	x="18" y="18" w="18" h="18"/>
+
+	<bitmap id="wa.exit.on"		file="images/wamodern/titlebar.png"	x="36" y="0" w="18" h="18"/>
+	<bitmap id="wa.exit.pressed"	file="images/wamodern/titlebar.png"	x="36" y="18" w="18" h="18"/>
+
+	<bitmap id="wa.switch.on"	file="images/wamodern/titlebar.png"	x="0" y="36" w="18" h="18"/>
+	<bitmap id="wa.switch.pressed"	file="images/wamodern/titlebar.png"	x="18" y="36" w="18" h="18"/>
 
 </elements>
 
@@ -63,20 +77,8 @@
 	<slider id="player.slider.seek" action="SEEK" x="32" y="144" w="496" h="20" orientation="horizontal" thumb="wa.posbtn" hoverthumb="wa.posbtn" downthumb="wa.posbtn.pressed" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
 
   <!-- Songticker -->
-  <Songticker
-    id="Songticker" showlen="1"
-    x="222" y="54"
-    w="308" h="23"
-    leftpadding="5"
-    rightpadding="-5"
-    font="player.songticker.font"
-    align="center"
-    valign="top"
-    rightclickaction="trackmenu"
-    dblclickaction="trackinfo"
-    fontsize="18"
-    color="0,226,0"
-   />
+  <Songticker	id="Songticker" showlen="1" x="222" y="54" w="308" h="23" leftpadding="5" rightpadding="-5" font="player.songticker.font"
+	align="center" valign="top" rightclickaction="trackmenu" dblclickaction="trackinfo" fontsize="18" color="0,226,0"/>
 
 	<status id="wastatus" x="48" y="56" stopBitmap="wa.stop" playBitmap="wa.play" pauseBitmap="wa.pause" ghost="1"/>
 
@@ -101,6 +103,15 @@
 	<layer id="wa.mono" x="424" y="82" image="wa.mono.off" ghost="1" alpha="255"/>
 	<layer id="wa.stereo" x="478" y="82" image="wa.stereo.off" ghost="1" alpha="255"/>
 -->
+
+	<layer id="wa.titlebar.on" x="0" y="0" image="wa.titlebar.on" ghost="1" activealpha="255" inactivealpha="0"/>
+	<layer id="wa.titlebar.on" x="0" y="0" image="wa.titlebar.off" ghost="1" activealpha="0" inactivealpha="255"/>
+
+	<button id="wa.sysmenu" action="SYSMENU" x="12" y="6" image="wa.sysmenu.on" hoverimage="wa.sysmenu.on" downimage="wa.sysmenu.pressed" activealpha="255" inactivealpha="0" tooltip="Winamp Menu" cursor="cur.normal"/>
+
+	<button id="wa.switch" x="488" y="6" 		image="wa.min.on" hoverimage="wa.min.on" downimage="wa.min.pressed" tooltip="Minimize" activealpha="255" inactivealpha="0" cursor="cur.normal"/>
+	<button id="wa.minimize" x="508" y="6" 		image="wa.switch.on" hoverimage="wa.switch.on" downimage="wa.switch.pressed" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="0" cursor="cur.normal"/>
+	<button id="wa.close" x="528" y="6" 		image="wa.exit.on" hoverimage="wa.exit.on" downimage="wa.exit.pressed" tooltip="Close" activealpha="255" inactivealpha="0" cursor="cur.close"/>
 
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->

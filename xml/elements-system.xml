@@ -204,13 +204,13 @@
 <!-- Panel Bevels -->
 
   <bitmap id="wasabi.panel.top.left" file="images/window/windows-elements.png" x="19" y="114" h="2" w="2" gammagroup="plastic"/>
-  <bitmap id="wasabi.panel.top" file="images/window/windows-elements.png" x="21" y="114" h="2" w="16" gammagroup="plastic"/>
+  <bitmap id="wasabi.panel.top" file="images/window/windows-elements.png" x="21" y="114" h="2" w="15" gammagroup="plastic"/>
   <bitmap id="wasabi.panel.top.right" file="images/window/windows-elements.png" x="37" y="114" h="2" w="2" gammagroup="plastic"/>
-  <bitmap id="wasabi.panel.left" file="images/window/windows-elements.png" x="19" y="116" h="16" w="2" gammagroup="plastic"/>
-  <bitmap id="wasabi.panel.right" file="images/window/windows-elements.png" x="37" y="116" h="16" w="2" gammagroup="plastic"/>
-  <bitmap id="wasabi.panel.bottom.left" file="images/window/windows-elements.png" x="19" y="132" h="2" w="2" gammagroup="plastic"/>
-  <bitmap id="wasabi.panel.bottom" file="images/window/windows-elements.png" x="21" y="132" h="2" w="16" gammagroup="plastic"/>
-  <bitmap id="wasabi.panel.bottom.right" file="images/window/windows-elements.png" x="37" y="132" h="2" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.panel.left" file="images/window/windows-elements.png" x="19" y="116" h="12" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.panel.right" file="images/window/windows-elements.png" x="37" y="116" h="15" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.panel.bottom.left" file="images/window/windows-elements.png" x="19" y="131" h="2" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.panel.bottom" file="images/window/windows-elements.png" x="21" y="131" h="2" w="15" gammagroup="plastic"/>
+  <bitmap id="wasabi.panel.bottom.right" file="images/window/windows-elements.png" x="37" y="131" h="2" w="2" gammagroup="plastic"/>
   <!--bitmap id="wasabi.panel.tint" file="images/window/windows-background-secondary.png" gammagroup="plastic" /-->
 
 <!-- Object Frame-->
@@ -224,6 +224,7 @@
   <bitmap id="wasabi.objectframe.bottom.left" file="images/window/windows-elements.png" x="0" y="132" h="1" w="1" gammagroup="plastic"/>
   <bitmap id="wasabi.objectframe.bottom" file="images/window/windows-elements.png" x="1" y="132" h="1" w="17" gammagroup="plastic"/>
   <bitmap id="wasabi.objectframe.bottom.right" file="images/window/windows-elements.png" x="18" y="132" h="1" w="1" gammagroup="plastic"/>
+
 
 <!-- Combo Box List-->
 
@@ -239,15 +240,15 @@
 
 <!-- Embedded Window -->
 
-  <bitmap id="wasabi.window.top.left" file="images/window/windows-elements.png" x="0" y="114" h="1" w="1" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.top" file="images/window/windows-elements.png" x="1" y="114" h="1" w="17" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.top.right" file="images/window/windows-elements.png" x="18" y="114" h="1" w="1" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.left" file="images/window/windows-elements.png" x="0" y="115" h="17" w="1" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.center" file="images/window/windows-elements.png" x="1" y="115" h="17" w="17" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.right" file="images/window/windows-elements.png" x="18" y="115" h="17" w="1" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.bottom.left" file="images/window/windows-elements.png" x="0" y="132" h="1" w="1" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.bottom" file="images/window/windows-elements.png" x="1" y="132" h="1" w="17" gammagroup="plastic"/>
-  <bitmap id="wasabi.window.bottom.right" file="images/window/windows-elements.png" x="18" y="132" h="1" w="1" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.top.left" file="images/window/windows-elements.png" x="0" y="114" h="2" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.top" file="images/window/windows-elements.png" x="2" y="114" h="2" w="15" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.top.right" file="images/window/windows-elements.png" x="17" y="114" h="2" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.left" file="images/window/windows-elements.png" x="0" y="116" h="15" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.center" file="images/window/windows-elements.png" x="2" y="114" h="2" w="15" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.right" file="images/window/windows-elements.png" x="17" y="116" h="15" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.bottom.left" file="images/window/windows-elements.png" x="0" y="131" h="2" w="2" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.bottom" file="images/window/windows-elements.png" x="2" y="131" h="2" w="15" gammagroup="plastic"/>
+  <bitmap id="wasabi.window.bottom.right" file="images/window/windows-elements.png" x="17" y="131" h="2" w="2" gammagroup="plastic"/>
 
 <!-- Generic Button -->
 
