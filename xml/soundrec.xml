@@ -3,36 +3,36 @@
 	<!-- background stuff -->	
 
 	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="135" h="19"/>
-	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrec_pos.png" w="11" h="21"/>
+	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrec_pos.png" w="11" h="21" gammagroup="3D Objects"/>
 
 	<!-- buttons -->
 
-	<bitmap id="sndrec.prev" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="0"/>
-	<bitmap id="sndrec.next" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="0"/>
-	<bitmap id="sndrec.play" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="98" y="0"/>
-	<bitmap id="sndrec.paus" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="147" y="0"/>
-	<bitmap id="sndrec.stop" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="196" y="0"/>
-	<bitmap id="sndrec.dis" file="images/soundrec/sndrec_dis.png" w="48" h="24" x="0" y="0"/>
+	<bitmap id="sndrec.prev" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="0" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.next" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="0" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.play" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="98" y="0" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.paus" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="147" y="0" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.stop" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="196" y="0" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.dis" file="images/soundrec/sndrec_dis.png" w="48" h="24" x="0" y="0" gammagroup="3D Objects"/>
 
-	<bitmap id="sndrec.prev.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="25"/>
-	<bitmap id="sndrec.next.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="25"/>
-	<bitmap id="sndrec.play.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="98" y="25"/>
-	<bitmap id="sndrec.paus.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="147" y="25"/>
-	<bitmap id="sndrec.stop.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="196" y="25"/>
+	<bitmap id="sndrec.prev.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="0" y="25" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.next.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="49" y="25" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.play.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="98" y="25" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.paus.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="147" y="25" gammagroup="3D Objects"/>
+	<bitmap id="sndrec.stop.d" file="images/soundrec/sndrec_buttons.png" w="48" h="24" x="196" y="25" gammagroup="3D Objects"/>
 
 	<!-- additional window elements -->
 
-	<bitmap id="wnd.topleft" file="images\soundrec\windowelement.png" x="0" y="0" w="6" h="6" gammagroup="none"/>
-	<bitmap id="wnd.topmid" file="images\soundrec\windowelement.png" x="7" y="0" w="6" h="6" gammagroup="none"/>
-	<bitmap id="wnd.topright" file="images\soundrec\windowelement.png" x="14" y="0" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.topleft" file="images\soundrec\windowelement.png" x="0" y="0" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.topmid" file="images\soundrec\windowelement.png" x="7" y="0" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.topright" file="images\soundrec\windowelement.png" x="14" y="0" w="6" h="6" gammagroup="3D Objects"/>
 	
-	<bitmap id="wnd.left" file="images\soundrec\windowelement.png" x="0" y="7" w="6" h="6" gammagroup="none"/>
-	<bitmap id="wnd.mid" file="images\soundrec\windowelement.png" x="7" y="7" w="6" h="6" gammagroup="none"/>
-	<bitmap id="wnd.right" file="images\soundrec\windowelement.png" x="14" y="7" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.left" file="images\soundrec\windowelement.png" x="0" y="7" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.mid" file="images\soundrec\windowelement.png" x="7" y="7" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.right" file="images\soundrec\windowelement.png" x="14" y="7" w="6" h="6" gammagroup="3D Objects"/>
 
-	<bitmap id="wnd.btmleft" file="images\soundrec\windowelement.png" x="0" y="14" w="6" h="6" gammagroup="none"/>
-	<bitmap id="wnd.btmmid" file="images\soundrec\windowelement.png" x="7" y="14" w="6" h="6" gammagroup="none"/>
-	<bitmap id="wnd.btmright" file="images\soundrec\windowelement.png" x="14" y="14" w="6" h="6" gammagroup="none"/>
+	<bitmap id="wnd.btmleft" file="images\soundrec\windowelement.png" x="0" y="14" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.btmmid" file="images\soundrec\windowelement.png" x="7" y="14" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.btmright" file="images\soundrec\windowelement.png" x="14" y="14" w="6" h="6" gammagroup="3D Objects"/>
 
 </elements>
 
