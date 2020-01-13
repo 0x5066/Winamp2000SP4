@@ -1,16 +1,12 @@
 <!-- =======================================================================================================
-
   This file implements the following objects :
-
   - Wasabi:MainFrame:NoStatus
   - Wasabi:PlaylistFrame:NoStatus
   - Wasabi:MediaLibraryFrame:NoStatus
   Available parameters :
-
     padtitleleft  : resizes the title from the left by the specified amount of pixels
     padtitleright : resizes the title from the right by the specified amount of pixels
     content     : tells the object which group to instantiate in its client area
-
 ======================================================================================================== -->
 
 
@@ -41,9 +37,7 @@
 
 
 <!-- =======================================================================================================
-
   This group serves as a template for all the Wasabi:StandardFrame objects
-
 ======================================================================================================== -->
 
 <groupdef id="wasabi.frame.layout">
@@ -73,9 +67,15 @@
 
 	<group id="wasabi.frame.layout.region" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
 
-  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.active" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="255" inactivealpha="0"/>
+  <!--layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.active" activealpha="255" inactivealpha="0"/-->
+	<rect id="icon.active" x="4" y="4" w="20" h="18" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 1"/>
+
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
+  <!--layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="255" inactivealpha="0"/-->
+
+	<rect id="icon.buttons" x="-57" y="4" w="53" h="18" relatx="1" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 2"/>
+
   <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.inactive" activealpha="0" inactivealpha="255"/>
   <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="255"/>
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.inactive" move="0" activealpha="0" inactivealpha="255"/>
@@ -96,9 +96,7 @@
 
 
 <!-- =======================================================================================================
-
   <Wasabi:StandardFrame:Status /> implementation
-
 ======================================================================================================== -->
 
  <groupdef id="wasabi.standardframe.statusbar" background="wasabi.frame.basetexture" sysregion="1" xuitag="Wasabi:StandardFrame:Status">
@@ -125,9 +123,7 @@
 
 
 <!-- =======================================================================================================
-
   <Wasabi:StandardFrame:NoStatus /> implementation
-
 ======================================================================================================== -->
 
 <groupdef id="wasabi.standardframe.nostatusbar" background="wasabi.frame.basetexture" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus" cursor="cur.normal">
@@ -158,9 +154,7 @@
 
 
 <!-- =======================================================================================================
-
   <Wasabi:StandardFrame:Modal /> implementation
-
 ======================================================================================================== -->
 
 <groupdef id="wasabi.standardframe.modal" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Modal">
@@ -171,9 +165,7 @@
 
 
 <!-- =======================================================================================================
-
   <Wasabi:StandardFrame:Static /> implementation
-
 ======================================================================================================== -->
 
 <groupdef id="wasabi.standardframe.static" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Static">
