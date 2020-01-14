@@ -2,7 +2,7 @@
   <color id="greentxttime" value="138,196,64" gammagroup="display-text"/>
 
 	<color id="wasabi.text.color" value="0,0,0" gammagroup="test"/>
-	<color id="wasabi.CheckBox.color" value="0,0,0" gammagroup="test"/>
+	<color id="color.window.txt" value="0,0,0" gammagroup="test"/>
 	
 
 	<!-- Generic Lists -->
@@ -11,15 +11,15 @@
 	<color id="wasabi.list.text.alternate" value="0,0,0" gammagroup="Window-Text"/> <!-- ML txt and such -->
 	<color id="wasabi.list.background.alternate" value="255,255,255" gammagroup="Window"/> <!--alternate coloring used for WACUP ml_playlist, reminder that i will tear someone's head off whoever implemented that in 5.5x-->
 
-  <color id="wasabi.list.text.selected" value="255,255,255" gammagroup="Selected Items-Text"/> <!--listview/treeview selection bar text color -->
-	<color id="wasabi.list.text.selected.background" value="10,36,106" gammagroup="Selected Items"/> <!--listview/treeview selection bar background color -->
-	<color id="studio.list.item.selected" value="10,36,106" gammagroup="Selected Items"/>
-	<color id="studio.list.item.focused" value="10,36,106" gammagroup="Selected Items"/>
+  <color id="wasabi.list.text.selected" value="128,128,128" gammagroup="Selected Items-Text"/> <!--listview/treeview selection bar text color -->
+	<color id="wasabi.list.text.selected.background" value="128,128,128" gammagroup="Selected Items"/> <!--listview/treeview selection bar background color -->
+	<color id="studio.list.item.selected" value="128,128,128" gammagroup="Selected Items"/>
+	<color id="studio.list.item.focused" value="128,128,128" gammagroup="Selected Items"/>
   <color id="studio.list.item.selected.fg" value="0,0,0" gammagroup="display-sui-text"/>
 
-	<color id="wasabi.list.text.current" value="212,208,200" gammagroup="Selected Items"/> <!-- currently playing item in lists -->
+	<color id="wasabi.list.text.current" value="64,64,64" gammagroup="Selected Items-Text"/> <!-- currently playing item in lists -->
 	<color id="wasabi.list.text.selected.inactive" value="255,255,255" gammagroup="Selected Items-Text"/> <!-- listview/treeview selection bar textcolor (inactive) -->
-	<color id="wasabi.list.text.selected.background.inactive" value="10,36,106" gammagroup="selection-bg"/> <!-- listview/treeview selectionbar back color (inactive) -->
+	<color id="wasabi.list.text.selected.background.inactive" value="128,128,128" gammagroup="Selected Items"/> <!-- listview/treeview selectionbar back color (inactive) -->
 
 	<!-- edit wnds -->
 	<color id="wasabi.window.background" value="212,208,200" gammagroup="3D Objects"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 

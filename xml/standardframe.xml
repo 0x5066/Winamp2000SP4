@@ -69,11 +69,11 @@
 
 	<rect id="icon.active" x="4" y="4" w="20" h="18" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 1"/>
 	<layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
-	<rect id="icon.buttons" x="-57" y="4" w="53" h="18" relatx="1" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 2"/>
+	<rect id="buttons.active" x="-57" y="4" w="53" h="18" relatx="1" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 2"/>
 
-  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.inactive" activealpha="0" inactivealpha="255"/>
+  <rect id="icon.inactive" x="4" y="4" w="20" h="18" activealpha="0" inactivealpha="255" filled="1" color="128,128,128" gammagroup="Inactive Title Bar Color 1"/>
   <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="255"/>
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.inactive" move="0" activealpha="0" inactivealpha="255"/>
+  <rect id="buttons.inactive" x="-57" y="4" w="53" h="18" relatx="1" activealpha="0" inactivealpha="255" filled="1" color="128,128,128" gammagroup="Inactive Title Bar Color 2"/>
   
   <layer id="window.resize.disabler" x="10" y="10" w="-20" h="-20" relatw="1" relath="1" cursor="cur.normal" alpha="0"/>
 
