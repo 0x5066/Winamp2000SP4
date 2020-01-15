@@ -4,10 +4,16 @@
   <!--bitmap id="none" file="images/window/windows-background-main.png" x="0" y="0" h="10" w="10" gammagroup="none" /--> <!-- Pink (visual help) -->
   <bitmap id="none" file="images/window/windows-background-main.png" x="162" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
 
-	<!-- new titlebar beam -->
+	<!-- new titlebar stuff -->
 
 	<bitmap id="new.titlebar.beam.active1" file="images/titlebargradient.png" x="0" y="0" h="18" w="933" gammagroup="Active Title Bar Color 1"/>
 	<bitmap id="new.titlebar.beam.active2" file="images/titlebargradient.png" x="0" y="19" h="18" w="933" gammagroup="Active Title Bar Color 2"/>
+
+	<bitmap id="new.titlebar.beam.default.color1" file="images/titlebarclickable.png" x="0" y="0" h="18" w="20" gammagroup="Active Title Bar Color 1"/>
+	<bitmap id="new.titlebar.beam.default.color2" file="images/titlebarclickable.png" x="21" y="0" h="18" w="54" gammagroup="Active Title Bar Color 2"/>
+
+	<bitmap id="new.titlebar.beam.default.color3" file="images/titlebarclickable.png" x="0" y="0" h="18" w="20" gammagroup="Inactive Title Bar Color 1"/>
+	<bitmap id="new.titlebar.beam.default.color4" file="images/titlebarclickable.png" x="21" y="0" h="18" w="54" gammagroup="Inactive Title Bar Color 2"/>
 
 	<!-- cursors -->
 	
