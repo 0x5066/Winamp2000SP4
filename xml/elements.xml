@@ -57,9 +57,9 @@
 	<bitmap id="posbar.center" file="images/posbar_bg.png" x="2" y="0" w="1" h="4" gammagroup="3D Objects"/>
 	<bitmap id="posbar.right" file="images/posbar_bg.png" x="4" y="0" w="2" h="4" gammagroup="3D Objects"/>	
 	
-	<bitmap id="sngtic.left" file="images/songticker.png" x="0" y="0" w="23" h="22" gammagroup="none"/>
-	<bitmap id="sngtic.mid" file="images/songticker.png" x="24" y="0" w="6" h="22" gammagroup="none"/>
-	<bitmap id="sngtic.right" file="images/songticker.png" x="31" y="0" w="4" h="22" gammagroup="none"/>
+	<bitmap id="sngtic.left" file="images/songticker.png" x="0" y="0" w="23" h="22" gammagroup="3D Objects"/>
+	<bitmap id="sngtic.mid" file="images/songticker.png" x="24" y="0" w="6" h="22" gammagroup="3D Objects"/>
+	<bitmap id="sngtic.right" file="images/songticker.png" x="31" y="0" w="4" h="22" gammagroup="3D Objects"/>
 	
 	<!-- player-normal -->
 
@@ -225,13 +225,13 @@
   <bitmap id="player.songticker.bg.middle" file="images/player-main.png" x="297" y="73" w="82" h="21" gammagroup="display"/> 
   <bitmap id="player.songticker.bg.right" file="images/player-main.png" x="379" y="73" w="81" h="21" gammagroup="display"/> 
   
-  <bitmap id="songinfo.bg.left" file="images/player-main.png" x="216" y="95" w="12" h="25" gammagroup="plastic"/> 
-  <bitmap id="songinfo.bg.middle" file="images/player-main.png" x="229" y="95" w="10" h="25" gammagroup="plastic"/> 
-  <bitmap id="songinfo.bg.right" file="images/player-main.png" x="240" y="95" w="12" h="25" gammagroup="plastic"/> 
+  <bitmap id="songinfo.bg.left" file="images/player-main.png" x="216" y="95" w="12" h="25" gammagroup="3D Objects"/> 
+  <bitmap id="songinfo.bg.middle" file="images/player-main.png" x="229" y="95" w="10" h="25" gammagroup="3D Objects"/> 
+  <bitmap id="songinfo.bg.right" file="images/player-main.png" x="240" y="95" w="12" h="25" gammagroup="3D Objects"/> 
 
-  <bitmap id="songinfo.display.left" file="images/player-main.png" x="253" y="95" w="12" h="25" gammagroup="display"/> 
-  <bitmap id="songinfo.display.middle" file="images/player-main.png" x="266" y="95" w="10" h="25" gammagroup="display"/> 
-  <bitmap id="songinfo.display.right" file="images/player-main.png" x="277" y="95" w="12" h="25" gammagroup="display"/> 
+  <bitmap id="songinfo.display.left" file="images/player-main.png" x="253" y="95" w="12" h="25" gammagroup="Window"/> 
+  <bitmap id="songinfo.display.middle" file="images/player-main.png" x="266" y="95" w="10" h="25" gammagroup="Window"/> 
+  <bitmap id="songinfo.display.right" file="images/player-main.png" x="277" y="95" w="12" h="25" gammagroup="Window"/> 
   
   <bitmap id="songinfo.bitrate.label" file="images/player-main.png" x="256" y="121" w="48" h="25" gammagroup="txtlabels"/> 
   <bitmap id="songinfo.frequency.label" file="images/player-main.png" x="344" y="121" w="36" h="25" gammagroup="txtlabels"/> 

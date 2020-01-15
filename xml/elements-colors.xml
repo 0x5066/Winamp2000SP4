@@ -22,16 +22,16 @@
 	<color id="wasabi.list.text.selected.background.inactive" value="128,128,128" gammagroup="Selected Items"/> <!-- listview/treeview selectionbar back color (inactive) -->
 
 	<!-- edit wnds -->
-	<color id="wasabi.window.background" value="212,208,200" gammagroup="3D Objects"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 
+	<color id="wasabi.window.background" value="128,128,128" gammagroup="3D Objects"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 
 	extract a pixel, so specifying it makes skin loading faster --> <!-- also, look below, this needs to be loaded 1st, don't move it -->
 	
-	<color id="wasabi.list.column.background" value="212,208,200" gammagroup="3D Objects"/> <!-- listview header background color -->
+	<color id="wasabi.list.column.background" value="128,128,128" gammagroup="3D Objects"/> <!-- listview header background color -->
 	<color id="wasabi.list.column.text" value="0,0,0" gammagroup="3D Objects-Text"/> <!-- listview header text color -->
   <color id="studio.list.column.separator" value="wasabi.window.background"/>
-	<color id="wasabi.list.column.frame.top" value="255,255,255" gammagroup="3D Objects"/> <!-- listview header frame top color -->
-	<color id="wasabi.list.column.frame.middle" value="128,128,128" gammagroup="3D Objects"/> <!-- listview header frame middle color -->
+	<color id="wasabi.list.column.frame.top" value="191,191,191" gammagroup="3D Objects"/> <!-- listview header frame top color -->
+	<color id="wasabi.list.column.frame.middle" value="85,85,85" gammagroup="3D Objects"/> <!-- listview header frame middle color -->
 	<color id="wasabi.list.column.frame.bottom" value="64,64,64"/> <!-- listview header frame bottom color -->
-	<color id="wasabi.list.column.empty" value="212,208,200" gammagroup="display-sui"/>  <!-- listview header empty color (beyond the columns -->
+	<color id="wasabi.list.column.empty" value="0,0,0" gammagroup="display-sui"/>  <!-- listview header empty color (beyond the columns -->
 
 
 	<color id="wasabi.window.text" value="0,0,0" gammagroup="Window-Text"/> <!--text color within windows -->
