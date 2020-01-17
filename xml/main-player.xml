@@ -104,12 +104,16 @@
   <text id="songticker.none" x="236" y="0" w="260" h="30" fontsize="20" font="sarpanch" text="None" color="wasabi.popupmenu.text" rectrgn="1"/>
 </groupdef-->
 
-<groupdef id="titlebar.winamptxt.group" >
+<groupdef id="titlebar.winamptxt.group">
+
 	<text id="titlebar.winamptxt" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
+	<text id="titlebar.winamptxt.inactive" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
+    color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
+
 	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
-	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
+	<text id="titlebar.wacuptxt.inactive" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
 
 </groupdef>

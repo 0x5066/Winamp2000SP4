@@ -29,6 +29,7 @@ Global Layer EqButton, PLButton, SonginfoMono, SonginfoStereo, SonginfoBitrateLa
 Global togglebutton RepeatLight, ShuffleLight;
 Global Layer AboutBG;
 Global Text WinampTxt, WACUPTxt, SonginfoBitrate, SonginfoFrequency, WinampTxtShade, WACUPTxtShade;
+Global Text WinampTxtInactive, WACUPTxtInactive, WinampTxtShadeInactive, WACUPTxtShadeInactive;
 Global Slider EqBalance;
 Global Layer Trigger;
 
@@ -88,7 +89,9 @@ initMainPlayer() {
   DisplayTimeShade = DisplayGroupShade.getObject("shade.time");
 
 	WinampTxtShade = MainGroupShade.getObject("winamp.txt");
+	WinampTxtShadeInactive = MainGroupShade.getObject("winamp.txt.inactive");
 	WACUPTxtShade = MainGroupShade.getObject("wacup.txt");
+	WACUPTxtShadeInactive = MainGroupShade.getObject("wacup.txt.inactive");
   
   DisplayTime = DisplayGroup.getObject("display.time");
   
@@ -121,8 +124,11 @@ initMainPlayer() {
 	StopBtn = MainGroup.getObject("button.stop");
 
 	WinampTxtGroup = MainGroup.getObject("titlebar.winamptxt.group");
+
 	WinampTxt = WinampTxtGroup.getObject("titlebar.winamptxt");
+	WinampTxtInactive = WinampTxtGroup.getObject("titlebar.winamptxt.inactive");
 	WACUPTxt = WinampTxtGroup.getObject("titlebar.wacuptxt");
+	WACUPTxtInactive = WinampTxtGroup.getObject("titlebar.wacuptxt.inactive");
 
 
   // EQ shade mode stuff, it's here to avoid strange bugs
@@ -206,9 +212,13 @@ initMainPlayer() {
   if(myCheckerDoc.exists())
   {
     WinampTxt.hide();
+    WinampTxtInactive.hide();
     WACUPTxt.show();
+    WACUPTxtInactive.show();
     WinampTxtShade.hide();
+    WinampTxtShadeInactive.hide();
     WACUPTxtShade.show();
+    WACUPTxtShadeInactive.show();
     WinampIcon.setXmlParam("image", "player.button.mainmenu.wacup");
     WinampIcon.setXmlParam("hoverimage", "player.button.mainmenu.h.wacup");
     WinampIcon.setXmlParam("downimage", "player.button.mainmenu.d.wacup");
@@ -228,9 +238,13 @@ initMainPlayer() {
   else
   {
     WinampTxt.show();
+    WinampTxtInactive.show();
     WACUPTxt.hide();
+    WACUPTxtInactive.hide();
     WinampTxtShade.show();
+    WinampTxtShadeInactive.show();
     WACUPTxtShade.hide();
+    WACUPTxtShadeInactive.hide();
     WinampIcon.setXmlParam("image", "player.button.mainmenu");
     WinampIcon.setXmlParam("hoverimage", "player.button.mainmenu.h");
     WinampIcon.setXmlParam("downimage", "player.button.mainmenu.d");
