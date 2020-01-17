@@ -11,4 +11,8 @@
 	<gammagroup id="Selected Items" value="-3773,-2934,-677" gray="0" boost="0"/>
 	<gammagroup id="Inactive Title Bar Color 1" value="0,0,0" gray="0" boost="0"/>
 	<gammagroup id="Inactive Title Bar Color 2" value="2096,2096,2096" gray="0" boost="0"/>
+	<gammagroup id="Active Title Bar-Text" value="0,0,0" gray="0" boost="0"/>
+	<gammagroup id="Inactive Title Bar-Text" value="0,0,0" gray="0" boost="0"/>
+	<gammagroup id="Active Title Bar-Text" value="4096,4096,4096" gray="0" boost="0" />
+	<gammagroup id="Inactive Title Bar-Text" value="2741,2612,2354" gray="0" boost="0" />
 </gammaset>

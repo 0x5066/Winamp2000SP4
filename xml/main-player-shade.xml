@@ -8,12 +8,15 @@
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 	
-  <rect id="icon.active" x="4" y="4" w="20" h="18" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 1"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
-  <rect id="icon.buttons" x="-57" y="4" w="53" h="18" relatx="1" activealpha="255" inactivealpha="0" filled="1" color="128,128,128" gammagroup="Active Title Bar Color 2"/>
-  <rect id="icon.inactive" x="4" y="4" w="20" h="18" activealpha="0" inactivealpha="255" filled="1" color="128,128,128" gammagroup="Inactive Title Bar Color 1"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="255"/>
-  <rect id="buttons.inactive" x="-57" y="4" w="53" h="18" relatx="1" activealpha="0" inactivealpha="255" filled="1" color="128,128,128" gammagroup="Inactive Title Bar Color 2"/>
+  <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
+
+  <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive1" activealpha="0" inactivealpha="255"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive2" activealpha="0" inactivealpha="255"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
   
 	<layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
 
@@ -22,9 +25,10 @@
 
 	<text id="winamp.txt" x="22" y="3" text="Winamp" w="300" h="20" font="titlebar" fontsize="15"
     color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
-	<text id="wacup.txt" x="22" y="3" text="WACUP" w="300" h="20" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
-	<layer id="shade.bars" x="98" y="2" image="shade.bars" alpha="255" ghost="1"/>
+	<text id="wacup.txt" x="22" y="4" text="WACUP" w="300" h="18" font="titlebar" fontsize="15"
+    color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
+	<text id="wacup.txt" x="22" y="4" text="WACUP" w="300" h="18" font="titlebar" fontsize="15"
+    color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
 	
 	<group id="player.shade.group.display" x="118" y="0" ghost="1" cursor="cur.normal"/>
 	

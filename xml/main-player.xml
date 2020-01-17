@@ -105,13 +105,13 @@
 </groupdef-->
 
 <groupdef id="titlebar.winamptxt.group" >
-	<layer id="titlebar.winamptxt.bg" x="0" y="0" w="124" tile="1" image="player.normal.bg.center" move="1" alpha="0"/>
-	<layer id="titlebar.stripes.tips.left" x="115" y="3" w="29" image="titlebar.stripes.left" ghost="1" activealpha="0" inactivealpha="0"/>
-	<layer id="titlebar.stripes.tips.right" x="-20" y="3" w="29" image="titlebar.stripes.right" ghost="1" activealpha="0" inactivealpha="0"/>
 	<text id="titlebar.winamptxt" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
+    color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
 	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
-    color="255,255,255" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="128"/>
+    color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
+	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
+    color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
+
 </groupdef>
 
 

@@ -18,19 +18,23 @@
 	<layer id="pledit.background.main.right" x="-271" y="0" relatx="1" h="35" image="window.shade.background.main.right" dblclickaction="SWITCH;normal" move="1" ghost="0" sysregion="1" cursor="cur.normal"/>
 	<grid id="shadewinstuff" x="0" y="23" w="-0" h="3" relatw="1" left="shadewin.l" middle="shadewin.m" right="shadewin.r" ghost="1"/>
 	
-	<layer x="4" y="4" w="-61" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
-	<layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="255" inactivealpha="0"/>
+	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
+	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
+	<layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" move="0" activealpha="255" inactivealpha="0"/>
 	
-	<layer x="4" y="4" w="-61" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="255"/>
-	<layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.inactive" move="0" activealpha="0" inactivealpha="255"/>
+	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.inactive1" activealpha="0" inactivealpha="255"/>
+	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.inactive2" activealpha="0" inactivealpha="255"/>
+	<layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" move="0" activealpha="0" inactivealpha="255"/>
 	
 	<layer id="pledit.region.top.left" x="0" y="0" image="window.shade.region.top.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" RELATX="1" RELATY="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 	
-	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="sarpanch" fontsize="15" linespacing="1" color="white" antialias="0" 
-			playcolor="white" sysregion="1" bold="1" activealpha="255" inactivealpha="100"/>		
+	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="titlebar" fontsize="15" linespacing="1" color="wasabi.text.active" antialias="0" 
+			playcolor="wasabi.text.active" sysregion="1" bold="1" activealpha="255" inactivealpha="0"/>	
+	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="titlebar" fontsize="15" linespacing="1" color="wasabi.text.inactive" antialias="0" 
+			playcolor="wasabi.text.inactive" sysregion="1" bold="1" activealpha="0" inactivealpha="255"/>	
 			
 	<layer id="pledit.background.grip.mid" x="-4" y="0" w="4" h="26" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="0" cursor="cur.posbar"/>
 

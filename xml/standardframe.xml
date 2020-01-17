@@ -156,7 +156,7 @@
 ======================================================================================================== -->
 
 <groupdef id="wasabi.standardframe.modal" inherit_group="wasabi.standardframe.nostatusbar" sysregion="1" xuitag="Wasabi:StandardFrame:Modal">
-  <sendparams target="wasabi.titlebar" x="4" w="-22" relatw="1" />
+  <sendparams target="wasabi.titlebar" x="4" w="-22" relatw="1"/>
 
   <sendparams target="window.top.left;window.top;window.top.right;window.left;window.right;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;window.bottom.top;window.bottom;window.bottom.bottom;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom" resize="0" />
 </groupdef>

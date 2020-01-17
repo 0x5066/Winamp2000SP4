@@ -96,12 +96,15 @@
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 
-  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.active" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.active" activealpha="255" inactivealpha="0"/>
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.active" move="0" activealpha="255" inactivealpha="0"/>
-  <layer x="4" y="4" w="20" h="18" image="wasabi.titlebar.icon.inactive" activealpha="0" inactivealpha="255"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="wasabi.titlebar.beam.inactive" activealpha="0" inactivealpha="255"/>
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="wasabi.titlebar.buttons.inactive" move="0" activealpha="0" inactivealpha="255"/>
+  <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
+
+  <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive1" activealpha="0" inactivealpha="255"/>
+  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive2" activealpha="0" inactivealpha="255"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
   
   	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
 	
