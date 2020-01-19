@@ -68,7 +68,7 @@
 	<!--component x="48" y="86" w="150" h="32" relatw="0" relath="0" noshowcmdbar="0" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
 	
 	<layer id="wamainfront" x="0" y="0" w="550" h="232" image="wa.main" ghost="1"/>
-	<vis id="shade.vis" x="48" y="86" w="150" h="32" fps="60" cursor="cur.normal" peakfalloff="0"
+	<vis id="wa.vis" x="48" y="86" w="154" h="32" fps="60" cursor="cur.normal" peakfalloff="0"
  falloff="4" bandwidth="thin"/>
 	<!--layer id="wagrid" x="48" y="86" w="150" h="32" image="wa.grid" ghost="1"/-->
   <!-- Timer -->
