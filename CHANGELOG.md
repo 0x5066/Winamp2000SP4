@@ -1,14 +1,10 @@
-# v1.xx Upcoming (Far future)
+# v1.2 Upcoming
 What's New?
 
 - New: Gammagroups that actually represent what Windows once had to offer with Windows Classic
 - New: Split up the image parts to allow for better color editing
 - New: Themes! Including those that were present in Windows 9x/2k/XP
 - New: Titlebar beam gradient can be colored independently
-
-# v1.2 Upcoming
-What's New?
-
 - New: Recreation of the Sound Recorder from Win9x/WinXP
 - Misc: Tweaked the balance bar slightly
 
