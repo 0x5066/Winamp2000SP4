@@ -50,20 +50,20 @@
 	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
 	<rect x="79" y="27" w="112" h="35" color="0,0,0" filled="1"/>
 
-	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers"
-	colorallbands="0,255,0"
-	colorosc1="0,255,0"
-	colorosc2="0,255,0"
-	colorosc3="0,255,0"
-	colorosc4="0,255,0"
-	colorosc5="0,255,0" mode="2" oscstyle="lines" fps="5"/>
-	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers"
-	colorallbands="0,255,0"
-	colorosc1="0,255,0"
-	colorosc2="0,255,0"
-	colorosc3="0,255,0"
-	colorosc4="0,255,0"
-	colorosc5="0,255,0" mode="2" oscstyle="lines" flipv="1" fps="5"/>
+	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers2"
+	colorallbands="128,128,128"
+	colorosc1="128,128,128"
+	colorosc2="128,128,128"
+	colorosc3="128,128,128"
+	colorosc4="128,128,128"
+	colorosc5="128,128,128" mode="2" oscstyle="lines" fps="5"/>
+	<vis id="shade.vis" x="79" y="27" w="112" h="35" alpha="255" cursor="cur.normal" gammagroup="visualizers2"
+	colorallbands="128,128,128"
+	colorosc1="128,128,128"
+	colorosc2="128,128,128"
+	colorosc3="128,128,128"
+	colorosc4="128,128,128"
+	colorosc5="128,128,128" mode="2" oscstyle="lines" flipv="1" fps="5"/>
 	<layer id="player.vis.blocker" x="79" y="27" w="112" h="35" image="none" cursor="cur.normal" alpha="0"/>
 
 	<!-- position bar -->

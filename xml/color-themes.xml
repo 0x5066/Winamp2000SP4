@@ -1,5 +1,5 @@
 <gammaset id="*Default">
-	<gammagroup id="3D Objects" value="0, 0, 0" gray="0" boost="0"/>
+	<gammagroup id="3D Objects" value="2741,2612,2354" gray="0" boost="0"/>
 	<gammagroup id="3D Objects-Text" value="0, 0, 0" gray="0" boost="0"/>
 	<gammagroup id="Window" value="0, 0, 0" gray="0" boost="0"/>
 	<gammagroup id="Window-text" value="0, 0, 0" gray="0" boost="0"/>
@@ -14,5 +14,7 @@
 	<gammagroup id="Active Title Bar-Text" value="0,0,0" gray="0" boost="0"/>
 	<gammagroup id="Inactive Title Bar-Text" value="0,0,0" gray="0" boost="0"/>
 	<gammagroup id="Active Title Bar-Text" value="4096,4096,4096" gray="0" boost="0" />
-	<gammagroup id="Inactive Title Bar-Text" value="2741,2612,2354" gray="0" boost="0" />
+	<gammagroup id="Inactive Title Bar-Text" value="2741,2612,2354" gray="0" boost="0"/>
+	<gammagroup id="Visualizers" value="0,0,0" gray="0" boost="0"/>
+	<gammagroup id="Visualizers2" value="-4096,4096,-4096" gray="0" boost="0"/>
 </gammaset>

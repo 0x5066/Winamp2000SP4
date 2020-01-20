@@ -24,20 +24,20 @@
 	<color id="wasabi.list.text.selected.background.inactive" value="128,128,128" gammagroup="Selected Items"/> <!-- listview/treeview selectionbar back color (inactive) -->
 
 	<!-- edit wnds -->
-	<color id="wasabi.window.background" value="212,208,200" gammagroup="3D Objects"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 
+	<color id="wasabi.window.background" value="128,128,128" gammagroup="3D Objects"/> <!-- window background. -	If this color is not defined, a whole container is created in memory to 
 	extract a pixel, so specifying it makes skin loading faster --> <!-- also, look below, this needs to be loaded 1st, don't move it -->
 	
-	<color id="wasabi.list.column.background" value="212,208,200" gammagroup="3D Objects"/> <!-- listview header background color -->
+	<color id="wasabi.list.column.background" value="128,128,128" gammagroup="3D Objects"/> <!-- listview header background color -->
 	<color id="wasabi.list.column.text" value="0,0,0" gammagroup="3D Objects-Text"/> <!-- listview header text color -->
   <color id="studio.list.column.separator" value="wasabi.window.background"/>
-	<color id="wasabi.list.column.frame.top" value="255,255,255" gammagroup="3D Objects"/> <!-- listview header frame top color -->
-	<color id="wasabi.list.column.frame.middle" value="128,128,128" gammagroup="3D Objects"/> <!-- listview header frame middle color -->
+	<color id="wasabi.list.column.frame.top" value="191,191,191" gammagroup="3D Objects"/> <!-- listview header frame top color -->
+	<color id="wasabi.list.column.frame.middle" value="85,85,85" gammagroup="3D Objects"/> <!-- listview header frame middle color -->
 	<color id="wasabi.list.column.frame.bottom" value="64,64,64"/> <!-- listview header frame bottom color -->
-	<color id="wasabi.list.column.empty" value="212,208,200" gammagroup="display-sui"/>  <!-- listview header empty color (beyond the columns -->
+	<color id="wasabi.list.column.empty" value="128,128,128" gammagroup="3D Objects"/>  <!-- listview header empty color (beyond the columns -->
 
 
 	<color id="wasabi.window.text" value="0,0,0" gammagroup="Window-Text"/> <!--text color within windows -->
-	<color id="wasabi.border.sunken" value="128,128,128" gammagroup="3D Objects"/> <!-- color of dividers and sunken borders (also affects playlist scrollbar outline at the sides) -->
+	<color id="wasabi.border.sunken" value="85,85,85" gammagroup="3D Objects"/> <!-- color of dividers and sunken borders (also affects playlist scrollbar outline at the sides) -->
 
 
   <!-- Generic Trees -->
@@ -76,16 +76,16 @@
   <!-- Popup menus -->
 
   <!-- pre 5.55:	-->
-  <color id="wasabi.popupmenu.background" value="wasabi.window.background" gammagroup="display-sui"/>
+  <color id="wasabi.popupmenu.background" value="wasabi.window.background" gammagroup="3D Objects"/>
   <color id="wasabi.popupmenu.text" value="0,0,0" gammagroup="txtlabels"/>
   <color id="wasabi.popupmenu.text.selected" value="255,255,255" gammagroup="current-active"/>
   <color id="wasabi.popupmenu.text.inactive" value="183,183,183" gammagroup="display-sui-text"/>
 
   <!-- Winamp 5.53+ PopupMenu -->
 
-  <color id="wasabi.popupmenu.frame" value="128,128,128" gammagroup="display-sui"/>
-  <color id="wasabi.popupmenu.separator" value="128,128,128" gammagroup="display-sui"/>
-  <color id="wasabi.popupmenu.background.selected" value="10,36,106" gammagroup="selection-bg"/>
+  <color id="wasabi.popupmenu.frame" value="64,64,64"/>
+  <color id="wasabi.popupmenu.separator" value="85,85,85" gammagroup="3D Objects"/>
+  <color id="wasabi.popupmenu.background.selected" value="10,36,106" gammagroup="Selected Items"/>
 
   <!-- Tooltip/Button -->	
   <color id="wasabi.tooltip.text" value="0,0,0" gammagroup="txtlabels"/>

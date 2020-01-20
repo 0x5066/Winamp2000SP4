@@ -126,14 +126,14 @@
   <layer x="-278" y="-36" w="214" h="20" relatx="1" relaty="1" image="window.plinfo.display.bg"/>
 	
 	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="255" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
-	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers"
-	colorallbands="0,255,0"
+	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers2"
+	colorallbands="128,128,128"
 	colorbandpeak="0,0,0"
-	colorosc1="0,255,0"
-	colorosc2="0,255,0"
-	colorosc3="0,255,0"
-	colorosc4="0,255,0"
-	colorosc5="0,255,0"
+	colorosc1="128,128,128"
+	colorosc2="128,128,128"
+	colorosc3="128,128,128"
+	colorosc4="128,128,128"
+	colorosc5="128,128,128"
 	fps="60"/>
 	<rect id="hide.for.gordon" x="-283" y="-34" w="1" h="16" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
   <!--layer id="hide.for.vic" x="27" y="71" image="none" ghost="1" alpha="0"/-->
