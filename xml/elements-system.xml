@@ -161,16 +161,16 @@
   <bitmap id="studio.statusbar.right" file="images/window/windows-elements.png" x="197" y="93" h="18" w="11" gammagroup="display"/>
 
 <!-- Standard Configuration Widgets -->
-  <bitmap id="wasabi.button.checkbox" file="images/window/windows-elements.png" x="79" y="77" h="7" w="7" gammagroup="display"/>
-  <bitmap id="wasabi.button.checkbox.pressed" file="images/window/windows-elements.png" x="58" y="77" h="7" w="7" gammagroup="display"/>
+  <bitmap id="wasabi.button.checkbox" file="images/window/windows-elements.png" x="79" y="77" h="7" w="7" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.button.checkbox.pressed" file="images/window/windows-elements.png" x="58" y="77" h="7" w="7" gammagroup="3D Objects"/>
 
-  <bitmap id="wasabi.button.checkbox.xbox" file="images/window/windows-elements.png" x="79" y="77" h="7" w="7" gammagroup="display"/>
-  <bitmap id="wasabi.button.checkbox.xbox.pressed" file="images/window/windows-elements.png" x="65" y="77" h="7" w="7" gammagroup="display"/>
+  <bitmap id="wasabi.button.checkbox.xbox" file="images/window/windows-elements.png" x="79" y="77" h="7" w="7" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.button.checkbox.xbox.pressed" file="images/window/windows-elements.png" x="65" y="77" h="7" w="7" gammagroup="3D Objects"/>
 
-  <bitmap id="wasabi.button.radio.background" file="images/window/windows-elements.png" x="58" y="66" h="11" w="11" gammagroup="display"/>
-  <bitmap id="wasabi.button.radio.background.display" file="images/window/windows-elements.png" x="69" y="66" h="9" w="9" gammagroup="display"/>
-  <bitmap id="wasabi.button.radio" file="images/window/windows-elements.png" x="89" y="77" h="7" w="7" gammagroup="display"/>
-  <bitmap id="wasabi.button.radio.pressed" file="images/window/windows-elements.png" x="72" y="77" h="7" w="7" gammagroup="display"/>	
+  <bitmap id="wasabi.button.radio.background" file="images/window/windows-elements.png" x="58" y="66" h="11" w="11" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.button.radio.background.display" file="images/window/windows-elements.png" x="69" y="66" h="9" w="9" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.button.radio" file="images/window/windows-elements.png" x="89" y="77" h="7" w="7" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.button.radio.pressed" file="images/window/windows-elements.png" x="72" y="77" h="7" w="7" gammagroup="3D Objects"/>	
 
 <!-- Title objects -->
   <bitmap id="wasabi.titlebar.left.active" file="images/window/windows-elements.png" x="106" y="118" h="9" w="7" gammagroup="plastic"/>

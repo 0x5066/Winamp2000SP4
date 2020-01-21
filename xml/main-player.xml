@@ -123,9 +123,9 @@
 	<grid id="sngtic.bg" x="0" y="6" w="-228" h="22" relatw="1" left="sngtic.left" middle="sngtic.mid" right="sngtic.right" ghost="1" alpha="255"/>
 	<grid id="sngtic.bg" x="2" y="8" w="-232" h="18" relatw="1" left="sngticbg.left" middle="sngticbg.mid" right="sngticbg.right" ghost="1" alpha="255"/>
 	<layer id="sngtic.icn" x="3" y="9" w="14" h="16" image="sngtic.icn"/>
-	<SongTicker id="player.display.songname" x="23" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="black" dblclickaction="trackinfo" 
+	<SongTicker id="player.display.songname" x="23" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="wasabi.list.text.alternate" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
-	<text id="player.display.actioninfo" x="21" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="black" align="left" ghost="1" antialias="0"/> 
+	<text id="player.display.actioninfo" x="21" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="wasabi.list.text.alternate" align="left" ghost="1" antialias="0"/> 
   <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
@@ -135,13 +135,13 @@
 	<grid id="songinfo.bitrate.bg" x="-1" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.bitrate.display" x="-1" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.bitrate.label" x="39" y="4" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
-  <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="black" align="left" ghost="1" antialias="0"/>
+  <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="wasabi.list.text.alternate" align="left" ghost="1" antialias="0"/>
 	
 	
 	<grid id="songinfo.frequency.bg" x="90" y="3" w="34" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.frequency.display" x="90" y="3" w="34" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.frequency.label" x="128" y="3" image="songinfo.frequency.label" ghost="1" alpha="255"/>
-	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="8" w="23" h="14" font="numbers" fontsize="15" color="black" align="left" ghost="1" antialias="0"/>
+	<text id="songinfo.frequency" textrefreshrate="500" x="95" y="8" w="23" h="14" font="numbers" fontsize="15" color="wasabi.list.text.alternate" align="left" ghost="1" antialias="0"/>
 	
 	<layer id="songinfo.mono" x="-110" y="3" relatx="1" image="songinfo.mono.off" ghost="1" alpha="255"/>
 	<layer id="songinfo.stereo.srrnd" x="-52" y="3" relatx="1" image="songinfo.stereo.off" ghost="1" alpha="255"/>
@@ -151,6 +151,7 @@
 	<!--rect id="player.background.display.vis.scale" x="0" y="0" filled="1" color="53,53,0" alpha="255"/-->
 	<layer id="player.normal.display.bg" x="5" y="1" image="player.normal.display.bg" cursor="cur.normal"/>
 
+	<layer id="clutterbar" x="8" y="2" image="clutterbar" cursor="cur.normal"/>
 	<layer id="oaidu.button.o.n" x="7" y="3" image="OAIDU.buttons.O.n" cursor="cur.normal"/>
 	<layer id="oaidu.button.o.h" x="7" y="3" image="OAIDU.buttons.O.h"/>
 	<layer id="oaidu.button.o.d" x="7" y="3" image="OAIDU.buttons.O.d"/>

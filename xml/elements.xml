@@ -70,6 +70,8 @@
 	<bitmap id="sngticbg.mid" file="images/songticker_bg.png" x="22" y="0" w="6" h="18" gammagroup="Window"/>
 	<bitmap id="sngticbg.right" file="images/songticker_bg.png" x="29" y="0" w="2" h="18" gammagroup="Window"/>
 	
+	<bitmap id="clutterbar" file="images/clutterbar_bg.png" x="0" y="0" w="11" h="71" gammagroup="Window"/>
+	
 	<!-- player-normal -->
 
   <bitmap id="links.normal" file="images/window/windows-background-main.png" x="323" y="365" w="15" h="30" gammagroup="titlebarstripes"/>
@@ -159,12 +161,12 @@
   <bitmap id="player.h.button.eq" file="images/player-main.png" x="439" y="203" w="44" h="32" gammagroup="3D Objects"/>
   <bitmap id="player.normal.button.eq.down" file="images/player-main.png" x="439" y="236" w="44" h="32" gammagroup="3D Objects"/>
   
-  <bitmap id="button.eqpl.light.1.1" file="images/player-main.png" x="304" y="187" w="44" h="32" gammagroup="ledcolor"/> <!-- normal -->
-  <bitmap id="button.eqpl.light.1.0" file="images/player-main.png" x="304" y="220" w="44" h="32" gammagroup="greybuttons"/> <!-- normal off -->
-  <bitmap id="button.eqpl.light.2.1" file="images/player-main.png" x="349" y="187" w="44" h="32" gammagroup="ledcolor"/> <!-- hover -->
-  <bitmap id="button.eqpl.light.2.0" file="images/player-main.png" x="349" y="220" w="44" h="32" gammagroup="greybuttons"/> <!-- hover off -->
-  <bitmap id="button.eqpl.light.3.1" file="images/player-main.png" x="394" y="187" w="44" h="32" gammagroup="ledcolor"/> <!-- down -->
-  <bitmap id="button.eqpl.light.3.0" file="images/player-main.png" x="394" y="220" w="44" h="32" gammagroup="greybuttons"/> <!-- down off -->
+  <bitmap id="button.eqpl.light.1.1" file="images/player-main.png" x="304" y="187" w="44" h="32" gammagroup="3D Objects"/> <!-- normal -->
+  <bitmap id="button.eqpl.light.1.0" file="images/player-main.png" x="304" y="220" w="44" h="32" gammagroup="3D Objects"/> <!-- normal off -->
+  <bitmap id="button.eqpl.light.2.1" file="images/player-main.png" x="349" y="187" w="44" h="32" gammagroup="3D Objects"/> <!-- hover -->
+  <bitmap id="button.eqpl.light.2.0" file="images/player-main.png" x="349" y="220" w="44" h="32" gammagroup="3D Objects"/> <!-- hover off -->
+  <bitmap id="button.eqpl.light.3.1" file="images/player-main.png" x="394" y="187" w="44" h="32" gammagroup="3D Objects"/> <!-- down -->
+  <bitmap id="button.eqpl.light.3.0" file="images/player-main.png" x="394" y="220" w="44" h="32" gammagroup="3D Objects"/> <!-- down off -->
   
   <bitmap id="player.normal.button.pl" file="images/player-main.png" x="485" y="170" w="44" h="32" gammagroup="3D Objects"/>
   <bitmap id="player.h.button.pl" file="images/player-main.png" x="485" y="203" w="44" h="32" gammagroup="3D Objects"/>
@@ -203,32 +205,32 @@
 
 
   <bitmap id="repeat.light.off" file="images/player-main.png" x="290" y="756" w="48" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.light.on" file="images/player-main.png" x="339" y="756" w="48" h="48" gammagroup="ledcolor"/>
-  <bitmap id="repeat.light.on.h" file="images/player-main.png" x="388" y="756" w="48" h="48" gammagroup="ledcolor"/>
-  <bitmap id="repeat.light.on.d" file="images/player-main.png" x="437" y="756" w="48" h="48" gammagroup="ledcolor"/> 
+  <bitmap id="repeat.light.on" file="images/player-main.png" x="339" y="756" w="48" h="48" gammagroup="3D Objects"/>
+  <bitmap id="repeat.light.on.h" file="images/player-main.png" x="388" y="756" w="48" h="48" gammagroup="3D Objects"/>
+  <bitmap id="repeat.light.on.d" file="images/player-main.png" x="437" y="756" w="48" h="48" gammagroup="3D Objects"/> 
 
   <bitmap id="player.normal.display.bg" file="images/player-main.png" x="26" y="86" w="170" h="78" gammagroup="3D Objects"/> 
   <bitmap id="display.vis.bg" file="images/player-main.png" x="38" y="165" w="158" h="78" gammagroup="display"/> 
   <bitmap id="hide.for.gordon" file="images/player-main.png" x="188" y="122" w="2" h="36" gammagroup="display"/> 
   <bitmap id="show.for.gordon" file="images/player-main.png" x="48" y="152" w="144" h="1" gammagroup="display"/>
 
-  <bitmap id="OAIDU.buttons.O.n" file="images/player-main.png" x="26" y="171" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.O.h" file="images/player-main.png" x="13" y="171" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.O.d" file="images/player-main.png" x="26" y="171" w="12" h="14" gammagroup="display-text"/>
+  <bitmap id="OAIDU.buttons.O.n" file="images/player-main.png" x="26" y="171" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.O.h" file="images/player-main.png" x="13" y="171" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.O.d" file="images/player-main.png" x="26" y="171" w="12" h="14" gammagroup="Window-Text"/>
   
-  <bitmap id="OAIDU.buttons.A.1.0" file="images/player-main.png" x="26" y="185" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.A.1.1" file="images/player-main.png" x="13" y="185" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.A.2.0" file="images/player-main.png" x="13" y="185" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.A.2.1" file="images/player-main.png" x="13" y="185" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.A.3.1" file="images/player-main.png" x="26" y="185" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.A.3.0" file="images/player-main.png" x="26" y="185" w="12" h="14" gammagroup="display-text"/>
+  <bitmap id="OAIDU.buttons.A.1.0" file="images/player-main.png" x="26" y="185" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.A.1.1" file="images/player-main.png" x="13" y="185" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.A.2.0" file="images/player-main.png" x="13" y="185" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.A.2.1" file="images/player-main.png" x="13" y="185" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.A.3.1" file="images/player-main.png" x="26" y="185" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.A.3.0" file="images/player-main.png" x="26" y="185" w="12" h="14" gammagroup="Window-Text"/>
   
-  <bitmap id="OAIDU.buttons.I.n" file="images/player-main.png" x="26" y="199" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.I.h" file="images/player-main.png" x="13" y="199" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.D.n" file="images/player-main.png" x="26" y="213" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.D.h" file="images/player-main.png" x="13" y="213" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.U.n" file="images/player-main.png" x="26" y="227" w="12" h="14" gammagroup="display-text"/>
-  <bitmap id="OAIDU.buttons.U.h" file="images/player-main.png" x="13" y="227" w="12" h="14" gammagroup="display-text"/>
+  <bitmap id="OAIDU.buttons.I.n" file="images/player-main.png" x="26" y="199" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.I.h" file="images/player-main.png" x="13" y="199" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.D.n" file="images/player-main.png" x="26" y="213" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.D.h" file="images/player-main.png" x="13" y="213" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.U.n" file="images/player-main.png" x="26" y="227" w="12" h="14" gammagroup="Window-Text"/>
+  <bitmap id="OAIDU.buttons.U.h" file="images/player-main.png" x="13" y="227" w="12" h="14" gammagroup="Window-Text"/>
   
   <bitmap id="player.songticker.bg.left" file="images/player-main.png" x="216" y="73" w="81" h="21" gammagroup="3D Objects"/> 
   <bitmap id="player.songticker.bg.middle" file="images/player-main.png" x="297" y="73" w="82" h="21" gammagroup="3D Objects"/> 
@@ -238,18 +240,18 @@
   <bitmap id="songinfo.bg.middle" file="images/player-main.png" x="229" y="95" w="10" h="25" gammagroup="3D Objects"/> 
   <bitmap id="songinfo.bg.right" file="images/player-main.png" x="240" y="95" w="12" h="25" gammagroup="3D Objects"/> 
 
-  <bitmap id="songinfo.display.left" file="images/player-main.png" x="253" y="95" w="12" h="25" gammagroup="display"/> 
-  <bitmap id="songinfo.display.middle" file="images/player-main.png" x="266" y="95" w="10" h="25" gammagroup="display"/> 
-  <bitmap id="songinfo.display.right" file="images/player-main.png" x="277" y="95" w="12" h="25" gammagroup="display"/> 
+  <bitmap id="songinfo.display.left" file="images/player-main.png" x="253" y="95" w="12" h="25" gammagroup="Window"/> 
+  <bitmap id="songinfo.display.middle" file="images/player-main.png" x="266" y="95" w="10" h="25" gammagroup="Window"/> 
+  <bitmap id="songinfo.display.right" file="images/player-main.png" x="277" y="95" w="12" h="25" gammagroup="Window"/> 
   
-  <bitmap id="songinfo.bitrate.label" file="images/player-main.png" x="256" y="121" w="48" h="25" gammagroup="txtlabels"/> 
-  <bitmap id="songinfo.frequency.label" file="images/player-main.png" x="344" y="121" w="36" h="25" gammagroup="txtlabels"/> 
+  <bitmap id="songinfo.bitrate.label" file="images/player-main.png" x="256" y="121" w="48" h="25" gammagroup="3D Objects-Text"/> 
+  <bitmap id="songinfo.frequency.label" file="images/player-main.png" x="344" y="121" w="36" h="25" gammagroup="3D Objects-Text"/> 
   
-  <bitmap id="songinfo.mono.off" file="images/player-main.png" x="409" y="99" w="55" h="21" gammagroup="txtlabels"/> 
-  <bitmap id="songinfo.mono.on" file="images/player-main.png" x="409" y="121" w="55" h="21" gammagroup="ledcolor"/> 
-  <bitmap id="songinfo.stereo.off" file="images/player-main.png" x="464" y="99" w="64" h="21" gammagroup="txtlabels"/>
-  <bitmap id="songinfo.stereo.on" file="images/player-main.png" x="464" y="121" w="64" h="21" gammagroup="ledcolor"/>
-  <bitmap id="songinfo.surround.on" file="images/player-main.png" x="464" y="143" w="64" h="21" gammagroup="ledcolor"/>
+  <bitmap id="songinfo.mono.off" file="images/player-main.png" x="409" y="99" w="55" h="21" gammagroup="3D Objects"/> 
+  <bitmap id="songinfo.mono.on" file="images/player-main.png" x="409" y="121" w="55" h="21" gammagroup="3D Objects-Text"/> 
+  <bitmap id="songinfo.stereo.off" file="images/player-main.png" x="464" y="99" w="64" h="21" gammagroup="3D Objects"/>
+  <bitmap id="songinfo.stereo.on" file="images/player-main.png" x="464" y="121" w="64" h="21" gammagroup="Window-Text"/>
+  <bitmap id="songinfo.surround.on" file="images/player-main.png" x="464" y="143" w="64" h="21" gammagroup="3D Objects-Text"/>
 
   <bitmap id="status.icon.play" file="images/player-main.png" x="56" y="244" w="24" h="24" gammagroup="display-text"/> 
   <bitmap id="status.icon.pause" file="images/player-main.png" x="81" y="244" w="24" h="24" gammagroup="display-text"/> 
@@ -338,9 +340,9 @@
   <bitmap id="eq.normal.bar.middle" file="images/eq-background-main.png" x="43" y="141" w="11" h="30" gammagroup="greybuttons"/>
   <bitmap id="eq.normal.bar.right" file="images/eq-background-main.png" x="43" y="183" w="11" h="30" gammagroup="greybuttons"/>
 
-	<bitmap id="eq.normal.labels.winamp" file="images/eq-background-main.png" x="1" y="394" h="12" w="486" gammagroup="txtlabels"/>
-	<bitmap id="eq.normal.labels.iso" file="images/eq-background-main.png" x="1" y="407" h="12" w="486" gammagroup="txtlabels"/>
-	<bitmap id="eq.normal.labels.main" file="images/eq-background-main.png" x="488" y="306" h="112" w="38" gammagroup="txtlabels"/>
+	<bitmap id="eq.normal.labels.winamp" file="images/eq-background-main.png" x="1" y="394" h="12" w="486" gammagroup="3D Objects-Text"/>
+	<bitmap id="eq.normal.labels.iso" file="images/eq-background-main.png" x="1" y="407" h="12" w="486" gammagroup="3D Objects-Text"/>
+	<bitmap id="eq.normal.labels.main" file="images/eq-background-main.png" x="488" y="306" h="112" w="38" gammagroup="3D Objects-Text"/>
 
   <bitmap id="eq.normal.button.power.on" file="images/eq-background-main.png" x="9" y="247" w="52" h="48" gammagroup="3D Objects"/>
   <bitmap id="eq.normal.button.power.on.h" file="images/eq-background-main.png" x="9" y="296" w="52" h="48" gammagroup="3D Objects"/>
@@ -354,10 +356,10 @@
   <bitmap id="eq.normal.button.presets.h" file="images/eq-background-main.png" x="130" y="296" w="69" h="48" gammagroup="3D Objects"/>
   <bitmap id="eq.normal.button.presets.d" file="images/eq-background-main.png" x="130" y="345" w="69" h="48" gammagroup="3D Objects"/>
 
-  <bitmap id="onauto.light.off" file="images/eq-background-main.png" x="223" y="294" w="48" h="48" gammagroup="greybuttons"/>
-  <bitmap id="onauto.light.on" file="images/eq-background-main.png" x="272" y="294" w="48" h="48" gammagroup="ledcolor"/>
-  <bitmap id="onauto.light.on.h" file="images/eq-background-main.png" x="321" y="294" w="48" h="48" gammagroup="ledcolor"/>
-  <bitmap id="onauto.light.on.d" file="images/eq-background-main.png" x="370" y="294" w="48" h="48" gammagroup="ledcolor"/>
+  <bitmap id="onauto.light.off" file="images/eq-background-main.png" x="223" y="294" w="48" h="48" gammagroup="3D Objects"/>
+  <bitmap id="onauto.light.on" file="images/eq-background-main.png" x="272" y="294" w="48" h="48" gammagroup="3D Objects"/>
+  <bitmap id="onauto.light.on.h" file="images/eq-background-main.png" x="321" y="294" w="48" h="48" gammagroup="3D Objects"/>
+  <bitmap id="onauto.light.on.d" file="images/eq-background-main.png" x="370" y="294" w="48" h="48" gammagroup="3D Objects"/>
 
   <bitmap id="eq.slider.bg.anim" file="images/eq-sliders-bg.png" gammagroup="multicolorbars"/>
 
