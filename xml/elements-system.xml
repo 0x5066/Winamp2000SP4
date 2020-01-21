@@ -37,7 +37,7 @@
   <bitmap id="studio.tree.link.tab.top.rightBottom" file="images/window/windows-elements.png" x="149" y="28" h="14" w="14" gammagroup="display"/>
 
 <!-- Old List & Tree scrollbars -->
-  <bitmap id="studio.scrollbar.horizontal.background" file="images/window/windows-elements.png" x="58" y="52" h="13" w="41" gammagroup="display-scrollbar-bg"/>
+  <bitmap id="studio.scrollbar.horizontal.background" file="images/window/windows-elements.png" x="58" y="52" h="13" w="41" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.horizontal.left" file="images/window/windows-elements.png" x="40" y="13" h="13" w="17" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.horizontal.left.hilite" file="images/window/windows-elements.png" x="40" y="26" h="13" w="17" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.horizontal.left.pressed" file="images/window/windows-elements.png" x="40" y="39" h="13" w="17" gammagroup="3D Objects"/>
@@ -48,7 +48,7 @@
   <bitmap id="studio.scrollbar.horizontal.button.hilite" file="images/window/windows-elements.png" x="57" y="26" h="13" w="41" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.horizontal.button.pressed" file="images/window/windows-elements.png" x="57" y="39" h="13" w="41" gammagroup="3D Objects"/>
 
-  <bitmap id="studio.scrollbar.vertical.background" file="images/window/windows-elements.png" x="39" y="55" h="41" w="13" gammagroup="display-scrollbar-bg"/>
+  <bitmap id="studio.scrollbar.vertical.background" file="images/window/windows-elements.png" x="39" y="55" h="41" w="13" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.vertical.left" file="images/window/windows-elements.png" x="0" y="38" h="17" w="13" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.vertical.left.hilite" file="images/window/windows-elements.png" x="13" y="38" h="17" w="13" gammagroup="3D Objects"/>
   <bitmap id="studio.scrollbar.vertical.left.pressed" file="images/window/windows-elements.png" x="26" y="38" h="17" w="13" gammagroup="3D Objects"/>
@@ -289,13 +289,13 @@
 
 <!-- Generic Sliders -->
 
-  <bitmap id="wasabi.slider.horizontal.left" file="images/window/windows-elements.png" x="106" y="149" h="8" w="8" gammagroup="display"/>
-  <bitmap id="wasabi.slider.horizontal.middle" file="images/window/windows-elements.png" x="115" y="149" h="8" w="10" gammagroup="display"/>
-  <bitmap id="wasabi.slider.horizontal.right" file="images/window/windows-elements.png" x="126" y="149" h="8" w="8" gammagroup="display"/>
+  <bitmap id="wasabi.slider.horizontal.left" file="images/window/windows-elements.png" x="106" y="149" h="8" w="8" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.slider.horizontal.middle" file="images/window/windows-elements.png" x="115" y="149" h="8" w="10" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.slider.horizontal.right" file="images/window/windows-elements.png" x="126" y="149" h="8" w="8" gammagroup="3D Objects"/>
 
-  <bitmap id="wasabi.slider.vertical.top" file="images/window/windows-elements.png" x="138" y="136" h="8" w="8" gammagroup="display"/>
-  <bitmap id="wasabi.slider.vertical.middle" file="images/window/windows-elements.png" x="138" y="145" h="10" w="8" gammagroup="display"/>
-  <bitmap id="wasabi.slider.vertical.bottom" file="images/window/windows-elements.png" x="138" y="156" h="8" w="8" gammagroup="display"/>
+  <bitmap id="wasabi.slider.vertical.top" file="images/window/windows-elements.png" x="138" y="136" h="8" w="8" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.slider.vertical.middle" file="images/window/windows-elements.png" x="138" y="145" h="10" w="8" gammagroup="3D Objects"/>
+  <bitmap id="wasabi.slider.vertical.bottom" file="images/window/windows-elements.png" x="138" y="156" h="8" w="8" gammagroup="3D Objects"/>
 
   <bitmap id="wasabi.slider.horizontal.button" file="images/window/windows-elements.png" x="106" y="136" h="13" w="15" gammagroup="3D Objects"/>
   <bitmap id="wasabi.slider.horizontal.button.pressed" file="images/window/windows-elements.png" x="121" y="136" h="13" w="15" gammagroup="3D Objects"/>
