@@ -83,7 +83,7 @@
 
 <groupdef id="vguivis" x="0" y="0" w="743" h="67" relatw="1" relath="1">
 
-	<!--layer id="hl2.crosshair.bg" x="27" y="20" w="21" h="17" image="hl2.crosshair" ghost="1"/-->
+	<layer id="hl2.crosshair.bg" x="27" y="20" w="21" h="17" image="hl2.crosshair" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="vguivis_animatedlayerL" x="0" y="0" w="20" h="56" framewidth="20" frameheight="56" start="0" end="50" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="vguivis_animatedlayerR" x="54" y="0" w="20" h="56" framewidth="76" frameheight="56" start="0" end="50" autoplay="0" autoreplay="0" ghost="1"/>
 	<script id="ragyovis.script" file="scripts\vguivis.maki"/>
