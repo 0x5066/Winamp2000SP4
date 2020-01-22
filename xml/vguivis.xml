@@ -1,8 +1,9 @@
 <elements>
 
-	<bitmap id="vguivis.bg" file="images/vguivis/vguivis_bg.png" x="0" y="0" w="157" h="21" gammagroup="none"/>
-	<bitmap id="vguivis_animatedlayerL.bg" file="images/vguivis/vgui_left.png" x="0" y="0" w="157" h="420" gammagroup="none"/>
-	<bitmap id="vguivis_animatedlayerR.bg" file="images/vguivis/vgui_right.png" x="0" y="0" w="157" h="420" gammagroup="none"/>
+	<bitmap id="vguivis.bg" file="images/vguivis/vguivis_bg.png" x="0" y="0" w="157" h="21" gammagroup="3D Objects"/>
+	<bitmap id="vguivis.bg2" file="images/vguivis/vguivis_bg2.png" x="0" y="0" w="157" h="21" gammagroup="VGUI Visualizer Background"/>
+	<bitmap id="vguivis_animatedlayerL.bg" file="images/vguivis/vgui_left.png" x="0" y="0" w="157" h="420" gammagroup="VGUI Visualizer"/>
+	<bitmap id="vguivis_animatedlayerR.bg" file="images/vguivis/vgui_right.png" x="0" y="0" w="157" h="420" gammagroup="VGUI Visualizer"/>
 
 </elements>
 
@@ -12,6 +13,10 @@
 	<!--grid x="0" y="23" w="157" h="21" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" left="wnd.left" middle="wnd.mid" right="wnd.right" bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/-->
 	<layer id="vguivis.bg" x="0" y="0" w="157" h="21" image="vguivis.bg" ghost="1"/>
 	<layer id="vguivis.bg" x="0" y="23" w="157" h="21" image="vguivis.bg" ghost="1"/>
+
+	<layer id="vguivis.bg2" x="0" y="0" w="157" h="21" image="vguivis.bg2" ghost="1"/>
+	<layer id="vguivis.bg2" x="0" y="23" w="157" h="21" image="vguivis.bg2" ghost="1"/>
+
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="vguivis_animatedlayerL.bg" x="0" y="0" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="vguivis_animatedlayerR.bg" x="0" y="23" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
 	<script id="ragyovis.script" file="scripts\vgui2vis.maki"/>

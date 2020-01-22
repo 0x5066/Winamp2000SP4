@@ -35,7 +35,7 @@
 	<bitmap id="windowborder.top" file="images/uglyvishack.png" x="0" y="0" w="4" h="3" gammagroup="3D Objects"/>
 	<bitmap id="windowborder.middle" file="images/uglyvishack.png" x="0" y="4" w="4" h="1" gammagroup="3D Objects"/>
 	<bitmap id="windowborder.bottom" file="images/uglyvishack.png" x="0" y="6" w="4" h="3" gammagroup="3D Objects"/>
-	<bitmap id="beatvis.bg" file="images/beatvis/beatvis_bg.png" x="0" y="0" w="156" h="35" gammagroup="none"/>
+	<bitmap id="beatvis.bg" file="images/beatvis/beatvis_bg.png" x="0" y="0" w="156" h="35" gammagroup="Window"/>
 	<bitmap id="beatvis_animatedlayerL.bg" file="images/beatvis/beat_left.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
 	<bitmap id="beatvis_animatedlayerR.bg" file="images/beatvis/beat_right.png" x="0" y="0" w="76" h="750" gammagroup="none"/>
 	
