@@ -448,8 +448,26 @@
   <bitmap id="window.pl.display.bg.left" file="images/window/windows-background-main.png" x="363" y="299" w="81" h="29" gammagroup="3D Objects"/>
   <bitmap id="window.pl.display.bg.middle" file="images/window/windows-background-main.png" x="445" y="299" w="32" h="29" gammagroup="3D Objects"/>
   <bitmap id="window.pl.display.bg.right" file="images/window/windows-background-main.png" x="478" y="299" w="20" h="29" gammagroup="3D Objects"/>
-  <bitmap id="window.plvis.display.bg" file="images/plvisarea.png" x="0" y="0" w="75" h="20" gammagroup="3D Objects"/>
-  <bitmap id="window.plinfo.display.bg" file="images/plinfoarea.png" x="0" y="0" w="214" h="20" gammagroup="3D Objects"/>
+
+  <bitmap id="window.plvis.display.tl" file="images/plvisarea.png" x="0" y="0" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.tm" file="images/plvisarea.png" x="3" y="0" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.tr" file="images/plvisarea.png" x="6" y="0" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.l" file="images/plvisarea.png" x="0" y="3" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.m" file="images/plvisarea.png" x="3" y="3" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.r" file="images/plvisarea.png" x="6" y="3" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.bl" file="images/plvisarea.png" x="0" y="6" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.bm" file="images/plvisarea.png" x="3" y="6" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plvis.display.br" file="images/plvisarea.png" x="6" y="6" w="2" h="2" gammagroup="3D Objects"/>
+
+  <bitmap id="window.plinfo.display.tl" file="images/plinfoarea.png" x="0" y="0" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.tm" file="images/plinfoarea.png" x="3" y="0" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.tr" file="images/plinfoarea.png" x="6" y="0" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.l" file="images/plinfoarea.png" x="0" y="3" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.m" file="images/plinfoarea.png" x="3" y="3" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.r" file="images/plinfoarea.png" x="6" y="3" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.bl" file="images/plinfoarea.png" x="0" y="6" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.bm" file="images/plinfoarea.png" x="3" y="6" w="2" h="2" gammagroup="3D Objects"/>
+  <bitmap id="window.plinfo.display.br" file="images/plinfoarea.png" x="6" y="6" w="2" h="2" gammagroup="3D Objects"/>
 
   <bitmap id="window.pl.display.left" file="images/window/windows-background-main.png" x="363" y="329" w="81" h="29" gammagroup="3D Objects"/>
   <bitmap id="window.pl.display.middle" file="images/window/windows-background-main.png" x="445" y="329" w="32" h="29" gammagroup="3D Objects"/>
