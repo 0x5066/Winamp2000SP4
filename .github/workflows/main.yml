@@ -1,0 +1,12 @@
+name: Build Winamp Skin
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive latest commit
+      uses: thedoctor0/zip-release@master
+      with:
+        filename: 'latestbuild.wal'
+        exclusions: '*.git* /*node_modules/* .editorconfig *.ini *.bak *.pdn *.md'
