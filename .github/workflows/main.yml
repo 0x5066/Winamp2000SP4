@@ -1,7 +1,7 @@
 name: Build Winamp Skin
 on: [push]
 jobs:
-  build:
+   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -9,4 +9,11 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: 'latestbuild.wal'
-        exclusions: '*.git* /*node_modules/* .editorconfig *.ini *.bak *.pdn *.md'
+        exclusions: '*.git* *.ini *.bak *.pdn *.md'
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+      # Artifact name
+        name: 'latestbuild.wal'
+        # Directory containing files to upload
+        path: 'latestcommit/latestbuild.wal'
