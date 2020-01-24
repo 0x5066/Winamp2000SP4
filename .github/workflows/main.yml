@@ -16,4 +16,4 @@ jobs:
       # Artifact name
         name: 'latestbuild.wal'
         # Directory containing files to upload
-        path: 'latestcommit/latestbuild.wal'
+        path: '.github/workflows/latestbuild.wal'
