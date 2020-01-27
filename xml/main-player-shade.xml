@@ -67,6 +67,11 @@
 	<button id="vismenu.menuentry3" x="7" y="9" h="0" w="0" action="WA5:Prefs" param="33" image="none"/>
 
 	<!--rect id="plssayer.vis" x="8" y="10" w="72" h="15" color="0,0,250" filled="0"/-->
+
+	<grid x="6" y="8" w="75" h="20" topleft="window.plvis.display.tl" top="window.plvis.display.tm" topright="window.plvis.display.tr" 
+	left="window.plvis.display.l" middle="window.plvis.display.m" right="window.plvis.display.r"
+	bottomleft="window.plvis.display.bl" bottom="window.plvis.display.bm" bottomright="window.plvis.display.br"/>
+
 	<layer x="6" y="8" w="75" h="20" image="window.plvis.display.bg"/>
 	<vis id="shade.vis" x="8" y="10" w="72" h="16" alpha="255" cursor="cur.normal" gammagroup="visualizers"
 	colorallbands="0,255,0"
