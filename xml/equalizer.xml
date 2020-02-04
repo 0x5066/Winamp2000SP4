@@ -110,7 +110,8 @@
 	
 
 	  <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
-	  
+
+	  <rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1"/>
 	  <layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
 
 	  	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
@@ -122,6 +123,7 @@
 
 	<button id="eq.button.switch" action="SWITCH" param="NORMAL" x="-45" y="-1" relatx="1" image="window.shade.button.switch" hoverimage="window.shade.button.switch.h" 
 	downimage="window.shade.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1"/> 
 	<button id="eq.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="window.shade.button.close" hoverimage="window.shade.button.close.h" 
 	downimage="window.shade.button.close.d" tooltip="Close" activealpha="255" inactivealpha="255" cursor="cur.close"/>
 

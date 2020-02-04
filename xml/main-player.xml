@@ -1,8 +1,11 @@
 ﻿<container id="main" name="normal" default_visible="1" default_x="0" default_y="0">
 	
 <groupdef id="player.normal.group.main">
-	<layer id="player.black" x="0" y="0" w="266" h="242" image="player.black" ghost="1" alpha="255"/>
-	<!--rect id="displayvis" color="64,64,64" x="45" y="50" w="148" h="73" ghost="1"/-->
+
+	<layer id="player1" x="0" y="0" w="267" h="242" image="1" sysregion="1" cursor="cur.normal"/>
+	<layer id="player2" x="267" y="0" h="242" w="-538" relatw="1" image="2" sysregion="1" cursor="cur.normal"/>
+	<layer id="player3" x="-271" y="0" w="271" h="242" relatx="1" image="3" sysregion="1" cursor="cur.normal"/>
+
 	<layer id="player.background.main.left" x="0" y="0" image="player.normal.bg.left" sysregion="1" cursor="cur.normal"/>
 	<layer id="player.background.main.mid" x="267" y="0" h="242" w="-538" relatw="1" image="player.normal.bg.center" sysregion="1" cursor="cur.normal"/>
 	<layer id="player.background.main.right" x="-271" y="0" relatx="1" image="player.normal.bg.right" sysregion="1" cursor="cur.normal"/>
