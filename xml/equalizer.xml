@@ -108,10 +108,13 @@
   
   	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
 	
+
 	  <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
 	  
 	  <layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
+
 	  	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1" ghost="1"/>
   
   <group id="eq.shade.volbalance" x="0" y="6" w="231" h="28" cursor="cur.normal"/>
 
@@ -139,6 +142,7 @@
 	<Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="242" relatw="1"/>
 	<sendparams target="window.button.switch" visible="1" />
 	<sendparams target="wasabi.frame.layout.base.bg" visible="0" />
+	<sendparams target="winshade.disabled" alpha="0"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51" />
 	<sendparams target="wasabi.frame.layout.titlebar" w="0" />
 	<sendparams target="wasabi.frame.layout.grip" x="10" w="-78" />

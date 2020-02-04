@@ -40,8 +40,11 @@
 
 	<group id="pledit.shade.group.display" x="4" y="3" cursor="cur.normal"/>
 
+	<rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1" ghost="1"/>
 	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1" ghost="1"/>
 	<button id="pledit.button.switch" action="SWITCH" param="normalpl" x="-45" y="-1" relatx="1" image="window.shade.button.switch" hoverimage="window.shade.button.switch.h" downimage="window.shade.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1" ghost="1"/> 
 	<button id="pledit.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="window.shade.button.close" hoverimage="window.shade.button.close.h" downimage="window.shade.button.close.d" tooltip="Close" activealpha="255" inactivealpha="255" cursor="cur.close"/>
 
 </groupdef>
@@ -152,6 +155,7 @@
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
+	<sendparams target="winshade.disabled" alpha="0"/>
 	
 </layout> 
 

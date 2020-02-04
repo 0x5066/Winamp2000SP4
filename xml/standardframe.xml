@@ -81,10 +81,13 @@
   <layer id="window.resize.disabler" x="10" y="10" w="-20" h="-20" relatw="1" relath="1" cursor="cur.normal" alpha="0"/>
 
   <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
-  
+
+  	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1" ghost="1"/> 
 	<button id="window.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="window.normal.button.close" hoverimage="window.normal.button.close.h" 
 	downimage="window.normal.button.close.down" activealpha="255" inactivealpha="255" tooltip="Close" cursor="cur.close"/>
-	<layer x="-40" y="6" h="14" w="16" relatx="1" image="wasabi.button.winshade.disabled" move="0" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1" ghost="1"/> 
+	<layer id="winshade.disabled" x="-40" y="6" h="14" w="16" relatx="1" image="wasabi.button.winshade.disabled" move="1" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1" ghost="1"/>
 	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
 	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
 
