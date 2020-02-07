@@ -56,13 +56,13 @@
 	<rect id="ejec" color="64,64,64" x="-157" y="7" w="26" h="22" relatx="1"/>
   <button id="player.button.eject" action="EJECT" x="-158" y="3" relatx="1" image="shade.button.eject.n" hoverimage="shade.button.eject.h" downimage="shade.button.eject.d" tooltip="Open file(s)" cursor="cur.normal"/>
 
-	<grid id="seek.bg" x="-128" y="1" h="30" w="50" relatx="1" left="shade.seek.bg.left" middle="shade.seek.bg.middle" right="shade.seek.bg.right" move="0" alpha="255" tooltip="Seeking Bar" cursor="cur.normal"/>
+	<grid id="seek.bg" x="-129" y="1" h="30" w="69" relatx="1" left="shade.seek.bg.left" middle="shade.seek.bg.middle" right="shade.seek.bg.right" move="0" alpha="255" tooltip="Seeking Bar" cursor="cur.normal"/>
 
-	<slider id="player.slider.seek.shadow" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.shadow" downthumb="shade.seek.slider.shadow" alpha="250"/>	
-	<slider id="player.slider.seek" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
-	<slider id="player.slider.seek.ghost" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
+	<slider id="player.slider.seek.shadow" action="SEEK" x="-130" y="5" w="73" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.shadow" downthumb="shade.seek.slider.shadow" alpha="250"/>	
+	<slider id="player.slider.seek" action="SEEK" x="-130" y="5" w="73" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
+	<slider id="player.slider.seek.ghost" action="SEEK" x="-130" y="5" w="73" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
 
-	<layer id="player.resizer.mid" x="-70" y="0" w="4" h="35" image="shade.resizer" relatx="1" move="0" resize="right" alpha="255" tooltip="Adjust Horizontal Size" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="player.resizer.mid" x="-4" y="0" w="4" h="35" image="shade.resizer" relatx="1" move="0" resize="right" alpha="0" tooltip="Adjust Horizontal Size" rectrgn="1" cursor="cur.posbar"/>
 	
 	<rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1"/>
 	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="shade.button.minimize.n" hoverimage="shade.button.minimize.h" downimage="shade.button.minimize.d" tooltip="Minimize" cursor="cur.normal"/>

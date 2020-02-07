@@ -276,6 +276,10 @@
   <bitmap id="shade.background.main.middle" file="images/player-shade.png" x="267" y="81" w="10" h="35" gammagroup="3D Objects"/>
   <bitmap id="shade.background.main.right" file="images/player-shade.png" x="277" y="81" w="271" h="35" gammagroup="3D Objects"/>
 
+  <bitmap id="shade.background.main.left2" file="images/player-shade2.png" x="0" y="81" w="267" h="35"/>
+  <bitmap id="shade.background.main.middle2" file="images/player-shade2.png" x="267" y="81" w="10" h="35"/>
+  <bitmap id="shade.background.main.right2" file="images/player-shade2.png" x="277" y="81" w="271" h="35"/>
+
   <bitmap id="shade.background.display.left" file="images/player-shade.png" x="130" y="51" w="81" h="29" gammagroup="3D Objects" />
   <bitmap id="shade.background.display.middle" file="images/player-shade.png" x="212" y="51" w="32" h="29" gammagroup="3D Objects"/>
   <bitmap id="shade.background.display.right" file="images/player-shade.png" x="245" y="51" w="20" h="29" gammagroup="3D Objects"/>
@@ -336,6 +340,7 @@
 	<!-- Equalizer normal -->
 
   <bitmap id="eq.normal.bg" file="images/eq-background-main.png" x="0" y="3" w="548" h="242" gammagroup="3D Objects"/>
+  <bitmap id="eq.normal.bg2" file="images/eq-background-main2.png" x="0" y="3" w="548" h="242"/>
 
   <bitmap id="eq.normal.background.display" file="images/eq-background-main.png" x="223" y="246" w="261" h="47" gammagroup="none"/>
 
