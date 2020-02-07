@@ -2,12 +2,12 @@
 
 <WinampAbstractionLayer version="1.35">
 	<skininfo>
-		<version>v1.03.7</version>
-		<name>Winamp 2000 SP4</name>
-		<comment>Modernizing the good old Windows Classic</comment>
-		<author>Graphics by Zsolt Vajda // Coding by Victor Brocaz // Modified by Gordon Freeman</author>
+		<version>1.2</version>
+		<name>Nullsoft Winamp 2000 SP4</name>
+		<comment>Bringing Windows Classic to the Winamp Modern Skin platform</comment>
+		<author>Initial Graphics by Zsolt Vajda // Coding by Victor Brocaz // Modified by Gordon Freeman</author>
 		<email>-</email>
-		<homepage>www.deviantart.com/victhor // www.trn.hu</homepage>
+		<homepage>www.deviantart.com/victhor // www.trn.hu // https://github.com/The1Freeman/Winamp2000SP4</homepage>
 		<wacupscreenshot>wacupscreenshot.png</wacupscreenshot>
 		<screenshot>screenshot.png</screenshot>
 	</skininfo>
@@ -28,8 +28,8 @@
 	
 	<include file="xml/elements.xml"/>
 	<include file="xml/system.xml"/>
-  <include file="xml/standardframe.xml"/>
-  <include file="xml/titlebar.xml"/>
+	<include file="xml/standardframe.xml"/>
+	<include file="xml/titlebar.xml"/>
 	<include file="xml/beatvis.xml"/>
 	<include file="xml/main-player.xml"/>
 	<include file="xml/albumart.xml"/>
