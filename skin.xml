@@ -45,6 +45,9 @@
 	<include file="xml/window-overrides.xml"/>
 	<!--include file="xml/main.xml"/--> <!-- experimental, do not include in public release -->
 	<include file="xml/vguivis.xml"/>
+	<include file="xml/zerotwo.xml"/>
+	<include file="xml/ragyo.xml"/>
+	<include file="xml/ryuko.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
