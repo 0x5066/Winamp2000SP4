@@ -10,7 +10,7 @@
 	<text x="59" y="119" w="265" h="21" font="sarpanch" fontsize="15" antialias="0" text="Copyright 2019 - 2020 Victhor Brocaz, Zsolt Vajda" valign="top" align="left" color="0,0,0" bold="0"/>
 	
 	<text x="59" y="132" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Gordon Freeman" valign="top" align="left" color="0,0,0" bold="0"/>
-	
+	<layer id="button.close.line" image="okbutton2.unpressed" x="278" y="287" w="75" h="23" cursor="cur.normal"/>
 	<button id="window.button.close" action="CLOSE" x="278" y="287" image="okbutton.unpressed" downimage="okbutton.pressed" activealpha="255" inactivealpha="255" tooltip="Close" cursor="cur.close"/>
 	
 </groupdef>

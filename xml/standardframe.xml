@@ -9,7 +9,6 @@
     content     : tells the object which group to instantiate in its client area
 ======================================================================================================== -->
 
-
 <groupdef id="wasabi.frame.layout.base.bg">
 	<layer id="window.inner.top.left" x="0" y="20" image="window.normal.inner.top.left" move="0"/>
 	<layer id="window.inner.top.middle" x="85" y="20" w="-109" relatw="1" image="window.normal.inner.top.middle" stretch="1" move="0"/>
@@ -90,16 +89,29 @@
 	<group id="wasabi.frame.layout.region" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
 
   <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
+
+	<gradient id="wasabi.titlebar.active1"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.active2"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2"/>
+
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
 
   <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive1" activealpha="0" inactivealpha="255"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive2" activealpha="0" inactivealpha="255"/>
+
+	<gradient id="wasabi.titlebar.inactive1"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.inactive2"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2"/>
+
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
 
-  
   <layer id="window.resize.disabler" x="10" y="10" w="-20" h="-20" relatw="1" relath="1" cursor="cur.normal" alpha="0"/>
 
   <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>

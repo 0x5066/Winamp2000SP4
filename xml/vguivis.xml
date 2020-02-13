@@ -1,6 +1,7 @@
 <elements>
 
 	<bitmap id="vguivis.bg" file="images/vguivis/vguivis_bg.png" x="0" y="0" w="157" h="21" gammagroup="3D Objects"/>
+	<bitmap id="vguivis.bg3" file="images/vguivis/vguivis_bg3.png" x="0" y="0" w="157" h="21"/>
 	<bitmap id="vguivis.bg2" file="images/vguivis/vguivis_bg2.png" x="0" y="0" w="157" h="21" gammagroup="VGUI Visualizer Background"/>
 	<bitmap id="vguivis_animatedlayerL.bg" file="images/vguivis/vgui_left.png" x="0" y="0" w="157" h="420" gammagroup="VGUI Visualizer"/>
 	<bitmap id="vguivis_animatedlayerR.bg" file="images/vguivis/vgui_right.png" x="0" y="0" w="157" h="420" gammagroup="VGUI Visualizer"/>
@@ -13,6 +14,9 @@
 	<!--grid x="0" y="23" w="157" h="21" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" left="wnd.left" middle="wnd.mid" right="wnd.right" bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/-->
 	<layer id="vguivis.bg" x="0" y="0" w="157" h="21" image="vguivis.bg" ghost="1"/>
 	<layer id="vguivis.bg" x="0" y="23" w="157" h="21" image="vguivis.bg" ghost="1"/>
+
+	<layer id="vguivis.bg3" x="0" y="0" w="157" h="21" image="vguivis.bg3" ghost="1"/>
+	<layer id="vguivis.bg3" x="0" y="23" w="157" h="21" image="vguivis.bg3" ghost="1"/>
 
 	<layer id="vguivis.bg2" x="0" y="0" w="157" h="21" image="vguivis.bg2" ghost="1"/>
 	<layer id="vguivis.bg2" x="0" y="23" w="157" h="21" image="vguivis.bg2" ghost="1"/>

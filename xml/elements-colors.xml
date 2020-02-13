@@ -1,6 +1,9 @@
   <color id="greentxtsui" value="0,0,0" gammagroup="display-sui-text"/>
   <color id="greentxttime" value="138,196,64" gammagroup="display-text"/>
 
+	<color id="wasabi.titlebar.active1" value="128,128,128" gammagroup="Active Title Bar Color 1"/>
+	<color id="wasabi.titlebar.active2" value="128,128,128" gammagroup="Active Title Bar Color 2"/>
+
 	<color id="hl2.digit" value="128,128,128" gammagroup="Half-Life 2 Digits"/>
 	<color id="hl2.text" value="128,128,128" gammagroup="Half-Life 2 Labels"/>
 	<color id="hl2.sub" value="128,128,128" gammagroup="Half-Life 2 Subtitle Text"/>

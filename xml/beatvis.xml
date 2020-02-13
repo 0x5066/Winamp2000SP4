@@ -16,7 +16,7 @@
 	peaks="0"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="beatvis_animatedlayerL.bg" x="6" y="6" w="152" h="100" framewidth="76" frameheight="50" start="0" end="12" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="beatvis_animatedlayerR.bg" x="158" y="6" w="152" h="100" framewidth="76" frameheight="50" start="0" end="12" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
+	<script id="ragyovis.script" file="scripts\wamodernvis.maki"/>
 </groupdef>
 
 

@@ -6,12 +6,6 @@
 
 	<!-- new titlebar stuff -->
 
-	<bitmap id="new.titlebar.beam.active1" file="images/titlebargradient.png" x="0" y="0" h="18" w="933" gammagroup="Active Title Bar Color 1"/>
-	<bitmap id="new.titlebar.beam.active2" file="images/titlebargradient.png" x="0" y="19" h="18" w="933" gammagroup="Active Title Bar Color 2"/>
-	
-	<bitmap id="new.titlebar.beam.inactive1" file="images/titlebargradient.png" x="0" y="0" h="18" w="933" gammagroup="Inactive Title Bar Color 1"/>
-	<bitmap id="new.titlebar.beam.inactive2" file="images/titlebargradient.png" x="0" y="19" h="18" w="933" gammagroup="Inactive Title Bar Color 2"/>
-
 	<bitmap id="new.titlebar.beam.default.color1" file="images/titlebarclickable.png" x="0" y="0" h="18" w="20" gammagroup="Active Title Bar Color 1"/>
 	<bitmap id="new.titlebar.beam.default.color2" file="images/titlebarclickable.png" x="21" y="0" h="18" w="54" gammagroup="Active Title Bar Color 2"/>
 
@@ -56,6 +50,9 @@
 
 	<bitmap id="okbutton.unpressed" file="images/OKbutton.png" x="0" y="0" w="75" h="23" gammagroup="3D Objects"/>
 	<bitmap id="okbutton.pressed" file="images/OKbutton.png" x="0" y="24" w="75" h="23" gammagroup="3D Objects"/>
+
+	<bitmap id="okbutton2.unpressed" file="images/OKbutton2.png" x="0" y="0" w="75" h="23"/>
+	<bitmap id="okbutton2.pressed" file="images/OKbutton2.png" x="0" y="24" w="75" h="23"/>
 	
 	<!-- player-normal additions -->
 	
