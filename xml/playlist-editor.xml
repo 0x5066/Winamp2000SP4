@@ -29,14 +29,25 @@
 	<grid id="shadewinstuff2" x="0" y="23" w="-0" h="3" relatw="1" left="shadewin.l2" middle="shadewin.m2" right="shadewin.r2" ghost="1"/>
 	<grid id="shadewinstuff" x="0" y="23" w="-0" h="3" relatw="1" left="shadewin.l" middle="shadewin.m" right="shadewin.r" ghost="1"/>
 	
-	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
-	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
-	<layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" move="0" activealpha="255" inactivealpha="0"/>
-	
-	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.inactive1" activealpha="0" inactivealpha="255"/>
-	<layer x="4" y="4" w="-61" h="18" relatw="1" image="new.titlebar.beam.inactive2" activealpha="0" inactivealpha="255"/>
+	<gradient id="wasabi.titlebar.active1"
+		x="4" y="4" w="-61" h="18" relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.active2"
+		x="4" y="4" w="-61" h="18" relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2"/>
+
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
+
+	<gradient id="wasabi.titlebar.inactive1"
+		x="4" y="4" w="-61" h="18" relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.inactive2"
+		x="4" y="4" w="-61" h="18" relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2"/>
 	<layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" move="0" activealpha="0" inactivealpha="255"/>
-	
+
 	<layer id="pledit.region.top.left" x="0" y="0" image="window.shade.region.top.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
@@ -45,7 +56,7 @@
 	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="titlebar" fontsize="15" linespacing="1" color="wasabi.text.active" antialias="0" 
 			playcolor="wasabi.text.active" sysregion="1" bold="1" activealpha="255" inactivealpha="0"/>	
 	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="titlebar" fontsize="15" linespacing="1" color="wasabi.text.inactive" antialias="0" 
-			playcolor="wasabi.text.inactive" sysregion="1" bold="1" activealpha="0" inactivealpha="255"/>	
+			playcolor="wasabi.text.inactive" sysregion="1" bold="1" activealpha="0" inactivealpha="255"/>
 			
 	<layer id="pledit.background.grip.mid" x="-4" y="0" w="4" h="26" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="0" cursor="cur.posbar"/>
 
