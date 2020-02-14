@@ -40,6 +40,7 @@
 
 	<!-- background stuff -->
 
+	<rect id="rec" color="64,64,64" x="213" y="97" w="48" h="24" ghost="1"/>
 	<layer id="sndrec" image="sndrec.bg" w="135" h="19" cursor="cur.normal"/>
 	<layer id="sndrec.rec" image="sndrec.dis" x="213" y="97" w="48" h="24" cursor="cur.normal"/>
 
@@ -68,11 +69,17 @@
 
 	<!-- position bar -->
 
+	<rect id="vol.bg2" color="64,64,64" x="18" y="79" w="235" h="3" ghost="1"/>
 	<grid id="posbar.bg" x="17" y="78" w="236" h="4" left="posbar.left" middle="posbar.center" right="posbar.right"/>
 	<slider id="player.slider.seek" action="SEEK" x="17" y="70" w="236" h="21" orientation="horizontal" thumb="sndrec.posbtn" hoverthumb="sndrec.posbtn" downthumb="sndrec.posbtn" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
 
 	<!-- player buttons -->
 	
+	<rect id="prev" color="64,64,64" x="9" y="97" w="48" h="24" ghost="1"/>
+	<rect id="next" color="64,64,64" x="60" y="97" w="48" h="24" ghost="1"/>
+	<rect id="pause" color="64,64,64" x="111" y="97" w="48" h="24" ghost="1"/>
+	<rect id="stop" color="64,64,64" x="162" y="97" w="48" h="24" ghost="1"/>
+
 	<button id="button.previous" action="PREV" x="9" y="97" image="sndrec.prev" hoverimage="sndrec.prev" downimage="sndrec.prev.d" cursor="cur.normal"/>
 	<button id="button.next" action="NEXT" x="60" y="97" image="sndrec.next" hoverimage="sndrec.next" downimage="sndrec.next.d" cursor="cur.normal"/>
 	<button id="player.button.pause" action="PAUSE" x="111" y="97" image="sndrec.paus" hoverimage="sndrec.paus" downimage="sndrec.paus.d" rectrgn="1" cursor="cur.normal"/>
