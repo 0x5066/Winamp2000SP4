@@ -26,10 +26,23 @@
   <!-- I like to place the menu under the button -not the pointer- whenever I can -->
 
   <!--images source="preamp" x="38" y="68" w="5" h="106" images="player.animation.eq.sliders" imagesspacing="106"/-->
+
+	<Animatedlayer id="preamp_layer" image="eq.slider.bg.anim" x="46" y="70" w="6" h="107" ghost="1" alpha="0"/>
   
 	<slider id="preamp" action="EQ_BAND" param="PREAMP" x="38" y="64" h="119" w="22" orientation="vertical" thumb="eq.normal.button.slider.v.n" hoverthumb="eq.normal.button.slider.v.h" downthumb="eq.normal.button.slider.v.d" tooltip="Preamp" cursor="cur.resvert"/>
 
 	<!--layer id="eq1.bg" x="131" y="70" image="eq.slider.bg.1" ghost="1"/-->
+
+	<Animatedlayer id="eq1.bg" image="eq.slider.bg.anim" x="131" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq2.bg" image="eq.slider.bg.anim" x="171" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq3.bg" image="eq.slider.bg.anim" x="211" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq4.bg" image="eq.slider.bg.anim" x="251" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq5.bg" image="eq.slider.bg.anim" x="291" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq6.bg" image="eq.slider.bg.anim" x="331" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq7.bg" image="eq.slider.bg.anim" x="371" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq8.bg" image="eq.slider.bg.anim" x="411" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq9.bg" image="eq.slider.bg.anim" x="451" y="70" w="6" h="107" ghost="1" alpha="0"/>
+	<Animatedlayer id="eq10.bg" image="eq.slider.bg.anim" x="491" y="70" w="6" h="107" ghost="1" alpha="0"/>
 			
 	<slider id="eq1" action="EQ_BAND" param="1" x="123" y="65" h="119" w="22" orientation="vertical" thumb="eq.normal.button.slider.v.n" hoverthumb="eq.normal.button.slider.v.h" downthumb="eq.normal.button.slider.v.d" tooltip="70 Hz" cursor="cur.resvert"/>
 	<slider id="eq2" action="EQ_BAND" param="2" x="163" y="65" h="119" w="22" orientation="vertical" thumb="eq.normal.button.slider.v.n" hoverthumb="eq.normal.button.slider.v.h" downthumb="eq.normal.button.slider.v.d" tooltip="180 Hz" cursor="cur.resvert"/>
@@ -46,13 +59,12 @@
 	<button id="EQ_0" x="68" y="115" w="36" h="17" rectrgn="1" image="none" cursor="cur.normal"/>
 	<button id="EQ_m12" x="68" y="165" w="36" h="17" rectrgn="1" image="none" cursor="cur.normal"/>
 		
-
   <layer id="eq.frequency.labels.m" x="69" y="66" image="eq.normal.labels.main" ghost="1"/>
   <layer id="eq.frequency.labels" x="24" y="184" image="eq.normal.labels.winamp" ghost="1"/>
 	
 	<!--slider id="eq.slider.crossfade" cfgattrib="{F1239F09-8CC6-4081-8519-C2AE99FCB14C};Crossfade time" high="20" x="186" y="178" w="83" h="14" thumb="eq.normal.button.slider.horizontal" downthumb="eq.normal.button.slider.horizontal"/-->
 
-  <!--script file="scripts\eq_animated_bars.maki"/-->
+  <script file="scripts\eq_animated_bars.maki"/>
 </groupdef>
 
 <groupdef id="eq.shade.titlebar.center">
