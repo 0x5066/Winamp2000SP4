@@ -48,6 +48,7 @@
 	<include file="xml/zerotwo.xml"/>
 	<include file="xml/ragyo.xml"/>
 	<include file="xml/ryuko.xml"/>
+	<include file="xml/thinger.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
