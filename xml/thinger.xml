@@ -1,20 +1,23 @@
-<container id="thinger" name="Thinger" default_x="0" default_y="116" default_visible="1">
-<groupdef id="thinger.content.group">
-	<group id="wasabi.window" x="0" y="0" w="0" relatw="1" h="0" relath="1"/>
-		<button id="ScrollLeft" action="CB_PREV" x="0" y="0" h="36" w="15" image="wasabi.button.label.arrow.left" tooltip="Scroll Left" borders="1" center_image="1"/>
-		<button id="ScrollRight" action="CB_NEXT" x="-15" relatx="1" y="0" h="36" w="15" image="wasabi.button.label.arrow.right" tooltip="Scroll Right" borders="1" center_image="1"/>
-		
-	<componentbucket id="Component list" x="15" y="1" w="-30" relatw="1" h="34"/>
+
+<groupdef id="thinger.content.group" x="-2" y="-2">		
+	<componentbucket id="Component list" x="15" y="0" w="-31" relatw="1" h="35"/>
 </groupdef>
 
-<layout id="normal" default_h="70" default_w="275" maximum_h="70" minimum_h="70" minimum_w="275">
+<container id="thinger" name="Thinger" default_x="0" default_y="116">
+	<layout id="thinger" default_h="90" default_w="275" maximum_h="90" minimum_h="90" minimum_w="275">
 
-<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1"  content="thinger.content.group"/>
+	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="thinger.content.group"/>
 	<sendparams target="window.titlebar.title" default="Thinger"/>
-	<sendparams target="window.top;window.bottom.bottom;window.bottom;" resize="0"/>
-	<sendparams target="window.top.left;window.left;window.bottom.left.top;window.bottom.left;window.bottom.left.bottom;" resize="left"/>
-	<sendparams target="window.top.right;window.right;window.bottom.right.top;window.bottom.right;window.bottom.right.bottom;window.resizer" resize="right"/>
 
-	<text id="cbtext" display="componentbucket" x="5" y="55" w="-26" relatw="1" h="13" font="sarpanch" antialias="0"/>
+	<sendparams target="wasabi.frame.layout.base.bg" h="0" alpha="0"/>
+
+	<rect id="sngtic.bg2" color="64,64,64" x="5" y="65" w="-10" h="20" relatw="1" ghost="1"/>
+	<grid id="sngtic.bg" x="4" y="64" w="-8" h="22" relatw="1" left="sngtic.left" middle="sngtic.mid" right="sngtic.right" ghost="1" alpha="255"/>
+	<grid id="sngtic.bg" x="6" y="66" w="-12" h="18" relatw="1" left="sngticbg.left" middle="sngticbg.mid" right="sngticbg.right" ghost="1" alpha="255"/>
+
+		<button id="ScrollLeft" action="CB_PREV" x="4" y="34" h="16" w="16" image="wasabi.button.label.arrow.left" tooltip="Scroll Left" borders="1" center_image="1"/>
+		<button id="ScrollRight" action="CB_NEXT" x="-20" relatx="1" y="34" h="16" w="16" image="wasabi.button.label.arrow.right" tooltip="Scroll Right" borders="1" center_image="1"/>
+
+	<text id="cbtext" display="componentbucket" x="7" y="68" w="-26" color="wasabi.list.text.alternate" relatw="1" h="13" font="sarpanch" antialias="0"/>
 </layout>
 </container>
