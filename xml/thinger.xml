@@ -1,3 +1,22 @@
+<elements>
+  <bitmap id="winamp.thinger.library.hilited" file="images\thinger\library-hilited.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.library.selected" file="images\thinger\library-selected.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.library" file="images\thinger\library-unselected.png" gammagroup="Thinger icons"/> 
+  
+  <bitmap id="winamp.thinger.video.hilited" file="images\thinger\video-hilited.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.video.selected" file="images\thinger\video-selected.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.video" file="images\thinger\video-unselected.png" gammagroup="Thinger icons"/> 
+  
+  <bitmap id="winamp.thinger.pledit.hilited" file="images\thinger\pledit-hover.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.pledit.selected" file="images\thinger\pledit-selected.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.pledit" file="images\thinger\pledit-unselected.png" gammagroup="Thinger icons"/> 
+
+  <bitmap id="winamp.thinger.vis.hilited" file="images\thinger\vis-hilited.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.vis.selected" file="images\thinger\vis-selected.png" gammagroup="Thinger icons"/> 
+  <bitmap id="winamp.thinger.vis" file="images\thinger\vis-unselected.png" gammagroup="Thinger icons"/> 
+ 
+</elements>
+
 <groupdef id="textbox">
 
 	<rect id="sngtic.bg2" color="64,64,64" x="5" y="1" w="-10" h="20" relatw="1" ghost="1"/>
