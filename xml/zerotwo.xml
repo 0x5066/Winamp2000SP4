@@ -2,6 +2,7 @@
 
 	<bitmap id="02vis_animatedlayerL.bg" file="images/02visualizer/02vis_animatedlayerL.png" x="0" y="0" w="128" h="640"/>
 	<bitmap id="02vis_animatedlayerR.bg" file="images/02visualizer/02vis_animatedlayerR.png" x="0" y="0" w="128" h="640"/>
+	<bitmap id="apemediaplayer" file="images/apemediaplayer.png"/>
 
 </elements>
 
@@ -49,12 +50,15 @@
 <layout id="normal" minimum_w="520" minimum_h="284" h="284" w="520" maximum_w="520" maximum_h="284">
 	<Wasabi:Standardframe:NoStatus x="0" y="0" h="284" w="520" content="02vis"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+	<sendparams target="player.button.mainmenu" alpha="0"/>
+	<layer x="6" y="5" image="apemediaplayer" ghost="1"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
   <layer id="resize.disabler" x="395" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
   <layer id="resize.disabler" x="0" y="35" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
   <layer id="resize.disabler" x="0" y="365" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+
 </layout>
 
 </container>
