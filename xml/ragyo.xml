@@ -13,7 +13,7 @@
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="ragyovis_hair_animatedlayerL.bg" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ragyovis_hair_animatedlayerR.bg" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
-	<vis id="shade.vis" x="0" y="0" w="474" h="233" alpha="200" cursor="cur.normal" fps="120"
+	<vis id="shade.vis" x="0" y="0" w="474" h="233" alpha="200" cursor="cur.normal" fps="144"
 	ColorBand1="214,168,186"
     ColorBand2="182,43,171"
     ColorBand3="106,1,242"
