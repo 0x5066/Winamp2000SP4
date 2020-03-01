@@ -34,7 +34,7 @@
 	colorosc1="255,4,55"
 	peakfalloff="0"
 	falloff="4"
-	bandwidth="wide"
+	bandwidth="thin"
 	peaks="1"/>
 		<vis id="shade.vis" x="-4" y="116" w="237" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="120" fliph="1"
 	ColorBand1="130,185,217"
@@ -61,7 +61,7 @@
 	colorosc1="225,230,238"
 	peakfalloff="0"
 	falloff="4"
-	bandwidth="wide"
+	bandwidth="thin"
 	peaks="1"/>
 	<script id="ragyovis.script" file="scripts\ryukovis.maki"/>
 </groupdef>
