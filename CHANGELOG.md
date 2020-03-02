@@ -9,6 +9,7 @@ What's New?
 - New: The infamous Thinger from Winamp 3, just slightly tweaked for a more Windows-like experience (even the included icons are swapped out during skin load, which no one seems to have done before...).
 - New: Ported the visualizers from the other two now defunct flavors of Nullsoft Winamp 2000 SP4, they now carry the icons representative from where they came from.
 - Misc: Tweaked the balance bar slightly.
+- Misc: Slightly adjusted the other visualizers for more snappier responsiveness. (Doesn't work on all machines and will definitely eat away one core's performance, though it's not terrible on overall performance)
 
 Known issues:
 With how the playlist editor is set up, the lower information bar will clip into the other buttons, making it harder to use them, and it looks weird too.
