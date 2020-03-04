@@ -4,6 +4,7 @@ What's New?
 - New: Gammagroups that actually represent what Windows once had to offer with Windows Classic (with more or less accuracy, should still cover everything).
 - New: Split up the image parts to allow for better color editing (including one UI detail where one line is always at ``64,64,64``).
 - New: Themes! Including those that were present in Windows 9x/2000/XP, including Classic theme coloring of the Aero theme in Windows 7.
+- New: Included are Color themes which are a nod to the now defunct flavors of Nullsoft Winamp 2000 SP4, the REVOCS Media Player and A.P.E. Media Player themes with improved coloring.
 - New: Title Bar beam gradient can be colored independently.
 - New: Recreation of the Sound Recorder from Win9x/WinXP.
 - New: The infamous Thinger from Winamp 3, just slightly tweaked for a more Windows-like experience (even the included icons are swapped out during skin load, which no one seems to have done before...).
