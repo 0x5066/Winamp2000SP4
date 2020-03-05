@@ -18,6 +18,8 @@
 	<bitmap id="vguivis_animatedlayerR" file="images/beatvis/crosshair/crosshair_r.png" x="0" y="0" w="20" h="2800" gammagroup="Half-Life 2 Crosshair"/>
 	
 	<bitmap id="hl2.crosshair" file="images/beatvis/crosshair/crosshair.png" x="0" y="0" w="21" h="17" gammagroup="Half-Life 2 Crosshair"/>
+	
+	<bitmap id="game.ico" file="images/hl2.png"/>
 
 </elements>
 
@@ -108,6 +110,8 @@
 <layout id="normal" minimum_w="743" minimum_h="255" w="743" h="255" maximum_w="743" maximum_h="255">
 	<Wasabi:Standardframe:NoStatus x="0" y="0" w="743" h="255" content="songstuff1"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+	<sendparams target="player.button.mainmenu" alpha="0"/>
+	<layer x="6" y="5" image="game.ico" ghost="1"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
