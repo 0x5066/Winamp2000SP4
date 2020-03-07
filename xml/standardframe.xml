@@ -118,12 +118,12 @@
 
   	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1" ghost="1"/> 
 	<button id="window.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="window.normal.button.close" hoverimage="window.normal.button.close.h" 
-	downimage="window.normal.button.close.down" activealpha="255" inactivealpha="255" tooltip="Close" cursor="cur.close"/>
+	downimage="window.normal.button.close.down" tooltip="Close" cursor="cur.close"/>
 	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1" ghost="1"/> 
-	<layer id="winshade.disabled" x="-40" y="6" h="14" w="16" relatx="1" image="wasabi.button.winshade.disabled" move="1" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+	<layer id="winshade.disabled" x="-40" y="6" h="14" w="16" relatx="1" image="wasabi.button.winshade.disabled" move="1" cursor="cur.normal"/>
 	<rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1" ghost="1"/>
-	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
-	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
+	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" cursor="cur.normal"/>
+	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" tooltip="Winamp Menu" cursor="cur.normal"/>
 
 
 
@@ -166,6 +166,9 @@
 <groupdef id="wasabi.standardframe.nostatusbar" background="wasabi.frame.basetexture" sysregion="1" xuitag="Wasabi:StandardFrame:NoStatus" cursor="cur.normal">
 
   <group id="wasabi.frame.layout" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+  
+  	<layer id="window.topmid" x="2" y="0" w="-4" relatw="1" image="windowborder.topmiddle" ghost="1"/>
+	<layer id="window.topright" x="-2" y="0" relatx="1" image="windowborder.topright" ghost="1"/>
   
   	<layer id="window.top" x="0" y="0" image="windowborder.top" ghost="1"/>
 	<layer id="window.mid" x="0" y="3" h="151" relath="1" image="windowborder.middle" ghost="1"/>
