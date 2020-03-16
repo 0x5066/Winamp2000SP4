@@ -689,7 +689,7 @@
   <gammagroup id="Inactive Title Bar Color 2" value="-3386,-2838,-1612" gray="0" boost="0" />
   <gammagroup id="Active Title Bar-Text" value="3031,3128,3289" gray="0" boost="0" />
   <gammagroup id="Inactive Title Bar-Text" value="129,419,1032" gray="0" boost="0" />
-  <gammagroup id="Visualizers" value="4096,4096,4096" gray="1" boost="0" />
+  <gammagroup id="Visualizers" value="3644,3708,3805" gray="1" boost="0" />
   <gammagroup id="Visualizers2" value="4096,4096,4096" gray="1" boost="0" />
   <gammagroup id="VGUI Visualizer Background" value="-2112,-1856,-2336" gray="0" boost="0" />
   <gammagroup id="VGUI Visualizer" value="0,0,0" gray="0" boost="0" />
