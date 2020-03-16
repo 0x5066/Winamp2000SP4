@@ -508,24 +508,24 @@
   <bitmap id="window.pl.display.middle" file="images/window/windows-background-main.png" x="445" y="329" w="32" h="29" gammagroup="3D Objects"/>
   <bitmap id="window.pl.display.right" file="images/window/windows-background-main.png" x="478" y="329" w="20" h="29" gammagroup="3D Objects"/>
 
-  <bitmap id="pl.button.previous.n" file="images/window/windows-background-main.png" x="242" y="302" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.previous.h" file="images/window/windows-background-main.png" x="242" y="323" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.previous.d" file="images/window/windows-background-main.png" x="242" y="344" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.play.n" file="images/window/windows-background-main.png" x="262" y="302" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.play.h" file="images/window/windows-background-main.png" x="262" y="323" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.play.d" file="images/window/windows-background-main.png" x="262" y="344" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.pause.n" file="images/window/windows-background-main.png" x="282" y="302" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.pause.h" file="images/window/windows-background-main.png" x="282" y="323" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.pause.d" file="images/window/windows-background-main.png" x="282" y="244" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.stop.n" file="images/window/windows-background-main.png" x="302" y="302" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.stop.h" file="images/window/windows-background-main.png" x="302" y="323" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.stop.d" file="images/window/windows-background-main.png" x="302" y="344" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.next.n" file="images/window/windows-background-main.png" x="322" y="302" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.next.h" file="images/window/windows-background-main.png" x="322" y="323" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.next.d" file="images/window/windows-background-main.png" x="322" y="344" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.eject.n" file="images/window/windows-background-main.png" x="342" y="302" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.eject.h" file="images/window/windows-background-main.png" x="342" y="323" w="20" h="20" gammagroup="display-text"/>
-  <bitmap id="pl.button.eject.d" file="images/window/windows-background-main.png" x="342" y="344" w="20" h="20" gammagroup="display-text"/>
+  <bitmap id="pl.button.previous.n" file="images/window/windows-background-main.png" x="242" y="302" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.previous.h" file="images/window/windows-background-main.png" x="242" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.previous.d" file="images/window/windows-background-main.png" x="242" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.play.n" file="images/window/windows-background-main.png" x="262" y="302" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.play.h" file="images/window/windows-background-main.png" x="262" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.play.d" file="images/window/windows-background-main.png" x="262" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.pause.n" file="images/window/windows-background-main.png" x="282" y="302" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.pause.h" file="images/window/windows-background-main.png" x="282" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.pause.d" file="images/window/windows-background-main.png" x="282" y="244" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.stop.n" file="images/window/windows-background-main.png" x="302" y="302" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.stop.h" file="images/window/windows-background-main.png" x="302" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.stop.d" file="images/window/windows-background-main.png" x="302" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.next.n" file="images/window/windows-background-main.png" x="322" y="302" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.next.h" file="images/window/windows-background-main.png" x="322" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.next.d" file="images/window/windows-background-main.png" x="322" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.eject.n" file="images/window/windows-background-main.png" x="342" y="302" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.eject.h" file="images/window/windows-background-main.png" x="342" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
+  <bitmap id="pl.button.eject.d" file="images/window/windows-background-main.png" x="342" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
 
 	<!-- Video Window -->
 

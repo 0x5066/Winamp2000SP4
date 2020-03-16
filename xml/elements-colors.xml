@@ -8,8 +8,9 @@
 	<color id="hl2.text" value="128,128,128" gammagroup="Half-Life 2 Labels"/>
 	<color id="hl2.sub" value="128,128,128" gammagroup="Half-Life 2 Subtitle Text"/>
 
-	<color id="wasabi.text.color" value="0,0,0" gammagroup="Window-Text"/>
-	<color id="color.window.txt" value="0,0,0" gammagroup="Window-Text"/>
+	<color id="wasabi.text.color" value="128,128,128" gammagroup="Window-Text"/>
+	<color id="wasabi.text.color2" value="128,128,128" gammagroup="3D Objects-Text"/>
+	<color id="color.window.txt" value="128,128,128" gammagroup="Window-Text"/>
 	
 	<color id="wasabi.text.active" value="128,128,128" gammagroup="Active Title Bar-Text"/>
 	<color id="wasabi.text.inactive" value="128,128,128" gammagroup="Inactive Title Bar-Text"/>
@@ -21,6 +22,9 @@
 	<color id="wasabi.list.background.alternate" value="128,128,128" gammagroup="Window"/> <!--alternate coloring used for WACUP ml_playlist, reminder that i will tear someone's head off whoever implemented that in 5.5x-->
 
   <color id="wasabi.list.text.selected" value="128,128,128" gammagroup="Selected Items-Text"/> <!--listview/treeview selection bar text color -->
+  <color id="wasabi.list.text.selected.inactive" value="128,128,128" gammagroup="Selected Items-Text (Inactive)"/> <!-- listview/treeview selection bar textcolor (inactive) -->
+  <color id="wasabi.list.text.selected.background.inactive" value="128,128,128" gammagroup="Selected Items (Inactive)"/> <!-- listview/treeview selectionbar back color (inactive) -->
+
 	<color id="wasabi.list.text.selected.background" value="128,128,128" gammagroup="Selected Items"/> <!--listview/treeview selection bar background color -->
 	<color id="studio.list.item.selected" value="128,128,128" gammagroup="Selected Items"/>
 	<color id="studio.list.item.focused" value="128,128,128" gammagroup="Selected Items"/>
@@ -76,7 +80,7 @@
   <color id="studio.textBar.background" value="32,32,32"/>
 
   <!-- Buttons -->
-  <color id="studio.button.text" value="0,0,0" gammagroup="button-text"/>
+  <color id="studio.button.text" value="128,128,128" gammagroup="3D Objects-Text"/>
   <color id="studio.button.hiliteText" value="10,36,106" gammagroup="button-text"/>
   <color id="studio.button.dimmedText" value="122,134,150" gammagroup="button-text"/>
 
@@ -84,7 +88,7 @@
 
   <!-- pre 5.55:	-->
   <color id="wasabi.popupmenu.background" value="wasabi.window.background" gammagroup="3D Objects"/>
-  <color id="wasabi.popupmenu.text" value="0,0,0" gammagroup="txtlabels"/>
+  <color id="wasabi.popupmenu.text" value="128,128,128" gammagroup="Window-Text"/>
   <color id="wasabi.popupmenu.text.selected" value="128,128,128" gammagroup="Selected Items-Text"/>
   <color id="wasabi.popupmenu.text.inactive" value="183,183,183" gammagroup="display-sui-text"/>
 
@@ -111,7 +115,7 @@
 
   <!-- edit wnds -->
   <color id="wasabi.edit.selection" value="128,128,128" gammagroup="Selected Items"/>
-  <color id="wasabi.edit.text" value="0,0,0" gammagroup="display-sui-text"/>
+  <color id="wasabi.edit.text" value="128,128,128" gammagroup="display-sui-text"/>
   <color id="wasabi.edit.background" value="0,0,180" gammagroup="display-sui"/>
 
 	<elementalias id="wasabi.scrollbar.foreground" target="wasabi.scrollbar.background"/>

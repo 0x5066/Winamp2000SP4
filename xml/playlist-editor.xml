@@ -174,7 +174,7 @@
 	<layer id="player.vis.blocker" x="-354" y="-32" w="72" h="15" relatx="1" relaty="1" image="none" cursor="cur.normal" alpha="0"/>
 	
 	<text id="pledit.info" x="-181" y="-34" h="19" w="116" relatx="1" relaty="1" display="PE_Info" font="sarpanch" fontsize="14" valign="middle" align="center" 
-	rightclickaction="trackmenu" color="black" alpha="255" cursor="cur.normal" antialias="0"/>
+	rightclickaction="trackmenu" color="wasabi.text.color2" alpha="255" cursor="cur.normal" antialias="0"/>
 
 	<group id="pledit.miniplayback.buttons" x="-276" y="-36" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/>
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
