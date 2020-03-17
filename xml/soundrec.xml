@@ -2,7 +2,7 @@
 
 	<!-- background stuff -->	
 
-	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="135" h="19"/>
+	<bitmap id="sndrec.bg" file="images/soundrec/sndrec.png" w="135" h="19" gammagroup="3D Objects-Text"/>
 	<bitmap id="sndrec.posbtn" file="images/soundrec/sndrec_pos.png" w="11" h="21" gammagroup="3D Objects"/>
 
 	<!-- buttons -->
@@ -93,8 +93,8 @@
 	left="wnd.left" middle="wnd.mid" right="wnd.right"
 	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
 
-	<text id="position" text="Position:" x="13" y="29" w="45" h="12" font="micross" fontsize="15" color="black" valign="top" align="right" antialias="0"/>
-	<text id="display.time" display="TIMEELAPSED" x="-68" y="45" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="black" 
+	<text id="position" text="Position:" x="13" y="29" w="45" h="12" font="micross" fontsize="15" color="wasabi.text.color2" valign="top" align="right" antialias="0"/>
+	<text id="display.time" display="TIMEELAPSED" x="-68" y="45" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="wasabi.text.color2" 
 	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" ghost="1" timecolonwidth="3" antialias="0"/>
 
 	<!-- rectangular box to create the background of the current length display -->
@@ -103,8 +103,8 @@
 	left="wnd.left" middle="wnd.mid" right="wnd.right"
 	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
 
-	<text id="length" text="Length:" x="203" y="29" w="45" h="14" font="micross" fontsize="15" color="black" valign="top" align="right" antialias="0"/>
-	<text id="display.length" display="SONGLENGTH" x="118" y="46" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="black" 
+	<text id="length" text="Length:" x="203" y="29" w="45" h="14" font="micross" fontsize="15" color="wasabi.text.color2" valign="top" align="right" antialias="0"/>
+	<text id="display.length" display="SONGLENGTH" x="118" y="46" w="122" h="15" font="micross" fontsize="15" forcefixed="0" color="wasabi.text.color2" 
 	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" ghost="1" antialias="0"/>
 
 </groupdef>
