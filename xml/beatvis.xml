@@ -2,21 +2,21 @@
 <groupdef id="ragyovis" x="-2" y="-2" w="324" h="102" relatw="1" relath="1">
 
 	<layer id="beatvis.bg" x="2" y="2" w="312" h="70" image="beatvis.bg" ghost="1"/>
-	<vis id="shade.vis" x="6" y="6" w="304" h="62" alpha="200" cursor="cur.normal" gammagroup="visualizers" fps="120"
-	colorallbands="0,0,0"
-	colorbandpeak="0,0,0"
-	colorosc1="0,0,0"
-	colorosc2="0,0,0"
-	colorosc3="0,0,0"
-	colorosc4="0,0,0"
-	colorosc5="0,0,0"
+	<vis id="shade.vis" x="6" y="6" w="304" h="62" alpha="200" cursor="cur.normal" gammagroup="Window-Text" fps="120"
+	colorallbands="128,128,128"
+	colorbandpeak="128,128,128"
+	colorosc1="128,128,128"
+	colorosc2="128,128,128"
+	colorosc3="128,128,128"
+	colorosc4="128,128,128"
+	colorosc5="128,128,128"
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="wide"
 	peaks="0"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="beatvis_animatedlayerL.bg" x="6" y="6" w="152" h="100" framewidth="76" frameheight="50" start="0" end="12" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="beatvis_animatedlayerR.bg" x="158" y="6" w="152" h="100" framewidth="76" frameheight="50" start="0" end="12" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
+	<script id="ragyovis.script" file="scripts\wamodernvis.maki"/>
 </groupdef>
 
 

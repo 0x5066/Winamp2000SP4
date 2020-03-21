@@ -1,4 +1,9 @@
 <groupdef id="player.shade.group.main" w="0" h="35" relatw="1">
+
+	<layer id="background.shade.l2" x="0" y="0" h="35" image="shade.background.main.left2" sysregion="1"/>
+	<layer id="background.shade.m2" x="267" y="0" h="35" w="-538" relatw="1" image="shade.background.main.middle2" sysregion="1"/>
+	<layer id="background.shade.r2" x="-271" y="0" h="35" relatx="1" image="shade.background.main.right2" sysregion="1"/>
+
 	<layer id="background.shade.l" x="0" y="0" h="35" image="shade.background.main.left" sysregion="1"/>
 	<layer id="background.shade.m" x="267" y="0" h="35" w="-538" relatw="1" image="shade.background.main.middle" sysregion="1"/>
 	<layer id="background.shade.r" x="-271" y="0" h="35" relatx="1" image="shade.background.main.right" sysregion="1"/>
@@ -7,15 +12,29 @@
 	<layer id="pledit.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
-	
+
   <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active1" activealpha="255" inactivealpha="0"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.active2" activealpha="255" inactivealpha="0"/>
+
+	<gradient id="wasabi.titlebar.active1"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.active2"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2"/>
+
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
 
   <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive1" activealpha="0" inactivealpha="255"/>
-  <layer x="24" y="4" w="-81" h="18" relatw="1" image="new.titlebar.beam.inactive2" activealpha="0" inactivealpha="255"/>
+
+	<gradient id="wasabi.titlebar.inactive1"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.inactive2"
+		x="24" y="4" w="-81" h="18" relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2"/>
+
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
   
 	<layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
@@ -36,24 +55,33 @@
 	<group id="player.shade.group.display" x="118" y="0" ghost="1" cursor="cur.normal"/>
 	
 	<!--layer id="shade.buttons.bg" x="-268" y="2" relatx="1" image="shade.buttons.bg" cursor="cur.normal"/-->
-	
+
+	<rect id="prev" color="64,64,64" x="-264" y="7" w="26" h="22" relatx="1"/>
 	<button id="player.button.previous" action="PREV" x="-265" y="3" relatx="1" image="shade.button.previous.n" hoverimage="shade.button.previous.h" downimage="shade.button.previous.d" tooltip="Pevious Track" cursor="cur.normal"/>
+	<rect id="pause" color="64,64,64" x="-238" y="7" w="26" h="22" relatx="1"/>
 	<button id="player.button.pause" action="PAUSE" x="-238" y="3" relatx="1" image="shade.button.pause.n" hoverimage="shade.button.pause.h" downimage="shade.button.pause.d" tooltip="Pause" cursor="cur.normal"/>
+	<rect id="play" color="64,64,64" x="-212" y="7" w="26" h="22" relatx="1"/>
 	<button id="player.button.play" action="PLAY" x="-238" y="3" relatx="1" image="shade.button.play.n" hoverimage="shade.button.play.h" downimage="shade.button.play.d" tooltip="Play" cursor="cur.normal"/>
 	<button id="player.button.stop" action="STOP" x="-212" y="3" relatx="1" image="shade.button.stop.n" hoverimage="shade.button.stop.h" downimage="shade.button.stop.d" tooltip="Stop" cursor="cur.normal"/>
+	<rect id="next" color="64,64,64" x="-186" y="7" w="26" h="22" relatx="1"/>
 	<button id="player.button.next" action="NEXT" x="-186" y="3" relatx="1" image="shade.button.next.n" hoverimage="shade.button.next.h" downimage="shade.button.next.d" tooltip="Next Track" cursor="cur.normal"/>
+
+	<rect id="ejec" color="64,64,64" x="-157" y="7" w="26" h="22" relatx="1"/>
   <button id="player.button.eject" action="EJECT" x="-158" y="3" relatx="1" image="shade.button.eject.n" hoverimage="shade.button.eject.h" downimage="shade.button.eject.d" tooltip="Open file(s)" cursor="cur.normal"/>
 
-	<grid id="seek.bg" x="-128" y="1" h="30" w="50" relatx="1" left="shade.seek.bg.left" middle="shade.seek.bg.middle" right="shade.seek.bg.right" move="0" alpha="255" tooltip="Seeking Bar" cursor="cur.normal"/>
+	<grid id="seek.bg" x="-129" y="1" h="30" w="69" relatx="1" left="shade.seek.bg.left" middle="shade.seek.bg.middle" right="shade.seek.bg.right" move="0" alpha="255" tooltip="Seeking Bar" cursor="cur.normal"/>
 
-	<slider id="player.slider.seek.shadow" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.shadow" downthumb="shade.seek.slider.shadow" alpha="250"/>	
-	<slider id="player.slider.seek" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
-	<slider id="player.slider.seek.ghost" action="SEEK" x="-130" y="5" w="55" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
+	<slider id="player.slider.seek.shadow" action="SEEK" x="-130" y="5" w="73" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.shadow" downthumb="shade.seek.slider.shadow" alpha="250"/>	
+	<slider id="player.slider.seek" action="SEEK" x="-130" y="5" w="73" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
+	<slider id="player.slider.seek.ghost" action="SEEK" x="-130" y="5" w="73" h="29" relatx="1" orientation="horizontal" thumb="shade.seek.slider.n" downthumb="shade.seek.slider.d" tooltip="Seeking Bar" alpha="255" cursor="cur.posbar"/>
 
-	<layer id="player.resizer.mid" x="-70" y="0" w="4" h="35" image="shade.resizer" relatx="1" move="0" resize="right" alpha="255" tooltip="Adjust Horizontal Size" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="player.resizer.mid" x="-4" y="0" w="4" h="35" image="shade.resizer" relatx="1" move="0" resize="right" alpha="0" tooltip="Adjust Horizontal Size" rectrgn="1" cursor="cur.posbar"/>
 	
+	<rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1"/>
 	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="shade.button.minimize.n" hoverimage="shade.button.minimize.h" downimage="shade.button.minimize.d" tooltip="Minimize" cursor="cur.normal"/>
+	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1"/>  
 	<button id="player.button.switch" action="SWITCH" param="NORMAL" x="-45" y="-1" relatx="1" image="shade.button.switch.n" hoverimage="shade.button.switch.h" downimage="shade.button.switch.d" tooltip="Toggle Windowshade Mode" cursor="cur.normal"/>
+	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1"/> 
 	<button id="player.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="shade.button.close.n" hoverimage="shade.button.close.h" downimage="shade.button.close.d" tooltip="Close" cursor="cur.close"/>
 
   <script file="scripts\play_pause.maki" param="player.button.play;player.button.pause"/>	
@@ -67,6 +95,11 @@
 	<button id="vismenu.menuentry3" x="7" y="9" h="0" w="0" action="WA5:Prefs" param="33" image="none"/>
 
 	<!--rect id="plssayer.vis" x="8" y="10" w="72" h="15" color="0,0,250" filled="0"/-->
+
+	<grid x="6" y="8" w="75" h="20" topleft="window.plvis.display.tl" top="window.plvis.display.tm" topright="window.plvis.display.tr" 
+	left="window.plvis.display.l" middle="window.plvis.display.m" right="window.plvis.display.r"
+	bottomleft="window.plvis.display.bl" bottom="window.plvis.display.bm" bottomright="window.plvis.display.br"/>
+
 	<layer x="6" y="8" w="75" h="20" image="window.plvis.display.bg"/>
 	<vis id="shade.vis" x="8" y="10" w="72" h="16" alpha="255" cursor="cur.normal" gammagroup="visualizers"
 	colorallbands="0,255,0"
@@ -76,7 +109,7 @@
 	colorosc3="0,255,0"
 	colorosc4="0,255,0"
 	colorosc5="0,255,0" fps="140"/>
-	<component x="8" y="10" w="71" h="16" relatw="0" relath="0" noshowcmdbar="1" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/>
+	<!--component x="8" y="10" w="71" h="16" relatw="0" relath="0" noshowcmdbar="1" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
   <rect id="hide.for.gordon" x="79" y="9" w="1" h="17" color="0,0,0" filled="1" ghost="1" fps="60" gammagroup="display"/>
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>

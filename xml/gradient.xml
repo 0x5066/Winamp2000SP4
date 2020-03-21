@@ -1,0 +1,25 @@
+﻿<groupdef id="skin.about.group" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
+
+	<gradient id="wasabi.titlebar.active1"
+		x="0" y="0" w="0" h="18" 
+		relatw="1"
+		points="0.0=128,128,128,255;1.0=128,128,128,255" gammagroup="Active Title Bar Color 1"/>
+
+	<gradient id="wasabi.titlebar.active2"
+		x="0" y="0" w="0" h="18" 
+		relatw="1"
+		points="0.0=128,128,128,0;1.0=128,128,128,255" gammagroup="Active Title Bar Color 2"/>
+	
+</groupdef>
+
+<container id="gra" name="Gradient test" default_visible="0">
+	<layout id="normal" minimum_w="388" minimum_h="349" h="349" w="388" maximum_w="388" maximum_h="349">
+		<Wasabi:Standardframe:NoStatus x="0" y="0" w="388" h="349" content="skin.about.group" />
+		<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+		<layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
+		<layer id="resize.disabler" x="395" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
+		<layer id="resize.disabler" x="0" y="35" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+		<layer id="resize.disabler" x="0" y="365" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
+	</layout>
+	
+</container>

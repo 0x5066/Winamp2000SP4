@@ -1,16 +1,18 @@
 ﻿<elements>
-	<bitmap id="main.about" file="images/background-main-about.png" w="380" h="321"/>
+	<bitmap id="main.about" file="images/background-main-about.png" w="380" h="75"/>
+	<bitmap id="main.about2" file="images/background-main-about2.png" w="380" h="246" gammagroup="3D Objects-Text"/>
 </elements>
 
 <groupdef id="skin.about.group" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
-	<layer id="main.about" image="main.about" w="380" h="321"  cursor="cur.normal"/>
+	<layer id="main.about" image="main.about" cursor="cur.normal"/>
+	<layer id="main.about2" image="main.about2" y="76" cursor="cur.normal"/>
 	
-	<text x="59" y="103" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Version 1.1" valign="top" align="left" color="0,0,0" bold="0"/>
+	<text x="59" y="103" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Version 1.2: Colorful Update" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	
-	<text x="59" y="119" w="265" h="21" font="sarpanch" fontsize="15" antialias="0" text="Copyright 2019 - 2019 Victhor Brocaz, Zsolt Vajda" valign="top" align="left" color="0,0,0" bold="0"/>
+	<text x="59" y="119" w="265" h="21" font="sarpanch" fontsize="15" antialias="0" text="Copyright 2019 - 2020 Victhor Brocaz, Zsolt Vajda" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	
-	<text x="59" y="132" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Gordon Freeman" valign="top" align="left" color="0,0,0" bold="0"/>
-	
+	<text x="59" y="132" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Gordon Freeman" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
+	<layer id="button.close.line" image="okbutton2.unpressed" x="278" y="287" w="75" h="23" cursor="cur.normal"/>
 	<button id="window.button.close" action="CLOSE" x="278" y="287" image="okbutton.unpressed" downimage="okbutton.pressed" activealpha="255" inactivealpha="255" tooltip="Close" cursor="cur.close"/>
 	
 </groupdef>
