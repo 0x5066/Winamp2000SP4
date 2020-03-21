@@ -1,22 +1,21 @@
-# v1.2 Upcoming
+# v1.2
 What's New?
 
 - New: Gammagroups that actually represent what Windows once had to offer with Windows Classic (with more or less accuracy, should still cover everything).
-- New: Split up the image parts to allow for better color editing (including one UI detail where one line is always at the RGB values ``64,64,64``).
-- New: Themes! Including those that were present in Windows 9x/2000/XP, including Classic theme coloring of the Aero theme in Windows 7.
-- New: Included are Color themes which are a nod to the now defunct flavors of Nullsoft Winamp 2000 SP4, the REVOCS Media Player and A.P.E. Media Player themes with improved coloring.
-- New: Title Bar beam gradient can be colored independently.
-- New: Recreation of the Sound Recorder from Win9x/WinXP.
-- New: The infamous Thinger from Winamp 3, just slightly tweaked for a more Windows-like experience (even the included icons are swapped out during skin load, which no one seems to have done before...).
+- New: Split up the image parts to allow for better color editing (including one UI detail where one line is always at ```64,64,64```).
+- New: Themes! Including those that were present in Windows 9x/2000/XP, including Classic theme coloring of the Aero theme in Windows 7 and from popular Winamp Skins as well! (Not a whole bunch though)
+- New: Title Bar Beam gradient can be colored independently and a lot more as well
+- New: Recreation of the Sound Recorder from Win9x/WinXP
+- New: The infamous Thinger from Winamp 3, just slightly tweaked for a more Windows-like experience (even the included icons are swapped out during skin load, which no one seems to have done before...) Thanks to @midi-in for the suggestion!
 - New: Slightly reworked the winshade modes of the Main Window, Equalizer and the Playlist Editor. The grabber in all three of them was moved to the very right of the window, which allows for the Main Window's seeker to have more room to expand on, and overall for a more cleaner look for the windows in general.
 - New: Ported the visualizers from the other two now defunct flavors of Nullsoft Winamp 2000 SP4, they now carry the icons representative from where they came from.
-- New: Added Source Filmmaker render of Satsuki Kiryuuin bobbing her head to the music, as opposed to having 2 Ryuuko's mirroring each other (which looked weird anyway).
+- New: Added Source Filmmaker render of Satsuki Kiryuuin banging her head to the music, as opposed to having 2 Ryuuko's mirroring each other (which looked weird anyway).
 - New: The GoldSrc/Source microphone test VU Meter now found its way into the skin as well, but in stereo instead!
-- Misc: Tweaked the balance bar slightly.
+- Fixed: Changed the "Half-Life 2 HUD"'s window icon to be from HL2 instead of showing the WACUP icon.
+- Fixed: There's like a shit ton of under the hood fixes that even I forgot what they are and what they do, it makes making color themes easier, but the regular user won't notice. :)
+- Misc: Tweaked the balance bar slightly
 - Misc: Slightly adjusted the other visualizers for more snappier responsiveness. (Doesn't work on all machines and will definitely eat away one core's performance, though it's not terrible on overall performance)
-
-Known issues:
-With how the playlist editor is set up, the lower information bar will clip into the other buttons, making it harder to use them, and it looks weird too.
+- Misc: Probably broke Winamp 5.666 compatibility somewhere.
 
 # v1.1
 What's New?
