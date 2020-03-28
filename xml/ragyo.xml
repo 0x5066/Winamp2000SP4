@@ -9,11 +9,43 @@
 
 <groupdef id="ragyovis" x="-2" y="-2" w="474" h="233" relatw="1" relath="1">
 
+	<vis id="slow.boi" x="0" y="0" w="474" h="233" alpha="128" cursor="cur.normal" fps="30"
+	ColorBand1="255,210,228"
+    ColorBand2="243,104,232"
+    ColorBand3="146,61,255"
+    ColorBand4="59,81,255"
+    ColorBand5="122,209,255"
+    ColorBand6="134,255,191"
+    ColorBand7="173,255,133"
+    ColorBand8="244,255,135"
+    ColorBand9="255,204,135"
+    ColorBand10="255,125,103"
+    ColorBand11="255,101,76"
+    ColorBand12="255,206,204"
+    ColorBand13="241,252,255"
+    ColorBand14="241,252,255"
+    ColorBand15="242,235,255"
+    ColorBand16="242,235,255"
+	colorbandpeak="225,160,235"
+	colorosc5="255,255,255"
+	colorosc4="205,166,213"
+	colorosc3="106,1,242"
+	colorosc2="8,34,245"
+	colorosc1="4,166,251"
+	peakfalloff="0"
+	falloff="1"
+	bandwidth="wide"
+	peaks="0"
+	oscstyle="solid"
+	ghost="1"
+	mode="1"/>
+	
 	<layer id="ragyovis.bg" x="0" y="0" w="474" h="233" image="ragyovis.bg" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="ragyovis_hair_animatedlayerL.bg" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ragyovis_hair_animatedlayerR.bg" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="ragyovis.script" file="scripts\ragyovis.maki"/>
-	<vis id="shade.vis" x="0" y="0" w="474" h="233" alpha="200" cursor="cur.normal" fps="144"
+	<script id="ragyovis.script" file="scripts\vgui2vis.maki"/>
+	
+	<vis id="fast.boi" x="0" y="0" w="474" h="233" alpha="144" cursor="cur.normal" fps="256"
 	ColorBand1="214,168,186"
     ColorBand2="182,43,171"
     ColorBand3="106,1,242"
@@ -39,7 +71,7 @@
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="wide"
-	peaks="1"
+	peaks="0"
 	oscstyle="solid"
 	ghost="1"
 	mode="1"/>
