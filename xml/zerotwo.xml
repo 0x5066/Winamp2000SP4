@@ -10,7 +10,7 @@
 
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="02vis_animatedlayerR.bg" x="0" y="0" w="256" h="256" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="02vis_animatedlayerL.bg" x="256" y="0" w="256" h="256" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="ragyovis.script" file="scripts\zerotwovis.maki"/>
+	<script id="ragyovis.script" file="scripts\ryukovis.maki"/>
 
 	<vis id="shade.vis" x="0" y="128" w="512" h="128" alpha="256" cursor="cur.normal" gammagroup="visualizers" fps="512"
 	ColorBand16="177,72,71"
@@ -40,6 +40,7 @@
 	falloff="2"
 	bandwidth="thin"
 	peaks="0"/>
+	
 
 </groupdef>
 
