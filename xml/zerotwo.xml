@@ -35,7 +35,7 @@
 	colorosc3="215,136,137"
 	colorosc4="195,104,105"
 	colorosc5="177,72,71"
-	oscstyle="dots"
+	oscstyle="line"
 	peakfalloff="0"
 	falloff="3"
 	bandwidth="thin"
