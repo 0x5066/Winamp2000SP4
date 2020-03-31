@@ -66,7 +66,7 @@
 	colorosc2="8,34,245"
 	colorosc1="4,166,251"
 	peakfalloff="0"
-	falloff="2"
+	falloff="1"
 	bandwidth="wide"
 	peaks="0"
 	oscstyle="solid"
