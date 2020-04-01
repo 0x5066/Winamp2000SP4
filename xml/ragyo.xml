@@ -42,7 +42,7 @@
 	
 	<layer id="ragyovis.bg" x="0" y="0" w="474" h="233" image="ragyovis.bg" ghost="1"/>
 	
-	<vis id="slow.boi" x="0" y="0" w="474" h="233" alpha="75" cursor="cur.normal" fps="30"
+	<vis id="slow.boi" x="0" y="0" w="474" h="233" alpha="100" cursor="cur.normal" fps="30"
 	ColorBand1="255,227,238"
     ColorBand2="255,146,246"
     ColorBand3="168,101,255"
