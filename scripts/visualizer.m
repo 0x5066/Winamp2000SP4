@@ -17,8 +17,9 @@ Global PopUpMenu oscmenu;
 Global PopUpMenu pksmenu;
 Global PopUpMenu anamenu;
 Global PopUpMenu stylemenu;
+Global PopUpMenu fpsmenu;
 
-Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring;
+Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, a_fps;
 Global Boolean show_peaks;
 Global layer Trigger, HideForVic, TriggerBlocker, TriggerBlockerShade;
 
@@ -54,6 +55,7 @@ System.onScriptLoaded()
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
+	visualizer.setXmlParam("fps", integerToString(a_fps));
 
 	visualizershade.setXmlParam("peaks", integerToString(show_peaks));
 	visualizershade.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
@@ -82,10 +84,12 @@ refreshVisSettings ()
 	a_falloffspeed = getPrivateInt(getSkinName(), "Visualizer analyzer falloff", 3);
 	p_falloffspeed = getPrivateInt(getSkinName(), "Visualizer peaks falloff", 2);
 	a_coloring = getPrivateInt(getSkinName(), "Visualizer analyzer coloring", 0);
+	a_fps = getPrivateInt(getSkinName(), "Visualizer FPS", 4);
 
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
+	visualizer.setXmlParam("fps", integerToString(a_falloffspeed));
 
 	visualizershade.setXmlParam("peaks", integerToString(show_peaks));
 	visualizershade.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
@@ -119,7 +123,28 @@ refreshVisSettings ()
 		visualizershade.setXmlParam("coloring", "Line");
 		visualizerpl.setXmlParam("coloring", "Line");
 	}
-
+	
+	if (a_fps == 0)
+	{
+		visualizer.setXmlParam("fps", "30");
+	}
+	else if (a_fps == 1)
+	{
+		visualizer.setXmlParam("fps", "30");
+	}
+	else if (a_fps == 2)
+	{
+		visualizer.setXmlParam("fps", "60");
+	}
+	else if (a_fps == 3)
+	{
+		visualizer.setXmlParam("fps", "75");
+	}
+	else if (a_fps == 4)
+	{
+		visualizer.setXmlParam("fps", "512");
+	}
+	
 	setVis (currentMode);
 }
 
@@ -146,6 +171,7 @@ Trigger.onRightButtonUp (int x, int y)
 	pksmenu = new PopUpMenu;
 	anamenu = new PopUpMenu;
 	stylemenu = new PopUpMenu;
+	fpsmenu = new PopUpMenu;
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
@@ -178,6 +204,12 @@ Trigger.onRightButtonUp (int x, int y)
 	stylemenu.addCommand("Line", 403, a_coloring == 3, 0);
 	visMenu.addSubMenu(stylemenu, "Analyzer Coloring");
 	visMenu.addSeparator();
+	visMenu.addSubMenu(fpsmenu, "Frames Per Second");
+	fpsmenu.addCommand("Lame (30 FPS)", 407, a_fps == 0, 0);
+	fpsmenu.addCommand("Fast (60 FPS)", 409, a_fps == 2, 0);
+	fpsmenu.addCommand("Faster (75 FPS)", 410, a_fps == 3, 0);
+	fpsmenu.addCommand("Warp 6 (512 FPS)", 411, a_fps == 4, 0);
+	visMenu.addSeparator();
 	visMenu.addcommand(translate("Start/Stop plug-in")+"\tCtrl+Shift+K", 404, 0,0);
 	visMenu.addcommand(translate("Configure plug-in...")+"\tAlt+K", 405, 0,0);
 	visMenu.addcommand(translate("Select plug-in...")+"\tCtrl+K", 406, 0,0);
@@ -190,6 +222,7 @@ Trigger.onRightButtonUp (int x, int y)
 	delete pksmenu;
 	delete anamenu;
 	delete stylemenu;
+	delete fpsmenu;
 
 	complete;	
 }
@@ -273,7 +306,32 @@ ProcessMenuResult (int a)
   {
     OAIDUBtnUE3.Leftclick ();
   }
-
+  
+  	else if (a >= 407 && a <= 411)
+	{
+		a_fps = a - 407;
+		if (a_fps == 0)
+		{
+			visualizer.setXmlParam("fps", "30");
+		}
+		else if (a_fps == 1)
+		{
+			visualizer.setXmlParam("fps", "30");
+		}
+		else if (a_fps == 2)
+		{
+			visualizer.setXmlParam("fps", "60");
+		}
+		else if (a_fps == 3)
+		{
+			visualizer.setXmlParam("fps", "75");
+		}
+		else if (a_fps == 4)
+		{
+			visualizer.setXmlParam("fps", "512");
+		}
+		setPrivateInt(getSkinName(), "Visualizer FPS", a_fps);
+	}
 }
 
 
