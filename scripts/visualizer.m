@@ -497,6 +497,16 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorosc4", "195,104,105");
 			visualizer.setXmlParam("colorosc5", "177,72,71");
 		}
+		else if (v_color == 14)
+		{
+			visualizer.setXmlParam("colorallbands", "0,255,0");
+			visualizer.setXmlParam("colorbandpeak", "0,255,0");
+			visualizer.setXmlParam("colorosc1", "0,255,0");
+			visualizer.setXmlParam("colorosc2", "0,255,0");
+			visualizer.setXmlParam("colorosc3", "0,255,0");
+			visualizer.setXmlParam("colorosc4", "0,255,00");
+			visualizer.setXmlParam("colorosc5", "0,255,0");
+		}
 	setVis (currentMode);
 }
 
@@ -528,6 +538,23 @@ Trigger.onRightButtonUp (int x, int y)
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
+	
+	visMenu.addSubMenu(colmenu, "Visualizer Color Schemes");
+	colmenu.addCommand("Default", 500, v_color == 0, 0);
+	colmenu.addCommand("Bars and Scope", 502, v_color == 2, 0);
+	colmenu.addCommand("Ocean Mist and Scope", 503, v_color == 3, 0);
+	colmenu.addCommand("Fire Storm and Scope", 504, v_color == 4, 0);
+	colmenu.addCommand("Winamp Modern", 505, v_color == 5, 0);
+	colmenu.addCommand("Bento", 506, v_color == 6, 0);
+	colmenu.addCommand("Big Bento Modern", 507, v_color == 7, 0);
+	colmenu.addCommand("REVOCS", 508, v_color == 8, 0);
+	colmenu.addCommand("Ryuko", 510, v_color == 10, 0);
+	colmenu.addCommand("Satsuki", 511, v_color == 11, 0);
+	colmenu.addCommand("Ragyo", 512, v_color == 12, 0);
+	colmenu.addCommand("A.P.E", 509, v_color == 9, 0);
+	colmenu.addCommand("Zero Two", 513, v_color == 13, 0);
+	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
+	
 	specmenu.addCommand("Thick Bands", 1, currentMode == 1, 0);
 	specmenu.addCommand("Thin Bands", 2, currentMode == 2, 0);
 	visMenu.addSubMenu(specmenu, "Spectrum Analyzer");
@@ -539,21 +566,6 @@ Trigger.onRightButtonUp (int x, int y)
 
 	visMenu.addSeparator();
 	visMenu.addCommand("Options:", 102, 0, 1);
-	
-	visMenu.addSubMenu(colmenu, "Visualizer themes");
-	colmenu.addCommand("Default", 500, v_color == 0, 0);
-	colmenu.addCommand("Bars and Scope", 502, v_color == 2, 0);
-	colmenu.addCommand("Ocean Mist and Scope", 503, v_color == 3, 0);
-	colmenu.addCommand("Fire Storm and Scope", 504, v_color == 4, 0);
-	colmenu.addCommand("Winamp Modern", 505, v_color == 5, 0);
-	colmenu.addCommand("Bento", 506, v_color == 6, 0);
-	colmenu.addCommand("Big Bento Modern", 507, v_color == 7, 0);
-	colmenu.addCommand("REVOCS", 508, v_color == 8, 0);
-	colmenu.addCommand("Satsuki", 510, v_color == 10, 0);
-	colmenu.addCommand("Ryuko", 511, v_color == 11, 0);
-	colmenu.addCommand("Ragyo", 512, v_color == 12, 0);
-	colmenu.addCommand("A.P.E", 509, v_color == 9, 0);
-	colmenu.addCommand("Zero Two", 513, v_color == 13, 0);
 
 	visMenu.addCommand("Show Peaks", 101, show_peaks == 1, 0);
 	pksmenu.addCommand("Slower", 200, p_falloffspeed == 0, 0);
@@ -561,24 +573,31 @@ Trigger.onRightButtonUp (int x, int y)
 	pksmenu.addCommand("Moderate", 202, p_falloffspeed == 2, 0);
 	pksmenu.addCommand("Fast", 203, p_falloffspeed == 3, 0);
 	pksmenu.addCommand("Faster", 204, p_falloffspeed == 4, 0);
+	
 	visMenu.addSubMenu(pksmenu, "Peak Falloff Speed");
 	anamenu.addCommand("Slower", 300, a_falloffspeed == 0, 0);
 	anamenu.addCommand("Slow", 301, a_falloffspeed == 1, 0);
 	anamenu.addCommand("Moderate", 302, a_falloffspeed == 2, 0);
 	anamenu.addCommand("Fast", 303, a_falloffspeed == 3, 0);
 	anamenu.addCommand("Faster", 304, a_falloffspeed == 4, 0);
+	
 	visMenu.addSubMenu(anamenu, "Analyzer Falloff Speed");
 	stylemenu.addCommand("Normal", 400, a_coloring == 0, 0);
 	stylemenu.addCommand("Fire", 402, a_coloring == 2, 0);
 	stylemenu.addCommand("Line", 403, a_coloring == 3, 0);
+	
 	visMenu.addSubMenu(stylemenu, "Analyzer Coloring");
+	
 	visMenu.addSeparator();
+	
 	visMenu.addSubMenu(fpsmenu, "Frames Per Second");
 	fpsmenu.addCommand("Lame (30 FPS)", 407, v_fps == 0, 0);
 	fpsmenu.addCommand("Fast (60 FPS)", 409, v_fps == 2, 0);
 	fpsmenu.addCommand("Faster (75 FPS)", 410, v_fps == 3, 0);
 	fpsmenu.addCommand("Warp 6 (512 FPS)", 411, v_fps == 4, 0);
+	
 	visMenu.addSeparator();
+	
 	visMenu.addcommand(translate("Start/Stop plug-in")+"\tCtrl+Shift+K", 404, 0,0);
 	visMenu.addcommand(translate("Configure plug-in...")+"\tAlt+K", 405, 0,0);
 	visMenu.addcommand(translate("Select plug-in...")+"\tCtrl+K", 406, 0,0);
@@ -702,7 +721,7 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS", v_fps);
 	}
-	else if (a >= 500 && a <= 513)
+	else if (a >= 500 && a <= 514)
 	{
 		v_color = a - 500;
 		if (v_color == 0)
@@ -1009,6 +1028,16 @@ ProcessMenuResult (int a)
 			visualizer.setXmlParam("colorosc3", "215,136,137");
 			visualizer.setXmlParam("colorosc4", "195,104,105");
 			visualizer.setXmlParam("colorosc5", "177,72,71");
+		}
+		else if (v_color == 14)
+		{
+			visualizer.setXmlParam("colorallbands", "0,255,0");
+			visualizer.setXmlParam("colorbandpeak", "0,255,0");
+			visualizer.setXmlParam("colorosc1", "0,255,0");
+			visualizer.setXmlParam("colorosc2", "0,255,0");
+			visualizer.setXmlParam("colorosc3", "0,255,0");
+			visualizer.setXmlParam("colorosc4", "0,255,00");
+			visualizer.setXmlParam("colorosc5", "0,255,0");
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes", v_color);
 	}
