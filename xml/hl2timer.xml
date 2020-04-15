@@ -88,18 +88,18 @@
 	<layer id="hl2.crosshair.bg" x="27" y="20" w="21" h="17" image="hl2.crosshair" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="vguivis_animatedlayerL" x="0" y="0" w="20" h="56" framewidth="20" frameheight="56" start="0" end="50" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="vguivis_animatedlayerR" x="54" y="0" w="20" h="56" framewidth="76" frameheight="56" start="0" end="50" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="ragyovis.script" file="scripts\vguivis.maki"/>
+	<script id="ragyovis.script" file="scripts\vgui2vis.maki"/>
 
 </groupdef>
 
 <groupdef id="songstuff1" x="0" y="0" w="743" h="255" relatw="1" relath="1">
 
-	<group id="bg"			x="0" y="0" w="735" h="227"/>
-	<group id="timer" 		x="0" y="160" h="67" w="221"/>
+	<group id="bg"				x="0" y="0" w="735" h="227"/>
+	<group id="timer" 			x="0" y="160" h="67" w="221"/>
 	<group id="songkbps" 		x="262" y="160" h="67" w="191"/>
 	<group id="songkhz" 		x="494" y="160" h="67" w="241"/>
 	<group id="songtitle"		x="0" y="0" h="67" w="735"/>
-	<group id="vguivis"		x="330" y="85" h="67" w="743"/>
+	<group id="vguivis"			x="330" y="85" h="67" w="743"/>
 	
 <!-- 50 frames -->
 

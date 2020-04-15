@@ -23,7 +23,7 @@
 
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="vguivis_animatedlayerL.bg" x="0" y="0" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="vguivis_animatedlayerR.bg" x="0" y="23" w="157" h="21" framewidth="157" frameheight="21" start="0" end="19" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="ragyovis.script" file="scripts\vgui2vis.maki"/>
+	<script id="ragyovis.script" file="scripts\vguivis.maki"/>
 	
 </groupdef>
 
