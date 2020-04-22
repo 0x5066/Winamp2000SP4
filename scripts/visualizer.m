@@ -192,6 +192,10 @@ refreshVisSettings ()
 	{
 		visualizer.setXmlParam("fps", "512");
 	}
+	else if (v_fps == 5)
+	{
+		visualizer.setXmlParam("fps", "120");
+	}
 	if (v_color == 0)
 		{
 			visualizer.setXmlParam("ColorBand1", "22,131,7");
@@ -646,6 +650,7 @@ Trigger.onRightButtonUp (int x, int y)
 	fpsmenu.addCommand("Lame (30 FPS)", 407, v_fps == 0, 0);
 	fpsmenu.addCommand("Fast (60 FPS)", 409, v_fps == 2, 0);
 	fpsmenu.addCommand("Faster (75 FPS)", 410, v_fps == 3, 0);
+	fpsmenu.addCommand("Impulse Speed (120 FPS)", 412, v_fps == 5, 0);
 	fpsmenu.addCommand("Warp 6 (512 FPS)", 411, v_fps == 4, 0);
 	
 	visMenu.addSeparator();
@@ -748,7 +753,7 @@ ProcessMenuResult (int a)
     OAIDUBtnUE3.Leftclick ();
   }
   
-  	else if (a >= 407 && a <= 411)
+  	else if (a >= 407 && a <= 412)
 	{
 		v_fps = a - 407;
 		if (v_fps == 0)
@@ -770,6 +775,10 @@ ProcessMenuResult (int a)
 		else if (v_fps == 4)
 		{
 			visualizer.setXmlParam("fps", "512");
+		}
+		else if (v_fps == 5)
+		{
+			visualizer.setXmlParam("fps", "120");
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS", v_fps);
 	}
