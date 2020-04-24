@@ -175,26 +175,32 @@ refreshVisSettings ()
 	if (v_fps == 0)
 	{
 		visualizer.setXmlParam("fps", "30");
+		visualizer.setXmlParam("peaks", "1");
 	}
 	else if (v_fps == 1)
 	{
 		visualizer.setXmlParam("fps", "30");
+		visualizer.setXmlParam("peaks", "1");
 	}
 	else if (v_fps == 2)
 	{
 		visualizer.setXmlParam("fps", "60");
+		visualizer.setXmlParam("peaks", "1");
 	}
 	else if (v_fps == 3)
 	{
 		visualizer.setXmlParam("fps", "75");
+		visualizer.setXmlParam("peaks", "1");
 	}
 	else if (v_fps == 4)
 	{
 		visualizer.setXmlParam("fps", "512");
+		visualizer.setXmlParam("peaks", "0");
 	}
 	else if (v_fps == 5)
 	{
 		visualizer.setXmlParam("fps", "120");
+		visualizer.setXmlParam("peaks", "1");
 	}
 	if (v_color == 0)
 		{
@@ -753,32 +759,38 @@ ProcessMenuResult (int a)
     OAIDUBtnUE3.Leftclick ();
   }
   
-  	else if (a >= 407 && a <= 412)
+  	else if (a >= 407 && a <= 413)
 	{
 		v_fps = a - 407;
 		if (v_fps == 0)
 		{
 			visualizer.setXmlParam("fps", "30");
+			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 1)
 		{
 			visualizer.setXmlParam("fps", "30");
+			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 2)
 		{
 			visualizer.setXmlParam("fps", "60");
+			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 3)
 		{
 			visualizer.setXmlParam("fps", "75");
+			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 4)
 		{
 			visualizer.setXmlParam("fps", "512");
+			visualizer.setXmlParam("peaks", "0");
 		}
 		else if (v_fps == 5)
 		{
 			visualizer.setXmlParam("fps", "120");
+			visualizer.setXmlParam("peaks", "1");
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS", v_fps);
 	}
