@@ -854,3 +854,29 @@
   <gammagroup id="Half-Life 2 Crosshair" value="2730,1509,-2867" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
+
+<gammaset id="Source VGUI">
+  <gammagroup id="3D Objects" value="-290,-290,-290" gray="0" boost="0" />
+  <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Window" value="-1354,-1354,-1354" gray="0" boost="0" />
+  <gammagroup id="Window-text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 1" value="-290,-290,-290" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 2" value="-290,-290,-290" gray="0" boost="0" />
+  <gammagroup id="Selected Items-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="Selected Items" value="4096,935,-4096" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 1" value="-290,-290,-290" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 2" value="-290,-290,-290" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar-Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar-Text" value="1902,1902,1902" gray="0" boost="0" />
+  <gammagroup id="Visualizers" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Visualizers2" value="-4096,4096,-4096" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="-2112,-1856,-2336" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Digits" value="4064,2944,-4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Labels" value="4064,2944,-4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+</gammaset>
