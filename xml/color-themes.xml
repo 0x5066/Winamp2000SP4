@@ -846,7 +846,7 @@
   <gammagroup id="Inactive Title Bar-Text" value="1592,1293,1228" gray="0" boost="0" />
   <gammagroup id="Visualizers" value="2730,1509,-2867" gray="0" boost="0" />
   <gammagroup id="Visualizers2" value="2730,1509,-2867" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer Background" value="2730,1509,-2867" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="VGUI Visualizer" value="2730,1509,-2867" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Digits" value="2730,1509,-2867" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Labels" value="2730,1509,-2867" gray="0" boost="0" />
