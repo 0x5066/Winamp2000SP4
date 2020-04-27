@@ -3,8 +3,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-3773,-2934,-677" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1257,2418,3644" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -29,8 +27,7 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="3870,3289,3450" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
+
   <gammagroup id="Active Title Bar Color 1" value="-774,-4096,-3773" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1419,-4096,-3321" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -55,8 +52,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,3280" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="3257,2096,-4096" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="4096,967,-354" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -81,8 +76,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="0,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1536,-384,-2048" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -107,8 +100,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="128,1952,1344" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -133,8 +124,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1280,0,-256" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="96,-1696,96" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -159,8 +148,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1216,-1600,1568" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1728,480,2400" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -185,8 +172,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="0,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="2048,896,-2304" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -211,8 +196,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="2304,3072,2816" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,-4096,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-3328,1664,2048" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -237,8 +220,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="2816,2560,2304" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1792,-2048,-1024" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1024,128,1792" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="2816,2560,2304" gray="0" boost="0" />
@@ -263,8 +244,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="2784,1184,-2592" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="3072,2432,256" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -289,8 +268,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1568,-864,-96" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="0,1664,2560" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -315,8 +292,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="0,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-4096,-3584,1280" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -341,8 +316,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="992,-1024,-512" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="2816,2432,2560" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -367,8 +340,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1376,0,736" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="256,1792,2816" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -393,8 +364,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1248,736,-896" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="768,2304,3328" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -419,8 +388,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="0,-4096,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-2304,384,1536" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -445,8 +412,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-4096,2432,2816" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -471,8 +436,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="0,0,-4096" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="2304,1536,-1792" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -497,8 +460,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,-1408,3168" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-2144,672,4096" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -523,8 +484,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-3773,-2934,-677" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-3773,-2934,-677" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -549,8 +508,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,-4096,32" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-3579,161,2612" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -575,8 +532,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,-4096,32" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-4096,-4096,32" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -601,8 +556,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="352,1056,-736" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="2240,2624,1088" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -627,8 +580,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="2048,2048,2048" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="2304,2304,2304" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -653,8 +604,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="838,1709,2644" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1870,2644,3450" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -679,8 +628,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-3192,-2031,-64" gray="0" boost="0" />
   <gammagroup id="Window-text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-3386,-2805,-1580" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1677,1870,2386" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="2805,3257,4096" gray="0" boost="0" />
@@ -705,8 +652,6 @@
   <gammagroup id="3D Objects-Text" value="2676,2676,2676" gray="0" boost="0" />
   <gammagroup id="Window" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="645,1548,1870" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1451,-1322,-967" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="193,290,548" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="2354,2354,2354" gray="0" boost="0" />
@@ -731,8 +676,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="4096,4096,2225" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="2709,1580,-709" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-96,-774,-2096" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,2225" gray="0" boost="0" />
@@ -757,8 +700,6 @@
   <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="483,516,-1161" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-709,-709,-1773" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -783,8 +724,6 @@
   <gammagroup id="3D Objects-Text" value="1644,2289,2709" gray="0" boost="0" />
   <gammagroup id="Window" value="-2805,-2741,-2547" gray="0" boost="0" />
   <gammagroup id="Window-text" value="645,1548,1870" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-2064,-1999,-1741" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-2064,-1999,-1741" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="1644,2289,2709" gray="0" boost="0" />
@@ -809,8 +748,6 @@
   <gammagroup id="3D Objects-Text" value="2870,3063,2709" gray="0" boost="0" />
   <gammagroup id="Window" value="-2096,-1838,-2322" gray="0" boost="0" />
   <gammagroup id="Window-text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-1644,-1257,-1902" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-1644,-1257,-1902" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -835,7 +772,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -860,8 +796,6 @@
   <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-1354,-1354,-1354" gray="0" boost="0" />
   <gammagroup id="Window-text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="none" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Text" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 1" value="-290,-290,-290" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="-290,-290,-290" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -879,4 +813,28 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+</gammaset>
+
+<gammaset id="Crimson">
+  <gammagroup id="3D Objects" value="-940,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="3D Objects-Text" value="-4096,-3387,-4096" gray="0" boost="0" />
+  <gammagroup id="Window" value="-3529,-2891,-3706" gray="0" boost="0" />
+  <gammagroup id="Window-text" value="-3813,4096,-3316" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 1" value="-3955,-2997,-3919" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 2" value="-1189,-479,-3955" gray="0" boost="0" />
+  <gammagroup id="Selected Items-Text" value="-905,4096,-3884" gray="0" boost="0" />
+  <gammagroup id="Selected Items" value="-1082,-3990,-4026" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 1" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 2" value="-3635,-3104,-4096" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar-Text" value="4096,4096,-2678" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar-Text" value="1578,2251,-3104" gray="0" boost="0" />
+  <gammagroup id="Visualizers" value="-231,904,-2713" gray="0" boost="0" />
+  <gammagroup id="Visualizers2" value="-4096,4096,-4096" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer" value="-3281,1081,-3458" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Digits" value="1684,4096,-4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Labels" value="-4096,-727,-4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 HUD Elements" value="2464,-3245,-2891" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Crosshair" value="-3352,3705,-3494" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Subtitle Text" value="1152,3280,-4096" gray="0" boost="0" />
 </gammaset>

@@ -67,7 +67,7 @@
 	<bitmap id="sngtic.mid" file="images/songticker.png" x="24" y="0" w="6" h="22" gammagroup="3D Objects"/>
 	<bitmap id="sngtic.right" file="images/songticker.png" x="31" y="0" w="4" h="22" gammagroup="3D Objects"/>
 
-	<bitmap id="sngtic.icn" file="images/songticker_icon.png" x="0" y="0" w="14" h="16" gammagroup="none"/>
+	<bitmap id="sngtic.icn" file="images/songticker_icon.png" x="0" y="0" w="14" h="16"/>
 
 	<bitmap id="sngticbg.left" file="images/songticker_bg.png" x="0" y="0" w="21" h="18" gammagroup="Window"/>
 	<bitmap id="sngticbg.mid" file="images/songticker_bg.png" x="22" y="0" w="6" h="18" gammagroup="Window"/>
