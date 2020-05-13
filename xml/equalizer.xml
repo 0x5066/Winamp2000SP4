@@ -109,29 +109,29 @@
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 
-  <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
+  <layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
 
 	<gradient id="wasabi.titlebar.active1"
-		x="24" y="4" w="-81" h="18" relatw="1"
+		x="24" y="4" w="-81" h="27" relatw="1"
 		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1"/>
 
 	<gradient id="wasabi.titlebar.active2"
-		x="24" y="4" w="-81" h="18" relatw="1"
+		x="24" y="4" w="-81" h="27" relatw="1"
 		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2"/>
 
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
+  <layer x="-57" y="4" w="53" h="27" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
 
-  <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
+  <layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
 
 	<gradient id="wasabi.titlebar.inactive1"
-		x="24" y="4" w="-81" h="18" relatw="1"
+		x="24" y="4" w="-81" h="27" relatw="1"
 		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 1"/>
 
 	<gradient id="wasabi.titlebar.inactive2"
-		x="24" y="4" w="-81" h="18" relatw="1"
+		x="24" y="4" w="-81" h="27" relatw="1"
 		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2"/>
 
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
+  <layer x="-57" y="4" w="53" h="27" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
   
   	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
 	
