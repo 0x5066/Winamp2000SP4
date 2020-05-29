@@ -5,11 +5,11 @@
 
 </elements>
 
-<groupdef id="ryukovis" x="-2" y="-2" w="474" h="233" relatw="1" relath="1">
+<groupdef id="ryukovis" x="-2" y="-2">
 
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="satsukivis_animatedlayer.bg" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ryukovis_animatedlayer.bg" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
-	<vis id="topleft.vis" x="237" y="116" w="237" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144" flipv="1"
+	<vis id="bottomright.vis" x="237" y="116" w="237" h="117" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144" flipv="1"
 	ColorBand1="255,4,55"
     ColorBand2="242,5,55"
     ColorBand3="229,6,55"
@@ -36,7 +36,7 @@
 	falloff="4"
 	bandwidth="thin"
 	peaks="1"/>
-		<vis id="topright.vis" x="-4" y="116" w="241" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144" fliph="1" flipv="1"
+		<vis id="bottomleft.vis" x="-4" y="116" w="241" h="117" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144" fliph="1" flipv="1"
 	ColorBand1="130,185,217"
     ColorBand2="137,189,218"
     ColorBand3="144,192,220"
@@ -64,7 +64,7 @@
 	bandwidth="thin"
 	peaks="1"/>
 	
-	<vis id="bottomleft.vis" x="237" y="0" w="237" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144"
+	<vis id="topright.vis" x="237" y="0" w="237" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144"
 	ColorBand1="255,4,55"
     ColorBand2="242,5,55"
     ColorBand3="229,6,55"
@@ -91,7 +91,7 @@
 	falloff="4"
 	bandwidth="thin"
 	peaks="1"/>
-		<vis id="bottomright.vis" x="-4" y="0" w="241" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144" fliph="1"
+		<vis id="topleft.vis" x="-4" y="0" w="241" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="144" fliph="1"
 	ColorBand1="130,185,217"
     ColorBand2="137,189,218"
     ColorBand3="144,192,220"
