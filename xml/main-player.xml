@@ -22,13 +22,13 @@
 
   <Animatedlayer id="main.volume.anim" x="223" y="116" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
 	<!--slider id="player.slider.volume.shadow" action="VOLUME" x="201" y="110" w="130" h="26" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
-	<slider id="player.slider.volume" action="VOLUME" x="189" y="110" w="142" h="26" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
+	<slider id="player.slider.volume" action="VOLUME" x="200" y="112" w="121" h="21" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
 	<rect id="bal.bg2" color="64,64,64" x="346" y="120" w="74" h="3" ghost="1"/>
 	<grid id="balance.bg" x="345" y="119" w="75" h="4" left="posbar.left" middle="posbar.center" right="posbar.right" />
   <Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
 	<!--slider id="eq.slider.pan.shadow" action="PAN" x="341" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
-	<slider id="eq.slider.pan" action="PAN" x="334" y="110" w="96" h="26" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
+	<slider id="eq.slider.pan" action="PAN" x="345" y="112" w="75" h="21" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 	
   <!--script file="scripts\color_themes_patch_fix.maki"/--> <!-- This script makes the switch between the safe layer and the multicolor-bar (only seen on default theme) -->
 
@@ -46,8 +46,8 @@
 	<grid id="posbar.bg" x="27" y="151" w="-49" h="4" relatw="1" left="posbar.left" middle="posbar.center" right="posbar.right" />
 	<slider id="player.slider.seek.shadow" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.shadow" hoverthumb="player.seeker.slider.shadow" downthumb="player.seeker.slider.shadow" rectrgn="1"/>
   <layer id="player.seek.cursor" x="26" y="139" w="-47" h="34" relatw="1" image="none" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
-	<slider id="player.slider.seek" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
-	<slider id="player.slider.seek.ghost" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal"/>
+	<slider id="player.slider.seek" action="SEEK" x="27" y="143" w="-49" h="21" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
+	<slider id="player.slider.seek.ghost" action="SEEK" x="27" y="143" w="-49" h="21" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal"/>
 
 	<rect id="prev" color="64,64,64" x="26" y="181" w="42" h="35" ghost="1"/>
 	<button id="button.previous" action="PREV" x="23" y="174" image="player.button.previous.n" hoverimage="player.button.previous.h" downimage="player.button.previous.d" alpha="255" cursor="cur.normal" tooltip="Previous Track"/>
