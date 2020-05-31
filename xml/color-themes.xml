@@ -838,3 +838,27 @@
   <gammagroup id="Half-Life 2 Crosshair" value="-3352,3705,-3494" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="1152,3280,-4096" gray="0" boost="0" />
 </gammaset>
+
+<gammaset id="CHIPSPEECH">
+  <gammagroup id="3D Objects" value="-3632,-2306,0" gray="0" boost="0" />
+  <gammagroup id="3D Objects-Text" value="-548,3300,4096" gray="0" boost="0" />
+  <gammagroup id="Window" value="-4096,-3334,-2206" gray="0" boost="0" />
+  <gammagroup id="Window-text" value="-382,3399,4096" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 1" value="-2869,-946,2404" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 2" value="-4096,-1709,0" gray="0" boost="0" />
+  <gammagroup id="Selected Items-Text" value="-4096,2371,4096" gray="0" boost="0" />
+  <gammagroup id="Selected Items" value="-4096,-2936,547" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 1" value="-4096,-3433,-1311" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 2" value="-4096,-4096,-2471" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar-Text" value="-4096,2238,4096" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar-Text" value="-4096,-2007,0" gray="0" boost="0" />
+  <gammagroup id="Visualizers" value="-4096,-4096,4096" gray="2" boost="0" />
+  <gammagroup id="Visualizers2" value="-4096,-2339,1840" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="-4096,-3301,-2007" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer" value="-4096,-2505,4096" gray="2" boost="0" />
+  <gammagroup id="Half-Life 2 Digits" value="-4096,-415,4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Labels" value="-4096,-2239,2537" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-3599,-1543" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Crosshair" value="-4096,-680,4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Subtitle Text" value="-4096,1276,4096" gray="0" boost="0" />
+</gammaset>

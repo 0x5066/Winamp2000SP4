@@ -9,64 +9,64 @@ Global Container containerMain;
 Global Group NormalGroupMain;
 Global Vis visualizertl, visualizertr, visualizerbl, visualizerbr;
 
-Global PopUpMenu visMenu;
+Global PopUpMenu newVisMenu;
 
-Global Int currentMode;
-Global layer Trigger;
+Global Int newCurrentMode;
+Global layer NewTrigger;
 
 System.onScriptLoaded()
 { 
   containerMain = System.getContainer("ryuko");
-	layoutMainNormal = containerMain.getLayout("normal");
+	layoutMainNormal = containerMain.getLayout("stupidassworkaround");
 	NormalGroupMain = layoutMainNormal.findObject("ryukovis");
-	Trigger = NormalGroupMain.findObject("ryuko.vis.trigger");
+	NewTrigger = NormalGroupMain.findObject("ryuko.vis.trigger");
 
-	visualizertl = NormalGroupMain.findObject("topleft.vis");
-	visualizertr = NormalGroupMain.findObject("topright.vis");
-	visualizerbl = NormalGroupMain.findObject("bottomleft.vis");
-	visualizerbr = NormalGroupMain.findObject("bottomright.vis");
+	visualizertl = NormalGroupMain.findObject("topleft");
+	visualizertr = NormalGroupMain.findObject("topright");
+	visualizerbl = NormalGroupMain.findObject("bottomleft");
+	visualizerbr = NormalGroupMain.findObject("bottomright");
 
 	refreshVisSettings ();
 }
 
 refreshVisSettings ()
 {
-	currentMode = getPrivateInt(getSkinName(), "Visualizer Mode", 1);
+	newCurrentMode = getPrivateInt(getSkinName(), "New Visualizer Mode", 1);
 	
-	setVis (currentMode);
+	setVis (newCurrentMode);
 }
 
-Trigger.onLeftButtonDown (int x, int y)
+NewTrigger.onLeftButtonDown (int x, int y)
 {
-	currentMode++;
+	newCurrentMode++;
 
-	if (currentMode == 3)
+	if (newCurrentMode == 3)
 	{
-		currentMode = 0;
+		newCurrentMode = 0;
 	}
 
-	setVis	(currentMode);
+	setVis	(newCurrentMode);
 	complete;
 }
 
-Trigger.onRightButtonUp (int x, int y)
+NewTrigger.onRightButtonUp (int x, int y)
 {
-	visMenu = new PopUpMenu;
+	newVisMenu = new PopUpMenu;
 
-	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
-	visMenu.addCommand("Oscilloscope", 101, currentMode == 1, 0);
-	visMenu.addCommand("Spectrum Analyzer", 102, currentMode == 2, 0);
+	newVisMenu.addCommand("No Visualization", 100, newCurrentMode == 0, 0);
+	newVisMenu.addCommand("Oscilloscope", 101, newCurrentMode == 1, 0);
+	newVisMenu.addCommand("Spectrum Analyzer", 102, newCurrentMode == 2, 0);
 
-	//ProcessMenuResult (visMenu.popAtMouse());
+	//ProcessMenuResult (newVisMenu.popAtMouse());
 
-	delete visMenu;
+	delete newVisMenu;
 
 	complete;	
 }
 
 setVis (int mode)
 {
-	setPrivateInt(getSkinName(), "Visualizer Mode", mode);
+	setPrivateInt(getSkinName(), "New Visualizer Mode", mode);
 	if (mode == 0)
 	{
 		visualizertl.setMode(0);
@@ -88,5 +88,5 @@ setVis (int mode)
 		visualizerbl.setMode(2);
 		visualizerbr.setMode(2);
 	}
-	currentMode = mode;
+	newCurrentMode = mode;
 }
