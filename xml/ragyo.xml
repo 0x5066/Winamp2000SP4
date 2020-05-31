@@ -9,7 +9,38 @@
 
 <groupdef id="ragyovis" x="-2" y="-2" w="474" h="233" relatw="1" relath="1">
 
-	<vis id="slower.boi" x="0" y="0" w="474" h="233" alpha="32" cursor="cur.normal" fps="25"
+	<vis id="slowerer.boi" x="0" y="0" w="474" h="233" alpha="64" cursor="cur.normal" fps="15"
+	ColorBand1="255,248,251"
+    ColorBand2="255,205,251"
+    ColorBand3="196,149,255"
+    ColorBand4="134,148,255"
+    ColorBand5="225,245,255"
+    ColorBand6="233,255,243"
+    ColorBand7="240,255,233"
+    ColorBand8="253,255,234"
+    ColorBand9="255,246,233"
+    ColorBand10="255,215,208"
+    ColorBand11="255,197,187"
+    ColorBand12="255,247,246"
+    ColorBand13="253,255,255"
+    ColorBand14="253,255,255"
+    ColorBand15="253,251,255"
+    ColorBand16="253,251,255"
+	colorbandpeak="225,160,235"
+	colorosc5="255,255,255"
+	colorosc4="205,166,213"
+	colorosc3="106,1,242"
+	colorosc2="8,34,245"
+	colorosc1="4,166,251"
+	peakfalloff="0"
+	falloff="0"
+	bandwidth="wide"
+	peaks="0"
+	oscstyle="solid"
+	ghost="1"
+	mode="1"/>
+
+	<vis id="slower.boi" x="0" y="0" w="474" h="233" alpha="100" cursor="cur.normal" fps="25"
 	ColorBand1="255,248,251"
     ColorBand2="255,205,251"
     ColorBand3="196,149,255"
@@ -42,7 +73,7 @@
 	
 	<layer id="ragyovis.bg" x="0" y="0" w="474" h="233" image="ragyovis.bg" ghost="1"/>
 	
-	<vis id="slow.boi" x="0" y="0" w="474" h="233" alpha="100" cursor="cur.normal" fps="30"
+	<vis id="slow.boi" x="0" y="0" w="474" h="233" alpha="120" cursor="cur.normal" fps="30"
 	ColorBand1="255,227,238"
     ColorBand2="255,146,246"
     ColorBand3="168,101,255"
