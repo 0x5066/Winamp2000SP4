@@ -119,8 +119,9 @@
 	bandwidth="thin"
 	peaks="1"/>
 	<script id="ragyovis.script" file="scripts\ryukovis.maki"/>
+	<script file="scripts\ryukovishelper.maki"/>
 	
-	<layer id="player.vis.trigger" x="27" y="41" w="474" h="233" image="none" cursor="cur.normal"/>
+	<layer id="ryuko.vis.trigger" x="0" y="0" w="474" h="233" image="none" cursor="cur.normal"/>
 </groupdef>
 
 

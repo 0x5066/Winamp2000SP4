@@ -2,7 +2,7 @@
 
 Function refreshVisSettings();
 Function setVis (int mode);
-Function ProcessMenuResult (int a);
+//Function ProcessMenuResult (int a);
 
 Global Layout layoutMainNormal;
 Global Container containerMain;
@@ -19,7 +19,7 @@ System.onScriptLoaded()
   containerMain = System.getContainer("ryuko");
 	layoutMainNormal = containerMain.getLayout("normal");
 	NormalGroupMain = layoutMainNormal.findObject("ryukovis");
-	Trigger = NormalGroupMain.findObject("player.vis.trigger");
+	Trigger = NormalGroupMain.findObject("ryuko.vis.trigger");
 
 	visualizertl = NormalGroupMain.findObject("topleft.vis");
 	visualizertr = NormalGroupMain.findObject("topright.vis");
@@ -40,7 +40,7 @@ Trigger.onLeftButtonDown (int x, int y)
 {
 	currentMode++;
 
-	if (currentMode == 6)
+	if (currentMode == 3)
 	{
 		currentMode = 0;
 	}
@@ -56,9 +56,8 @@ Trigger.onRightButtonUp (int x, int y)
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
 	visMenu.addCommand("Oscilloscope", 101, currentMode == 1, 0);
 	visMenu.addCommand("Spectrum Analyzer", 102, currentMode == 2, 0);
-	
 
-	ProcessMenuResult (visMenu.popAtMouse());
+	//ProcessMenuResult (visMenu.popAtMouse());
 
 	delete visMenu;
 
