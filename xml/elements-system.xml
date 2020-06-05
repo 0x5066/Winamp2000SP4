@@ -329,6 +329,6 @@
   <!--bitmap id="pledit.dropind" file="images/window/windows-drop_indicator.png" gammagroup="display" /-->
 
 <!-- WA5 Elements -->
-	<bitmap id="wasabi.scrollbar.vertical.grip" file="images/window/windows-elements.png" x="180" y="154" h="18" w="8" gammagroup="goldbuttons"/>
-	<bitmap id="wasabi.scrollbar.vertical.grip.pressed" file="images/window/windows-elements.png" x="180" y="154" h="18" w="8" gammagroup="goldbuttons"/>
-	<bitmap id="wasabi.scrollbar.horizontal.grip" file="images/window/windows-elements.png" x="180" y="173" h="8" w="18" gammagroup="goldbuttons"/>
+	<bitmap id="wasabi.scrollbar.vertical.grip" file="" x="180" y="154" h="18" w="8" gammagroup="goldbuttons"/>
+	<bitmap id="wasabi.scrollbar.vertical.grip.pressed" file="" x="180" y="154" h="18" w="8" gammagroup="goldbuttons"/>
+	<bitmap id="wasabi.scrollbar.horizontal.grip" file="" x="180" y="173" h="8" w="18" gammagroup="goldbuttons"/>
