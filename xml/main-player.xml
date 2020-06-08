@@ -187,7 +187,7 @@
 	<!--rect id="player.background.display.vis.scale" x="0" y="0" filled="1" color="53,53,0" alpha="255"/-->
 	<layer id="player.normal.display.bg" x="5" y="1" image="player.normal.display.bg" cursor="cur.normal"/>
 
-	<layer id="clutterbarbg" x="8" y="2" w="11" h="71" image="clutterbar" cursor="cur.normal"/>
+	<layer id="clutterbarbg" x="8" y="2" w="11" h="71" image="clutterbar" cursor="cur.normal" regionop="1"/>
 	<layer id="oaidu.button.o.n" x="7" y="3" image="OAIDU.buttons.O.n" cursor="cur.normal"/>
 	<layer id="oaidu.button.o.h" x="7" y="3" image="OAIDU.buttons.O.h"/>
 	<layer id="oaidu.button.o.d" x="7" y="3" image="OAIDU.buttons.O.d"/>
