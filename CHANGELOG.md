@@ -1,4 +1,20 @@
-# v1.2
+# v1.3: Colorful Update Part 2
+What's New?
+
+- New: Some minor UI adjustments
+- New: Flipped the way the two Zero Two's were looking, now they stare at each other
+- New: Slightly improved Ragyo's shadowy Spectrum Analyzers (less dark, more bright)
+- New: FPS menu options and lots of separate color schemes for the Visualizer
+- New: "More Windows" color theme (thanks to @mirzi1 for the contribution!)
+- New: Optimized the top secret Headbanging algorithm for a slightly more realistic headbanging experience
+- New: Optimized the VU meter in the VU Meter window, the HL2 Hud window and the glowing light in Ragyo's hair to be faster/slower
+- New: "Crimson" color theme kindly contributed by my friend Apache
+- New: Clicking in the Satsuki and Ryuko Visualizer now changes the visualizer mode of the 4 vis objects
+- Fixed: Improved Wasabi tooltips for 99% windows emulation accuracy
+- Fixed: Improved the Modern Skinned (and Classic Skinned) scrollbars to look more windows-like (moreso the Modern Skinned ones)
+
+
+# v1.2: Colorful Update
 What's New?
 
 - New: Gammagroups that actually represent what Windows once had to offer with Windows Classic (with more or less accuracy, should still cover everything).
