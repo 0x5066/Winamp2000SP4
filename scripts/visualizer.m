@@ -188,35 +188,29 @@ refreshVisSettings ()
 	}
 	
 	if (v_fps == 0)
-	{
-		visualizer.setXmlParam("fps", "30");
-		visualizer.setXmlParam("peaks", "1");
-	}
-	else if (v_fps == 1)
-	{
-		visualizer.setXmlParam("fps", "30");
-		visualizer.setXmlParam("peaks", "1");
-	}
-	else if (v_fps == 2)
-	{
-		visualizer.setXmlParam("fps", "60");
-		visualizer.setXmlParam("peaks", "1");
-	}
-	else if (v_fps == 3)
-	{
-		visualizer.setXmlParam("fps", "75");
-		visualizer.setXmlParam("peaks", "1");
-	}
-	else if (v_fps == 4)
-	{
-		visualizer.setXmlParam("fps", "512");
-		visualizer.setXmlParam("peaks", "0");
-	}
-	else if (v_fps == 5)
-	{
-		visualizer.setXmlParam("fps", "120");
-		visualizer.setXmlParam("peaks", "1");
-	}
+		{
+			visualizer.setXmlParam("fps", "30");
+		}
+		else if (v_fps == 1)
+		{
+			visualizer.setXmlParam("fps", "30");
+		}
+		else if (v_fps == 2)
+		{
+			visualizer.setXmlParam("fps", "60");
+		}
+		else if (v_fps == 3)
+		{
+			visualizer.setXmlParam("fps", "75");
+		}
+		else if (v_fps == 4)
+		{
+			visualizer.setXmlParam("fps", "512");
+		}
+		else if (v_fps == 5)
+		{
+			visualizer.setXmlParam("fps", "120");
+		}
 	if (v_color == 0)
 		{
 			visualizer.setXmlParam("ColorBand1", "22,131,7");
@@ -857,32 +851,26 @@ ProcessMenuResult (int a)
 		if (v_fps == 0)
 		{
 			visualizer.setXmlParam("fps", "30");
-			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 1)
 		{
 			visualizer.setXmlParam("fps", "30");
-			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 2)
 		{
 			visualizer.setXmlParam("fps", "60");
-			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 3)
 		{
 			visualizer.setXmlParam("fps", "75");
-			visualizer.setXmlParam("peaks", "1");
 		}
 		else if (v_fps == 4)
 		{
 			visualizer.setXmlParam("fps", "512");
-			visualizer.setXmlParam("peaks", "0");
 		}
 		else if (v_fps == 5)
 		{
 			visualizer.setXmlParam("fps", "120");
-			visualizer.setXmlParam("peaks", "1");
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS", v_fps);
 	}
