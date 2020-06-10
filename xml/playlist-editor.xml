@@ -13,7 +13,7 @@
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
-	<component id="pl.wdh" x="-2" y="0" w="2" relatw="1" h="-40" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
+	<component id="pl.wdh" x="-2" y="23" w="2" relatw="1" h="-63" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
 </groupdef>
 
 <groupdef id="pledit.shade.group.main" w="0" h="35" ghost="1" relatw="1">
@@ -133,7 +133,10 @@
 	<sendparams target="wasabi.frame.layout.grip" x="10" w="-78"/>
   <sendparams target="componentname" w="-81"/>
 
-	<sendparams target="wasabi.frame.layout.base.bg" h="0" alpha="255"/> <!-- PL window specific -->
+	<text text="If you're using the git version of this Skin, you'll see this menubar placeholder as it's not done yet, sorry!" font="tahoma" fontsize="15" color="0,0,0" antialias="0" x="4" y="24"/>
+	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder"/>
+
+	<sendparams target="wasabi.frame.layout.base.bg" y="23" h="-23" alpha="255"/> <!-- PL window specific -->
 	<sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
 
 	<rect id="add" color="64,64,64" x="13" y="-40" w="42" h="28" relaty="1" ghost="1"/>

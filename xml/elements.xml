@@ -3,6 +3,10 @@
 	<!-- NONE / NULL images -->
   <!--bitmap id="none" file="images/window/windows-background-main.png" x="0" y="0" h="10" w="10" gammagroup="none" /--> <!-- Pink (visual help) -->
   <bitmap id="none" file="images/window/windows-background-main.png" x="162" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
+  
+  <!-- menubar stuff -->
+  
+  <bitmap id="menubar.placeholder" file="images/menubar_placeholder.png" x="0" y="0" h="21" w="1"/>
 
 	<!-- new titlebar stuff -->
 
