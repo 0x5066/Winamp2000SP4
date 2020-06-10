@@ -133,7 +133,7 @@
 	<sendparams target="wasabi.frame.layout.grip" x="10" w="-78"/>
   <sendparams target="componentname" w="-81"/>
 
-	<text text="If you're using the git version of this Skin, you'll see this menubar placeholder as it's not done yet, sorry!" font="tahoma" fontsize="15" color="0,0,0" antialias="0" x="4" y="24"/>
+	<text text="If you're using the git version of this Skin, you'll see this menubar placeholder as it's not done yet, sorry!" font="tahoma" fontsize="15" color="wasabi.text.color" antialias="0" x="4" y="24"/>
 	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder"/>
 
 	<sendparams target="wasabi.frame.layout.base.bg" y="23" h="-23" alpha="255"/> <!-- PL window specific -->
