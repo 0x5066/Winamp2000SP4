@@ -12,7 +12,7 @@ What's New?
 - New: Clicking in the Satsuki and Ryuko Visualizer now changes the visualizer mode of the 4 vis objects
 - Fixed: Improved Wasabi tooltips for 99% windows emulation accuracy
 - Fixed: Improved the Modern Skinned (and Classic Skinned) scrollbars to look more windows-like (moreso the Modern Skinned ones)
-
+- Fixed: The clutterbar going blank when disabling alpha in the Modern Skin options (thanks to Victhor for the hint!)
 
 # v1.2: Colorful Update
 What's New?

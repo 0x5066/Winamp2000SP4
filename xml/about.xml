@@ -7,7 +7,7 @@
 	<layer id="main.about" image="main.about" cursor="cur.normal"/>
 	<layer id="main.about2" image="main.about2" y="76" cursor="cur.normal"/>
 	
-	<text x="59" y="103" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Version 1.2: Colorful Update" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
+	<text x="59" y="103" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Version 1.3: Colorful Update Part 2" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	
 	<text x="59" y="119" w="265" h="21" font="sarpanch" fontsize="15" antialias="0" text="Copyright 2019 - 2020 Victhor Brocaz, Zsolt Vajda" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	

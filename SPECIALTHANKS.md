@@ -10,6 +10,7 @@ These people are:
 - [Raildriver](https://www.youtube.com/channel/UCk0bCOpoYJQuDpPIi2d_csA) who, despite being a firm believer of using nothing but WMP to play anything (and using YouTube for music), provided feedback on UI suggestions.
 - [Midori Mizuno](https://www.youtube.com/channel/UCIe4T4qHKDJXRc8Djm7WQ6g/) for giving me feedback on what set of icons I should use for the thinger and approving of those changes, that's all.
 - Mirzi, who helped me make the v1.2 promotion image a lot better than what I had in mind and for improving the creation of future color schemes for the visualizer.
+- The Sovereign Station/Chipspeech fandom of being an awesome community to be in, and providing some help and tips to optimize the CHIPSPEECH color themes.
 - [Justin Frankel](http://1014.org/) for coming up with Winamp in the first place.
 - Nullsoft for giving us the nightmare that is the infamous Modern Skin engine.
 - And everyone else on the [WACUP forums](https://getwacup.com/community/index.php)/[discord](https://discord.gg/5pVTdbj) who watched me develop this thing in pure agony and despair at times. :)

@@ -33,6 +33,7 @@ Global PopUpMenu wmpmenu;
 Global PopUpMenu winmenu;
 Global PopUpMenu animenu;
 Global PopUpMenu gamemenu;
+Global PopUpMenu plusmenu;
 
 Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color;
 Global Boolean show_peaks;
@@ -120,8 +121,8 @@ refreshVisSettings ()
 {
 	currentMode = getPrivateInt(getSkinName(), "Visualizer Mode", 1);
 	show_peaks = getPrivateInt(getSkinName(), "Visualizer show Peaks", 1);
-	a_falloffspeed = getPrivateInt(getSkinName(), "Visualizer analyzer falloff", 3);
-	p_falloffspeed = getPrivateInt(getSkinName(), "Visualizer peaks falloff", 2);
+	a_falloffspeed = getPrivateInt(getSkinName(), "Visualizer analyzer falloff", 4);
+	p_falloffspeed = getPrivateInt(getSkinName(), "Visualizer peaks falloff", 0);
 	a_coloring = getPrivateInt(getSkinName(), "Visualizer analyzer coloring", 0);
 	v_fps = getPrivateInt(getSkinName(), "Visualizer FPS", 3);
 	v_color = getPrivateInt(getSkinName(), "Visualizer Color themes", 0);
@@ -671,6 +672,7 @@ Trigger.onRightButtonUp (int x, int y)
 	winmenu = new PopUpMenu;
 	animenu = new PopUpMenu;
 	gamemenu = new PopUpMenu;
+	plusmenu = new PopUpMenu;
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
@@ -685,6 +687,9 @@ Trigger.onRightButtonUp (int x, int y)
 	animenu.addCommand("Ragyo", 512, v_color == 12, 0);
 	animenu.addCommand("A.P.E", 509, v_color == 9, 0);
 	animenu.addCommand("Zero Two", 513, v_color == 13, 0);
+	
+	colmenu.addSubMenu(plusmenu, "Microsoft Plus! 98");
+	plusmenu.addCommand("More Windows", 521, v_color == 21, 0);
 	
 	colmenu.addSubMenu(gamemenu, "Video Games");
 	gamemenu.addCommand("GoldSrc VGUI", 516, v_color == 16, 0);
@@ -703,7 +708,6 @@ Trigger.onRightButtonUp (int x, int y)
 	colmenu.addCommand("CHIPSPEECH in a Hi-Fi", 520, v_color == 20, 0);
 	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
 	colmenu.addCommand("Midori Mizuno", 515, v_color == 15, 0);
-	colmenu.addCommand("More Windows", 521, v_color == 21, 0);
 
 	colmenu.addCommand("That old Hi-Fi", 517, v_color == 17, 0);
 	colmenu.addCommand("That old Hi-Fi in crimson red", 518, v_color == 18, 0);
