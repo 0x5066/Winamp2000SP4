@@ -13,7 +13,7 @@
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
-	<component id="pl.wdh" x="-2" y="23" w="2" relatw="1" h="-63" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
+	<component id="pl.wdh" x="-2" y="23" w="2" relatw="1" h="-43" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
 </groupdef>
 
 <groupdef id="pledit.shade.group.main" w="0" h="35" ghost="1" relatw="1">
@@ -125,7 +125,7 @@
 </groupdef>
 
 
-<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="147" minimum_w="550" linkwidth="shade" appbar="top|bottom|left|right">
+<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="147" minimum_w="275" linkwidth="shade" appbar="top|bottom|left|right">
 	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="pledit.content.group" />
 	<sendparams target="window.button.switch" visible="1"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51"/>
@@ -136,8 +136,10 @@
 	<text text="If you're using the git version of this Skin, you'll see this menubar placeholder as it's not done yet, sorry!" font="tahoma" fontsize="15" color="wasabi.text.color" antialias="0" x="4" y="24"/>
 	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder"/>
 
-	<sendparams target="wasabi.frame.layout.base.bg" y="23" h="-23" alpha="255"/> <!-- PL window specific -->
+	<sendparams target="wasabi.frame.layout.base.bg" y="23" h="-3" alpha="255"/> <!-- PL window specific -->
 	<sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
+
+<!--
 
 	<rect id="add" color="64,64,64" x="13" y="-40" w="42" h="28" relaty="1" ghost="1"/>
 	<button id="pledit.button.add" action="PE_ADD" x="9" y="-48" relaty="1" image="window.pl.button.add.n" hoverimage="window.pl.button.add.h" downimage="window.pl.button.add.d" tooltip="Add Files to Playlist" cursor="cur.normal"/>
@@ -162,7 +164,11 @@
 	left="window.plinfo.display.l" middle="window.plinfo.display.m" right="window.plinfo.display.r"
 	bottomleft="window.plinfo.display.bl" bottom="window.plinfo.display.bm" bottomright="window.plinfo.display.br"/>
 	
+	-->
+	
 	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="255" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
+	
+	
 	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers2"
 	colorallbands="128,128,128"
 	colorbandpeak="0,0,0"
@@ -171,15 +177,31 @@
 	colorosc3="128,128,128"
 	colorosc4="128,128,128"
 	colorosc5="128,128,128"
-	fps="60"/>
+	fps="60" alpha="0"/>
+	<!--
 	<rect id="hide.for.gordon" x="-283" y="-34" w="1" h="16" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
-  <!--layer id="hide.for.vic" x="27" y="71" image="none" ghost="1" alpha="0"/-->
+  
 	<layer id="player.vis.blocker" x="-354" y="-32" w="72" h="15" relatx="1" relaty="1" image="none" cursor="cur.normal" alpha="0"/>
 	
-	<text id="pledit.info" x="-181" y="-34" h="19" w="116" relatx="1" relaty="1" display="PE_Info" font="sarpanch" fontsize="14" valign="middle" align="center" 
+	-->
+	<text id="pledit.info" x="-84" y="-21" h="19" w="78" relatx="1" relaty="1" display="PE_Info" font="micross" fontsize="14" valign="middle" align="right" 
 	rightclickaction="trackmenu" color="wasabi.text.color2" alpha="255" cursor="cur.normal" antialias="0"/>
 
-	<group id="pledit.miniplayback.buttons" x="-276" y="-36" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/>
+	<!--group id="pledit.miniplayback.buttons" x="-276" y="-36" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/-->
+	
+
+	
+	<playlistPlus id="main.pl" x="3" y="-20" w="-87" h="13" relaty="1" relatw="1" font="micross" fontsize="14" linespacing="1" color="black" antialias="0" 
+			playcolor="black" sysregion="1"/>	
+	
+	<grid x="4" y="-22" w="-90" h="18" relaty="1" relatw="1" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
+	left="wnd.left" middle="wnd.mid" right="wnd.right"
+	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
+	
+	<grid x="-84" y="-22" w="80" h="18" relatx="1" relaty="1" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
+	left="wnd.left" middle="wnd.mid" right="wnd.right"
+	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
+
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
