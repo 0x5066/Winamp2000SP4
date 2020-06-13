@@ -678,7 +678,7 @@ Trigger.onRightButtonUp (int x, int y)
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
 	
 	visMenu.addSubMenu(colmenu, "Visualizer Color Schemes");
-	colmenu.addCommand("Default", 500, v_color == 0, 0);
+
 	
 	colmenu.addSubMenu(animenu, "Anime");
 	animenu.addCommand("REVOCS", 508, v_color == 8, 0);
@@ -700,6 +700,7 @@ Trigger.onRightButtonUp (int x, int y)
 	wmpmenu.addCommand("Fire Storm and Scope", 504, v_color == 4, 0);
 	
 	colmenu.addSubMenu(winmenu, "Winamp Skins");
+	winmenu.addCommand("Winamp Classic", 500, v_color == 0, 0);
 	winmenu.addCommand("Winamp Modern", 505, v_color == 5, 0);
 	winmenu.addCommand("Bento", 506, v_color == 6, 0);
 	winmenu.addCommand("Big Bento Modern", 507, v_color == 7, 0);	
@@ -887,7 +888,7 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS", v_fps);
 	}
-	else if (a >= 500 && a <= 521)
+	else if (a >= 500 && a <= 522)
 	{
 		v_color = a - 500;
 		if (v_color == 0)

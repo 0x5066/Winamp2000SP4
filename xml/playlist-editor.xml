@@ -16,6 +16,16 @@
 	<component id="pl.wdh" x="-2" y="23" w="2" relatw="1" h="-43" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
 </groupdef>
 
+	<groupdef id="some.complex.stuff">
+
+	<ProgressGrid id="IEBAR" w="92" h="12" x="0" y="0" orientation="right" middle="progress.bar"/>
+	 
+	<Animatedlayer id="vguivis.animatedlayerL" image="vu.bar" x="0" y="0" w="92" h="5" framewidth="92" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="vguivis.animatedlayerR" image="vu.bar" x="0" y="7" w="92" h="5" framewidth="92" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
+	<script id="vguivis.script" file="scripts\vguivis.maki"/>
+	
+	</groupdef>
+
 <groupdef id="pledit.shade.group.main" w="0" h="35" ghost="1" relatw="1">
 
 	<layer id="pledit.background.main.left2" x="0" y="0" h="35" image="window.shade.background.main.left2" dblclickaction="SWITCH;normal" move="1" ghost="0" sysregion="1" cursor="cur.normal"/>
@@ -178,31 +188,28 @@
 	colorosc4="128,128,128"
 	colorosc5="128,128,128"
 	fps="60" alpha="0"/>
-	<!--
-	<rect id="hide.for.gordon" x="-283" y="-34" w="1" h="16" relatx="1" relaty="1" color="0,0,0" filled="1" gammagroup="display"/>
-  
-	<layer id="player.vis.blocker" x="-354" y="-32" w="72" h="15" relatx="1" relaty="1" image="none" cursor="cur.normal" alpha="0"/>
-	
-	-->
-	<text id="pledit.info" x="-84" y="-21" h="19" w="78" relatx="1" relaty="1" display="PE_Info" font="micross" fontsize="14" valign="middle" align="right" 
-	rightclickaction="trackmenu" color="wasabi.text.color2" alpha="255" cursor="cur.normal" antialias="0"/>
 
-	<!--group id="pledit.miniplayback.buttons" x="-276" y="-36" relatx="1" relaty="1" cursor="cur.normal" alpha="255"/-->
+	<text id="pledit.info" x="-85" y="-21" h="19" w="78" relatx="1" relaty="1" display="PE_Info" font="micross" fontsize="14" valign="middle" align="right" 
+	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>
 	
-
+	<playlistPlus id="main.pl" x="3" y="-20" w="-187" h="13" relaty="1" relatw="1" font="micross" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" 
+			playcolor="wasabi.text.color" sysregion="1"/>	
 	
-	<playlistPlus id="main.pl" x="3" y="-20" w="-87" h="13" relaty="1" relatw="1" font="micross" fontsize="14" linespacing="1" color="black" antialias="0" 
-			playcolor="black" sysregion="1"/>	
+	<grid x="4" y="-22" w="-190" h="18" relaty="1" relatw="1" topleft="wnd.topleft2" top="wnd.topmid2" topright="wnd.topright2" 
+	left="wnd.left2" middle="wnd.mid2" right="wnd.right2"
+	bottomleft="wnd.btmleft2" bottom="wnd.btmmid2" bottomright="wnd.btmright2"/>
 	
-	<grid x="4" y="-22" w="-90" h="18" relaty="1" relatw="1" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
-	left="wnd.left" middle="wnd.mid" right="wnd.right"
-	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
+	<grid x="-84" y="-22" w="80" h="18" relatx="1" relaty="1" topleft="wnd.topleft2" top="wnd.topmid2" topright="wnd.topright2" 
+	left="wnd.left2" middle="wnd.mid2" right="wnd.right2"
+	bottomleft="wnd.btmleft2" bottom="wnd.btmmid2" bottomright="wnd.btmright2"/>
 	
-	<grid x="-84" y="-22" w="80" h="18" relatx="1" relaty="1" topleft="wnd.topleft" top="wnd.topmid" topright="wnd.topright" 
-	left="wnd.left" middle="wnd.mid" right="wnd.right"
-	bottomleft="wnd.btmleft" bottom="wnd.btmmid" bottomright="wnd.btmright"/>
-
+	<grid id="progressbar" x="-184" y="-22" w="98" h="18" relatx="1" relaty="1" topleft="wnd.topleft2" top="wnd.topmid2" topright="wnd.topright2" 
+	left="wnd.left2" middle="wnd.mid2" right="wnd.right2"
+	bottomleft="wnd.btmleft2" bottom="wnd.btmmid2" bottomright="wnd.btmright2"/>
+	
+	<group id="some.complex.stuff" relatx="1" relaty="1" x="-181" y="-19"/>
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
+
 
   <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
 	<sendparams target="winshade.disabled" alpha="0"/>

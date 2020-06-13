@@ -4,6 +4,25 @@
   <!--bitmap id="none" file="images/window/windows-background-main.png" x="0" y="0" h="10" w="10" gammagroup="none" /--> <!-- Pink (visual help) -->
   <bitmap id="none" file="images/window/windows-background-main.png" x="162" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
   
+  <!-- additional window elements -->
+
+	<bitmap id="wnd.topleft2" file="images\window\windowelement.png" x="0" y="0" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.topmid2" file="images\window\windowelement.png" x="7" y="0" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.topright2" file="images\window\windowelement.png" x="14" y="0" w="6" h="6" gammagroup="3D Objects"/>
+	
+	<bitmap id="wnd.left2" file="images\window\windowelement.png" x="0" y="7" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.mid2" file="images\window\windowelement.png" x="7" y="7" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.right2" file="images\window\windowelement.png" x="14" y="7" w="6" h="6" gammagroup="3D Objects"/>
+
+	<bitmap id="wnd.btmleft2" file="images\window\windowelement.png" x="0" y="14" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.btmmid2" file="images\window\windowelement.png" x="7" y="14" w="6" h="6" gammagroup="3D Objects"/>
+	<bitmap id="wnd.btmright2" file="images\window\windowelement.png" x="14" y="14" w="6" h="6" gammagroup="3D Objects"/>
+  
+  <!-- progress bar stuff -->
+  
+  <bitmap id="progress.bar" file="images/progressbar/bluebar.png" x="0" y="0" h="12" w="1" gammagroup="Selected Items"/>
+  <bitmap id="vu.bar" file="images/progressbar/vu_bar.png" x="0" y="0" h="93" w="92" gammagroup="Selected Items"/>
+  
   <!-- menubar stuff -->
   
   <bitmap id="menubar.placeholder" file="images/menubar_placeholder.png" x="0" y="0" h="21" w="1" gammagroup="3D Objects"/>
