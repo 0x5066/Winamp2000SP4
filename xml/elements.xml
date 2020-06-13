@@ -26,6 +26,26 @@
   <!-- menubar stuff -->
   
   <bitmap id="menubar.placeholder" file="images/menubar_placeholder.png" x="0" y="0" h="21" w="1" gammagroup="3D Objects"/>
+  
+  <bitmap id="newadd.static" file="images/menus.png" x="0" y="0" h="18" w="31" gammagroup="3D Objects"/>
+  <bitmap id="newadd.hover" file="images/menus.png" x="0" y="19" h="18" w="31" gammagroup="3D Objects"/>
+  <bitmap id="newadd.pressed" file="images/menus.png" x="0" y="38" h="18" w="31" gammagroup="3D Objects"/>
+  
+  <bitmap id="newremove.static" file="images/menus.png" x="32" y="0" h="18" w="51" gammagroup="3D Objects"/>
+  <bitmap id="newremove.hover" file="images/menus.png" x="32" y="19" h="18" w="51" gammagroup="3D Objects"/>
+  <bitmap id="newremove.pressed" file="images/menus.png" x="32" y="38" h="18" w="51" gammagroup="3D Objects"/>
+  
+  <bitmap id="newselect.static" file="images/menus.png" x="84" y="0" h="18" w="41" gammagroup="3D Objects"/>
+  <bitmap id="newselect.hover" file="images/menus.png" x="84" y="19" h="18" w="41" gammagroup="3D Objects"/>
+  <bitmap id="newselect.pressed" file="images/menus.png" x="84" y="38" h="18" w="41" gammagroup="3D Objects"/>
+  
+  <bitmap id="newmisc.static" file="images/menus.png" x="126" y="0" h="18" w="77" gammagroup="3D Objects"/>
+  <bitmap id="newmisc.hover" file="images/menus.png" x="126" y="19" h="18" w="77" gammagroup="3D Objects"/>
+  <bitmap id="newmisc.pressed" file="images/menus.png" x="126" y="38" h="18" w="77" gammagroup="3D Objects"/>
+  
+  <bitmap id="newlist.static" file="images/menus.png" x="204" y="0" h="18" w="68" gammagroup="3D Objects"/>
+  <bitmap id="newlist.hover" file="images/menus.png" x="204" y="19" h="18" w="68" gammagroup="3D Objects"/>
+  <bitmap id="newlist.pressed" file="images/menus.png" x="204" y="38" h="18" w="68" gammagroup="3D Objects"/>
 
 	<!-- new titlebar stuff -->
 

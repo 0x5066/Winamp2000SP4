@@ -41,22 +41,22 @@
 	
 	<gradient id="wasabi.titlebar.active1"
 		x="4" y="4" w="-61" h="18" relatw="1"
-		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1"/>
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1" ghost="1"/>
 
 	<gradient id="wasabi.titlebar.active2"
 		x="4" y="4" w="-61" h="18" relatw="1"
-		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2"/>
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2" ghost="1"/>
 
-  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
+  <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0" ghost="1"/>
 
 	<gradient id="wasabi.titlebar.inactive1"
 		x="4" y="4" w="-61" h="18" relatw="1"
-		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 1"/>
+		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 1" ghost="1"/>
 
 	<gradient id="wasabi.titlebar.inactive2"
 		x="4" y="4" w="-61" h="18" relatw="1"
-		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2"/>
-	<layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" move="0" activealpha="0" inactivealpha="255"/>
+		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2" ghost="1"/>
+	<layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" move="0" activealpha="0" inactivealpha="255" ghost="1"/>
 
 	<layer id="pledit.region.top.left" x="0" y="0" image="window.shade.region.top.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2"/>
@@ -64,9 +64,9 @@
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" RELATX="1" RELATY="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 	
 	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="titlebar" fontsize="15" linespacing="1" color="wasabi.text.active" antialias="0" 
-			playcolor="wasabi.text.active" sysregion="1" bold="1" activealpha="255" inactivealpha="0"/>	
+			playcolor="wasabi.text.active" sysregion="1" bold="1" activealpha="255" inactivealpha="0" ghost="1"/>	
 	  <playlistPlus id="main.pl" x="3" y="5" w="-58" h="16" relatw="1" font="titlebar" fontsize="15" linespacing="1" color="wasabi.text.inactive" antialias="0" 
-			playcolor="wasabi.text.inactive" sysregion="1" bold="1" activealpha="0" inactivealpha="255"/>
+			playcolor="wasabi.text.inactive" sysregion="1" bold="1" activealpha="0" inactivealpha="255" ghost="1"/>
 			
 	<layer id="pledit.background.grip.mid" x="-4" y="0" w="4" h="26" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" move="0" tooltip="Adjust Horizontal Size" resize="right" alpha="0" cursor="cur.posbar"/>
 
@@ -135,7 +135,7 @@
 </groupdef>
 
 
-<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="147" minimum_w="275" linkwidth="shade" appbar="top|bottom|left|right">
+<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="147" minimum_w="276" linkwidth="shade" appbar="top|bottom|left|right">
 	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="pledit.content.group" />
 	<sendparams target="window.button.switch" visible="1"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51"/>
@@ -143,25 +143,23 @@
 	<sendparams target="wasabi.frame.layout.grip" x="10" w="-78"/>
   <sendparams target="componentname" w="-81"/>
 
-	<text text="If you're using the git version of this Skin, you'll see this menubar placeholder as it's not done yet, sorry!" font="tahoma" fontsize="15" color="wasabi.text.color" antialias="0" x="4" y="24"/>
-	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder"/>
+
+	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder" ghost="1"/>
 
 	<sendparams target="wasabi.frame.layout.base.bg" y="23" h="-3" alpha="255"/> <!-- PL window specific -->
 	<sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
 
+	<button id="pledit.button.add" action="PE_ADD" x="4" y="23" rectrgn="1" image="newadd.static" hoverimage="newadd.hover" downimage="newadd.pressed" tooltip="Add Files to Playlist" cursor="cur.normal"/>
+
+	<button id="pledit.button.rem" action="PE_REM" x="35" y="23" rectrgn="1" image="newremove.static" hoverimage="newremove.hover" downimage="newremove.pressed" tooltip="Remove Files from Playlist" cursor="cur.normal"/>
+
+	<button id="pledit.button.sel" action="PE_SEL" x="86" y="23" rectrgn="1" image="newselect.static" hoverimage="newselect.hover" downimage="newselect.pressed" tooltip="Select Files in Playlist" cursor="cur.normal"/>
+
+	<button id="pledit.button.misc" action="PE_MISC" x="127" y="23" rectrgn="1" image="newmisc.static" hoverimage="newmisc.hover" downimage="newmisc.pressed" tooltip="Misc Actions" cursor="cur.normal"/>
+
+	<button id="pledit.button.list" action="PE_LIST" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
+
 <!--
-
-	<rect id="add" color="64,64,64" x="13" y="-40" w="42" h="28" relaty="1" ghost="1"/>
-	<button id="pledit.button.add" action="PE_ADD" x="9" y="-48" relaty="1" image="window.pl.button.add.n" hoverimage="window.pl.button.add.h" downimage="window.pl.button.add.d" tooltip="Add Files to Playlist" cursor="cur.normal"/>
-	<rect id="rem" color="64,64,64" x="55" y="-40" w="42" h="28" relaty="1" ghost="1"/>
-	<button id="pledit.button.rem" action="PE_REM" x="55" y="-48" relaty="1" image="window.pl.button.rem.n" hoverimage="window.pl.button.rem.h" downimage="window.pl.button.rem.d" tooltip="Remove Files from Playlist" cursor="cur.normal"/>
-	<rect id="sel" color="64,64,64" x="97" y="-40" w="42" h="28" relaty="1" ghost="1"/>
-	<button id="pledit.button.sel" action="PE_SEL" x="97" y="-48" relaty="1" image="window.pl.button.sel.n" hoverimage="window.pl.button.sel.h" downimage="window.pl.button.sel.d" tooltip="Select Files in Playlist" cursor="cur.normal"/>
-	<rect id="misc" color="64,64,64" x="139" y="-40" w="41" h="28" relaty="1" ghost="1"/>
-	<button id="pledit.button.misc" action="PE_MISC" x="139" y="-48" relaty="1" image="window.pl.button.misc.n" hoverimage="window.pl.button.misc.h" downimage="window.pl.button.misc.d" tooltip="Misc Actions" cursor="cur.normal"/>
-
-	<rect id="list" color="64,64,64" x="-54" y="-40" w="42" h="28" relatx="1" relaty="1" ghost="1"/>
-	<button id="pledit.button.list" action="PE_LIST" x="-58" y="-48" relatx="1" relaty="1" image="window.pl.button.ploptns.n" hoverimage="window.pl.button.ploptns.h" downimage="window.pl.button.ploptns.d" tooltip="Manage Playlist" cursor="cur.normal"/>
 
   <grid id="pl.display.bg" x="-362" y="-43" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.bg.left" middle="window.pl.display.bg.middle" right="window.pl.display.bg.right" ghost="1" alpha="255"/>
   <grid id="pl.display" x="-362" y="-39" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.left" middle="window.pl.display.middle" right="window.pl.display.right" ghost="1" alpha="0"/>
@@ -217,7 +215,7 @@
 </layout> 
 
 
-<layout id="shade" w="550" h="26" minimum_w="275" minimum_h="26" maximum_w="10000" maximum_h="26" droptarget="pldr" desktopalpha="0" linkwidth="normalpl">
+<layout id="shade" w="550" h="26" minimum_w="276" minimum_h="26" maximum_w="10000" maximum_h="26" droptarget="pldr" desktopalpha="0" linkwidth="normalpl">
   
 
 	<group id="pledit.shade.group.main" x="0" y="0" h="26" ghost="1" cursor="cur.normal"/>	
