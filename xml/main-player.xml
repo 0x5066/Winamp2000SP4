@@ -17,18 +17,18 @@
 
   <!--grid id="player.songticker.bg" x="221" y="50" h="21" w="-247" relatw="1" left="player.songticker.bg.left" middle="player.songticker.bg.middle" right="player.songticker.bg.right" move="1" cursor="cur.normal" antialias="0"/-->
  
-	<rect id="vol.bg2" color="64,64,64" x="201" y="120" w="120" h="3" ghost="1"/>
-	<grid id="volume.bg" x="200" y="119" w="121" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right" />
+	<rect id="vol.bg2" color="64,64,64" x="201" y="121" w="120" h="3" ghost="1"/>
+	<grid id="volume.bg" x="200" y="120" w="121" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right" />
 
   <Animatedlayer id="main.volume.anim" x="223" y="116" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
 	<!--slider id="player.slider.volume.shadow" action="VOLUME" x="201" y="110" w="130" h="26" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
-	<slider id="player.slider.volume" action="VOLUME" x="200" y="112" w="121" h="21" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
+	<slider id="player.slider.volume" action="VOLUME" x="200" y="113" w="121" h="21" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
-	<rect id="bal.bg2" color="64,64,64" x="346" y="120" w="74" h="3" ghost="1"/>
-	<grid id="balance.bg" x="345" y="119" w="75" h="4" left="posbar.left" middle="posbar.center" right="posbar.right" />
+	<rect id="bal.bg2" color="64,64,64" x="346" y="121" w="74" h="3" ghost="1"/>
+	<grid id="balance.bg" x="345" y="120" w="75" h="4" left="posbar.left" middle="posbar.center" right="posbar.right" />
   <Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
 	<!--slider id="eq.slider.pan.shadow" action="PAN" x="341" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
-	<slider id="eq.slider.pan" action="PAN" x="345" y="112" w="75" h="21" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
+	<slider id="eq.slider.pan" action="PAN" x="345" y="113" w="75" h="21" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 	
   <!--script file="scripts\color_themes_patch_fix.maki"/--> <!-- This script makes the switch between the safe layer and the multicolor-bar (only seen on default theme) -->
 

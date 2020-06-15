@@ -159,24 +159,6 @@
 	<button id="pledit.button.misc" action="PE_MISC" x="127" y="23" rectrgn="1" image="newmisc.static" hoverimage="newmisc.hover" downimage="newmisc.pressed" tooltip="Misc Actions" cursor="cur.normal"/>
 
 	<button id="pledit.button.list" action="PE_LIST" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
-
-<!--
-
-  <grid id="pl.display.bg" x="-362" y="-43" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.bg.left" middle="window.pl.display.bg.middle" right="window.pl.display.bg.right" ghost="1" alpha="255"/>
-  <grid id="pl.display" x="-362" y="-39" h="29" w="301" relatx="1" relaty="1" left="window.pl.display.left" middle="window.pl.display.middle" right="window.pl.display.right" ghost="1" alpha="0"/>
-
-	<grid x="-356" y="-36" w="75" h="20" relatx="1" relaty="1" topleft="window.plvis.display.tl" top="window.plvis.display.tm" topright="window.plvis.display.tr" 
-	left="window.plvis.display.l" middle="window.plvis.display.m" right="window.plvis.display.r"
-	bottomleft="window.plvis.display.bl" bottom="window.plvis.display.bm" bottomright="window.plvis.display.br"/>
-
-	<grid x="-278" y="-36" w="214" h="20" relatx="1" relaty="1" topleft="window.plinfo.display.tl" top="window.plinfo.display.tm" topright="window.plinfo.display.tr" 
-	left="window.plinfo.display.l" middle="window.plinfo.display.m" right="window.plinfo.display.r"
-	bottomleft="window.plinfo.display.bl" bottom="window.plinfo.display.bm" bottomright="window.plinfo.display.br"/>
-	
-	-->
-	
-	<!--rect id="plssayer.vis" x="-354" y="-36" w="72" h="15" alpha="255" relatx="1" relaty="1"  color="0,0,250" filled="0"/-->
-	
 	
 	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers2"
 	colorallbands="128,128,128"
@@ -209,8 +191,6 @@
 	<group id="some.complex.stuff" relatx="1" relaty="1" x="-181" y="-19"/>
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
 
-
-  <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
 	<sendparams target="winshade.disabled" alpha="0"/>
 	
 </layout> 
