@@ -30,7 +30,7 @@
 	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
 	alpha="70"/>
 	<!--rect x="0" y="0" w="221" h="67" color="black" filled="1"/-->
-	<text id="display.time" display="TIME" x="68" y="6" w="132" h="136" ghost="1" ticker="0" font="time" fontsize="64" forcefixed="1" color="hl2.digit" 
+	<text id="display.time" display="TIME" x="68" y="16" w="132" h="136" ghost="1" ticker="0" font="time" fontsize="64" forcefixed="1" color="hl2.digit" 
 	timeroffstyle="2" timecolonwidth="22" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 	<text id="time" text="TIME" x="-13" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="hl2.text" valign="top" align="right" 
 	cursor="cur.normal" bold="1" antialias="1"/>
@@ -44,7 +44,7 @@
 	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
 	alpha="70"/>
 	<!--rect x="0" y="0" w="191" h="67" color="black" filled="1"/-->
-	<text id="songbitrate" display="songbitrate" x="47" y="6" w="122" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="hl2.digit" 
+	<text id="songbitrate" display="songbitrate" x="47" y="16" w="122" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="hl2.digit" 
 	valign="top" align="right" cursor="cur.normal" bold="0" antialias="1"/>
 	<text id="time" text="KBPS" x="-12" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="hl2.text" valign="top" align="right" 
 	cursor="cur.normal" bold="1" antialias="1"/>
@@ -58,7 +58,7 @@
 	bottomleft="hl2.btmleft" bottom="hl2.btmmid" bottomright="hl2.btmright"
 	alpha="70"/>
 	<!--rect x="0" y="0" w="241" h="67" color="black" filled="1"/-->
-	<text id="songsamplerate" display="songsamplerate" x="44" y="6" w="182" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="hl2.digit" 
+	<text id="songsamplerate" display="songsamplerate" x="44" y="16" w="182" h="136" ticker="0" font="time" fontsize="64" forcefixed="1" color="hl2.digit" 
 	timeroffstyle="0" valign="top" align="center" cursor="cur.normal" bold="0" antialias="1"/>
 	<text id="time" text="KHZ" x="-20" y="36" w="60" h="20" ticker="0" font="numbers" fontsize="16" forcefixed="1" color="hl2.text" valign="top" align="right" 
 	cursor="cur.normal" bold="1" antialias="1"/>
