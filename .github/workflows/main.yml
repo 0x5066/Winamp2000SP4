@@ -16,4 +16,4 @@ jobs:
       # Artifact name
         name: 'latestbuild'
         # Directory containing files to upload
-        path: 'latestbuild.wal'
+        path: 'winamp2ksp4_latest_commit.wal'
