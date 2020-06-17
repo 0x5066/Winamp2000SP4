@@ -210,7 +210,7 @@
 	<layer id="player.background.display.vis.scale" x="19" y="0" image="display.vis.bg" alpha="255" ghost="1"/>
 
 	<text id="display.time" display="TIME" x="48" y="5" w="122" h="36" ticker="0" font="time" fontsize="38" forcefixed="1" color="white" 
-	timeroffstyle="0" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
+	timeroffstyle="1" valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 
 	<!--rect id="plssayer.vis" x="27" y="41" w="143" h="31" color="0,0,250" filled="0"/-->
 	<vis id="player.vis" x="27" y="39" w="143" h="32" cursor="cur.normal"/>

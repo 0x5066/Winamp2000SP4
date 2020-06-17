@@ -640,6 +640,32 @@ refreshVisSettings ()
 			setColorosc("213,175,38");
 			visgrid.setXmlParam("alpha","0");
 		}
+		else if (v_color == 22)
+		{
+			visualizer.setXmlParam("ColorBand1", "16,33,142");
+			visualizer.setXmlParam("ColorBand2", "41,84,124");
+			visualizer.setXmlParam("ColorBand3", "66,135,106");
+			visualizer.setXmlParam("ColorBand4", "91,186,88");
+			visualizer.setXmlParam("ColorBand5", "117,239,70");
+			visualizer.setXmlParam("ColorBand6", "142,233,102");
+			visualizer.setXmlParam("ColorBand7", "167,227,134");
+			visualizer.setXmlParam("ColorBand8", "192,221,166");
+			visualizer.setXmlParam("ColorBand9", "218,215,201");
+			visualizer.setXmlParam("ColorBand10", "200,202,197");
+			visualizer.setXmlParam("ColorBand11", "182,189,193");
+			visualizer.setXmlParam("ColorBand12", "164,176,189");
+			visualizer.setXmlParam("ColorBand13", "143,162,184");
+			visualizer.setXmlParam("ColorBand14", "100,113,128");
+			visualizer.setXmlParam("ColorBand15", "57,64,72");
+			visualizer.setXmlParam("ColorBand16", "14,15,16");
+			visualizer.setXmlParam("colorbandpeak", "253,75,51");
+			visualizer.setXmlParam("colorosc1", "181,241,62");
+			visualizer.setXmlParam("colorosc2", "136,185,79");
+			visualizer.setXmlParam("colorosc3", "91,129,96");
+			visualizer.setXmlParam("colorosc4", "46,73,113");
+			visualizer.setXmlParam("colorosc5", "1,17,130");
+			visgrid.setXmlParam("alpha","0");
+		}
 	setVis (currentMode);
 }
 
@@ -707,8 +733,9 @@ Trigger.onRightButtonUp (int x, int y)
 	
 	colmenu.addCommand("CHIPSPEECH", 519, v_color == 19, 0);
 	colmenu.addCommand("CHIPSPEECH in a Hi-Fi", 520, v_color == 20, 0);
-	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
+	colmenu.addCommand("Microsoft Sam (miss_shinku)", 522, v_color == 22, 0);
 	colmenu.addCommand("Midori Mizuno", 515, v_color == 15, 0);
+	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
 
 	colmenu.addCommand("That old Hi-Fi", 517, v_color == 17, 0);
 	colmenu.addCommand("That old Hi-Fi in crimson red", 518, v_color == 18, 0);
@@ -1317,6 +1344,32 @@ ProcessMenuResult (int a)
 			visualizer.setXmlParam("colorbandpeak", "213,175,38");
 
 			setColorosc("213,175,38");
+			visgrid.setXmlParam("alpha","0");
+		}
+		else if (v_color == 22)
+		{
+			visualizer.setXmlParam("ColorBand1", "16,33,142");
+			visualizer.setXmlParam("ColorBand2", "41,84,124");
+			visualizer.setXmlParam("ColorBand3", "66,135,106");
+			visualizer.setXmlParam("ColorBand4", "91,186,88");
+			visualizer.setXmlParam("ColorBand5", "117,239,70");
+			visualizer.setXmlParam("ColorBand6", "142,233,102");
+			visualizer.setXmlParam("ColorBand7", "167,227,134");
+			visualizer.setXmlParam("ColorBand8", "192,221,166");
+			visualizer.setXmlParam("ColorBand9", "218,215,201");
+			visualizer.setXmlParam("ColorBand10", "200,202,197");
+			visualizer.setXmlParam("ColorBand11", "182,189,193");
+			visualizer.setXmlParam("ColorBand12", "164,176,189");
+			visualizer.setXmlParam("ColorBand13", "143,162,184");
+			visualizer.setXmlParam("ColorBand14", "100,113,128");
+			visualizer.setXmlParam("ColorBand15", "57,64,72");
+			visualizer.setXmlParam("ColorBand16", "14,15,16");
+			visualizer.setXmlParam("colorbandpeak", "253,75,51");
+			visualizer.setXmlParam("colorosc1", "181,241,62");
+			visualizer.setXmlParam("colorosc2", "136,185,79");
+			visualizer.setXmlParam("colorosc3", "91,129,96");
+			visualizer.setXmlParam("colorosc4", "46,73,113");
+			visualizer.setXmlParam("colorosc5", "1,17,130");
 			visgrid.setXmlParam("alpha","0");
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes", v_color);
