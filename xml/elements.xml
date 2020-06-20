@@ -4,6 +4,10 @@
   <!--bitmap id="none" file="images/window/windows-background-main.png" x="0" y="0" h="10" w="10" gammagroup="none" /--> <!-- Pink (visual help) -->
   <bitmap id="none" file="images/window/windows-background-main.png" x="162" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
   
+  <!-- old ass vu -->
+  
+  <bitmap id="oldwin.vu" file="images\old_vu.png" x="0" y="0" w="15" h="760"/>
+  
   <!-- additional window elements -->
 
 	<bitmap id="wnd.topleft2" file="images\window\windowelement.png" x="0" y="0" w="6" h="6" gammagroup="3D Objects"/>
