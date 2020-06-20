@@ -136,7 +136,7 @@
 </groupdef>
 
 
-<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="147" minimum_w="276" linkwidth="shade" appbar="top|bottom|left|right">
+<layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="149" minimum_w="276" linkwidth="shade" appbar="top|bottom|left|right">
 	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="pledit.content.group" />
 	<sendparams target="window.button.switch" visible="1"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51"/>
