@@ -7,7 +7,7 @@
   
   	<Animatedlayer id="vguivis.animatedlayerL" image="oldwin.vu" x="70" y="70" w="15" h="76" framewidth="15" frameheight="76" start="0" end="9" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="vguivis.animatedlayerR" image="oldwin.vu" x="87" y="70" w="15" h="76" framewidth="15" frameheight="76" start="0" end="9" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="winvis.script" file="scripts\winvis.maki"/>
+	<script id="vguivis.script" file="scripts\vguivis.maki"/>
 
 	<rect id="eq.button.on2" color="64,64,64" x="13" y="15" w="48" h="28" ghost="1"/>
 	<rect id="eq.button.auto2" color="64,64,64" x="61" y="15" w="62" h="28" ghost="1"/>
