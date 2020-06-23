@@ -1,0 +1,44 @@
+<groupdef id="ml.menu.content.group" rectrgn="1">
+  <text id="mlFile.up.txt" default="File" x="3" y="0" h="18" w="31" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+  <text id="mlFile.down.txt" default="File" x="4" y="1" h="18" w="31" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+  <text id="mlFile.hover.txt" default="File" x="3" y="0" h="18" w="31" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+
+  <text id="mlView.up.txt" default="View" x="31" y="0" h="18" w="38" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+  <text id="mlView.down.txt" default="View" x="32" y="1" h="18" w="38" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+  <text id="mlView.hover.txt" default="View" x="31" y="0" h="18" w="38" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+
+  <text id="mlHelp.up.txt" default="Help" x="65" y="0" h="18" w="37" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+  <text id="mlHelp.down.txt" default="Help" x="66" y="1" h="18" w="37" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+  <text id="mlHelp.hover.txt" default="Help" x="65" y="0" h="18" w="37" fontsize="15" font="tahoma" valign="top" color="wasabi.text.color" antialias="0"/>
+
+  <Menu id="mlFile.menu" menugroup="ml" prev="mlHelp.menu" next="mlView.menu" x="3" y="0" h="18" w="31" menu="WA5:ML_File" normal="mlFile.up.txt" down="mlFile.down.txt" hover="mlFile.hover.txt"/>
+  <Menu id="mlView.menu" menugroup="ml" prev="mlFile.menu" next="mlHelp.menu" x="31" y="0" h="18" w="38" menu="WA5:ML_View" normal="mlView.up.txt" down="mlView.down.txt" hover="mlView.hover.txt"/>
+  <Menu id="mlHelp.menu" menugroup="ml" prev="mlView.menu" next="mlFile.menu" x="65" y="0" h="18" w="37" menu="WA5:ML_Help" normal="mlHelp.up.txt" down="mlHelp.down.txt" hover="mlHelp.hover.txt"/>
+</groupdef>
+
+<groupdef id="ml.menu.group">
+  <rect fitparent="1" color="wasabi.window.background" filled="1"/>
+  <group id="ml.menu.content.group" fitparent="1" inactiveAlpha="128"/>
+</groupdef>
+
+<groupdef id="ml.dummy.group">
+  <WindowHolder
+    fitparent="1"
+    noshowcmdbar="1"
+    autoopen="1"
+    autoclose="1"
+    param="guid:{6B0EDF80-C9A5-11D3-9F26-00C04F39FFC6}"
+  />
+</groupdef>
+
+<groupdef id="ml.content.group">
+  <group id="ml.menu.group" x="0" y="0" w="0" h="18" relatw="1"/>
+  <group id="ml.dummy.group" x="0" y="23" w="0" h="-23" relatw="1" relath="1"/>
+</groupdef>
+
+<layout id="normal" minimum_h="116" minimum_w="275" default_h="348" default_w="550">
+  <Wasabi:StandardFrame:NoStatus
+    fitparent="1"
+    content="ml.content.group"/>
+  	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder" ghost="1"/>
+</layout>
