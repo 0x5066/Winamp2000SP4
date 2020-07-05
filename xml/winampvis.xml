@@ -1,0 +1,17 @@
+<container id="winampvis" name="Winamp Visualizer for use in OBS" default_visible="0">
+
+<groupdef id="aaaa">
+
+	<rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="0,0,0" filled="1"/>
+	<vis id="player.vis" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" cursor="cur.normal"/>
+
+</groupdef>
+
+<layout id="normal" minimum_w="156" minimum_h="64" h="242" w="211" appbar="top|bottom|left|right">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="aaaa"/>
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
+  <sendparams target="titlebar.title.bg.group" w="170"/>
+	
+</layout>
+
+</container>
