@@ -2,7 +2,7 @@
 
 	<!-- NONE / NULL images -->
   <!--bitmap id="none" file="images/window/windows-background-main.png" x="0" y="0" h="10" w="10" gammagroup="none" /--> <!-- Pink (visual help) -->
-  <bitmap id="none" file="images/window/windows-background-main.png" x="162" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
+  <bitmap id="none" file="images/counter-strike-source.png" x="0" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
   
   <!-- old ass vu -->
   

@@ -1,14 +1,17 @@
 <container id="winampvis" name="Winamp Visualizer for use in OBS" default_visible="0">
 
-<groupdef id="aaaa">
+<groupdef id="i_hate_maki_sometimes">
 
 	<rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="0,0,0" filled="1"/>
-	<vis id="player.vis" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" cursor="cur.normal"/>
+	<vis id="player.vis2" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" cursor="cur.normal"/>
+	<!--layer id="player.vis.trigger2" x="27" y="39" w="143" h="32" image="none"/-->
+	
+	<!--script file="scripts/winampvisualizer.maki"/-->
 
 </groupdef>
 
-<layout id="normal" minimum_w="156" minimum_h="64" h="242" w="211" appbar="top|bottom|left|right">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="aaaa"/>
+<layout id="winampvis2" minimum_w="156" minimum_h="64" h="242" w="211" appbar="top|bottom|left|right">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="i_hate_maki_sometimes"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
   <sendparams target="titlebar.title.bg.group" w="170"/>
 	
