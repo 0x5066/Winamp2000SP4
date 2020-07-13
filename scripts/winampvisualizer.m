@@ -47,9 +47,9 @@ System.onScriptLoaded()
 	layoutMainNormal = containerMain.getLayout("winampvis2");
 	NormalGroupMain = layoutMainNormal.findObject("i_hate_maki_sometimes");
 
-	visualizer = NormalGroupDisplay.findObject("player.vis2");
+	visualizer = NormalGroupMain.findObject("player.vis2");
 	
-	Trigger = NormalGroupDisplay.findObject("player.vis.trigger2");
+	Trigger = NormalGroupMain.findObject("player.vis.trigger2");
 
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
@@ -185,7 +185,6 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorosc3", "181,189,189");
 			visualizer.setXmlParam("colorosc4", "160,170,175");
 			visualizer.setXmlParam("colorosc5", "148,156,165");
-			visgrid.setXmlParam("alpha","0");
 		}
 		else if (v_color == 1)
 		{
@@ -211,7 +210,6 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorosc3", "181,189,189");
 			visualizer.setXmlParam("colorosc4", "160,170,175");
 			visualizer.setXmlParam("colorosc5", "148,156,165");
-			visgrid.setXmlParam("alpha","0");
 		}
 		else if (v_color == 2)
 		{
@@ -643,7 +641,7 @@ Trigger.onRightButtonUp (int x, int y)
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
 	
-	visMenu.addSubMenu(colmenu, "Visualizer Color Schemes2");
+	visMenu.addSubMenu(colmenu, "Visualizer Color Schemes");
 
 	
 	colmenu.addSubMenu(animenu, "Anime");
@@ -722,6 +720,8 @@ Trigger.onRightButtonUp (int x, int y)
 	fpsmenu.addCommand("Impulse Speed (120 FPS)", 412, v_fps == 5, 0);
 	fpsmenu.addCommand("Warp 6 (512 FPS)", 411, v_fps == 4, 0);
 	
+	ProcessMenuResult (visMenu.popAtMouse());
+	
 	delete visMenu;
 	delete specmenu;
 	delete oscmenu;
@@ -752,8 +752,6 @@ ProcessMenuResult (int a)
 	{
 		show_peaks = (show_peaks - 1) * (-1);
 		visualizer.setXmlParam("peaks", integerToString(show_peaks));
-		visualizershade.setXmlParam("peaks", integerToString(show_peaks));
-		visualizerpl.setXmlParam("peaks", integerToString(show_peaks));
 		setPrivateInt(getSkinName(), "Visualizer show Peaks2", show_peaks);
 	}
 
@@ -761,8 +759,6 @@ ProcessMenuResult (int a)
 	{
 		p_falloffspeed = a - 200;
 		visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
-		visualizershade.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
-		visualizerpl.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 		setPrivateInt(getSkinName(), "Visualizer peaks falloff2", p_falloffspeed);
 	}
 
@@ -770,8 +766,6 @@ ProcessMenuResult (int a)
 	{
 		a_falloffspeed = a - 300;
 		visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
-		visualizershade.setXmlParam("falloff", integerToString(a_falloffspeed));
-		visualizerpl.setXmlParam("falloff", integerToString(a_falloffspeed));
 		setPrivateInt(getSkinName(), "Visualizer analyzer falloff2", a_falloffspeed);
 	}
 
@@ -1361,37 +1355,31 @@ setVis (int mode)
 	setPrivateInt(getSkinName(), "Visualizer Mode2", mode);
 	if (mode == 0)
 	{
-		HideForVic.show();
 		visualizer.setMode(0);
 	}
 	else if (mode == 1)
 	{
 		visualizer.setXmlParam("bandwidth", "wide");
-		HideForVic.show();
 		visualizer.setMode(1);
 	}
 	else if (mode == 2)
 	{
 		visualizer.setXmlParam("bandwidth", "thin");
-		HideForVic.show();
 		visualizer.setMode(1);
 	}
 	else if (mode == 3)
 	{
 		visualizer.setXmlParam("oscstyle", "solid");
-		HideForVic.hide();
 		visualizer.setMode(2);
 	}
 	else if (mode == 4)
 	{
 		visualizer.setXmlParam("oscstyle", "dots");
-		HideForVic.hide();
 		visualizer.setMode(2);
 	}
 	else if (mode == 5)
 	{
 		visualizer.setXmlParam("oscstyle", "lines");
-		HideForVic.hide();
 		visualizer.setMode(2);
 	}
 	currentMode = mode;
