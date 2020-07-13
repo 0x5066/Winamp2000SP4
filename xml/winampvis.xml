@@ -4,6 +4,7 @@
 
 	<rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="0,0,0" filled="1"/>
 	<vis id="player.vis2" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" cursor="cur.normal"/>
+	<layer id="visgridimg" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2" ghost="1"/>
 	<layer id="player.vis.trigger2" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="none"/>
 	
 	<script file="scripts/winampvisualizer.maki"/>
