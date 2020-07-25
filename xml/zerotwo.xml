@@ -44,13 +44,17 @@
 
 </groupdef>
 
+<groupdef id="sunkenborder2">
+
+	<group id="02vis" x="2" y="2" h="288" w="524"/>
+	
+</groupdef>
 
 <container id="02" name="Zero Two Visualizer" default_visible="0">
 
-
-<layout id="normal" minimum_w="520" minimum_h="284" h="284" w="520" maximum_w="520" maximum_h="284">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" h="284" w="520" content="02vis"/>
-	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+<layout id="normal" minimum_w="524" minimum_h="288" h="288" w="524" maximum_w="524" maximum_h="288">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" h="288" w="524" content="sunkenborder2"/>
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
 	<sendparams target="player.button.mainmenu" alpha="0"/>
 	<layer x="6" y="5" image="apemediaplayer" ghost="1"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->

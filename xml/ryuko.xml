@@ -5,7 +5,7 @@
 
 </elements>
 
-<groupdef id="ryukovis" x="-2" y="-2">
+<groupdef id="ryukovis">
 
 	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="satsukivis_animatedlayer.bg" debug="1" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ryukovis_animatedlayer.bg" debug="1" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
@@ -124,13 +124,18 @@
 	<layer id="ryuko.vis.trigger" x="0" y="0" w="474" h="233" image="none" cursor="cur.normal"/>
 </groupdef>
 
+<groupdef id="sunkenborder">
+
+	<group id="ryukovis" x="2" y="2" h="265" w="486"/>
+	
+</groupdef>
 
 <container id="ryuko" name="Ryuko and Satsuki Visualizer" default_visible="0">
 
 
-<layout id="stupidassworkaround" minimum_w="482" minimum_h="261" h="261" w="482" maximum_w="482" maximum_h="261">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="482" h="261" content="ryukovis"/>
-	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
+<layout id="stupidassworkaround" minimum_w="486" minimum_h="265" h="265" w="486" maximum_w="486" maximum_h="265">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="486" h="265" content="sunkenborder"/>
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
 	<sendparams target="player.button.mainmenu" alpha="0"/>
 	<layer x="6" y="5" image="revocsmediaplayer" ghost="1"/>
   <!--sendparams target="titlebar.title.bg.group" w="170"/-->

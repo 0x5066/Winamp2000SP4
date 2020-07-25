@@ -125,7 +125,7 @@
 	<!-- player-normal -->
 
   <bitmap id="visgrid" file="images/a_grid.png" x="0" y="0" w="142" h="32"/>
-  <bitmap id="visgrid2" file="images/a_grid2.png" x="0" y="0" w="72" h="16"/>
+  <bitmap id="visgrid2" file="images/a_grid2.png" x="0" y="0" w="144" h="16"/>
 
   <bitmap id="links.normal" file="images/window/windows-background-main.png" x="323" y="365" w="15" h="30" gammagroup="titlebarstripes"/>
   <bitmap id="links.hover" file="images/window/windows-background-main.png" x="339" y="365" w="15" h="30" gammagroup="titlebarstripes"/>

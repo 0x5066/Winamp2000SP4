@@ -1,13 +1,23 @@
 <container id="winamp.albumart" name="Album Art" default_visible="1">
 
 <groupdef id="albumart.group">
+
+	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="wasabi.list.background" filled="1"/>
+
 	<AlbumArt id="waaa" fitparent="1" move="1"/>
 
-	<script file="scripts/albumart.maki" param="waaa" />
+	<script file="scripts/albumart.maki" param="waaa"/>
+</groupdef>
+
+<groupdef id="sunkenborder3">
+
+	<group id="albumart.group" x="2" y="2" w="-4" h="-4" relatw="1" relath="1"/>
+	
 </groupdef>
 
 <layout id="normal" minimum_w="212" minimum_h="242" h="242" w="211" appbar="top|bottom|left|right">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="albumart.group" />
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="sunkenborder3" />
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
   <sendparams target="titlebar.title.bg.group" w="170"/>
 	
 </layout>
