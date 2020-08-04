@@ -616,9 +616,12 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorosc5", "26,70,192");
 
 		}
-		else if (v_color == 20) //unused
+		else if (v_color == 20)
 		{
-
+			visualizer.setXmlParam("colorallbands", "59,51,163");
+			visualizer.setXmlParam("colorbandpeak", "122,115,219");	
+			
+			setColorosc("122,115,219");
 		}
 		else if (v_color == 21)
 		{
@@ -757,6 +760,7 @@ Trigger.onRightButtonUp (int x, int y)
 	winmenu.addCommand("Big Bento Modern", 507, v_color == 7, 0);	
 	
 	colmenu.addCommand("CHIPSPEECH", 519, v_color == 19, 0);
+	colmenu.addCommand("Commodore 64", 520, v_color == 20, 0);
 	colmenu.addCommand("Microsoft Sam (miss_shinku)", 522, v_color == 22, 0);
 	colmenu.addCommand("Midori Mizuno", 515, v_color == 15, 0);
 	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
@@ -1343,9 +1347,12 @@ ProcessMenuResult (int a)
 			visualizer.setXmlParam("colorosc5", "26,70,192");
 
 		}
-		else if (v_color == 20) //unused
+		else if (v_color == 20)
 		{
-
+			visualizer.setXmlParam("colorallbands", "59,51,163");
+			visualizer.setXmlParam("colorbandpeak", "122,115,219");	
+			
+			setColorosc("122,115,219");
 		}
 		else if (v_color == 21)
 		{
