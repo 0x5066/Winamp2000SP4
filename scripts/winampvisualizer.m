@@ -18,7 +18,7 @@ Global Container containerPL;
 Global Layout layoutPL, layoutMainNormal, layoutMainShade;
 Global Group NormalGroupMain, NormalGroupDisplay, ShadeGroupMain, ShadeGroupDisplay;
 Global Vis visualizer, visualizershade, visualizerpl;
-Global Layer visgrid;
+Global Layer visgrid_thick, visgrid_thin, visgrid_car;
 Global Button OAIDUBtnUE1, OAIDUBtnUE2, OAIDUBtnUE3;
 
 Global PopUpMenu visMenu;
@@ -34,9 +34,10 @@ Global PopUpMenu winmenu;
 Global PopUpMenu animenu;
 Global PopUpMenu gamemenu;
 Global PopUpMenu plusmenu;
+Global PopUpMenu gridmenu;
 
-Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color;
-Global Boolean show_peaks, grid;
+Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color, grid;
+Global Boolean show_peaks;
 Global layer Trigger, HideForVic, TriggerBlocker, TriggerBlockerShade;
 
 
@@ -48,12 +49,16 @@ System.onScriptLoaded()
 	NormalGroupMain = layoutMainNormal.findObject("i_hate_maki_sometimes");
 
 	visualizer = NormalGroupMain.findObject("player.vis2");
-	visgrid = NormalGroupMain.findObject("visgridimg");
+	visgrid_thick = NormalGroupMain.findObject("visgridimg.thick");
+	visgrid_thin = NormalGroupMain.findObject("visgridimg.thin");
+	visgrid_car = NormalGroupMain.findObject("visgridimg.car");
 	
 	Trigger = NormalGroupMain.findObject("player.vis.trigger2");
 
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
-	visgrid.setXmlParam("visible", integerToString(grid));
+	visgrid_thick.setXmlParam("visible", integerToString(grid));
+	visgrid_thin.setXmlParam("visible", integerToString(grid));
+	visgrid_car.setXmlParam("visible", integerToString(grid));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
 	visualizer.setXmlParam("fps", integerToString(v_fps));
@@ -96,7 +101,9 @@ refreshVisSettings ()
 	v_color = getPrivateInt(getSkinName(), "Visualizer Color themes2", 0);
 
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
-	visgrid.setXmlParam("visible", integerToString(grid));
+	visgrid_thick.setXmlParam("visible", integerToString(grid));
+	visgrid_thin.setXmlParam("visible", integerToString(grid));
+	visgrid_car.setXmlParam("visible", integerToString(grid));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
 	visualizer.setXmlParam("fps", integerToString(v_fps));
@@ -597,6 +604,42 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorosc5", "1,17,130");
 
 		}
+		if (grid == 0)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 1)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 2)
+		{
+			visgrid_thick.setXmlParam("visible", "1");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 3)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "1");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 4)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "1");
+		}
+		else if (v_fps == 5)
+		{
+			visgrid_thick.setXmlParam("visible", "1");
+			visgrid_thin.setXmlParam("visible", "1");
+			visgrid_car.setXmlParam("visible", "1");
+		}
 	setVis (currentMode);
 }
 
@@ -630,6 +673,7 @@ Trigger.onRightButtonUp (int x, int y)
 	animenu = new PopUpMenu;
 	gamemenu = new PopUpMenu;
 	plusmenu = new PopUpMenu;
+	gridmenu = new PopUpMenu;
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
@@ -683,7 +727,15 @@ Trigger.onRightButtonUp (int x, int y)
 	visMenu.addCommand("Options:", 102, 0, 1);
 
 	visMenu.addCommand("Show Peaks", 101, show_peaks == 1, 0);
-	visMenu.addCommand("Show Grid", 103, grid == 1, 0);
+	
+	visMenu.addSubMenu(gridmenu, "Grid Options:");
+	
+	gridmenu.addCommand("No Grid", 600, grid == 0, 0);
+	gridmenu.addCommand("Thick Grid", 602, grid == 2, 0);
+	gridmenu.addCommand("Thin Grid", 603, grid == 3, 0);
+	gridmenu.addCommand("Car Display", 604, grid == 4, 0);
+	gridmenu.addCommand("All of the above", 605, grid == 5, 0);
+	
 	pksmenu.addCommand("Slower", 200, p_falloffspeed == 0, 0);
 	pksmenu.addCommand("Slow", 201, p_falloffspeed == 1, 0);
 	pksmenu.addCommand("Moderate", 202, p_falloffspeed == 2, 0);
@@ -727,6 +779,7 @@ Trigger.onRightButtonUp (int x, int y)
 	delete winmenu;
 	delete animenu;
 	delete gamemenu;
+	delete gridmenu;
 
 	complete;	
 }
@@ -746,13 +799,6 @@ ProcessMenuResult (int a)
 		show_peaks = (show_peaks - 1) * (-1);
 		visualizer.setXmlParam("peaks", integerToString(show_peaks));
 		setPrivateInt(getSkinName(), "Visualizer show Peaks2", show_peaks);
-	}
-
-	else if (a == 103)
-	{
-		grid = (grid - 1) * (-1);
-		visgrid.setXmlParam("visible", integerToString(grid));
-		setPrivateInt(getSkinName(), "Visualizer show Grid2", grid);
 	}
 
 	else if (a >= 200 && a <= 204)
@@ -1257,7 +1303,47 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes2", v_color);
 	}
-
+	else if (a >= 600 && a <= 605)
+	{
+		grid = a - 600;
+		if (grid == 0)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 1)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 2)
+		{
+			visgrid_thick.setXmlParam("visible", "1");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 3)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "1");
+			visgrid_car.setXmlParam("visible", "0");
+		}
+		else if (grid == 4)
+		{
+			visgrid_thick.setXmlParam("visible", "0");
+			visgrid_thin.setXmlParam("visible", "0");
+			visgrid_car.setXmlParam("visible", "1");
+		}
+		else if (grid == 5)
+		{
+			visgrid_thick.setXmlParam("visible", "1");
+			visgrid_thin.setXmlParam("visible", "1");
+			visgrid_car.setXmlParam("visible", "1");
+		}
+		setPrivateInt(getSkinName(), "Visualizer show Grid2", grid);
+	}
 }
 
 //sets every ColorBand in a range to a color
