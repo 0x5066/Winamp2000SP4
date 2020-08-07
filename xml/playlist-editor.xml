@@ -151,16 +151,28 @@
 
 	<sendparams target="wasabi.frame.layout.base.bg" y="23" h="-3" alpha="255"/> <!-- PL window specific -->
 	<sendparams target="mousetrap" dblClickAction="SWITCH;shade"/>
+	
+    <togglebutton id="pledit.button.add.menu" action="PE_ADD" x="4" y="107" w="1" h="1" image="none"/>
+    <button id="pledit.button.add.gfx" x="4" y="23" rectrgn="1" image="newadd.static" hoverimage="newadd.hover" downimage="newadd.pressed" tooltip="Add Files to Playlist" cursor="cur.normal"/>
+    <script file="scripts\sc_mouseredir.maki" param="pledit.button.add.gfx;pledit.button.add.menu"/>
 
-	<button id="pledit.button.add" action="PE_ADD" x="4" y="23" rectrgn="1" image="newadd.static" hoverimage="newadd.hover" downimage="newadd.pressed" tooltip="Add Files to Playlist" cursor="cur.normal"/>
+    <togglebutton id="pledit.button.rem.menu" action="PE_REM" x="35" y="127" w="1" h="1" image="none"/>
+    <button id="pledit.button.rem.gfx" x="35" y="23" rectrgn="1" image="newremove.static" hoverimage="newremove.hover" downimage="newremove.pressed" tooltip="Remove Files from Playlist" cursor="cur.normal"/>
+    <script file="scripts\sc_mouseredir.maki" param="pledit.button.rem.gfx;pledit.button.rem.menu"/>
 
-	<button id="pledit.button.rem" action="PE_REM" x="35" y="23" rectrgn="1" image="newremove.static" hoverimage="newremove.hover" downimage="newremove.pressed" tooltip="Remove Files from Playlist" cursor="cur.normal"/>
+    <togglebutton id="pledit.button.sel.menu" action="PE_SEL" x="86" y="107" w="1" h="1" image="none"/>
+    <button id="pledit.button.sel.gfx" x="86" y="23" rectrgn="1" image="newselect.static" hoverimage="newselect.hover" downimage="newselect.pressed" tooltip="Select Files in Playlist" cursor="cur.normal"/>
+    <script file="scripts\sc_mouseredir.maki" param="pledit.button.sel.gfx;pledit.button.sel.menu"/>
+	
+	<togglebutton id="pledit.button.misc.menu" action="PE_MISC" x="127" y="107" w="1" h="1" image="none"/>
+    <button id="pledit.button.misc.gfx" x="127" y="23" rectrgn="1" image="newmisc.static" hoverimage="newmisc.hover" downimage="newmisc.pressed" tooltip="Misc Actions" cursor="cur.normal"/>
+    <script file="scripts\sc_mouseredir.maki" param="pledit.button.misc.gfx;pledit.button.misc.menu"/>
 
-	<button id="pledit.button.sel" action="PE_SEL" x="86" y="23" rectrgn="1" image="newselect.static" hoverimage="newselect.hover" downimage="newselect.pressed" tooltip="Select Files in Playlist" cursor="cur.normal"/>
-
-	<button id="pledit.button.misc" action="PE_MISC" x="127" y="23" rectrgn="1" image="newmisc.static" hoverimage="newmisc.hover" downimage="newmisc.pressed" tooltip="Misc Actions" cursor="cur.normal"/>
-
-	<button id="pledit.button.list" action="PE_LIST" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
+	<!--button id="pledit.button.list" action="PE_LIST" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/-->
+	
+	<togglebutton id="pledit.button.list.menu" action="PE_LIST" x="494" y="174" w="1" h="1" image="none"/>
+    <button id="pledit.button.list.gfx" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
+    <script file="scripts\sc_mouseredir.maki" param="pledit.button.list.gfx;pledit.button.list.menu"/>
 	
 	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers2"
 	colorallbands="128,128,128"
