@@ -35,6 +35,7 @@ Global PopUpMenu animenu;
 Global PopUpMenu gamemenu;
 Global PopUpMenu plusmenu;
 Global PopUpMenu gridmenu;
+Global PopUpMenu waxpmenu;
 
 Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color, grid;
 Global Boolean show_peaks;
@@ -607,6 +608,58 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorosc5", "1,17,130");
 
 		}
+		if(v_color == 23){
+			//luna
+			
+			visualizer.setXmlParam("colorallbands", "49,106,197");
+			visualizer.setXmlParam("colorbandpeak", "49,106,197");
+			setColorOsc("49,106,197");
+
+		}
+		else if(v_color == 24){
+			//olive green
+			
+			visualizer.setXmlParam("colorallbands", "147,160,112");
+			visualizer.setXmlParam("colorbandpeak", "153,84,10");
+			setColorOsc("147,160,112");
+		}
+		else if(v_color == 25){
+			//silver
+			
+			visualizer.setXmlParam("colorallbands", "178,180,191");
+			visualizer.setXmlParam("colorbandpeak", "178,180,191");
+			setColorOsc("178,180,191");
+		}
+		else if(v_color == 26){
+			//luna - gradient
+
+			setColorBandsGradient(3,84,227,4,4,2);
+
+			visualizer.setXmlParam("colorbandpeak", "61,149,255");
+			setColorOscOdd("3,84,227");
+			setColorOscEven("61,149,255");
+
+		}
+		else if(v_color == 27){
+			//olive green - gradient
+
+			setColorBandsGradient(165,179,125,4,4,4);
+
+			visualizer.setXmlParam("colorbandpeak", "231,240,197");
+			setColorOscOdd("165,179,125");
+			setColorOscEven("231,240,197");
+
+		}
+		else if(v_color == 28){
+			//silver - gradient
+
+			setColorBandsGradient(165,164,190,6,6,4);
+
+			visualizer.setXmlParam("colorbandpeak", "252,252,252");
+			setColorOscOdd("165,164,190");
+			setColorOscEven("252,252,252");
+			
+		}
 		if (grid == 0)
 		{
 			visgrid_thick.setXmlParam("visible", "0");
@@ -677,6 +730,7 @@ Trigger.onRightButtonUp (int x, int y)
 	gamemenu = new PopUpMenu;
 	plusmenu = new PopUpMenu;
 	gridmenu = new PopUpMenu;
+	waxpmenu = new PopUpMenu;
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
@@ -706,8 +760,16 @@ Trigger.onRightButtonUp (int x, int y)
 	colmenu.addSubMenu(winmenu, "Winamp Skins");
 	winmenu.addCommand("Winamp Classic", 500, v_color == 0, 0);
 	winmenu.addCommand("Winamp Modern", 505, v_color == 5, 0);
+	winmenu.AddSubMenu(waxpmenu, "Winamp XP");
 	winmenu.addCommand("Bento", 506, v_color == 6, 0);
 	winmenu.addCommand("Big Bento Modern", 507, v_color == 7, 0);	
+
+	waxpmenu.addCommand("Luna", 523, v_color == 23, 0);
+	waxpmenu.addCommand("Luna (Gradient)", 526, v_color == 26, 0);
+	waxpmenu.addCommand("Olive Green", 524, v_color == 24, 0);
+	waxpmenu.addCommand("Olive Green (Gradient)", 527, v_color == 27, 0);
+	waxpmenu.addCommand("Silver", 525, v_color == 25, 0);
+	waxpmenu.addCommand("Silver (Gradient)", 528, v_color == 28, 0);
 	
 	colmenu.addCommand("CHIPSPEECH", 519, v_color == 19, 0);
 	colmenu.addCommand("Commodore 64", 520, v_color == 20, 0);
@@ -784,6 +846,7 @@ Trigger.onRightButtonUp (int x, int y)
 	delete animenu;
 	delete gamemenu;
 	delete gridmenu;
+	delete waxpmenu;
 
 	complete;	
 }
@@ -870,7 +933,7 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS2", v_fps);
 	}
-	else if (a >= 500 && a <= 522)
+	else if (a >= 500 && a <= 528)
 	{
 		v_color = a - 500;
 		if (v_color == 0)
@@ -1307,6 +1370,58 @@ ProcessMenuResult (int a)
 			visualizer.setXmlParam("colorosc4", "46,73,113");
 			visualizer.setXmlParam("colorosc5", "1,17,130");
 
+		}
+				if(v_color == 23){
+			//luna
+			
+			visualizer.setXmlParam("colorallbands", "49,106,197");
+			visualizer.setXmlParam("colorbandpeak", "49,106,197");
+			setColorOsc("49,106,197");
+
+		}
+		else if(v_color == 24){
+			//olive green
+			
+			visualizer.setXmlParam("colorallbands", "147,160,112");
+			visualizer.setXmlParam("colorbandpeak", "153,84,10");
+			setColorOsc("147,160,112");
+		}
+		else if(v_color == 25){
+			//silver
+			
+			visualizer.setXmlParam("colorallbands", "178,180,191");
+			visualizer.setXmlParam("colorbandpeak", "178,180,191");
+			setColorOsc("178,180,191");
+		}
+		else if(v_color == 26){
+			//luna - gradient
+
+			setColorBandsGradient(3,84,227,4,4,2);
+
+			visualizer.setXmlParam("colorbandpeak", "61,149,255");
+			setColorOscOdd("3,84,227");
+			setColorOscEven("61,149,255");
+
+		}
+		else if(v_color == 27){
+			//olive green - gradient
+
+			setColorBandsGradient(165,179,125,4,4,4);
+
+			visualizer.setXmlParam("colorbandpeak", "231,240,197");
+			setColorOscOdd("165,179,125");
+			setColorOscEven("231,240,197");
+
+		}
+		else if(v_color == 28){
+			//silver - gradient
+
+			setColorBandsGradient(165,164,190,6,6,4);
+
+			visualizer.setXmlParam("colorbandpeak", "252,252,252");
+			setColorOscOdd("165,164,190");
+			setColorOscEven("252,252,252");
+			
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes2", v_color);
 	}
