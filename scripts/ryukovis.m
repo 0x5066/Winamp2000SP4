@@ -1,8 +1,8 @@
-#include <lib/std.mi>
+#include lib/std.mi
 
 Global Group frameGroup;
 Global AnimatedLayer ragyoHairL, ragyoHairR;
-Global int totalFramesL, totalFramesR, lastBeatL, lastBeatR;
+Global int totalFramesL, totalFramesR, lastBeatL, lastBeatR, lastframe;
 Global Timer beatTimer;
 
 System.onScriptLoaded() {
@@ -24,8 +24,8 @@ System.onScriptUnloading() {
 }
 
 beatTimer.onTimer() {
-  double beatValueL = System.getLeftVuMeter() / 255;
-  double beatValueR = System.getRightVuMeter() / 255;
+  double beatValueL = System.getVisBand(0, 1) / 255;
+  double beatValueR = System.getVisBand(0, 2) / 255;
 
   int ragyoFrameL = beatValueL * (totalFramesL + 1);
   int ragyoFrameR = beatValueR * (totalFramesR + 1);
