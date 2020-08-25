@@ -24,8 +24,8 @@ System.onScriptUnloading() {
 }
 
 beatTimer.onTimer() {
-  double beatValueL = System.getVisBand(0, 1) / 255;
-  double beatValueR = System.getVisBand(0, 2) / 255;
+  double beatValueL = System.getVisBand(0, 0) / 255;
+  double beatValueR = System.getVisBand(0, 0) / 255;
 
   int ragyoFrameL = beatValueL * (totalFramesL + 1);
   int ragyoFrameR = beatValueR * (totalFramesR + 1);
