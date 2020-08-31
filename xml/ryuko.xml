@@ -7,8 +7,8 @@
 
 <groupdef id="ryukovis">
 
-	<Animatedlayer id="ragyovis_hair.animatedlayerL" image="satsukivis_animatedlayer.bg" debug="1" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
-	<Animatedlayer id="ragyovis_hair.animatedlayerR" image="ryukovis_animatedlayer.bg" debug="1" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="leftVuMeter" image="satsukivis_animatedlayer.bg" debug="1" x="0" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="0"/>
+	<Animatedlayer id="rightVuMeter" image="ryukovis_animatedlayer.bg" debug="1" x="237" y="0" framewidth="237" frameheight="233" start="0" end="21" autoplay="0" autoreplay="0" ghost="1"/>
 	<vis id="bottomright" x="237" y="116" w="237" h="117" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="75" flipv="1"
 	ColorBand1="255,4,55"
     ColorBand2="242,5,55"
@@ -62,7 +62,8 @@
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="thin"
-	peaks="1"/>
+	peaks="1"
+	ghost="1"/>
 	
 	<vis id="topright" x="237" y="0" w="237" h="116" alpha="100" cursor="cur.normal" gammagroup="visualizers" fps="75"
 	ColorBand1="255,4,55"
@@ -117,11 +118,12 @@
 	peakfalloff="0"
 	falloff="4"
 	bandwidth="thin"
-	peaks="1"/>
-	<script id="ragyovis.script" file="scripts\ryukovis.maki"/>
+	peaks="1"
+	ghost="1"/>
+	<script id="ragyovis.script" file="scripts\meters.maki"/>
 	<script file="scripts\ryukovishelper.maki"/>
-	
-	<layer id="ryuko.vis.trigger" x="0" y="0" w="474" h="233" image="none" cursor="cur.normal"/>
+
+	<layer id="ryuko.vis.trigger" x="237" y="0" w="237" h="233" image="none" cursor="cur.normal"/>
 </groupdef>
 
 <groupdef id="sunkenborder">
