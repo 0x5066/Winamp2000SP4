@@ -33,8 +33,8 @@ System.onScriptUnloading() {
 }
 
 Refresh.onTimer() {
-  level1 += (getVisBand(0, 1) - level1) / DivL1;
-	level2 += (getVisBand(0, 1) - level2) / DivR1;
+  level1 += (getVisBand(0, 2) - level1) / DivL1;
+	level2 += (getVisBand(0, 2) - level2) / DivR1;
 	int frame1 = level1/DivL2*LeftMeter.getLength();
 	int frame2 = level2/DivR2*RightMeter.getLength();
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {

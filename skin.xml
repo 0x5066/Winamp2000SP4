@@ -50,6 +50,7 @@
 	<include file="xml/ryuko.xml"/>
 	<include file="xml/thinger.xml"/>
 	<include file="xml/winampvis.xml"/>
+	<include file="xml/cat.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
