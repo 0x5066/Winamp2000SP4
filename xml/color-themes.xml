@@ -839,30 +839,6 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="1152,3280,-4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="CHIPSPEECH">
-  <gammagroup id="3D Objects" value="-3418,-2096,-580" gray="0" boost="0" />
-  <gammagroup id="3D Objects-Text" value="-548,3300,4096" gray="0" boost="0" />
-  <gammagroup id="Window" value="-4096,-3466,-2670" gray="0" boost="0" />
-  <gammagroup id="Window-text" value="-382,3399,4096" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 1" value="-3354,-2096,1999" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 2" value="-3741,2418,3773" gray="0" boost="0" />
-  <gammagroup id="Selected Items-Text" value="2404,3664,4096" gray="0" boost="0" />
-  <gammagroup id="Selected Items" value="-2128,0,1451" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 1" value="-3966,-3289,-2354" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 2" value="-3741,-2805,-1580" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar-Text" value="2868,3200,4096" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar-Text" value="-2173,-2007,-1244" gray="0" boost="0" />
-  <gammagroup id="Visualizers" value="-747,-150,4096" gray="2" boost="0" />
-  <gammagroup id="Visualizers2" value="-3068,-614,1840" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer Background" value="-4096,-3301,-2737" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer" value="-1775,-879,878" gray="2" boost="0" />
-  <gammagroup id="Half-Life 2 Digits" value="-4096,-415,4096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Labels" value="-4096,-2239,2537" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-3599,-1543" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Crosshair" value="-1874,281,4096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Subtitle Text" value="-4096,1276,4096" gray="0" boost="0" />
-</gammaset>
-
 <gammaset id="Commodore 64">
   <gammagroup id="3D Objects" value="-2193,-2451,1161" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-161,-387,2967" gray="0" boost="0" />
