@@ -1,0 +1,10 @@
+<container id="Big Clock" name="Big Clock" dynamic="1" component="guid:{DF6F9C93-155C-4d01-BF5A-17612EDBFC4C}" default_w="354">
+	
+<layout id="normal" background="component.basetexture" desktopalpha="0" minimum_h="48" minimum_w="88" appbar="top|bottom|left|right">
+	<Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+    <sendparams target="componentname" default="Big Clock" alpha="0"/>
+		<sendparams target="wasabi.frame.layout.base.bg" h="40" alpha="255" /> <!-- PL window specific -->
+	<component x="6" y="26" w="-12" h="-32" relatw="1" relath="1" noshowcmdbar="1" autoopen="1" autoclose="1" param="guid:{DF6F9C93-155C-4d01-BF5A-17612EDBFC4C}" />
+</layout>
+
+</container>
