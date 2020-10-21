@@ -1,3 +1,14 @@
+# v1.3.2-Lite: It's so great we skipped one version revision!
+
+What's New?
+
+Not a whole bunch, this is pretty much a stripped down version of the skin, which now includes a few features from master and removes a few things as well, see if you can spot 'em.
+
+- No extra visualizers
+- Beta Playlist Editor
+- A few new Winamp Visualizer color themes
+- The Winamp Visualizer in its own window (carrying the same set of color visualizers the Main Window has)
+
 # v1.3: Colorful Update Part 2
 What's New?
 
