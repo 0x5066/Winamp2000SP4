@@ -11,7 +11,7 @@ Global Timer Refresh;
 Global Text debugtext, debugtext2;
 Global int ONOFF, Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10, Level11, Level12, DivL1, DivL2, DivL3, DivL4, DivL5, DivL6, DivL7, DivL8, DivL9, DivL10, DivL11, DivL12, DivR1, DivR2, DivR3, DivR4, DivR5, DivR6, DivR7, DivR8, DivR9, DivR10, DivR11, DivR12;
 
-#define sndlevel 50
+#define sndlevel 5
 
 Function togg();
 
@@ -104,7 +104,7 @@ Refresh.onTimer() {
 	int frame10 = level10/DivR10* (stringToInteger(bar10.getXmlParam("h"))); //sensitivity
 	int frame11 = level11/DivL12* (stringToInteger(bar11.getXmlParam("h"))); //sensitivity
 	int frame12 = level12/DivR12* (stringToInteger(bar12.getXmlParam("h"))); //sensitivity
-/*  debugtext.setXmlParam("text", 
+  debugtext.setXmlParam("text", 
     "level11: " +integerToString(level11)+ 
     ", level12: " +integerToString(level12)+
     ", frame11: " +integerToString(frame11)+
@@ -117,30 +117,29 @@ Refresh.onTimer() {
     ", bar12 h: " +bar12.getXmlParam("h")+""
   );
   
-  */
   if (frame1 < LeftMeter.getXmlParam("h") && frame2 < RightMeter.getXmlParam("h")) {
-    LeftMeter.setXmlParam("h", integerToString(frame1+sndlevel));
-    RightMeter.setXmlParam("h", integerToString(frame2+sndlevel));
+    LeftMeter.setXmlParam("h", integerToString(level1+sndlevel));
+    RightMeter.setXmlParam("h", integerToString(level2+sndlevel));
 	}
 	if (frame3 < bar3.getXmlParam("h") && frame4 < bar4.getXmlParam("h")) {
-    bar3.setXmlParam("h", integerToString(frame3+sndlevel));
-    bar4.setXmlParam("h", integerToString(frame4+sndlevel));
+    bar3.setXmlParam("h", integerToString(level3+sndlevel));
+    bar4.setXmlParam("h", integerToString(level4+sndlevel));
 	}
 	if (frame5 < bar5.getXmlParam("h") && frame6 < bar6.getXmlParam("h")) {
-    bar5.setXmlParam("h", integerToString(frame5+sndlevel));
-    bar6.setXmlParam("h", integerToString(frame6+sndlevel));
+    bar5.setXmlParam("h", integerToString(level5+sndlevel));
+    bar6.setXmlParam("h", integerToString(level6+sndlevel));
 	}
 	if (frame7 < bar7.getXmlParam("h") && frame8 < bar8.getXmlParam("h")) {
-    bar7.setXmlParam("h", integerToString(frame7+sndlevel));
-    bar8.setXmlParam("h", integerToString(frame8+sndlevel));
+    bar7.setXmlParam("h", integerToString(level7+sndlevel));
+    bar8.setXmlParam("h", integerToString(level8+sndlevel));
 	}
 	if (frame9 < bar9.getXmlParam("h") && frame10 < bar10.getXmlParam("h")) {
-    bar9.setXmlParam("h", integerToString(frame9+sndlevel));
-    bar10.setXmlParam("h", integerToString(frame10+sndlevel));
+    bar9.setXmlParam("h", integerToString(level9+sndlevel));
+    bar10.setXmlParam("h", integerToString(level10+sndlevel));
 	}
 	if (frame11 < bar11.getXmlParam("h") && frame12 < bar12.getXmlParam("h")) {
-    bar11.setXmlParam("h", integerToString(frame11+sndlevel));
-    bar12.setXmlParam("h", integerToString(frame12+sndlevel));
+    bar11.setXmlParam("h", integerToString(level11+sndlevel));
+    bar12.setXmlParam("h", integerToString(level12+sndlevel));
 	}
 }
 

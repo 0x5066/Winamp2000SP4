@@ -1,49 +1,48 @@
 ﻿<groupdef id="skin.about.group2" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
 
 	<layer id="ragyovis_hair.animatedlayerL"
-		x="20" y="40" w="2" h="1" image="barthing"/>
+		x="20" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="ragyovis_hair.animatedlayerR"
-		x="23" y="40" w="2" h="1" image="barthing"/>
+		x="23" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar3"
-		x="26" y="40" w="2" h="1" image="barthing"/>
+		x="26" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar4"
-		x="29" y="40" w="2" h="1" image="barthing"/>
+		x="29" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar5"
-		x="32" y="40" w="2" h="1" image="barthing"/>
+		x="32" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar6"
-		x="35" y="40" w="2" h="1" image="barthing"/>
+		x="35" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar7"
-		x="38" y="40" w="2" h="1" image="barthing"/>
+		x="38" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar8"
-		x="41" y="40" w="2" h="1" image="barthing"/>
+		x="41" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar9"
-		x="44" y="40" w="2" h="1" image="barthing"/>
+		x="44" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar10"
-		x="47" y="40" w="2" h="1" image="barthing"/>
+		x="47" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar11"
-		x="50" y="40" w="2" h="1" image="barthing"/>
+		x="50" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar12"
-		x="53" y="40" w="2" h="1" image="barthing"/>
+		x="53" y="0" w="2" h="1" image="barthing"/>
 	
 			<script file="scripts\meters3.maki"/>
-<!-- 
+ 
 	<text id="debug_stuff" x="10" y="65" text="it begins" relatw="1" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.active" bold="1" antialias="0" ghost="1"/>
 
 	<text id="more_debug_stuff" x="10" y="80" text="god help me" relatw="1" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.active" bold="1" antialias="0" ghost="1"/>
-	-->
 	
 </groupdef>
 
