@@ -92,18 +92,18 @@ Refresh.onTimer() {
 	level10 += 	(getVisBand(0, 9) - level10) / DivR9; //smoothness
 	level11 += 	(getVisBand(0, 10) - level11) / DivL11; //smoothness
 	level12 += 	(getVisBand(0, 11) - level12) / DivR11; //smoothness
-	int frame1 = level1/DivL2* (stringToInteger(LeftMeter.getXmlParam("h"))); //sensitivity
-	int frame2 = level2/DivR2* (stringToInteger(RightMeter.getXmlParam("h"))); //sensitivity
-	int frame3 = level3/DivL4* (stringToInteger(bar3.getXmlParam("h"))); //sensitivity
-	int frame4 = level4/DivR4* (stringToInteger(bar4.getXmlParam("h"))); //sensitivity
-	int frame5 = level5/DivL6* (stringToInteger(bar5.getXmlParam("h"))); //sensitivity
-	int frame6 = level6/DivR6* (stringToInteger(bar6.getXmlParam("h"))); //sensitivity
-	int frame7 = level7/DivL8* (stringToInteger(bar7.getXmlParam("h"))); //sensitivity
-	int frame8 = level8/DivR8* (stringToInteger(bar8.getXmlParam("h"))); //sensitivity
-	int frame9 = level9/DivL10* (stringToInteger(bar9.getXmlParam("h"))); //sensitivity
-	int frame10 = level10/DivR10* (stringToInteger(bar10.getXmlParam("h"))); //sensitivity
-	int frame11 = level11/DivL12* (stringToInteger(bar11.getXmlParam("h"))); //sensitivity
-	int frame12 = level12/DivR12* (stringToInteger(bar12.getXmlParam("h"))); //sensitivity
+	int frame1 = level1/300* (stringToInteger(LeftMeter.getXmlParam("h"))); //sensitivity
+	int frame2 = level2/300* (stringToInteger(RightMeter.getXmlParam("h"))); //sensitivity
+	int frame3 = level3/300* (stringToInteger(bar3.getXmlParam("h"))); //sensitivity
+	int frame4 = level4/300* (stringToInteger(bar4.getXmlParam("h"))); //sensitivity
+	int frame5 = level5/300* (stringToInteger(bar5.getXmlParam("h"))); //sensitivity
+	int frame6 = level6/300* (stringToInteger(bar6.getXmlParam("h"))); //sensitivity
+	int frame7 = level7/300* (stringToInteger(bar7.getXmlParam("h"))); //sensitivity
+	int frame8 = level8/300* (stringToInteger(bar8.getXmlParam("h"))); //sensitivity
+	int frame9 = level9/300* (stringToInteger(bar9.getXmlParam("h"))); //sensitivity
+	int frame10 = level10/300* (stringToInteger(bar10.getXmlParam("h"))); //sensitivity
+	int frame11 = level11/300* (stringToInteger(bar11.getXmlParam("h"))); //sensitivity
+	int frame12 = level12/300* (stringToInteger(bar12.getXmlParam("h"))); //sensitivity
   debugtext.setXmlParam("text", 
     "level11: " +integerToString(level11)+ 
     ", level12: " +integerToString(level12)+
