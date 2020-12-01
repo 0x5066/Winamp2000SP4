@@ -8,6 +8,8 @@
   
   <bitmap id="oldwin.vu" file="images\old_vu.png" x="0" y="0" w="15" h="760"/>
   
+  <bitmap id="barthing" file="images\bth.png"/>
+  
   <!-- additional window elements -->
 
 	<bitmap id="wnd.topleft2" file="images\window\windowelement.png" x="0" y="0" w="6" h="6" gammagroup="3D Objects"/>

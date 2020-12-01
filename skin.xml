@@ -51,6 +51,7 @@
 	<include file="xml/thinger.xml"/>
 	<include file="xml/winampvis.xml"/>
 	<include file="xml/cat.xml"/>
+	<include file="xml/gradient.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>

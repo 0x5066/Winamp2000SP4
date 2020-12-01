@@ -1,20 +1,55 @@
-﻿<groupdef id="skin.about.group" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
+﻿<groupdef id="skin.about.group2" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
 
-	<gradient id="wasabi.titlebar.active1"
-		x="0" y="0" w="0" h="18" 
-		relatw="1"
-		points="0.0=128,128,128,255;1.0=128,128,128,255" gammagroup="Active Title Bar Color 1"/>
+	<layer id="ragyovis_hair.animatedlayerL"
+		x="20" y="40" w="2" h="1" image="barthing"/>
 
-	<gradient id="wasabi.titlebar.active2"
-		x="0" y="0" w="0" h="18" 
-		relatw="1"
-		points="0.0=128,128,128,0;1.0=128,128,128,255" gammagroup="Active Title Bar Color 2"/>
+	<layer id="ragyovis_hair.animatedlayerR"
+		x="23" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar3"
+		x="26" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar4"
+		x="29" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar5"
+		x="32" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar6"
+		x="35" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar7"
+		x="38" y="40" w="2" h="1" image="barthing"/>
+
+	<layer id="bar8"
+		x="41" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar9"
+		x="44" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar10"
+		x="47" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar11"
+		x="50" y="40" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar12"
+		x="53" y="40" w="2" h="1" image="barthing"/>
+	
+			<script file="scripts\meters3.maki"/>
+<!-- 
+	<text id="debug_stuff" x="10" y="65" text="it begins" relatw="1" h="18" font="titlebar" fontsize="15"
+    color="wasabi.text.active" bold="1" antialias="0" ghost="1"/>
+
+	<text id="more_debug_stuff" x="10" y="80" text="god help me" relatw="1" h="18" font="titlebar" fontsize="15"
+    color="wasabi.text.active" bold="1" antialias="0" ghost="1"/>
+	-->
 	
 </groupdef>
 
 <container id="gra" name="Gradient test" default_visible="0">
 	<layout id="normal" minimum_w="388" minimum_h="349" h="349" w="388" maximum_w="388" maximum_h="349">
-		<Wasabi:Standardframe:NoStatus x="0" y="0" w="388" h="349" content="skin.about.group" />
+		<Wasabi:Standardframe:NoStatus x="0" y="0" w="388" h="349" content="skin.about.group2" />
 		<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
 		<layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
 		<layer id="resize.disabler" x="395" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>

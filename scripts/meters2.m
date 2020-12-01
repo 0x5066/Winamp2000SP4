@@ -13,10 +13,10 @@ Function togg();
 
 System.onScriptLoaded() {
   Group animgroup = getScriptGroup();
-  LeftMeter = animgroup.getObject("leftVuMeter");
-  RightMeter = animgroup.getObject("rightVuMeter");
-  ONOFF = getPrivateInt("EPS", "Disable VU meters", 0);
-	string paramslist = getPrivateString("EPS", "Electronic meters", "4;200;4;200");
+  LeftMeter = animgroup.getObject("ragyovis_hair.animatedlayerL");
+  RightMeter = animgroup.getObject("ragyovis_hair.animatedlayerR");
+  ONOFF = getPrivateInt("EPS2", "Disable VU meters2", 0);
+	string paramslist = getPrivateString("EPS2", "Electronic meters2", "4;200;4;200");
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
 	DivL2 = stringToInteger(getToken(paramslist, ";", 1));
 	DivR1 = stringToInteger(getToken(paramslist, ";", 2));
@@ -28,13 +28,13 @@ System.onScriptLoaded() {
 
 System.onScriptUnloading() {
   delete Refresh;
-  setPrivateInt("EPS", "Disable VU meters", ONOFF);
-	setPrivateString("EPS", "Electronic meters", integerToString(DivL1)+";"+integerToString(DivL2)+";"+integerToString(DivR1)+";"+integerToString(DivR2));
+  setPrivateInt("EPS2", "Disable VU meters2", ONOFF);
+	setPrivateString("EPS2", "Electronic meters2", integerToString(DivL1)+";"+integerToString(DivL2)+";"+integerToString(DivR1)+";"+integerToString(DivR2));
 }
 
 Refresh.onTimer() {
-  level1 += (getVisBand(0, 1) - level1) / DivL1;
-	level2 += (getVisBand(0, 1) - level2) / DivR1;
+  level1 += (getVisBand(0, 0) - level1) / DivL1;
+	level2 += (getVisBand(0, 58) - level2) / DivR1;
 	int frame1 = level1/DivL2*LeftMeter.getLength();
 	int frame2 = level2/DivR2*RightMeter.getLength();
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
