@@ -35,7 +35,42 @@
 		
 	<layer id="bar12"
 		x="53" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar13"
+		x="56" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar14"
+		x="59" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar15"
+		x="62" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar16"
+		x="65" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar17"
+		x="68" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar18"
+		x="71" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar19"
+		x="74" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar20"
+		x="77" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar21"
+		x="80" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar22"
+		x="83" y="0" w="2" h="1" image="barthing"/>
 	
+	<layer id="bar23"
+		x="86" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar24"
+		x="89" y="0" w="2" h="1" image="barthing"/>
 			<script file="scripts\meters3.maki"/>
  
 	<text id="debug_stuff" x="10" y="65" text="it begins" relatw="1" h="18" font="titlebar" fontsize="15"
