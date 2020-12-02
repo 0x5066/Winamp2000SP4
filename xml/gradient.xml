@@ -2,93 +2,242 @@
 
 	<layer id="ragyovis_hair.animatedlayerL"
 		x="20" y="0" w="2" h="1" image="barthing"/>
-
 	<layer id="ragyovis_hair.animatedlayerR"
-		x="23" y="0" w="2" h="1" image="barthing"/>
+		x="22" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar3"
-		x="26" y="0" w="2" h="1" image="barthing"/>
+		x="24" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar4"
-		x="29" y="0" w="2" h="1" image="barthing"/>
+		x="26" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar5"
-		x="32" y="0" w="2" h="1" image="barthing"/>
+		x="28" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar6"
-		x="35" y="0" w="2" h="1" image="barthing"/>
+		x="30" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar7"
-		x="38" y="0" w="2" h="1" image="barthing"/>
+		x="32" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar8"
-		x="41" y="0" w="2" h="1" image="barthing"/>
+		x="34" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar9"
-		x="44" y="0" w="2" h="1" image="barthing"/>
+		x="36" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar10"
-		x="47" y="0" w="2" h="1" image="barthing"/>
+		x="38" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar11"
-		x="50" y="0" w="2" h="1" image="barthing"/>
+		x="40" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar12"
-		x="53" y="0" w="2" h="1" image="barthing"/>
+		x="42" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar13"
-		x="56" y="0" w="2" h="1" image="barthing"/>
+		x="44" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar14"
-		x="59" y="0" w="2" h="1" image="barthing"/>
+		x="46" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar15"
-		x="62" y="0" w="2" h="1" image="barthing"/>
+		x="48" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar16"
-		x="65" y="0" w="2" h="1" image="barthing"/>
+		x="50" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar17"
-		x="68" y="0" w="2" h="1" image="barthing"/>
+		x="52" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar18"
-		x="71" y="0" w="2" h="1" image="barthing"/>
+		x="54" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar19"
-		x="74" y="0" w="2" h="1" image="barthing"/>
+		x="56" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar20"
-		x="77" y="0" w="2" h="1" image="barthing"/>
+		x="58" y="0" w="2" h="1" image="barthing"/>
 
 	<layer id="bar21"
-		x="80" y="0" w="2" h="1" image="barthing"/>
+		x="60" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar22"
-		x="83" y="0" w="2" h="1" image="barthing"/>
+		x="62" y="0" w="2" h="1" image="barthing"/>
 	
 	<layer id="bar23"
-		x="86" y="0" w="2" h="1" image="barthing"/>
+		x="64" y="0" w="2" h="1" image="barthing"/>
 		
 	<layer id="bar24"
-		x="89" y="0" w="2" h="1" image="barthing"/>
-			<script file="scripts\meters3.maki"/>
- 
-	<text id="debug_stuff" x="10" y="65" text="it begins" relatw="1" h="18" font="titlebar" fontsize="15"
-    color="wasabi.text.active" bold="1" antialias="0" ghost="1"/>
+		x="66" y="0" w="2" h="1" image="barthing"/>
 
-	<text id="more_debug_stuff" x="10" y="80" text="god help me" relatw="1" h="18" font="titlebar" fontsize="15"
-    color="wasabi.text.active" bold="1" antialias="0" ghost="1"/>
+	<layer id="bar25"
+		x="68" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar26"
+		x="70" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar27"
+		x="72" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar28"
+		x="74" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar29"
+		x="76" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar30"
+		x="78" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar31"
+		x="80" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar32"
+		x="82" y="0" w="2" h="1" image="barthing"/>
 	
+	<layer id="bar33"
+		x="84" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar34"
+		x="86" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar35"
+		x="88" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar36"
+		x="90" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar37"
+		x="92" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar38"
+		x="94" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar39"
+		x="96" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar40"
+		x="98" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar41"
+		x="100" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar42"
+		x="102" y="0" w="2" h="1" image="barthing"/>
+	
+	<layer id="bar43"
+		x="104" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar44"
+		x="106" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar45"
+		x="108" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar46"
+		x="110" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar47"
+		x="112" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar48"
+		x="114" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar49"
+		x="116" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar50"
+		x="118" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar51"
+		x="120" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar52"
+		x="122" y="0" w="2" h="1" image="barthing"/>
+	
+	<layer id="bar53"
+		x="124" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar54"
+		x="126" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar55"
+		x="128" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar56"
+		x="130" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar57"
+		x="132" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar58"
+		x="134" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar59"
+		x="136" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar60"
+		x="138" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar61"
+		x="140" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar62"
+		x="142" y="0" w="2" h="1" image="barthing"/>
+	
+	<layer id="bar63"
+		x="144" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar64"
+		x="146" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar65"
+		x="148" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar66"
+		x="150" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar67"
+		x="152" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar68"
+		x="154" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar69"
+		x="156" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar70"
+		x="158" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar71"
+		x="160" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar72"
+		x="162" y="0" w="2" h="1" image="barthing"/>
+	
+	<layer id="bar73"
+		x="164" y="0" w="2" h="1" image="barthing"/>
+		
+	<layer id="bar74"
+		x="166" y="0" w="2" h="1" image="barthing"/>
+
+	<layer id="bar75"
+		x="168" y="0" w="2" h="1" image="barthing"/>
+
+			<script file="scripts\meters3.maki"/>
+ <!--
+	<text id="debug_stuff" x="10" y="65" text="it begins" relatw="1" h="18" font="DOS" fontsize="21"
+    color="wasabi.list.text" antialias="0" ghost="1"/>
+
+	<text id="more_debug_stuff" x="10" y="80" text="god help me" relatw="1" h="18" font="DOS" fontsize="21"
+    color="wasabi.list.text" antialias="0" ghost="1"/>
+	-->
 </groupdef>
 
 <container id="gra" name="Gradient test" default_visible="0">
-	<layout id="normal" minimum_w="388" minimum_h="349" h="349" w="388" maximum_w="388" maximum_h="349">
-		<Wasabi:Standardframe:NoStatus x="0" y="0" w="388" h="349" content="skin.about.group2" />
+	<layout id="normal" minimum_w="212" minimum_h="242" h="242" w="211" appbar="top|bottom|left|right">
+		<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="skin.about.group2" />
 		<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
-		<layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
-		<layer id="resize.disabler" x="395" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
-		<layer id="resize.disabler" x="0" y="35" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
-		<layer id="resize.disabler" x="0" y="365" w="0" h="3" relatw="1" image="none" cursor="cur.normal"/>
 	</layout>
 	
 </container>
