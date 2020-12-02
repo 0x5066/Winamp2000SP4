@@ -12,10 +12,14 @@ Global Timer Refresh;
 Global Text debugtext, debugtext2;
 Global int ONOFF, Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10, Level11, Level12, Level13, Level14, Level15, Level16, Level17, Level18, Level19, Level20, Level21, Level22, Level23, Level24, Level25, Level26, Level27, Level28, Level29, Level30, Level31, Level32, Level33, Level34, Level35, Level36, Level37, Level38, Level39, Level40, Level41, Level42, Level43, Level44, Level45, Level46, Level47, Level48, Level49, Level50, Level51, Level52, Level53, Level54, Level55, Level56, Level57, Level58, Level59, Level60, Level61, Level62, Level63, Level64, Level65, Level66, Level67, Level68, Level69, Level70, Level71, Level72, Level73, Level74, Level75, DivL1, DivL2, DivL3, DivL4, DivL5, DivL6, DivL7, DivL8, DivL9, DivL10, DivL11, DivL12, DivL13, DivL14, DivL15, DivL16, DivL17, DivL18, DivL19, DivL20, DivL21, DivL22, DivL23, DivL24, DivL25, DivL26, DivL27, DivL28, DivL29, DivL30, DivL31, DivL32, DivL33, DivL34, DivL35, DivL36, DivL37, DivL38, DivL39, DivL40, DivL41, DivL42, DivL43, DivL44, DivL45, DivL46, DivL47, DivL48, DivL49, DivL50, DivL51, DivL52, DivL53, DivL54, DivL55, DivL56, DivL57, DivL58, DivL59, DivL60, DivL61, DivL62, DivL63, DivL64, DivL65, DivL66, DivL67, DivL68, DivL69, DivL70, DivL71, DivL72, DivL73, DivL74, DivL75, DivR1, DivR2, DivR3, DivR4, DivR5, DivR6, DivR7, DivR8, DivR9, DivR10, DivR11, DivR12, DivR13, DivR14, DivR15, DivR16, DivR17, DivR18, DivR19, DivR20, DivR21, DivR22, DivR23, DivR24, DivR25, DivR26, DivR27, DivR28, DivR29, DivR30, DivR31, DivR32, DivR33, DivR34, DivR35, DivR36, DivR37, DivR38, DivR39, DivR40, DivR41, DivR42, DivR43, DivR44, DivR45, DivR46, DivR47, DivR48, DivR49, DivR50, DivR51, DivR52, DivR53, DivR54, DivR55, DivR56, DivR57, DivR58, DivR59, DivR60, DivR61, DivR62, DivR63, DivR64, DivR65, DivR66, DivR67, DivR68, DivR69, DivR70, DivR71, DivR72, DivR73, DivR74, DivR75;
 
-#define base 1
-#define dontlimit 300
-#define dolimitpls 2
-#define base2 128
+#define base 1 
+//no exact idea what it means, but dont set to 0
+#define dontlimit 300 
+//this is here for the - what used to be - sensitivity function, 300 is probably a safe value as anything below that (probably) clips the signal off in a weird way, 250 will do that
+#define dolimitpls 2 
+//reduce signal hotness with this, this value is divided so becareful!
+#define base2 128 
+//sets how low the "analyzer" is going to be, if dividing by 2 it's set to 128, dividing by 4 then you set it to 64, divided by 8 then you set it to 32 i think, idk
 
 Function togg();
 

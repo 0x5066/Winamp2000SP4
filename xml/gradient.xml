@@ -1,228 +1,233 @@
 ﻿<groupdef id="skin.about.group2" x="-2" y="-2" w="380" h="321" relatw="1" relath="1">
 
+	<layer id="background"
+		x="20" y="0" w="150" h="129" image="barthing"/>
+
 	<layer id="ragyovis_hair.animatedlayerL"
-		x="20" y="0" w="2" h="1" image="barthing"/>
+		x="20" y="0" w="2" h="1" image="barthing2"/>
 	<layer id="ragyovis_hair.animatedlayerR"
-		x="22" y="0" w="2" h="1" image="barthing"/>
+		x="22" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar3"
-		x="24" y="0" w="2" h="1" image="barthing"/>
+		x="24" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar4"
-		x="26" y="0" w="2" h="1" image="barthing"/>
+		x="26" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar5"
-		x="28" y="0" w="2" h="1" image="barthing"/>
+		x="28" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar6"
-		x="30" y="0" w="2" h="1" image="barthing"/>
+		x="30" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar7"
-		x="32" y="0" w="2" h="1" image="barthing"/>
+		x="32" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar8"
-		x="34" y="0" w="2" h="1" image="barthing"/>
+		x="34" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar9"
-		x="36" y="0" w="2" h="1" image="barthing"/>
+		x="36" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar10"
-		x="38" y="0" w="2" h="1" image="barthing"/>
+		x="38" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar11"
-		x="40" y="0" w="2" h="1" image="barthing"/>
+		x="40" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar12"
-		x="42" y="0" w="2" h="1" image="barthing"/>
+		x="42" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar13"
-		x="44" y="0" w="2" h="1" image="barthing"/>
+		x="44" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar14"
-		x="46" y="0" w="2" h="1" image="barthing"/>
+		x="46" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar15"
-		x="48" y="0" w="2" h="1" image="barthing"/>
+		x="48" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar16"
-		x="50" y="0" w="2" h="1" image="barthing"/>
+		x="50" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar17"
-		x="52" y="0" w="2" h="1" image="barthing"/>
+		x="52" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar18"
-		x="54" y="0" w="2" h="1" image="barthing"/>
+		x="54" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar19"
-		x="56" y="0" w="2" h="1" image="barthing"/>
+		x="56" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar20"
-		x="58" y="0" w="2" h="1" image="barthing"/>
+		x="58" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar21"
-		x="60" y="0" w="2" h="1" image="barthing"/>
+		x="60" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar22"
-		x="62" y="0" w="2" h="1" image="barthing"/>
+		x="62" y="0" w="2" h="1" image="barthing2"/>
 	
 	<layer id="bar23"
-		x="64" y="0" w="2" h="1" image="barthing"/>
+		x="64" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar24"
-		x="66" y="0" w="2" h="1" image="barthing"/>
+		x="66" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar25"
-		x="68" y="0" w="2" h="1" image="barthing"/>
+		x="68" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar26"
-		x="70" y="0" w="2" h="1" image="barthing"/>
+		x="70" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar27"
-		x="72" y="0" w="2" h="1" image="barthing"/>
+		x="72" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar28"
-		x="74" y="0" w="2" h="1" image="barthing"/>
+		x="74" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar29"
-		x="76" y="0" w="2" h="1" image="barthing"/>
+		x="76" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar30"
-		x="78" y="0" w="2" h="1" image="barthing"/>
+		x="78" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar31"
-		x="80" y="0" w="2" h="1" image="barthing"/>
+		x="80" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar32"
-		x="82" y="0" w="2" h="1" image="barthing"/>
+		x="82" y="0" w="2" h="1" image="barthing2"/>
 	
 	<layer id="bar33"
-		x="84" y="0" w="2" h="1" image="barthing"/>
+		x="84" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar34"
-		x="86" y="0" w="2" h="1" image="barthing"/>
+		x="86" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar35"
-		x="88" y="0" w="2" h="1" image="barthing"/>
+		x="88" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar36"
-		x="90" y="0" w="2" h="1" image="barthing"/>
+		x="90" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar37"
-		x="92" y="0" w="2" h="1" image="barthing"/>
+		x="92" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar38"
-		x="94" y="0" w="2" h="1" image="barthing"/>
+		x="94" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar39"
-		x="96" y="0" w="2" h="1" image="barthing"/>
+		x="96" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar40"
-		x="98" y="0" w="2" h="1" image="barthing"/>
+		x="98" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar41"
-		x="100" y="0" w="2" h="1" image="barthing"/>
+		x="100" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar42"
-		x="102" y="0" w="2" h="1" image="barthing"/>
+		x="102" y="0" w="2" h="1" image="barthing2"/>
 	
 	<layer id="bar43"
-		x="104" y="0" w="2" h="1" image="barthing"/>
+		x="104" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar44"
-		x="106" y="0" w="2" h="1" image="barthing"/>
+		x="106" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar45"
-		x="108" y="0" w="2" h="1" image="barthing"/>
+		x="108" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar46"
-		x="110" y="0" w="2" h="1" image="barthing"/>
+		x="110" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar47"
-		x="112" y="0" w="2" h="1" image="barthing"/>
+		x="112" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar48"
-		x="114" y="0" w="2" h="1" image="barthing"/>
+		x="114" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar49"
-		x="116" y="0" w="2" h="1" image="barthing"/>
+		x="116" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar50"
-		x="118" y="0" w="2" h="1" image="barthing"/>
+		x="118" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar51"
-		x="120" y="0" w="2" h="1" image="barthing"/>
+		x="120" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar52"
-		x="122" y="0" w="2" h="1" image="barthing"/>
+		x="122" y="0" w="2" h="1" image="barthing2"/>
 	
 	<layer id="bar53"
-		x="124" y="0" w="2" h="1" image="barthing"/>
+		x="124" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar54"
-		x="126" y="0" w="2" h="1" image="barthing"/>
+		x="126" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar55"
-		x="128" y="0" w="2" h="1" image="barthing"/>
+		x="128" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar56"
-		x="130" y="0" w="2" h="1" image="barthing"/>
+		x="130" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar57"
-		x="132" y="0" w="2" h="1" image="barthing"/>
+		x="132" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar58"
-		x="134" y="0" w="2" h="1" image="barthing"/>
+		x="134" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar59"
-		x="136" y="0" w="2" h="1" image="barthing"/>
+		x="136" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar60"
-		x="138" y="0" w="2" h="1" image="barthing"/>
+		x="138" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar61"
-		x="140" y="0" w="2" h="1" image="barthing"/>
+		x="140" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar62"
-		x="142" y="0" w="2" h="1" image="barthing"/>
+		x="142" y="0" w="2" h="1" image="barthing2"/>
 	
 	<layer id="bar63"
-		x="144" y="0" w="2" h="1" image="barthing"/>
+		x="144" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar64"
-		x="146" y="0" w="2" h="1" image="barthing"/>
+		x="146" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar65"
-		x="148" y="0" w="2" h="1" image="barthing"/>
+		x="148" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar66"
-		x="150" y="0" w="2" h="1" image="barthing"/>
+		x="150" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar67"
-		x="152" y="0" w="2" h="1" image="barthing"/>
+		x="152" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar68"
-		x="154" y="0" w="2" h="1" image="barthing"/>
+		x="154" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar69"
-		x="156" y="0" w="2" h="1" image="barthing"/>
+		x="156" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar70"
-		x="158" y="0" w="2" h="1" image="barthing"/>
+		x="158" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar71"
-		x="160" y="0" w="2" h="1" image="barthing"/>
+		x="160" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar72"
-		x="162" y="0" w="2" h="1" image="barthing"/>
+		x="162" y="0" w="2" h="1" image="barthing2"/>
 	
 	<layer id="bar73"
-		x="164" y="0" w="2" h="1" image="barthing"/>
+		x="164" y="0" w="2" h="1" image="barthing2"/>
 		
 	<layer id="bar74"
-		x="166" y="0" w="2" h="1" image="barthing"/>
+		x="166" y="0" w="2" h="1" image="barthing2"/>
 
 	<layer id="bar75"
-		x="168" y="0" w="2" h="1" image="barthing"/>
+		x="168" y="0" w="2" h="1" image="barthing2"/>
+
+
 
 			<script file="scripts\meters3.maki"/>
  <!--
