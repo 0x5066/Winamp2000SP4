@@ -1,5 +1,5 @@
 // This script is copyrighted. Egor Petrov 2003 - 2005. egorka_petrov@mail.ru
-// Modified by Gordon "The1" Freeman.
+// Modified by 0x5066.
 
 // Ver 1.01 (Added test mode)
 // You can use this script for other skins.
