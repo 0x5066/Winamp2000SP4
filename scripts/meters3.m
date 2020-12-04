@@ -1,7 +1,7 @@
 // This script is copyrighted. Egor Petrov 2003 - 2005. egorka_petrov@mail.ru
 // Modified by 0x5066.
 
-// Ver 2.0 You can now use this to modify the height of a layer... yay?
+// Ver 2.01 You can now use this to modify the height of a layer... yay?
 // Ver 1.01 (Added test mode)
 // You can use this script for other skins. (probably not)
 #include "lib/std.mi"

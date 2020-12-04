@@ -1,6 +1,7 @@
 // This script is copyrighted. Egor Petrov 2003 - 2005. egorka_petrov@mail.ru
 // Modified by 0x5066.
 
+// Ver 2.0 (It's now a skin specific script)
 // Ver 1.01 (Added test mode)
 // You can use this script for other skins.
 #include "lib/std.mi"
@@ -35,13 +36,13 @@ System.onScriptUnloading() {
 }
 
 Refresh.onTimer() {
-  level1 = (getVisBand(0, 1) / DivL1); //returns what getVisBand actually returns with smoothness included
-	level2 = (getVisBand(0, 1) / DivR1);
-	int frame1 = level1/dontlimit*LeftMeter.getLength();
-	int frame2 = level2/dontlimit*RightMeter.getLength();
+  level1 += (getVisBand(0, 1)*0.082 - level1 / DivL1); //returns what getVisBand actually returns with smoothness included
+	level2 += (getVisBand(0, 1)*0.082 - level2 / DivR1);
+	int frame1 = level1/dontlimit;
+	int frame2 = level2/dontlimit;
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
-    LeftMeter.gotoFrame(level1*0.082); //i actually used a calculator to know how close i am to 21 frames, this is supposed to go as high as 20,882 if getVisBand actually ranges from 0..256
-    RightMeter.gotoFrame(level2*0.082);
+    LeftMeter.gotoFrame(level1); //i actually used a calculator to know how close i am to 21 frames, this is supposed to go as high as 20,882 if getVisBand actually ranges from 0..256
+    RightMeter.gotoFrame(level2);
 	}
 }
 
