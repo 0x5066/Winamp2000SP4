@@ -4,10 +4,12 @@
 // Ver 1.01 (Added test mode)
 // You can use this script for other skins.
 #include "lib/std.mi"
+#define dontlimit 300 
+//this is here for the - what used to be - sensitivity function, 300 is probably a safe value as anything below that (probably) clips the signal off in a weird way, 250 will do that
 
 Global AnimatedLayer RightMeter, LeftMeter;// Animated layer
 Global Timer Refresh;
-Global int ONOFF, Level1, Level2, DivL1, DivL2, DivR1, DivR2;
+Global int ONOFF, Level1, Level2, DivL1, DivL2, DivR1, DivR2, com;
 
 Function togg();
 
@@ -15,8 +17,8 @@ System.onScriptLoaded() {
   Group animgroup = getScriptGroup();
   LeftMeter = animgroup.getObject("leftVuMeter");
   RightMeter = animgroup.getObject("rightVuMeter");
-  ONOFF = getPrivateInt("EPS", "Disable VU meters", 0);
-	string paramslist = getPrivateString("EPS", "Electronic meters", "4;200;4;200");
+  ONOFF = getPrivateInt("RyukoAndSatsuki", "Disable Headbanging", 0);
+	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4;200;4;200");
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
 	DivL2 = stringToInteger(getToken(paramslist, ";", 1));
 	DivR1 = stringToInteger(getToken(paramslist, ";", 2));
@@ -28,18 +30,18 @@ System.onScriptLoaded() {
 
 System.onScriptUnloading() {
   delete Refresh;
-  setPrivateInt("EPS", "Disable VU meters", ONOFF);
-	setPrivateString("EPS", "Electronic meters", integerToString(DivL1)+";"+integerToString(DivL2)+";"+integerToString(DivR1)+";"+integerToString(DivR2));
+  setPrivateInt("RyukoAndSatsuki", "Disable Headbanging", ONOFF);
+	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1)+";"+integerToString(DivL2)+";"+integerToString(DivR1)+";"+integerToString(DivR2));
 }
 
 Refresh.onTimer() {
-  level1 += (getVisBand(0, 1) - level1) / DivL1;
-	level2 += (getVisBand(0, 1) - level2) / DivR1;
-	int frame1 = level1/DivL2*LeftMeter.getLength();
-	int frame2 = level2/DivR2*RightMeter.getLength();
+  level1 = (getVisBand(0, 1) / DivL1); //returns what getVisBand actually returns with smoothness included
+	level2 = (getVisBand(0, 1) / DivR1);
+	int frame1 = level1/dontlimit*LeftMeter.getLength();
+	int frame2 = level2/dontlimit*RightMeter.getLength();
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
-    LeftMeter.gotoFrame(frame1);
-    RightMeter.gotoFrame(frame2);
+    LeftMeter.gotoFrame(level1*0.082); //i actually used a calculator to know how close i am to 21 frames, this is supposed to go as high as 20,882 if getVisBand actually ranges from 0..256
+    RightMeter.gotoFrame(level2*0.082);
 	}
 }
 
@@ -54,25 +56,17 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	MainMenu = new PopupMenu;
 	PopupMenu Div1Menu;
 	Div1Menu = new PopupMenu;
-	PopupMenu Div2Menu;
-	Div2Menu = new PopupMenu;
 	
 	//modify i = N instead of doing a replace all 10s operation, thereby causing a god damn black hole
 	
 	for (int i = 1; i < 10; ++i) Div1Menu.addCommand(integerToString(i), i*10, DivL1 == i && DivR1 == i, 0);
 	Div1Menu.addCommand("info", 100, 0, 0);
-	for (int i = 10; i < 26; ++i) Div2Menu.addCommand(integerToString(i*10), i*20, DivL2 == i*10 && DivR2 == i*10, 0);
 	MainMenu.addSubMenu(Div1Menu, "Smoothness");
-	MainMenu.addSubMenu(Div2Menu, "Sensitivity");
 
 	int com = MainMenu.popAtMouse();
 	if (com > 0 && com < 100) {
 		DivL1 = com / 10;
 		DivR1 = DivL1;
-	}
-	else if (com > 199 && com < 530) {
-		DivL2 = com / 2;
-		DivR2 = DivL2;
 	}
 	else if (com == 100) {
 		messagebox("This is a amount of sections between two recent points.\nThese sections are not equal.\nMore sections - nicely animation, but less speed.\n 4 sections by default", "Animation info", 1, "");
