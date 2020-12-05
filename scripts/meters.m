@@ -20,6 +20,7 @@ System.onScriptLoaded() {
   RightMeter = animgroup.getObject("rightVuMeter");
   ONOFF = getPrivateInt("RyukoAndSatsuki", "Disable Headbanging", 0);
 	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4;200;4;200");
+  dontamp = stringToInteger(getToken(paramslist, ";", 0));
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
 	DivL2 = stringToInteger(getToken(paramslist, ";", 1));
 	DivR1 = stringToInteger(getToken(paramslist, ";", 2));
@@ -60,7 +61,7 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	
 	//modify i = N instead of doing a replace all 10s operation, thereby causing a god damn black hole
 	
-	for (int i = 1; i < 10; ++i) Div1Menu.addCommand(integerToString(i), i*10, DivL1 == i && DivR1 == i, 0);
+	for (int i = 1; i < 10; ++i) Div1Menu.addCommand(integerToString(i), i*10, DivL1 == i && DivR1 == i && dontamp == i, 0);
 	Div1Menu.addCommand("info", 100, 0, 0);
 	MainMenu.addSubMenu(Div1Menu, "Smoothness");
 
@@ -68,7 +69,7 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	if (com > 0 && com < 100) {
 		DivL1 = com / 10;
 		DivR1 = DivL1;
-		dontamp = (com / 10) + 1;
+		dontamp = com / 10;
 	}
 	else if (com == 100) {
 		messagebox("This is a amount of sections between two recent points.\nThese sections are not equal.\nMore sections - nicely animation, but less speed.\n 4 sections by default", "Animation info", 1, "");
