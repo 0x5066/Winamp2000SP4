@@ -10,7 +10,7 @@
 
 Global AnimatedLayer RightMeter, LeftMeter;// Animated layer
 Global Timer Refresh;
-Global int ONOFF, Level1, Level2, DivL1, DivL2, DivR1, DivR2, com;
+Global int ONOFF, Level1, Level2, DivL1, DivL2, DivR1, DivR2, dontamp;
 
 Function togg();
 
@@ -41,8 +41,8 @@ Refresh.onTimer() {
 	int frame1 = level1/dontlimit;
 	int frame2 = level2/dontlimit;
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
-    LeftMeter.gotoFrame(level1); //i actually used a calculator to know how close i am to 21 frames, this is supposed to go as high as 20,882 if getVisBand actually ranges from 0..256
-    RightMeter.gotoFrame(level2);
+    LeftMeter.gotoFrame(level1/dontamp);
+    RightMeter.gotoFrame(level2/dontamp);
 	}
 }
 
@@ -68,6 +68,7 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	if (com > 0 && com < 100) {
 		DivL1 = com / 10;
 		DivR1 = DivL1;
+		dontamp = (com / 10) + 1;
 	}
 	else if (com == 100) {
 		messagebox("This is a amount of sections between two recent points.\nThese sections are not equal.\nMore sections - nicely animation, but less speed.\n 4 sections by default", "Animation info", 1, "");
