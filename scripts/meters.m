@@ -1,6 +1,7 @@
 // This script is copyrighted. Egor Petrov 2003 - 2005. egorka_petrov@mail.ru
 // Modified by 0x5066.
 
+// Ver 2.1 (No its not, what kind of a liar are you? actually fixed having to rely on a dumb fixed number)
 // Ver 2.0 (It's now a skin specific script)
 // Ver 1.01 (Added test mode)
 // You can use this script for other skins.
@@ -37,8 +38,8 @@ System.onScriptUnloading() {
 }
 
 Refresh.onTimer() {
-  level1 += (getVisBand(0, 1)*0.082 - level1 / DivL1); //returns what getVisBand actually returns with smoothness included
-	level2 += (getVisBand(0, 1)*0.082 - level2 / DivR1);
+  level1 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 4) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 3)*LeftMeter.getLength()/256) / 4) - level1 / DivL1); //returns what getVisBand actually returns with smoothness included
+	level2 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 4) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 3)*LeftMeter.getLength()/256) / 4) - level2 / DivR1);
 	int frame1 = level1/dontlimit;
 	int frame2 = level2/dontlimit;
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
