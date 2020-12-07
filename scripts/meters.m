@@ -38,8 +38,8 @@ System.onScriptUnloading() {
 }
 
 Refresh.onTimer() {
-  level1 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 4) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 3)*LeftMeter.getLength()/256) / 4) - level1 / DivL1); //returns what getVisBand actually returns with smoothness included
-	level2 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 4) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 4 + ((getVisBand(0, 3)*LeftMeter.getLength()/256) / 4) - level2 / DivR1);
+  level1 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 3 - level1 / DivL1); //returns what getVisBand actually returns with smoothness included
+	level2 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 3 - level2 / DivR1);
 	int frame1 = level1/dontlimit;
 	int frame2 = level2/dontlimit;
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
