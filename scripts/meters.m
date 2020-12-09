@@ -13,6 +13,8 @@ Global AnimatedLayer RightMeter, LeftMeter;// Animated layer
 Global Timer Refresh;
 Global int ONOFF, Level1, Level2, DivL1, DivL2, DivR1, DivR2, dontamp;
 
+Global int sensitivity;
+
 Function togg();
 
 System.onScriptLoaded() {
@@ -26,6 +28,7 @@ System.onScriptLoaded() {
 	DivL2 = stringToInteger(getToken(paramslist, ";", 1));
 	DivR1 = stringToInteger(getToken(paramslist, ";", 2));
 	DivR2 = stringToInteger(getToken(paramslist, ";", 3));
+  sensitivity = getPrivateInt(getSkinName(), "RyukoVisSensitivity", 3);
   Refresh = new Timer;
   Refresh.setDelay(0);
   Refresh.start();
@@ -33,19 +36,33 @@ System.onScriptLoaded() {
 
 System.onScriptUnloading() {
   delete Refresh;
+  //why doesn't this work wtf
+  setPrivateInt(getSkinName(), "RyukoVisSensitivity", sensitivity);
   setPrivateInt("RyukoAndSatsuki", "Disable Headbanging", ONOFF);
 	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1)+";"+integerToString(DivL2)+";"+integerToString(DivR1)+";"+integerToString(DivR2));
 }
 
 Refresh.onTimer() {
-  level1 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 3 - level1 / DivL1); //returns what getVisBand actually returns with smoothness included
-	level2 += ((getVisBand(0, 0)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, 1)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, 2)*LeftMeter.getLength()/256) / 3 - level2 / DivR1);
-	int frame1 = level1/dontlimit;
+
+  for(int i = 0; i<sensitivity; i++){
+    // idk how correct the sensitivity division is but it seems to work
+    level1 += (getVisBand(0, sensitivity)*LeftMeter.getLength()/256) / sensitivity;
+  }
+  level1 -= level1 / DivL1;
+
+  for(int i = 0; i<sensitivity; i++){
+    level2 += (getVisBand(0, sensitivity)*LeftMeter.getLength()/256) / sensitivity;
+  }
+  level2 -= level2 / DivR1;
+
+  int frame1 = level1/dontlimit;
 	int frame2 = level2/dontlimit;
+
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
     LeftMeter.gotoFrame(level1/dontamp);
     RightMeter.gotoFrame(level2/dontamp);
 	}
+
 }
 
 System.onKeyDown(string key) {
@@ -55,10 +72,9 @@ System.onKeyDown(string key) {
 }
 
 LeftMeter.onLeftButtonUp(int x, int y) {
-  PopupMenu MainMenu;
-	MainMenu = new PopupMenu;
-	PopupMenu Div1Menu;
-	Div1Menu = new PopupMenu;
+  PopupMenu MainMenu = new PopupMenu;
+	PopupMenu Div1Menu = new PopupMenu;
+  PopupMenu SensMenu = new PopupMenu;
 	
 	//modify i = N instead of doing a replace all 10s operation, thereby causing a god damn black hole
 	
@@ -66,8 +82,14 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	Div1Menu.addCommand("info", 100, 0, 0);
 	MainMenu.addSubMenu(Div1Menu, "Smoothness");
 
+  for (int i = 1; i < 9; ++i) SensMenu.addCommand(integerToString(i), i, sensitivity == i, 0);
+	MainMenu.addSubMenu(SensMenu, "Sensitivity");
+
 	int com = MainMenu.popAtMouse();
-	if (com > 0 && com < 100) {
+	if(com>=1 && com<9){
+    sensitivity = com;
+  }
+  else if (com > 9 && com < 100) {
 		DivL1 = com / 10;
 		DivR1 = DivL1;
 		dontamp = com / 10;
