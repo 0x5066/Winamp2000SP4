@@ -22,7 +22,7 @@ System.onScriptLoaded() {
   LeftMeter = animgroup.getObject("leftVuMeter");
   RightMeter = animgroup.getObject("rightVuMeter");
   ONOFF = getPrivateInt("RyukoAndSatsuki", "Disable Headbanging", 0);
-	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4;200;4;200");
+	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4");
   dontamp = stringToInteger(getToken(paramslist, ";", 0));
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
   sensitivity = getPrivateInt(getSkinName(), "RyukoVisSensitivity", 3);
@@ -36,7 +36,7 @@ System.onScriptUnloading() {
   //why doesn't this work wtf
   setPrivateInt(getSkinName(), "RyukoVisSensitivity", sensitivity);
   setPrivateInt("RyukoAndSatsuki", "Disable Headbanging", ONOFF);
-	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1));
+	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1)+";");
 }
 
 Refresh.onTimer() {
