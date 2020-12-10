@@ -11,7 +11,7 @@
 
 Global AnimatedLayer RightMeter, LeftMeter;// Animated layer
 Global Timer Refresh;
-Global int ONOFF, Level1, Level2, DivL1, DivL2, DivR1, DivR2, dontamp;
+Global int ONOFF, Level1, DivL1, dontamp;
 
 Global int sensitivity;
 
@@ -25,9 +25,6 @@ System.onScriptLoaded() {
 	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4;200;4;200");
   dontamp = stringToInteger(getToken(paramslist, ";", 0));
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
-	DivL2 = stringToInteger(getToken(paramslist, ";", 1));
-	DivR1 = stringToInteger(getToken(paramslist, ";", 2));
-	DivR2 = stringToInteger(getToken(paramslist, ";", 3));
   sensitivity = getPrivateInt(getSkinName(), "RyukoVisSensitivity", 3);
   Refresh = new Timer;
   Refresh.setDelay(0);
@@ -39,28 +36,22 @@ System.onScriptUnloading() {
   //why doesn't this work wtf
   setPrivateInt(getSkinName(), "RyukoVisSensitivity", sensitivity);
   setPrivateInt("RyukoAndSatsuki", "Disable Headbanging", ONOFF);
-	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1)+";"+integerToString(DivL2)+";"+integerToString(DivR1)+";"+integerToString(DivR2));
+	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1));
 }
 
 Refresh.onTimer() {
 
   for(int i = 0; i<sensitivity; i++){
     // idk how correct the sensitivity division is but it seems to work
-    level1 += (getVisBand(0, sensitivity)*LeftMeter.getLength()/256) / sensitivity;
+    level1 += (getVisBand(0, sensitivity)*LeftMeter.getLength()/256 - level1) / DivL1;
   }
-  level1 -= level1 / DivL1;
 
-  for(int i = 0; i<sensitivity; i++){
-    level2 += (getVisBand(0, sensitivity)*LeftMeter.getLength()/256) / sensitivity;
-  }
-  level2 -= level2 / DivR1;
-
-  int frame1 = level1/dontlimit;
-	int frame2 = level2/dontlimit;
+  int frame1 = level1;
+	int frame2 = level1;
 
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
     LeftMeter.gotoFrame(level1/dontamp);
-    RightMeter.gotoFrame(level2/dontamp);
+    RightMeter.gotoFrame(level1/dontamp);
 	}
 
 }
@@ -78,7 +69,7 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	
 	//modify i = N instead of doing a replace all 10s operation, thereby causing a god damn black hole
 	
-	for (int i = 1; i < 10; ++i) Div1Menu.addCommand(integerToString(i), i*10, DivL1 == i && DivR1 == i && dontamp == i, 0);
+	for (int i = 1; i < 10; ++i) Div1Menu.addCommand(integerToString(i), i*10, DivL1 == i && dontamp == i, 0);
 	Div1Menu.addCommand("info", 100, 0, 0);
 	MainMenu.addSubMenu(Div1Menu, "Smoothness");
 
@@ -91,9 +82,11 @@ LeftMeter.onLeftButtonUp(int x, int y) {
   }
   else if (com > 9 && com < 100) {
 		DivL1 = com / 10;
-		DivR1 = DivL1;
 		dontamp = com / 10;
 	}
+  //at this moment, the dontamp variable clamps the signal logarithmic, rather than
+  //doing it in a relatively linear manner as it did previously,
+  //the cause of this is unknown and it is a regression
 	else if (com == 100) {
 		messagebox("This is a amount of sections between two recent points.\nThese sections are not equal.\nMore sections - nicely animation, but less speed.\n 4 sections by default", "Animation info", 1, "");
 	}
