@@ -2,14 +2,12 @@
 
 Function refreshVisSettings();
 Function setVis (int mode);
-//Function ProcessMenuResult (int a);
+Function ProcessMenuResult (int a);
 
 Global Layout layoutMainNormal;
 Global Container containerMain;
 Global Group NormalGroupMain;
 Global Vis visualizertl, visualizertr, visualizerbl, visualizerbr;
-
-Global PopUpMenu newVisMenu;
 
 Global Int newCurrentMode;
 Global layer NewTrigger;
@@ -49,21 +47,29 @@ NewTrigger.onLeftButtonDown (int x, int y)
 	complete;
 }
 
-NewTrigger.onRightButtonUp (int x, int y)
+NewTrigger.onRightButtonDown (int x, int y)
 {
-	newVisMenu = new PopUpMenu;
+	PopUpMenu newVisMenu = new PopUpMenu;
 
 	newVisMenu.addCommand("No Visualization", 100, newCurrentMode == 0, 0);
-	newVisMenu.addCommand("Oscilloscope", 101, newCurrentMode == 1, 0);
-	newVisMenu.addCommand("Spectrum Analyzer", 102, newCurrentMode == 2, 0);
+	newVisMenu.addCommand("Spectrum Analyzer", 101, newCurrentMode == 1, 0);
+	newVisMenu.addCommand("Oscilloscope", 102, newCurrentMode == 2, 0);
 
-	//ProcessMenuResult (newVisMenu.popAtMouse());
-
-	delete newVisMenu;
-
-	complete;	
+	ProcessMenuResult (newVisMenu.popAtMouse());
+	complete;
 }
 
+ProcessMenuResult (int a)
+{
+	if (a < 1) return;
+
+	if (a > 0 && a <= 2 || a == 100)
+	{
+		if (a == 100) a = 0;
+		setVis(a);
+	}
+
+}
 setVis (int mode)
 {
 	setPrivateInt(getSkinName(), "New Visualizer Mode", mode);
