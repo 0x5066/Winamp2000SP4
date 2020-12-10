@@ -23,8 +23,8 @@ System.onScriptLoaded() {
   RightMeter = animgroup.getObject("rightVuMeter");
   ONOFF = getPrivateInt("RyukoAndSatsuki", "Disable Headbanging", 0);
 	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4");
-  dontamp = stringToInteger(getToken(paramslist, ";", 0));
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
+  dontamp = stringToInteger(getToken(paramslist, ";", 0));
   sensitivity = getPrivateInt(getSkinName(), "RyukoVisSensitivity", 3);
   Refresh = new Timer;
   Refresh.setDelay(0);
@@ -36,18 +36,18 @@ System.onScriptUnloading() {
   //why doesn't this work wtf
   setPrivateInt(getSkinName(), "RyukoVisSensitivity", sensitivity);
   setPrivateInt("RyukoAndSatsuki", "Disable Headbanging", ONOFF);
-	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1)+";");
+	setPrivateString("RyukoAndSatsuki", "Digital Headbanging", integerToString(DivL1)+";"+integerToString(dontamp)+";");
 }
 
 Refresh.onTimer() {
 
   for(int i = 0; i<sensitivity; i++){
     // idk how correct the sensitivity division is but it seems to work
-    level1 += (getVisBand(0, sensitivity)*LeftMeter.getLength()/256 - level1) / DivL1;
+    level1 += ((getVisBand(0, sensitivity)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, sensitivity+1)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 3 - level1 / DivL1);
   }
 
-  int frame1 = level1;
-	int frame2 = level1;
+  int frame1 = level1/dontlimit;
+	int frame2 = level1/dontlimit;
 
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
     LeftMeter.gotoFrame(level1/dontamp);
