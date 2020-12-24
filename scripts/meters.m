@@ -43,7 +43,7 @@ Refresh.onTimer() {
 
   for(int i = 0; i<sensitivity; i++){
     // idk how correct the sensitivity division is but it seems to work
-    level1 += ((getVisBand(0, sensitivity)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, sensitivity+1)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 3 - level1 / DivL1);
+    level1 += ((getVisBand(0, sensitivity-1)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, sensitivity+4)*LeftMeter.getLength()/256) / 3 - level1 / DivL1);
   }
 
   int frame1 = level1/dontlimit;
@@ -84,9 +84,6 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 		DivL1 = com / 10;
 		dontamp = com / 10;
 	}
-  //at this moment, the dontamp variable clamps the signal logarithmic, rather than
-  //doing it in a relatively linear manner as it did previously,
-  //the cause of this is unknown and it is a regression
 	else if (com == 100) {
 		messagebox("This is a amount of sections between two recent points.\nThese sections are not equal.\nMore sections - nicely animation, but less speed.\n 4 sections by default", "Animation info", 1, "");
 	}
