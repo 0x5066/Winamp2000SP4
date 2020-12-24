@@ -27,7 +27,6 @@
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="3870,3289,3450" gray="0" boost="0" />
   <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-
   <gammagroup id="Active Title Bar Color 1" value="-774,-4096,-3773" gray="0" boost="0" />
   <gammagroup id="Active Title Bar Color 2" value="1419,-4096,-3321" gray="0" boost="0" />
   <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
@@ -861,4 +860,28 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-2193,-2451,1161" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="-161,-387,2967" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="-161,-387,2967" gray="0" boost="0" />
+</gammaset>
+
+<gammaset id="Christmas">
+  <gammagroup id="3D Objects" value="-2547,-1032,-3160" gray="0" boost="0" />
+  <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Window" value="-1096,-4096,-3966" gray="0" boost="0" />
+  <gammagroup id="Window-text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 1" value="3837,3837,3902" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 2" value="1386,1612,2031" gray="0" boost="0" />
+  <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Selected Items" value="612,-3999,-3644" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 1" value="806,1515,290" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 2" value="-193,483,-387" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar-Text" value="-2160,-1032,-3031" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar-Text" value="-3289,-2193,-4096" gray="0" boost="0" />
+  <gammagroup id="Visualizers" value="904,-4096,-3458" gray="0" boost="0" />
+  <gammagroup id="Visualizers2" value="-4096,2180,-4096" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="-3289,-2193,-4096" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Digits" value="1225,-2644,-2644" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Labels" value="1225,-2644,-2644" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Crosshair" value="1225,-2644,-2644" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Subtitle Text" value="1225,-2644,-2644" gray="0" boost="0" />
 </gammaset>
