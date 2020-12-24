@@ -1,4 +1,4 @@
-#include "std.mi"
+#include "lib/std.mi"
 #include "lib/config.mi"
 #include "lib/winampconfig.mi"
 

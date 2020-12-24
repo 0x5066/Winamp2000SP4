@@ -4,10 +4,6 @@
   <layer id="eq.normal.bg2" x="0" y="-31" image="eq.normal.bg2" move="1" sysregion="1" alpha="253"/>
   <layer id="eq.normal.bg" x="0" y="-31" image="eq.normal.bg" move="1" sysregion="1" alpha="253"/>
   <rect id="eq.mover" x="10" y="3" h="200" w="-20" relatw="1" filled="1" move="1" cursor="cur.normal" alpha="0"/>
-  
-  	<Animatedlayer id="vguivis.animatedlayerL" image="oldwin.vu" x="70" y="70" w="15" h="76" framewidth="15" frameheight="76" start="0" end="9" autoplay="0" autoreplay="0" ghost="1"/>
-	<Animatedlayer id="vguivis.animatedlayerR" image="oldwin.vu" x="87" y="70" w="15" h="76" framewidth="15" frameheight="76" start="0" end="9" autoplay="0" autoreplay="0" ghost="1"/>
-	<script id="vguivis.script" file="scripts\vguivis.maki"/>
 
 	<rect id="eq.button.on2" color="64,64,64" x="13" y="15" w="48" h="28" ghost="1"/>
 	<rect id="eq.button.auto2" color="64,64,64" x="61" y="15" w="62" h="28" ghost="1"/>

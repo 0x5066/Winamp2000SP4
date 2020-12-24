@@ -1,7 +1,7 @@
 Function init_Songticker();
 Function unloadSongticker();
 
-#include "std.mi"
+#include "lib/std.mi"
 #include "attribs.m"
 
 
