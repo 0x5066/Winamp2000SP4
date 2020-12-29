@@ -21,3 +21,5 @@ scripts/lib/com/glow.m
 scripts/lib/com/glowobject.m
 scripts/lib/com/rotationlayer.m
 scripts/lib/com/songinfo.m
+xml/main.xml
+images/wamodern/*.*
