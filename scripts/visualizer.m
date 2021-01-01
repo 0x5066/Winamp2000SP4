@@ -682,6 +682,13 @@ refreshVisSettings ()
 			setColorOscOdd("38,38,38");
 			setColorOscEven("109,109,109");
 		}
+		else if(v_color == 31){
+			//peaks only
+			visualizer.setXmlParam("colorallbands", "0,0,0");
+			visualizer.setXmlParam("colorbandpeak", "255,255,255");
+
+			setColorosc("255,255,255");
+		}
 		if (grid == 0)
 		{
 			visgrid_thick.setXmlParam("visible", "0");
@@ -797,6 +804,7 @@ Trigger.onRightButtonUp (int x, int y)
 
 	colmenu.addCommand("Commodore 64", 520, v_color == 20, 0);
 	colmenu.addCommand("Midori Mizuno", 515, v_color == 15, 0);
+	colmenu.addCommand("Peaks Only", 531, v_color == 31, 0);
 	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
 
 	colmenu.addCommand("That old Hi-Fi", 517, v_color == 17, 0);
@@ -985,7 +993,7 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS", v_fps);
 	}
-	else if (a >= 500 && a <= 530)
+	else if (a >= 500 && a <= 531)
 	{
 		v_color = a - 500;
 		if (v_color == 0)
@@ -1445,6 +1453,13 @@ ProcessMenuResult (int a)
 			visualizer.setXmlParam("colorbandpeak", "231,121,49");
 			setColorOscOdd("38,38,38");
 			setColorOscEven("109,109,109");
+		}
+		else if(v_color == 31){
+			//peaks only
+			visualizer.setXmlParam("colorallbands", "0,0,0");
+			visualizer.setXmlParam("colorbandpeak", "255,255,255");
+
+			setColorosc("255,255,255");
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes", v_color);
 	}
