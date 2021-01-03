@@ -632,11 +632,26 @@ refreshVisSettings ()
 			setColorOscOdd("38,38,38");
 			setColorOscEven("109,109,109");
 		}
-		else if(v_color == 31){
-			//peaks only
-			visualizer.setXmlParam("colorallbands", "0,0,0");
+		else if (v_color == 31)
+		{
+			//lines & peaks only
+			visualizer.setXmlParam("ColorBand1", "0,0,0");
+			visualizer.setXmlParam("ColorBand2", "0,0,0");
+			visualizer.setXmlParam("ColorBand3", "0,0,0");
+			visualizer.setXmlParam("ColorBand4", "0,0,0");
+			visualizer.setXmlParam("ColorBand5", "0,0,0");
+			visualizer.setXmlParam("ColorBand6", "0,0,0");
+			visualizer.setXmlParam("ColorBand7", "0,0,0");
+			visualizer.setXmlParam("ColorBand8", "0,0,0");
+			visualizer.setXmlParam("ColorBand9", "0,0,0");
+			visualizer.setXmlParam("ColorBand10", "0,0,0");
+			visualizer.setXmlParam("ColorBand11", "0,0,0");
+			visualizer.setXmlParam("ColorBand12", "0,0,0");
+			visualizer.setXmlParam("ColorBand13", "0,0,0");
+			visualizer.setXmlParam("ColorBand14", "0,0,0");
+			visualizer.setXmlParam("ColorBand15", "255,255,255");
+			visualizer.setXmlParam("ColorBand16", "255,255,255");
 			visualizer.setXmlParam("colorbandpeak", "255,255,255");
-
 			setColorosc("255,255,255");
 		}
 		if (grid == 0)
@@ -753,8 +768,8 @@ Trigger.onRightButtonUp (int x, int y)
 	waxpmenu.addCommand("Zune Dark", 530, v_color == 30, 0);
 	
 	colmenu.addCommand("Commodore 64", 520, v_color == 20, 0);
+	colmenu.addCommand("Lines && Peaks only", 531, v_color == 31, 0);
 	colmenu.addCommand("Midori Mizuno", 515, v_color == 15, 0);
-	colmenu.addCommand("Peaks Only", 531, v_color == 31, 0);
 	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
 
 	colmenu.addCommand("That old Hi-Fi", 517, v_color == 17, 0);
@@ -913,7 +928,7 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer FPS2", v_fps);
 	}
-	else if (a >= 500 && a <= 531)
+	else if (a >= 500 && a <= 532)
 	{
 		v_color = a - 500;
 		if (v_color == 0)
@@ -1375,11 +1390,26 @@ ProcessMenuResult (int a)
 			setColorOscOdd("38,38,38");
 			setColorOscEven("109,109,109");
 		}
-		else if(v_color == 31){
-			//peaks only
-			visualizer.setXmlParam("colorallbands", "0,0,0");
+		else if (v_color == 31)
+		{
+			//lines & peaks only
+			visualizer.setXmlParam("ColorBand1", "0,0,0");
+			visualizer.setXmlParam("ColorBand2", "0,0,0");
+			visualizer.setXmlParam("ColorBand3", "0,0,0");
+			visualizer.setXmlParam("ColorBand4", "0,0,0");
+			visualizer.setXmlParam("ColorBand5", "0,0,0");
+			visualizer.setXmlParam("ColorBand6", "0,0,0");
+			visualizer.setXmlParam("ColorBand7", "0,0,0");
+			visualizer.setXmlParam("ColorBand8", "0,0,0");
+			visualizer.setXmlParam("ColorBand9", "0,0,0");
+			visualizer.setXmlParam("ColorBand10", "0,0,0");
+			visualizer.setXmlParam("ColorBand11", "0,0,0");
+			visualizer.setXmlParam("ColorBand12", "0,0,0");
+			visualizer.setXmlParam("ColorBand13", "0,0,0");
+			visualizer.setXmlParam("ColorBand14", "0,0,0");
+			visualizer.setXmlParam("ColorBand15", "255,255,255");
+			visualizer.setXmlParam("ColorBand16", "255,255,255");
 			visualizer.setXmlParam("colorbandpeak", "255,255,255");
-
 			setColorosc("255,255,255");
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes2", v_color);

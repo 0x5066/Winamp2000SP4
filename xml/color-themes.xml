@@ -885,3 +885,27 @@
   <gammagroup id="Half-Life 2 Crosshair" value="1225,-2644,-2644" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="1225,-2644,-2644" gray="0" boost="0" />
 </gammaset>
+
+<gammaset id="Ryuko Matoi">
+  <gammagroup id="3D Objects" value="-2934,-2676,-1967" gray="0" boost="0" />
+  <gammagroup id="3D Objects-Text" value="3870,3418,-1064" gray="0" boost="0" />
+  <gammagroup id="Window" value="-3418,-3031,-2386" gray="0" boost="0" />
+  <gammagroup id="Window-text" value="2773,-3418,-3579" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 1" value="2773,-2483,-3612" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar Color 2" value="2064,-2741,-1709" gray="0" boost="0" />
+  <gammagroup id="Selected Items-Text" value="4063,3354,-1128" gray="0" boost="0" />
+  <gammagroup id="Selected Items" value="2064,-2741,-1709" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 1" value="-2967,-3096,-3289" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar Color 2" value="-3579,-3741,-3773" gray="0" boost="0" />
+  <gammagroup id="Active Title Bar-Text" value="3870,3450,-1064" gray="0" boost="0" />
+  <gammagroup id="Inactive Title Bar-Text" value="-1128,-1612,-1451" gray="0" boost="0" />
+  <gammagroup id="Visualizers" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Visualizers2" value="-2451,-1806,-903" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Digits" value="2064,-2741,-1709" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Labels" value="2064,-2741,-1709" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 HUD Elements" value="-2644,-2128,-1354" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Crosshair" value="3837,3128,-1193" gray="0" boost="0" />
+  <gammagroup id="Half-Life 2 Subtitle Text" value="3837,3128,-1193" gray="0" boost="0" />
+</gammaset>

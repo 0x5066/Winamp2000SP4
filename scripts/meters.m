@@ -43,7 +43,7 @@ Refresh.onTimer() {
 
   for(int i = 0; i<sensitivity; i++){
     // idk how correct the sensitivity division is but it seems to work
-    level1 += ((getVisBand(0, sensitivity-1)*LeftMeter.getLength()/256) / 3 + ((getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 3) + (getVisBand(0, sensitivity+4)*LeftMeter.getLength()/256) / 3 - level1 / DivL1);
+    level1 += (((getVisBand(0, sensitivity-1)*LeftMeter.getLength()/256) / 5 + ((getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 5) + (getVisBand(0, sensitivity+4)*LeftMeter.getLength()/256) / 5 + (((getLeftVuMeter()+getRightVuMeter()/2)*LeftMeter.getLength()/255) / 5) + ((getLeftVuMeter()+getRightVuMeter()/2)*LeftMeter.getLength()/255) / 5) / 1.4 - level1 / DivL1);
   }
 
   int frame1 = level1/dontlimit;
