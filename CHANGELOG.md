@@ -1,3 +1,21 @@
+# v1.4-RC1 A Banging Update
+
+What's New?
+
+- New: Menu bar for the Playlist Editor.
+- New: Improved Headbanging for the Ryuko and Satsuki Visualizer (instead of responding to any audio activity, it responds to lower frequencies).
+- New: A few new Color themes for the Skin and the classic Visualizers.
+- New: Progress bar in the Playlist Editor that also acts as a VU Meter.
+- New: Some windows (but not all) have a sunken border, so they look more like Win32 programs.
+- New: "Debloated" version of this Skin, now referred to as the Lite edition.
+- New: Adjusted the Ragyo Visualizer's Spectrum Analyzer.
+- Fixed: Gradient generation for the Spectrum Analyzer was broken in the newest WACUP Beta and Preview builds (Winamp users won't be affected).
+- Fixed: Possible crash that could occur if a playlistplus object used the same ID as a generic text object (caused a weird conflict in the script, which caused the player to crash), fixed by replacing all playlistplus objects with regular text objects.
+
+- New (but not mentioned in the previous release):
+- Minor UI adjustments (looks a bit more aesthetically pleasing).
+- Newer Playlist Editor, made to resemble the Windows Explorer.
+
 # v1.3.2-Lite: It's so great we skipped one version revision!
 
 What's New?

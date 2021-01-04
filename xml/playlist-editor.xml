@@ -152,24 +152,30 @@
     <button id="pledit.button.add.gfx" x="4" y="23" rectrgn="1" image="newadd.static" hoverimage="newadd.hover" downimage="newadd.pressed" tooltip="Add Files to Playlist" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.add.gfx;pledit.button.add.menu"/>
 
+	<text text="Add" x="8" y="24" w="30" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
+
     <togglebutton id="pledit.button.rem.menu" action="PE_REM" x="35" y="127" w="1" h="1" image="none"/>
     <button id="pledit.button.rem.gfx" x="35" y="23" rectrgn="1" image="newremove.static" hoverimage="newremove.hover" downimage="newremove.pressed" tooltip="Remove Files from Playlist" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.rem.gfx;pledit.button.rem.menu"/>
+	<text text="Remove" x="39" y="24" w="50" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
 
     <togglebutton id="pledit.button.sel.menu" action="PE_SEL" x="86" y="107" w="1" h="1" image="none"/>
     <button id="pledit.button.sel.gfx" x="86" y="23" rectrgn="1" image="newselect.static" hoverimage="newselect.hover" downimage="newselect.pressed" tooltip="Select Files in Playlist" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.sel.gfx;pledit.button.sel.menu"/>
-	
+	<text text="Select" x="90" y="24" w="50" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
+
 	<togglebutton id="pledit.button.misc.menu" action="PE_MISC" x="127" y="107" w="1" h="1" image="none"/>
     <button id="pledit.button.misc.gfx" x="127" y="23" rectrgn="1" image="newmisc.static" hoverimage="newmisc.hover" downimage="newmisc.pressed" tooltip="Misc Actions" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.misc.gfx;pledit.button.misc.menu"/>
+	<text text="Miscellaneous" x="131" y="24" w="70" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
 
 	<!--button id="pledit.button.list" action="PE_LIST" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/-->
 	
 	<togglebutton id="pledit.button.list.menu" action="PE_LIST" x="494" y="174" w="1" h="1" image="none"/>
     <button id="pledit.button.list.gfx" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.list.gfx;pledit.button.list.menu"/>
-	
+	<text text="List Options" x="208" y="24" w="70" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
+
 	<vis id="shade.vis" x="-354" y="-34" w="72" h="16" relatx="1" relaty="1" cursor="cur.normal" gammagroup="visualizers2"
 	colorallbands="128,128,128"
 	colorbandpeak="0,0,0"
@@ -178,7 +184,7 @@
 	colorosc3="128,128,128"
 	colorosc4="128,128,128"
 	colorosc5="128,128,128"
-	fps="60" alpha="0"/>
+	fps="60" visible="0"/>
 
 	<text id="pledit.info" x="-85" y="-21" h="19" w="78" relatx="1" relaty="1" display="PE_Info" font="micross" fontsize="14" valign="middle" align="right" 
 	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>

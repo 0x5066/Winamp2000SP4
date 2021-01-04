@@ -1,4 +1,4 @@
-<gammaset id="Windows Standard">
+<gammaset id="(Windows ME/2000) Windows Standard">
   <gammagroup id="3D Objects" value="2741,2612,2354" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -22,7 +22,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="REVOCS Media Player">
+<gammaset id="(Winamp Skin) REVOCS Media Player">
   <gammagroup id="3D Objects" value="2676,1967,1902" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="3870,3289,3450" gray="0" boost="0" />
@@ -46,7 +46,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="A.P.E Media Player">
+<gammaset id="(Winamp Skin) A.P.E Media Player">
   <gammagroup id="3D Objects" value="3386,2967,1322" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,3280" gray="0" boost="0" />
@@ -70,7 +70,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Brick">
+<gammaset id="(Windows 9x) Brick">
   <gammagroup id="3D Objects" value="2160,2064,1225" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -94,7 +94,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Desert">
+<gammaset id="(Windows 9x) Desert">
   <gammagroup id="3D Objects" value="2720,2432,1888" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -118,7 +118,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Eggplant">
+<gammaset id="(Windows 9x) Eggplant">
   <gammagroup id="3D Objects" value="512,1536,1280" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -142,7 +142,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Lilac">
+<gammaset id="(Windows 9x) Lilac">
   <gammagroup id="3D Objects" value="1472,1280,2848" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -166,7 +166,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Maple">
+<gammaset id="(Windows 9x) Maple">
   <gammagroup id="3D Objects" value="3264,2816,1472" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -190,7 +190,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Marine (high color)">
+<gammaset id="(Windows 9x) Marine (high color)">
   <gammagroup id="3D Objects" value="256,2048,1792" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="2304,3072,2816" gray="0" boost="0" />
@@ -214,7 +214,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Plum (high color)">
+<gammaset id="(Windows 9x) Plum (high color)">
   <gammagroup id="3D Objects" value="1280,768,512" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="2816,2560,2304" gray="0" boost="0" />
@@ -238,7 +238,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Pumpkin">
+<gammaset id="(Windows 9x) Pumpkin">
   <gammagroup id="3D Objects" value="3456,2720,928" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -262,7 +262,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Rainy Day">
+<gammaset id="(Windows 9x) Rainy Day">
   <gammagroup id="3D Objects" value="96,800,1568" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -286,7 +286,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Red, White, and Blue (VGA)">
+<gammaset id="(Windows 9x) Red, White, and Blue (VGA)">
   <gammagroup id="3D Objects" value="2048,2048,2048" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -310,7 +310,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Rose">
+<gammaset id="(Windows 9x) Rose">
   <gammagroup id="3D Objects" value="2528,1504,1760" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -334,7 +334,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Slate">
+<gammaset id="(Windows 9x) Slate">
   <gammagroup id="3D Objects" value="928,1824,2304" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -358,7 +358,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Spruce">
+<gammaset id="(Windows 9x) Spruce">
   <gammagroup id="3D Objects" value="1088,2304,1312" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -382,7 +382,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Storm (VGA)">
+<gammaset id="(Windows 9x) Storm (VGA)">
   <gammagroup id="3D Objects" value="2048,2048,2048" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -406,7 +406,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Teal (VGA)">
+<gammaset id="(Windows 9x) Teal (VGA)">
   <gammagroup id="3D Objects" value="2048,2048,2048" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -430,7 +430,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Wheat">
+<gammaset id="(Windows 9x) Wheat">
   <gammagroup id="3D Objects" value="3008,3008,1024" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -454,7 +454,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows XP (blue)">
+<gammaset id="(Windows XP Luna) Default (blue)">
   <gammagroup id="3D Objects" value="3456,3360,2816" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -478,7 +478,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows Standard (1 Colored Title bar beam)">
+<gammaset id="(Windows ME/2000) Windows Standard (1 Colored Title bar beam)">
   <gammagroup id="3D Objects" value="2741,2612,2354" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -502,7 +502,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows Classic">
+<gammaset id="(Windows 9x) Windows Classic">
   <gammagroup id="3D Objects" value="2096,2096,2096" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -526,7 +526,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows Classic (1 Colored Title bar beam)">
+<gammaset id="(Windows 9x) Windows Classic (1 Colored Title bar beam)">
   <gammagroup id="3D Objects" value="2096,2096,2096" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -550,7 +550,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows XP (Olive Green)">
+<gammaset id="(Windows XP Luna) Olive Green">
   <gammagroup id="3D Objects" value="3456,3360,2816" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -574,7 +574,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows XP (Silver)">
+<gammaset id="(Windows XP Luna) Silver">
   <gammagroup id="3D Objects" value="3072,3040,3168" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -598,7 +598,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Windows 7 (Aero)">
+<gammaset id="(Windows 7) Aero">
   <gammagroup id="3D Objects" value="3644,3644,3644" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -622,7 +622,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Winamp Modern">
+<gammaset id="(Winamp Skin) Winamp Modern">
   <gammagroup id="3D Objects" value="0,258,709" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-3192,-2031,-64" gray="0" boost="0" />
@@ -646,7 +646,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Bento">
+<gammaset id="(Winamp Skin) Bento">
   <gammagroup id="3D Objects" value="-2451,-2322,-2289" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="2676,2676,2676" gray="0" boost="0" />
   <gammagroup id="Window" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -670,7 +670,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="2676,2676,2676" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Winamp 3">
+<gammaset id="(Winamp Skin) Winamp 3">
   <gammagroup id="3D Objects" value="64,64,645" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -694,7 +694,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Winamp Classic">
+<gammaset id="(Winamp Skin) Winamp Classic">
   <gammagroup id="3D Objects" value="-2515,-2515,-1709" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -718,7 +718,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Big Bento Modern">
+<gammaset id="(Winamp Skin) Big Bento Modern">
   <gammagroup id="3D Objects" value="-2322,-2257,-2031" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="1644,2289,2709" gray="0" boost="0" />
   <gammagroup id="Window" value="-2805,-2741,-2547" gray="0" boost="0" />
@@ -742,7 +742,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="645,1548,1870" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="GoldSrc VGUI">
+<gammaset id="(Video Game) GoldSrc VGUI">
   <gammagroup id="3D Objects" value="-1644,-1257,-1902" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="2870,3063,2709" gray="0" boost="0" />
   <gammagroup id="Window" value="-2096,-1838,-2322" gray="0" boost="0" />
@@ -766,7 +766,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="More Windows">
+<gammaset id="(Windows 9x: Microsoft Plus!) More Windows">
   <gammagroup id="3D Objects" value="548,806,1064" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="4096,4096,4096" gray="0" boost="0" />
@@ -790,7 +790,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Source VGUI">
+<gammaset id="(Video Game) Source VGUI">
   <gammagroup id="3D Objects" value="-290,-290,-290" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-1354,-1354,-1354" gray="0" boost="0" />
@@ -814,7 +814,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Crimson">
+<gammaset id="(Contribution) Crimson">
   <gammagroup id="3D Objects" value="-940,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-3387,-4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-3529,-2891,-3706" gray="0" boost="0" />
@@ -838,7 +838,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="1152,3280,-4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Commodore 64">
+<gammaset id="(Commodore 64) **** COMMODORE 64 BASIC V2 ****">
   <gammagroup id="3D Objects" value="-2193,-2451,1161" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-161,-387,2967" gray="0" boost="0" />
   <gammagroup id="Window" value="-2193,-2451,1161" gray="0" boost="0" />
@@ -862,7 +862,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="-161,-387,2967" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Christmas">
+<gammaset id="(Holiday) Christmas">
   <gammagroup id="3D Objects" value="-2547,-1032,-3160" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Window" value="-1096,-4096,-3966" gray="0" boost="0" />
@@ -886,7 +886,7 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="1225,-2644,-2644" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Ryuko Matoi">
+<gammaset id="(Anime: Kill La Kill) Ryuko Matoi">
   <gammagroup id="3D Objects" value="-2934,-2676,-1967" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="3870,3418,-1064" gray="0" boost="0" />
   <gammagroup id="Window" value="-3418,-3031,-2386" gray="0" boost="0" />
@@ -901,8 +901,8 @@
   <gammagroup id="Inactive Title Bar-Text" value="-1128,-1612,-1451" gray="0" boost="0" />
   <gammagroup id="Visualizers" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="Visualizers2" value="-2451,-1806,-903" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer Background" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer Background" value="-3418,-3031,-2386" gray="0" boost="0" />
+  <gammagroup id="VGUI Visualizer" value="2064,-2741,-1709" gray="1" boost="0" />
   <gammagroup id="Half-Life 2 Digits" value="2064,-2741,-1709" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Labels" value="2064,-2741,-1709" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 HUD Elements" value="-2644,-2128,-1354" gray="0" boost="0" />

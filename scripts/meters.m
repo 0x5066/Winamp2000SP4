@@ -73,14 +73,14 @@ LeftMeter.onLeftButtonUp(int x, int y) {
 	Div1Menu.addCommand("info", 100, 0, 0);
 	MainMenu.addSubMenu(Div1Menu, "Smoothness");
 
-  for (int i = 1; i < 9; ++i) SensMenu.addCommand(integerToString(i), i, sensitivity == i, 0);
+  for (int i = 1; i < 4; ++i) SensMenu.addCommand(integerToString(i), i, sensitivity == i, 0);
 	MainMenu.addSubMenu(SensMenu, "Sensitivity");
 
 	int com = MainMenu.popAtMouse();
-	if(com>=1 && com<9){
+	if(com>=1 && com<4){
     sensitivity = com;
   }
-  else if (com > 9 && com < 100) {
+  else if (com > 4 && com < 100) {
 		DivL1 = com / 10;
 		dontamp = com / 10;
 	}
