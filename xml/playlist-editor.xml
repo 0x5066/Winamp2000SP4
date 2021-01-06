@@ -186,10 +186,11 @@
 	colorosc5="128,128,128"
 	fps="60" visible="0"/>
 
-	<text id="pledit.info" x="-85" y="-21" h="19" w="78" relatx="1" relaty="1" display="PE_Info" font="micross" fontsize="14" valign="middle" align="right" 
+	<text id="pledit.info" x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" display="PE_Info" font="tahoma" fontsize="14" valign="middle" align="left" 
 	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>
+	<!--rect x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" color="0,0,0" filled="1" ghost="1"/-->
 	
-	<text display="SONGNAME" ticker="1" x="4" y="-20" w="-190" h="13" relaty="1" relatw="1" font="micross" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" sysregion="1"/>
+	<text display="SONGNAME" ticker="1" x="5" y="-20" w="-191" h="13" relaty="1" relatw="1" font="tahoma" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" sysregion="1"/>
 	
 	<grid x="4" y="-22" w="-190" h="18" relaty="1" relatw="1" topleft="wnd.topleft2" top="wnd.topmid2" topright="wnd.topright2" 
 	left="wnd.left2" middle="wnd.mid2" right="wnd.right2"
