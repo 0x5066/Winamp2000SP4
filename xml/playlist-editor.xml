@@ -188,6 +188,7 @@
 
 	<text id="pledit.info" x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" display="PE_Info" font="tahoma" fontsize="14" valign="middle" align="left" 
 	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>
+	<layer id="win.resize" x="-20" y="-22" h="18" w="16" relatx="1" relaty="1" image="winresizer" ghost="1"/>
 	<!--rect x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" color="0,0,0" filled="1" ghost="1"/-->
 	
 	<text display="SONGNAME" ticker="1" x="5" y="-20" w="-191" h="13" relaty="1" relatw="1" font="tahoma" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" sysregion="1"/>
