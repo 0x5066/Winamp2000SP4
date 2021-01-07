@@ -11,7 +11,7 @@
 
 Global AnimatedLayer RightMeter, LeftMeter;// Animated layer
 Global Timer Refresh;
-Global int ONOFF, Level1, DivL1, dontamp;
+Global int ONOFF, Level1, Level2, DivL1, DivR1, dontamp;
 
 Global int sensitivity;
 
@@ -24,6 +24,7 @@ System.onScriptLoaded() {
   ONOFF = getPrivateInt("RyukoAndSatsuki", "Disable Headbanging", 0);
 	string paramslist = getPrivateString("RyukoAndSatsuki", "Digital Headbanging", "4");
 	DivL1 = stringToInteger(getToken(paramslist, ";", 0));
+  DivR1 = stringToInteger(getToken(paramslist, ";", 0));
   dontamp = stringToInteger(getToken(paramslist, ";", 0));
   sensitivity = getPrivateInt(getSkinName(), "RyukoVisSensitivity", 3);
   Refresh = new Timer;
@@ -43,15 +44,16 @@ Refresh.onTimer() {
 
   for(int i = 0; i<sensitivity; i++){
     // idk how correct the sensitivity division is but it seems to work
-    level1 += (((getVisBand(0, sensitivity-1)*LeftMeter.getLength()/256) / 5 + ((getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 5) + (getVisBand(0, sensitivity+4)*LeftMeter.getLength()/256) / 5 + (((getLeftVuMeter()+getRightVuMeter()/2)*LeftMeter.getLength()/255) / 5) + ((getLeftVuMeter()+getRightVuMeter()/2)*LeftMeter.getLength()/255) / 5) / 1.4 - level1 / DivL1);
+    level1 += (((getVisBand(0, sensitivity-1)*LeftMeter.getLength()/256) / 5 + ((getVisBand(0, sensitivity+2)*LeftMeter.getLength()/256) / 5) + (getVisBand(0, sensitivity+4)*LeftMeter.getLength()/256) / 5 + ((getLeftVuMeter()*LeftMeter.getLength()/255) / 5) + (getLeftVuMeter()*LeftMeter.getLength()/255) / 5) / 1.4 - level1 / DivL1);
+    level2 += (((getVisBand(0, sensitivity-1)*LeftMeter.getLength()/256) / 5 + ((getVisBand(0, sensitivity+2)*RightMeter.getLength()/256) / 5) + (getVisBand(0, sensitivity+4)*RightMeter.getLength()/256) / 5 + ((getRightVuMeter()*RightMeter.getLength()/255) / 5) + (getRightVuMeter()/2*RightMeter.getLength()/255) / 5) / 1.4 - level2 / DivR1);
   }
 
   int frame1 = level1/dontlimit;
-	int frame2 = level1/dontlimit;
+	int frame2 = level2/dontlimit;
 
   if (frame1 < LeftMeter.getLength() && frame2 < RightMeter.getLength()) {
     LeftMeter.gotoFrame(level1/dontamp);
-    RightMeter.gotoFrame(level1/dontamp);
+    RightMeter.gotoFrame(level2/dontamp);
 	}
 
 }
@@ -82,6 +84,7 @@ LeftMeter.onLeftButtonUp(int x, int y) {
   }
   else if (com > 4 && com < 100) {
 		DivL1 = com / 10;
+    DivR1 = com / 10;
 		dontamp = com / 10;
 	}
 	else if (com == 100) {
