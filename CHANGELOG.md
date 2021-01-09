@@ -11,6 +11,7 @@ What's New?
 - New: Adjusted the Ragyo Visualizer's Spectrum Analyzer.
 - Fixed: Gradient generation for the Spectrum Analyzer was broken in the newest WACUP Beta and Preview builds (Winamp users won't be affected).
 - Fixed: Possible crash that could occur if a playlistplus object used the same ID as a generic text object (caused a weird conflict in the script, which caused the player to crash), fixed by replacing all playlistplus objects with regular text objects.
+- Fixed: Tooltips now actually appear under the cursor.
 
 - New (but not mentioned in the previous release):
 - Minor UI adjustments (looks a bit more aesthetically pleasing).
