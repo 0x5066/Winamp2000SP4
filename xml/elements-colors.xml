@@ -13,7 +13,9 @@
 	<color id="titlebox.text" value="128,128,128" gammagroup="Window-Text"/>
 	<color id="wasabi.text.color2" value="128,128,128" gammagroup="3D Objects-Text"/>
 	<color id="color.window.txt" value="128,128,128" gammagroup="Window-Text"/>
-	
+	<color id="wasabi.window.objects" value="128,128,128" gammagroup="3D Objects"/>
+  <color id="wasabi.window.bg" value="128,128,128" gammagroup="Window"/>
+
 	<color id="wasabi.text.active" value="128,128,128" gammagroup="Active Title Bar-Text"/>
 	<color id="wasabi.text.inactive" value="128,128,128" gammagroup="Inactive Title Bar-Text"/>
 
