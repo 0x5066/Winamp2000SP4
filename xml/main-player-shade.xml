@@ -13,6 +13,8 @@
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
 
+	<!-- windows titlebar begins here -->
+
   <layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
 
 	<gradient id="wasabi.titlebar.active1"
@@ -51,10 +53,10 @@
     color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
 	<text id="wacup.txt.inactive" x="22" y="4" text="WACUP" w="300" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
+
+	<!-- windows titlebar ends here -->
 	
 	<group id="player.shade.group.display" x="118" y="0" ghost="1" cursor="cur.normal"/>
-	
-	<!--layer id="shade.buttons.bg" x="-268" y="2" relatx="1" image="shade.buttons.bg" cursor="cur.normal"/-->
 
 	<rect id="prev" color="64,64,64" x="-264" y="7" w="26" h="22" relatx="1"/>
 	<button id="player.button.previous" action="PREV" x="-265" y="3" relatx="1" image="shade.button.previous.n" hoverimage="shade.button.previous.h" downimage="shade.button.previous.d" tooltip="Pevious Track" cursor="cur.normal"/>
@@ -94,27 +96,23 @@
 	<button id="vismenu.menuentry2" x="7" y="9" h="0" w="0" action="Vis_Cfg" image="none"/>
 	<button id="vismenu.menuentry3" x="7" y="9" h="0" w="0" action="WA5:Prefs" param="33" image="none"/>
 
-	<!--rect id="plssayer.vis" x="8" y="10" w="72" h="15" color="0,0,250" filled="0"/-->
-
 	<grid x="6" y="8" w="75" h="20" topleft="window.plvis.display.tl" top="window.plvis.display.tm" topright="window.plvis.display.tr" 
 	left="window.plvis.display.l" middle="window.plvis.display.m" right="window.plvis.display.r"
 	bottomleft="window.plvis.display.bl" bottom="window.plvis.display.bm" bottomright="window.plvis.display.br"/>
 
 	<layer x="6" y="8" w="75" h="20" image="window.plvis.display.bg"/>
 	<vis id="shade.vis" x="8" y="10" w="72" h="16" alpha="255" cursor="cur.normal" gammagroup="visualizers"
-	colorallbands="0,255,0"
+	colorallbands="128,128,128"
 	colorbandpeak="0,0,0"
-	colorosc1="0,255,0"
-	colorosc2="0,255,0"
-	colorosc3="0,255,0"
-	colorosc4="0,255,0"
-	colorosc5="0,255,0" fps="140"/>
-	<!--component x="8" y="10" w="71" h="16" relatw="0" relath="0" noshowcmdbar="1" autoopen="0" autoclose="0" param="guid:{0000000A-000C-0010-FF7B-01014263450C}" ghost="1"/-->
+	colorosc1="128,128,128"
+	colorosc2="128,128,128"
+	colorosc3="128,128,128"
+	colorosc4="128,128,128"
+	colorosc5="128,128,128" fps="60"/>
+
   <rect id="hide.for.gordon" x="79" y="9" w="1" h="17" color="0,0,0" filled="1" ghost="1" fps="60" gammagroup="display"/>
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>
-	
-	<!--layer id="player.vis.blocker" x="8" y="10" w="72" h="15" image="none" cursor="cur.normal"/-->
 	
 	<text id="shade.time" display="TIME" x="76" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="5" timeroffstyle="1" align="right" 
 	 color="black" forcefixed="0" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
@@ -124,7 +122,6 @@
 	
 	<text id="player.display.actioninfo" x="175" y="8" w="-179" h="20" relatw="1" font="sarpanch" fontsize="15" align="left" color="black" alpha="255" cursor="cur.normal" antialias="0"/>
 
-  <!--script file="scripts\visualizer.maki" param="shade.vis;player.vis.trigger;hide.for.vic"/-->
 </groupdef>
 
 <layout id="shade" w="550" h="35" minimum_w="550" minimum_h="35" maximum_w="10000" desktopalpha="1" droptarget="pldr" linkwidth="normal" appbar="top|bottom">

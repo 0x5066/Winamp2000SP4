@@ -25,13 +25,9 @@
   <script file="scripts\sc_mouseredir.maki" param="eq.button.presets.gfx;eq.button.presets.menu"/>
   <!-- I like to place the menu under the button -not the pointer- whenever I can -->
 
-  <!--images source="preamp" x="38" y="68" w="5" h="106" images="player.animation.eq.sliders" imagesspacing="106"/-->
-
 	<Animatedlayer id="preamp_layer" image="eq.slider.bg.anim" x="46" y="70" w="6" h="107" ghost="1" alpha="0"/>
   
 	<slider id="preamp" action="EQ_BAND" param="PREAMP" x="39" y="64" h="118" w="21" orientation="vertical" thumb="eq.normal.button.slider.v.n" hoverthumb="eq.normal.button.slider.v.h" downthumb="eq.normal.button.slider.v.d" tooltip="Preamp" cursor="cur.normal"/>
-
-	<!--layer id="eq1.bg" x="131" y="70" image="eq.slider.bg.1" ghost="1"/-->
 
 	<Animatedlayer id="eq1.bg" image="eq.slider.bg.anim" x="131" y="70" w="6" h="107" ghost="1" alpha="0"/>
 	<Animatedlayer id="eq2.bg" image="eq.slider.bg.anim" x="171" y="70" w="6" h="107" ghost="1" alpha="0"/>
@@ -61,8 +57,6 @@
 		
   <layer id="eq.frequency.labels.m" x="69" y="66" image="eq.normal.labels.main" ghost="1"/>
   <layer id="eq.frequency.labels" x="24" y="184" image="eq.normal.labels.winamp" ghost="1"/>
-	
-	<!--slider id="eq.slider.crossfade" cfgattrib="{F1239F09-8CC6-4081-8519-C2AE99FCB14C};Crossfade time" high="20" x="186" y="178" w="83" h="14" thumb="eq.normal.button.slider.horizontal" downthumb="eq.normal.button.slider.horizontal"/-->
 
   <script file="scripts\eq_animated_bars.maki"/>
 </groupdef>
@@ -76,8 +70,7 @@
 <groupdef id="eq.shade.volbalance">
 	<rect id="vol.bg2" color="64,64,64" x="12" y="10" w="120" h="3" ghost="1"/>
 	<grid id="posbar.bg" x="11" y="9" w="121" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right" />
-  <!--  using image source is buggy with color themes -->
-  <!--images source="volume" x="5" y="6" w="120" h="8" images="player.animation.volume" imagesspacing="8"/-->
+
   <Animatedlayer id="volume.anim" x="5" y="6" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
 	<slider id="player.slider.volume.shadow" x="0" y="0" w="130" h="26" action="VOLUME" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>	
 	<slider id="player.slider.volume" x="11" y="2" w="121" h="21" action="VOLUME" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
@@ -100,14 +93,14 @@
 	<layer id="background.shade.m" x="267" y="0" h="35" w="-538" relatw="1" image="shade.background.main.middle" dblclickaction="SWITCH;normal" sysregion="1"/>
 	<layer id="background.shade.r" x="-271" y="0" h="35" relatx="1" image="shade.background.main.right" dblclickaction="SWITCH;normal" sysregion="1"/>
 
-	<grid id="shade.titlebar.stripes" x="10" y="3" w="-80" h="28" relatw="1" left="titlebar.stripes.left" middle="titlebar.stripes.center" right="titlebar.stripes.right" move="1" activealpha="255" inactivealpha="100" ghost="1"/>
-
   <group id="eq.shade.titlebar.center" x="0" y="3" w="260" h="28" ghost="1"/>
   
 	<layer id="pledit.region.top.left" x="0" y="0" image="window.shade.region.top.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2"/>
+
+	<!-- windows titlebar begins here -->
 
   <layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
 
@@ -135,7 +128,6 @@
   
   	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
 	
-
 	  <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
 
 	  <rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1"/>
@@ -143,6 +135,8 @@
 
 	  	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
 	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1" ghost="1"/>
+
+	<!-- windows titlebar ends here -->
   
   <group id="eq.shade.volbalance" x="0" y="6" w="231" h="28" cursor="cur.normal"/>
 
@@ -160,7 +154,6 @@
 
 
 <groupdef id="pledit.switch.button">
-  <!--layer id="window.top.middle" x="0" y="0" w="0" relatw="1" image="window.normal.titlebar.middle" resize="top" stretch="1" ghost="1" cursor="cur.restop"/--> <!--causes some huge area to appear right around the switch button, me no likey-->
   <layer id="window.grip.top.right" x="-7" y="4" image="titlebar.stripes.right" activealpha="255" inactivealpha="110" ghost="1"/>
 	<button id="pledit.button.switch" action="SWITCH" param="SHADE" x="38" y="-1" image="window.shade.button.switch" hoverimage="window.shade.button.switch.h" 
 	downimage="window.shade.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>

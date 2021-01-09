@@ -40,6 +40,8 @@
 	<grid id="shadewinstuff2" x="0" y="23" w="-0" h="3" relatw="1" left="shadewin.l2" middle="shadewin.m2" right="shadewin.r2" ghost="1"/>
 	<grid id="shadewinstuff" x="0" y="23" w="-0" h="3" relatw="1" left="shadewin.l" middle="shadewin.m" right="shadewin.r" ghost="1"/>
 	
+	<!-- windows titlebar begins here -->
+
 	<gradient id="wasabi.titlebar.active1"
 		x="4" y="4" w="-61" h="18" relatw="1"
 		points="0.0=128,128,128,255;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 1" ghost="1"/>
@@ -78,6 +80,8 @@
 	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1" ghost="1"/> 
 	<button id="pledit.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="window.shade.button.close" hoverimage="window.shade.button.close.h" downimage="window.shade.button.close.d" tooltip="Close" activealpha="255" inactivealpha="255" cursor="cur.close"/>
 
+	<!-- windows titlebar ends here -->
+
 </groupdef>
 
 <groupdef id="pledit.shade.group.display" w="-65" h="26" relatw="1">
@@ -93,11 +97,6 @@
 	<rect id="selector" fitparent="1" filled="1" color="wasabi.list.background" alpha="255"/>
 </groupdef>
 
-<!--groupdef id="elipsis">
-	<rect id="plslider" fitparent="1" filled="1" color="21,19,29" gammagroup="display" alpha="255"/>
-	<text id="elipsis" text="..." x="0" y="0" w="10" h="20" ghost="1"/>
-</groupdef-->
-
 <groupdef id="xui.playlistplus" xuitag="PlaylistPlus">
 
 	<layer id="playlist.plus.lines" image="none" x="4" y="0" w="-8" h="20" relatw="1" ghost="1" alpha="185" />
@@ -106,8 +105,6 @@
 	<rect id="plslider" x="-8" y="0" w="1" relatx="1" h="5" filled="1" color="0,0,0" alpha="0" visible="1" ghost="0" move="1"/>
 		
 	<text id="dummy" text="10:00" x="0" y="0" w="0" h="20" relatw="1" visible="0" ghost="1"/>
-	
-	<!--group id="elipsis" x="-53" y="0" w="10" h="18" relatx="1" ghost="1"/-->
 	
 	<layer id="mousetrap" x="0" y="0" w="0" relatw="1" h="0" relath="1" rectrgn="1" move="1" dblclickaction="SWITCH;normal" cursor="cur.normal"/>
 	  
@@ -128,7 +125,6 @@
 </groupdef>
 
 <groupdef id="pledit.switch.button">
-  <!--layer id="window.top.middle" x="0" y="0" w="0" relatw="1" image="window.normal.titlebar.middle" resize="top" stretch="1" ghost="1" cursor="cur.restop"/--> <!--causes some huge area to appear right around the switch button, me no likey-->
   <layer id="window.grip.top.right" x="-7" y="5" image="titlebar.stripes.right" activealpha="255" inactivealpha="255" ghost="1"/>
 	<button id="pledit.button.switch" action="SWITCH" param="SHADE" x="40" y="0" image="window.shade.button.switch" hoverimage="window.shade.button.switch.h" downimage="window.shade.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
 </groupdef>
@@ -169,8 +165,6 @@
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.misc.gfx;pledit.button.misc.menu"/>
 	<text text="Miscellaneous" x="131" y="24" w="70" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
 
-	<!--button id="pledit.button.list" action="PE_LIST" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/-->
-	
 	<togglebutton id="pledit.button.list.menu" action="PE_LIST" x="494" y="174" w="1" h="1" image="none"/>
     <button id="pledit.button.list.gfx" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.list.gfx;pledit.button.list.menu"/>
@@ -189,7 +183,6 @@
 	<text id="pledit.info" x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" display="PE_Info" font="tahoma" fontsize="14" valign="middle" align="left" 
 	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>
 	<layer id="win.resize" x="-20" y="-22" h="18" w="16" relatx="1" relaty="1" image="winresizer" ghost="1"/>
-	<!--rect x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" color="0,0,0" filled="1" ghost="1"/-->
 	
 	<text display="SONGNAME" ticker="1" x="5" y="-20" w="-191" h="13" relaty="1" relatw="1" font="tahoma" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" sysregion="1"/>
 	
@@ -215,8 +208,8 @@
 
 <layout id="shade" w="550" h="26" minimum_w="276" minimum_h="26" maximum_w="10000" maximum_h="26" droptarget="pldr" desktopalpha="0" linkwidth="normalpl">
   
-
 	<group id="pledit.shade.group.main" x="0" y="0" h="26" ghost="1" cursor="cur.normal"/>	
+
 </layout>	
 	
 </container>

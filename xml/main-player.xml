@@ -14,26 +14,19 @@
 	<layer id="player.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2" />
 	<layer id="player.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2" />
 	<layer id="player.region.bottom.right" x="-3" y="-3" relatx="1" relaty="1" image="window.shade.region.bottom.right" ghost="1" sysregion="-2" />
-
-  <!--grid id="player.songticker.bg" x="221" y="50" h="21" w="-247" relatw="1" left="player.songticker.bg.left" middle="player.songticker.bg.middle" right="player.songticker.bg.right" move="1" cursor="cur.normal" antialias="0"/-->
  
 	<rect id="vol.bg2" color="64,64,64" x="201" y="121" w="120" h="3" ghost="1"/>
 	<grid id="volume.bg" x="200" y="120" w="121" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right" />
 
   <Animatedlayer id="main.volume.anim" x="223" y="116" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
-	<!--slider id="player.slider.volume.shadow" action="VOLUME" x="201" y="110" w="130" h="26" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
 	<slider id="player.slider.volume" action="VOLUME" x="200" y="113" w="121" h="21" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
 	<rect id="bal.bg2" color="64,64,64" x="346" y="121" w="74" h="3" ghost="1"/>
 	<grid id="balance.bg" x="345" y="120" w="75" h="4" left="posbar.left" middle="posbar.center" right="posbar.right" />
   <Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
-	<!--slider id="eq.slider.pan.shadow" action="PAN" x="341" y="110" w="81" h="26" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/-->
 	<slider id="eq.slider.pan" action="PAN" x="345" y="113" w="75" h="21" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
-	
-  <!--script file="scripts\color_themes_patch_fix.maki"/--> <!-- This script makes the switch between the safe layer and the multicolor-bar (only seen on default theme) -->
 
   	<rect id="EQ" color="64,64,64" x="-107" y="111" w="38" h="21" relatx="1" ghost="1"/>
-	<!--layer id="player.button.eq.shadow" x="-110" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/-->
 	<layer id="player.button.eq" x="-110" y="107" relatx="1" image="player.normal.button.eq" alpha="255" cursor="cur.normal"/>
   <NStatesButton id="player.button.eq.light" x="-112" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="equalizer" nstates="2" cfgvals="0;1" tooltip="Toggle Graphical Equalizer" cursor="cur.normal"/>
 
@@ -44,7 +37,6 @@
 
 	<rect id="posbar.bg2" color="64,64,64" x="28" y="152" w="-50" h="3" relatw="1" ghost="1"/>
 	<grid id="posbar.bg" x="27" y="151" w="-49" h="4" relatw="1" left="posbar.left" middle="posbar.center" right="posbar.right" />
-	<!--slider id="player.slider.seek.shadow" action="SEEK" x="26" y="139" w="-47" h="34" relatw="1" orientation="horizontal" thumb="player.seeker.slider.shadow" hoverthumb="player.seeker.slider.shadow" downthumb="player.seeker.slider.shadow" rectrgn="1"/-->
   <layer id="player.seek.cursor" x="27" y="143" w="-49" h="21" relatw="1" image="none" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
 	<slider id="player.slider.seek" action="SEEK" x="27" y="144" w="-49" h="21" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal" tooltip="Seeking Bar"/>
 	<slider id="player.slider.seek.ghost" action="SEEK" x="27" y="144" w="-49" h="21" relatw="1" orientation="horizontal" thumb="player.seeker.slider.n" hoverthumb="player.seeker.slider.h" downthumb="player.seeker.slider.d" rectrgn="1" cursor="cur.normal"/>
@@ -81,7 +73,7 @@
 	<layer id="about.bg" x="-71" y="175" relatx="1" image="about.bg" alpha="255" ghost="1"/>
 	<togglebutton id="player.button.about" x="-63" y="174" relatx="1" image="button.about.n" hoverimage="button.about.h" downimage="button.about.d" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" alpha="255" tooltip="About Winamp / Toggle Library" cursor="cur.normal"/>
 
-	<grid id="titlebar.stripes" x="32" y="3" w="-120" h="28" relatw="1" left="titlebar.stripes.left" middle="titlebar.stripes.center" right="titlebar.stripes.right" move="1" activealpha="0" inactivealpha="0" />
+	<!-- windows titlebar begins here -->
 
   <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
 
@@ -108,8 +100,6 @@
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
 
 	<group id="titlebar.winamptxt.group" x="0" y="0" h="30" w="324"/>
-  
-  	  <!--Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/-->
 	  
 	  <layer id="titlebar.switch" x="30" y="0" w="-83" h="30" relatw="1" dblclickaction="SWITCH;shade" move="1" ghost="0" cursor="cur.move"/>
   
@@ -120,24 +110,14 @@
 	<button id="player.button.switch" action="SWITCH" param="SHADE" x="-45" y="-1" relatx="1" image="player.button.switch" hoverimage="player.button.switch.h" downimage="player.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
 	<rect id="close" color="64,64,64" x="-22" y="6" w="16" h="14" relatx="1" ghost="1"/> 
 	<button id="player.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="player.button.close" hoverimage="player.button.close.h" downimage="player.button.close.d" tooltip="Close" activealpha="255" inactivealpha="255" cursor="cur.close"/>
-	
-	<!--group id="songticker.options" x="0" y="43" h="0" w="295" alpha="0" sysregion="1"/>
-  <script file="scripts\centerobject.maki" param="songticker.options,1,0"/-->
+
+	<!-- windows titlebar ends here -->
 	
 	<group id="player.normal.group.display" x="21" y="49" h="82" w="183" alpha="255"/>
 	<group id="player.normal.group.songticker" x="200" y="43" h="31" w="6" relatw="1" alpha="255"/>
 	<group id="player.normal.group.songinfo" x="199" y="76" h="26" w="-235" relatw="1" alpha="255"/>
 
 </groupdef>
-
-<!--groupdef id="songticker.options" >
-  <layer id="songticker.bg" x="0" y="0" h="30" w="295" image="frame.color"/>
-  <layer id="songticker.bg" x="1" y="1" h="29" w="293" image="base.color"/>
-  <text id="songticker.title" x="6" y="0" w="260" h="30" fontsize="20" font="sarpanch" text="Autoscroll:" color="wasabi.popupmenu.text" ghost="1"/>
-  <text id="songticker.classic" x="101" y="0" w="260" h="30" fontsize="20" font="sarpanch" text="Classic" color="wasabi.popupmenu.text" rectrgn="1"/>
-  <text id="songticker.modern" x="167" y="0" w="260" h="30" fontsize="20" font="sarpanch" text="Modern" color="wasabi.popupmenu.text" rectrgn="1"/>
-  <text id="songticker.none" x="236" y="0" w="260" h="30" fontsize="20" font="sarpanch" text="None" color="wasabi.popupmenu.text" rectrgn="1"/>
-</groupdef-->
 
 <groupdef id="titlebar.winamptxt.group">
 
@@ -162,17 +142,14 @@
 	<SongTicker id="player.display.songname" x="23" y="10" w="-254" relatw="1" h="20" font="sarpanch" fontsize="15" color="wasabi.list.text.alternate" dblclickaction="trackinfo" 
 	rightclickaction="trackmenu" align="left" ghost="0" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
 	<text id="player.display.actioninfo" x="21" y="1" w="-254" relatw="1" h="33" font="sarpanch" fontsize="15" color="wasabi.list.text.alternate" align="left" ghost="1" antialias="0"/> 
-  <!--script file="scripts\songticker.maki"/-->
 </groupdef>
 
 <groupdef id="player.normal.group.songinfo">
-	<!--rect id="filler.visual.helper" x="0" y="0" fitparent="1" filled="1" color="53,53,0" alpha="255"/-->
 
 	<grid id="songinfo.bitrate.bg" x="-1" y="3" w="39" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.bitrate.display" x="-1" y="3" w="39" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
 	<layer id="songinfo.bitrate.label" x="39" y="4" image="songinfo.bitrate.label" ghost="1" alpha="255"/>
   <text id="songinfo.bitrate"  x="5" y="8" w="26" h="14" font="numbers" fontsize="14" color="wasabi.list.text.alternate" align="left" ghost="1" antialias="0"/>
-	
 	
 	<grid id="songinfo.frequency.bg" x="90" y="3" w="34" h="25" left="songinfo.bg.left" middle="songinfo.bg.middle" right="songinfo.bg.right" ghost="1" alpha="255"/>
 	<grid id="songinfo.frequency.display" x="90" y="3" w="34" h="25" left="songinfo.display.left" middle="songinfo.display.middle" right="songinfo.display.right" ghost="1" alpha="255"/>
@@ -184,7 +161,6 @@
 </groupdef>
 
 <groupdef id="player.normal.group.display"  cursor="cur.normal">
-	<!--rect id="player.background.display.vis.scale" x="0" y="0" filled="1" color="53,53,0" alpha="255"/-->
 	<layer id="player.normal.display.bg" x="5" y="1" image="player.normal.display.bg" cursor="cur.normal"/>
 
 	<layer id="clutterbarbg" x="8" y="2" w="11" h="71" image="clutterbar" cursor="cur.normal" regionop="1"/>
@@ -211,7 +187,6 @@
 
 	<text id="Timer" display="TIME" x="48" y="5" w="122" h="36" ticker="0" font="time" fontsize="38" forcefixed="1" color="white" 
 	valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
-	<!--rect id="plssayer.vis" x="27" y="41" w="143" h="31" color="0,0,250" filled="0"/-->
 	<vis id="player.vis" x="27" y="39" w="143" h="32" cursor="cur.normal"/>
 	<layer id="visgridimg.thick" x="27" y="39" image="visgrid_thick" ghost="1"/>
 	<layer id="visgridimg.thin" x="27" y="39" image="visgrid_thin" ghost="1"/>
@@ -220,10 +195,7 @@
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>
 	<layer id="player.vis.trigger" x="27" y="39" w="143" h="32" image="none" cursor="cur.normal"/>
 
-
 </groupdef>
-
-
 
 <layout id="normal" minimum_h="242" minimum_w="550" maximum_w="10000" w="550" h="242" desktopalpha="1" droptarget="pldr" linkwidth="shade" appbar="top|bottom" >
 	<group id="player.normal.group.main" x="0" y="0" h="242" w="0" relatw="1" ghost="1"/>

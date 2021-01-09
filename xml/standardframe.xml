@@ -88,6 +88,8 @@
 
 	<group id="wasabi.frame.layout.region" x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
 
+	<!-- windows titlebar begins here -->
+
   <layer x="4" y="4" w="20" h="18" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
 
 	<gradient id="wasabi.titlebar.active1"
@@ -125,7 +127,7 @@
 	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" cursor="cur.normal"/>
 	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" tooltip="Winamp Menu" cursor="cur.normal"/>
 
-
+	<!-- windows titlebar ends here -->
 
  </groupdef>
 
