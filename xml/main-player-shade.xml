@@ -101,7 +101,7 @@
 	bottomleft="window.plvis.display.bl" bottom="window.plvis.display.bm" bottomright="window.plvis.display.br"/>
 
 	<layer x="6" y="8" w="75" h="20" image="window.plvis.display.bg"/>
-	<vis id="shade.vis" x="8" y="10" w="72" h="16" alpha="255" cursor="cur.normal" gammagroup="visualizers"
+	<vis id="shade.vis" x="8" y="10" w="72" h="16" alpha="255" cursor="cur.normal" gammagroup="visualizers2"
 	colorallbands="128,128,128"
 	colorbandpeak="0,0,0"
 	colorosc1="128,128,128"
