@@ -378,14 +378,14 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
   {
 		if (getCurCfgVal() == 1)
 		{
-      ShuffleLight.setXmlParam("image", "repeat.light.on.d");
-      ShuffleLight.setXmlParam("activeImage", "repeat.light.on.d");
+      ShuffleLight.setXmlParam("image", "check.no");
+      ShuffleLight.setXmlParam("activeImage", "check.no");
 			showActionInfo("Shuffle: Off");
 		}
 		else
 		{
-      ShuffleLight.setXmlParam("image", "repeat.light.on.d");
-      ShuffleLight.setXmlParam("activeImage", "repeat.light.on.d");
+      ShuffleLight.setXmlParam("image", "checked");
+      ShuffleLight.setXmlParam("activeImage", "checked");
 			showActionInfo("Shuffle: On");
 		}
 	}
@@ -441,25 +441,25 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "repeat.light.on.h");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on.h");
+          ShuffleLight.setXmlParam("image", "checked");
+          ShuffleLight.setXmlParam("activeImage", "checked");
         }
         else {
-          ShuffleLight.setXmlParam("image", "repeat.light.on");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on");
+          ShuffleLight.setXmlParam("image", "checked");
+          ShuffleLight.setXmlParam("activeImage", "checked");
         }
       }
       else
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "repeat.light.on.h");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on.h");
+          ShuffleLight.setXmlParam("image", "check.no");
+          ShuffleLight.setXmlParam("activeImage", "check.no");
         }
         else
         {
-          ShuffleLight.setXmlParam("image", "repeat.light.on");
-          ShuffleLight.setXmlParam("activeImage", "repeat.light.on");
+          ShuffleLight.setXmlParam("image", "check.no");
+          ShuffleLight.setXmlParam("activeImage", "check.no");
         }
       }
 		}
@@ -486,11 +486,11 @@ RepeatShuffleHandler.onEnterArea()
   {
 		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "repeat.light.on");
+			ShuffleLight.setXmlParam("image", "checked");
 		}
 		else
 		{
-			ShuffleLight.setXmlParam("image", "repeat.light.on");
+			ShuffleLight.setXmlParam("image", "check.no");
 		}
   }
 }
@@ -516,11 +516,11 @@ RepeatShuffleHandler.onLeaveArea()
   {
  		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "repeat.light.on");
+			ShuffleLight.setXmlParam("image", "checked");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      ShuffleLight.setXmlParam("image", "repeat.light.off");
+      ShuffleLight.setXmlParam("image", "check.no");
 		} 
   }
 }

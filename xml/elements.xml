@@ -256,10 +256,10 @@
   <bitmap id="button.about.wacup.d" file="images/player-main.png" x="211" y="707" w="52" h="48" gammagroup="greybuttons"/>
 
 
-  <bitmap id="shuffle.n.1" file="images/player-main.png" x="295" y="560" w="119" h="48" gammagroup="3D Objects"/>
-  <bitmap id="shuffle.n.0" file="images/player-main.png" x="295" y="560" w="119" h="48" gammagroup="3D Objects"/>
-  <bitmap id="shuffle.h.1" file="images/player-main.png" x="295" y="609" w="119" h="48" gammagroup="3D Objects"/>
-  <bitmap id="shuffle.h.0" file="images/player-main.png" x="295" y="609" w="119" h="48" gammagroup="3D Objects"/>
+  <bitmap id="shuffle.n.1" file="images/player-main.png" x="295" y="560" w="119" h="48" gammagroup="Window"/>
+  <bitmap id="shuffle.n.0" file="images/player-main.png" x="295" y="560" w="119" h="48" gammagroup="Window"/>
+  <bitmap id="shuffle.h.1" file="images/player-main.png" x="295" y="609" w="119" h="48" gammagroup="Window"/>
+  <bitmap id="shuffle.h.0" file="images/player-main.png" x="295" y="609" w="119" h="48" gammagroup="Window"/>
   <bitmap id="shuffle.d.1" file="images/player-main.png" x="295" y="658" w="119" h="48" gammagroup="3D Objects"/>
   <bitmap id="shuffle.d.0" file="images/player-main.png" x="295" y="658" w="119" h="48" gammagroup="3D Objects"/>
 

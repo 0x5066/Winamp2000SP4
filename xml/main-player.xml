@@ -61,10 +61,9 @@
 
   <!-- Shuffle and Repeat buttons gfx and light indicators handled by script -->
 
-	<rect x="-244" y="187" w="9" h="9" relatx="1" color="wasabi.window.bg" filled="1" ghost="1"/>
-  <NStatesButton id="button.shuffle" x="-244" y="187" w="9" h="9" relatx="1" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" cfgvals="0;1" nstates="2" image="check.down" hoverimage="check.down" downimage="check.down" tooltip="Toggle Shuffle" cursor="cur.normal"/>
+  <NStatesButton id="button.shuffle" x="-253" y="175" w="119" h="48" relatx="1" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" cfgvals="0;1" nstates="2" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." tooltip="Toggle Shuffle" alpha="255" cursor="cur.normal"/>
 	<togglebutton id="shuffle.light" x="-244" y="187" w="9" h="9" relatx="1" image="check.no" activeImage="checked" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
- 
+
 	<rect id="shuf" color="64,64,64" x="-245" y="186" w="12" h="12" relatx="1" ghost="1"/>
 	<layer image="check.box" x="-246" y="185" relatx="1" ghost="1"/>
 
