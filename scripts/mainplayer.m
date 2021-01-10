@@ -379,12 +379,12 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 		if (getCurCfgVal() == 1)
 		{
       ShuffleLight.setXmlParam("image", "check.no");
-      ShuffleLight.setXmlParam("activeImage", "check.no");
+      //ShuffleLight.setXmlParam("activeImage", "check.no");
 			showActionInfo("Shuffle: Off");
 		}
 		else
 		{
-      ShuffleLight.setXmlParam("image", "checked");
+      //ShuffleLight.setXmlParam("image", "checked");
       ShuffleLight.setXmlParam("activeImage", "checked");
 			showActionInfo("Shuffle: On");
 		}
@@ -439,6 +439,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
     {
       if (getCurCfgVal() == 1)
       {
+        /*
         if (ShuffleBtn.isMouseOverRect())
         {
           ShuffleLight.setXmlParam("image", "checked");
@@ -448,6 +449,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
           ShuffleLight.setXmlParam("image", "checked");
           ShuffleLight.setXmlParam("activeImage", "checked");
         }
+        */
       }
       else
       {
