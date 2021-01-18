@@ -262,6 +262,15 @@ initMainPlayer() {
     //iswacup = 0;
   }
 
+  WACUPTxt.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WinampTxt.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
+  WACUPTxtInactive.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WinampTxtInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
+  WACUPTxtShade.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WinampTxtShade.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
+  WACUPTxtShadeInactive.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WinampTxtShadeInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
+
   setVolumeAnim(System.getVolume());
 
   int v = EqBalance.GetPosition();
