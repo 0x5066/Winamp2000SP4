@@ -7,8 +7,8 @@
 
 <groupdef id="ryukovis2">
 
-	<Animatedlayer id="leftVuMeter" image="cat" x="0" y="0" w="224" h="224" framewidth="112" frameheight="112" start="0" end="7" autoplay="0" autoreplay="0" ghost="0"/>
-	<Animatedlayer id="rightVuMeter" image="cat1" x="224" y="0" w="224" h="224" framewidth="112" frameheight="112" start="0" end="7" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="leftVuMeter" image="cat" x="0" y="0" w="224" h="224" frameheight="112" start="0" end="7" autoplay="0" autoreplay="0" ghost="0"/>
+	<Animatedlayer id="rightVuMeter" image="cat1" x="224" y="0" w="224" h="224" frameheight="112" start="0" end="7" autoplay="0" autoreplay="0" ghost="1"/>
 
 	<script file="scripts\meters.maki"/>
 

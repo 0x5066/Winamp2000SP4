@@ -19,8 +19,8 @@
 <groupdef id="some.complex.stuff">
 	<ProgressGrid id="IEBAR" w="92" h="12" x="0" y="0" orientation="right" middle="progress.bar"/>
 	
-	<Animatedlayer id="vguivis.animatedlayerL" image="vu.bar" x="0" y="0" w="92" h="5" framewidth="92" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
-	<Animatedlayer id="vguivis.animatedlayerR" image="vu.bar" x="0" y="7" w="92" h="5" framewidth="92" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="vguivis.animatedlayerL" image="vu.bar" x="0" y="0" w="92" h="5" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="vguivis.animatedlayerR" image="vu.bar" x="0" y="7" w="92" h="5" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
 	<script id="vguivis.script" file="scripts\vguivis.maki"/>
 	<script id="progbarswitch.script" file="scripts\progbarswitch.maki"/>
 	<layer id="bar.switcher" image="none" visible="1" x="0" y="0" h="12" w="92" rectrgn="1" cursor="cur.normal"/>
