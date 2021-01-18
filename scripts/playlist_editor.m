@@ -1,4 +1,4 @@
-#include "std.mi"
+#include "lib/std.mi"
 #include "lib/pldir.mi"
 #include "lib/application.mi"
 #include "lib/fileio.mi"
@@ -91,6 +91,10 @@ System.onScriptLoaded() {
   {
     plwh.setXmlParam("x", "-2");
     plwh.setXmlParam("w", "2");
+  }
+
+  if(Application.GetVersionNumberString() == "5.8"){
+	  //time to cause some chaos
   }
 
 }
