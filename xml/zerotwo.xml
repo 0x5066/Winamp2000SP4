@@ -8,8 +8,8 @@
 
 <groupdef id="02vis" x="-2" y="-2" h="284" w="520" relatw="1" relath="1">
 
-	<Animatedlayer id="leftVuMeter" image="02vis_animatedlayerR.bg" x="0" y="0" w="256" h="256" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="0"/>
-	<Animatedlayer id="rightVuMeter" image="02vis_animatedlayerL.bg" x="256" y="0" w="256" h="256" framewidth="128" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
+	<Animatedlayer id="leftVuMeter" image="02vis_animatedlayerR.bg" x="0" y="0" w="256" h="256" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="0"/>
+	<Animatedlayer id="rightVuMeter" image="02vis_animatedlayerL.bg" x="256" y="0" w="256" h="256" frameheight="128" start="0" end="5" autoplay="0" autoreplay="0" ghost="1"/>
 	<script id="ragyovis.script" file="scripts\meters.maki"/>
 
 	<vis id="shade.vis" x="0" y="128" w="512" h="128" alpha="256" cursor="cur.normal" gammagroup="visualizers" fps="512"
