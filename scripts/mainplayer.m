@@ -290,6 +290,9 @@ initMainPlayer() {
     MainGroup.getObject("player.slider.seek.ghost").setXmlParam("visible", "0");
     MainGroup.getObject("player.normal.group.songticker").setXmlParam("visible", "0");
     MainGroup.getObject("player.normal.group.songinfo").setXmlParam("visible", "0");
+    MainGroup.getObject("player.normal.group.display").setXmlParam("visible", "0");
+    messagebox("We detected the Winamp version you're using is 5.8.\nWinamp 5.8 is a lazy attempt at putting something ''usable'' out whilst not updating it whatsoever.\nWe advise you to instead install WACUP, a more updated and maintained continuation of Winamp.", "Winamp 5.8 detected! Reducing skin functionality.", 1, "");
+    messagebox("This dialog box will pop up every time you load this skin.", "Winamp 5.8 detected! Reducing skin functionality.", 1, "");
     //add your own stuff here
   }
 
