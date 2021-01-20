@@ -5,7 +5,7 @@
 		<version>1.4</version>
 		<name>Nullsoft Winamp 2000 SP4</name>
 		<comment>Bringing Windows Classic to the Winamp Modern Skin platform</comment>
-		<author>Initial Graphics by Zsolt Vajda // Coding by Victor Brocaz // Modified by 0x5066 (Gordon Freeman)</author>
+		<author>Initial Graphics by Zsolt Vajda // Coding by Victor Brocaz // Modified by 0x5066 (Eris Lund)</author>
 		<email>-</email>
 		<homepage>www.deviantart.com/victhor // www.trn.hu // https://github.com/0x5066/Winamp2000SP4</homepage>
 		<wacupscreenshot>wacupscreenshot.png</wacupscreenshot>
@@ -51,6 +51,7 @@
 	<include file="xml/thinger.xml"/>
 	<include file="xml/winampvis.xml"/>
 	<include file="xml/cat.xml"/>
+	<include file="xml/gradient.xml"/>
 	<include file="xml/bigclock.xml"/>
 	<include file="xml/lyrics.xml"/>
 	<include file="xml/console.xml"/>

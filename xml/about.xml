@@ -7,17 +7,17 @@
 	<layer id="main.about" image="main.about" cursor="cur.normal"/>
 	<layer id="main.about2" image="main.about2" y="76" cursor="cur.normal"/>
 	
-	<text x="59" y="103" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Version 1.3: Colorful Update Part 2" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
+	<text x="59" y="103" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Version 1.4: A Banging Update" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	
-	<text x="59" y="119" w="265" h="21" font="sarpanch" fontsize="15" antialias="0" text="Copyright 2019 - 2020 Victhor Brocaz, Zsolt Vajda" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
+	<text x="59" y="119" w="265" h="21" font="sarpanch" fontsize="15" antialias="0" text="Copyright 2019 - 2021 Victhor Brocaz, Zsolt Vajda" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	
-	<text x="59" y="132" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Gordon Freeman" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
+	<text x="59" y="132" w="225" h="21" font="sarpanch" fontsize="15" antialias="0" text="Eris Lund (0x5066)" valign="top" align="left" color="wasabi.text.color2" bold="0"/>
 	<layer id="button.close.line" image="okbutton2.unpressed" x="278" y="287" w="75" h="23" cursor="cur.normal"/>
 	<button id="window.button.close" action="CLOSE" x="278" y="287" image="okbutton.unpressed" downimage="okbutton.pressed" activealpha="255" inactivealpha="255" tooltip="Close" cursor="cur.close"/>
 	
 </groupdef>
 
-<container id="about" name="About the skin" default_visible="0">
+<container id="about" name="About Winamp" default_visible="0">
 	<layout id="normal" minimum_w="388" minimum_h="349" h="349" w="388" maximum_w="388" maximum_h="349">
 		<Wasabi:Standardframe:NoStatus x="0" y="0" w="388" h="349" content="skin.about.group" />
 		<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
