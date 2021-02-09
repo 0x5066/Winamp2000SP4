@@ -1,7 +1,7 @@
 ## Nullsoft Winamp 2000 SP4
 This is a Winamp Modern skin which is based on Victhor's [Winamp Classic Modern](https://www.deviantart.com/victhor/art/Winamp-Classic-Modern-by-Victhor-805797724), the source code is uploaded to GitHub to easily allow for anyone else to make mods out of this, or to simply help me out on some of the stupid things I haven't yet gotten around to fix or add. :)
 
-**This skin causes a crash in Winamp 5.8 and I have no intentions of ever fixing this, either use Winamp 5.666 or WACUP and live with it.**
+**This skin will intentionally break itself when used with Winamp 5.8, safe yourself from this and use Winamp 5.666 or WACUP.**
 
 If you want to contribute color themes (which is highly encouraged), [this guide](https://github.com/The1Freeman/Winamp2000SP4/blob/master/contributing.md) will help you through the creation of a new color theme from the ground up.
 
