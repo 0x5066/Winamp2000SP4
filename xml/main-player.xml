@@ -10,6 +10,9 @@
 	<layer id="player.background.main.mid" x="267" y="0" h="242" w="-538" relatw="1" image="player.normal.bg.center" sysregion="1" cursor="cur.normal"/>
 	<layer id="player.background.main.right" x="-271" y="0" relatx="1" image="player.normal.bg.right" sysregion="1" cursor="cur.normal"/>
 
+	<layer id="playerdisbg2" x="27" y="49" image="playerdis2"/>
+	<layer id="playerdisbg" x="27" y="49" image="playerdis"/>
+
 	<text text="Please use either Winamp 5.666 or WACUP (https://getwacup.com/preview) for full functionality, Winamp 5.8 won't be supported." x="200" y="48" w="-254" relatw="1" h="18" font="tahoma" fontsize="15"
     color="0,0,0" antialias="0" ghost="1" ticker="1"/>
 	

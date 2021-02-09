@@ -3,7 +3,7 @@
 	<!-- NONE / NULL images -->
   <!--bitmap id="none" file="images/window/windows-background-main.png" x="0" y="0" h="10" w="10" gammagroup="none" /--> <!-- Pink (visual help) -->
   <bitmap id="none" file="images/counter-strike-source.png" x="0" y="0" h="10" w="10" gammagroup="none"/> <!-- transparent -->
-  
+
   <!-- checkbox -->
 
   <bitmap id="checked" file="images/window/checkbox.png" x="0" y="0" w="9" h="9" gammagroup="Window-Text"/>
@@ -133,6 +133,9 @@
 	<bitmap id="sngticbg.right" file="images/songticker_bg.png" x="29" y="0" w="2" h="18" gammagroup="Window"/>
 	
 	<bitmap id="clutterbar" file="images/clutterbar_bg.png" x="0" y="0" w="11" h="71" gammagroup="Window"/>
+
+  <bitmap id="playerdis" file="images/playerbg.png" gammagroup="3D Objects"/>
+  <bitmap id="playerdis2" file="images/playerbg2.png"/>
 	
 	<!-- player-normal -->
 
