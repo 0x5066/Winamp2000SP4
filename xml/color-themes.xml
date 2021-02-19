@@ -20,6 +20,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) REVOCS Media Player">
@@ -44,6 +46,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="3192,-3999,-4063" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="2031,-3773,-2225" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="2031,-3773,-2225" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) A.P.E Media Player">
@@ -68,6 +72,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="3128,1548,-4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="3128,1548,-4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Brick">
@@ -92,6 +98,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Desert">
@@ -116,6 +124,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Eggplant">
@@ -140,6 +150,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Lilac">
@@ -164,6 +176,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Maple">
@@ -188,6 +202,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Marine (high color)">
@@ -212,6 +228,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Plum (high color)">
@@ -236,6 +254,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Pumpkin">
@@ -260,6 +280,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Rainy Day">
@@ -284,6 +306,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Red, White, and Blue (VGA)">
@@ -308,6 +332,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Rose">
@@ -332,6 +358,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Slate">
@@ -356,6 +384,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Spruce">
@@ -380,6 +410,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Storm (VGA)">
@@ -404,6 +436,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Teal (VGA)">
@@ -428,6 +462,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Wheat">
@@ -452,6 +488,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows XP Luna) Default (blue)">
@@ -476,6 +514,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows ME/2000) Windows Standard (1 Colored Title bar beam)">
@@ -500,6 +540,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Windows Classic">
@@ -524,6 +566,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x) Windows Classic (1 Colored Title bar beam)">
@@ -548,6 +592,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows XP Luna) Olive Green">
@@ -572,6 +618,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows XP Luna) Silver">
@@ -596,6 +644,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 7) Aero">
@@ -620,6 +670,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) Winamp Modern">
@@ -644,6 +696,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-3192,-2031,-64" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) Bento">
@@ -668,6 +722,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="645,1548,1870" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="2676,2676,2676" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="2354,2354,2354" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="2354,2354,2354" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) Winamp 3">
@@ -692,6 +748,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,4096,2225" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) Winamp Classic">
@@ -716,6 +774,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="-4096,4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="-4096,4096,-4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="-4096,4096,-4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Winamp Skin) Big Bento Modern">
@@ -740,6 +800,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-1257,-1193,-870" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="-645,-935,1386" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="645,1548,1870" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="2354,2354,2354" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="2354,2354,2354" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Video Game) GoldSrc VGUI">
@@ -764,6 +826,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Windows 9x: Microsoft Plus!) More Windows">
@@ -788,6 +852,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="2730,1509,-2867" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Video Game) Source VGUI">
@@ -812,6 +878,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Contribution) Crimson">
@@ -836,6 +904,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="2464,-3245,-2891" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="-3352,3705,-3494" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="1152,3280,-4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Commodore 64) **** COMMODORE 64 BASIC V2 ****">
@@ -860,6 +930,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-2193,-2451,1161" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="-161,-387,2967" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="-161,-387,2967" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="-161,-387,2967" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="-161,-387,2967" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Holiday) Christmas">
@@ -884,6 +956,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="1225,-2644,-2644" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="1225,-2644,-2644" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Anime: Kill La Kill) Ryuko Matoi">
@@ -908,6 +982,8 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-2644,-2128,-1354" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="3837,3128,-1193" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="3837,3128,-1193" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="2064,-2741,-1709" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="2064,-2741,-1709" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Gold Windows XP 2016 by Computer Worm) GOLD 2">
@@ -932,4 +1008,6 @@
   <gammagroup id="Half-Life 2 HUD Elements" value="-999,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Crosshair" value="3354,1612,-967" gray="0" boost="0" />
   <gammagroup id="Half-Life 2 Subtitle Text" value="3354,1612,-967" gray="0" boost="0" />
+  <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
+  <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>

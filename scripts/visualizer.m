@@ -704,6 +704,14 @@ refreshVisSettings ()
 			visualizer.setXmlParam("colorbandpeak", "255,255,255");
 			setColorosc("255,255,255");
 		}
+		else if (v_color == 32)
+		{
+			//klk displays
+			visualizer.setXmlParam("colorallbands", "103,121,88");
+			visualizer.setXmlParam("colorbandpeak", "32,39,13");
+
+			setColorosc("103,121,88");
+		}
 		if (grid == 0)
 		{
 			visgrid_thick.setXmlParam("visible", "0");
@@ -787,6 +795,7 @@ Trigger.onRightButtonUp (int x, int y)
 	animenu.addCommand("Ryuko", 510, v_color == 10, 0);
 	animenu.addCommand("Satsuki", 511, v_color == 11, 0);
 	animenu.addCommand("Ragyo", 512, v_color == 12, 0);
+	animenu.addCommand("Kill La Kill Computer Displays", 532, v_color == 32, 0);
 	animenu.addCommand("A.P.E", 509, v_color == 9, 0);
 	animenu.addCommand("Zero Two", 513, v_color == 13, 0);
 	
@@ -1490,6 +1499,14 @@ ProcessMenuResult (int a)
 			visualizer.setXmlParam("ColorBand16", "255,255,255");
 			visualizer.setXmlParam("colorbandpeak", "255,255,255");
 			setColorosc("255,255,255");
+		}
+		else if (v_color == 32)
+		{
+			//klk displays
+			visualizer.setXmlParam("colorallbands", "103,121,88");
+			visualizer.setXmlParam("colorbandpeak", "32,39,13");
+
+			setColorosc("103,121,88");
 		}
 		setPrivateInt(getSkinName(), "Visualizer Color themes", v_color);
 	}

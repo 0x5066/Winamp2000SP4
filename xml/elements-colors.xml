@@ -8,6 +8,7 @@
 	<color id="hl2.text" value="128,128,128" gammagroup="Half-Life 2 Labels"/>
 	<color id="hl2.sub" value="128,128,128" gammagroup="Half-Life 2 Subtitle Text"/>
 
+	<color id="wasabi.timer.color" value="128,128,128" gammagroup="Winamp Timer Display"/>
 	<color id="wasabi.text.color" value="128,128,128" gammagroup="Window-Text"/>
 	<color id="wasabi.text" value="128,128,128" gammagroup="Window-Text"/>
 	<color id="titlebox.text" value="128,128,128" gammagroup="Window-Text"/>

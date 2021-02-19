@@ -329,9 +329,9 @@
   <bitmap id="songinfo.stereo.on" file="images/player-main.png" x="464" y="121" w="64" h="21" gammagroup="Window-Text"/>
   <bitmap id="songinfo.surround.on" file="images/player-main.png" x="464" y="143" w="64" h="21" gammagroup="3D Objects-Text"/>
 
-  <bitmap id="status.icon.play" file="images/player-main.png" x="56" y="244" w="24" h="24" gammagroup="display-text"/> 
-  <bitmap id="status.icon.pause" file="images/player-main.png" x="81" y="244" w="24" h="24" gammagroup="display-text"/> 
-  <bitmap id="status.icon.stop" file="images/player-main.png" x="106" y="244" w="24" h="24" gammagroup="display-text"/>
+  <bitmap id="status.icon.play" file="images/player-main.png" x="56" y="244" w="24" h="24" gammagroup="Winamp Playback Status"/> 
+  <bitmap id="status.icon.pause" file="images/player-main.png" x="81" y="244" w="24" h="24" gammagroup="Winamp Playback Status"/> 
+  <bitmap id="status.icon.stop" file="images/player-main.png" x="106" y="244" w="24" h="24" gammagroup="Winamp Playback Status"/>
 
   <bitmap id="statusshade.icon.play" file="images/playpausshade.png" x="0" y="0" w="18" h="17" gammagroup="display-text"/> 
   <bitmap id="statusshade.icon.pause" file="images/playpausshade.png" x="19" y="0" w="18" h="17" gammagroup="display-text"/> 
