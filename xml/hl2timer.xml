@@ -92,7 +92,7 @@
 
 </groupdef>
 
-<groupdef id="songstuff1" x="0" y="0" w="743" h="255" relatw="1" relath="1">
+<groupdef id="songstuff1" x="0" y="0" w="743" h="254" relatw="1" relath="1">
 
 	<group id="bg"				x="0" y="0" w="735" h="227"/>
 	<group id="timer" 			x="0" y="160" h="67" w="221"/>
@@ -106,8 +106,8 @@
 
 <container id="songstuff" name="Half-Life 2 HUD" default_visible="0">
 
-<layout id="normal" minimum_w="743" minimum_h="255" w="743" h="255" maximum_w="743" maximum_h="255">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="743" h="255" content="songstuff1"/>
+<layout id="normal" minimum_w="743" minimum_h="254" w="743" h="254" maximum_w="743" maximum_h="254">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="743" h="254" content="songstuff1"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
 	<sendparams target="player.button.mainmenu" alpha="0"/>
 	<layer x="6" y="5" image="game.ico" ghost="1"/>

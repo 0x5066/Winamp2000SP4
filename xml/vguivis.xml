@@ -28,8 +28,8 @@
 
 <container id="vguivis" name="VU Meter" default_visible="0">
 
-<layout id="normal" minimum_w="165" minimum_h="72" w="165" h="72" maximum_w="165" maximum_h="72">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="165" h="72" content="vguivis"/>
+<layout id="normal" minimum_w="165" minimum_h="71" w="165" h="71" maximum_w="165" maximum_h="71">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="165" h="71" content="vguivis"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>

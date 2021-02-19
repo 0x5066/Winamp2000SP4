@@ -1,0 +1,10 @@
+<container id="skinnedprefs" name="Skinned Preferences" dynamic="1" component="guid:{217F4667-4210-4870-A05E-B71049AE6875}" default_w="614">
+	
+<layout id="normal" background="component.basetexture" desktopalpha="0" minimum_h="607" minimum_w="614" appbar="top|bottom|left|right">
+	<Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" />
+        <sendparams target="componentname" default="Big Clock" alpha="0"/>
+		<sendparams target="wasabi.frame.layout.base.bg" h="40" visible="0" /> <!-- PL window specific -->
+	<component x="4" y="23" w="-8" h="-27" relatw="1" relath="1" noshowcmdbar="1" autoopen="1" autoclose="1" param="guid:{217F4667-4210-4870-A05E-B71049AE6875}" />
+</layout>
+
+</container>

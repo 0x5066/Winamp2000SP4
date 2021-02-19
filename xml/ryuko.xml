@@ -128,15 +128,15 @@
 
 <groupdef id="sunkenborder">
 
-	<group id="ryukovis" x="2" y="2" h="265" w="486"/>
+	<group id="ryukovis" x="2" y="2" h="264" w="486"/>
 	
 </groupdef>
 
 <container id="ryuko" name="Ryuko and Satsuki Visualizer" default_visible="0">
 
 
-<layout id="stupidassworkaround" minimum_w="486" minimum_h="265" h="265" w="486" maximum_w="486" maximum_h="265">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="486" h="265" content="sunkenborder"/>
+<layout id="stupidassworkaround" minimum_w="486" minimum_h="264" h="264" w="486" maximum_w="486" maximum_h="264">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="486" h="264" content="sunkenborder"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
 	<sendparams target="player.button.mainmenu" alpha="0"/>
 	<layer x="6" y="5" image="revocsmediaplayer" ghost="1"/>

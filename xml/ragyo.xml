@@ -143,8 +143,8 @@
 
 <container id="ragyo" name="Ragyo Visualizer" default_visible="0">
 
-<layout id="normal" minimum_w="482" minimum_h="261" h="261" w="482" maximum_w="482" maximum_h="261">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="482" h="261" content="ragyovis"/>
+<layout id="normal" minimum_w="482" minimum_h="260" h="260" w="482" maximum_w="482" maximum_h="260">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="482" h="260" content="ragyovis"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="0"/>
 	<sendparams target="player.button.mainmenu" alpha="0"/>
 	<layer x="6" y="5" image="revocsmediaplayer" ghost="1"/>

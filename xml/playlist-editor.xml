@@ -13,7 +13,7 @@
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
-	<component id="pl.wdh" x="0" y="23" w="0" relatw="1" h="-43" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
+	<component id="pl.wdh" x="0" y="22" w="0" relatw="1" h="-42" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
 </groupdef>
 
 <groupdef id="some.complex.stuff">

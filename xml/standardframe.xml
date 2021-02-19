@@ -10,22 +10,22 @@
 ======================================================================================================== -->
 
 <groupdef id="wasabi.frame.layout.base.bg">
-	<layer id="window.inner.top.left" x="0" y="20" image="window.normal.inner.top.left" move="0"/>
-	<layer id="window.inner.top.middle" x="85" y="20" w="-109" relatw="1" image="window.normal.inner.top.middle" stretch="1" move="0"/>
+	<layer id="window.inner.top.left" x="0" y="19" image="window.normal.inner.top.left" move="0"/>
+	<layer id="window.inner.top.middle" x="85" y="19" w="-109" relatw="1" image="window.normal.inner.top.middle" stretch="1" move="0"/>
 
-	<layer id="window.inner.top.left2" x="0" y="20" image="window.normal.inner.top.left2" move="0"/>
-	<layer id="window.inner.top.middle2" x="85" y="20" w="-109" relatw="1" image="window.normal.inner.top.middle2" stretch="1" move="0"/>
+	<layer id="window.inner.top.left2" x="0" y="19" image="window.normal.inner.top.left2" move="0"/>
+	<layer id="window.inner.top.middle2" x="85" y="19" w="-109" relatw="1" image="window.normal.inner.top.middle2" stretch="1" move="0"/>
 
-	<layer id="window.inner.top.right" x="-85" y="20" relatx="1" image="window.normal.inner.top.right" move="0"/>
-	<layer id="window.inner.top.right2" x="-85" y="20" relatx="1" image="window.normal.inner.top.right2" move="0"/>
+	<layer id="window.inner.top.right" x="-85" y="19" relatx="1" image="window.normal.inner.top.right" move="0"/>
+	<layer id="window.inner.top.right2" x="-85" y="19" relatx="1" image="window.normal.inner.top.right2" move="0"/>
 	
-	<layer id="window.inner.left" x="0" y="38" h="-96" resize="left" relath="1" image="window.normal.inner.left" cursor="cur.posbar" stretch="1" move="0"/>
-	<layer id="window.inner.middle" x="85" y="38" w="-170" h="-96" relatw="1" relath="1" image="window.normal.inner.middle" stretch="1" move="0"/>
+	<layer id="window.inner.left" x="0" y="37" h="-95" resize="left" relath="1" image="window.normal.inner.left" cursor="cur.posbar" stretch="1" move="0"/>
+	<layer id="window.inner.middle" x="85" y="37" w="-170" h="-95" relatw="1" relath="1" image="window.normal.inner.middle" stretch="1" move="0"/>
 
-	<layer id="window.inner.left2" x="0" y="38" h="-96" resize="left" relath="1" image="window.normal.inner.left2" cursor="cur.posbar" stretch="1" move="0"/>
-	<layer id="window.inner.middle2" x="85" y="38" w="-170" h="-96" relatw="1" relath="1" image="window.normal.inner.middle2" stretch="1" move="0"/>
+	<layer id="window.inner.left2" x="0" y="37" h="-95" resize="left" relath="1" image="window.normal.inner.left2" cursor="cur.posbar" stretch="1" move="0"/>
+	<layer id="window.inner.middle2" x="85" y="37" w="-170" h="-95" relatw="1" relath="1" image="window.normal.inner.middle2" stretch="1" move="0"/>
 
-	<layer id="window.inner.right" x="-85" y="38" h="-96" relatx="1" relath="1" image="window.normal.inner.right" stretch="1" move="0"/>
+	<layer id="window.inner.right" x="-85" y="37" h="-95" relatx="1" relath="1" image="window.normal.inner.right" stretch="1" move="0"/>
 	
 	<layer id="window.inner.bottom.left" x="0" y="-58" relaty="1" image="window.normal.inner.bottom.left" move="1"/>
 
@@ -188,7 +188,7 @@
   <layer x="-15" y="-15" relatx="1" relaty="1" image="normal.resizer.bottomright" ghost="1" alpha="0"/>
   <layer x="-20" y="-4" w="20" h="4" relatx="1" relaty="1" image="none" resize="bottomright" cursor="cur.resbottomright" alpha="0"/>
   
-  <script id="standardframe.script" file="scripts/standardframe.maki" param="4,24,-8,-28,0,0,1,1" />
+  <script id="standardframe.script" file="scripts/standardframe.maki" param="4,23,-8,-27,0,0,1,1" />
 
 
 </groupdef>

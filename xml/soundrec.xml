@@ -110,7 +110,7 @@
 </groupdef>
 
 <container id="sndrec.wnd" name="Sound Recorder" default_visible="0">
-	<layout id="normal" minimum_w="278" minimum_h="154" h="154" w="278" maximum_w="278" maximum_h="154">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="278" h="154" content="sndrec.grp" />
+	<layout id="normal" minimum_w="278" minimum_h="153" h="153" w="278" maximum_w="278" maximum_h="153">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="278" h="153" content="sndrec.grp" />
 	</layout>
 </container>

@@ -23,8 +23,8 @@
 <container id="ryuko2" name="Cat Visualizer" default_visible="0">
 
 
-<layout id="stupidassworkaround2" minimum_w="460" minimum_h="256" h="256" w="460" maximum_w="460" maximum_h="256">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="460" h="256" content="sunkenborder2"/>
+<layout id="stupidassworkaround2" minimum_w="460" minimum_h="255" h="255" w="460" maximum_w="460" maximum_h="255">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="460" h="255" content="sunkenborder2"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>

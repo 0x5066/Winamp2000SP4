@@ -1,5 +1,5 @@
 
-<groupdef id="ragyovis" x="-2" y="-2" w="324" h="102" relatw="1" relath="1">
+<groupdef id="beatvis" x="-2" y="-2" w="324" h="101" relatw="1" relath="1">
 
 	<layer id="beatvis.bg" x="2" y="2" w="312" h="70" image="beatvis.bg" ghost="1"/>
 	<vis id="shade.vis" x="6" y="6" w="304" h="62" alpha="200" cursor="cur.normal" gammagroup="Window-Text" fps="120"
@@ -23,8 +23,8 @@
 <container id="beatvis" name="Beat Visualizer" default_visible="0">
 
 
-<layout id="normal" minimum_w="324" minimum_h="102" w="324" h="102" maximum_w="324" maximum_h="102">
-	<Wasabi:Standardframe:NoStatus x="0" y="0" w="324" h="102" content="ragyovis"/>
+<layout id="normal" minimum_w="324" minimum_h="101" w="324" h="101" maximum_w="324" maximum_h="101">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="324" h="101" content="beatvis"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
 	
   <layer id="resize.disabler" x="0" y="35" w="3" h="0" relath="1" image="none" cursor="cur.normal"/>
