@@ -13,6 +13,9 @@
 	<bitmap id="3darea.BL" file="images/window/windows-elements.png" x="0" y="131" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BM" file="images/window/windows-elements.png" x="2" y="131" w="15" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BR" file="images/window/windows-elements.png" x="17" y="131" w="2" h="2" gammagroup="3D Objects"/>
 
 	<bitmap id="empty" file="$polygon" x="0" y="0" h="48" w="2" gammagroup="none"/>
+	
+	<bitmap id="explorerthing" file="images/window/wvleft.bmp"/>
+	<bitmap id="explorerthing2" file="images/window/wvline.gif"/>
 </elements>
 
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
@@ -29,7 +32,10 @@
 	bottom		="3darea.BM"
 	bottomright	="3darea.BR" /-->
 	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
-	<vis x="0" y="0" w="0" h="0" relatw="1" relath="1" cursor="cur.normal" colorallbands="0,0,0" colorallosc="0,0,0"/>
+	<layer x="0" y="0" relaty="2" image="explorerthing"/>
+	<text display="SONGTITLE" ticker="1" x="9" y="48" h="30" w="187" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/>
+	<layer x="0" y="72" w="184" image="explorerthing2"/>
+	<vis x="0" y="-64" w="144" h="64" relaty="1" cursor="cur.normal" fps="75" peaks="0" falloff="3" colorallbands="0,0,0" colorallosc="0,0,0"/>
 </groupdef>
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
