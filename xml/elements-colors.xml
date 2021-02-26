@@ -70,10 +70,10 @@
   <color id="common.itemlist.outline.focus" value="64,64,64" gammagroup="display-sui-text"/>
 
   <!-- playlist editor -->
-  <color id="pledit.text" value="128,128,128" gammagroup="display-sui-text"/>
+  <color id="pledit.text" value="128,128,128" gammagroup="Window-Text"/>
   <color id="pledit.text.current" value="212,208,200" gammagroup="current-active"/>
   <color id="pledit.currentoutline" value="10,36,106" gammagroup="Selected Items"/>
-  <color id="pledit.dir.plitem.currect" value="212,208,200" gammagroup="current-active"/>
+  <color id="pledit.dir.plitem.current" value="212,208,200" gammagroup="current-active"/>
   <color id="pledit.dir.plitem" value="212,208,200" gammagroup="display-sui-text"/>
   <color id="pledit.dir.working" value="175,175,175" gammagroup="display-sui-text"/>
   <color id="pledit.dir.workingbg" value="10,36,106" gammagroup="display-sui-text"/>

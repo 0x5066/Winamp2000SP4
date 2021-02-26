@@ -1,0 +1,23 @@
+<container id="playlistdirectory" name="Stored Playlists" default_x="0" default_y="0" default_visible="0">
+<!--
+<groupdef id="fu.bento">
+    <rect x="2" y="2" w="-4" relatw="1" h="-4" relath="1" color="wasabi.window.bg"/>
+	<PlaylistDirectory x="2" y="2" w="-4" relatw="1" h="-4" relath="1" font="numbers" fontsize="13" antialias="0"/>
+</groupdef>
+<groupdef id="bottom">
+    	<component id="pl.wdh" x="0" y="2" w="-2" relatw="1" h="-4" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
+</groupdef>
+<groupdef id="both">
+	<Wasabi:Frame
+		orientation="vertical"
+		top="fu.bento" bottom="bottom"    
+		x="0" y="0" w="0" h="0"
+		relatw="1" relath="1"
+	/>
+</groupdef>
+-->
+<layout id="normal" minimum_h="116" minimum_w="275" default_h="240" default_w="311">
+	<Wasabi:StandardFrame:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="idkmaniguessnothing"/>
+    	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
+</layout>
+</container>

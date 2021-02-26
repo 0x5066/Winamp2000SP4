@@ -57,6 +57,7 @@
 	<include file="xml/console.xml"/>
 	<include file="xml/waveseek.xml"/>
 	<include file="xml/preferences.xml"/>
+	<include file="xml/playlist test.xml"/>
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>

@@ -8,12 +8,54 @@
 	<bitmap id="shadewin.m2" file="images/window/shadewindow2.png" x="4" y="0" w="1" h="3"/>
 	<bitmap id="shadewin.r2" file="images/window/shadewindow2.png" x="6" y="0" w="3" h="3"/>
 
+	<bitmap id="3darea.TL" file="images/window/windows-elements.png" x="0" y="114" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.TM" file="images/window/windows-elements.png" x="2" y="114" w="15" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.TR" file="images/window/windows-elements.png" x="17" y="114" w="2" h="2" gammagroup="3D Objects"/>
+	<bitmap id="3darea.L" file="images/window/windows-elements.png" x="0" y="116" w="2" h="15" gammagroup="3D Objects"/>	<bitmap id="3darea.M" file="images/window/windows-elements.png" x="2" y="116" w="15" h="15" gammagroup="3D Objects"/>	<bitmap id="3darea.R" file="images/window/windows-elements.png" x="17" y="116" w="2" h="15" gammagroup="3D Objects"/>
+	<bitmap id="3darea.BL" file="images/window/windows-elements.png" x="0" y="131" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BM" file="images/window/windows-elements.png" x="2" y="131" w="15" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BR" file="images/window/windows-elements.png" x="17" y="131" w="2" h="2" gammagroup="3D Objects"/>
+
+	<bitmap id="empty" file="$polygon" x="0" y="0" h="48" w="2" gammagroup="none"/>
 </elements>
 
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
+<groupdef id="pldir">
+	<!--grid id="dent2" x="0" y="0" w="0" h="0" relatw="1" relath="1"
+	topleft		="3darea.TL"
+		top		="3darea.TM"
+	topright	="3darea.TR"
+		left	="3darea.L"
+	middle		="3darea.M"
+	right		="3darea.R"
+	bottomleft	="3darea.BL"
+	bottom		="3darea.BM"
+	bottomright	="3darea.BR" /-->
+	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
+	<vis x="0" y="0" w="0" h="0" relatw="1" relath="1" cursor="cur.normal" colorallbands="0,0,0" colorallosc="0,0,0"/>
+</groupdef>
+
 <groupdef id="pledit.content.group" cursor="cur.normal">
-	<component id="pl.wdh" x="0" y="22" w="0" relatw="1" h="-42" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" />
+	<!--grid id="dent" x="0" y="0" w="-2" h="0" relatw="1" relath="1"
+	topleft		="3darea.TL"
+		top		="3darea.TM"
+	topright	="3darea.TR"
+		left	="3darea.L"
+	middle		="3darea.M"
+	right		="3darea.R"
+	bottomleft	="3darea.BL"
+	bottom		="3darea.BM"
+	bottomright	="3darea.BR"/-->
+    	<component id="pl.wdh" x="0" y="0" w="0" h="0" relatw="1" relath="1" noshowcmdbar="1" autoopen="1" autoclose="0" param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}"/>
+</groupdef>
+
+<groupdef id="both">
+	<Wasabi:Frame
+		orientation="vertical"
+		top="pldir" bottom="pledit.content.group"    
+		x="0" y="22" w="0" h="-42"
+		relatw="1" relath="1"
+		minwidth="200" maxwidth="200"
+		vbitmap="empty" vgrabber="empty"
+		resizable="0"/>
+
 </groupdef>
 
 <groupdef id="some.complex.stuff">
@@ -131,7 +173,7 @@
 
 
 <layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="242" minimum_w="276" linkwidth="shade" appbar="top|bottom|left|right">
-	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="pledit.content.group" />
+	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="both"/>
 	<sendparams target="window.button.switch" visible="1"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51"/>
 	<sendparams target="wasabi.frame.layout.titlebar" w="0"/>
@@ -200,6 +242,7 @@
 	
 	<group id="some.complex.stuff" relatx="1" relaty="1" x="-181" y="-19"/>
 	<group id="pledit.switch.button" x="-85" y="-1" h="30" w="61" relatx="1"/>
+	<!--group id="both" x="4" y="26" w="-8" h="-32" relatw="1" relath="1"/-->
 
 	<sendparams target="winshade.disabled" alpha="0"/>
 	
