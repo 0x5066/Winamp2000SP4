@@ -8,9 +8,9 @@
 	<bitmap id="shadewin.m2" file="images/window/shadewindow2.png" x="4" y="0" w="1" h="3"/>
 	<bitmap id="shadewin.r2" file="images/window/shadewindow2.png" x="6" y="0" w="3" h="3"/>
 
-	<bitmap id="3darea.TL" file="images/window/windows-elements.png" x="0" y="114" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.TM" file="images/window/windows-elements.png" x="2" y="114" w="15" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.TR" file="images/window/windows-elements.png" x="17" y="114" w="2" h="2" gammagroup="3D Objects"/>
-	<bitmap id="3darea.L" file="images/window/windows-elements.png" x="0" y="116" w="2" h="15" gammagroup="3D Objects"/>	<bitmap id="3darea.M" file="images/window/windows-elements.png" x="2" y="116" w="15" h="15" gammagroup="3D Objects"/>	<bitmap id="3darea.R" file="images/window/windows-elements.png" x="17" y="116" w="2" h="15" gammagroup="3D Objects"/>
-	<bitmap id="3darea.BL" file="images/window/windows-elements.png" x="0" y="131" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BM" file="images/window/windows-elements.png" x="2" y="131" w="15" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BR" file="images/window/windows-elements.png" x="17" y="131" w="2" h="2" gammagroup="3D Objects"/>
+	<bitmap id="3darea.TL" file="images/window/3ddent.png" x="0" y="0" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.TM" file="images/window/3ddent.png" x="2" y="0" w="15" h="2" gammagroup="3D Objects"/>		<bitmap id="3darea.TR" file="images/window/3ddent.png" x="17" y="0" w="2" h="2" gammagroup="3D Objects"/>
+	<bitmap id="3darea.L" file="images/window/3ddent.png" x="0" y="2" w="2" h="15" gammagroup="3D Objects"/>	<bitmap id="3darea.M" file="images/window/3ddent.png" x="2" y="2" w="15" h="15" gammagroup="3D Objects"/>		<bitmap id="3darea.R" file="images/window/3ddent.png" x="17" y="2" w="2" h="15" gammagroup="3D Objects"/>
+	<bitmap id="3darea.BL" file="images/window/3ddent.png" x="0" y="17" w="2" h="2" gammagroup="3D Objects"/>	<bitmap id="3darea.BM" file="images/window/3ddent.png" x="2" y="17" w="15" h="2" gammagroup="3D Objects"/>		<bitmap id="3darea.BR" file="images/window/3ddent.png" x="17" y="17" w="2" h="2" gammagroup="3D Objects"/>
 
 	<bitmap id="empty" file="$polygon" x="0" y="0" h="48" w="2" gammagroup="none"/>
 	
@@ -23,7 +23,19 @@
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pldir">
-	<!--grid id="dent2" x="0" y="0" w="0" h="0" relatw="1" relath="1"
+	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
+	<layer x="0" y="0" relaty="2" image="explorerthing"/>
+	<layer id="exticon" x="12" y="11" image="generic.icon" ghost="1"/>
+	<text display="SONGTITLE" ticker="1" x="13" y="48" h="30" w="187" offsetx="-4" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<layer x="0" y="72" w="184" image="explorerthing2"/>
+	<text id="filename" text="filename.ext (To be added)" x="10" y="88" h="30" w="187" font="Tahoma" bold="1" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text id="filetype" text="encoder (To be added)" x="10" y="101" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text text="Samplerate:" x="10" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 		<text display="SONGSAMPLERATE" x="71" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text text="kbps:" x="10" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 			<text display="SONGBITRATE" x="39" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text text="Length:" x="10" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>			<text display="SONGLENGTH" x="50" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<rect id="why.do.i.still.have.to.do.this" x="25" y="210" w="150" h="70" color="wasabi.window.background" ghost="1"/> 
+	<rect id="why.do.i.still.have.to.do.this" x="27" y="212" w="147" h="67" color="64,64,64" ghost="1"/> 
+	<grid id="dent2" x="26" y="211" w="148" h="68"
 	topleft		="3darea.TL"
 		top		="3darea.TM"
 	topright	="3darea.TR"
@@ -32,18 +44,9 @@
 	right		="3darea.R"
 	bottomleft	="3darea.BL"
 	bottom		="3darea.BM"
-	bottomright	="3darea.BR" /-->
-	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
-	<layer x="0" y="0" relaty="2" image="explorerthing"/>
-	<layer id="exticon" x="12" y="11" image="generic.icon" ghost="1"/>
-	<text display="SONGTITLE" ticker="1" x="10" y="48" h="30" w="187" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/>
-	<layer x="0" y="72" w="184" image="explorerthing2"/>
-	<text id="filename" text="filename.ext (To be added)" x="10" y="88" h="30" w="187" font="Tahoma" bold="1" fontsize="15" antialias="0" color="0,0,0" valign="top"/>
-	<text id="filetype" text="encoder (To be added)" x="10" y="101" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>
-	<text text="Samplerate:" x="10" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 			<text display="SONGSAMPLERATE" x="71" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>
-	<text text="kbps:" x="10" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 			<text display="SONGBITRATE" x="39" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>
-	<text text="Length:" x="10" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>				<text display="SONGLENGTH" x="50" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>
-	<vis x="0" y="-64" w="144" h="64" relaty="1" cursor="cur.normal" fps="75" peaks="0" falloff="3" colorallbands="0,0,0" colorallosc="0,0,0"/>
+	bottomright	="3darea.BR"
+	ghost="1"/>
+	<vis x="28" y="213" w="144" h="64" cursor="cur.normal" fps="75" peaks="0" falloff="3" colorallbands="0,0,0" colorallosc="0,0,0"/>
 </groupdef>
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
