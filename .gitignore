@@ -23,3 +23,4 @@ scripts/lib/com/rotationlayer.m
 scripts/lib/com/songinfo.m
 xml/main.xml
 images/wamodern/*.*
+*.pdn
