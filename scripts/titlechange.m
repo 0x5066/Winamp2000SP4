@@ -11,7 +11,7 @@ Global group WasabiFrameGroup;
 
 global text filenamedisplay, filetypedisplay, hz, kbps;
 
-Global Function refreshPlInfo();
+Function refreshPlInfo();
 
 System.onScriptLoaded() {
   containerPL = System.getContainer("PLEdit");
