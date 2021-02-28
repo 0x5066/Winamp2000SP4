@@ -26,13 +26,13 @@
 	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
 	<layer x="0" y="0" relaty="2" image="explorerthing"/>
 	<layer id="exticon" x="12" y="11" image="generic.icon" ghost="1"/>
-	<text display="SONGTITLE" ticker="1" x="13" y="48" h="30" w="187" offsetx="-4" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text display="SONGTITLE" ticker="1" x="9" y="48" h="30" w="187" offsetx="0" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
 	<layer x="0" y="72" w="184" image="explorerthing2"/>
 	<text id="filename" text="filename.ext (To be added)" x="10" y="88" h="30" w="187" font="Tahoma" bold="1" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
 	<text id="filetype" text="encoder (To be added)" x="10" y="101" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
-	<text text="Samplerate:" x="10" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 		<text display="SONGSAMPLERATE" x="71" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
-	<text text="kbps:" x="10" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 			<text display="SONGBITRATE" x="39" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
-	<text text="Length:" x="10" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>			<text display="SONGLENGTH" x="50" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text id="samplerate" text="Samplerate:" x="10" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 		<text display="SONGSAMPLERATE" x="71" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text id="bitrate" text="kbps:" x="10" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 				<text display="SONGBITRATE" x="39" y="151" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
+	<text text="Length:" x="10" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/>							<text display="SONGLENGTH" x="50" y="176" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
 	<rect id="why.do.i.still.have.to.do.this" x="25" y="210" w="150" h="70" color="wasabi.window.background" ghost="1"/> 
 	<rect id="why.do.i.still.have.to.do.this" x="27" y="212" w="147" h="67" color="64,64,64" ghost="1"/> 
 	<grid id="dent2" x="26" y="211" w="148" h="68"
@@ -46,7 +46,8 @@
 	bottom		="3darea.BM"
 	bottomright	="3darea.BR"
 	ghost="1"/>
-	<vis x="28" y="213" w="144" h="64" cursor="cur.normal" fps="75" peaks="0" falloff="3" colorallbands="0,0,0" colorallosc="0,0,0"/>
+	<vis x="28" y="213" w="144" h="64" cursor="cur.normal" fps="60" peaks="0" falloff="2" colorallbands="0,0,0" colorosc5="0,0,0" colorallosc="0,0,0"/>
+	<script file="scripts\titlechange.maki"/>
 </groupdef>
 
 <groupdef id="pledit.content.group" cursor="cur.normal">
