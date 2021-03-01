@@ -45,17 +45,53 @@ refreshPlInfo(){
 	//change icon according to file extension
 	if(extension == "flac"){
 		ext.setXmlParam("image", "pl.icon.flac");
-	}else if(extension == "mp3"){
+	}
+	else if(extension == "mp3")
+	{
 		ext.setXmlParam("image", "pl.icon.mp3");
-	}else if(extension == "wav"){
+	}
+	else if(extension == "wav")
+	{
 		ext.setXmlParam("image", "pl.icon.wav");
-	}else if(extension == "mid" || extension == "midi"){
+	}
+	else if(extension == "mid" || extension == "midi")
+	{
 		ext.setXmlParam("image", "pl.icon.midi");
-	}else if(extension == "mp4" || extension == "avi"){
+	}
+	else if(extension == "mp4" || extension == "avi")
+	{
 		ext.setXmlParam("image", "pl.icon.video");
-	}else if(extension == "sid"){
+	}
+	else if(extension == "sid")
+	{
 		ext.setXmlParam("image", "pl.icon.sid");
-	}else{
+	}
+	else if(extension == "it")
+	{
+		ext.setXmlParam("image", "pl.icon.it");
+	}
+	else if(extension == "xm")
+	{
+		ext.setXmlParam("image", "pl.icon.xm");
+	}
+	else if(extension == "s3m")
+	{
+		ext.setXmlParam("image", "pl.icon.s3m");
+	}
+	else if(extension == "mod")
+	{
+		ext.setXmlParam("image", "pl.icon.mod");
+	}
+	else if(extension == "spc")
+	{
+		ext.setXmlParam("image", "pl.icon.spc");
+	}
+	else if(extension == "nsf")
+	{
+		ext.setXmlParam("image", "pl.icon.nsf");
+	}
+	else
+	{
 		ext.setXmlParam("image", "pl.icon.generic");
 	}
 }

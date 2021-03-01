@@ -16,8 +16,6 @@
 	
 	<bitmap id="explorerthing" file="images/window/wvleft.bmp"/>
 	<bitmap id="explorerthing2" file="images/window/wvline.gif"/>
-
-	<bitmap id="generic.icon" file="images/window/genericicon.png"/>
 </elements>
 
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">

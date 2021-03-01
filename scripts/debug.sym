@@ -1,0 +1,77 @@
+-- Variables Table ---------------------------------------------------
+var# |                Class |                                    What 
+----------------------------------------------------------------------
+0000 |               System |                                   System*
+0001 |                  Int |                                     NULL
+0002 |                  Int |                     __deprecated_runtime
+0003 |               Double |                                        v
+0004 |                  Int |                                        2
+0005 |                  Int |                                    65535
+0006 |                  Int |                                        1
+0007 |               String |                           "runtimecheck"
+0008 |                  Int |                                        0
+0009 |                  Int |                                     last
+000A |                  Int |                                      now
+000B |                  Int |                                     5000
+000C |               String |                  "This script requires "
+000D |               String |        "Winamp 5.66 (skin version 1.36)"
+000E |               String |                                  "Error"
+000F |               String |                                       ""
+0010 |               String |                                        s
+0011 |               String |                                  "DEBUG"
+0012 |                  Int |                                        s
+0013 |            Container |                              containerPL
+0014 |               Layout |                           layoutPLNormal
+0015 |                Layer |                                      ext
+0016 |                Group |                         WasabiFrameGroup
+0017 |                 Text |                          filenamedisplay
+0018 |                 Text |                          filetypedisplay
+0019 |                 Text |                                       hz
+001A |                 Text |                                     kbps
+001B |               String |                                 "PLEdit"
+001C |               String |                               "normalpl"
+001D |               String |                                  "pldir"
+001E |               String |                                "exticon"
+001F |               String |                               "filename"
+0020 |               String |                               "filetype"
+0021 |               String |                             "samplerate"
+0022 |               String |                                "bitrate"
+0023 |               String |                                 newtitle
+0024 |               String |                                   "text"
+0025 |               String |                                extension
+0026 |               String |                                   "flac"
+0027 |               String |                                  "image"
+0028 |               String |                           "pl.icon.flac"
+0029 |               String |                                    "mp3"
+002A |               String |                            "pl.icon.mp3"
+002B |               String |                                    "wav"
+002C |               String |                            "pl.icon.wav"
+002D |               String |                                    "mid"
+002E |               String |                                   "midi"
+002F |               String |                           "pl.icon.midi"
+0030 |               String |                                    "mp4"
+0031 |               String |                                    "avi"
+0032 |               String |                          "pl.icon.video"
+0033 |               String |                                    "sid"
+0034 |               String |                            "pl.icon.sid"
+0035 |               String |                                     "it"
+0036 |               String |                             "pl.icon.it"
+0037 |               String |                                     "xm"
+0038 |               String |                             "pl.icon.xm"
+0039 |               String |                                    "s3m"
+003A |               String |                            "pl.icon.s3m"
+003B |               String |                                    "mod"
+003C |               String |                            "pl.icon.mod"
+003D |               String |                        "pl.icon.generic"
+-- Events Table ------------------------------------------------------
+var# |         Code Pointer |                                    What 
+----------------------------------------------------------------------
+0000 |                 0153 |                                      S.o
+0000 |                 0227 |                                      S.o
+-- User Functions Table ----------------------------------------------
+               Code Pointer |                                    What 
+----------------------------------------------------------------------
+                       0000 |                             versionCheck
+                       00F2 |                                    debug
+                       011D |                                 debugInt
+                       0248 |                            refreshPlInfo

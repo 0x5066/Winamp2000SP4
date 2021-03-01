@@ -603,6 +603,12 @@
   <bitmap id="pl.icon.sid" file="images/window/SID.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.midi" file="images/window/MIDI.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.video" file="images/window/VIDEO.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.it" file="images/window/IT.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.mod" file="images/window/mod.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.s3m" file="images/window/s3m.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.xm" file="images/window/xm.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.spc" file="images/window/spc.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.nsf" file="images/window/nsf.png" x="0" y="0" w="32" h="32"/>
 
 	<!-- Video Window -->
 
