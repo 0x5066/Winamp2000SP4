@@ -596,6 +596,14 @@
   <bitmap id="pl.button.eject.h" file="images/window/windows-background-main.png" x="342" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
   <bitmap id="pl.button.eject.d" file="images/window/windows-background-main.png" x="342" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
 
+  <bitmap id="pl.icon.generic" file="images/window/genericicon.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.flac" file="images/window/FLAC.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.mp3" file="images/window/MP3.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.wav" file="images/window/WAV.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.sid" file="images/window/SID.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.midi" file="images/window/MIDI.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.video" file="images/window/VIDEO.png" x="0" y="0" w="32" h="32"/>
+
 	<!-- Video Window -->
 
   <bitmap id="window.vid.display.bg.left" file="images/window/windows-background-main.png" x="373" y="359" w="20" h="29" gammagroup="3D Objects"/>
