@@ -90,6 +90,22 @@ refreshPlInfo(){
 	{
 		ext.setXmlParam("image", "pl.icon.nsf");
 	}
+	else if(extension == "m4a")
+	{
+		ext.setXmlParam("image", "pl.icon.m4a");
+	}
+	else if(extension == "opus")
+	{
+		ext.setXmlParam("image", "pl.icon.opus");
+	}
+	else if(extension == "ogg")
+	{
+		ext.setXmlParam("image", "pl.icon.ogg");
+	}
+	else if(extension == "cda")
+	{
+		ext.setXmlParam("image", "pl.icon.cda");
+	}
 	else
 	{
 		ext.setXmlParam("image", "pl.icon.generic");

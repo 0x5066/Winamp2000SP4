@@ -609,6 +609,10 @@
   <bitmap id="pl.icon.xm" file="images/window/xm.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.spc" file="images/window/spc.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.nsf" file="images/window/nsf.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.m4a" file="images/window/m4a.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.opus" file="images/window/opus.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.ogg" file="images/window/ogg.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.cda" file="images/window/cda.png" x="0" y="0" w="32" h="32"/>
 
 	<!-- Video Window -->
 
