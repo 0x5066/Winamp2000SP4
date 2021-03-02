@@ -40,7 +40,7 @@ refreshPlInfo(){
 	//kbps.setXmlParam("text", "Bitrate: "+System.getPlayItemMetaDataString("vbr")+"kbps");
 
 	//get file extension
-	String extension = System.getExtension(System.removePath(System.getPlayItemString()));
+	String extension = System.strlower(System.getExtension(System.removePath(System.getPlayItemString())));
 
 	//change icon according to file extension
 	if(extension == "flac"){
