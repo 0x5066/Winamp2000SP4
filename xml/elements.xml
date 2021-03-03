@@ -596,23 +596,24 @@
   <bitmap id="pl.button.eject.h" file="images/window/windows-background-main.png" x="342" y="323" w="20" h="20" gammagroup="3D Objects-Text"/>
   <bitmap id="pl.button.eject.d" file="images/window/windows-background-main.png" x="342" y="344" w="20" h="20" gammagroup="3D Objects-Text"/>
 
-  <bitmap id="pl.icon.generic" file="images/window/genericicon.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.flac" file="images/window/FLAC.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.mp3" file="images/window/MP3.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.wav" file="images/window/WAV.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.sid" file="images/window/SID.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.midi" file="images/window/MIDI.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.video" file="images/window/VIDEO.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.it" file="images/window/IT.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.mod" file="images/window/mod.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.s3m" file="images/window/s3m.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.xm" file="images/window/xm.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.spc" file="images/window/spc.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.nsf" file="images/window/nsf.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.m4a" file="images/window/m4a.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.opus" file="images/window/opus.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.ogg" file="images/window/ogg.png" x="0" y="0" w="32" h="32"/>
-  <bitmap id="pl.icon.cda" file="images/window/cda.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.generic" file="images/window/ext/genericicon.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.flac" file="images/window/ext/FLAC.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.mp3" file="images/window/ext/MP3.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.wav" file="images/window/ext/WAV.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.sid" file="images/window/ext/SID.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.midi" file="images/window/ext/MIDI.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.video" file="images/window/ext/VIDEO.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.it" file="images/window/ext/IT.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.mod" file="images/window/ext/mod.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.s3m" file="images/window/ext/s3m.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.xm" file="images/window/ext/xm.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.spc" file="images/window/ext/spc.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.nsf" file="images/window/ext/nsf.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.m4a" file="images/window/ext/m4a.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.opus" file="images/window/ext/opus.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.ogg" file="images/window/ext/ogg.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.cda" file="images/window/ext/cda.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.mptm" file="images/window/ext/mptm.png" x="0" y="0" w="32" h="32"/>
 
 	<!-- Video Window -->
 

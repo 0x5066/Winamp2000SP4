@@ -1,4 +1,16 @@
-# v1.4-RC1 A Banging Update
+# v1.4-RC2: The Explorer Update
+
+What's new?
+
+ - New: Improved user experience with a sidebar view for the Playlist Editor, giving you information about the file you're currently playing (Icons, filename and more).
+ - New: Slightly improved the Head bobbing algorithm for probably the last time for a while (since ``getVisBand(chan, band)`` channel int is broken and only returns mono).
+ - New: Made the Playback Status symbol and Timer display colorable, giving you the possibility of coloring them independently.
+ - New: Winamp 5.8 detection, the skin will break itself when it is detected to be run inside of Winamp 5.8. Use either Winamp 5.666 or WACUP for a better experience.
+ - Fixed: Included new WACUP specific XML files for plugins that have their own GUID (some of them have their own sunken border, while the preferences.xml is there to ensure that even after a WACUP update the window position of the skinned preferences will never reset itself).
+ - Fixed: All windows now properly emulate the behavior of positioning it's window contents when the window is a resizable one (we will probably never have proper support for non-resizable windows to better distinguish between the two types, maybe in a future update, same for a proper maximize state).
+ - Misc: Separated the visualization box from the Main Window image sheet to better allow for a custom background to be placed in main-player.xml (open main-player.xml and place a new layer object at line 12, after you've included your custom image in elements.xml)
+
+# v1.4-RC1: A Banging Update
 
 What's New?
 
