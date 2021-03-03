@@ -1,4 +1,4 @@
-//script to change the text objects accordingly
+//script to change the text objects and layer accordingly
 //feel free to steal
 
 #include "lib/std.mi"
@@ -105,6 +105,10 @@ refreshPlInfo(){
 	else if(extension == "cda")
 	{
 		ext.setXmlParam("image", "pl.icon.cda");
+	}
+	else if(extension == "mptm")
+	{
+		ext.setXmlParam("image", "pl.icon.mptm");
 	}
 	else
 	{
