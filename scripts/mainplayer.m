@@ -262,40 +262,6 @@ initMainPlayer() {
     //iswacup = 0;
   }
 
-  WACUPTxt.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
-  WinampTxt.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtInactive.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
-  WinampTxtInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtShade.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
-  WinampTxtShade.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtShadeInactive.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
-  WinampTxtShadeInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-
-  if(Application.GetVersionNumberString() == "5.8"){
-	  WinampTxt.setXmlParam("text", "Sinner");
-    WinampTxtInactive.setXmlParam("text", "Sinner");
-    WinampTxtShade.setXmlParam("text", "Sinner");
-    WinampTxtShadeInactive.setXmlParam("text", "Sinner");
-    EqButton.setXmlParam("visible", "0");
-    PLButton.setXmlParam("visible", "0");
-    EqLight.setXmlParam("visible", "0");
-    PLLight.setXmlParam("visible", "0");
-    ShuffleBtn.setXmlParam("visible", "0");
-    RepeatBtn.setXmlParam("visible", "0");
-    ShuffleLight.setXmlParam("visible", "0");
-    RepeatLight.setXmlParam("visible", "0");
-    MainGroup.getObject("player.slider.volume").setXmlParam("visible", "0");
-    MainGroup.getObject("eq.slider.pan").setXmlParam("visible", "0");
-    MainGroup.getObject("player.slider.seek").setXmlParam("visible", "0");
-    MainGroup.getObject("player.slider.seek.ghost").setXmlParam("visible", "0");
-    MainGroup.getObject("player.normal.group.songticker").setXmlParam("visible", "0");
-    MainGroup.getObject("player.normal.group.songinfo").setXmlParam("visible", "0");
-    MainGroup.getObject("player.normal.group.display").setXmlParam("visible", "0");
-    messagebox("We detected the Winamp version you're using is 5.8.\nWinamp 5.8 is a lazy attempt at putting something ''usable'' out whilst not updating it whatsoever.\nWe advise you to instead install WACUP, a more updated and maintained continuation of Winamp.", "Winamp 5.8 detected! Reducing skin functionality.", 1, "");
-    messagebox("This dialog box will pop up every time you load this skin.", "Winamp 5.8 detected! Reducing skin functionality.", 1, "");
-    //add your own stuff here
-  }
-
   setVolumeAnim(System.getVolume());
 
   int v = EqBalance.GetPosition();
@@ -412,14 +378,14 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
   {
 		if (getCurCfgVal() == 1)
 		{
-      ShuffleLight.setXmlParam("image", "check.no");
-      //ShuffleLight.setXmlParam("activeImage", "check.no");
+      ShuffleLight.setXmlParam("image", "repeat.light.on.d");
+      ShuffleLight.setXmlParam("activeImage", "repeat.light.on.d");
 			showActionInfo("Shuffle: Off");
 		}
 		else
 		{
-      //ShuffleLight.setXmlParam("image", "checked");
-      ShuffleLight.setXmlParam("activeImage", "checked");
+      ShuffleLight.setXmlParam("image", "repeat.light.on.d");
+      ShuffleLight.setXmlParam("activeImage", "repeat.light.on.d");
 			showActionInfo("Shuffle: On");
 		}
 	}
@@ -473,29 +439,27 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
     {
       if (getCurCfgVal() == 1)
       {
-        /*
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "checked");
-          ShuffleLight.setXmlParam("activeImage", "checked");
+          ShuffleLight.setXmlParam("image", "repeat.light.on.h");
+          ShuffleLight.setXmlParam("activeImage", "repeat.light.on.h");
         }
         else {
-          ShuffleLight.setXmlParam("image", "checked");
-          ShuffleLight.setXmlParam("activeImage", "checked");
+          ShuffleLight.setXmlParam("image", "repeat.light.on");
+          ShuffleLight.setXmlParam("activeImage", "repeat.light.on");
         }
-        */
       }
       else
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "check.no");
-          ShuffleLight.setXmlParam("activeImage", "check.no");
+          ShuffleLight.setXmlParam("image", "repeat.light.on.h");
+          ShuffleLight.setXmlParam("activeImage", "repeat.light.on.h");
         }
         else
         {
-          ShuffleLight.setXmlParam("image", "check.no");
-          ShuffleLight.setXmlParam("activeImage", "check.no");
+          ShuffleLight.setXmlParam("image", "repeat.light.on");
+          ShuffleLight.setXmlParam("activeImage", "repeat.light.on");
         }
       }
 		}
@@ -522,11 +486,11 @@ RepeatShuffleHandler.onEnterArea()
   {
 		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "checked");
+			ShuffleLight.setXmlParam("image", "repeat.light.on");
 		}
 		else
 		{
-			ShuffleLight.setXmlParam("image", "check.no");
+			ShuffleLight.setXmlParam("image", "repeat.light.on");
 		}
   }
 }
@@ -552,11 +516,11 @@ RepeatShuffleHandler.onLeaveArea()
   {
  		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "checked");
+			ShuffleLight.setXmlParam("image", "repeat.light.on");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      ShuffleLight.setXmlParam("image", "check.no");
+      ShuffleLight.setXmlParam("image", "repeat.light.off");
 		} 
   }
 }
