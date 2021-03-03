@@ -613,6 +613,8 @@
   <bitmap id="pl.icon.opus" file="images/window/ext/opus.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.ogg" file="images/window/ext/ogg.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.cda" file="images/window/ext/cda.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.mptm" file="images/window/ext/mptm.png" x="0" y="0" w="32" h="32"/>
+
 
 	<!-- Video Window -->
 
