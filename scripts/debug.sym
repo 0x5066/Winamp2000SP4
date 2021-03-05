@@ -62,7 +62,26 @@ var# |                Class |                                    What
 003A |               String |                            "pl.icon.s3m"
 003B |               String |                                    "mod"
 003C |               String |                            "pl.icon.mod"
-003D |               String |                        "pl.icon.generic"
+003D |               String |                                    "spc"
+003E |               String |                            "pl.icon.spc"
+003F |               String |                                    "nsf"
+0040 |               String |                            "pl.icon.nsf"
+0041 |               String |                                    "m4a"
+0042 |               String |                            "pl.icon.m4a"
+0043 |               String |                                   "opus"
+0044 |               String |                           "pl.icon.opus"
+0045 |               String |                                    "ogg"
+0046 |               String |                            "pl.icon.ogg"
+0047 |               String |                                    "cda"
+0048 |               String |                            "pl.icon.cda"
+0049 |               String |                                   "mptm"
+004A |               String |                           "pl.icon.mptm"
+004B |               String |                        "pl.icon.generic"
+004C |               String |                              streamtitle
+004D |               String |                                "youtube"
+004E |               String |                             "pl.icon.yt"
+004F |               String |                             "soundcloud"
+0050 |               String |                     "pl.icon.soundcloud"
 -- Events Table ------------------------------------------------------
 var# |         Code Pointer |                                    What 
 ----------------------------------------------------------------------
@@ -74,4 +93,6 @@ var# |         Code Pointer |                                    What
                        0000 |                             versionCheck
                        00F2 |                                    debug
                        011D |                                 debugInt
-                       0248 |                            refreshPlInfo
+                       0248 |                     changeIconBasedOnExt
+                       05FF |                   changeIconBasedOnTitle
+                       05D8 |                               changeIcon
