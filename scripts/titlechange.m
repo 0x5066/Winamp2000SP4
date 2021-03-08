@@ -27,17 +27,14 @@ System.onScriptLoaded() {
 	hz = WasabiFrameGroup.getObject("samplerate");
 	kbps = WasabiFrameGroup.getObject("bitrate");
 
-	changeIcon();
+	changeIconBasedOnTitle();
 }
 
 System.onTitleChange(String newtitle) {
-	changeIcon();		
+	changeIconBasedOnTitle();		
 }
 
 changeIcon(){
-	filenamedisplay.setXmlParam("text", System.removePath(System.getPlayItemString()));
-	filetypedisplay.setXmlParam("text", system.getDecoderName(system.getPlayItemString()));
-
 	//get file extension
 	String extension = System.strlower(System.getExtension(System.removePath(System.getPlayItemString())));
 
@@ -112,11 +109,14 @@ changeIcon(){
 	else
 	{
 		ext.setXmlParam("image", "pl.icon.generic");
-		changeIconBasedOnTitle();
 	}
 }
 
 changeIconBasedOnTitle(){
+	
+	filenamedisplay.setXmlParam("text", System.removePath(System.getPlayItemString())); //set filename
+	filetypedisplay.setXmlParam("text", system.getDecoderName(system.getPlayItemString())); //set decoder name
+
 	//get title
 	String streamtitle = System.strlower(System.getPlayItemString());
 
@@ -124,7 +124,16 @@ changeIconBasedOnTitle(){
 	if(System.strsearch(streamtitle, "youtube") != -1){
 		ext.setXmlParam("image", "pl.icon.yt");
 	}
+	else if(System.strsearch(streamtitle, "youtu.be") != -1){
+		ext.setXmlParam("image", "pl.icon.yt");
+	}
 	else if(System.strsearch(streamtitle, "soundcloud") != -1){
 		ext.setXmlParam("image", "pl.icon.soundcloud");
+	}
+		else if(System.strsearch(streamtitle, "discordapp") != -1){
+		ext.setXmlParam("image", "pl.icon.dicksword");
+	}
+	else{
+		changeIcon();
 	}
 }
