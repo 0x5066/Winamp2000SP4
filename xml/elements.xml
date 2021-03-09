@@ -617,6 +617,8 @@
   <bitmap id="pl.icon.yt" file="images/window/ext/yt.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.soundcloud" file="images/window/ext/sc.png" x="0" y="0" w="32" h="32"/>
   <bitmap id="pl.icon.dicksword" file="images/window/ext/discord.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.blumenkranz" file="images/window/ext/blumenkranz.png" x="0" y="0" w="32" h="32"/>
+  <bitmap id="pl.icon.ie" file="images/window/ext/ie.png" x="0" y="0" w="32" h="32"/>
 
 	<!-- Video Window -->
 

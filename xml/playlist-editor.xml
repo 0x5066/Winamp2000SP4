@@ -22,7 +22,7 @@
 
 <groupdef id="pldir">
 	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
-	<layer x="0" y="0" relaty="2" image="explorerthing"/>
+	<layer id="coolgraph" x="0" y="0" relaty="2" image="explorerthing"/>
 	<layer id="exticon" x="12" y="11" image="generic.icon" ghost="1"/>
 	<text display="SONGTITLE" ticker="1" x="9" y="48" h="30" w="187" offsetx="0" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
 	<layer x="0" y="72" w="184" image="explorerthing2"/>

@@ -6,6 +6,9 @@
 Global Container containerPL;
 Global Layout layoutPLNormal;
 Global Layer ext;
+Global Layer coolgraph;
+
+Global PopUpMenu visMenu;
 
 Global group WasabiFrameGroup;
 
@@ -112,6 +115,17 @@ changeIcon(){
 	}
 }
 
+coolgraph.onRightButtonUp (int x, int y)
+{
+	visMenu = new PopUpMenu;
+
+	visMenu.addCommand("Presets:", 999, 0, 1);
+
+	delete visMenu;
+
+	complete;	
+}
+
 changeIconBasedOnTitle(){
 	
 	filenamedisplay.setXmlParam("text", System.removePath(System.getPlayItemString())); //set filename
@@ -130,8 +144,19 @@ changeIconBasedOnTitle(){
 	else if(System.strsearch(streamtitle, "soundcloud") != -1){
 		ext.setXmlParam("image", "pl.icon.soundcloud");
 	}
-		else if(System.strsearch(streamtitle, "discordapp") != -1){
+		else if(System.strsearch(streamtitle, "cdn.discordapp.com") != -1){
 		ext.setXmlParam("image", "pl.icon.dicksword");
+	}
+	else if(System.strsearch(streamtitle, "media.discordapp.net") != -1){
+		ext.setXmlParam("image", "pl.icon.dicksword");
+	}
+	else if(System.strsearch(streamtitle, "http") != -1){
+		ext.setXmlParam("image", "pl.icon.ie");
+	}
+	else if(System.strsearch(streamtitle, "blumenkranz") != -1){
+		ext.setXmlParam("image", "pl.icon.blumenkranz");
+		filenamedisplay.setXmlParam("text", "Milf Music");
+		filetypedisplay.setXmlParam("text", "Nullsoft Milf Music Decoder v4.20.69");
 	}
 	else{
 		changeIcon();
