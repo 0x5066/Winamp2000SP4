@@ -14,18 +14,20 @@
 
 	<bitmap id="empty" file="$polygon" x="0" y="0" h="48" w="2" gammagroup="none"/>
 	
-	<bitmap id="explorerthing" file="images/window/wvleft.bmp"/>
-	<bitmap id="explorerthing2" file="images/window/wvline.gif"/>
+	<bitmap id="explorerleft1" file="images/window/wvleft1.bmp"/>
+	<bitmap id="explorerline1" file="images/window/wvline1.gif"/>
+	<bitmap id="explorerleft2" file="images/window/wvleft2.png"/>
+	<bitmap id="explorerline2" file="images/window/wvline2.png"/>
 </elements>
 
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pldir">
 	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->
-	<layer id="coolgraph" x="0" y="0" relaty="2" image="explorerthing"/>
+	<layer id="coolgraph" x="0" y="0" relaty="2" image="explorerleft1"/>
 	<layer id="exticon" x="12" y="11" image="generic.icon" ghost="1"/>
 	<text display="SONGTITLE" ticker="1" x="9" y="48" h="30" w="187" offsetx="0" font="verdana" bold="1" fontsize="22" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
-	<layer x="0" y="72" w="184" image="explorerthing2"/>
+	<layer id="coolline" x="0" y="72" w="184" image="explorerline1"/>
 	<text id="filename" text="filename.ext (To be added)" x="10" y="88" h="30" w="187" font="Tahoma" bold="1" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
 	<text id="filetype" text="encoder (To be added)" x="10" y="101" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
 	<text id="samplerate" text="Samplerate:" x="10" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> 		<text display="SONGSAMPLERATE" x="71" y="126" h="30" w="187" font="Tahoma" bold="0" fontsize="15" antialias="0" color="0,0,0" valign="top"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this text object -->
