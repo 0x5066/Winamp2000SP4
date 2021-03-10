@@ -137,32 +137,32 @@ coolgraph.onRightButtonUp (int x, int y)
 	int result = vismenu.popAtMouse();
  
 	changeCoolgraph(result);
-
-	setPrivateInt(getSkinName(), "coolgraph", result);
 	
 	complete;
 }
 
 changeCoolgraph(int preset){
-	if(preset == 1){
-		//default
-		//change size
-		coolgraph.setXmlParam("w", "127");
-		coolgraph.setXmlParam("h", "56");
-		coolline.setXmlParam("w", "152");
-		coolline.setXmlParam("h", "2");
+	if(preset>=1 && preset<=2){
+		if(preset == 1){
+			//default
+			//change size
+			coolgraph.setXmlParam("w", "127");
+			coolgraph.setXmlParam("h", "56");
+			coolline.setXmlParam("w", "152");
+			coolline.setXmlParam("h", "2");
+		}else if(preset == 2){
+			//windows 98
+			coolgraph.setXmlParam("w", "182");
+			coolgraph.setXmlParam("h", "237");
+			coolline.setXmlParam("w", "168");
+			coolline.setXmlParam("h", "1");
+		}
+
 		//change image
 		coolgraph.setXmlParam("image", "explorerleft"+integerToString(preset));
 		coolline.setXmlParam("image", "explorerline"+integerToString(preset));
-	}else if(preset == 2){
-		//windows 98
-		coolgraph.setXmlParam("w", "182");
-		coolgraph.setXmlParam("h", "237");
-		coolline.setXmlParam("w", "168");
-		coolline.setXmlParam("h", "1");
-
-		coolgraph.setXmlParam("image", "explorerleft"+integerToString(preset));
-		coolline.setXmlParam("image", "explorerline"+integerToString(preset));
+		//set private int
+		setPrivateInt(getSkinName(), "coolgraph", preset);
 	}
 }
 
