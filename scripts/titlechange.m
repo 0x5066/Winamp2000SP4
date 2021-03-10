@@ -6,7 +6,7 @@
 Global Container containerPL;
 Global Layout layoutPLNormal;
 Global Layer ext;
-Global Layer coolgraph;
+Global Layer coolgraph, coolline;
 
 Global PopUpMenu visMenu;
 
@@ -16,6 +16,7 @@ global text filenamedisplay, filetypedisplay, hz, kbps;
 
 Function changeIconBasedOnTitle();
 Function changeIcon();
+Function changeCoolgraph(int preset);
 
 System.onScriptLoaded() {
   containerPL = System.getContainer("PLEdit");
@@ -30,7 +31,11 @@ System.onScriptLoaded() {
 	hz = WasabiFrameGroup.getObject("samplerate");
 	kbps = WasabiFrameGroup.getObject("bitrate");
 
+	coolgraph = WasabiFrameGroup.getObject("coolgraph");
+	coolline = WasabiFrameGroup.getObject("coolline");
+
 	changeIconBasedOnTitle();
+	changeCoolgraph(getPrivateInt(getSkinName(), "coolgraph", 1));
 }
 
 System.onTitleChange(String newtitle) {
@@ -117,13 +122,48 @@ changeIcon(){
 
 coolgraph.onRightButtonUp (int x, int y)
 {
-	visMenu = new PopUpMenu;
+	int currentPreset = getPrivateInt(getSkinName(), "coolgraph", 1);
 
-	visMenu.addCommand("Presets:", 999, 0, 1);
+  	visMenu = new PopUpMenu;
 
-	delete visMenu;
+  	visMenu.addCommand("Presets:", 0, 0, 1);
 
-	complete;	
+	vismenu.addSeparator();	
+  	  
+	vismenu.addcommand("Windows 2000", 1, currentPreset == 1,0);
+	vismenu.addcommand("Windows 98", 2, currentPreset == 2,0);
+	vismenu.addcommand("um", 3, currentPreset == 3,0);
+  	
+	int result = vismenu.popAtMouse();
+ 
+	changeCoolgraph(result);
+
+	setPrivateInt(getSkinName(), "coolgraph", result);
+	
+	complete;
+}
+
+changeCoolgraph(int preset){
+	if(preset == 1){
+		//default
+		//change size
+		coolgraph.setXmlParam("w", "127");
+		coolgraph.setXmlParam("h", "56");
+		coolline.setXmlParam("w", "152");
+		coolline.setXmlParam("h", "2");
+		//change image
+		coolgraph.setXmlParam("image", "explorerleft"+integerToString(preset));
+		coolline.setXmlParam("image", "explorerline"+integerToString(preset));
+	}else if(preset == 2){
+		//windows 98
+		coolgraph.setXmlParam("w", "182");
+		coolgraph.setXmlParam("h", "237");
+		coolline.setXmlParam("w", "168");
+		coolline.setXmlParam("h", "1");
+
+		coolgraph.setXmlParam("image", "explorerleft"+integerToString(preset));
+		coolline.setXmlParam("image", "explorerline"+integerToString(preset));
+	}
 }
 
 changeIconBasedOnTitle(){
