@@ -157,8 +157,8 @@ initMainPlayer() {
 
   if (timemodestring == 1)
   {
-    DisplayTime.setXmlParam("display", "TIMEELAPSED");
-    DisplayTimeShade.setXmlParam("display", "TIMEELAPSED");
+    //DisplayTime.setXmlParam("display", "TIMEELAPSED");
+    //DisplayTimeShade.setXmlParam("display", "TIMEELAPSED");
     timemodestring = 1;
   }
   else if (timemodestring == 2)
@@ -740,7 +740,7 @@ System.onAccelerator(String action, String section, String key)
 	}
 }
 
-
+/*
 DisplayTime.onLeftButtonUp (int x, int y)
 {
   if (DisplayTime.getXmlParam("display") == "TIMEELAPSED")
@@ -758,6 +758,7 @@ DisplayTime.onLeftButtonUp (int x, int y)
   
   setPrivateInt(getSkinName(), "timemodestring", timemodestring);
 }
+
 
 DisplayTime.onRightButtonUp (int x, int y)
 {
@@ -795,7 +796,7 @@ DisplayTime.onRightButtonUp (int x, int y)
 	}
 	complete;
 }
-
+*/
 
 StopBtn.onLeftClick()
 {
