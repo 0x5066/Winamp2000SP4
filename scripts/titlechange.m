@@ -1,3 +1,31 @@
+//changelog:
+//version 00226db - mirzi1
+//added the ability to change the explorer sideview background
+//from windows 2000 to 98, more to come from beta builds
+
+//version ecd05bc - 0x5066
+//added general support for anything http, included an inside joke
+
+//version a761cde - 0x5066
+//extended to add discord, adding support for youtu.be
+
+//version f334083 - 0x5066 & mirzi1
+//added metadata detection (didnt work in previous commit) 
+//for internet streams (youtube, soundcloud)
+
+//version 2b8528f - 0x5066
+//even more icons, detection is now forced to be lowercase 
+//(i.e. MOD is turned into mod, matching what is wanted)
+
+//version dca7a02 - 0x5066
+//more icons
+
+//version eae4ef2 - mirzi1
+//added actual detection for extensions
+
+//version b22096a - 0x5066
+//initial release
+
 //script to change the text objects and layer accordingly
 //feel free to steal
 
