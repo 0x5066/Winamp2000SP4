@@ -4,7 +4,7 @@
 //either during or on release of winamp3 and they
 //never bothered to fix this, so i did
 
-//THIS THING IS HIDEOUS
+//THIS THING IS HIDEOUS but beautiful
 //there's probably ways of improving it
 //but it works for now and that's all that matters
 
@@ -64,7 +64,7 @@ System.onPlay(){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0){
+        if(songlength == 0 || songlength == -1){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -82,7 +82,7 @@ System.onPause(){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0){
+        if(songlength == 0 || songlength == -1){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -100,7 +100,7 @@ System.onResume(){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0){
+        if(songlength == 0 || songlength == -1){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -118,7 +118,7 @@ System.onInfoChange(String info){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0){
+        if(songlength == 0 || songlength == -1){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -156,6 +156,7 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont wa
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
     String strremainder = System.integerToTime(remainder);
+    String currentpos_rev = System.integerToTime(milliseconds-songlength);
 
     if(remainder < 600000)
     {
@@ -164,6 +165,16 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont wa
     else
     {
         DisplayTime.setXmlParam("text", "-"+strremainder);
+    }
+    if(milliseconds > songlength)
+    {
+        if(milliseconds < 600000){
+            DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
+        }
+        else
+        {
+        DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+        }
     }
 }
 
@@ -186,6 +197,7 @@ timerSongTimerReverse.onTimer() {
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
     String strremainder = System.integerToTime(remainder);
+    String currentpos_rev = System.integerToTime(milliseconds-songlength);
 
     if(remainder < 600000)
     {
@@ -194,6 +206,16 @@ timerSongTimerReverse.onTimer() {
     else
     {
         DisplayTime.setXmlParam("text", "-"+strremainder);
+    }
+    if(milliseconds > songlength)
+    {
+        if(milliseconds < 600000){
+            DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
+        }
+        else
+        {
+        DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+        }
     }
 }
 
@@ -239,7 +261,7 @@ InReverse(){
             StaticTimeRemainder();
             timerSongTimerReverse.start();   
 	    }
-    if(songlength == 0){
+    if(songlength == 0 || songlength == -1){
         StaticTime();
         timerSongTimerReverse.stop();
         timerSongTimer.start();
@@ -252,20 +274,14 @@ InReverse(){
 }
 
 setTimer (int mode){
-    if(System.getPlayItemLength() > 0){
-	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
-	    if (mode == 0)
-	    {
-            AreWePlaying();
-	    }
-	    else if (mode == 1)
-	    {
-            InReverse();
-	    }
-	    timermode = mode;
-    }else{
-        setPrivateInt(getSkinName(), "TimerElapsedRemaining", 0);
+	setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
+	if (mode == 0)
+	{
         AreWePlaying();
-        timermode = 0;
-    }
+	}
+	else if (mode == 1)
+	{
+        InReverse();
+	}
+	timermode = mode;
 }
