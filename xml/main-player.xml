@@ -197,7 +197,7 @@
   
 	<layer id="player.background.display.vis.scale" x="19" y="0" image="display.vis.bg" alpha="255" ghost="1"/>
 
-	<text id="display.time" display="TIME" x="48" y="5" w="122" h="36" ticker="0" font="time" fontsize="38" forcefixed="1" color="wasabi.timer.color" 
+	<text id="display.time" display="time" x="48" y="5" w="122" h="36" ticker="0" font="time" fontsize="38" forcefixed="1" color="wasabi.timer.color" 
 	valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 	<vis id="player.vis" x="27" y="39" w="143" h="32" cursor="cur.normal"/>
 	<layer id="visgridimg.thick" x="27" y="39" image="visgrid_thick" ghost="1"/>

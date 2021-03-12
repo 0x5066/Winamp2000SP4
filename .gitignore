@@ -8,7 +8,6 @@ scripts/lib/core.mi
 scripts/lib/exd.mi
 scripts/lib/fileio.mi
 scripts/lib/pldir.mi
-scripts/lib/std.mi
 scripts/lib/winampconfig.mi
 scripts/lib/com/AutoRepeatButton.m
 scripts/lib/com/centerlayer.m
