@@ -144,8 +144,9 @@ StaticTime(){ //Needed since the timer has a delay of 50 and we dont want any od
 
     if(milliseconds < 600000){
         DisplayTime.setXmlParam("text", "0"+currentpos);
-    }   
-    else{
+    }
+    else
+    {
         DisplayTime.setXmlParam("text", currentpos);
     }
 }
@@ -251,14 +252,20 @@ InReverse(){
 }
 
 setTimer (int mode){
-	setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
-	if (mode == 0)
-	{
+    if(System.getPlayItemLength() > 0){
+	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
+	    if (mode == 0)
+	    {
+            AreWePlaying();
+	    }
+	    else if (mode == 1)
+	    {
+            InReverse();
+	    }
+	    timermode = mode;
+    }else{
+        setPrivateInt(getSkinName(), "TimerElapsedRemaining", 0);
         AreWePlaying();
-	}
-	else if (mode == 1)
-	{
-        InReverse();
-	}
-	timermode = mode;
+        timermode = 0;
+    }
 }
