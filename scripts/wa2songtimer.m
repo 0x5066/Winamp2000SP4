@@ -135,7 +135,7 @@ System.onStop(){
     TimeElapsedOrRemaining();
     timerSongTimer.stop();
     timerSongTimerReverse.stop();
-    DisplayTime.setXmlParam("text", " :  ");
+    DisplayTime.setXmlParam("text", "  :  ");
 }
 
 StaticTime(){ //Needed since the timer has a delay of 50 and we dont want any odd flashing on loading
@@ -155,6 +155,7 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont wa
     int milliseconds = System.getPosition();
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
+    int milliseconds_rev = milliseconds-songlength;
     String strremainder = System.integerToTime(remainder);
     String currentpos_rev = System.integerToTime(milliseconds-songlength);
 
@@ -168,7 +169,7 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont wa
     }
     if(milliseconds > songlength)
     {
-        if(milliseconds < 600000){
+        if(milliseconds_rev < 600000){
             DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
         }
         else
@@ -196,6 +197,7 @@ timerSongTimerReverse.onTimer() {
     int milliseconds = System.getPosition();
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
+    int milliseconds_rev = milliseconds-songlength;
     String strremainder = System.integerToTime(remainder);
     String currentpos_rev = System.integerToTime(milliseconds-songlength);
 
@@ -209,7 +211,7 @@ timerSongTimerReverse.onTimer() {
     }
     if(milliseconds > songlength)
     {
-        if(milliseconds < 600000){
+        if(milliseconds_rev < 600000){
             DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
         }
         else
@@ -230,7 +232,7 @@ AreWePlaying() {
 		{
             timerSongTimerReverse.stop();
             timerSongTimer.stop();
-            DisplayTime.setXmlParam("text", " :  ");
+            DisplayTime.setXmlParam("text", "  :  ");
 		}
 	else if (getStatus() == 1) //Playing
 		{
@@ -243,6 +245,16 @@ AreWePlaying() {
 InReverse(){
     int songlength = System.getPlayItemLength();
 
+    if(songlength == 0 || songlength == -1){
+        StaticTime();
+        timerSongTimerReverse.stop();
+        timerSongTimer.start();
+    }
+    else{
+        StaticTimeRemainder();
+        timerSongTimer.stop();
+        timerSongTimerReverse.start();
+    }
     if (getStatus() == -1) //Paused
         {
             timerSongTimer.stop();
@@ -261,16 +273,6 @@ InReverse(){
             StaticTimeRemainder();
             timerSongTimerReverse.start();   
 	    }
-    if(songlength == 0 || songlength == -1){
-        StaticTime();
-        timerSongTimerReverse.stop();
-        timerSongTimer.start();
-    }
-    else{
-        StaticTimeRemainder();
-        timerSongTimer.stop();
-        timerSongTimerReverse.start();
-    }
 }
 
 setTimer (int mode){

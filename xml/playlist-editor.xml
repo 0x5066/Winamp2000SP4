@@ -18,6 +18,18 @@
 	<bitmap id="explorerline1" file="images/window/wvline1.gif"/>
 	<bitmap id="explorerleft2" file="images/window/wvleft2.png"/>
 	<bitmap id="explorerline2" file="images/window/wvline2.png"/>
+	<bitmap id="explorerleft3" file="images/window/wvleft_me_2332.gif"/>
+	<bitmap id="explorerline3" file="images/window/wvline_me_2332.gif"/>
+	<bitmap id="explorerleft4" file="images/window/wvleft_w2k_1743.bmp"/>
+	<bitmap id="explorerline4" file="images/window/wvline_w2k_1743.gif"/>
+	<bitmap id="explorerleft5" file="images/window/wvleft_w2k_1796.bmp"/>
+	<bitmap id="explorerline5" file="images/window/wvline_w2k_1796.gif"/>
+	<bitmap id="explorerleft6" file="images/window/wvleft_w2k_1835.bmp"/>
+	<bitmap id="explorerline6" file="images/window/wvline_w2k_1835.gif"/>
+	<bitmap id="explorerleft7" file="images/window/wvleft_w2k_1946.bmp"/>
+	<bitmap id="explorerline7" file="images/window/wvline_w2k_1946.gif"/>
+	<bitmap id="explorerleft8" file="images/window/WVLEFT_ME_FINAL.png"/>
+	<bitmap id="explorerline8" file="images/window/WVLINE_ME_FINAL.GIF"/>
 </elements>
 
 <container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
