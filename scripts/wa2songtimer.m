@@ -59,6 +59,8 @@ DisplayTime.onLeftButtonDown(int x, int y)
     complete;
 }
 
+//Here we run these checks every time a playback related action happens
+//It's not enough to check on title change
 System.onPlay(){
     int songlength = System.getPlayItemLength();
 
@@ -131,6 +133,7 @@ System.onInfoChange(String info){
     }
 }
 
+//We stop every timer and instead display Winamp Modern's default of "00:00"
 System.onStop(){
     TimeElapsedOrRemaining();
     timerSongTimer.stop();
@@ -138,7 +141,7 @@ System.onStop(){
     DisplayTime.setXmlParam("text", "  :  ");
 }
 
-StaticTime(){ //Needed since the timer has a delay of 50 and we dont want any odd flashing on loading
+StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
     int milliseconds = System.getPosition();
     String currentpos = System.integerToTime(milliseconds);
 
@@ -151,7 +154,7 @@ StaticTime(){ //Needed since the timer has a delay of 50 and we dont want any od
     }
 }
 
-StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont want any odd flashing on loading
+StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
     int milliseconds = System.getPosition();
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
@@ -159,6 +162,9 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont wa
     String strremainder = System.integerToTime(remainder);
     String currentpos_rev = System.integerToTime(milliseconds-songlength);
 
+//The purpose of this check is to ensure we properly place
+//a "0" if we happen to be below 600000ms, or 10 minutes
+//If we are above 600000ms or 10 minutes, don't append a "0"
     if(remainder < 600000)
     {
         DisplayTime.setXmlParam("text", "-0"+strremainder);
@@ -167,6 +173,10 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we dont wa
     {
         DisplayTime.setXmlParam("text", "-"+strremainder);
     }
+//In case of plugins providing a way to play outside the song's original length
+//and the user just so happened to have time remaining enabled, we want to
+//ensure they still get the proper time position displayed, even if it's irrelevant.
+//Winamp 2/Winamp Classic do this.
     if(milliseconds > songlength)
     {
         if(milliseconds_rev < 600000){
@@ -183,6 +193,9 @@ timerSongTimer.onTimer() {
     int milliseconds = System.getPosition();
     String currentpos = System.integerToTime(milliseconds);
 
+//The purpose of this check is to ensure we properly place
+//a "0" if we happen to be below 600000ms, or 10 minutes
+//If we are above 600000ms or 10 minutes, don't append a "0"
     if(milliseconds < 600000)
     {
         DisplayTime.setXmlParam("text", "0"+currentpos);
@@ -201,6 +214,9 @@ timerSongTimerReverse.onTimer() {
     String strremainder = System.integerToTime(remainder);
     String currentpos_rev = System.integerToTime(milliseconds-songlength);
 
+//The purpose of this check is to ensure we properly place
+//a "0" if we happen to be below 600000ms, or 10 minutes
+//If we are above 600000ms or 10 minutes, don't append a "0"
     if(remainder < 600000)
     {
         DisplayTime.setXmlParam("text", "-0"+strremainder);
@@ -209,6 +225,9 @@ timerSongTimerReverse.onTimer() {
     {
         DisplayTime.setXmlParam("text", "-"+strremainder);
     }
+//The purpose of this check is to ensure we properly place
+//a "0" if we happen to be below 600000ms, or 10 minutes
+//If we are above 600000ms or 10 minutes, don't append a "0"
     if(milliseconds > songlength)
     {
         if(milliseconds_rev < 600000){
@@ -222,6 +241,7 @@ timerSongTimerReverse.onTimer() {
 }
 
 AreWePlaying() {
+//Just some sanity checks to ensure we're in the right modes
     if (getStatus() == -1) //Paused
 		{
             timerSongTimerReverse.stop();
@@ -243,8 +263,13 @@ AreWePlaying() {
 }
 
 InReverse(){
+//Just some sanity checks to ensure we're in the right modes
     int songlength = System.getPlayItemLength();
 
+//In case of streams of VGM formats of endless playback
+//We don't want the user to still be able to toggle
+//between time remaining or elapsed, so we force
+//the elapsed mode to run
     if(songlength == 0 || songlength == -1){
         StaticTime();
         timerSongTimerReverse.stop();
