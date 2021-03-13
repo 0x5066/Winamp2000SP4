@@ -270,34 +270,47 @@ InReverse(){
 //We don't want the user to still be able to toggle
 //between time remaining or elapsed, so we force
 //the elapsed mode to run
+//This has now been actually fixed
     if(songlength == 0 || songlength == -1){
-        StaticTime();
-        timerSongTimerReverse.stop();
-        timerSongTimer.start();
+        if (getStatus() == -1) //Paused
+            {
+                StaticTime();
+                timerSongTimerReverse.stop();  
+                timerSongTimer.start();
+		    }
+        else if (getStatus() == 0) //Stopped
+		    {
+                timerSongTimer.stop();
+                timerSongTimerReverse.stop();
+                DisplayTime.setXmlParam("text", "  :  ");
+		    }
+	    else if (getStatus() == 1) //Playing
+		    {
+                StaticTime();
+                timerSongTimerReverse.stop();  
+                timerSongTimer.start();  
+	        }
     }
     else{
-        StaticTimeRemainder();
-        timerSongTimer.stop();
-        timerSongTimerReverse.start();
+        if (getStatus() == -1) //Paused
+            {
+                timerSongTimer.stop();
+                StaticTimeRemainder();
+                timerSongTimerReverse.start();      
+		    }
+        else if (getStatus() == 0) //Stopped
+		    {
+                timerSongTimer.stop();
+                timerSongTimerReverse.stop();
+                DisplayTime.setXmlParam("text", "  :  ");
+		    }
+	    else if (getStatus() == 1) //Playing
+		    {
+                timerSongTimer.stop();
+                StaticTimeRemainder();
+                timerSongTimerReverse.start();   
+	        }
     }
-    if (getStatus() == -1) //Paused
-        {
-            timerSongTimer.stop();
-            StaticTimeRemainder();
-            timerSongTimerReverse.start();         
-		}
-    else if (getStatus() == 0) //Stopped
-		{
-            timerSongTimer.stop();
-            timerSongTimerReverse.stop();
-            DisplayTime.setXmlParam("text", " :  ");
-		}
-	else if (getStatus() == 1) //Playing
-		{
-            timerSongTimer.stop();
-            StaticTimeRemainder();
-            timerSongTimerReverse.start();   
-	    }
 }
 
 setTimer (int mode){
