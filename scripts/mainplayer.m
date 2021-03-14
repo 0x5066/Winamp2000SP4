@@ -262,13 +262,13 @@ initMainPlayer() {
     //iswacup = 0;
   }
 
-  WACUPTxt.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WACUPTxt.setXmlParam("text", "Winamp Community Update Project");
   WinampTxt.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtInactive.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WACUPTxtInactive.setXmlParam("text", "Winamp Community Update Project");
   WinampTxtInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtShade.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WACUPTxtShade.setXmlParam("text", "Winamp Community Update Project");
   WinampTxtShade.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtShadeInactive.setXmlParam("text", "WACUP "+Application.GetVersionNumberString());
+  WACUPTxtShadeInactive.setXmlParam("text", "Winamp Community Update Project");
   WinampTxtShadeInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
 
   if(Application.GetVersionNumberString() == "5.8"){
