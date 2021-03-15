@@ -175,62 +175,64 @@ coolgraph.onRightButtonUp (int x, int y)
 }
 
 changeCoolgraph(int preset){
-		if(preset == 1){
-			//default
-			//change size
-			coolgraph.setXmlParam("w", "127");
-			coolgraph.setXmlParam("h", "56");
-			coolline.setXmlParam("w", "152");
-			coolline.setXmlParam("h", "2");
-		}else if(preset == 2){
-			//windows 98
-			coolgraph.setXmlParam("w", "182");
-			coolgraph.setXmlParam("h", "237");
-			coolline.setXmlParam("w", "168");
-			coolline.setXmlParam("h", "1");
-		}else if(preset == 3){
-			//Windows ME Build 2332
-			coolgraph.setXmlParam("w", "127");
-			coolgraph.setXmlParam("h", "56");
-			coolline.setXmlParam("w", "152");
-			coolline.setXmlParam("h", "2");
-		}else if(preset == 4){
-			//Windows 2000 Build 1743
-			coolgraph.setXmlParam("w", "161");
-			coolgraph.setXmlParam("h", "78");
-			coolline.setXmlParam("w", "156");
-			coolline.setXmlParam("h", "3");
-		}else if(preset == 5){
-			//Windows 2000 Build 1796
-			coolgraph.setXmlParam("w", "151");
-			coolgraph.setXmlParam("h", "69");
-			coolline.setXmlParam("w", "156");
-			coolline.setXmlParam("h", "3");
-		}else if(preset == 6){
-			//Windows 2000 Build 1835
-			coolgraph.setXmlParam("w", "118");
-			coolgraph.setXmlParam("h", "48");
-			coolline.setXmlParam("w", "152");
-			coolline.setXmlParam("h", "2");
-		}else if(preset == 7){
-			//Windows 2000 Build 1946
-			coolgraph.setXmlParam("w", "118");
-			coolgraph.setXmlParam("h", "48");
-			coolline.setXmlParam("w", "152");
-			coolline.setXmlParam("h", "2");
-		}else if(preset == 8){
-			//Windows ME 
-			coolgraph.setXmlParam("w", "150");
-			coolgraph.setXmlParam("h", "56");
-			coolline.setXmlParam("w", "152");
-			coolline.setXmlParam("h", "2");
-		}
+		if(preset>=1 && preset<=8){
+			if(preset == 1){
+				//default
+				//change size
+				coolgraph.setXmlParam("w", "127");
+				coolgraph.setXmlParam("h", "56");
+				coolline.setXmlParam("w", "152");
+				coolline.setXmlParam("h", "2");
+			}else if(preset == 2){
+				//windows 98
+				coolgraph.setXmlParam("w", "182");
+				coolgraph.setXmlParam("h", "237");
+				coolline.setXmlParam("w", "168");
+				coolline.setXmlParam("h", "1");
+			}else if(preset == 3){
+				//Windows ME Build 2332
+				coolgraph.setXmlParam("w", "127");
+				coolgraph.setXmlParam("h", "56");
+				coolline.setXmlParam("w", "152");
+				coolline.setXmlParam("h", "2");
+			}else if(preset == 4){
+				//Windows 2000 Build 1743
+				coolgraph.setXmlParam("w", "161");
+				coolgraph.setXmlParam("h", "78");
+				coolline.setXmlParam("w", "156");
+				coolline.setXmlParam("h", "3");
+			}else if(preset == 5){
+				//Windows 2000 Build 1796
+				coolgraph.setXmlParam("w", "151");
+				coolgraph.setXmlParam("h", "69");
+				coolline.setXmlParam("w", "156");
+				coolline.setXmlParam("h", "3");
+			}else if(preset == 6){
+				//Windows 2000 Build 1835
+				coolgraph.setXmlParam("w", "118");
+				coolgraph.setXmlParam("h", "48");
+				coolline.setXmlParam("w", "152");
+				coolline.setXmlParam("h", "2");
+			}else if(preset == 7){
+				//Windows 2000 Build 1946
+				coolgraph.setXmlParam("w", "118");
+				coolgraph.setXmlParam("h", "48");
+				coolline.setXmlParam("w", "152");
+				coolline.setXmlParam("h", "2");
+			}else if(preset == 8){
+				//Windows ME 
+				coolgraph.setXmlParam("w", "150");
+				coolgraph.setXmlParam("h", "56");
+				coolline.setXmlParam("w", "152");
+				coolline.setXmlParam("h", "2");
+			}
 
 		//change image
 		coolgraph.setXmlParam("image", "explorerleft"+integerToString(preset));
 		coolline.setXmlParam("image", "explorerline"+integerToString(preset));
 		//set private int
 		setPrivateInt(getSkinName(), "coolgraph", preset);
+	}
 }
 
 changeIconBasedOnTitle(){
