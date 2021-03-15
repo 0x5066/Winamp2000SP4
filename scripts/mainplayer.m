@@ -266,9 +266,9 @@ initMainPlayer() {
   WinampTxt.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
   WACUPTxtInactive.setXmlParam("text", "Winamp Community Update Project");
   WinampTxtInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtShade.setXmlParam("text", "Winamp Community Update Project");
+  WACUPTxtShade.setXmlParam("text", "WACUP");
   WinampTxtShade.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
-  WACUPTxtShadeInactive.setXmlParam("text", "Winamp Community Update Project");
+  WACUPTxtShadeInactive.setXmlParam("text", "WACUP");
   WinampTxtShadeInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
 
   if(Application.GetVersionNumberString() == "5.8"){
