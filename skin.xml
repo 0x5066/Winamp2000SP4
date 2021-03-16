@@ -61,6 +61,7 @@
 	
 	<scripts>
 		<script id="script.system" file="scripts/system.maki"></script>
+		<script file="scripts\wa2songtimer.maki"/>
     <script file="scripts\visualizer.maki"/>
 	</scripts>
 

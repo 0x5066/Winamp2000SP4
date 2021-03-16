@@ -1,8 +1,8 @@
 //please, steal this, i beg you
 //provides you with an actual MM:SS time display
 //one that nullsoft removed for some unknown reason
-//either during or on release of winamp3 and they
-//never bothered to fix this, so i did
+//either during beta testing or on release of winamp3 
+//and they never bothered to fix this, so i did
 
 //THIS THING IS HIDEOUS but beautiful
 //there's probably ways of improving it
@@ -10,10 +10,7 @@
 
 #include "lib/std.mi"
 
-Global Container containerMain;
-Global Group MainGroup, DisplayGroup;
-Global GuiObject DisplayTime;
-Global Layout layoutMainNormal;
+Global GuiObject DisplayTime, DisplayTimeShade;
 Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
 Global int timermode;
@@ -27,11 +24,15 @@ Function StaticTimeRemainder();
 
 System.onScriptLoaded() 
 {
-    containerMain = System.getContainer("main");
-    layoutMainNormal = containerMain.getLayout("normal");
-	MainGroup = layoutMainNormal.getObject("player.normal.group.main");
-	DisplayGroup = MainGroup.getObject("player.normal.group.display");
-    DisplayTime = DisplayGroup.getObject("display.time");
+    Group mainshade = getContainer("Main").getLayout("Shade");
+    /* Replace "timer" with "shade.time" for Winamp Classic Modern */
+    DisplayTimeShade = mainshade.findObject("shade.time");
+
+    Group mainnormal = getContainer("Main").getLayout("Normal");
+    /* Replace "timer" with "display.time" for Winamp Classic Modern */
+    DisplayTime = mainnormal.findObject("display.time");
+    //The above was taken from Ariszló's updated oldtimer.maki script
+    //Allows it to be included in the skin.xml file of the skin
 
   	timerSongTimer = new Timer;
 	timerSongTimer.setDelay(50);
@@ -59,6 +60,18 @@ DisplayTime.onLeftButtonDown(int x, int y)
     complete;
 }
 
+DisplayTimeShade.onLeftButtonDown(int x, int y)
+{
+    timermode++;
+
+    if (timermode == 2)
+    {
+        timermode = 0;
+    }
+    setTimer(timermode);
+    complete;
+}
+
 //Here we run these checks every time a playback related action happens
 //It's not enough to check on title change
 System.onPlay(){
@@ -66,7 +79,7 @@ System.onPlay(){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0 || songlength == -1){
+        if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -84,7 +97,7 @@ System.onPause(){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0 || songlength == -1){
+        if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -102,7 +115,7 @@ System.onResume(){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0 || songlength == -1){
+        if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -120,7 +133,7 @@ System.onInfoChange(String info){
 
     TimeElapsedOrRemaining();
     if (timermode == 1){
-        if(songlength == 0 || songlength == -1){
+        if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
@@ -139,6 +152,7 @@ System.onStop(){
     timerSongTimer.stop();
     timerSongTimerReverse.stop();
     DisplayTime.setXmlParam("text", "  :  ");
+    DisplayTimeShade.setXmlParam("text", "  :  ");
 }
 
 StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
@@ -147,10 +161,12 @@ StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any o
 
     if(milliseconds < 600000){
         DisplayTime.setXmlParam("text", "0"+currentpos);
+        DisplayTimeShade.setXmlParam("text", "0"+currentpos);
     }
     else
     {
         DisplayTime.setXmlParam("text", currentpos);
+        DisplayTimeShade.setXmlParam("text", currentpos);
     }
 }
 
@@ -168,10 +184,12 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we don't w
     if(remainder < 600000)
     {
         DisplayTime.setXmlParam("text", "-0"+strremainder);
+        DisplayTimeShade.setXmlParam("text", "-0"+strremainder);
     }
     else
     {
         DisplayTime.setXmlParam("text", "-"+strremainder);
+        DisplayTimeShade.setXmlParam("text", "-"+strremainder);
     }
 //In case of plugins providing a way to play outside the song's original length
 //and the user just so happened to have time remaining enabled, we want to
@@ -181,10 +199,12 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we don't w
     {
         if(milliseconds_rev < 600000){
             DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
+            DisplayTimeShade.setXmlParam("text", "-0"+currentpos_rev);
         }
         else
         {
-        DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+            DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+            DisplayTimeShade.setXmlParam("text", "-"+currentpos_rev);
         }
     }
 }
@@ -199,10 +219,12 @@ timerSongTimer.onTimer() {
     if(milliseconds < 600000)
     {
         DisplayTime.setXmlParam("text", "0"+currentpos);
+        DisplayTimeShade.setXmlParam("text", "0"+currentpos);
     }
     else
     {
         DisplayTime.setXmlParam("text", currentpos);
+        DisplayTimeShade.setXmlParam("text", currentpos);
     }
 }
 
@@ -220,10 +242,12 @@ timerSongTimerReverse.onTimer() {
     if(remainder < 600000)
     {
         DisplayTime.setXmlParam("text", "-0"+strremainder);
+        DisplayTimeShade.setXmlParam("text", "-0"+strremainder);
     }
     else
     {
         DisplayTime.setXmlParam("text", "-"+strremainder);
+        DisplayTimeShade.setXmlParam("text", "-"+strremainder);
     }
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
@@ -232,10 +256,12 @@ timerSongTimerReverse.onTimer() {
     {
         if(milliseconds_rev < 600000){
             DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
+            DisplayTimeShade.setXmlParam("text", "-0"+currentpos_rev);
         }
         else
         {
-        DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+            DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+            DisplayTimeShade.setXmlParam("text", "-"+currentpos_rev);
         }
     }
 }
@@ -253,6 +279,7 @@ AreWePlaying() {
             timerSongTimerReverse.stop();
             timerSongTimer.stop();
             DisplayTime.setXmlParam("text", "  :  ");
+            DisplayTimeShade.setXmlParam("text", "  :  ");
 		}
 	else if (getStatus() == 1) //Playing
 		{
@@ -271,7 +298,7 @@ InReverse(){
 //between time remaining or elapsed, so we force
 //the elapsed mode to run
 //This has now been actually fixed
-    if(songlength == 0 || songlength == -1){
+    if(songlength <= 0){
         if (getStatus() == -1) //Paused
             {
                 StaticTime();
@@ -283,6 +310,7 @@ InReverse(){
                 timerSongTimer.stop();
                 timerSongTimerReverse.stop();
                 DisplayTime.setXmlParam("text", "  :  ");
+                DisplayTimeShade.setXmlParam("text", "  :  ");
 		    }
 	    else if (getStatus() == 1) //Playing
 		    {
@@ -303,6 +331,7 @@ InReverse(){
                 timerSongTimer.stop();
                 timerSongTimerReverse.stop();
                 DisplayTime.setXmlParam("text", "  :  ");
+                DisplayTimeShade.setXmlParam("text", "  :  ");
 		    }
 	    else if (getStatus() == 1) //Playing
 		    {

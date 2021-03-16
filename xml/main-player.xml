@@ -207,8 +207,6 @@
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>
 	<layer id="player.vis.trigger" x="27" y="39" w="143" h="32" image="none" cursor="cur.normal"/>
 
-	<script file="scripts\wa2songtimer.maki"/>
-
 </groupdef>
 
 <layout id="normal" minimum_h="242" minimum_w="550" maximum_w="10000" w="550" h="242" desktopalpha="1" droptarget="pldr" linkwidth="shade" appbar="top|bottom" >

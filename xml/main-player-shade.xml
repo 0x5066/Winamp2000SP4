@@ -114,8 +114,8 @@
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>
 	
-	<text id="shade.time" display="TIME" x="76" y="8" w="86" h="20" font="numbers" fontsize="15" timecolonwidth="5" timeroffstyle="1" align="right" 
-	 color="black" forcefixed="0" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
+	<text id="shade.time" x="72" y="8" w="86" h="20" font="numbers" fontsize="15" align="right" 
+	 color="black" bold="0" dblclickaction="trackinfo" cursor="cur.normal" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="0"/>
 	
 	<Songticker id="shade.display.songname" x="175" y="10" w="-179" h="20" relatw="1" showlen="1" font="sarpanch" fontsize="15" align="left" 
 	rightclickaction="trackmenu" color="black" dblclickaction="trackinfo" alpha="255" cursor="cur.normal" tooltip="Song Title (right-click for options)" antialias="0"/>
