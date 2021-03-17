@@ -83,11 +83,15 @@ System.onPlay(){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
+//We do this to check if what we're currently playing is a stream/endless VGM track
+//as trying to display the time remaining is pointless and only adds a "-", so we
+//force to start the timer for the "Time Elapsed" mode if that is the case
         }
         else{
             StaticTimeRemainder();
             timerSongTimer.stop();
             timerSongTimerReverse.start();
+//otherwise, display the time remaining
         }
     }
 }
@@ -147,6 +151,7 @@ System.onInfoChange(String info){
 }
 
 //We stop every timer and instead display Winamp Modern's default of "00:00"
+//In this case it's "  :  "
 System.onStop(){
     TimeElapsedOrRemaining();
     timerSongTimer.stop();
@@ -155,7 +160,7 @@ System.onStop(){
     DisplayTimeShade.setXmlParam("text", "  :  ");
 }
 
-StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
+StaticTime(){ //Needed since the timer has a delay of 50ms and we don't want any odd flashing on loading
     int milliseconds = System.getPosition();
     String currentpos = System.integerToTime(milliseconds);
 
@@ -170,7 +175,7 @@ StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any o
     }
 }
 
-StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
+StaticTimeRemainder(){ //Needed since the timer has a delay of 50ms and we don't want any odd flashing on loading
     int milliseconds = System.getPosition();
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
