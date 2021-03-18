@@ -10,17 +10,24 @@
 
 #include "lib/std.mi"
 
+Global String digits;
 Global GuiObject DisplayTime, DisplayTimeShade;
 Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
 Global int timermode;
+Global int ZZorNot;
+
+Global PopUpMenu clockMenu;
 
 Function AreWePlaying();
 Function InReverse();
 Function TimeElapsedOrRemaining();
 Function setTimer(int mode);
+//Function setDigits(int mode2);
 Function StaticTime();
 Function StaticTimeRemainder();
+Function YesZZ();
+Function NoZZ();
 
 System.onScriptLoaded() 
 {
@@ -60,6 +67,27 @@ DisplayTime.onLeftButtonDown(int x, int y)
     complete;
 }
 
+DisplayTime.onRightButtonUp (int x, int y){
+
+  	clockMenu = new PopUpMenu;
+
+  	//clockMenu.addCommand("Presets:", 0, 0, 1);
+  	  
+	clockMenu.addcommand("Time elapsed", 0, timermode == 0,0);
+	clockMenu.addcommand("Time remaining", 1, timermode == 1,0);
+	//clockMenu.addSeparator();
+    //clockMenu.addcommand("No 00", 2, timermode == 2,0);
+	//clockMenu.addcommand("Yes 00", 3, timermode == 3,0);
+  	
+	int result = clockMenu.popAtMouse();
+    //int result2 = clockMenu.popAtMouse();
+ 
+	setTimer(result);
+    //setDigits(result2);
+	
+	complete;
+}
+
 DisplayTimeShade.onLeftButtonDown(int x, int y)
 {
     timermode++;
@@ -83,11 +111,15 @@ System.onPlay(){
             StaticTime();
             timerSongTimerReverse.stop();
             timerSongTimer.start();
+//We do this to check if what we're currently playing is a stream/endless VGM track
+//as trying to display the time remaining is pointless and only adds a "-", so we
+//force to start the timer for the "Time Elapsed" mode if that is the case
         }
         else{
             StaticTimeRemainder();
             timerSongTimer.stop();
             timerSongTimerReverse.start();
+//otherwise, display the time remaining
         }
     }
 }
@@ -147,15 +179,18 @@ System.onInfoChange(String info){
 }
 
 //We stop every timer and instead display Winamp Modern's default of "00:00"
+//In this case it's "  :  "
 System.onStop(){
     TimeElapsedOrRemaining();
     timerSongTimer.stop();
     timerSongTimerReverse.stop();
+    //DisplayTime.setXmlParam("text", digits);
+    //DisplayTimeShade.setXmlParam("text", digits);
     DisplayTime.setXmlParam("text", "  :  ");
     DisplayTimeShade.setXmlParam("text", "  :  ");
 }
 
-StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
+StaticTime(){ //Needed since the timer has a delay of 50ms and we don't want any odd flashing on loading
     int milliseconds = System.getPosition();
     String currentpos = System.integerToTime(milliseconds);
 
@@ -170,7 +205,7 @@ StaticTime(){ //Needed since the timer has a delay of 50 and we don't want any o
     }
 }
 
-StaticTimeRemainder(){ //Needed since the timer has a delay of 50 and we don't want any odd flashing on loading
+StaticTimeRemainder(){ //Needed since the timer has a delay of 50ms and we don't want any odd flashing on loading
     int milliseconds = System.getPosition();
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
@@ -278,8 +313,10 @@ AreWePlaying() {
 		{
             timerSongTimerReverse.stop();
             timerSongTimer.stop();
-            DisplayTime.setXmlParam("text", "  :  ");
-            DisplayTimeShade.setXmlParam("text", "  :  ");
+                //DisplayTime.setXmlParam("text", digits);
+                //DisplayTimeShade.setXmlParam("text", digits);
+                DisplayTime.setXmlParam("text", "  :  ");
+                DisplayTimeShade.setXmlParam("text", "  :  ");
 		}
 	else if (getStatus() == 1) //Playing
 		{
@@ -309,6 +346,8 @@ InReverse(){
 		    {
                 timerSongTimer.stop();
                 timerSongTimerReverse.stop();
+                //DisplayTime.setXmlParam("text", digits);
+                //DisplayTimeShade.setXmlParam("text", digits);
                 DisplayTime.setXmlParam("text", "  :  ");
                 DisplayTimeShade.setXmlParam("text", "  :  ");
 		    }
@@ -330,6 +369,8 @@ InReverse(){
 		    {
                 timerSongTimer.stop();
                 timerSongTimerReverse.stop();
+                //DisplayTime.setXmlParam("text", digits);
+                //DisplayTimeShade.setXmlParam("text", digits);
                 DisplayTime.setXmlParam("text", "  :  ");
                 DisplayTimeShade.setXmlParam("text", "  :  ");
 		    }
@@ -342,15 +383,51 @@ InReverse(){
     }
 }
 
-setTimer (int mode){
-	setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
-	if (mode == 0)
-	{
-        AreWePlaying();
-	}
-	else if (mode == 1)
-	{
-        InReverse();
-	}
-	timermode = mode;
+/*
+YesZZ(){
+    digits = "00:00";
 }
+
+NoZZ(){
+    digits = "  :  ";
+}
+*/
+
+setTimer (int mode){
+    if(mode>=0 && mode<=1){ //i fucking hate building menus
+	    if (mode == 0)
+	    {
+            AreWePlaying();
+	    }
+	    else if (mode == 1)
+	    {
+            InReverse();
+	    }
+    /*
+    else if (mode == 2)
+	{
+        NoZZ();
+	}
+	else if (mode == 3)
+	{
+        YesZZ();
+	}
+    */
+	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
+    }
+}
+
+/*
+setDigits (int mode2){
+	setPrivateInt(getSkinName(), "00 or not", mode2);
+	if (mode2 == 0)
+	{
+        NoZZ();
+	}
+	else if (mode2 == 1)
+	{
+        YesZZ();
+	}
+	ZZorNot = mode2;
+}
+*/
