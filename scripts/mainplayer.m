@@ -323,7 +323,33 @@ unloadMainPlayer() {
 	delete delayload;
 }
 
+System.onPlay(){
+  WACUPTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WACUPTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+}
 
+System.onPause(){
+  WACUPTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WACUPTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+}
+
+System.onResume(){
+  WACUPTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WACUPTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+}
+
+System.onInfoChange(String info){
+  WACUPTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxt.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WACUPTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+  WinampTxtInactive.setXmlParam("text", System.getPlayItemDisplayTitle());
+}
 
 EqLight.onEnterArea()
 {	

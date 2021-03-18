@@ -111,7 +111,7 @@
 
   <layer x="-57" y="4" w="53" h="18" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
 
-	<group id="titlebar.winamptxt.group" x="0" y="0" h="30" w="324"/>
+	<group id="titlebar.winamptxt.group" x="0" y="0" h="30" w="-22" relatw="1"/>
 	  
 	  <layer id="titlebar.switch" x="30" y="0" w="-83" h="30" relatw="1" dblclickaction="SWITCH;shade" move="1" ghost="0" cursor="cur.move"/>
   
@@ -133,14 +133,14 @@
 
 <groupdef id="titlebar.winamptxt.group">
 
-	<text id="titlebar.winamptxt" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
+	<text id="titlebar.winamptxt" x="22" y="4" text="Winamp" w="-58" relatw="1" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
-	<text id="titlebar.winamptxt.inactive" x="22" y="4" text="Winamp" w="300" h="18" font="titlebar" fontsize="15"
+	<text id="titlebar.winamptxt.inactive" x="22" y="4" text="Winamp" w="-58" relatw="1" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
 
-	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
+	<text id="titlebar.wacuptxt" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="-58" relatw="1" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.active" bold="1" antialias="0" ghost="1" activealpha="255" inactivealpha="0"/>
-	<text id="titlebar.wacuptxt.inactive" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="300" h="18" font="titlebar" fontsize="15"
+	<text id="titlebar.wacuptxt.inactive" x="22" y="4" text="WACUP (WinAmp Community Update Project)" w="-58" relatw="1" h="18" font="titlebar" fontsize="15"
     color="wasabi.text.inactive" bold="1" antialias="0" ghost="1" activealpha="0" inactivealpha="255"/>
 
 </groupdef>
