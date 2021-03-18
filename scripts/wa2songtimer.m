@@ -412,7 +412,6 @@ setTimer (int mode){
 	{
         YesZZ();
 	}
-<<<<<<< HEAD
     */
 	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
     }
@@ -432,7 +431,3 @@ setDigits (int mode2){
 	ZZorNot = mode2;
 }
 */
-=======
-	timermode = mode;
-}
->>>>>>> 9de50e433f8d16f55665b9dae08871224b22f24e
