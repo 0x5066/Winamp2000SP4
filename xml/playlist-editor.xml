@@ -256,7 +256,7 @@
 	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>
 	<layer id="win.resize" x="-20" y="-22" h="18" w="16" relatx="1" relaty="1" image="winresizer" ghost="1"/>
 	
-	<text display="SONGNAME" ticker="1" x="5" y="-20" w="-191" h="13" relaty="1" relatw="1" font="tahoma" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" sysregion="1"/>
+	<text display="SONGNAME" ticker="1" x="7" y="-20" w="-196" h="13" offsetx="-2" relaty="1" relatw="1" font="tahoma" fontsize="14" linespacing="1" color="wasabi.text.color" antialias="0" sysregion="1"/>
 	
 	<grid x="4" y="-22" w="-190" h="18" relaty="1" relatw="1" topleft="wnd.topleft2" top="wnd.topmid2" topright="wnd.topright2" 
 	left="wnd.left2" middle="wnd.mid2" right="wnd.right2"
