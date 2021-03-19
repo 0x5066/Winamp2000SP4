@@ -51,7 +51,7 @@ System.onScriptLoaded()
 
 TimeElapsedOrRemaining()
 {
-    timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 0);
+    timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
     setTimer(timermode);
 }
 
@@ -59,9 +59,9 @@ DisplayTime.onLeftButtonDown(int x, int y)
 {
     timermode++;
 
-    if (timermode == 2)
+    if (timermode == 3)
     {
-        timermode = 0;
+        timermode = 1;
     }
     setTimer(timermode);
     complete;
@@ -73,8 +73,8 @@ DisplayTime.onRightButtonUp (int x, int y){
 
   	//clockMenu.addCommand("Presets:", 0, 0, 1);
   	  
-	clockMenu.addcommand("Time elapsed", 0, timermode == 0,0);
-	clockMenu.addcommand("Time remaining", 1, timermode == 1,0);
+	clockMenu.addcommand("Time elapsed", 1, timermode == 1,0);
+	clockMenu.addcommand("Time remaining", 2, timermode == 2,0);
 	//clockMenu.addSeparator();
     //clockMenu.addcommand("No 00", 2, timermode == 2,0);
 	//clockMenu.addcommand("Yes 00", 3, timermode == 3,0);
@@ -92,9 +92,9 @@ DisplayTimeShade.onLeftButtonDown(int x, int y)
 {
     timermode++;
 
-    if (timermode == 2)
+    if (timermode == 3)
     {
-        timermode = 0;
+        timermode = 1;
     }
     setTimer(timermode);
     complete;
@@ -106,7 +106,7 @@ System.onPlay(){
     int songlength = System.getPlayItemLength();
 
     TimeElapsedOrRemaining();
-    if (timermode == 1){
+    if (timermode == 2){
         if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
@@ -128,7 +128,7 @@ System.onPause(){
     int songlength = System.getPlayItemLength();
 
     TimeElapsedOrRemaining();
-    if (timermode == 1){
+    if (timermode == 2){
         if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
@@ -146,7 +146,7 @@ System.onResume(){
     int songlength = System.getPlayItemLength();
 
     TimeElapsedOrRemaining();
-    if (timermode == 1){
+    if (timermode == 2){
         if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
@@ -164,7 +164,7 @@ System.onInfoChange(String info){
     int songlength = System.getPlayItemLength();
 
     TimeElapsedOrRemaining();
-    if (timermode == 1){
+    if (timermode == 2){
         if(songlength <= 0){
             StaticTime();
             timerSongTimerReverse.stop();
@@ -394,12 +394,12 @@ NoZZ(){
 */
 
 setTimer (int mode){
-    if(mode>=0 && mode<=1){ //i fucking hate building menus
-	    if (mode == 0)
+    if(mode>=1 && mode<=2){ //i fucking hate building menus
+	    if (mode == 1)
 	    {
             AreWePlaying();
 	    }
-	    else if (mode == 1)
+	    else if (mode == 2)
 	    {
             InReverse();
 	    }
