@@ -57,14 +57,16 @@ TimeElapsedOrRemaining()
 
 DisplayTime.onLeftButtonDown(int x, int y)
 {
-    timermode++;
+    if(timermode>=1 && timermode<=2){
+        timermode++;
 
-    if (timermode == 3)
-    {
-        timermode = 1;
-    }
+        if (timermode == 3)
+        {
+            timermode = 1;
+        }
     setTimer(timermode);
     complete;
+    }
 }
 
 DisplayTime.onRightButtonUp (int x, int y){
