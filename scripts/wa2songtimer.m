@@ -79,10 +79,10 @@ DisplayTime.onRightButtonUp (int x, int y){
     //clockMenu.addcommand("No 00", 2, timermode == 2,0);
 	//clockMenu.addcommand("Yes 00", 3, timermode == 3,0);
   	
-	int result = clockMenu.popAtMouse();
+	timermode = clockMenu.popAtMouse();
     //int result2 = clockMenu.popAtMouse();
  
-	setTimer(result);
+	setTimer(timermode);
     //setDigits(result2);
 	
 	complete;
@@ -90,14 +90,16 @@ DisplayTime.onRightButtonUp (int x, int y){
 
 DisplayTimeShade.onLeftButtonDown(int x, int y)
 {
-    timermode++;
+    if(timermode>=1 && timermode<=2){
+        timermode++;
 
-    if (timermode == 3)
-    {
-        timermode = 1;
-    }
+        if (timermode == 3)
+        {
+            timermode = 1;
+        }
     setTimer(timermode);
     complete;
+    }
 }
 
 //Here we run these checks every time a playback related action happens
@@ -394,7 +396,6 @@ NoZZ(){
 */
 
 setTimer (int mode){
-    if(mode>=1 && mode<=2){ //i fucking hate building menus
 	    if (mode == 1)
 	    {
             AreWePlaying();
@@ -414,7 +415,6 @@ setTimer (int mode){
 	}
     */
 	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
-    }
 }
 
 /*
