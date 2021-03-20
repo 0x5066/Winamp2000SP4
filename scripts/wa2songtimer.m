@@ -22,7 +22,7 @@ Global PopUpMenu clockMenu;
 Function AreWePlaying();
 Function InReverse();
 Function TimeElapsedOrRemaining();
-Function setTimer(int mode);
+Function setTimer(int timermode);
 //Function setDigits(int mode2);
 Function StaticTime();
 Function StaticTimeRemainder();
@@ -57,7 +57,6 @@ TimeElapsedOrRemaining()
 
 DisplayTime.onLeftButtonDown(int x, int y)
 {
-    if(timermode>=1 && timermode<=2){
         timermode++;
 
         if (timermode == 3)
@@ -66,7 +65,6 @@ DisplayTime.onLeftButtonDown(int x, int y)
         }
     setTimer(timermode);
     complete;
-    }
 }
 
 DisplayTime.onRightButtonUp (int x, int y){
@@ -92,7 +90,6 @@ DisplayTime.onRightButtonUp (int x, int y){
 
 DisplayTimeShade.onLeftButtonDown(int x, int y)
 {
-    if(timermode>=1 && timermode<=2){
         timermode++;
 
         if (timermode == 3)
@@ -101,7 +98,6 @@ DisplayTimeShade.onLeftButtonDown(int x, int y)
         }
     setTimer(timermode);
     complete;
-    }
 }
 
 //Here we run these checks every time a playback related action happens
@@ -397,12 +393,13 @@ NoZZ(){
 }
 */
 
-setTimer (int mode){
-	    if (mode == 1)
+setTimer (int timermode){
+    if(timermode>=1 && timermode<=2){
+	    if (timermode == 1)
 	    {
             AreWePlaying();
 	    }
-	    else if (mode == 2)
+	    else if (timermode == 2)
 	    {
             InReverse();
 	    }
@@ -416,7 +413,8 @@ setTimer (int mode){
         YesZZ();
 	}
     */
-	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", mode);
+	    setPrivateInt(getSkinName(), "TimerElapsedRemaining", timermode);
+    }
 }
 
 /*
