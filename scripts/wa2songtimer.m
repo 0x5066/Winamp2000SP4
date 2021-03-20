@@ -16,6 +16,7 @@ Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
 Global int timermode;
 Global int ZZorNot;
+Global int result;
 
 Global PopUpMenu clockMenu;
 
@@ -46,25 +47,12 @@ System.onScriptLoaded()
     timerSongTimerReverse = new Timer;
     timerSongTimerReverse.setDelay(50);
 
-    TimeElapsedOrRemaining();
+    setTimer(getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1));
 }
 
 TimeElapsedOrRemaining()
 {
-    timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
     setTimer(timermode);
-}
-
-DisplayTime.onLeftButtonDown(int x, int y)
-{
-        timermode++;
-
-        if (timermode == 3)
-        {
-            timermode = 1;
-        }
-    setTimer(timermode);
-    complete;
 }
 
 DisplayTime.onRightButtonUp (int x, int y){
@@ -88,14 +76,26 @@ DisplayTime.onRightButtonUp (int x, int y){
 	complete;
 }
 
+DisplayTime.onLeftButtonDown(int x, int y)
+{
+    timermode++;
+
+    if (timermode == 3)
+    {
+        timermode = 1;
+    }
+    setTimer(timermode);
+    complete;
+}
+
 DisplayTimeShade.onLeftButtonDown(int x, int y)
 {
-        timermode++;
+    timermode++;
 
-        if (timermode == 3)
-        {
-            timermode = 1;
-        }
+    if (timermode == 3)
+    {
+        timermode = 1;
+    }
     setTimer(timermode);
     complete;
 }
@@ -394,7 +394,7 @@ NoZZ(){
 */
 
 setTimer (int timermode){
-    if(timermode>=1 && timermode<=2){
+    if(timermode>=1 && timermode<=2){ //i fucking hate building menus
 	    if (timermode == 1)
 	    {
             AreWePlaying();
@@ -402,7 +402,7 @@ setTimer (int timermode){
 	    else if (timermode == 2)
 	    {
             InReverse();
-	    }
+        }
     /*
     else if (mode == 2)
 	{
