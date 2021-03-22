@@ -14,7 +14,7 @@ Global String digits;
 Global GuiObject DisplayTime, DisplayTimeShade;
 Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
-Global int timermode;
+//Global int timermode;
 Global int ZZorNot;
 Global int result;
 
@@ -48,14 +48,17 @@ System.onScriptLoaded()
     timerSongTimerReverse.setDelay(50);
 
     setTimer(getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1));
+    TimeElapsedOrRemaining();
 }
 
 TimeElapsedOrRemaining()
 {
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
     setTimer(timermode);
 }
 
 DisplayTime.onRightButtonUp (int x, int y){
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
   	clockMenu = new PopUpMenu;
 
@@ -78,6 +81,8 @@ DisplayTime.onRightButtonUp (int x, int y){
 
 DisplayTime.onLeftButtonDown(int x, int y)
 {
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
+
     timermode++;
 
     if (timermode == 3)
@@ -90,6 +95,8 @@ DisplayTime.onLeftButtonDown(int x, int y)
 
 DisplayTimeShade.onLeftButtonDown(int x, int y)
 {
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
+
     timermode++;
 
     if (timermode == 3)
@@ -104,6 +111,7 @@ DisplayTimeShade.onLeftButtonDown(int x, int y)
 //It's not enough to check on title change
 System.onPlay(){
     int songlength = System.getPlayItemLength();
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
     TimeElapsedOrRemaining();
     if (timermode == 2){
@@ -126,6 +134,7 @@ System.onPlay(){
 
 System.onPause(){
     int songlength = System.getPlayItemLength();
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
     TimeElapsedOrRemaining();
     if (timermode == 2){
@@ -144,6 +153,7 @@ System.onPause(){
 
 System.onResume(){
     int songlength = System.getPlayItemLength();
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
     TimeElapsedOrRemaining();
     if (timermode == 2){
@@ -162,6 +172,7 @@ System.onResume(){
 
 System.onInfoChange(String info){
     int songlength = System.getPlayItemLength();
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
     TimeElapsedOrRemaining();
     if (timermode == 2){
