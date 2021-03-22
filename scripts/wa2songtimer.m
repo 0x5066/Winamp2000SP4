@@ -79,6 +79,28 @@ DisplayTime.onRightButtonUp (int x, int y){
 	complete;
 }
 
+DisplayTimeShade.onRightButtonUp (int x, int y){
+    int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
+
+  	clockMenu = new PopUpMenu;
+
+  	//clockMenu.addCommand("Presets:", 0, 0, 1);
+  	  
+	clockMenu.addcommand("Time elapsed", 1, timermode == 1,0);
+	clockMenu.addcommand("Time remaining", 2, timermode == 2,0);
+	//clockMenu.addSeparator();
+    //clockMenu.addcommand("No 00", 2, timermode == 2,0);
+	//clockMenu.addcommand("Yes 00", 3, timermode == 3,0);
+  	
+	timermode = clockMenu.popAtMouse();
+    //int result2 = clockMenu.popAtMouse();
+ 
+	setTimer(timermode);
+    //setDigits(result2);
+	
+	complete;
+}
+
 DisplayTime.onLeftButtonDown(int x, int y)
 {
     int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
