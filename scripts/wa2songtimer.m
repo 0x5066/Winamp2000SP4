@@ -14,9 +14,7 @@ Global String digits;
 Global GuiObject DisplayTime, DisplayTimeShade;
 Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
-//Global int timermode;
-Global int ZZorNot;
-Global int result;
+//Global int ZZorNot;
 
 Global PopUpMenu clockMenu;
 
@@ -27,8 +25,8 @@ Function setTimer(int timermode);
 //Function setDigits(int mode2);
 Function StaticTime();
 Function StaticTimeRemainder();
-Function YesZZ();
-Function NoZZ();
+//Function YesZZ();
+//Function NoZZ();
 
 System.onScriptLoaded() 
 {
@@ -107,8 +105,7 @@ DisplayTime.onLeftButtonDown(int x, int y)
 
     timermode++;
 
-    if (timermode == 3)
-    {
+    if (timermode == 3){
         timermode = 1;
     }
     setTimer(timermode);
@@ -121,8 +118,7 @@ DisplayTimeShade.onLeftButtonDown(int x, int y)
 
     timermode++;
 
-    if (timermode == 3)
-    {
+    if (timermode == 3){
         timermode = 1;
     }
     setTimer(timermode);
@@ -231,8 +227,7 @@ StaticTime(){ //Needed since the timer has a delay of 50ms and we don't want any
         DisplayTime.setXmlParam("text", "0"+currentpos);
         DisplayTimeShade.setXmlParam("text", "0"+currentpos);
     }
-    else
-    {
+    else{
         DisplayTime.setXmlParam("text", currentpos);
         DisplayTimeShade.setXmlParam("text", currentpos);
     }
@@ -249,13 +244,11 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50ms and we don't
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
 //If we are above 600000ms or 10 minutes, don't append a "0"
-    if(remainder < 600000)
-    {
+    if(remainder < 600000){
         DisplayTime.setXmlParam("text", "-0"+strremainder);
         DisplayTimeShade.setXmlParam("text", "-0"+strremainder);
     }
-    else
-    {
+    else{
         DisplayTime.setXmlParam("text", "-"+strremainder);
         DisplayTimeShade.setXmlParam("text", "-"+strremainder);
     }
@@ -263,40 +256,36 @@ StaticTimeRemainder(){ //Needed since the timer has a delay of 50ms and we don't
 //and the user just so happened to have time remaining enabled, we want to
 //ensure they still get the proper time position displayed, even if it's irrelevant.
 //Winamp 2/Winamp Classic do this.
-    if(milliseconds > songlength)
-    {
+    if(milliseconds > songlength){
         if(milliseconds_rev < 600000){
             DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
             DisplayTimeShade.setXmlParam("text", "-0"+currentpos_rev);
         }
-        else
-        {
+        else{
             DisplayTime.setXmlParam("text", "-"+currentpos_rev);
             DisplayTimeShade.setXmlParam("text", "-"+currentpos_rev);
         }
     }
 }
 
-timerSongTimer.onTimer() {
+timerSongTimer.onTimer(){
     int milliseconds = System.getPosition();
     String currentpos = System.integerToTime(milliseconds);
 
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
 //If we are above 600000ms or 10 minutes, don't append a "0"
-    if(milliseconds < 600000)
-    {
+    if(milliseconds < 600000){
         DisplayTime.setXmlParam("text", "0"+currentpos);
         DisplayTimeShade.setXmlParam("text", "0"+currentpos);
     }
-    else
-    {
+    else{
         DisplayTime.setXmlParam("text", currentpos);
         DisplayTimeShade.setXmlParam("text", currentpos);
     }
 }
 
-timerSongTimerReverse.onTimer() {
+timerSongTimerReverse.onTimer(){
     int milliseconds = System.getPosition();
     int songlength = System.getPlayItemLength();
     int remainder = songlength - milliseconds;
@@ -307,27 +296,23 @@ timerSongTimerReverse.onTimer() {
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
 //If we are above 600000ms or 10 minutes, don't append a "0"
-    if(remainder < 600000)
-    {
+    if(remainder < 600000){
         DisplayTime.setXmlParam("text", "-0"+strremainder);
         DisplayTimeShade.setXmlParam("text", "-0"+strremainder);
     }
-    else
-    {
+    else{
         DisplayTime.setXmlParam("text", "-"+strremainder);
         DisplayTimeShade.setXmlParam("text", "-"+strremainder);
     }
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
 //If we are above 600000ms or 10 minutes, don't append a "0"
-    if(milliseconds > songlength)
-    {
+    if(milliseconds > songlength){
         if(milliseconds_rev < 600000){
             DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
             DisplayTimeShade.setXmlParam("text", "-0"+currentpos_rev);
         }
-        else
-        {
+        else{
             DisplayTime.setXmlParam("text", "-"+currentpos_rev);
             DisplayTimeShade.setXmlParam("text", "-"+currentpos_rev);
         }
@@ -336,83 +321,74 @@ timerSongTimerReverse.onTimer() {
 
 AreWePlaying() {
 //Just some sanity checks to ensure we're in the right modes
-    if (getStatus() == -1) //Paused
-		{
-            timerSongTimerReverse.stop();
-            StaticTime();
-            timerSongTimer.start();         
-		}
-    else if (getStatus() == 0) //Stopped
-		{
-            timerSongTimerReverse.stop();
-            timerSongTimer.stop();
-                //DisplayTime.setXmlParam("text", digits);
-                //DisplayTimeShade.setXmlParam("text", digits);
-                DisplayTime.setXmlParam("text", "  :  ");
-                DisplayTimeShade.setXmlParam("text", "  :  ");
-		}
-	else if (getStatus() == 1) //Playing
-		{
-            timerSongTimerReverse.stop();
-            StaticTime();
-            timerSongTimer.start();   
-	    }
+    if (getStatus() == -1){ //Paused
+        timerSongTimerReverse.stop();
+        StaticTime();
+        timerSongTimer.start();         
+	}
+    else if (getStatus() == 0){ //Stopped
+        timerSongTimerReverse.stop();
+        timerSongTimer.stop();
+        //DisplayTime.setXmlParam("text", digits);
+        //DisplayTimeShade.setXmlParam("text", digits);
+        DisplayTime.setXmlParam("text", "  :  ");
+        DisplayTimeShade.setXmlParam("text", "  :  ");
+	}
+	else if (getStatus() == 1){ //Playing
+        timerSongTimerReverse.stop();
+        StaticTime();
+        timerSongTimer.start();   
+	}
 }
 
 InReverse(){
 //Just some sanity checks to ensure we're in the right modes
     int songlength = System.getPlayItemLength();
 
-//In case of streams of VGM formats of endless playback
+//In case of streams or VGM formats with endless playback
 //We don't want the user to still be able to toggle
 //between time remaining or elapsed, so we force
 //the elapsed mode to run
 //This has now been actually fixed
     if(songlength <= 0){
-        if (getStatus() == -1) //Paused
-            {
-                StaticTime();
-                timerSongTimerReverse.stop();  
-                timerSongTimer.start();
-		    }
-        else if (getStatus() == 0) //Stopped
-		    {
-                timerSongTimer.stop();
-                timerSongTimerReverse.stop();
-                //DisplayTime.setXmlParam("text", digits);
-                //DisplayTimeShade.setXmlParam("text", digits);
-                DisplayTime.setXmlParam("text", "  :  ");
-                DisplayTimeShade.setXmlParam("text", "  :  ");
-		    }
-	    else if (getStatus() == 1) //Playing
-		    {
-                StaticTime();
-                timerSongTimerReverse.stop();  
-                timerSongTimer.start();  
-	        }
+        if (getStatus() == -1){ //Paused
+            StaticTime();
+            timerSongTimerReverse.stop();  
+            timerSongTimer.start();
+	    }
+    else if (getStatus() == 0){ //Stopped
+            timerSongTimer.stop();
+            timerSongTimerReverse.stop();
+            //DisplayTime.setXmlParam("text", digits);
+            //DisplayTimeShade.setXmlParam("text", digits);
+            DisplayTime.setXmlParam("text", "  :  ");
+            DisplayTimeShade.setXmlParam("text", "  :  ");
+	    }
+	    else if (getStatus() == 1){ //Playing
+            StaticTime();
+            timerSongTimerReverse.stop();  
+            timerSongTimer.start();  
+	    }
     }
     else{
-        if (getStatus() == -1) //Paused
-            {
-                timerSongTimer.stop();
-                StaticTimeRemainder();
-                timerSongTimerReverse.start();      
-		    }
-        else if (getStatus() == 0) //Stopped
-		    {
-                timerSongTimer.stop();
-                timerSongTimerReverse.stop();
-                //DisplayTime.setXmlParam("text", digits);
-                //DisplayTimeShade.setXmlParam("text", digits);
-                DisplayTime.setXmlParam("text", "  :  ");
-                DisplayTimeShade.setXmlParam("text", "  :  ");
-		    }
-	    else if (getStatus() == 1) //Playing
-		    {
-                timerSongTimer.stop();
-                StaticTimeRemainder();
-                timerSongTimerReverse.start();   
-	        }
+        if (getStatus() == -1){ //Paused
+            timerSongTimer.stop();
+            StaticTimeRemainder();
+            timerSongTimerReverse.start();      
+		}
+    else if (getStatus() == 0){ //Stopped
+            timerSongTimer.stop();
+            timerSongTimerReverse.stop();
+            //DisplayTime.setXmlParam("text", digits);
+            //DisplayTimeShade.setXmlParam("text", digits);
+            DisplayTime.setXmlParam("text", "  :  ");
+            DisplayTimeShade.setXmlParam("text", "  :  ");
+		}
+	else if (getStatus() == 1){ //Playing
+            timerSongTimer.stop();
+            StaticTimeRemainder();
+            timerSongTimerReverse.start();   
+	    }
     }
 }
 
@@ -426,14 +402,12 @@ NoZZ(){
 }
 */
 
-setTimer (int timermode){
+setTimer(int timermode){
     if(timermode>=1 && timermode<=2){ //i fucking hate building menus
-	    if (timermode == 1)
-	    {
+	    if (timermode == 1){
             AreWePlaying();
 	    }
-	    else if (timermode == 2)
-	    {
+	    else if (timermode == 2){
             InReverse();
         }
     /*
