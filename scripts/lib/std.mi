@@ -417,7 +417,7 @@ extern String System.getPlayItemString();
 
  Get the length of the track currently playing, in milliseconds.
  
- @ret Length of the track, in seconds.
+ @ret Length of the track, in milliseconds.
 */
 extern Int System.getPlayItemLength();
 
@@ -766,9 +766,9 @@ extern String System.integerToLongTime(Int value);
 /**
  integerToTime()
 
- Convert a time in seconds to a MM:SS value.
+ Convert a time in milliseconds to a M:SS value.
 
- @ret       The string representation of the time (MM:SS).
+ @ret       The string representation of the time (M:SS).
  @param  value Timestamp to use.
 */
 extern String System.integerToTime(Int value);
@@ -1502,7 +1502,7 @@ extern Boolean System.isTransparencyAvailable();
 extern Int System.onShowNotification(); // return 1 if you implement it 
 extern String System.getSongInfoText(); // same as what gets in a text object with display="SONGINFO"
 extern String System.getSongInfoTextTranslated(); // same as what gets in a text object with display="SONGINFO_LOCALISE"
-extern Int System.getVisBand(int channel, int band); // 0,1 / 0..75
+extern Int System.getVisBand(int channel, int band); // channel does not work / 0..75 / ranges from 0 to 255
 extern Double System.getRuntimeVersion(); // returns the maki runtime version, up to 5.01 = 0.0, 5.02+ = 1.0
 
 //extern Int System.isWa2ComponentVisible(String guid);
