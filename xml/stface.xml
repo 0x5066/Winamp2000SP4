@@ -1,0 +1,29 @@
+<elements>
+
+    <bitmap id="stface0" file="images/doom/stface.png" x="0" y="0" w="24" h="29"/>
+    <bitmap id="stface1" file="images/doom/stface.png" x="24" y="0" w="24" h="29"/>
+    <bitmap id="stface2" file="images/doom/stface.png" x="48" y="0" w="24" h="29"/>
+    <bitmap id="stface3" file="images/doom/stface.png" x="72" y="0" w="24" h="29"/>
+    <bitmap id="stface4" file="images/doom/stface.png" x="96" y="0" w="24" h="29"/>
+
+</elements>
+
+<container id="doom" name="doomguy" default_visible="1">
+
+<groupdef id="statusface">
+
+    <layer id="st" x="30" y="30" w="96" h="116" image="stface0" ghost="1"/>
+    <text id="intvisdebug" x="30" y="150" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
+    <text id="randdebug" x="30" y="170" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
+    <script file="scripts\doomguy.maki"/>
+
+</groupdef>
+
+<layout id="normal" minimum_w="212" minimum_h="242" h="242" w="211" appbar="top|bottom|left|right">
+	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="statusface" />
+	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
+  <sendparams target="titlebar.title.bg.group" w="170"/>
+	
+</layout>
+
+</container>
