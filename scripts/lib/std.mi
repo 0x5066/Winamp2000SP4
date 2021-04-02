@@ -756,9 +756,9 @@ extern Float System.stringToFloat(String str);
 /**
  integerToLongTime()
 
- Convert a time in seconds to a HH:MM:SS value.
+ Convert a time in seconds to a H:MM:SS value.
 
- @ret       The string representation of the time (HH:MM:SS).
+ @ret       The string representation of the time (H:MM:SS).
  @param  value Timestamp to use.
 */
 extern String System.integerToLongTime(Int value);

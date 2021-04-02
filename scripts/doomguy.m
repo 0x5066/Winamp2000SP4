@@ -22,7 +22,7 @@ System.onScriptLoaded(){
     randomint.start();
 
     visint = new Timer;
-    visint.setDelay(50);
+    visint.setDelay(0);
     visint.start();
 }
 
