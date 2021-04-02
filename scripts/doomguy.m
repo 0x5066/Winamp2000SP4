@@ -1,7 +1,7 @@
 #include "lib/std.mi"
 
 Global group doomguy;
-Global layer statusface;
+Global GuiObject statusface;
 Global Timer randomint;
 Global Timer visint;
 Global int rand;
@@ -9,6 +9,8 @@ Global int intvis;
 Global text debug1, debug2;
 
 Function doomgrin();
+Function IDDQD();
+Function doomglare();
 
 System.onScriptLoaded(){
 
@@ -18,29 +20,41 @@ System.onScriptLoaded(){
     debug2 = doomguy.getObject("randdebug");
 
     randomint = new Timer;
-    randomint.setDelay(500);
+    randomint.setDelay(0);
     randomint.start();
 
-    visint = new Timer;
-    visint.setDelay(0);
-    visint.start();
 }
 
 randomint.onTimer(){
-    rand = System.random(3);
-    debug2.setXmlParam("text", System.integerToString(rand));
-}
-visint.onTimer(){
-    intvis = System.getVisBand(0,0);
-    debug1.setXmlParam("text", System.integerToString(intvis));
+    rand = System.getPosition();
+    debug1.setXmlParam("text", "milliseconds: "+System.IntegerToString(rand));
 
-    if(intvis > 128){
+    if(rand <= 0){
+        doomgrin();
+        debug2.setXmlParam("text", "if(rand == 0)");
+    }
+    else if(rand <= 160){
+        doomglare();
+        debug2.setXmlParam("text", "else if(rand == 160)");
+    }
+    else if(rand <= 330){
+        IDDQD();
+        debug2.setXmlParam("text", "else if(rand == 330)");
+    }
+    else{
+        doomglare();
+        debug2.setXmlParam("text", "else");
+    }
+}
+
+doomgrin(){
+    statusface.setXmlParam("image", "stface3");
+}
+
+IDDQD(){
     statusface.setXmlParam("image", "stface4");
-    }
-        else if(intvis >= 96){
-        statusface.setXmlParam("image", "stface3");
-        }
-        else{
-        statusface.setXmlParam("image", "stface"+System.integerToString(rand));
-    }
+}
+
+doomglare(){
+    statusface.setXmlParam("image", "stface1");
 }

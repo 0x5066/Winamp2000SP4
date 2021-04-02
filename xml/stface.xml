@@ -13,8 +13,8 @@
 <groupdef id="statusface">
 
     <layer id="st" x="30" y="30" w="96" h="116" image="stface0" ghost="1"/>
-    <text id="intvisdebug" x="30" y="150" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
-    <text id="randdebug" x="30" y="170" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
+    <text id="intvisdebug" x="30" y="150" h="12" w="200" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
+    <text id="randdebug" x="30" y="170" h="12" w="400" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
     <script file="scripts\doomguy.maki"/>
 
 </groupdef>
