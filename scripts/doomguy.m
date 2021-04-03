@@ -11,6 +11,8 @@ Global text debug1, debug2;
 Function doomgrin();
 Function IDDQD();
 Function doomglare();
+Function doomattacked();
+Function doomshock();
 
 System.onScriptLoaded(){
 
@@ -26,20 +28,54 @@ System.onScriptLoaded(){
 }
 
 randomint.onTimer(){
-    rand = System.getPosition();
+    rand = System.getPosition() / 4;
     debug1.setXmlParam("text", "milliseconds: "+System.IntegerToString(rand));
 
-    if(rand <= 0){
-        doomgrin();
-        debug2.setXmlParam("text", "if(rand == 0)");
+    //use with joging aaaa.wav
+
+    if(rand < 0){
+        doomattacked();
+        debug2.setXmlParam("text", "if(rand < 0)");
     }
-    else if(rand <= 160){
-        doomglare();
-        debug2.setXmlParam("text", "else if(rand == 160)");
-    }
-    else if(rand <= 330){
+    else if(rand < 160){
         IDDQD();
-        debug2.setXmlParam("text", "else if(rand == 330)");
+        debug2.setXmlParam("text", "else if(rand < 160)");
+    }
+    else if(rand < 332){
+        doomshock();
+        debug2.setXmlParam("text", "else if(rand < 332)");
+    }
+    else if(rand < 380){
+        doomattacked();
+        debug2.setXmlParam("text", "else if(rand < 380)");
+    }
+    else if(rand < 571){
+        doomglare();
+        debug2.setXmlParam("text", "else if(rand < 571)");
+    }
+    else if(rand < 572){
+        IDDQD();
+        debug2.setXmlParam("text", "else if(rand < 572)");
+    }
+    else if(rand > 580){
+        doomglare();
+        debug2.setXmlParam("text", "else if(rand < 580)");
+    }
+    else if(rand < 652){
+        IDDQD();
+        debug2.setXmlParam("text", "else if(rand < 652)");
+    }
+    else if(rand > 659){
+        doomglare();
+        debug2.setXmlParam("text", "else if(rand < 659)");
+    }
+    else if(rand < 732){
+        IDDQD();
+        debug2.setXmlParam("text", "else if(rand < 732)");
+    }
+    else if(rand > 740){
+        doomglare();
+        debug2.setXmlParam("text", "else if(rand < 740)");
     }
     else{
         doomglare();
@@ -57,4 +93,12 @@ IDDQD(){
 
 doomglare(){
     statusface.setXmlParam("image", "stface1");
+}
+
+doomshock(){
+    statusface.setXmlParam("image", "stface5");
+}
+
+doomattacked(){
+    statusface.setXmlParam("image", "stface6");
 }

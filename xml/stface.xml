@@ -5,6 +5,8 @@
     <bitmap id="stface2" file="images/doom/stface.png" x="48" y="0" w="24" h="29"/>
     <bitmap id="stface3" file="images/doom/stface.png" x="72" y="0" w="24" h="29"/>
     <bitmap id="stface4" file="images/doom/stface.png" x="96" y="0" w="24" h="29"/>
+    <bitmap id="stface5" file="images/doom/stface.png" x="120" y="0" w="24" h="29"/>
+    <bitmap id="stface6" file="images/doom/stface.png" x="144" y="0" w="24" h="29"/>
 
 </elements>
 
@@ -13,6 +15,7 @@
 <groupdef id="statusface">
 
     <layer id="st" x="30" y="30" w="96" h="116" image="stface0" ghost="1"/>
+    <Animatedlayer id="vu" image="vu.bar" x="30" y="180" w="92" h="5" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
     <text id="intvisdebug" x="30" y="150" h="12" w="200" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
     <text id="randdebug" x="30" y="170" h="12" w="400" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
     <script file="scripts\doomguy.maki"/>
