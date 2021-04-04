@@ -250,6 +250,9 @@ changeIconBasedOnTitle(){
 	else if(System.strsearch(streamtitle, "youtu.be") != -1){
 		ext.setXmlParam("image", "pl.icon.yt");
 	}
+	else if(System.strsearch(streamtitle, "linein://") != -1){
+		ext.setXmlParam("image", "pl.icon.sound");
+	}
 	else if(System.strsearch(streamtitle, "soundcloud") != -1){
 		ext.setXmlParam("image", "pl.icon.soundcloud");
 	}
