@@ -8,17 +8,20 @@
     <bitmap id="stface5" file="images/doom/stface.png" x="120" y="0" w="24" h="29"/>
     <bitmap id="stface6" file="images/doom/stface.png" x="144" y="0" w="24" h="29"/>
 
+    <bitmap id="satsuki2" file="images/doom/satsuki2.png" w="560" h="2512"/>
+    <bitmap id="satsuki" file="images/doom/satsuki.png" w="500" h="2248"/>
+
 </elements>
 
-<container id="doom" name="doomguy" default_visible="1">
+<container id="doom" name="Satsuki Anim Test" default_visible="1">
 
 <groupdef id="statusface">
 
-    <layer id="st" x="30" y="30" w="96" h="116" image="stface0" ghost="1"/>
-    <Animatedlayer id="vu" image="vu.bar" x="30" y="180" w="92" h="5" frameheight="1" start="0" end="92" autoplay="0" autoreplay="0" ghost="1"/>
-    <text id="intvisdebug" x="30" y="150" h="12" w="200" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
-    <text id="randdebug" x="30" y="170" h="12" w="400" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
-    <script file="scripts\doomguy.maki"/>
+    <layer id="st" visible="0" x="30" y="30" w="96" h="116" image="stface0" ghost="1"/>
+    <Animatedlayer id="satsuki" image="satsuki" x="2" y="2" w="500" h="281" frameheight="281" start="0" end="7" autoplay="0" autoreplay="0" ghost="1"/>
+    <text id="intvisdebug" visible="0" x="30" y="150" h="12" w="200" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
+    <text id="randdebug" visible="0" x="30" y="170" h="12" w="400" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
+    <script file="scripts\bpm.maki"/>
 
 </groupdef>
 
