@@ -7,6 +7,9 @@ If you want to contribute color themes (which is highly encouraged), [this guide
 
 ![Screenshot](https://github.com/The1Freeman/Winamp2000SP4/blob/master/screenshot.png?raw=true)
 
+Are you looking for a Windows XP experience?
+[Check this skin out by mirzi!](https://github.com/mirzi1/winampxp)
+
 ## How to contribute
 Follow this rather simple guide [here](https://github.com/The1Freeman/Winamp2000SP4/blob/master/contributing.md) to begin work on this project.
 
