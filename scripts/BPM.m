@@ -32,16 +32,22 @@ System.onScriptLoaded(){
 
 randomint.onTimer(){
     bpm = System.getPosition(); //60bpm
+    //int BPM_proper = System.Stringtointeger(System.getPlayItemMetaDataString(System.integertostring(bpm)))/60; //what the fuck are you????
     int highscore = bpm*1.834/125; //110,04bpm, highscore's BPM is actually 110bpm or so but i cant get the exact number
     int highscorerestart = highscore%8; //resets the frame counter after surpassing 8, works best with animatedlayers that have "start="0" end="7"" atm
 
     int jogging_naked = bpm*3.12985/125;
     int jogging_nakedrestart = jogging_naked%8;
     int jogging_nakedrestart2 = jogging_naked*2%16;
+
+    // int bpm2 = bpm*BPM_proper/125;
+    // int BPM_restart = BPM2%8;
+    // int BPM_restart2 = BPM2*2%16;
     debug1.setXmlParam("text", System.integerToString(jogging_naked));
     debug2.setXmlParam("text", System.integerToString(jogging_nakedrestart));
 
     satsukianim.gotoFrame(jogging_nakedrestart);
+    //satsukianim.gotoFrame(BPM_restart); //the only time i want to praise this thing and it fails me
     newcat.gotoFrame(jogging_nakedrestart2);
 
     if(jogging_naked > 0 && (jogging_naked % 2) == 0){
