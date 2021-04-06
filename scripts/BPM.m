@@ -31,14 +31,14 @@ System.onScriptLoaded(){
 
 randomint.onTimer(){
     bpm = System.getPosition(); //60bpm
-    int highway = bpm*1.834/125; //110,04bpm
-    int highwayrestart = highway%8; //resets the frame counter after surpassing 8, works best with animatedlayers that have "start="0" end="7"" atm
-    debug1.setXmlParam("text", System.integerToString(highway));
-    debug2.setXmlParam("text", System.integerToString(highwayrestart));
+    int highscore = bpm*1.834/125; //110,04bpm, highscore's BPM is actually 110bpm or so but i cant get the exact number
+    int highscorerestart = highscore%8; //resets the frame counter after surpassing 8, works best with animatedlayers that have "start="0" end="7"" atm
+    debug1.setXmlParam("text", System.integerToString(highscore));
+    debug2.setXmlParam("text", System.integerToString(highscorerestart));
 
-    satsukianim.gotoFrame(highwayrestart);
+    satsukianim.gotoFrame(highscorerestart);
 
-    if(highway > 0 && (highway % 2) == 0){
+    if(highscore > 0 && (highscore % 2) == 0){
         doomgrin();
     }
     else{
