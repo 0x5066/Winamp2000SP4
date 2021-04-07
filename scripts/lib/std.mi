@@ -424,8 +424,8 @@ extern Int System.getPlayItemLength();
 /**
  getPlayItemMetaDataString()
 
- Get metadata for the track currently playing. The metadata field names that
- are available are the following:
+ Get metadata for the track currently playing. Make sure to wrap metadataname in double quotes -> ". 
+ The metadata field names that are available are the following:
 
  title
  album

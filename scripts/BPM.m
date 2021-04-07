@@ -7,7 +7,8 @@ Global Timer randomint;
 Global Timer visint;
 Global int rand;
 Global int intvis;
-Global int BPM;
+Global float TimeBPM;
+Global float headbang;
 Global text debug1, debug2;
 
 Function doomgrin();
@@ -31,24 +32,32 @@ System.onScriptLoaded(){
 }
 
 randomint.onTimer(){
-    bpm = System.getPosition(); //60bpm
-    //int BPM_proper = System.Stringtointeger(System.getPlayItemMetaDataString(System.integertostring(bpm)))/60; //what the fuck are you????
-    int highscore = bpm*1.834/125; //110,04bpm, highscore's BPM is actually 110bpm or so but i cant get the exact number
-    int highscorerestart = highscore%8; //resets the frame counter after surpassing 8, works best with animatedlayers that have "start="0" end="7"" atm
+    headbang = 133.33333333333333333333333333333;
+    TimeBPM = System.getPosition(); //60bpm
+    float BPM_proper = System.Stringtointeger(System.getPlayItemMetaDataString("bpm"))/60;
+    float highscore = TimeBPM*1.8334/headbang; //110bpm, highscore's BPM
+    float highscorerestart = highscore%8; //resets the frame counter after surpassing 8, works best with animatedlayers that have "start="0" end="7"" atm
 
-    int jogging_naked = bpm*3.12985/125;
-    int jogging_nakedrestart = jogging_naked%8;
-    int jogging_nakedrestart2 = jogging_naked*2%16;
+    float jogging_naked = (TimeBPM*3.1316167/headbang);
+    float jogging_nakedrestart = jogging_naked%8;
+    float jogging_nakedrestart2 = jogging_naked*2%16;
 
-    // int bpm2 = bpm*BPM_proper/125;
-    // int BPM_restart = BPM2%8;
-    // int BPM_restart2 = BPM2*2%16;
-    debug1.setXmlParam("text", System.integerToString(jogging_naked));
-    debug2.setXmlParam("text", System.integerToString(jogging_nakedrestart));
+    float bpm2 = (TimeBPM*BPM_proper/headbang);
+    float BPM_restart = BPM2%8;
+    float BPM_restart2 = BPM2*2%16;
 
-    satsukianim.gotoFrame(jogging_nakedrestart);
-    //satsukianim.gotoFrame(BPM_restart); //the only time i want to praise this thing and it fails me
-    newcat.gotoFrame(jogging_nakedrestart2);
+    if(bpm2 == 0){
+        satsukianim.gotoFrame(jogging_nakedrestart);
+        newcat.gotoFrame(jogging_nakedrestart2);
+        debug1.setXmlParam("text", System.FloatToString(jogging_naked, 5));
+        debug2.setXmlParam("text", System.FloatToString(jogging_nakedrestart, 5));
+    }
+    else{
+        satsukianim.gotoFrame(BPM_restart);
+        newcat.gotoFrame(BPM_restart2);
+        debug1.setXmlParam("text", System.FloatToString(BPM_proper, 5));
+        debug2.setXmlParam("text", System.FloatToString(BPM_restart, 5));
+    }
 
     if(jogging_naked > 0 && (jogging_naked % 2) == 0){
         doomgrin();
