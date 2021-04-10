@@ -44,13 +44,13 @@ Global layer Trigger, HideForVic, TriggerBlocker, TriggerBlockerShade;
 
 System.onScriptLoaded()
 { 
-  containerMain = System.getContainer("main");
+	containerMain = System.getContainer("main");
 	layoutMainNormal = containerMain.getLayout("normal");
 	NormalGroupMain = layoutMainNormal.findObject("player.normal.group.main");
 	NormalGroupDisplay = NormalGroupMain.findObject("player.normal.group.display");
 	OAIDUBtnUE1 = NormalGroupDisplay.findObject("OAIDU.buttons.U.menuentry1");
-  OAIDUBtnUE2 = NormalGroupDisplay.findObject("OAIDU.buttons.U.menuentry2");
-  OAIDUBtnUE3 = NormalGroupDisplay.findObject("OAIDU.buttons.U.menuentry3");
+	OAIDUBtnUE2 = NormalGroupDisplay.findObject("OAIDU.buttons.U.menuentry2");
+	OAIDUBtnUE3 = NormalGroupDisplay.findObject("OAIDU.buttons.U.menuentry3");
 
 	visualizer = NormalGroupDisplay.findObject("player.vis");
 	visgrid_thick = NormalGroupDisplay.findObject("visgridimg.thick");
@@ -569,7 +569,12 @@ refreshVisSettings ()
 		}
 		else if (v_color == 19)
 		{
+			setColorBandsOdd("0,255,185");
+			setColorBandsEven("0,0,0");
+			visualizer.setXmlParam("colorband15", "255, 51, 26");
+			visualizer.setXmlParam("colorbandpeak", "0,0,0");
 
+			setColorosc("0,255,185");
 		}
 		else if (v_color == 20)
 		{
@@ -807,6 +812,7 @@ Trigger.onRightButtonUp (int x, int y)
 	colmenu.addCommand("Midori Mizuno", 515, v_color == 15, 0);
 	colmenu.addCommand("Sound Recorder", 514, v_color == 14, 0);
 
+	colmenu.addCommand("RTA-31 Spectrum Analyzer", 519, v_color == 19, 0);
 	colmenu.addCommand("That old Hi-Fi", 517, v_color == 17, 0);
 	colmenu.addCommand("That old Hi-Fi in crimson red", 518, v_color == 18, 0);
 	
@@ -945,20 +951,20 @@ ProcessMenuResult (int a)
 		setPrivateInt(getSkinName(), "Visualizer analyzer coloring", a_coloring);
 	}
 		
-  else if (a == 404)
-  {
-    OAIDUBtnUE1.Leftclick ();
-  }
-  else if (a == 405)
-  {
-    OAIDUBtnUE2.Leftclick ();
-  }
-  else if (a == 406)
-  {
-    OAIDUBtnUE3.Leftclick ();
-  }
-  
-  	else if (a >= 407 && a <= 413)
+	else if (a == 404)
+	{
+    	OAIDUBtnUE1.Leftclick ();
+	}
+	else if (a == 405)
+	{
+    	OAIDUBtnUE2.Leftclick ();
+	}
+	else if (a == 406)
+	{
+    	OAIDUBtnUE3.Leftclick ();
+	}
+	
+	else if (a >= 407 && a <= 413)
 	{
 		v_fps = a - 407;
 		if (v_fps == 0)
@@ -1360,6 +1366,12 @@ ProcessMenuResult (int a)
 		}
 		else if (v_color == 19)
 		{
+			setColorBandsOdd("0,255,185");
+			setColorBandsEven("0,0,0");
+			visualizer.setXmlParam("colorband15", "255, 51, 26");
+			visualizer.setXmlParam("colorbandpeak", "0,0,0");
+
+			setColorosc("0,255,185");
 		}
 		else if (v_color == 20)
 		{
@@ -1521,7 +1533,6 @@ ProcessMenuResult (int a)
 		}
 		setPrivateInt(getSkinName(), "Visualizer show Grid", grid);
 	}
-
 }
 
 //sets every ColorBand in a range to a color
