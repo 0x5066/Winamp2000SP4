@@ -397,7 +397,7 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 		else if (getCurCfgVal() == -1)
 		{
       //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "checked");
+      RepeatLight.setXmlParam("activeImage", "checked.indet");
 			showActionInfo("Repeat: Off");
 		}
 		else if (getCurCfgVal() == 0)
@@ -437,7 +437,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
         else
         {
           RepeatLight.setXmlParam("image", "check.no");
-          RepeatLight.setXmlParam("activeImage", "checked");
+          RepeatLight.setXmlParam("activeImage", "checked.indet");
         }
       }
       else if (getCurCfgVal() == -1)

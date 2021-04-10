@@ -36,6 +36,9 @@
   
   <bitmap id="winresizer" file="images\resizer.png" gammagroup="3D Objects"/>
 
+  <bitmap id="mlplbtn" file="images\window\playlistbtn.png" x="0" y="0" w="80" h="35" gammagroup="3D Objects"/>
+  <bitmap id="mlplbtn.d" file="images\window\playlistbtn.png" x="81" y="0" w="80" h="35" gammagroup="3D Objects"/>
+
   <!-- progress bar stuff -->
   
   <bitmap id="progress.bar" file="images/progressbar/bluebar.png" x="0" y="0" h="12" w="1" gammagroup="Selected Items"/>
@@ -261,12 +264,12 @@
   <bitmap id="button.about.wacup.d" file="images/player-main.png" x="211" y="707" w="52" h="48" gammagroup="greybuttons"/>
 
 
-  <bitmap id="shuffle.n.1" file="images/player-main.png" x="295" y="560" w="119" h="48" gammagroup="Window"/>
-  <bitmap id="shuffle.n.0" file="images/player-main.png" x="295" y="560" w="119" h="48" gammagroup="Window"/>
-  <bitmap id="shuffle.h.1" file="images/player-main.png" x="295" y="609" w="119" h="48" gammagroup="Window"/>
-  <bitmap id="shuffle.h.0" file="images/player-main.png" x="295" y="609" w="119" h="48" gammagroup="Window"/>
-  <bitmap id="shuffle.d.1" file="images/player-main.png" x="295" y="658" w="119" h="48" gammagroup="3D Objects"/>
-  <bitmap id="shuffle.d.0" file="images/player-main.png" x="295" y="658" w="119" h="48" gammagroup="3D Objects"/>
+  <bitmap id="shuffle.n.1" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="shuffle.n.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="shuffle.h.1" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="shuffle.h.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="shuffle.d.1" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="3D Objects"/>
+  <bitmap id="shuffle.d.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="3D Objects"/>
 
 
   <bitmap id="repeat.n.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
