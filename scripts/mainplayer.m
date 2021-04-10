@@ -449,20 +449,20 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on");
+          RepeatLight.setXmlParam("image", "repeat.light.off");
+          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
         }
       }
       else if (getCurCfgVal() == 0)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on.h");
+          RepeatLight.setXmlParam("image", "repeat.light.off");
           RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on");
+          RepeatLight.setXmlParam("image", "repeat.light.off");
           RepeatLight.setXmlParam("activeImage", "repeat.light.on");
         }
       }
@@ -499,6 +499,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
 		}
 }
 
+/*
 RepeatShuffleHandler.onEnterArea()
 {
   if (RepeatShuffleHandler == RepeatBtn)
@@ -558,6 +559,7 @@ RepeatShuffleHandler.onLeaveArea()
 		} 
   }
 }
+*/
 
 System.onResume()
 {
