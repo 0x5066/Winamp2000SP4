@@ -391,18 +391,18 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 		if (getCurCfgVal() == 1)
 		{
       //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "repeat.light.on.d");
+      RepeatLight.setXmlParam("activeImage", "checked");
 			showActionInfo("Repeat: Track");
 		}
 		else if (getCurCfgVal() == -1)
 		{
       //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "repeat.light.on.d");
+      RepeatLight.setXmlParam("activeImage", "checked");
 			showActionInfo("Repeat: Off");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      RepeatLight.setXmlParam("image", "repeat.light.on.d");
+      RepeatLight.setXmlParam("image", "check.no");
 			showActionInfo("Repeat: Playlist");
 		}
 	}
@@ -431,39 +431,39 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on.h");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("image", "check.no");
+          //RepeatLight.setXmlParam("activeImage", "checked");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on");
+          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
       }
       else if (getCurCfgVal() == -1)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.on.h");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("image", "checked.indet");
+          RepeatLight.setXmlParam("activeImage", "checked.indet");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.off");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
       }
       else if (getCurCfgVal() == 0)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "repeat.light.off");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on.h");
+          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
         else
         {
           RepeatLight.setXmlParam("image", "repeat.light.off");
-          RepeatLight.setXmlParam("activeImage", "repeat.light.on");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
       }
 		}

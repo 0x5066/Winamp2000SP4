@@ -7,7 +7,9 @@
   <!-- checkbox -->
 
   <bitmap id="checked" file="images/window/checkbox.png" x="0" y="0" w="9" h="9" gammagroup="Window-Text"/>
+  <bitmap id="checked.indet" file="images/window/checkbox.png" x="53" y="0" w="9" h="9" gammagroup="3D Objects"/>
   <bitmap id="check.down" file="images/window/checkbox.png" x="10" y="0" w="9" h="9"/>
+  <bitmap id="check.down.indet" file="images/window/checkbox.png" x="10" y="0" w="9" h="9"/>
   <bitmap id="check.no" file="images/window/checkbox.png" x="20" y="0" w="9" h="9" gammagroup="none"/>
   <bitmap id="check.box" file="images/window/checkbox.png" x="30" y="0" w="13" h="13" gammagroup="3D Objects"/>
 
@@ -267,17 +269,17 @@
   <bitmap id="shuffle.d.0" file="images/player-main.png" x="295" y="658" w="119" h="48" gammagroup="3D Objects"/>
 
 
-  <bitmap id="repeat.n.0" file="images/player-main.png" x="414" y="560" w="70" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.h.0" file="images/player-main.png" x="414" y="609" w="70" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.d.0" file="images/player-main.png" x="414" y="658" w="70" h="48" gammagroup="3D Objects"/>
+  <bitmap id="repeat.n.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="repeat.h.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="repeat.d.0" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="3D Objects"/>
 
-  <bitmap id="repeat.n.1" file="images/player-main.png" x="414" y="560" w="70" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.h.1" file="images/player-main.png" x="414" y="609" w="70" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.d.1" file="images/player-main.png" x="414" y="658" w="70" h="48" gammagroup="3D Objects"/>
+  <bitmap id="repeat.n.1" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="repeat.h.1" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="repeat.d.1" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="3D Objects"/>
   
-  <bitmap id="repeat.n.2" file="images/player-main.png" x="272" y="707" w="70" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.h.2" file="images/player-main.png" x="343" y="707" w="70" h="48" gammagroup="3D Objects"/>
-  <bitmap id="repeat.d.2" file="images/player-main.png" x="414" y="707" w="70" h="48" gammagroup="3D Objects"/>  
+  <bitmap id="repeat.n.2" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="repeat.h.2" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="Window"/>
+  <bitmap id="repeat.d.2" file="images/player-main.png" x="302" y="570" w="13" h="13" gammagroup="3D Objects"/>  
 
 
   <bitmap id="repeat.light.off" file="images/player-main.png" x="290" y="756" w="48" h="48" gammagroup="3D Objects"/>
