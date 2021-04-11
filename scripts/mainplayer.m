@@ -446,11 +446,17 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
         {
           RepeatLight.setXmlParam("image", "checked.indet");
           RepeatLight.setXmlParam("activeImage", "checked.indet");
+          RepeatBtn.setXmlParam("image", "check.down.indet");
+          RepeatBtn.setXmlParam("hoverimage", "check.down.indet"); //broken, why? no one knows
+          //only a skin reload fixes this if the checkbox background is fucked again
         }
         else
         {
           RepeatLight.setXmlParam("image", "check.no");
           RepeatLight.setXmlParam("activeImage", "checked");
+          // RepeatBtn.setXmlParam("image", "repeat.n.0");
+          // RepeatBtn.setXmlParam("hoverimage", "repeat.n.1");
+          // RepeatBtn.setXmlParam("downimage", "repeat.h.2");
         }
       }
       else if (getCurCfgVal() == 0)

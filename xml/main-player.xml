@@ -69,8 +69,8 @@
 
 	<!-- note to self: throw repeat, shuffle into its own group as well as the EQ and PL stuff -->
 
-	<NStatesButton id="button.shuffle" x="-150" y="182" w="10" h="10" relatx="1" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" cfgvals="0;1" nstates="2" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." tooltip="Toggle Shuffle" alpha="255" cursor="cur.normal"/>
-	<togglebutton id="shuffle.light" x="-149" y="183" w="9" h="9" relatx="1" image="check.no" activeImage="checked" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
+	<!-- button bg --> <NStatesButton id="button.shuffle" x="-150" y="182" w="10" h="10" relatx="1" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle" cfgvals="0;1" nstates="2" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." tooltip="Toggle Shuffle" alpha="255" cursor="cur.normal"/>
+	<!-- checkbox --> <togglebutton id="shuffle.light" x="-149" y="183" w="9" h="9" relatx="1" image="check.no" activeImage="checked" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"/>
 
 	<rect id="shuf" color="64,64,64" x="-150" y="182" w="12" h="12" relatx="1" ghost="1"/>
 	<layer image="check.box" x="-151" y="181" relatx="1" ghost="1"/>
@@ -78,14 +78,14 @@
 	<text text="Shuffle" x="-135" y="179" w="50" h="20" relatx="1" ghost="1" font="tahoma" fontsize="15" antialias="0" align="left" valign="top" color="wasabi.text.color"/>
 
 	<rect id="plbtn" color="64,64,64" x="306" y="181" w="80" h="35" ghost="1"/>
-	<text text="Playlists" x="325" y="191" w="50" h="20" ghost="1" font="tahoma" fontsize="15" antialias="0" align="left" valign="top" color="wasabi.text.color"/>
-	<button id="plshadeMLList" rectrgn="1" action="PE_ListOfLists" x="306" y="181" image="mlplbtn" downImage="mlplbtn.d" activeImage="mlplbtn.d" hoverImage="mlplbtn" tooltip="Library's Playlists"/>
+	<text id="mlplbutton" text="Playlists" x="325" y="191" w="50" h="20" ghost="1" font="tahoma" fontsize="15" antialias="0" align="left" valign="top" color="wasabi.text.color"/>
+	<button id="MLList" rectrgn="1" action="PE_ListOfLists" x="306" y="181" image="mlplbtn" downImage="mlplbtn.d" activeImage="mlplbtn.d" hoverImage="mlplbtn" tooltip="Library's Playlists"/>
 
-	<NStatesButton id="button.repeat" x="-149" y="205" w="10" h="10" relatx="1" image="repeat.n." hoverimage="repeat.h." downimage="repeat.d."
+	<!-- button bg --> <NStatesButton id="button.repeat" x="-149" y="205" w="9" h="9" relatx="1" image="repeat.n." hoverimage="repeat.h." downimage="repeat.d."
 		rectrgn="1" nstates="3" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" cfgvals="0;1;-1" tooltip="Toggle Repeat" alpha="255" cursor="cur.normal"/>
 	<rect id="rep" color="64,64,64" x="-150" y="204" w="12" h="12" relatx="1" ghost="1"/>
 	<layer image="check.box" x="-151" y="203" relatx="1" ghost="1"/>
-	<togglebutton id="repeat.light" x="-149" y="205" relatx="1" image="check.no" activeImage="checked" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"/>
+	<!-- checkbox --> <togglebutton id="repeat.light" x="-149" y="205" relatx="1" image="check.no" activeImage="checked" ghost="1" alpha="255" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"/>
 
 	<layer id="about.bg" x="-71" y="175" relatx="1" image="about.bg" alpha="255" ghost="1"/>
 	<togglebutton id="player.button.about" x="-63" y="174" relatx="1" image="button.about.n" hoverimage="button.about.h" downimage="button.about.d" rectrgn="1" action="TOGGLE" param="guid:{D6201408-476A-4308-BF1B-7BACA1124B12}" alpha="255" tooltip="About Winamp / Toggle Library" cursor="cur.normal"/>
