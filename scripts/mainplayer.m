@@ -436,7 +436,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
         }
         else
         {
-          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("image", "checked.indet");
           RepeatLight.setXmlParam("activeImage", "checked.indet");
         }
       }
@@ -446,8 +446,8 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
         {
           RepeatLight.setXmlParam("image", "checked.indet");
           RepeatLight.setXmlParam("activeImage", "checked.indet");
-          RepeatBtn.setXmlParam("image", "check.down.indet");
-          RepeatBtn.setXmlParam("hoverimage", "check.down.indet"); //broken, why? no one knows
+          //RepeatBtn.setXmlParam("image", "check.down.indet");
+          //RepeatBtn.setXmlParam("hoverimage", "check.down.indet"); //broken, why? no one knows
           //only a skin reload fixes this if the checkbox background is fucked again
         }
         else
@@ -465,11 +465,14 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
         {
           RepeatLight.setXmlParam("image", "check.no");
           RepeatLight.setXmlParam("activeImage", "checked");
+          //RepeatBtn.setXmlParam("hoverimage", "check.no");
+          //RepeatBtn.setXmlParam("image", "check.no");
         }
         else
         {
           RepeatLight.setXmlParam("image", "repeat.light.off");
           RepeatLight.setXmlParam("activeImage", "checked");
+          //RepeatBtn.setXmlParam("image", "check.no");
         }
       }
 		}
