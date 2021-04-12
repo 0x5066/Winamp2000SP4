@@ -390,19 +390,17 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 	{
 		if (getCurCfgVal() == 1)
 		{
-      //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "checked");
+      RepeatLight.setXmlParam("y", "205");
 			showActionInfo("Repeat: Track");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-      //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "checked.indet");
+      RepeatLight.setXmlParam("y", "205");
 			showActionInfo("Repeat: Off");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      RepeatLight.setXmlParam("image", "check.no");
+      RepeatLight.setXmlParam("y", "205");
 			showActionInfo("Repeat: Playlist");
 		}
 	}
@@ -410,14 +408,12 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
   {
 		if (getCurCfgVal() == 1)
 		{
-      ShuffleLight.setXmlParam("image", "check.no");
-      //ShuffleLight.setXmlParam("activeImage", "check.no");
+      ShuffleLight.setXmlParam("y", "205");
 			showActionInfo("Shuffle: Off");
 		}
 		else
 		{
-      //ShuffleLight.setXmlParam("image", "checked");
-      ShuffleLight.setXmlParam("activeImage", "checked");
+      ShuffleLight.setXmlParam("y", "205");
 			showActionInfo("Shuffle: On");
 		}
 	}
@@ -431,48 +427,33 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "check.no");
-          //RepeatLight.setXmlParam("activeImage", "checked");
+          RepeatLight.setXmlParam("y", "205");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "checked.indet");
-          RepeatLight.setXmlParam("activeImage", "checked.indet");
+          RepeatLight.setXmlParam("y", "205");
         }
       }
       else if (getCurCfgVal() == -1)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "checked.indet");
-          RepeatLight.setXmlParam("activeImage", "checked.indet");
-          //RepeatBtn.setXmlParam("image", "check.down.indet");
-          //RepeatBtn.setXmlParam("hoverimage", "check.down.indet"); //broken, why? no one knows
-          //only a skin reload fixes this if the checkbox background is fucked again
+          RepeatLight.setXmlParam("y", "205");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "check.no");
-          RepeatLight.setXmlParam("activeImage", "checked");
-          // RepeatBtn.setXmlParam("image", "repeat.n.0");
-          // RepeatBtn.setXmlParam("hoverimage", "repeat.n.1");
-          // RepeatBtn.setXmlParam("downimage", "repeat.h.2");
+          RepeatLight.setXmlParam("y", "205");
         }
       }
       else if (getCurCfgVal() == 0)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("image", "check.no");
-          RepeatLight.setXmlParam("activeImage", "checked");
-          //RepeatBtn.setXmlParam("hoverimage", "check.no");
-          //RepeatBtn.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("y", "205");
         }
         else
         {
-          RepeatLight.setXmlParam("image", "repeat.light.off");
-          RepeatLight.setXmlParam("activeImage", "checked");
-          //RepeatBtn.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("y", "205");
         }
       }
 		}
@@ -480,61 +461,54 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
     {
       if (getCurCfgVal() == 1)
       {
-        /*
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "checked");
-          ShuffleLight.setXmlParam("activeImage", "checked");
+          ShuffleLight.setXmlParam("y", "205");
         }
         else {
-          ShuffleLight.setXmlParam("image", "checked");
-          ShuffleLight.setXmlParam("activeImage", "checked");
+          ShuffleLight.setXmlParam("y", "205");
         }
-        */
       }
       else
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("image", "check.no");
-          ShuffleLight.setXmlParam("activeImage", "check.no");
+          ShuffleLight.setXmlParam("y", "205");
         }
         else
         {
-          ShuffleLight.setXmlParam("image", "check.no");
-          ShuffleLight.setXmlParam("activeImage", "check.no");
+          ShuffleLight.setXmlParam("y", "205");
         }
       }
 		}
 }
 
-/*
 RepeatShuffleHandler.onEnterArea()
 {
   if (RepeatShuffleHandler == RepeatBtn)
 	{
 		if (getCurCfgVal() == 1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "205");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "205");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "205");
 		}
   }
   else if (RepeatShuffleHandler == ShuffleBtn)
   {
 		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "checked");
+			ShuffleLight.setXmlParam("y", "205");
 		}
 		else
 		{
-			ShuffleLight.setXmlParam("image", "check.no");
+			ShuffleLight.setXmlParam("y", "205");
 		}
   }
 }
@@ -545,30 +519,29 @@ RepeatShuffleHandler.onLeaveArea()
 	{
 		if (getCurCfgVal() == 1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "205");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.on");
+			RepeatLight.setXmlParam("y", "205");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-			RepeatLight.setXmlParam("image", "repeat.light.off");
+			RepeatLight.setXmlParam("y", "205");
 		}
   }
   else if (RepeatShuffleHandler == ShuffleBtn)
   {
  		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("image", "checked");
+			ShuffleLight.setXmlParam("y", "205");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      ShuffleLight.setXmlParam("image", "check.no");
+      ShuffleLight.setXmlParam("y", "205");
 		} 
   }
 }
-*/
 
 System.onResume()
 {
