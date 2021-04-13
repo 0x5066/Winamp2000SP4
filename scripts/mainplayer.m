@@ -390,17 +390,19 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 	{
 		if (getCurCfgVal() == 1)
 		{
-      RepeatLight.setXmlParam("y", "205");
+      //RepeatLight.setXmlParam("image", "repeat.light.on.d");
+      RepeatLight.setXmlParam("activeImage", "checked");
 			showActionInfo("Repeat: Track");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-      RepeatLight.setXmlParam("y", "205");
+      //RepeatLight.setXmlParam("image", "repeat.light.on.d");
+      RepeatLight.setXmlParam("activeImage", "checked.indet");
 			showActionInfo("Repeat: Off");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      RepeatLight.setXmlParam("y", "205");
+      RepeatLight.setXmlParam("image", "check.no");
 			showActionInfo("Repeat: Playlist");
 		}
 	}
@@ -408,12 +410,14 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
   {
 		if (getCurCfgVal() == 1)
 		{
-      ShuffleLight.setXmlParam("y", "205");
+      ShuffleLight.setXmlParam("image", "check.no");
+      //ShuffleLight.setXmlParam("activeImage", "check.no");
 			showActionInfo("Shuffle: Off");
 		}
 		else
 		{
-      ShuffleLight.setXmlParam("y", "205");
+      //ShuffleLight.setXmlParam("image", "checked");
+      ShuffleLight.setXmlParam("activeImage", "checked");
 			showActionInfo("Shuffle: On");
 		}
 	}
@@ -423,37 +427,45 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
 {
   if (RepeatShuffleHandler == RepeatBtn)
 	{
-      if (getCurCfgVal() == 1)
+      if (getCurCfgVal() == 1) //Track???
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("y", "205");
+          RepeatLight.setXmlParam("image", "check.no");
+          //RepeatLight.setXmlParam("activeImage", "checked");
         }
         else
         {
-          RepeatLight.setXmlParam("y", "205");
+          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("activeImage", "checked.indet");
         }
       }
-      else if (getCurCfgVal() == -1)
+      else if (getCurCfgVal() == -1) //Off???
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("y", "205");
+          RepeatLight.setXmlParam("image", "checked.indet");
+          RepeatLight.setXmlParam("activeImage", "checked.indet");
+          // RepeatBtn.setXmlParam("image", "check.down.indet");
+          // RepeatBtn.setXmlParam("hoverimage", "check.down.indet"); //broken, why? no one knows
+          // //only a skin reload fixes this if the checkbox background is fucked again
         }
         else
         {
-          RepeatLight.setXmlParam("y", "205");
+          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
       }
       else if (getCurCfgVal() == 0)
       {
         if (RepeatBtn.isMouseOverRect())
         {
-          RepeatLight.setXmlParam("y", "205");
+          RepeatLight.setXmlParam("image", "check.no");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
         else
         {
-          RepeatLight.setXmlParam("y", "205");
+          RepeatLight.setXmlParam("activeImage", "checked");
         }
       }
 		}
@@ -461,54 +473,61 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
     {
       if (getCurCfgVal() == 1)
       {
+        /*
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("y", "205");
+          ShuffleLight.setXmlParam("image", "checked");
+          ShuffleLight.setXmlParam("activeImage", "checked");
         }
         else {
-          ShuffleLight.setXmlParam("y", "205");
+          ShuffleLight.setXmlParam("image", "checked");
+          ShuffleLight.setXmlParam("activeImage", "checked");
         }
+        */
       }
       else
       {
         if (ShuffleBtn.isMouseOverRect())
         {
-          ShuffleLight.setXmlParam("y", "205");
+          ShuffleLight.setXmlParam("image", "check.no");
+          ShuffleLight.setXmlParam("activeImage", "check.no");
         }
         else
         {
-          ShuffleLight.setXmlParam("y", "205");
+          ShuffleLight.setXmlParam("image", "check.no");
+          ShuffleLight.setXmlParam("activeImage", "check.no");
         }
       }
 		}
 }
 
+/*
 RepeatShuffleHandler.onEnterArea()
 {
   if (RepeatShuffleHandler == RepeatBtn)
 	{
 		if (getCurCfgVal() == 1)
 		{
-			RepeatLight.setXmlParam("y", "205");
+			RepeatLight.setXmlParam("image", "repeat.light.on");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-			RepeatLight.setXmlParam("y", "205");
+			RepeatLight.setXmlParam("image", "repeat.light.on");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-			RepeatLight.setXmlParam("y", "205");
+			RepeatLight.setXmlParam("image", "repeat.light.on");
 		}
   }
   else if (RepeatShuffleHandler == ShuffleBtn)
   {
 		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("y", "205");
+			ShuffleLight.setXmlParam("image", "checked");
 		}
 		else
 		{
-			ShuffleLight.setXmlParam("y", "205");
+			ShuffleLight.setXmlParam("image", "check.no");
 		}
   }
 }
@@ -519,29 +538,30 @@ RepeatShuffleHandler.onLeaveArea()
 	{
 		if (getCurCfgVal() == 1)
 		{
-			RepeatLight.setXmlParam("y", "205");
+			RepeatLight.setXmlParam("image", "repeat.light.on");
 		}
 		else if (getCurCfgVal() == -1)
 		{
-			RepeatLight.setXmlParam("y", "205");
+			RepeatLight.setXmlParam("image", "repeat.light.on");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-			RepeatLight.setXmlParam("y", "205");
+			RepeatLight.setXmlParam("image", "repeat.light.off");
 		}
   }
   else if (RepeatShuffleHandler == ShuffleBtn)
   {
  		if (getCurCfgVal() == 1)
 		{
-			ShuffleLight.setXmlParam("y", "205");
+			ShuffleLight.setXmlParam("image", "checked");
 		}
 		else if (getCurCfgVal() == 0)
 		{
-      ShuffleLight.setXmlParam("y", "205");
+      ShuffleLight.setXmlParam("image", "check.no");
 		} 
   }
 }
+*/
 
 System.onResume()
 {

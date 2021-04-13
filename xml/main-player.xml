@@ -81,7 +81,7 @@
 	<text id="mlplbutton" text="Playlists" x="325" y="191" w="50" h="20" ghost="1" font="tahoma" fontsize="15" antialias="0" align="left" valign="top" color="wasabi.text.color"/>
 	<button id="MLList" rectrgn="1" action="PE_ListOfLists" x="306" y="181" image="mlplbtn" downImage="mlplbtn.d" activeImage="mlplbtn.d" hoverImage="mlplbtn" tooltip="Library's Playlists"/>
 
-	<!-- button bg --> <NStatesButton id="button.repeat" x="-149" y="205" w="9" h="9" relatx="1" image="repeat.n." hoverimage="repeat.h." downimage="repeat.d."
+	<!-- button bg --> <NStatesButton id="button.repeat" x="-149" y="205" relatx="1" image="repeat.n." hoverimage="repeat.h." downimage="repeat.d."
 		rectrgn="1" nstates="3" cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat" cfgvals="0;1;-1" tooltip="Toggle Repeat" alpha="255" cursor="cur.normal"/>
 	<rect id="rep" color="64,64,64" x="-150" y="204" w="12" h="12" relatx="1" ghost="1"/>
 	<layer image="check.box" x="-151" y="203" relatx="1" ghost="1"/>
