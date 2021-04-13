@@ -280,8 +280,8 @@
   <bitmap id="repeat.h.1" file="images/window/checkbox.png" x="10" y="0" w="9" h="9" gammagroup="Window"/>
   <bitmap id="repeat.d.1" file="images/window/checkbox.png" x="10" y="0" w="9" h="9" gammagroup="3D Objects"/> 
   
-  <bitmap id="repeat.n.2" file="images/window/checkbox.png" x="43" y="0" w="9" h="9" gammagroup="Window"/>
-  <bitmap id="repeat.h.2" file="images/window/checkbox.png" x="43" y="0" w="9" h="9" gammagroup="Window"/>
+  <bitmap id="repeat.n.2" file="images/window/checkbox.png" x="43" y="0" w="9" h="9" gammagroup="3D Objects"/>
+  <bitmap id="repeat.h.2" file="images/window/checkbox.png" x="43" y="0" w="9" h="9" gammagroup="3D Objects"/>
   <bitmap id="repeat.d.2" file="images/window/checkbox.png" x="10" y="0" w="9" h="9" gammagroup="3D Objects"/>  
 
 
