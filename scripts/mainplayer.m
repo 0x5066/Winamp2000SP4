@@ -272,7 +272,7 @@ initMainPlayer() {
   WinampTxtShadeInactive.setXmlParam("text", "Winamp "+Application.GetVersionNumberString());
 
   if(Application.GetVersionNumberString() == "5.8"){
-	  WinampTxt.setXmlParam("text", "Sinner");
+    WinampTxt.setXmlParam("text", "Sinner");
     WinampTxtInactive.setXmlParam("text", "Sinner");
     WinampTxtShade.setXmlParam("text", "Sinner");
     WinampTxtShadeInactive.setXmlParam("text", "Sinner");
@@ -427,7 +427,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
 {
   if (RepeatShuffleHandler == RepeatBtn)
 	{
-      if (getCurCfgVal() == 1) //Track???
+      if (getCurCfgVal() == 1) //Track
       {
         if (RepeatBtn.isMouseOverRect())
         {
@@ -440,15 +440,12 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
           RepeatLight.setXmlParam("activeImage", "checked.indet");
         }
       }
-      else if (getCurCfgVal() == -1) //Off???
+      else if (getCurCfgVal() == -1) //Off
       {
         if (RepeatBtn.isMouseOverRect())
         {
           RepeatLight.setXmlParam("image", "checked.indet");
           RepeatLight.setXmlParam("activeImage", "checked.indet");
-          // RepeatBtn.setXmlParam("image", "check.down.indet");
-          // RepeatBtn.setXmlParam("hoverimage", "check.down.indet"); //broken, why? no one knows
-          // //only a skin reload fixes this if the checkbox background is fucked again
         }
         else
         {
@@ -456,7 +453,7 @@ RepeatShuffleHandler.onLeftButtonUp (int x, int y)
           RepeatLight.setXmlParam("activeImage", "checked");
         }
       }
-      else if (getCurCfgVal() == 0)
+      else if (getCurCfgVal() == 0) //Playlist
       {
         if (RepeatBtn.isMouseOverRect())
         {
