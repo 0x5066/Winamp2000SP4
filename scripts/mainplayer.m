@@ -41,6 +41,7 @@ Global int BalChanging=0;
 
 Function string getBitrate();
 Function string getFrequency();
+Function indetcheck();
 
 Global timer delayload, songInfoTimer;
 
@@ -153,21 +154,6 @@ initMainPlayer() {
   
   if (PlayerStatus != 0) { getchanneltimer.start(); }
 
-  timemodestring = getPrivateInt(getSkinName(), "timemodestring", timemodestring);
-
-  if (timemodestring == 1)
-  {
-    //DisplayTime.setXmlParam("display", "TIMEELAPSED");
-    //DisplayTimeShade.setXmlParam("display", "TIMEELAPSED");
-    timemodestring = 1;
-  }
-  else if (timemodestring == 2)
-  {
-    DisplayTime.setXmlParam("display", "TIMEREMAINING");
-    DisplayTimeShade.setXmlParam("display", "TIMEREMAINING");
-    timemodestring = 2;
-  }
-
   stopstate = getPrivateInt(getSkinName(), "stopstate", stopstate);
 
   if (stopstate == 0)
@@ -184,6 +170,8 @@ initMainPlayer() {
     StopBtn.setXmlParam("downimage", "button.stop.ac.d");
     stopstate = 1;
   }
+
+  indetcheck();
 
 	delayload = new Timer;
 	delayload.setDelay(100);
@@ -384,6 +372,13 @@ PLLight.onLeftButtonUp(int x, int y)
     SongtickerOptionsGroup.gotoTarget();
 }*/
 
+indetcheck(){
+  if (RepeatBtn.getCurCfgVal() == -1)
+	{
+    RepeatLight.setXmlParam("activeImage", "checked.indet");
+	}
+}
+
 RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 {
   if (RepeatShuffleHandler == RepeatBtn)
@@ -391,7 +386,7 @@ RepeatShuffleHandler.onLeftButtonDown (int x, int y)
 		if (getCurCfgVal() == 1)
 		{
       //RepeatLight.setXmlParam("image", "repeat.light.on.d");
-      RepeatLight.setXmlParam("activeImage", "checked");
+      RepeatLight.setXmlParam("activeImage", "checked.indet");
 			showActionInfo("Repeat: Track");
 		}
 		else if (getCurCfgVal() == -1)
