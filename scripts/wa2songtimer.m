@@ -78,7 +78,7 @@ System.onScriptLoaded()
     PauseBlinkPaused = new Timer;
     PauseBlinkPaused.setDelay(50);
     Clock = new Timer;
-    Clock.setDelay(2000);
+    Clock.setDelay(1000);
     Clock.start();
 
     setTimer(getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1));
@@ -90,23 +90,24 @@ TimeElapsedOrRemaining()
     int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
     setTimer(timermode);
 
-    if (timermode == 2){
-        if(songlength <= 0){
+    if(timermode == 1){ //Time elapsed
+        if(songlength <= 0){ //If below 0, then run StaticTime()
             StaticTime();
         }
-        else if(timermode == 1){
-            if(songlength <= 0){
-                StaticTime();
-            }
-            else{ 
-                StaticTime();
-            }
-        }
-        else{
-            StaticTimeRemainder();
+        else{ //If not, also run StaticTime(), reason why is below
+            StaticTime(); //this actually needs to exist specifically for the pause state, dont ask me why
         }
     }
 
+    if (timermode == 2){ //Time remaining
+        if(songlength <= 0){
+            StaticTime();
+        }
+    else{
+        StaticTimeRemainder(); //same
+    }
+
+}
     if (getStatus() == 0){ //Stopped
             stopped();
     }
