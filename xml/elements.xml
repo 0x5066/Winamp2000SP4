@@ -147,9 +147,15 @@
   <bitmap id="visgrid_thick" file="images/a_grid_thick.png" x="0" y="0" w="142" h="32"/>
   <bitmap id="visgrid_thin" file="images/a_grid_thin.png" x="0" y="0" w="142" h="32"/>
   <bitmap id="visgrid_car" file="images/a_grid_car.png" x="0" y="0" w="142" h="32"/>
+  <bitmap id="vishgrid_thick" file="images/a_hgrid_thick.png" x="0" y="0" w="142" h="32"/>
+  <bitmap id="vishgrid_thin" file="images/a_hgrid_thin.png" x="0" y="0" w="142" h="32"/>
+
   <bitmap id="visgrid2_thick" file="images/a_grid2_thick.png" x="0" y="0" w="144" h="32"/>
   <bitmap id="visgrid2_thin" file="images/a_grid2_thin.png" x="0" y="0" w="144" h="32"/>
   <bitmap id="visgrid2_car" file="images/a_grid2_car.png" x="0" y="0" w="144" h="32"/>
+
+  <bitmap id="vishgrid2_thick" file="images/a_grid2_thick.png" x="0" y="0" w="144" h="32"/>
+  <bitmap id="vishgrid2_thin" file="images/a_grid2_thin.png" x="0" y="0" w="144" h="32"/>
 
   <bitmap id="links.normal" file="images/window/windows-background-main.png" x="323" y="365" w="15" h="30" gammagroup="titlebarstripes"/>
   <bitmap id="links.hover" file="images/window/windows-background-main.png" x="339" y="365" w="15" h="30" gammagroup="titlebarstripes"/>

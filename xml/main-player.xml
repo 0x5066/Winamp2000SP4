@@ -207,9 +207,13 @@
 	<text id="display.time" display="time" x="48" y="5" w="122" h="26" ticker="0" font="time" fontsize="38" forcefixed="1" color="wasabi.timer.color" 
 	valign="top" align="right" cursor="cur.normal" bold="0" tooltip="Time Display (click to toggle elapsed/remaining)" antialias="1"/>
 	<vis id="player.vis" x="27" y="39" w="143" h="32" cursor="cur.normal"/>
-	<layer id="visgridimg.thick" x="27" y="39" image="visgrid_thick" ghost="1"/>
-	<layer id="visgridimg.thin" x="27" y="39" image="visgrid_thin" ghost="1"/>
-	<layer id="visgridimg.car" x="27" y="39" image="visgrid_car" alpha="175" ghost="1"/>
+	<layer id="visvgridimg.thick" x="27" y="39" image="visgrid_thick" ghost="1"/>
+	<layer id="visvgridimg.thin" x="27" y="39" image="visgrid_thin" ghost="1"/>
+	<layer id="visvgridimg.car" x="27" y="39" image="visgrid_car" alpha="175" ghost="1"/>
+	<layer id="vishgridimg.thick" x="27" y="39" image="vishgrid_thick" ghost="1"/>
+	<layer id="vishgridimg.thin" x="27" y="39" image="vishgrid_thin" ghost="1"/>
+	<layer id="vishgridimg.car" x="27" y="39" image="visgrid_car" alpha="175" ghost="1"/>
+	
 	<layer id="hide.for.gordon" x="169" y="39" image="hide.for.gordon" ghost="1"/>
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>
 	<layer id="player.vis.trigger" x="27" y="39" w="143" h="32" image="none" cursor="cur.normal"/>
