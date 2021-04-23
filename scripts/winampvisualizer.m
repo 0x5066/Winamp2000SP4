@@ -18,7 +18,7 @@ Global Container containerPL;
 Global Layout layoutPL, layoutMainNormal, layoutMainShade;
 Global Group NormalGroupMain, NormalGroupDisplay, ShadeGroupMain, ShadeGroupDisplay;
 Global Vis visualizer, visualizershade, visualizerpl;
-Global Layer visgrid_thick, visgrid_thin, visgrid_car;
+Global Layer visvgrid_thick, visvgrid_thin, visvgrid_car, vishgrid_thick, vishgrid_thin, vishgrid_car;
 Global Button OAIDUBtnUE1, OAIDUBtnUE2, OAIDUBtnUE3;
 
 Global PopUpMenu visMenu;
@@ -34,10 +34,11 @@ Global PopUpMenu winmenu;
 Global PopUpMenu animenu;
 Global PopUpMenu gamemenu;
 Global PopUpMenu plusmenu;
-Global PopUpMenu gridmenu;
+Global PopUpMenu vgridmenu;
+Global PopUpMenu hgridmenu;
 Global PopUpMenu waxpmenu;
 
-Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color, grid;
+Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color, vgrid, hgrid;
 Global Boolean show_peaks;
 Global layer Trigger, HideForVic, TriggerBlocker, TriggerBlockerShade;
 
@@ -50,16 +51,23 @@ System.onScriptLoaded()
 	NormalGroupMain = layoutMainNormal.findObject("i_hate_maki_sometimes");
 
 	visualizer = NormalGroupMain.findObject("player.vis2");
-	visgrid_thick = NormalGroupMain.findObject("visgridimg.thick");
-	visgrid_thin = NormalGroupMain.findObject("visgridimg.thin");
-	visgrid_car = NormalGroupMain.findObject("visgridimg.car");
+	visvgrid_thick = NormalGroupMain.findObject("visvgridimg.thick");
+	visvgrid_thin = NormalGroupMain.findObject("visvgridimg.thin");
+	visvgrid_car = NormalGroupMain.findObject("visvgridimg.car");
+
+	vishgrid_thick = NormalGroupMain.findObject("vishgridimg.thick");
+	vishgrid_thin = NormalGroupMain.findObject("vishgridimg.thin");
+	vishgrid_car = NormalGroupMain.findObject("vishgridimg.car");
 	
 	Trigger = NormalGroupMain.findObject("player.vis.trigger2");
 
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
-	visgrid_thick.setXmlParam("visible", integerToString(grid));
-	visgrid_thin.setXmlParam("visible", integerToString(grid));
-	visgrid_car.setXmlParam("visible", integerToString(grid));
+	visvgrid_thick.setXmlParam("visible", integerToString(vgrid));
+	visvgrid_thin.setXmlParam("visible", integerToString(vgrid));
+	visvgrid_car.setXmlParam("visible", integerToString(vgrid));
+	vishgrid_thick.setXmlParam("visible", integerToString(hgrid));
+	vishgrid_thin.setXmlParam("visible", integerToString(hgrid));
+	vishgrid_car.setXmlParam("visible", integerToString(hgrid));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
 	visualizer.setXmlParam("fps", integerToString(v_fps));
@@ -94,7 +102,8 @@ refreshVisSettings ()
 {
 	currentMode = getPrivateInt(getSkinName(), "Visualizer Mode2", 1);
 	show_peaks = getPrivateInt(getSkinName(), "Visualizer show Peaks2", 1);
-	grid = getPrivateInt(getSkinName(), "Visualizer show Grid2", 0);
+	vgrid = getPrivateInt(getSkinName(), "Visualizer show Vertical Grid2", 0);
+	hgrid = getPrivateInt(getSkinName(), "Visualizer show Horizontal Grid2", 0);
 	a_falloffspeed = getPrivateInt(getSkinName(), "Visualizer analyzer falloff2", 4);
 	p_falloffspeed = getPrivateInt(getSkinName(), "Visualizer peaks falloff2", 0);
 	a_coloring = getPrivateInt(getSkinName(), "Visualizer analyzer coloring2", 0);
@@ -102,9 +111,12 @@ refreshVisSettings ()
 	v_color = getPrivateInt(getSkinName(), "Visualizer Color themes2", 0);
 
 	visualizer.setXmlParam("peaks", integerToString(show_peaks));
-	visgrid_thick.setXmlParam("visible", integerToString(grid));
-	visgrid_thin.setXmlParam("visible", integerToString(grid));
-	visgrid_car.setXmlParam("visible", integerToString(grid));
+	visvgrid_thick.setXmlParam("visible", integerToString(vgrid));
+	visvgrid_thin.setXmlParam("visible", integerToString(vgrid));
+	visvgrid_car.setXmlParam("visible", integerToString(vgrid));
+	vishgrid_thick.setXmlParam("visible", integerToString(hgrid));
+	vishgrid_thin.setXmlParam("visible", integerToString(hgrid));
+	vishgrid_car.setXmlParam("visible", integerToString(hgrid));
 	visualizer.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
 	visualizer.setXmlParam("fps", integerToString(v_fps));
@@ -667,41 +679,78 @@ refreshVisSettings ()
 
 			setColorosc("103,121,88");
 		}
-		if (grid == 0)
+		if (vgrid == 0)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 1)
+		else if (vgrid == 1)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 2)
+		else if (vgrid == 2)
 		{
-			visgrid_thick.setXmlParam("visible", "1");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "1");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 3)
+		else if (vgrid == 3)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "1");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "1");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 4)
+		else if (vgrid == 4)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "1");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "1");
 		}
-		else if (v_fps == 5)
+		else if (vgrid == 5)
 		{
-			visgrid_thick.setXmlParam("visible", "1");
-			visgrid_thin.setXmlParam("visible", "1");
-			visgrid_car.setXmlParam("visible", "1");
+			visvgrid_thick.setXmlParam("visible", "1");
+			visvgrid_thin.setXmlParam("visible", "1");
+			visvgrid_car.setXmlParam("visible", "1");
+		}
+
+		if (hgrid == 0)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 1)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 2)
+		{
+			vishgrid_thick.setXmlParam("visible", "1");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 3)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "1");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 4)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "1");
+		}
+		else if (hgrid == 5)
+		{
+			vishgrid_thick.setXmlParam("visible", "1");
+			vishgrid_thin.setXmlParam("visible", "1");
+			vishgrid_car.setXmlParam("visible", "1");
 		}
 	setVis (currentMode);
 }
@@ -736,7 +785,8 @@ Trigger.onRightButtonUp (int x, int y)
 	animenu = new PopUpMenu;
 	gamemenu = new PopUpMenu;
 	plusmenu = new PopUpMenu;
-	gridmenu = new PopUpMenu;
+	vgridmenu = new PopUpMenu;
+	hgridmenu = new PopUpMenu;
 	waxpmenu = new PopUpMenu;
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
@@ -804,13 +854,19 @@ Trigger.onRightButtonUp (int x, int y)
 
 	visMenu.addCommand("Show Peaks", 101, show_peaks == 1, 0);
 	
-	visMenu.addSubMenu(gridmenu, "Grid Options:");
-	
-	gridmenu.addCommand("No Grid", 600, grid == 0, 0);
-	gridmenu.addCommand("Thick Grid", 602, grid == 2, 0);
-	gridmenu.addCommand("Thin Grid", 603, grid == 3, 0);
-	gridmenu.addCommand("Car Display", 604, grid == 4, 0);
-	gridmenu.addCommand("All of the above", 605, grid == 5, 0);
+	visMenu.addSubMenu(vgridmenu, "Vertical Grid Options");
+	vgridmenu.addCommand("No Grid", 600, vgrid == 0, 0);
+	vgridmenu.addCommand("Thick Grid", 602, vgrid == 2, 0);
+	vgridmenu.addCommand("Thin Grid", 603, vgrid == 3, 0);
+	vgridmenu.addCommand("Car Display", 604, vgrid == 4, 0);
+	vgridmenu.addCommand("All of the above", 605, vgrid == 5, 0);
+
+	visMenu.addSubmenu(hgridmenu, "Horizontal Grid Options");
+	hgridmenu.addCommand("No Grid", 700, hgrid == 0, 0);
+	hgridmenu.addCommand("Thick Grid", 702, hgrid == 2, 0);
+	hgridmenu.addCommand("Thin Grid", 703, hgrid == 3, 0);
+	hgridmenu.addCommand("Car Display", 704, hgrid == 4, 0);
+	hgridmenu.addCommand("All of the above", 705, hgrid == 5, 0);
 	
 	pksmenu.addCommand("Slower", 200, p_falloffspeed == 0, 0);
 	pksmenu.addCommand("Slow", 201, p_falloffspeed == 1, 0);
@@ -855,7 +911,8 @@ Trigger.onRightButtonUp (int x, int y)
 	delete winmenu;
 	delete animenu;
 	delete gamemenu;
-	delete gridmenu;
+	delete vgridmenu;
+	delete hgridmenu;
 	delete waxpmenu;
 
 	complete;	
@@ -1444,44 +1501,85 @@ ProcessMenuResult (int a)
 	}
 	else if (a >= 600 && a <= 605)
 	{
-		grid = a - 600;
-		if (grid == 0)
+		vgrid = a - 600;
+		if (vgrid == 0)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 1)
+		else if (vgrid == 1)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 2)
+		else if (vgrid == 2)
 		{
-			visgrid_thick.setXmlParam("visible", "1");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "1");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 3)
+		else if (vgrid == 3)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "1");
-			visgrid_car.setXmlParam("visible", "0");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "1");
+			visvgrid_car.setXmlParam("visible", "0");
 		}
-		else if (grid == 4)
+		else if (vgrid == 4)
 		{
-			visgrid_thick.setXmlParam("visible", "0");
-			visgrid_thin.setXmlParam("visible", "0");
-			visgrid_car.setXmlParam("visible", "1");
+			visvgrid_thick.setXmlParam("visible", "0");
+			visvgrid_thin.setXmlParam("visible", "0");
+			visvgrid_car.setXmlParam("visible", "1");
 		}
-		else if (grid == 5)
+		else if (vgrid == 5)
 		{
-			visgrid_thick.setXmlParam("visible", "1");
-			visgrid_thin.setXmlParam("visible", "1");
-			visgrid_car.setXmlParam("visible", "1");
+			visvgrid_thick.setXmlParam("visible", "1");
+			visvgrid_thin.setXmlParam("visible", "1");
+			visvgrid_car.setXmlParam("visible", "1");
 		}
-		setPrivateInt(getSkinName(), "Visualizer show Grid2", grid);
+		setPrivateInt(getSkinName(), "Visualizer show Vertical Grid2", vgrid);
+	}
+	else if (a >= 700 && a <= 705)
+	{
+		hgrid = a - 700;
+		if (hgrid == 0)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 1)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 2)
+		{
+			vishgrid_thick.setXmlParam("visible", "1");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 3)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "1");
+			vishgrid_car.setXmlParam("visible", "0");
+		}
+		else if (hgrid == 4)
+		{
+			vishgrid_thick.setXmlParam("visible", "0");
+			vishgrid_thin.setXmlParam("visible", "0");
+			vishgrid_car.setXmlParam("visible", "1");
+		}
+		else if (hgrid == 5)
+		{
+			vishgrid_thick.setXmlParam("visible", "1");
+			vishgrid_thin.setXmlParam("visible", "1");
+			vishgrid_car.setXmlParam("visible", "1");
+		}
+		setPrivateInt(getSkinName(), "Visualizer show Horizontal Grid2", hgrid);
 	}
 }
 

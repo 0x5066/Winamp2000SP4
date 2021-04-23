@@ -4,9 +4,13 @@
 
 	<rect x="2" y="2" w="-4" h="-4" relatw="1" relath="1" color="0,0,0" filled="1"/>
 	<vis id="player.vis2" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" cursor="cur.normal"/>
-	<layer id="visgridimg.thick" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_thick" ghost="1"/>
-	<layer id="visgridimg.thin" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_thin" ghost="1"/>
-	<layer id="visgridimg.car" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_car" alpha="175" ghost="1"/>
+	<layer id="visvgridimg.thick" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_thick" ghost="1"/>
+	<layer id="visvgridimg.thin" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_thin" ghost="1"/>
+	<layer id="visvgridimg.car" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_car" alpha="175" ghost="1"/>
+
+	<layer id="vishgridimg.thick" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="vishgrid2_thick" ghost="1"/>
+	<layer id="vishgridimg.thin" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="vishgrid2_thin" ghost="1"/>
+	<layer id="vishgridimg.car" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="visgrid2_car" alpha="175" ghost="1"/>
 	<layer id="player.vis.trigger2" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" image="none"/>
 	
 	<script file="scripts/winampvisualizer.maki"/>
@@ -16,7 +20,7 @@
 <layout id="winampvis2" minimum_w="156" minimum_h="64" h="242" w="211" appbar="top|bottom|left|right">
 	<Wasabi:Standardframe:NoStatus x="0" y="0" w="0" h="0" relatw="1" relath="1" content="i_hate_maki_sometimes"/>
 	<sendparams target="wasabi.frame.layout.base.bg" alpha="255"/>
-  <sendparams target="titlebar.title.bg.group" w="170"/>
+	<sendparams target="titlebar.title.bg.group" w="170"/>
 	
 </layout>
 
