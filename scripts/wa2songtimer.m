@@ -261,7 +261,7 @@ System.onResume(){
     }
 }
 
-System.onInfoChange(String info){
+System.onTitleChange(String info){
     int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
     TimeElapsedOrRemaining();

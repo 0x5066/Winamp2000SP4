@@ -58,6 +58,7 @@ randomint.onTimer(){
     float jogging_naked = (TimeBPM*3.1316167/headbang);
     float jogging_nakedrestart = jogging_naked%8;
     float jogging_nakedrestart2 = jogging_naked*2%16;
+    float jogging_nakedrestartrat = (jogging_naked*8%16);
 
     float bpm2 = (TimeBPM*BPM_proper/headbang);
     float BPM_restart = BPM2%8;
@@ -67,9 +68,9 @@ randomint.onTimer(){
 
     if(bpm2 == 0){
         satsukianim.gotoFrame(jogging_nakedrestart);
-        newcat.gotoFrame(jogging_nakedrestart2);
+        newcat.gotoFrame(jogging_nakedrestartrat);
         //debug1.setXmlParam("text", System.FloatToString(jogging_naked, 5));
-        debug2.setXmlParam("text", System.FloatToString(jogging_nakedrestart, 5));
+        debug2.setXmlParam("text", System.FloatToString(jogging_nakedrestartrat, 5));
     }
     else{
         satsukianim.gotoFrame(BPM_restart);

@@ -11,6 +11,7 @@
     <bitmap id="satsuki2" file="images/doom/satsuki2.png" w="560" h="2512"/>
     <bitmap id="satsuki" file="images/doom/satsuki.png" w="500" h="2248"/>
     <bitmap id="nothercat" file="images/doom/cat3.png"/>
+    <bitmap id="rat" file="images/doom/rat.png"/>
 
 </elements>
 
@@ -18,8 +19,8 @@
 
 <groupdef id="statusface">
 
-    <Animatedlayer id="satsuki" image="satsuki" x="2" y="2" w="500" h="281" frameheight="281" start="0" end="7" autoplay="0" autoreplay="0" ghost="1"/>
-    <Animatedlayer id="newcat" image="nothercat" x="2" y="171" w="112" h="112" frameheight="112" start="0" end="7" autoplay="0" autoreplay="0" ghost="1"/>
+    <Animatedlayer id="satsuki" visible="0" image="satsuki" x="2" y="2" w="500" h="281" frameheight="281" start="0" end="7" autoplay="0" autoreplay="0" ghost="1"/>
+    <Animatedlayer id="newcat" image="rat" x="2" y="70" frameheight="215" start="0" end="11" autoplay="0" autoreplay="0" ghost="1"/>
     <layer id="st" visible="0" x="30" y="30" w="96" h="116" image="stface0" ghost="1"/>
     <vis id="player.vis2" x="2" y="2" w="-4" h="-4" relatw="1" relath="1" colorallbands="0,0,255" peaks="0" fps="120" colorallosc="0,0,255" colorosc5="0,0,255" alpha="128" cursor="cur.normal"/>
     <text id="intvisdebug" visible="1" x="30" y="150" h="12" w="200" font="tahoma" fontsize="15" color="0,0,0" antialias="0"/>
