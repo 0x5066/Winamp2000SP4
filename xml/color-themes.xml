@@ -24,58 +24,6 @@
   <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="(Winamp Skin) REVOCS Media Player">
-  <gammagroup id="3D Objects" value="2676,1967,1902" gray="0" boost="0" />
-  <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Window" value="3870,3289,3450" gray="0" boost="0" />
-  <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 1" value="-774,-4096,-3773" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 2" value="1419,-4096,-3321" gray="0" boost="0" />
-  <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Selected Items" value="2031,-3773,-2225" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 1" value="-2354,-4096,-3483" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 2" value="-225,-3321,-2031" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar-Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar-Text" value="1719,-2855,-3458" gray="0" boost="0" />
-  <gammagroup id="Visualizers" value="0,-4096,-2962" gray="1" boost="0" />
-  <gammagroup id="Visualizers2" value="878,-4096,-2770" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer Background" value="-2394,-3990,-3990" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer" value="975,-3999,-4063" gray="2" boost="0" />
-  <gammagroup id="Half-Life 2 Digits" value="3837,3450,3386" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Labels" value="3837,3450,3386" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Crosshair" value="3192,-3999,-4063" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Winamp Playback Status" value="2031,-3773,-2225" gray="0" boost="0" />
-  <gammagroup id="Winamp Timer Display" value="2031,-3773,-2225" gray="0" boost="0" />
-</gammaset>
-
-<gammaset id="(Winamp Skin) A.P.E Media Player">
-  <gammagroup id="3D Objects" value="3386,2967,1322" gray="0" boost="0" />
-  <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Window" value="4096,4096,3280" gray="0" boost="0" />
-  <gammagroup id="Window-text" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 1" value="3257,2096,-4096" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 2" value="4096,967,-354" gray="0" boost="0" />
-  <gammagroup id="Selected Items-Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Selected Items" value="3128,1548,-4096" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 1" value="483,32,-2257" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 2" value="2709,1548,967" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar-Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar-Text" value="2741,2612,2354" gray="0" boost="0" />
-  <gammagroup id="Visualizers" value="868,-621,-4096" gray="1" boost="0" />
-  <gammagroup id="Visualizers2" value="4096,4096,-4096" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer Background" value="-2112,-1856,-2336" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Digits" value="4064,2944,-4096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Labels" value="4064,2944,-4096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 HUD Elements" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Crosshair" value="4096,2644,-2096" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Subtitle Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Winamp Playback Status" value="3128,1548,-4096" gray="0" boost="0" />
-  <gammagroup id="Winamp Timer Display" value="3128,1548,-4096" gray="0" boost="0" />
-</gammaset>
-
 <gammaset id="(Windows 9x) Brick">
   <gammagroup id="3D Objects" value="2160,2064,1225" gray="0" boost="0" />
   <gammagroup id="3D Objects-Text" value="-4096,-4096,-4096" gray="0" boost="0" />
@@ -958,32 +906,6 @@
   <gammagroup id="Half-Life 2 Subtitle Text" value="1225,-2644,-2644" gray="0" boost="0" />
   <gammagroup id="Winamp Playback Status" value="4096,4096,4096" gray="0" boost="0" />
   <gammagroup id="Winamp Timer Display" value="4096,4096,4096" gray="0" boost="0" />
-</gammaset>
-
-<gammaset id="(Anime: Kill La Kill) Ryuko Matoi">
-  <gammagroup id="3D Objects" value="-2934,-2676,-1967" gray="0" boost="0" />
-  <gammagroup id="3D Objects-Text" value="3870,3418,-1064" gray="0" boost="0" />
-  <gammagroup id="Window" value="-3418,-3031,-2386" gray="0" boost="0" />
-  <gammagroup id="Window-text" value="2773,-3418,-3579" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 1" value="2773,-2483,-3612" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar Color 2" value="2064,-2741,-1709" gray="0" boost="0" />
-  <gammagroup id="Selected Items-Text" value="4063,3354,-1128" gray="0" boost="0" />
-  <gammagroup id="Selected Items" value="2064,-2741,-1709" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 1" value="-2967,-3096,-3289" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar Color 2" value="-3579,-3741,-3773" gray="0" boost="0" />
-  <gammagroup id="Active Title Bar-Text" value="3870,3450,-1064" gray="0" boost="0" />
-  <gammagroup id="Inactive Title Bar-Text" value="-1128,-1612,-1451" gray="0" boost="0" />
-  <gammagroup id="Visualizers" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Visualizers2" value="-2451,-1806,-903" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer Background" value="-3418,-3031,-2386" gray="0" boost="0" />
-  <gammagroup id="VGUI Visualizer" value="2064,-2741,-1709" gray="1" boost="0" />
-  <gammagroup id="Half-Life 2 Digits" value="2064,-2741,-1709" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Labels" value="2064,-2741,-1709" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 HUD Elements" value="-2644,-2128,-1354" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Crosshair" value="3837,3128,-1193" gray="0" boost="0" />
-  <gammagroup id="Half-Life 2 Subtitle Text" value="3837,3128,-1193" gray="0" boost="0" />
-  <gammagroup id="Winamp Playback Status" value="2064,-2741,-1709" gray="0" boost="0" />
-  <gammagroup id="Winamp Timer Display" value="2064,-2741,-1709" gray="0" boost="0" />
 </gammaset>
 
 <gammaset id="(Gold Windows XP 2016 by Computer Worm) GOLD 2">

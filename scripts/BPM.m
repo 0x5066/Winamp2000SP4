@@ -2,7 +2,7 @@
 
 Global group doomguy;
 Global GuiObject statusface;
-Global AnimatedLayer satsukianim, newcat;
+Global AnimatedLayer newcat;
 Global Timer randomint;
 Global Timer visint;
 Global int rand;
@@ -32,7 +32,6 @@ System.onScriptLoaded(){
 
     doomguy = getScriptGroup();
     statusface = doomguy.getObject("st");
-    satsukianim = doomguy.getObject("satsuki");
     newcat = doomguy.getObject("newcat");
     debug1 = doomguy.getObject("intvisdebug");
     debug2 = doomguy.getObject("randdebug");
@@ -67,13 +66,11 @@ randomint.onTimer(){
     debug1.setXmlParam("text", System.getPlayItemMetaDataString("bpm"));
 
     if(bpm2 == 0){
-        satsukianim.gotoFrame(jogging_nakedrestart);
         newcat.gotoFrame(jogging_nakedrestartrat);
         //debug1.setXmlParam("text", System.FloatToString(jogging_naked, 5));
         debug2.setXmlParam("text", System.FloatToString(jogging_nakedrestartrat, 5));
     }
     else{
-        satsukianim.gotoFrame(BPM_restart);
         newcat.gotoFrame(BPM_restart2);
         //debug1.setXmlParam("text", System.FloatToString(BPM_proper, 5));
         debug2.setXmlParam("text", System.FloatToString(BPM_restart, 5));

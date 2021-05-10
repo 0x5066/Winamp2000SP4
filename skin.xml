@@ -45,12 +45,8 @@
 	<include file="xml/window-overrides.xml"/>
 	<!--include file="xml/main.xml"/--> <!-- experimental, do not include in public release -->
 	<include file="xml/vguivis.xml"/>
-	<include file="xml/zerotwo.xml"/>
-	<include file="xml/ragyo.xml"/>
-	<include file="xml/ryuko.xml"/>
 	<include file="xml/thinger.xml"/>
 	<include file="xml/winampvis.xml"/>
-	<include file="xml/cat.xml"/>
 	<include file="xml/gradient.xml"/>
 	<include file="xml/bigclock.xml"/>
 	<include file="xml/lyrics.xml"/>
