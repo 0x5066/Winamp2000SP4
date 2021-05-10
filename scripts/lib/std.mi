@@ -221,7 +221,7 @@ extern System.onViewPortChanged(int width, int height);
 /**
  onStop()
 
- Hookable. Event happens when Winamp3 stops playing a file.
+ Hookable. Event happens when Winamp5 stops playing a file.
  No params.
 */
 extern System.onStop();
@@ -229,7 +229,7 @@ extern System.onStop();
 /**
  onPlay()
 
- Hookable. Event happens when Winamp3 starts playing a file.
+ Hookable. Event happens when Winamp5 starts playing a file.
  No params.
 */
 extern System.onPlay();
@@ -237,7 +237,7 @@ extern System.onPlay();
 /**
  onPause()
 
- Hookable. Event happens when Winamp3 pauses playback.
+ Hookable. Event happens when Winamp5 pauses playback.
  No params.
 */
 extern System.onPause();
@@ -245,7 +245,7 @@ extern System.onPause();
 /**
  onResume()
 
- Hookable. Event happens when Winamp3 resumes playback.
+ Hookable. Event happens when Winamp5 resumes playback.
  Event only happens when the song was previously set in a paused state.
  No params.
 */
@@ -1248,7 +1248,7 @@ extern System.debugString(String str, Int severity);
  interval between messages is specified in milliseconds.
  Here's an example:
 
- ddeSend("mIRC", "/msg #channel I'm using Winamp3", 300);
+ ddeSend("mIRC", "/msg #channel I'm using Winamp5", 300);
 
  @param  application   The DDE server name of the application.
  @param  command       The command to send.
