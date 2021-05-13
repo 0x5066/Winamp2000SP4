@@ -36,18 +36,18 @@ Global Layout layoutPLNormal;
 Global Layer ext;
 Global Layer coolgraph, coolline;
 
-Global PopUpMenu visMenu;
+Global PopUpMenu winmenu;
 
 Global group WasabiFrameGroup;
 
-global text filenamedisplay, filetypedisplay, hz, kbps;
+Global text filenamedisplay, filetypedisplay, hz, kbps;
 
 Function changeIconBasedOnTitle();
 Function changeIcon();
 Function changeCoolgraph(int preset);
 
 System.onScriptLoaded() {
-  containerPL = System.getContainer("PLEdit");
+	containerPL = System.getContainer("PLEdit");
 
 	layoutPLNormal = containerPL.getLayout("normalpl");
 
@@ -152,23 +152,23 @@ coolgraph.onRightButtonUp (int x, int y)
 {
 	int currentPreset = getPrivateInt(getSkinName(), "coolgraph", 1);
 
-  	visMenu = new PopUpMenu;
+	winmenu = new PopUpMenu;
 
-  	visMenu.addCommand("Presets:", 0, 0, 1);
+	winmenu.addCommand("Presets:", 0, 0, 1);
 
-	vismenu.addSeparator();	
-  	  
-	vismenu.addcommand("Windows 2000", 1, currentPreset == 1,0);
-	vismenu.addcommand("Windows 98", 2, currentPreset == 2,0);
-	vismenu.addcommand("Windows ME Build 2332", 3, currentPreset == 3,0);
-	vismenu.addcommand("Windows ME", 8, currentPreset == 8,0);
-	vismenu.addcommand("Windows 2000 Build 1743", 4, currentPreset == 4,0);
-	vismenu.addcommand("Windows 2000 Build 1796", 5, currentPreset == 5,0);
-	vismenu.addcommand("Windows 2000 Build 1835", 6, currentPreset == 6,0);
-	vismenu.addcommand("Windows 2000 Build 1946", 7, currentPreset == 7,0);
-  	
-	int result = vismenu.popAtMouse();
- 
+	winmenu.addSeparator();	
+
+	winmenu.addcommand("Windows 2000", 1, currentPreset == 1,0);
+	winmenu.addcommand("Windows 98", 2, currentPreset == 2,0);
+	winmenu.addcommand("Windows ME Build 2332", 3, currentPreset == 3,0);
+	winmenu.addcommand("Windows ME", 8, currentPreset == 8,0);
+	winmenu.addcommand("Windows 2000 Build 1743", 4, currentPreset == 4,0);
+	winmenu.addcommand("Windows 2000 Build 1796", 5, currentPreset == 5,0);
+	winmenu.addcommand("Windows 2000 Build 1835", 6, currentPreset == 6,0);
+	winmenu.addcommand("Windows 2000 Build 1946", 7, currentPreset == 7,0);
+	
+	int result = winmenu.popAtMouse();
+
 	changeCoolgraph(result);
 	
 	complete;
@@ -256,7 +256,7 @@ changeIconBasedOnTitle(){
 	else if(System.strsearch(streamtitle, "soundcloud") != -1){
 		ext.setXmlParam("image", "pl.icon.soundcloud");
 	}
-		else if(System.strsearch(streamtitle, "cdn.discordapp.com") != -1){
+	else if(System.strsearch(streamtitle, "cdn.discordapp.com") != -1){
 		ext.setXmlParam("image", "pl.icon.dicksword");
 	}
 	else if(System.strsearch(streamtitle, "media.discordapp.net") != -1){
@@ -264,11 +264,6 @@ changeIconBasedOnTitle(){
 	}
 	else if(System.strsearch(streamtitle, "http") != -1){
 		ext.setXmlParam("image", "pl.icon.ie");
-	}
-	else if(System.strsearch(streamtitle, "blumenkranz") != -1){
-		ext.setXmlParam("image", "pl.icon.blumenkranz");
-		filenamedisplay.setXmlParam("text", "Milf Music");
-		filetypedisplay.setXmlParam("text", "Nullsoft Milf Music Decoder v4.20.69");
 	}
 	else{
 		changeIcon();
