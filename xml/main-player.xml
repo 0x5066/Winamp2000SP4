@@ -32,14 +32,15 @@
 	<Animatedlayer id="main.balance.anim" x="345" y="116" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
 	<slider id="eq.slider.pan" action="PAN" x="345" y="113" w="75" h="21" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 
-	<rect id="EQ" color="64,64,64" x="-107" y="111" w="38" h="21" relatx="1" ghost="1"/>
-	<layer id="player.button.eq" x="-110" y="107" relatx="1" image="player.normal.button.eq" alpha="255" cursor="cur.normal"/>
-	<NStatesButton id="player.button.eq.light" x="-112" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="equalizer" nstates="2" cfgvals="0;1" tooltip="Toggle Graphical Equalizer" cursor="cur.normal"/>
+	<rect id="EQ" color="64,64,64" visible="1" x="-110" y="116" w="11" h="11" relatx="1" ghost="1"/>
+	<layer image="check.box" x="-111" y="115" relatx="1" ghost="1"/>
+	<NStatesButton id="player.button.eq.light" visible="1" x="-109" y="117" w="9" h="9" relatx="1" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." rectrgn="1" action="TOGGLE" param="equalizer" nstates="2" cfgvals="0;1" tooltip="Toggle Graphical Equalizer" cursor="cur.normal"/>
+	<text text="EQ" x="-95" y="113" relatx="1" font="tahoma" color="wasabi.text.color" fontsize="15" antialias="0" ghost="1"/>
 
-	<rect id="PL" color="64,64,64" x="-60" y="111" w="38" h="21" relatx="1" ghost="1"/>
-	<layer id="player.button.pl.shadow" x="-63" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
-	<layer id="player.button.pl" x="-63" y="107" relatx="1" image="player.normal.button.pl" alpha="255" cursor="cur.normal"/>
-	<NStatesButton id="player.button.pl.light" x="-66" y="104" relatx="1" image="button.eqpl.light.1." hoverimage="button.eqpl.light.2." downimage="button.eqpl.light.3." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
+	<rect id="PL" color="64,64,64" visible="1" x="-61" y="116" w="11" h="11" relatx="1" ghost="1"/>
+	<layer image="check.box" x="-62" y="115" relatx="1" ghost="1"/>
+	<NStatesButton id="player.button.pl.light" x="-60" y="117" relatx="1" w="9" h="9" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
+	<text text="PL" x="-46" y="113" relatx="1" font="tahoma" color="wasabi.text.color" fontsize="15" antialias="0" ghost="1"/>
 
 	<rect id="posbar.bg2" color="64,64,64" x="28" y="152" w="-50" h="3" relatw="1" ghost="1"/>
 	<grid id="posbar.bg" x="27" y="151" w="-49" h="4" relatw="1" left="posbar.left" middle="posbar.center" right="posbar.right" />
