@@ -41,6 +41,9 @@
 	<layer image="check.box" x="-62" y="115" relatx="1" ghost="1"/>
 	<NStatesButton id="player.button.pl.light" x="-60" y="117" relatx="1" w="9" h="9" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
 	<text text="PL" x="-46" y="113" relatx="1" font="tahoma" color="wasabi.text.color" fontsize="15" antialias="0" ghost="1"/>
+	<layer id="player.button.pl.shadow" visible="0" x="-63" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
+	<layer id="player.button.pl" visible="0" x="-63" y="107" relatx="1" image="player.normal.button.pl" alpha="255" cursor="cur.normal"/>
+	<layer id="player.button.eq" visible="0" x="-110" y="107" relatx="1" image="player.normal.button.eq" alpha="255" cursor="cur.normal"/>
 
 	<rect id="posbar.bg2" color="64,64,64" x="28" y="152" w="-50" h="3" relatw="1" ghost="1"/>
 	<grid id="posbar.bg" x="27" y="151" w="-49" h="4" relatw="1" left="posbar.left" middle="posbar.center" right="posbar.right" />

@@ -1,32 +1,37 @@
 <container id="equalizer" name="Equalizer" default_visible="1" default_x="0" default_y="242" default_w="550">
 	
 <groupdef id="equalizer.normal.group.main.content">
-  <layer id="eq.normal.bg2" x="0" y="-31" image="eq.normal.bg2" move="1" sysregion="1" alpha="253"/>
-  <layer id="eq.normal.bg" x="0" y="-31" image="eq.normal.bg" move="1" sysregion="1" alpha="253"/>
-  <rect id="eq.mover" x="10" y="3" h="200" w="-20" relatw="1" filled="1" move="1" cursor="cur.normal" alpha="0"/>
+	<layer id="eq.normal.bg2" x="0" y="-31" image="eq.normal.bg2" move="1" sysregion="1" alpha="253"/>
+	<layer id="eq.normal.bg" x="0" y="-31" image="eq.normal.bg" move="1" sysregion="1" alpha="253"/>
+	<rect id="eq.mover" x="10" y="3" h="200" w="-20" relatw="1" filled="1" move="1" cursor="cur.normal" alpha="0"/>
 
-	<rect id="eq.button.on2" color="64,64,64" x="13" y="15" w="48" h="28" ghost="1"/>
-	<rect id="eq.button.auto2" color="64,64,64" x="61" y="15" w="62" h="28" ghost="1"/>
+	<rect id="EQ" color="64,64,64" visible="1" x="19" y="22" w="11" h="11" ghost="1"/>
+	<layer image="check.box" x="18" y="21" ghost="1"/>
+	<ToggleButton id="eq.button.on" action="EQ_TOGGLE" x="20" y="23" w="9" h="9" image="shuffle.n.0" hoverimage="shuffle.h.0" downimage="shuffle.d.0" cursor="cur.normal"/>
+	<text text="On" x="35" y="20" font="tahoma" fontsize="15" color="wasabi.text.color" ghost="1" antialias="0"/>
 
-	<ToggleButton id="eq.button.on" action="EQ_TOGGLE" x="9" y="7" w="52" h="48" image="eq.normal.button.power.on" hoverimage="eq.normal.button.power.on.h" downimage="eq.normal.button.power.on.d" cursor="cur.normal"/>
-	<ToggleButton id="eq.button.auto" action="EQ_AUTO" x="61" y="7" w="66" h="48" image="eq.normal.button.auto.on" hoverimage="eq.normal.button.auto.on.h" downimage="eq.normal.button.auto.on.d" cursor="cur.normal"/>
+	<rect id="EQ" color="64,64,64" visible="1" x="70" y="22" w="11" h="11" ghost="1"/>
+	<layer image="check.box" x="69" y="21" ghost="1"/>
+	<ToggleButton id="eq.button.auto" visible="1" action="EQ_AUTO" x="71" y="23" w="9" h="9" image="shuffle.n.0" hoverimage="shuffle.h.0" downimage="shuffle.d.0" cursor="cur.normal"/>
 
-  <layer id="eq.light.on" x="1" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
-  <layer id="eq.light.auto" x="48" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
+	<layer id="eq.light.on" visible="0" x="1" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
+	<layer id="eq.light.auto" visible="0" x="48" y="0" w="48" h="48" image="onauto.light.on" ghost="1"/>
 
-  <layer id="eq.spline.bg" x="143" y="7" image="eq.normal.background.display" alpha="255" cursor="cur.normal"/>
-  <eqvis x="153" y="15" w="241" h="31" colortop="211,34,27" colormiddle="239,220,49" colorbottom="42,154,22" colorpreamp="255,255,255" ghost="1" />
+	<layer id="eq.spline.bg" x="143" y="7" image="eq.normal.background.display" alpha="255" cursor="cur.normal"/>
+	<eqvis x="153" y="15" w="241" h="31" colortop="211,34,27" colormiddle="239,220,49" colorbottom="42,154,22" colorpreamp="255,255,255" ghost="1" />
 
 	<rect id="eq.button.auto2" color="64,64,64" x="474" y="14" w="61" h="29" ghost="1"/>
+
+	<text text="Auto" x="86" y="20" font="tahoma" fontsize="15" color="wasabi.text.color" ghost="1" antialias="0"/>
 
 	<togglebutton id="eq.button.presets.menu" action="MENU" param="PRESETS" x="474" y="45" w="1" h="1" image="none"/>
 	<button id="eq.button.presets.gfx" x="470" y="7" image="eq.normal.button.presets" hoverimage="eq.normal.button.presets.h" downimage="eq.normal.button.presets.d" cursor="cur.normal"/>
 
-  <script file="scripts\sc_mouseredir.maki" param="eq.button.presets.gfx;eq.button.presets.menu"/>
-  <!-- I like to place the menu under the button -not the pointer- whenever I can -->
+	<script file="scripts\sc_mouseredir.maki" param="eq.button.presets.gfx;eq.button.presets.menu"/>
+	<!-- I like to place the menu under the button -not the pointer- whenever I can -->
 
 	<Animatedlayer id="preamp_layer" image="eq.slider.bg.anim" x="46" y="70" w="6" h="107" ghost="1" alpha="0"/>
-  
+
 	<slider id="preamp" action="EQ_BAND" param="PREAMP" x="39" y="64" h="118" w="21" orientation="vertical" thumb="eq.normal.button.slider.v.n" hoverthumb="eq.normal.button.slider.v.h" downthumb="eq.normal.button.slider.v.d" tooltip="Preamp" cursor="cur.normal"/>
 
 	<Animatedlayer id="eq1.bg" image="eq.slider.bg.anim" x="131" y="70" w="6" h="107" ghost="1" alpha="0"/>
@@ -55,10 +60,10 @@
 	<button id="EQ_0" x="68" y="115" w="36" h="17" rectrgn="1" image="none" cursor="cur.normal"/>
 	<button id="EQ_m12" x="68" y="165" w="36" h="17" rectrgn="1" image="none" cursor="cur.normal"/>
 		
-  <layer id="eq.frequency.labels.m" x="69" y="66" image="eq.normal.labels.main" ghost="1"/>
-  <layer id="eq.frequency.labels" x="24" y="184" image="eq.normal.labels.winamp" ghost="1"/>
+	<layer id="eq.frequency.labels.m" x="69" y="66" image="eq.normal.labels.main" ghost="1"/>
+	<layer id="eq.frequency.labels" x="24" y="184" image="eq.normal.labels.winamp" ghost="1"/>
 
-  <script file="scripts\eq_animated_bars.maki"/>
+	<script file="scripts\eq_animated_bars.maki"/>
 </groupdef>
 
 <groupdef id="eq.shade.titlebar.center">
@@ -71,13 +76,13 @@
 	<rect id="vol.bg2" color="64,64,64" x="12" y="10" w="120" h="3" ghost="1"/>
 	<grid id="posbar.bg" x="11" y="9" w="121" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right" />
 
-  <Animatedlayer id="volume.anim" x="5" y="6" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
+	<Animatedlayer id="volume.anim" x="5" y="6" w="120" h="8" image="player.animation.volume" ghost="1" alpha="255"/>
 	<slider id="player.slider.volume.shadow" x="0" y="0" w="130" h="26" action="VOLUME" orientation="horizontal" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>	
 	<slider id="player.slider.volume" x="11" y="2" w="121" h="21" action="VOLUME" orientation="horizontal" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Volume Bar"/>
 
 	<rect id="bal.bg2" color="64,64,64" x="151" y="10" w="74" h="3" ghost="1"/>
 	<grid id="posbar.bg" x="150" y="9" w="75" h="4" relatw="0" left="posbar.left" middle="posbar.center" right="posbar.right" />
-  <Animatedlayer id="balance.anim" x="147" y="6" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
+	<Animatedlayer id="balance.anim" x="147" y="6" w="71" h="8" image="player.animation.balance" ghost="1" alpha="255"/>
 	<slider id="eq.slider.pan.shadow" x="143" y="0" w="81" h="26" action="PAN" thumb="thumb.volpan.slider.shadow" hoverthumb="thumb.volpan.slider.shadow" downthumb="thumb.volpan.slider.shadow"/>
 	<slider id="eq.slider.pan" x="150" y="2" w="75" h="21" action="PAN" thumb="thumb.volpan.slider.n" hoverthumb="thumb.volpan.slider.h" downthumb="thumb.volpan.slider.d" cursor="cur.normal" tooltip="Panning Bar"/>
 
@@ -93,8 +98,8 @@
 	<layer id="background.shade.m" x="267" y="0" h="35" w="-538" relatw="1" image="shade.background.main.middle" dblclickaction="SWITCH;normal" sysregion="1"/>
 	<layer id="background.shade.r" x="-271" y="0" h="35" relatx="1" image="shade.background.main.right" dblclickaction="SWITCH;normal" sysregion="1"/>
 
-  <group id="eq.shade.titlebar.center" x="0" y="3" w="260" h="28" ghost="1"/>
-  
+	<group id="eq.shade.titlebar.center" x="0" y="3" w="260" h="28" ghost="1"/>
+
 	<layer id="pledit.region.top.left" x="0" y="0" image="window.shade.region.top.left" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.top.right" x="-3" y="0" relatx="1" image="window.shade.region.top.right" ghost="1" sysregion="-2"/>
 	<layer id="pledit.region.bottom.left" x="0" y="-3" relaty="1" image="window.shade.region.bottom.left" ghost="1" sysregion="-2"/>
@@ -102,7 +107,7 @@
 
 	<!-- windows titlebar begins here -->
 
-  <layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
+	<layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color1" activealpha="255" inactivealpha="0"/>
 
 	<gradient id="wasabi.titlebar.active1"
 		x="24" y="4" w="-81" h="27" relatw="1"
@@ -112,9 +117,9 @@
 		x="24" y="4" w="-81" h="27" relatw="1"
 		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="255" inactivealpha="0" gammagroup="Active Title Bar Color 2"/>
 
-  <layer x="-57" y="4" w="53" h="27" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
+	<layer x="-57" y="4" w="53" h="27" relatx="1" image="new.titlebar.beam.default.color2" activealpha="255" inactivealpha="0"/>
 
-  <layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
+	<layer x="4" y="4" w="20" h="27" image="new.titlebar.beam.default.color3" activealpha="0" inactivealpha="255"/>
 
 	<gradient id="wasabi.titlebar.inactive1"
 		x="24" y="4" w="-81" h="27" relatw="1"
@@ -124,21 +129,21 @@
 		x="24" y="4" w="-81" h="27" relatw="1"
 		points="0.0=128,128,128,0;1.0=128,128,128,255" activealpha="0" inactivealpha="255" gammagroup="Inactive Title Bar Color 2"/>
 
-  <layer x="-57" y="4" w="53" h="27" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
-  
-  	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
+	<layer x="-57" y="4" w="53" h="27" relatx="1" image="new.titlebar.beam.default.color4" activealpha="0" inactivealpha="255"/>
+
+	<button id="player.button.mainmenu" action="SYSMENU" x="0" y="-2" image="player.button.mainmenu" hoverimage="player.button.mainmenu.h" downimage="player.button.mainmenu.d" activealpha="255" inactivealpha="255" tooltip="Winamp Menu" cursor="cur.normal"/>
 	
-	  <Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
+	<Wasabi:TitleBar id="wasabi.titlebar" x="12" y="0" w="-47" h="34" relatw="1"/>
 
-	  <rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1"/>
-	  <layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
+	<rect id="minimize" color="64,64,64" x="-56" y="6" w="16" h="14" relatx="1"/>
+	<layer id="switcher.dummy" fitparent="1" image="none" dblclickaction="SWITCH;normal" move="1" cursor="cur.normal"/>
 
-	  	<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
+		<button id="player.button.minimize" action="MINIMIZE" x="-62" y="-1" relatx="1" image="player.button.minimize" hoverimage="player.button.minimize.h" downimage="player.button.minimize.d" tooltip="Minimize" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
 	<rect id="shade" color="64,64,64" x="-40" y="6" w="16" h="14" relatx="1" ghost="1"/>
 
 	<!-- windows titlebar ends here -->
-  
-  <group id="eq.shade.volbalance" x="0" y="6" w="231" h="28" cursor="cur.normal"/>
+
+	<group id="eq.shade.volbalance" x="0" y="6" w="231" h="28" cursor="cur.normal"/>
 
 	<layer id="eq.background.grip.mid" x="-4" y="0" w="4" h="35" image="shade.resizer" relatx="1" dblclickaction="SWITCH;normal" alpha="0" resize="right" cursor="cur.posbar" />
 
@@ -148,13 +153,13 @@
 	<button id="eq.button.close" action="CLOSE" x="-26" y="-1" relatx="1" image="window.shade.button.close" hoverimage="window.shade.button.close.h" 
 	downimage="window.shade.button.close.d" tooltip="Close" activealpha="255" inactivealpha="255" cursor="cur.close"/>
 
-  <script file="scripts\centerobject.maki" param="eq.shade.titlebar.center,1,0"/>
-  <script file="scripts\centerobject.maki" param="eq.shade.volbalance,1,0"/>
+	<script file="scripts\centerobject.maki" param="eq.shade.titlebar.center,1,0"/>
+	<script file="scripts\centerobject.maki" param="eq.shade.volbalance,1,0"/>
 </groupdef>
 
 
 <groupdef id="pledit.switch.button">
-  <layer id="window.grip.top.right" x="-7" y="4" image="titlebar.stripes.right" activealpha="255" inactivealpha="110" ghost="1"/>
+	<layer id="window.grip.top.right" x="-7" y="4" image="titlebar.stripes.right" activealpha="255" inactivealpha="110" ghost="1"/>
 	<button id="pledit.button.switch" action="SWITCH" param="SHADE" x="38" y="-1" image="window.shade.button.switch" hoverimage="window.shade.button.switch.h" 
 	downimage="window.shade.button.switch.d" tooltip="Toggle Windowshade Mode" activealpha="255" inactivealpha="255" cursor="cur.normal"/>
 </groupdef>
@@ -169,20 +174,20 @@
 	<sendparams target="wasabi.frame.layout.titlebar" w="0" />
 	<sendparams target="wasabi.frame.layout.grip" x="10" w="-78" />
 	<sendparams target="mousetrap" h="35" relath="0" dblClickAction="SWITCH;shade"/>
-  <sendparams target="componentname" w="-81"/>
+	<sendparams target="componentname" w="-81"/>
 
 	<group id="equalizer.normal.group.main.content" x="1" y="30" h="207" w="550"/>
-  <group id="pledit.switch.button" x="-83" y="0" h="30" w="60" relatx="1"/>
+	<group id="pledit.switch.button" x="-83" y="0" h="30" w="60" relatx="1"/>
 
- <layer id="resize.disabler.top" x="10" y="0" w="-20" h="10" relatw="1" image="none" move="1" cursor="cur.move"/>
-  <layer id="resize.disabler.top.left" x="0" y="0" w="12" h="53" image="none" resize="left" regionop="1" rectrgn="1" cursor="cur.posbar"/>
-  <layer id="resize.disabler.top.right" x="-10" relatx="1" y="0" w="10" h="53" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
-  <layer id="resize.disabler.bottom.left" x="0" y="190" w="10" h="53" image="none" resize="left" regionop="1" rectrgn="1" cursor="cur.posbar"/>
-  <layer id="resize.disabler.bottom.right" x="-10" relatx="1" y="190" w="19" h="53" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
-  <layer id="resize.disabler.bottom" x="10" y="222" w="-20" h="22" relatw="1" image="none" cursor="cur.normal"/>
-  
-  <script file="scripts\centerobject.maki" param="equalizer.normal.group.main.content,1,0"/>
-  <script file="scripts\eq.maki"/>
+	<layer id="resize.disabler.top" x="10" y="0" w="-20" h="10" relatw="1" image="none" move="1" cursor="cur.move"/>
+	<layer id="resize.disabler.top.left" x="0" y="0" w="12" h="53" image="none" resize="left" regionop="1" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="resize.disabler.top.right" x="-10" relatx="1" y="0" w="10" h="53" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="resize.disabler.bottom.left" x="0" y="190" w="10" h="53" image="none" resize="left" regionop="1" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="resize.disabler.bottom.right" x="-10" relatx="1" y="190" w="19" h="53" image="none" resize="right" regionop="1" rectrgn="1" cursor="cur.posbar"/>
+	<layer id="resize.disabler.bottom" x="10" y="222" w="-20" h="22" relatw="1" image="none" cursor="cur.normal"/>
+
+	<script file="scripts\centerobject.maki" param="equalizer.normal.group.main.content,1,0"/>
+	<script file="scripts\eq.maki"/>
 </layout> 
 
 
