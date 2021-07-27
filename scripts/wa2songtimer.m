@@ -17,12 +17,7 @@ Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
 Global Timer PauseBlinkPaused, PauseBlink, Clock;
 //Global int ZZorNot;
-Global int timermode;
-Global int milliseconds;
-Global int songlength;
-Global int remainder;
-Global int milliseconds_rev;
-Global int i;
+Global int timermode, milliseconds, songlength, remainder, milliseconds_rev, i;
 
 Global PopUpMenu clockMenu;
 
