@@ -32,7 +32,7 @@
 	<bitmap id="explorerline8" file="images/window/WVLINE_ME_FINAL.GIF"/>
 </elements>
 
-<container id="PLEdit" name="Playlist Editor" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
+<container id="PLEdit" name="Playlist Explorer" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_visible="1" default_x="0" default_y="484" default_w="550" default_h="242">
 
 <groupdef id="pldir">
 	<rect x="0" y="0" w="0" h="0" relatw="1" relath="1" color="white" filled="1"/> <!-- yes, that is no bug, windows 2000 actually doesnt color this area -->

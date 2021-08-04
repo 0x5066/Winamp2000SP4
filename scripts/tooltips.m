@@ -1,4 +1,4 @@
-#include "lib/std.mi"
+#include "..\..\..\lib/std.mi"
 
 Global Group tipGroup;
 Global Text tipText;
@@ -21,7 +21,7 @@ tipText.onTextChanged(String newtext) {
   int vpright = vpleft+getViewportWidthFromPoint(x, y);
   int vpbottom = vptop+getViewportHeightFromPoint(x, y);
 
-  int w = getTextWidth()+1;
+  int w = getTextWidth();
   int h = tipGroup.getHeight();
 
   if (x + w > vpright) x = vpright - w;

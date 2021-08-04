@@ -39,7 +39,7 @@
 
 	<rect id="PL" color="64,64,64" visible="1" x="-61" y="116" w="11" h="11" relatx="1" ghost="1"/>
 	<layer image="check.box" x="-62" y="115" relatx="1" ghost="1"/>
-	<NStatesButton id="player.button.pl.light" x="-60" y="117" relatx="1" w="9" h="9" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Editor" cursor="cur.normal"/>
+	<NStatesButton id="player.button.pl.light" x="-60" y="117" relatx="1" w="9" h="9" image="shuffle.n." hoverimage="shuffle.h." downimage="shuffle.d." rectrgn="1" action="TOGGLE" param="GUID:PL" nstates="2" cfgvals="0;1" tooltip="Toggle Playlist Explorer" cursor="cur.normal"/>
 	<text text="PL" x="-46" y="113" relatx="1" font="tahoma" color="wasabi.text.color" fontsize="15" antialias="0" ghost="1"/>
 	<layer id="player.button.pl.shadow" visible="0" x="-63" y="107" relatx="1" image="player.normal.button.eqplshadow" alpha="255" ghost="1"/>
 	<layer id="player.button.pl" visible="0" x="-63" y="107" relatx="1" image="player.normal.button.pl" alpha="255" cursor="cur.normal"/>
