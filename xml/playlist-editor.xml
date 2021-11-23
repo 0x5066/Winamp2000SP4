@@ -77,15 +77,8 @@
 </groupdef>
 
 <groupdef id="both">
-	<Wasabi:Frame
-		orientation="vertical"
-		top="pldir" bottom="pledit.content.group"    
-		x="0" y="22" w="0" h="-42"
-		relatw="1" relath="1"
-		minwidth="200" maxwidth="200"
-		vbitmap="empty" vgrabber="empty"
-		resizable="0"/>
-
+	<group id="pldir" x="0" y="22" w="200" h="-42" relath="1"/>
+	<group id="pledit.content.group" x="200" y="22" w="-200" h="-42" relatw="1" relath="1"/>
 </groupdef>
 
 <groupdef id="some.complex.stuff">
@@ -203,12 +196,15 @@
 
 
 <layout id="normalpl" background="component.basetexture" desktopalpha="0" minimum_h="242" minimum_w="276" linkwidth="shade" appbar="top|bottom|left|right">
-	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1" content="both"/>
+	<Wasabi:StandardFrame:Status x="0" y="0" w="0" h="0" relatw="1" relath="1"/>
+	<group id="both" x="6" y="26" w="-12" h="-32" relatw="1" relath="1"/>
 	<sendparams target="window.button.switch" visible="1"/>
 	<sendparams target="wasabi.frame.layout.windowcontrol" x="-62" w="51"/>
 	<sendparams target="wasabi.frame.layout.titlebar" w="0"/>
 	<sendparams target="wasabi.frame.layout.grip" x="10" w="-78"/>
-  <sendparams target="componentname" w="-81"/>
+  	<sendparams target="componentname" w="-81"/>
+
+	<script id="pltoggle.script" file="scripts\pltoggle.maki"/>
 
 
 	<layer id="menubar.place" relatw="1" w="-8" x="4" y="24" image="menubar.placeholder" ghost="1"/>
@@ -241,6 +237,9 @@
     <button id="pledit.button.list.gfx" x="204" y="23" rectrgn="1" image="newlist.static" hoverimage="newlist.hover" downimage="newlist.pressed" tooltip="Manage Playlist" cursor="cur.normal"/>
     <script file="scripts\sc_mouseredir.maki" param="pledit.button.list.gfx;pledit.button.list.menu"/>
 	<text text="List Options" x="208" y="24" w="70" h="15" align="left" valign="top" ghost="1" font="tahoma" fontsize="15" antialias="0" color="color.window.txt"/>
+
+	<layer x="-21" y="24" relatx="1" image="pl.button.info" cursor="cur.normal"/>
+	<button id="pledit.button.showinfo" x="-22" y="23" relatx="1" rectrgn="1" image="pl.button.info.n" hoverimage="pl.button.info.h" downimage="pl.button.info.d" tooltip="Toggle media info" cursor="cur.normal"/>
 
 	<text id="pledit.info" x="-83" y="-21" h="19" w="77" relatx="1" relaty="1" display="PE_Info" font="tahoma" fontsize="14" valign="middle" align="left" 
 	rightclickaction="trackmenu" color="wasabi.text.color" alpha="255" cursor="cur.normal" antialias="0"/>

@@ -632,6 +632,11 @@
   <bitmap id="pl.icon.ie" file="images/window/ext/ie.png"/>
   <bitmap id="pl.icon.sound" file="images/window/ext/linein.png"/>
 
+  <bitmap id="pl.button.info" file="images/window/plinfo.png" x="0" y="0" w="16" h="16"/>
+  <bitmap id="pl.button.info.n" file="images/window/plinfo_menu.png" gammagroup="3D Objects" x="0" y="0" w="18" h="18"/>
+  <bitmap id="pl.button.info.h" file="images/window/plinfo_menu.png" gammagroup="3D Objects" x="18" y="0" w="18" h="18"/>
+  <bitmap id="pl.button.info.d" file="images/window/plinfo_menu.png" gammagroup="3D Objects" x="36" y="0" w="18" h="18"/>
+_menu
 	<!-- Video Window -->
 
   <bitmap id="window.vid.display.bg.left" file="images/window/windows-background-main.png" x="373" y="359" w="20" h="29" gammagroup="3D Objects"/>
