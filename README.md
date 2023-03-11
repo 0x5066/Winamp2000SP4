@@ -3,24 +3,24 @@ This is a Winamp Modern skin which is based on Victhor's [Winamp Classic Modern]
 
 **This skin will intentionally break itself when used with Winamp 5.8, safe yourself from this and use Winamp 5.666 or WACUP.**
 
-If you want to contribute color themes (which is highly encouraged), [this guide](https://github.com/The1Freeman/Winamp2000SP4/blob/master/contributing.md) will help you through the creation of a new color theme from the ground up.
+If you want to contribute color themes (which is highly encouraged), [this guide](https://github.com/0x5066/Winamp2000SP4/blob/master/contributing.md) will help you through the creation of a new color theme from the ground up.
 
-![Screenshot](https://github.com/The1Freeman/Winamp2000SP4/blob/master/screenshot.png?raw=true)
+![Screenshot](https://github.com/0x5066/Winamp2000SP4/blob/master/screenshot.png?raw=true)
 
 Are you looking for a Windows XP experience?
 [Check this skin out by mirzi!](https://github.com/mirzi1/winampxp)
 
 ## How to contribute
-Follow this rather simple guide [here](https://github.com/The1Freeman/Winamp2000SP4/blob/master/contributing.md) to begin work on this project.
+Follow this rather simple guide [here](https://github.com/0x5066/Winamp2000SP4/blob/master/contributing.md) to begin work on this project.
 
 ## Changelog
-Changelog is [here](https://github.com/The1Freeman/Winamp2000SP4/blob/master/CHANGELOG.md)
+Changelog is [here](https://github.com/0x5066/Winamp2000SP4/blob/master/CHANGELOG.md)
 
 ## Special Thanks
-If you want to find out who I appreciate the most who have helped me do this thing in my free time, read the [SPECIALTHANKS.MD](https://github.com/The1Freeman/Winamp2000SP4/blob/master/SPECIALTHANKS.md) and check them out as well, they're awesome people in my opinion.
+If you want to find out who I appreciate the most who have helped me do this thing in my free time, read the [SPECIALTHANKS.MD](https://github.com/0x5066/Winamp2000SP4/blob/master/SPECIALTHANKS.md) and check them out as well, they're awesome people in my opinion.
 
 ## Latest release
-Latest release can be found [here](https://github.com/The1Freeman/Winamp2000SP4/releases)
+Latest release can be found [here](https://github.com/0x5066/Winamp2000SP4/releases)
 
 ## TODO
 

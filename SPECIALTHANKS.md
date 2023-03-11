@@ -14,4 +14,4 @@ These people are:
 - [Justin Frankel](http://1014.org/) for coming up with Winamp in the first place.
 - Nullsoft for giving us the nightmare that is the infamous Modern Skin engine.
 - And everyone else on the [WACUP forums](https://getwacup.com/community/index.php)/[discord](https://discord.gg/5pVTdbj) who watched me develop this thing in pure agony and despair at times. :)
-- Last but not least, to those who have [starred](https://github.com/The1Freeman/Winamp2000SP4/stargazers) and are [watching](https://github.com/The1Freeman/Winamp2000SP4/watchers) this project.
+- Last but not least, to those who have [starred](https://github.com/0x5066/Winamp2000SP4/stargazers) and are [watching](https://github.com/0x5066/Winamp2000SP4/watchers) this project.

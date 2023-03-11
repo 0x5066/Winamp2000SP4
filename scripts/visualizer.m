@@ -20,6 +20,8 @@ Global Vis visualizer, visualizershade;
 Global Layer visvgrid_thick, visvgrid_thin, visvgrid_car, vishgrid_thick, vishgrid_thin, vishgrid_car;
 Global Button OAIDUBtnUE1, OAIDUBtnUE2, OAIDUBtnUE3;
 
+Global Timer VU, VUStopTimer;
+
 Global PopUpMenu visMenu;
 Global PopUpMenu specmenu;
 Global PopUpMenu oscmenu;
@@ -36,12 +38,14 @@ Global PopUpMenu plusmenu;
 Global PopUpMenu vgridmenu;
 Global PopUpMenu hgridmenu;
 Global PopUpMenu waxpmenu;
+Global PopUpMenu vumenu;
 
-Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color, vgrid, hgrid;
-Global Boolean show_peaks;
+Global Int currentMode, a_falloffspeed, p_falloffspeed, a_coloring, v_fps, v_color, vgrid, hgrid, vp_falloffspeed, Level1, Level2;
+Global float peak1, peak2, pgrav1, pgrav2, vu_falloffspeed;
+Global Boolean show_peaks, show_vupeaks;
 Global layer Trigger, HideForVic, TriggerBlocker, TriggerBlockerShade;
 
-
+Global AnimatedLayer LeftMeter, RightMeter, LeftMeterPeak, RightMeterPeak, SLeftMeter, SRightMeter, SLeftMeterPeak, SRightMeterPeak;
 
 System.onScriptLoaded()
 { 
@@ -61,6 +65,16 @@ System.onScriptLoaded()
 	vishgrid_thick = NormalGroupDisplay.findObject("vishgridimg.thick");
 	vishgrid_thin = NormalGroupDisplay.findObject("vishgridimg.thin");
 	vishgrid_car = NormalGroupDisplay.findObject("vishgridimg.car");
+
+	LeftMeter = NormalGroupDisplay.findObject("player.vu.left");
+	RightMeter = NormalGroupDisplay.findObject("player.vu.right");
+	LeftMeterPeak = NormalGroupDisplay.findObject("player.vu.leftpeak");
+	RightMeterPeak = NormalGroupDisplay.findObject("player.vu.rightpeak");
+
+	SLeftMeter = NormalGroupDisplay.findObject("player.vu.left");
+	SRightMeter = NormalGroupDisplay.findObject("player.vu.right");
+	SLeftMeterPeak = NormalGroupDisplay.findObject("player.vu.leftpeak");
+	SRightMeterPeak = NormalGroupDisplay.findObject("player.vu.rightpeak");
 
 	layoutMainShade = containerMain.getLayout("shade");
 	ShadeGroupMain = layoutMainShade.findObject("player.shade.group.main");
@@ -109,6 +123,15 @@ System.onScriptLoaded()
 	visualizershade.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
 	visualizershade.setXmlParam("falloff", integerToString(a_falloffspeed));
 
+	pgrav1 = 0;
+	pgrav2 = 0;
+
+	VU = new Timer;
+	VU.setdelay(16);
+
+	vuStopTimer = new Timer;
+	vuStopTimer.setdelay(1000);
+
 	refreshVisSettings ();
 }
 
@@ -116,14 +139,90 @@ visualizershade.onSetVisible(int on) {
 	if (on) refreshVisSettings ();
 }
 
+VU.onTimer() {
+//credit to Egor Petrov/E-Trance for the original piece of code used in his EPS3 skin
+//modified to remove the signal being made logarithmic, making it linear, removed the smoothing as well
+//gravity/peak smoothness and optimizations by mirzi
+	float DivL1 = 1.75;
+	float DivR1 = DivL1;
+
+	level1 = (getLeftVuMeter()*LeftMeter.getLength()/256);
+	level2 = (getRightVuMeter()*RightMeter.getLength()/256);
+
+    LeftMeter.gotoFrame(level1);
+    RightMeter.gotoFrame(level2);
+
+	SLeftMeter.gotoFrame(level1);
+    SRightMeter.gotoFrame(level2);
+
+	if (level1 >= peak1){
+		peak1 = level1;
+		pgrav1 = 0;
+	}
+	else{
+		peak1 += pgrav1;
+		pgrav1 -= vu_falloffspeed;
+	}
+	if (level2 >= peak2){
+		peak2 = level2;
+		pgrav2 = 0;
+	}
+	else{
+		peak2 += pgrav2;
+		pgrav2 -= vu_falloffspeed;
+	}
+
+	LeftMeterPeak.gotoFrame(peak1);
+	RightMeterPeak.gotoFrame(peak2);
+
+	SLeftMeterPeak.gotoFrame(peak1);
+	SRightMeterPeak.gotoFrame(peak2);
+}
+
+// saving those precious cycles
+System.onStop(){
+	if(currentMode == 6){
+		VU.start(); //prevents VU meter getting stuck on stop
+		VUStopTimer.start();
+	}
+}
+
+System.onPause(){
+	if(currentMode == 6){
+		VUStopTimer.start();
+	}
+}
+
+System.onResume(){
+	if(currentMode == 6){
+		VUStopTimer.stop();
+		VU.start();
+	}
+}
+
+System.onPlay(){
+	if(currentMode == 6){
+		VUStopTimer.stop();
+		VU.start();
+	}
+}
+
+// this timer stops all vu meter calculations
+VUStopTimer.onTimer(){
+	VUStopTimer.stop();
+	VU.stop();
+}
+
 refreshVisSettings ()
 {
 	currentMode = getPrivateInt(getSkinName(), "Visualizer Mode", 1);
 	show_peaks = getPrivateInt(getSkinName(), "Visualizer show Peaks", 1);
+	show_vupeaks = getPrivateInt(getSkinName(), "Visualizer show VU Peaks", 1);
 	vgrid = getPrivateInt(getSkinName(), "Visualizer show Vertical Grid", 0);
 	hgrid = getPrivateInt(getSkinName(), "Visualizer show Horizontal Grid", 0);
 	a_falloffspeed = getPrivateInt(getSkinName(), "Visualizer analyzer falloff", 4);
 	p_falloffspeed = getPrivateInt(getSkinName(), "Visualizer peaks falloff", 0);
+	vp_falloffspeed = getPrivateInt(getSkinName(), "Visualizer VU peaks falloff", 2);
 	a_coloring = getPrivateInt(getSkinName(), "Visualizer analyzer coloring", 0);
 	v_fps = getPrivateInt(getSkinName(), "Visualizer FPS", 3);
 	v_color = getPrivateInt(getSkinName(), "Visualizer Color themes", 0);
@@ -161,10 +260,14 @@ refreshVisSettings ()
 	visualizer.setXmlParam("colorosc4", integerToString(v_color));
 	visualizer.setXmlParam("colorosc5", integerToString(v_color));
 	visualizer.setXmlParam("colorallbands", integerToString(v_color));
+	LeftMeterPeak.setXmlParam("visible", integerToString(show_vupeaks));
+	RightMeterPeak.setXmlParam("visible", integerToString(show_vupeaks));
 
 	visualizershade.setXmlParam("peaks", integerToString(show_peaks));
 	visualizershade.setXmlParam("peakfalloff", integerToString(p_falloffspeed));
-	visualizershade.setXmlParam("falloff", integerToString(a_falloffspeed));	
+	visualizershade.setXmlParam("falloff", integerToString(a_falloffspeed));
+
+	vu_falloffspeed = (vp_falloffspeed/100)+0.02;
 
 	if (a_coloring == 0)
 	{
@@ -649,7 +752,7 @@ Trigger.onLeftButtonDown (int x, int y)
 {
 	currentMode++;
 
-	if (currentMode == 6)
+	if (currentMode == 7)
 	{
 		currentMode = 0;
 	}
@@ -657,8 +760,6 @@ Trigger.onLeftButtonDown (int x, int y)
 	setVis	(currentMode);
 	complete;
 }
-
-
 
 Trigger.onRightButtonUp (int x, int y)
 {
@@ -678,6 +779,7 @@ Trigger.onRightButtonUp (int x, int y)
 	vgridmenu = new PopUpMenu;
 	hgridmenu = new PopUpMenu;
 	waxpmenu = new PopUpMenu;
+	vumenu = new PopUpMenu;
 
 	visMenu.addCommand("Presets:", 999, 0, 1);
 	visMenu.addCommand("No Visualization", 100, currentMode == 0, 0);
@@ -737,9 +839,11 @@ Trigger.onRightButtonUp (int x, int y)
 	oscmenu.addCommand("Dots", 4, currentMode == 4, 0);
 	oscmenu.addCommand("Solid", 5, currentMode == 5, 0);
 	visMenu.addSubMenu(oscmenu, "Oscilloscope");
+    visMenu.addCommand("VU Meter", 6, currentMode == 6, 0);
+	visMenu.addCommand("Show VU Peaks", 102, show_vupeaks == 1, 0);
 
 	visMenu.addSeparator();
-	visMenu.addCommand("Options:", 102, 0, 1);
+	visMenu.addCommand("Options:", 998, 0, 1);
 	
 	visMenu.addCommand("Show Peaks", 101, show_peaks == 1, 0);
 	
@@ -778,6 +882,13 @@ Trigger.onRightButtonUp (int x, int y)
 	visMenu.addSubMenu(stylemenu, "Analyzer Coloring");
 	
 	visMenu.addSeparator();
+	visMenu.addSubmenu(vumenu, "VU Peak Falloff Speed");
+	vumenu.addCommand("Slower", 700, vp_falloffspeed == 0, 0);
+	vumenu.addCommand("Slow", 701, vp_falloffspeed == 1, 0);
+	vumenu.addCommand("Moderate", 702, vp_falloffspeed == 2, 0);
+	vumenu.addCommand("Fast", 703, vp_falloffspeed == 3, 0);
+	vumenu.addCommand("Faster", 704, vp_falloffspeed == 4, 0);
+	visMenu.addSeparator();
 	
 	visMenu.addSubMenu(fpsmenu, "Frames Per Second");
 	fpsmenu.addCommand("Lame (30 FPS)", 407, v_fps == 0, 0);
@@ -809,6 +920,7 @@ Trigger.onRightButtonUp (int x, int y)
 	delete vgridmenu;
 	delete hgridmenu;
 	delete waxpmenu;
+	delete vumenu;
 
 	complete;	
 }
@@ -830,6 +942,14 @@ ProcessMenuResult (int a)
 		setPrivateInt(getSkinName(), "Visualizer show Peaks", show_peaks);
 	}
 
+	else if (a == 102)
+	{
+		show_vupeaks = (show_vupeaks - 1) * (-1);
+		LeftMeterPeak.setXmlParam("visible", integerToString(show_vupeaks));
+		RightMeterPeak.setXmlParam("visible", integerToString(show_vupeaks));
+		setPrivateInt(getSkinName(), "Visualizer show VU Peaks", show_vupeaks);
+	}
+
 	else if (a >= 200 && a <= 204)
 	{
 		p_falloffspeed = a - 200;
@@ -844,6 +964,13 @@ ProcessMenuResult (int a)
 		visualizer.setXmlParam("falloff", integerToString(a_falloffspeed));
 		visualizershade.setXmlParam("falloff", integerToString(a_falloffspeed));
 		setPrivateInt(getSkinName(), "Visualizer analyzer falloff", a_falloffspeed);
+	}
+
+	else if (a >= 700 && a <= 704)
+	{
+		vp_falloffspeed = a - 700;
+		vu_falloffspeed = (vp_falloffspeed/100)+0.02;
+		setPrivateInt(getSkinName(), "Visualizer VU peaks falloff", vp_falloffspeed);
 	}
 
 	else if (a >= 400 && a <= 403)
@@ -1462,12 +1589,30 @@ setVis (int mode)
 	setPrivateInt(getSkinName(), "Visualizer Mode", mode);
 	if (mode == 0)
 	{
+        VU.stop();
+		LeftMeterPeak.setXmlParam("alpha", "0");
+		RightMeterPeak.setXmlParam("alpha", "0");
+		LeftMeter.setXmlParam("visible", "0");
+		RightMeter.setXmlParam("visible", "0");
+		SLeftMeterPeak.setXmlParam("alpha", "0");
+		SRightMeterPeak.setXmlParam("alpha", "0");
+		SLeftMeter.setXmlParam("visible", "0");
+		SRightMeter.setXmlParam("visible", "0");
 		HideForVic.show();
 		visualizer.setMode(0);
 		visualizershade.setMode(0);
 	}
 	else if (mode == 1)
 	{
+        VU.stop();
+		LeftMeterPeak.setXmlParam("alpha", "0");
+		RightMeterPeak.setXmlParam("alpha", "0");
+		LeftMeter.setXmlParam("visible", "0");
+		RightMeter.setXmlParam("visible", "0");
+		SLeftMeterPeak.setXmlParam("alpha", "0");
+		SRightMeterPeak.setXmlParam("alpha", "0");
+		SLeftMeter.setXmlParam("visible", "0");
+		SRightMeter.setXmlParam("visible", "0");
 		visualizer.setXmlParam("bandwidth", "wide");
 		visualizershade.setXmlParam("bandwidth", "wide");
 		HideForVic.show();
@@ -1476,6 +1621,15 @@ setVis (int mode)
 	}
 	else if (mode == 2)
 	{
+        VU.stop();
+		LeftMeterPeak.setXmlParam("alpha", "0");
+		RightMeterPeak.setXmlParam("alpha", "0");
+		LeftMeter.setXmlParam("visible", "0");
+		RightMeter.setXmlParam("visible", "0");
+		SLeftMeterPeak.setXmlParam("alpha", "0");
+		SRightMeterPeak.setXmlParam("alpha", "0");
+		SLeftMeter.setXmlParam("visible", "0");
+		SRightMeter.setXmlParam("visible", "0");
 		visualizer.setXmlParam("bandwidth", "thin");
 		visualizershade.setXmlParam("bandwidth", "thin");
 		HideForVic.show();
@@ -1484,6 +1638,15 @@ setVis (int mode)
 	}
 	else if (mode == 3)
 	{
+        VU.stop();
+		LeftMeterPeak.setXmlParam("alpha", "0");
+		RightMeterPeak.setXmlParam("alpha", "0");
+		LeftMeter.setXmlParam("visible", "0");
+		RightMeter.setXmlParam("visible", "0");
+		SLeftMeterPeak.setXmlParam("alpha", "0");
+		SRightMeterPeak.setXmlParam("alpha", "0");
+		SLeftMeter.setXmlParam("visible", "0");
+		SRightMeter.setXmlParam("visible", "0");
 		visualizer.setXmlParam("oscstyle", "solid");
 		visualizershade.setXmlParam("oscstyle", "solid");
 		HideForVic.hide();
@@ -1492,6 +1655,15 @@ setVis (int mode)
 	}
 	else if (mode == 4)
 	{
+        VU.stop();
+		LeftMeterPeak.setXmlParam("alpha", "0");
+		RightMeterPeak.setXmlParam("alpha", "0");
+		LeftMeter.setXmlParam("visible", "0");
+		RightMeter.setXmlParam("visible", "0");
+		SLeftMeterPeak.setXmlParam("alpha", "0");
+		SRightMeterPeak.setXmlParam("alpha", "0");
+		SLeftMeter.setXmlParam("visible", "0");
+		SRightMeter.setXmlParam("visible", "0");
 		visualizer.setXmlParam("oscstyle", "dots");
 		visualizershade.setXmlParam("oscstyle", "dots");
 		HideForVic.hide();
@@ -1500,11 +1672,34 @@ setVis (int mode)
 	}
 	else if (mode == 5)
 	{
+        VU.stop();
+		LeftMeterPeak.setXmlParam("alpha", "0");
+		RightMeterPeak.setXmlParam("alpha", "0");
+		LeftMeter.setXmlParam("visible", "0");
+		RightMeter.setXmlParam("visible", "0");
+		SLeftMeterPeak.setXmlParam("alpha", "0");
+		SRightMeterPeak.setXmlParam("alpha", "0");
+		SLeftMeter.setXmlParam("visible", "0");
+		SRightMeter.setXmlParam("visible", "0");
 		visualizer.setXmlParam("oscstyle", "lines");
 		visualizershade.setXmlParam("oscstyle", "lines");
 		HideForVic.hide();
 		visualizer.setMode(2);
 		visualizershade.setMode(2);
+	}
+    else if (mode == 6)
+	{
+		VU.start();
+		LeftMeter.setXmlParam("visible", "1");
+		RightMeter.setXmlParam("visible", "1");
+		LeftMeterPeak.setXmlParam("alpha", "255");
+		RightMeterPeak.setXmlParam("alpha", "255");
+		SLeftMeter.setXmlParam("visible", "1");
+		SRightMeter.setXmlParam("visible", "1");
+		SLeftMeterPeak.setXmlParam("alpha", "255");
+		SRightMeterPeak.setXmlParam("alpha", "255");
+		visualizer.setMode(0);
+		visualizershade.setMode(0);
 	}
 	currentMode = mode;
 }

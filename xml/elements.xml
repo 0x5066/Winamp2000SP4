@@ -15,7 +15,8 @@
 
   <!-- old ass vu -->
   
-  <bitmap id="oldwin.vu" file="images\old_vu.png" x="0" y="0" w="15" h="760"/>
+  <bitmap id="player.visualization.vu" file="images/analyzer.png" x="0" y="0" h="142" w="142" gammagroup="visualizers"/>
+  <bitmap id="player.visualization.vupeak" file="images/peak.png" x="0" y="0" h="142" w="142" gammagroup="visualizers"/>
   
   <bitmap id="barthing" file="images\bth.png"/>
   <bitmap id="barthing2" file="images\bth2.png"/>

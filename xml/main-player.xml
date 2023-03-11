@@ -156,7 +156,6 @@
 
 </groupdef>
 
-
 <groupdef id="player.normal.group.songticker">
 	<rect id="sngtic.bg2" color="64,64,64" x="1" y="7" w="-230" h="20" relatw="1" ghost="1"/>
 	<grid id="sngtic.bg" x="0" y="6" w="-228" h="22" relatw="1" left="sngtic.left" middle="sngtic.mid" right="sngtic.right" ghost="1" alpha="255"/>
@@ -217,6 +216,10 @@
 	<layer id="vishgridimg.thick" x="27" y="39" image="vishgrid_thick" ghost="1"/>
 	<layer id="vishgridimg.thin" x="27" y="39" image="vishgrid_thin" ghost="1"/>
 	<layer id="vishgridimg.car" x="27" y="39" image="visgrid_car" alpha="175" ghost="1"/>
+	<AnimatedLayer id="player.vu.left" x="27" y="41" w="142" h="14" image="player.visualization.vu" frameheight="1" start="0" end="72" ghost="1"/>
+	<AnimatedLayer id="player.vu.right" x="27" y="57" w="142" h="14" image="player.visualization.vu" frameheight="1" start="0" end="72" ghost="1"/>
+	<AnimatedLayer id="player.vu.leftpeak" x="27" y="41" w="142" h="14" image="player.visualization.vupeak" frameheight="1" start="0" end="72" ghost="1"/>
+	<AnimatedLayer id="player.vu.rightpeak" x="27" y="57" w="142" h="14" image="player.visualization.vupeak" frameheight="1" start="0" end="72" ghost="1"/>
 	
 	<layer id="hide.for.gordon" x="169" y="39" image="hide.for.gordon" ghost="1"/>
 	<layer id="hide.for.vic" x="27" y="71" image="show.for.gordon" ghost="1"/>

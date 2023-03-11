@@ -110,6 +110,11 @@
 	colorosc4="128,128,128"
 	colorosc5="128,128,128" fps="60"/>
 
+	<AnimatedLayer id="player.vu.left" 	x="8" y="10" w="71" h="7" image="player.visualization.vu" frameheight="1" start="0" end="72" ghost="1"/>
+	<AnimatedLayer id="player.vu.right" x="8" y="20" w="71" h="7" image="player.visualization.vu" frameheight="1" start="0" end="72" ghost="1"/>
+	<AnimatedLayer id="player.vu.leftpeak" x="8" y="10" w="71" h="7" image="player.visualization.vupeak" frameheight="1" start="0" end="72" ghost="1"/>
+	<AnimatedLayer id="player.vu.rightpeak" x="8" y="20" w="71" h="7" image="player.visualization.vupeak" frameheight="1" start="0" end="72" ghost="1"/>
+
   <rect id="hide.for.gordon" x="79" y="9" w="1" h="17" color="0,0,0" filled="1" ghost="1" fps="60" gammagroup="display"/>
 	<layer id="hide.for.vic" x="27" y="71" image="none" ghost="1"/>
 	<status id="status" x="86" y="10" stopBitmap="statusshade.icon.stop" playBitmap="statusshade.icon.play" pauseBitmap="statusshade.icon.pause" ghost="1"/>
